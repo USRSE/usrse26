@@ -1,0 +1,45 @@
+name: Check Spelling and URLs
+
+on: [pull_request]
+
+# Kill concurrent jobs from the same PR/branch - only one will run at a time
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number || github.ref }}
+  cancel-in-progress: true
+
+jobs:
+  urlcheck:
+    runs-on: ubuntu-latest
+
+    steps:
+    - uses: actions/checkout@v3
+
+    - name: Check Spelling
+      uses: crate-ci/typos@c97d621b6b01d8b0258538ca15abeca5c5764601 # version 1.16.23
+      with:
+        config: ./.github/workflows/typo_config.toml
+
+    - name: URLs-checker
+
+      uses: urlstechie/urlchecker-action@0.0.34
+      with:
+        # A comma-separated list of file types to cover in the URL checks
+        file_types: .md,.py,.yml
+
+        # Choose whether to include file with no URLs in the prints.
+        print_all: false
+
+        # More verbose summary at the end of a run
+        verbose: true
+
+        # How many times to retry a failed request (defaults to 1)
+        retry_count: 3
+
+        # Google Forms is having enormous timeouts
+        timeout: 10
+
+        # Exclude these patterns from the checker
+        exclude_patterns: supercomputing.org,https://www.hyatt.com/shop/chixl?location=Hyatt%20House%20Chicago%20%2F%20West%20Loop-Fulton%20Market&checkinDate=2023-10-15&checkoutDate=2023-10-19&rooms=1&adults=1&kids=0&corp_id=g-uicf
+
+        # Exclude these files from the checker
+        exclude_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows

@@ -1,0 +1,19 @@
+# project
+_site
+.sass-cache
+.vagrant
+Gemfile.lock
+
+# VS Code
+.vscode/*
+
+# general
+.DS_Store
+Thumbs.db
+ehthumbs.db
+
+# python
+__pycache__
+*.pyc
+
+*~

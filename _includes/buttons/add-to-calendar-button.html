@@ -1,0 +1,51 @@
+{%- assign post = event | default: post | default: page %}
+{%- assign title = include.title | default: post.title | default: page.title %}
+{%- assign excerpt = include.excerpt | default: post.excerpt | default: page.excerpt %}
+{%- assign url = include.url | default: post.url | default: page.url %}
+{%- assign event_id = post.id | split: '/' | last %}
+{%- capture cal-button-str %}calendar-button-{{include.id}}{%- endcapture %}
+
+<div id="{{cal-button-str}}"></div>
+<script src="{{ site.baseurl }}/assets/js/add-to-calendar.min.js"></script>
+<script>
+var myCalendar = addToCalendar({
+  options: {
+    class: 'usrse-event',
+    
+    // You can pass an ID. If you don't, one will be generated for you
+    id: 'usrse-event-{{ title | slugify }}-{{include.id}}'
+  },
+  data: {
+    // Event title
+    title: '{{ title | replace: "&", "and" }}',
+
+    // Event start date
+    start: new Date('{{ time.start | date_to_xmlschema }}'),
+
+    {% if time.end %}end: new Date('{{ time.end | date_to_xmlschema }}'),{% endif %}
+
+    // Event timezone. Will convert the given time to that zone. Should use the browser's
+    // timezone to ensure event is created properly for the user.
+    timezone: Intl.DateTimeFormat().resolvedOptions().timeZone,
+
+    // Event duration (IN MINUTES)
+    {% if post.duration %}duration: {{ post.duration }},{% endif %}
+
+    // You can also choose to set an end time
+    // If an end time is set, this will take precedence over duration
+    // end: new Date('June 15, 2013 23:00'), 
+    
+    // You can also choose to set 'all day'
+    // If this is set, this will override end time, duration and timezone
+    {% if post.all_day %}allday:true,{% endif %}
+
+    // Event Address
+    address: "{{ site.url }}{% if site.baseurl %}{{ site.baseurl }}/{% endif %}{{ url }}",
+
+    // Event Description
+    description: '{{ post.content | strip_html | truncatewords: 50 }}'
+  }
+});
+
+document.querySelector('#{{cal-button-str}}').appendChild(myCalendar);
+</script>

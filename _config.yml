@@ -1,0 +1,86 @@
+# Site Settings
+lang: en
+
+title: US-RSE'TBD
+description: US-RSE Conference TBD
+
+url: "https://us-rse.org"
+baseurl: "/TBD"
+title-img: /assets/img/main_logo_transparent.png  # baseurl will be prepended
+twitter-img: /assets/img/main_logo_transparent.png  # url + baseurl will be prepended
+banner: /assets/img/main_logo_transparent.png
+icon: /assets/img/main_logo_transparent.png
+domain: https://us-rse.org
+
+email: contact@us-rse.org
+permalink: /:year-:month-:day-:title/
+
+favicon: /assets/img/favicon.ico
+fixed_navbar: top
+
+paginate: 5
+paginate_path: "/news/page:num/"
+
+excerpt_length: 200
+
+# social media
+twitter: us_rse
+github_org: USRSE
+github_repo: usrse.github.io
+linkedin: company/us-rse/
+mastodon: us_rse
+
+# Twitter card for meta tags
+twitter_card: summary
+
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-paginate
+  - jekyll-feed
+
+exclude: 
+  - Gemfile
+  - Gemfile.lock
+  - vendor
+
+livereload: true
+
+google_analytics: "UA-133428825-1"
+
+defaults:
+  -
+    scope:
+      path: ""
+      type: "pages"
+    values:
+      show_sidebar: true
+  -
+    scope:
+      path: ""
+      type: "posts"
+    values:
+      layout: post
+      show_sidebar: true
+  - 
+    scope:
+      path: "_events"
+      type: "events"
+    values:
+      layout: event
+
+
+markdown: kramdown
+highlighter: rouge
+
+# Collections
+collections:
+  events:
+    output: true
+    permalink: /:collection/:path/
+  products: 
+    output: true
+    layout: product
+    image: https://via.placeholder.com/800x600
+    show_sidebar: false
+

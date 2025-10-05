@@ -1,0 +1,25 @@
+---
+layout: default
+---
+
+<div class="content">
+    <h2>{{ page.title }}</h2>
+    {% if page.subtitle %} 
+    <h3>
+        {{ page.subtitle }} 
+    </h3>
+    {% endif %} 
+<div class="tags">
+    {% for tag in page.tags %}
+      {% include tag.html tag=tag %}
+    {% endfor %}
+</div>
+
+    <p>Published: {{ page.date | date: "%b %-d, %Y" }} {% if page.author %}by {{ page.author }}{% endif %}</p>
+
+    {{ content }}
+</div>
+
+{% unless site.hide_share_buttons %}
+{% include buttons/share-buttons.html %}
+{% endunless %}

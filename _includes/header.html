@@ -1,0 +1,46 @@
+<nav class="navbar is-primary {% if site.fixed_navbar %} is-fixed-{{ site.fixed_navbar }} {% endif %}" x-data="{ openNav: false }">
+    <div class="container">
+        <div class="navbar-brand">
+            <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">
+                {{ site.title }}
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div class="navbar-menu" id="navMenu" :class="{ 'is-active': openNav }">
+            <div class="navbar-start">
+                {% if site.data.navigation %}
+                {% for item in site.data.navigation %}
+                    {% if item.dropdown %}
+                    <div class="navbar-item has-dropdown is-hoverable {% if site.fixed_navbar == 'bottom' %} has-dropdown-up {% endif %}">
+                        {% if item.link %}
+                        <a href="{{ item.link | relative_url }}" class="navbar-link {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                        {% else %}
+                        <span class="navbar-link">{{ item.name }}</span>
+                        {% endif %}
+                        <div class="navbar-dropdown">
+                            {% for subitem in item.dropdown %}
+                            <a {% if subitem.external %}target="_blank"{% endif %} href="{{ subitem.link | relative_url }}" class="navbar-item {% if subitem.link == page.url %}is-active{% endif %}">{{ subitem.name }}</a>
+                            {% endfor %}
+                        </div>
+                    </div>
+                    {% else %}
+                    <a href="{{ item.link | relative_url }}" class="navbar-item {% if item.link == page.url %}is-active{% endif %}">{{ item.name }}</a>
+                    {% endif %}
+                {% endfor %}
+                {% endif %}
+            </div>
+            <a type="button" style="margin:auto 5px; -webkit-appearance: none;" class="btn btn-light btn-sm" href="https://us-rse.org">
+                US-RSE Association
+            </a>
+
+            <a href="{{ site.baseurl }}/search" type="button" style="padding-left: 20px; -webkit-appearance: none;">
+                <i style="margin-top:15px; ;color:white; font-size:25px" class="fa fa-search"></i>
+            </a>
+
+        </div>
+    </div>
+</nav>

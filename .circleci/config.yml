@@ -1,0 +1,79 @@
+version: 2.1
+
+workflows:
+  version: 2
+
+  # The build workflow will build a preview for the site, intended for PRs
+  build:
+    jobs:
+      - build-site:
+          filters:
+            branches:
+              ignore: gh-pages
+
+install: &install
+  name: Install dependencies for build
+  command: |
+     $HOME/conda/bin/pip install -r ~/repo/.circleci/requirements.txt
+
+
+install_python_3: &install_python_3
+  name: Install Python dependencies
+  command: | 
+      ls $HOME
+      if [ ! -d "/home/circleci/conda" ]; then
+          wget https://repo.continuum.io/miniconda/Miniconda3-latest-Linux-x86_64.sh
+          /bin/bash Miniconda3-latest-Linux-x86_64.sh -b -p $HOME/conda
+          export PATH=$HOME/conda/bin:$PATH
+       else
+           echo "Miniconda 3 is already installed, continuing to build."
+       fi
+
+build_jekyll: &build_jekyll
+    name: Jekyll Build
+    command: |
+        if [ -z "$CIRCLECI_TRIGGER" ]; then
+            echo "Building US-RSE'TBD website for Preview"
+            cp ~/repo/.circleci/circle_urls.sh ~/repo/circle_urls.sh
+            cd ~/repo
+            chmod u+x circle_urls.sh
+            bash circle_urls.sh              
+            bundle exec jekyll build
+        else
+            echo "Nightly build detected, preview not needed."
+        fi
+
+jobs:
+  build-site:
+    docker:
+      - image:  cimg/ruby:3.1
+    working_directory: ~/repo
+    environment:
+      - JEKYLL_ENV: production
+      - NOKOGIRI_USE_SYSTEM_LIBRARIES: true
+      - BUNDLE_PATH: ~/repo/vendor/bundle
+    steps:
+      - checkout
+      - restore_cache:
+          keys:
+          - v1-dependencies
+          - rubygems-v1
+      - run: *install_python_3
+      - run: *install
+      - save_cache:
+          paths:
+            - /home/circleci/conda
+          key: v1-dependencies        
+      - run:
+          name: Bundle Install
+          command: |
+              cd ~/repo
+              bundle check || bundle install
+      - save_cache:
+          key: rubygems-v1
+          paths:
+            - vendor/bundle
+      - run: *build_jekyll
+      - store_artifacts:
+          path: ~/repo/_site
+          destination: usrse.github.io/TBD
