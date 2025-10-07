@@ -7,5 +7,5 @@ permalink: organization/general/
 set_last_modified: true
 ---
 
-- Miranda Mundt, Sandia National Laboratories
-- Lauren Milechin, Massachusetts Institute of Technology
+- Alex Koufos, Stanford University
+- Keith Beattie, Lawrence Berkeley National Laboratory

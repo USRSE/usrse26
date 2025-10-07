@@ -3,14 +3,14 @@
 1. Please search for all `TBD`s and replace them as appropriate.
 2. Update other relevant information as appropriate.
 3. Ensure that the repository is public, then activate GitHub Pages by going to **Settings** > **Pages** > **Deploy from branch** > `main`. Also click the radio button near the bottom for "Enforce HTTPS".
-4. Set up CircleCI by going to https://app.circleci.com/projects/project-dashboard/github/USRSE/, click "Set up project" on your repository (e.g., `usrse25`), select the existing `config.yml` file from `main`, click "Set up project", click "Project settings" > "Advanced Settings", and toggle the "Build forked pull requests" option. CircleCI previews will now be generated for all Pull Requests.
+4. Set up CircleCI by going to https://app.circleci.com/projects/project-dashboard/github/USRSE/, click "Set up project" on your repository (e.g., `usrse26`), select the existing `config.yml` file from `main`, click "Set up project", click "Project settings" > "Advanced Settings", and toggle the "Build forked pull requests" option. CircleCI previews will now be generated for all Pull Requests.
 5. Remove this section from the README.
 
 ------
 
-# The US-RSE Association Conference TBD (US-RSE'TBD)
+# The US-RSE Association Conference 2026 (US-RSE'26)
 
-This repo is website landing page for the [US-RSE Association Conference TBD](https://us-rse.org/TBD/).
+This repo is website landing page for the [US-RSE Association Conference 2026](https://us-rse.org/usrse26/).
 
 ## Previewing the Site Locally
 
@@ -29,7 +29,7 @@ $ jekyll serve
 $ bundle exec jekyll serve
 ```
 
-and open your browser to <http://localhost:4000/TBD/>.
+and open your browser to <http://localhost:4000/usrse26/>.
 
 If you are having trouble try `rm -rf _site`, followed by `bundle update`,
 then `bundle exec jekyll serve`.
@@ -47,7 +47,7 @@ Build the container image:
 docker build -t us-rse-con-2024-website:latest .
 ```
 
-Run the container to access the website at the URL http://127.0.0.1:4000/TBD/
+Run the container to access the website at the URL http://127.0.0.1:4000/usrse26/
 
 ```bash
 $ docker run --rm -it -p 4000:4000 us-rse-con-2024-website:latest
@@ -58,7 +58,7 @@ Configuration file: /srv/jekyll/_config.yml
       Generating... 
                     done in 1.616 seconds.
  Auto-regeneration: enabled for '/srv/jekyll'
-    Server address: http://0.0.0.0:4000/TBD/
+    Server address: http://0.0.0.0:4000/usrse26/
   Server running... press ctrl-c to stop.
 ```
 
@@ -67,7 +67,7 @@ To develop the website, launch the container using the following command, where 
 ```bash
 docker run --rm -it -p 4000:4000 \
     -v $(pwd):/srv/jekyll \
-    us-rse-con-2024-website:latest \
+    us-rse-con-2026-website:latest \
     bundle exec jekyll serve --host=0.0.0.0 --watch --drafts
 ```
 

@@ -1,11 +1,11 @@
 # Site Settings
 lang: en
 
-title: US-RSE'TBD
-description: US-RSE Conference TBD
+title: US-RSE'26
+description: US-RSE Conference 2026
 
 url: "https://us-rse.org"
-baseurl: "/TBD"
+baseurl: "/usrse26"
 title-img: /assets/img/main_logo_transparent.png  # baseurl will be prepended
 twitter-img: /assets/img/main_logo_transparent.png  # url + baseurl will be prepended
 banner: /assets/img/main_logo_transparent.png

@@ -1,4 +1,4 @@
-# Contributing to US-RSE Conference TBD Website
+# Contributing to US-RSE Conference 2026 Website
 
 If you are comfortable working with forks, branches, and pull requests, please
 follow the below guidance. If you are not, please reach out to the Outreach/Website
@@ -11,20 +11,22 @@ is described in the following.
 
 ## Contents
 
-1. [Introduction](#introduction)
-   1. [Forking](#forking)
-   1. [Keeping Your Fork Updated](#keeping-your-fork-updated)
-1. [Creating Issues](#creating-issues)
-   1. [Markdown](#markdown)
-1. [Working on Issues](#working-on-issues)
-   1. [When Work Begins](#when-work-begins)
-   1. [As Work Continues](#as-work-continues)
-   1. [When Work is Complete](#when-work-is-complete)
-   1. [Closing Old Issues](#closing-old-issues)
-1. [Pull Requests](#pull-requests)
-   1. [Reviewers](#reviewers)
-   1. [Work-in-Progress](#work-in-progress)
-   1. [Merging](#merging)
+- [Contributing to US-RSE Conference 2026 Website](#contributing-to-us-rse-conference-2026-website)
+  - [Contents](#contents)
+  - [Introduction](#introduction)
+    - [Forking](#forking)
+    - [Keeping Your Fork Updated](#keeping-your-fork-updated)
+  - [Creating Issues](#creating-issues)
+    - [Markdown](#markdown)
+  - [Working on Issues](#working-on-issues)
+    - [When Work Begins](#when-work-begins)
+    - [As Work Continues](#as-work-continues)
+    - [When Work is Complete](#when-work-is-complete)
+    - [Closing Old Issues](#closing-old-issues)
+  - [Pull Requests](#pull-requests)
+    - [Reviewers](#reviewers)
+    - [Work-in-Progress](#work-in-progress)
+    - [Merging](#merging)
 
 ## Introduction
 
@@ -37,7 +39,7 @@ requests to merge changes back into the main repository.
 
 ### Forking
 
-To create a fork, go to the [main repository](https://github.com/USRSE/TBD)
+To create a fork, go to the [main repository](https://github.com/USRSE/usrse26)
 and click the `Fork` button in the top-right. You can choose under what username
 or organization the fork is made; we recommend your personal account.
 
@@ -60,7 +62,7 @@ for the various ways to keep your fork in sync.
 
 ## Creating Issues
 
-[Create issues in GitHub](https://github.com/USRSE/TBD/issues)
+[Create issues in GitHub](https://github.com/USRSE/usrse26/issues)
 for any work that needs to be done. This can include, but is not limited to:
 
 - Bugs

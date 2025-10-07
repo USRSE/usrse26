@@ -33,7 +33,7 @@ build_jekyll: &build_jekyll
     name: Jekyll Build
     command: |
         if [ -z "$CIRCLECI_TRIGGER" ]; then
-            echo "Building US-RSE'TBD website for Preview"
+            echo "Building US-RSE'26 website for Preview"
             cp ~/repo/.circleci/circle_urls.sh ~/repo/circle_urls.sh
             cd ~/repo
             chmod u+x circle_urls.sh
@@ -76,4 +76,4 @@ jobs:
       - run: *build_jekyll
       - store_artifacts:
           path: ~/repo/_site
-          destination: usrse.github.io/TBD
+          destination: usrse.github.io/usrse26
