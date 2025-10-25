@@ -1,4 +1,4 @@
-# The US-RSE Association Conference 2026 (US-RSE'26)
+# The US-RSE Association Conference 2026 (USRSE'26)
 
 This repo is website landing page for the [US-RSE Association Conference 2026](https://us-rse.org/usrse26/).
 

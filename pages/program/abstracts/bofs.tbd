@@ -151,7 +151,7 @@ accessed with existing publication systems and processes.
 Computational notebooks are also increasingly important tools for research and
 science communication as they can be used to teach, showcase tools, communicate
 research results, and provide friendly interfaces to interact with data and
-software. To this end, US-RSE’23 Conference accepted submissions for reproducible
+software. To this end, USRSE’23 Conference accepted submissions for reproducible
 notebooks (that were rendered to HTML documents), and interactive notebooks
 (that were hosted on Binder). Drafting a rubric for better practices was
 exceptionally difficult for interactive notebooks which are, by definition, not
@@ -162,12 +162,12 @@ lasting or ephemeral goal? These are open questions the notebook subcommittee
 had to reckon with as they formulated better practices for peer review and we
 feel that they are worth opening up to the RSE community at large.
 
-We propose to bring together a Birds of a Feather at US-RSE’23 to introduce
+We propose to bring together a Birds of a Feather at USRSE’23 to introduce
 these efforts as an area of interest for RSEs as well as explore the state of
 things right now and the areas that still need to be worked out. The format of
 the BoF will be in the form of a panel followed by a menti driven discussion
 with the audience. The panel will consist of representatives from notebook and
-notebook tool (e.g. binder) providers, AGU, and members of the US-RSE’23
+notebook tool (e.g. binder) providers, AGU, and members of the USRSE’23
 notebooks subcommittee to discuss where each is going in terms of
 supporting/using notebooks.
 
