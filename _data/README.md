@@ -1,7 +1,7 @@
 # Navigation Bars
 
 The file `navigation.yml` and all files under the `menu` directory
-control the nagivation bar at the top of the website.
+control the navigation bar at the top of the website.
 
 The standard, basic format for `navigation.yml` is:
 

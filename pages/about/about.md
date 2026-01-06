@@ -17,7 +17,7 @@ It is hosted by the US Research Software Engineer Association (US-RSE).
 We expect 300+ attendees in the San Francisco Bay Area in 2026.
 While we hope attendees will [join](https://us-rse.org/join) US-RSE, membership is not required to attend.
 
-To contact the USRSE'26 organizers, email [usrse26-conference@us-rse.org](mailto:usrse26-conference@us-rse.org).
+To contact the USRSE'26 organizers, email [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }}).
 
 Many thanks to the [conference planning committee]({{ site.baseurl }}/organization) for all of their hard work.
 

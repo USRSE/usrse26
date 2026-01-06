@@ -33,7 +33,8 @@ Session chairs are always needed at the conference, for example.
 
 <div class="alert alert-info" role="alert">
   <h4 class="alert-heading">Interested in volunteering?</h4>
-  <p>Please fill out this <a href="https://forms.gle/Rt1usiy55EcmfDJeA" target="_blank">form</a></p>
+  <p>Please fill out this <a href="{{ site.volunteer_url }}" target="_blank">form</a></p>
+  Interested chairs should apply by January 11, 2026.
 </div>
 
 ----------------
@@ -42,13 +43,14 @@ Session chairs are always needed at the conference, for example.
 
 #### Technical Chairs
 
-In this role you are responsible for the implementation of the overall technical program with creating an EasyChair instance for submissions, for assigning reviewers to the submissions, creating a schedule and co-defining the format of the conference.
-For example, whether there will be a poster session, what a submission should look like.
+In this role you are responsible for the implementation of the overall technical program, including: requesting submissions, assigning reviewers to the submissions, creating a schedule, and co-defining the format of the conference.
+For example, whether for the poster session, what a submission should look like.
+In the past, we've used EasyChair to manage submissions.
 
 #### Communications Chairs
 
-In this role you take care of the extensive communication requirements around the conference with sending emails to potential participants, sponsors, email lists, tweeting etc.
-May also include updating the web page.
+In this role you take care of the extensive communication requirements around the conference with sending emails to potential participants, sponsors, email lists, social media posts, etc.
+This also includes coordinating updates to this web site.
 
 #### Sponsorship Chairs
 
@@ -69,8 +71,8 @@ In this role you create forms and text for emails for the conference with inclus
 
 ----------------
 
-Please don't hesitate to reach out with any questions via email [usrse26-conference@us-rse.org](mailto:usrse26-conference@us-rse.org) or Slack.
+Please don't hesitate to reach out with any questions via email [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }}) or Slack.
 
 ### Contact
 
-Contact the organizers: [usrse26-conference@us-rse.org](mailto:usrse26-conference@us-rse.org)
+Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }})
