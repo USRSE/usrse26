@@ -14,7 +14,7 @@ set_last_modified: true
 
 USRSE'26 is the fourth installment of the annual US Research Software Engineering Conference.
 It is hosted by the US Research Software Engineer Association (US-RSE).
-We expect 300+ attendees in San Jose, California October 19-21, 2026.
+We expect 300+ attendees in San Jose, California, October 19-21, 2026.
 While we hope attendees will [join](https://us-rse.org/join) US-RSE, membership is not required to attend.
 
 To contact the USRSE'26 organizers, email [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }}).
