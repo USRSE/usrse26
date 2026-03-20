@@ -1,78 +1,57 @@
 ---
 layout: page
-title: Organization
+title: Planning Committee
 description: Organizing Committees
 menubar: organization
 permalink: organization/
 set_last_modified: true
 ---
 
-### General Chairs
+## General Chairs
 
 - Alex Koufos, Stanford University
 - Keith Beattie, Lawrence Berkeley National Laboratory
 
-### We are looking for volunteers for the organizing committee.
+Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }})
 
-We see this as a chance to make it a community-driven event where community members can build the program.
-We have several chair positions available, and we aim to have a chair and a co-chair for each role.
-We would also like to encourage people who do not have experience in organizing conferences to apply for a position, and we will pair them with a more experienced chair.
-It is an opportunity for you to build and demonstrate leadership skills and have deep involvement in community engagement.
-Please take under consideration that it is a commitment of about a year with regular meetings starting around January 2026, and additionally the actual tasks for the conference dependent on your role.
+## Committees
+### Technical Program Committee  
+*Contact: [usrse26-tech-committee@us-rse.org](mailto:usrse26-tech-committee@us-rse.org)* 
 
-As a chair or co-chair, you’ll have the ability to help steer the direction of your piece of the conference.
-This might mean building a small sub-team of volunteers or making decisions about the implementation, format, and structure of elements of the conference.
+#### Technical Program Chairs
+  * Drew Paine, Lawrence Berkeley National Laboratory  
+  * Hilario Torres, NSF NCAR  
 
-We will select chairs for each role by selecting at least one experienced person for each role.
-Each chair will then be paired up with someone who has less experience, if possible, as a co-chair.
-You may note your preferences and we try to assign people to their preferred roles.
-If we have more applications than roles we can fill in the first step, there will be more opportunities for roles after the committee decides about the format of the conference.
-Session chairs are always needed at the conference, for example.
+#### Committee Members  
+  * Papers: Shailaja Sampat & William Godoy  
+  * Publications: Patrick Diehl, Dan Gunter  
+  * Talks: Adam Rubens, Anas AlSobeh  
+  * Notebooks: Yuxi (Ethan) Cui, Primus Kabuo  
+  * Birds of a Feather (BoFs):Brian Kyanjo, Vani Walvekar  
+  * Workshops: Johannah (Hannah) Cohoon, Kate Arneson  
+  * Posters: Jake Stevens-Haas, Ellianna Abrahams
 
-----------------
+### Sponsorship Chairs
 
-<div class="alert alert-info" role="alert">
-  <h4 class="alert-heading">Interested in volunteering?</h4>
-  <p>Please fill out this <a href="{{ site.volunteer_url }}" target="_blank">form</a></p>
-  Interested chairs should apply by January 11, 2026.
-</div>
+* Miranda Mundt, Sandia National Laboratory
+* Sandra Gesing, US-RSE
 
-----------------
+### Communications Chairs
 
-### Roles
+* J.C. Subida, Northwestern University
+* Suzanne Prentice, Oak Ridge National Laboratory
 
-#### Technical Chairs
+### Logistics Chairs
 
-In this role you are responsible for the implementation of the overall technical program, including: requesting submissions, assigning reviewers to the submissions, creating a schedule, and co-defining the format of the conference.
-For example, whether for the poster session, what a submission should look like.
-In the past, we've used EasyChair to manage submissions.
+* Ryan Ly, Lawrence Berkeley National Laboratory
+* Julie Barnum, University of Colorado Boulder
+* Anibely Torres, Oak Ridge National Laboratory
 
-#### Communications Chairs
+### Community Engagement Chairs
 
-In this role you take care of the extensive communication requirements around the conference with sending emails to potential participants, sponsors, email lists, social media posts, etc.
-This also includes coordinating updates to this web site.
+* Cordero Core, University of Washington
+* Jennifer Gregory, University of Michigan 
 
-#### Sponsorship Chairs
-
-In this role you create a sponsor prospectus and contact sponsors.
-
-#### Logistics Chairs
-
-In this role you are responsible for logistics relating to local arrangements, travel information, hotel blocks, catering, etc.
-Being local to the conference is not required but would be a plus.
-
-#### Student Program Chairs
-
-In this role you apply for student funding and organize a mentor program or similar for the conference.
-
-#### Community Engagement Chairs
-
-In this role you create forms and text for emails for the conference with inclusive language and look at possibilities to make the conference as inclusive as possible.
-
-----------------
-
-Please don't hesitate to reach out with any questions via email [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }}) or Slack.
-
-### Contact
+## Contact
 
 Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }})
