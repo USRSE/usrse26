@@ -7,45 +7,52 @@ permalink: organization/
 set_last_modified: true
 ---
 
-### General Chairs
+## General Chairs
 
 - Alex Koufos, Stanford University
 - Keith Beattie, Lawrence Berkeley National Laboratory
 
-### Roles
+## Committees
 
-#### Technical Chairs
+### Technical Program
 
-- Drew Paine, Lawrence Berkeley National Laboratory
-- Lalo Torres, University Corporation for Atmospheric Research
+- Co-Chair: Drew Paine, Lawrence Berkeley National Laboratory
+- Co-Chair: Hilario Torres, NSF NCAR
+- Papers: Shailaja Sampat & William Godoy
+- Publications: Patrick Diehl, Dan Gunter
+- Talks: Adam Rubens, Anas AlSobeh
+- Notebooks: Yuxi (Ethan) Cui, Primus Kabuo
+- Birds of a Feather (BoFs):Brian Kyanjo, Vani Walvekar
+- Workshops: Johannah (Hannah) Cohoon, Kate Arneson
+- Posters: Jake Stevens-Haas, Ellianna Abrahams
 
-#### Communications Chairs
+### Communications
 
-- Suzanne Prentice, Oak Ridge National Laboratory
-- J.C. Subida, Northwestern University
+- Co-Chair: Suzanne Prentice, Oak Ridge National Laboratory
+- Co-Chair: J.C. Subida, Northwestern University
 
-#### Sponsorship Chairs
+### Sponsorship
 
-- Miranda Mundt, Sandia National Laboratories
-- Sandra Gesing, US Research Software Engineer Association
+- Co-Chair: Miranda Mundt, Sandia National Laboratories
+- Co-Chair: Sandra Gesing, US Research Software Engineer Association
 
-#### Logistics Chairs
+### Logistics
 
-- Julie Barnum, University of Colorado Boulder
-- Ryan Ly, Lawrence Berkeley National Laboratory
-- Anibely Torres, Oak Ridge National Laboratory
+- Co-Chair: Julie Barnum, University of Colorado Boulder
+- Co-Chair: Ryan Ly, Lawrence Berkeley National Laboratory
+- Co-Chair: Anibely Torres, Oak Ridge National Laboratory
 
-#### Student Program Chairs
+### Student Program
 
 In this role you apply for student funding and organize a mentor program or similar for the conference.
 
-#### Community Engagement Chairs
+### Community Engagement
 
-- Cordero Core, University of Washington eScience Institute
-- Jennifer Gregory, University of Michigan
+- Co-Chair: Cordero Core, University of Washington eScience Institute
+- Co-Chair: Jennifer Gregory, University of Michigan
 
 ----------------
 
-### Contact
+## Contact
 
 Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }})
