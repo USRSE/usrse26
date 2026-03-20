@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Organization
+title: Planning Committee
 description: Organizing Committees
 menubar: organization
 permalink: organization/
@@ -12,46 +12,45 @@ set_last_modified: true
 - Alex Koufos, Stanford University
 - Keith Beattie, Lawrence Berkeley National Laboratory
 
+Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }})
+
 ## Committees
+### Technical Program Committee  
+*Contact: [usrse26-tech-committee@us-rse.org](mailto:usrse26-tech-committee@us-rse.org)* 
 
-### Technical Program
+#### Technical Program Chairs
+  * Drew Paine, Lawrence Berkeley National Laboratory  
+  * Hilario Torres, NSF NCAR  
 
-- Co-Chair: Drew Paine, Lawrence Berkeley National Laboratory
-- Co-Chair: Hilario Torres, NSF NCAR
-- Papers: Shailaja Sampat & William Godoy
-- Publications: Patrick Diehl, Dan Gunter
-- Talks: Adam Rubens, Anas AlSobeh
-- Notebooks: Yuxi (Ethan) Cui, Primus Kabuo
-- Birds of a Feather (BoFs):Brian Kyanjo, Vani Walvekar
-- Workshops: Johannah (Hannah) Cohoon, Kate Arneson
-- Posters: Jake Stevens-Haas, Ellianna Abrahams
+#### Committee Members  
+  * Papers: Shailaja Sampat & William Godoy  
+  * Publications: Patrick Diehl, Dan Gunter  
+  * Talks: Adam Rubens, Anas AlSobeh  
+  * Notebooks: Yuxi (Ethan) Cui, Primus Kabuo  
+  * Birds of a Feather (BoFs):Brian Kyanjo, Vani Walvekar  
+  * Workshops: Johannah (Hannah) Cohoon, Kate Arneson  
+  * Posters: Jake Stevens-Haas, Ellianna Abrahams
 
-### Communications
+### Sponsorship Chairs
 
-- Co-Chair: Suzanne Prentice, Oak Ridge National Laboratory
-- Co-Chair: J.C. Subida, Northwestern University
+* Miranda Mundt, Sandia National Laboratory
+* Sandra Gesing, US-RSE
 
-### Sponsorship
+### Communications Chairs
 
-- Co-Chair: Miranda Mundt, Sandia National Laboratories
-- Co-Chair: Sandra Gesing, US Research Software Engineer Association
+* J.C. Subida, Northwestern University
+* Suzanne Prentice, Oak Ridge National Laboratory
 
-### Logistics
+### Logistics Chairs
 
-- Co-Chair: Julie Barnum, University of Colorado Boulder
-- Co-Chair: Ryan Ly, Lawrence Berkeley National Laboratory
-- Co-Chair: Anibely Torres, Oak Ridge National Laboratory
+* Ryan Ly, Lawrence Berkeley National Laboratory
+* Julie Barnum, University of Colorado Boulder
+* Anibely Torres, Oak Ridge National Laboratory
 
-### Student Program
+### Community Engagement Chairs
 
-In this role you apply for student funding and organize a mentor program or similar for the conference.
-
-### Community Engagement
-
-- Co-Chair: Cordero Core, University of Washington eScience Institute
-- Co-Chair: Jennifer Gregory, University of Michigan
-
-----------------
+* Cordero Core, University of Washington
+* Jennifer Gregory, University of Michigan 
 
 ## Contact
 
