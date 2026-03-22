@@ -1,0 +1,33 @@
+<div class="card submission-track-card">
+  <div class="card-header">
+    <p class="card-header-title">{{ include.track.name }}</p>
+  </div>
+  <div class="card-content">
+    <p>{{ include.track.description }}</p>
+
+    {% if include.track.submission_details %}
+    <p><strong>Submission:</strong> {{ include.track.submission_details }}</p>
+    {% endif %}
+
+    {% if include.track.template_url %}
+    <p><strong>Template:</strong>
+      <a href="{{ include.track.template_url }}">{{ include.track.template_name }}</a>
+    </p>
+    {% endif %}
+
+    <ul class="submission-track-meta">
+      {% if include.track.format %}
+      <li><strong>Format:</strong> {{ include.track.format }}</li>
+      {% endif %}
+      <li><strong>Deadline:</strong> {{ include.track.deadline }}</li>
+      <li><strong>Notification:</strong> {{ include.track.notification }}</li>
+      <li><strong>Session time:</strong> {{ include.track.session_time }}</li>
+    </ul>
+
+    {% if include.track.publication %}
+    <div class="submission-track-publication">
+      <strong>Publication:</strong> {{ include.track.publication | markdownify }}
+    </div>
+    {% endif %}
+  </div>
+</div>

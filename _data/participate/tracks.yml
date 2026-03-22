@@ -1,0 +1,113 @@
+- name: Paper
+  description: >
+    Original work, not published elsewhere, describing a contribution of interest
+    and relevant to the RSE community.
+  submission_details: >
+    10 page maximum (figures included; references and the US-RSE connection
+    statement are excluded from the page limit).
+  template_name: IEEE Manuscript Template
+  template_url: https://www.ieee.org/conferences/publishing/templates
+  format: PDF
+  deadline: "Friday, May 22, 2026"
+  notification: "Tuesday, July 28, 2026"
+  session_time: 15 minute presentation
+  publication: >
+    Papers will be published on [Zenodo](https://zenodo.org/communities/usrse26/).
+    Authors will also have an opportunity to submit their paper to a special
+    journal issue after the conference.
+
+- name: Talk
+  description: >
+    An abstract for a talk on any topic of interest to the conference. May cover
+    work published elsewhere.
+  submission_details: Abstract, 1 page maximum.
+  template_name: Talk Submission Template
+  template_url: https://docs.google.com/document/d/1gdQrD-sFaEJI8XmzENmGKS9q4kZGHStwfexmxbZxNUk/edit?tab=t.0#heading=h.gjdgxs
+  format: PDF
+  deadline: "Friday, May 22, 2026"
+  notification: "Tuesday, July 28, 2026"
+  session_time: 15 minute presentation
+  publication: >
+    Abstracts and presentation slides will be included in the conference
+    proceedings on [Zenodo](https://zenodo.org/communities/usrse26/).
+
+- name: Notebook
+  description: >
+    Submissions demonstrating a computational workflow or analysis using a common
+    format that is relevant to and reproducible by other community members.
+  submission_details: >
+    Abstract (300 words maximum) and a draft of the notebook accessible via
+    public URL. A brief abstract must also be entered directly in EasyChair.
+  format: >
+    URL to a public Git repository (e.g., GitHub) or public platform (e.g.,
+    Google Colab) containing a README and a Jupyter Notebook, R Markdown, or
+    other commonly used format.
+  deadline: "Friday, May 22, 2026"
+  notification: "Tuesday, July 28, 2026"
+  session_time: 15 minute presentation
+  publication: >
+    Notebooks will be included in the conference proceedings on
+    [Zenodo](https://zenodo.org/communities/usrse26/).
+
+- name: Birds of a Feather (BoF)
+  description: >
+    Sessions providing conference attendees with the opportunity to discuss a
+    topic of shared interest, ideally likely to appeal to a quarter to a half of
+    conference attendees.
+  submission_details: >
+    A short description (250 words maximum) for the conference program, plus a
+    session information abstract (1 page maximum) covering: topic summary,
+    target audience, format, and presenters.
+  template_name: BoF Submission Template
+  template_url: https://docs.google.com/document/d/1gQcXHQ8oICNyNERRoOyTX3lEApZRzawDK09BMl4akeU/edit?usp=sharing
+  format: PDF
+  deadline: "Friday, May 22, 2026"
+  notification: "Tuesday, July 28, 2026"
+  session_time: 75–90 minute session
+  publication: >
+    BoF descriptions are published in the conference program and on the website.
+    Abstracts are not included in the conference proceedings.
+
+- name: Workshop
+  description: >
+    Sessions that teach participants a new skill and include exercises or other
+    active learning components. Both technical and professional skills workshops
+    are welcome.
+  submission_details: >
+    A short description (250 words maximum) for the conference program, plus a
+    session information abstract (1 page maximum) covering: topic summary,
+    activities and exercises, target audience and learning outcomes, and format.
+  template_name: Workshop Submission Template
+  template_url: https://docs.google.com/document/d/1pEHabwQAmRIf2vpaTlDZJ5t7meQdIMGHWweqA4N1lCs/edit?usp=sharing
+  format: PDF
+  deadline: "Friday, May 22, 2026"
+  notification: "Tuesday, July 28, 2026"
+  session_time: 90 minute session
+  publication: >
+    Workshop descriptions are published in the conference program and on the
+    website. Abstracts are not included in the conference proceedings.
+
+- name: Poster
+  description: >
+    A chance to discuss your work — both established or new — with the community
+    during a dynamic reception. Both typical academic posters and less traditional
+    poster formats are encouraged.
+  submission_details: Abstract, 1 page maximum.
+  template_name: Poster Submission Template
+  template_url: https://docs.google.com/document/d/11jKPQu_CYlJeFUdCBc8D1ftmtHvUtw601cF0-6F9upw/edit?tab=t.0#heading=h.gjdgxs
+  format: PDF
+  deadline: "Friday, August 7, 2026"
+  notification: "Tuesday, August 25, 2026"
+  session_time: 90 minute session
+  publication: >
+    Posters will be included in the conference proceedings on
+    [Zenodo](https://zenodo.org/communities/usrse26/).
+
+- name: Rapid Access Microtalk (RAM)
+  description: >
+    An opportunity organised in person at the conference to present a 5-minute
+    rapid-fire talk on any topic of your choice. This session encourages
+    spontaneity and creativity at the time of the event itself.
+  session_time: 5 minute talk
+  deadline: "In person at USRSE'26"
+  notification: "In person at USRSE'26"
