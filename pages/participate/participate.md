@@ -2,7 +2,7 @@
 layout: page
 title: Participate
 description: 
-menubar: participate
+menubar: 
 permalink: participate/
 set_last_modified: true
 ---
