@@ -297,6 +297,13 @@ th {
   color: #283040;
   font-weight: bold; }
 
+/* Fix: allow flex columns to shrink below content width so table overflow-x works */
+.columns > .column {
+  min-width: 0; }
+
+.content {
+  overflow-x: auto; }
+
 :not(.responsive-table) > table {
   display: block;
   margin: 1.875em 0;
