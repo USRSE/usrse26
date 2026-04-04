@@ -565,6 +565,18 @@ textarea {
     top: 0;
     width: 5px; }
 
+.grid-item-title .line-left {
+  position: relative; }
+  .line-left:after {
+    background: var(--us-rse-main);
+    display: block;
+    content: "";
+    height: 100%;
+    left: -1px;
+    position: absolute;
+    top: 0;
+    width: 5px; }
+
 .js-reframe {
   margin: 1.875em 0; }
   .js-reframe:first-child {
