@@ -57,7 +57,7 @@ To develop the website, launch the container using the following command, where 
 ```bash
 docker run --rm -it -p 4000:4000 \
     -v $(pwd):/srv/jekyll \
-    us-rse-con-2026-website:latest \
+    us-rse-con-2024-website:latest \
     bundle exec jekyll serve --host=0.0.0.0 --watch --drafts
 ```
 

@@ -1,0 +1,35 @@
+{% if page.cards %}
+    {% assign cards=site.data.cards.[page.cards] %}
+
+<section id="features" class="block block-grid outer">
+  {% if cards.section_title %}
+    <center>
+      <h1>{{ cards.section_title }}</h1>
+    </center>
+    <br>
+  {% endif %}
+
+  <div class="inner">    
+    <div class="block-content">
+      <div class="grid grid-col-3">
+        {% for card in cards.items %}
+        <div class="grid-item">
+          <div class="grid-item-inside">
+            <h3 class="grid-item-title line-left">
+             {{ card.title }}
+            </h3>
+            <div class="grid-item-content">
+               {% if card.subtitle %}<p>{{ card.subtitle | newline_to_br }}</p>{% endif %}
+               {% if card.description %}<p>{{ card.description | newline_to_br }}</p>{% endif %}
+            </div>
+            <div class="grid-item-buttons">
+            {% if card.link %}
+            <a href="{{ card.link | relative_url }}">
+             {{ card.link_name }}</a>{% endif %}
+            </div>
+          </div>
+        </div>{% endfor %}
+      </div>
+    </div>
+  </div>
+</section>{% endif %}
