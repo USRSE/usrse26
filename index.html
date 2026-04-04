@@ -4,6 +4,7 @@ title:
 subtitle: 
 use-site-title: true
 fb-img:
+cards: home
 ---
 <figure>
   <img src="{{ site.baseurl }}/assets/img/home_banner.jpg"
@@ -11,65 +12,8 @@ fb-img:
   <figcaption style="margin-top: 0; text-align: right;">Photo courtesy of <a href="https://www.sanjose.org">Visit San
       Jose</a></figcaption>
 </figure>
-</center>
-<hr>
 
-<div class="main-explain-area jumbotron">
-
-  <center>
-    <h1>
-      USRSE'26 will be at the <br>
-      <a href="https://www.marriott.com/en-us/hotels/sjcsj-san-jose-marriott/overview/"
-        target="_blank"
-        style="color: rgb(107, 32, 83); text-decoration: none;">
-        San Jose Marriott
-      </a>
-	  <br>
-      from <span style="color: rgb(107, 32, 83)">{{ site.conf_start_date | date: "%B %-d" }}-{{ site.conf_end_date | date: "%-d, %Y" }}</span> <br>
-      in San Jose, California!
-    </h1>
-
-    Stay tuned for more details about the conference program, registration, and travel information!
-
-  </center>
-  <div class="alert alert-light mt-4" role="alert">
-    <h3>📢 Call for Proposals Now Open!</h3>
-  
-    <p>
-      We are now accepting proposals for talks, panels, workshops, and posters for US-RSE'26!
-      <br>
-      Check out the
-      <a href="{{ site.baseurl }}/participate/" class="alert-link">Participate</a>
-      page for more information about how to submit your proposal and the
-      different types of sessions we are looking for.
-    </p>
-
-    <h3>🤝 Call for Reviewers</h3>
-    
-    <p>
-      The integrity of this process relies on the community.
-      If you are interested in shaping the program and providing constructive
-      feedback to peers, you can volunteer as a reviewer via this
-      <a href="https://forms.gle/hDGsK52sJFqUA2MA7" target="_blank">Google Form</a>.
-      A dedicated Reviewers' Guide will be provided to ensure consistency and fairness.
-      <br>
-      🔗 Learn more and apply: <a href="{{ site.baseurl }}/participate/">https://us-rse.org/usrse26/participate/</a>
-    </p>
-  </div>
-  
-  <h3>Join the mailing list</h3>
-  <p>
-  Do you want to receive news about the US-RSE conference series? Join our mailing
-  list to get direct news about all US-RSE conferences.
-  <p>
-  <a href="{{ site.conf_mailing_list }}" target="_blank" class="btn btn-light btn-lg" role="button" alt="Button link to the US-RSE Conference series mailing list page">Join</a>
-  
-  <h3> Have questions? </h3>
-  <p>
-  Contact the organizers at <a href="mailto:{{ site.conf_exec_email }}">{{ site.conf_exec_email }}</a>.
-  </p>
-
-</div>
+{% include cards.html %}
 
 
 <h1><center> Conference News & Updates </center> </h1>
