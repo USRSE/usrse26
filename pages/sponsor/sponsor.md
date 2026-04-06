@@ -249,6 +249,6 @@ All participants must follow the
 
 For any inquiries or questions about sponsorship opportunities, please get in
 touch with us at <sponsor-contact@us-rse.org>. Our team will be happy to
-provide you with more information and work withyou to find the sponsorship
+provide you with more information and work with you to find the sponsorship
 level that best fits your needs. Thank you for considering sponsoring the
 USRSE Conference!
