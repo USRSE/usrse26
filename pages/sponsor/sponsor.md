@@ -58,7 +58,7 @@ We expect:
 <tbody>
   <tr>
     <td></td>
-    <td colspan="4"><center><strong>Corporate / National Labs & Small* Corporate / Universities, Non-Profits</strong></center></td>
+    <td colspan="4"><center><strong>Corporate / National Labs / Universities, Non-Profits, & Small* Corporate</strong></center></td>
   </tr>
   <tr>
     <td><strong>Price</strong></td>
