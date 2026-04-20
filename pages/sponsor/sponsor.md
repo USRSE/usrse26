@@ -10,7 +10,7 @@ set_last_modified: true
 
 ## Introduction
 
-Dear Prospective US-RSE’26 Conference Sponsor,
+Dear Prospective US-RSE'26 Conference Sponsor,
 
 We are delighted to invite you to join us for the United States Research
 Software Engineer (US-RSE) Conference!
@@ -68,7 +68,7 @@ We expect:
     <td>$2.5K / $1.5K / $900</td>
   </tr>
   <tr>
-    <td rowspan="8"><strong>Features</strong></td>
+    <td rowspan="9"><strong>Features</strong></td>
     <td>3 Conference registrations</td>
     <td>2 Conference registrations</td>
     <td>1 Conference registration</td>
@@ -87,14 +87,20 @@ We expect:
     <td></td>
   </tr>
   <tr>
+    <td>Job Fair Participation, included</td>
+    <td>Job Fair Participation, discounted rate</td>
+    <td></td>
+    <td></td>
+  </tr>
+  <tr>
     <td>Name and logo on website and program</td>
     <td>Name and logo on website and program</td>
     <td>Name and logo on website and program</td>
     <td>Name and logo on website and program</td>
   </tr>
   <tr>
-    <td>Email to attendee list (on sponsor’s behalf)</td>
-    <td>Email to attendee list (on sponsor’s behalf)</td>
+    <td>Email to attendee list (on sponsor's behalf)</td>
+    <td>Email to attendee list (on sponsor's behalf)</td>
     <td></td>
     <td></td>
   </tr>
@@ -157,79 +163,71 @@ early-career professionals, and experienced research software engineers.
 
 ---
 
-## A La Carte and Event Sponsorship Opportunities
+## Event or Service Opportunities
 
-In addition to standard tiers, we offer **targeted sponsorship opportunities**
-that provide focused visibility and engagement.
+Sponsors may support specific **conference events, services, and attendee experiences**.
+These opportunities provide high-impact visibility while directly enhancing the conference.
 
-> **Note:** Some pricing is still being finalized. Contact us for details.
+> **Note:** Some pricing is still being finalized. [Contact us](mailto:sponsor-contact@us-rse.org) for details.
 
-### Featured Opportunities
+### Conference Events and Experiences
 
-- **Conference Photographer** — *TBD*
-- **Conference Dinner / Signature Event** — *TBD*
+- **Conference Dinner / Signature Event**
+- **Opening Reception**
+- **Student Event / Mixer**
+- **Student–Mentor Lunch / Offsite Experience**\
+- **Special Suite / Meeting Space**
+
+### Attendee Services and Amenities
+
 - **Coffee Breaks / Refreshments** — *TBD*
-- **WiFi Sponsorship** — *TBD*
+- **Conference Photographer** — *TBD*
 
----
-
-### Community & Student-Focused
+### Student and Community Support
 
 - **Student Sponsorship (per attendee)** — *~$2,000 / person*
-- **Student Event / Mixer** — *TBD*
-- **Student–Mentor Lunch / Offsite Experience** — *TBD*
+
+Support the participation of students and early-career attendees and help broaden access to the conference.
 
 ---
 
-### Awards & Recognition
+## Promotional Opportunities
 
-- **Best Poster Award** — *TBD*
-- **Best Paper Award** — *TBD*
-- **Best Rapid Access Microtalk (RAM) Award** — *TBD*
+These opportunities are designed to maximize your organization's **brand visibility** and **presence** throughout the conference.
 
-Sponsors may provide prize funding, present awards, and receive branding.
-
----
-
-### On-Site Visibility
+### On-Site Branding
 
 - **Lanyards** — *TBD*
 - **Conference Badges (Printing)** — *TBD*
-- **Charging Stations** — *TBD*
 - **Wayfinding Signage** — *TBD*
 - **Printed Programs** — *TBD*
+- **WiFi Service** — *TBD*
+- **Charging Stations** — *TBD*
+
+### Awards and Recognition
+
+- **Best Poster Award** — $500
+- **Best Paper Award** — $500
+- **Best Rapid Access Microtalk (RAM) Award** — $500
+
+Sponsors may provide prize funding, participate in award presentation, and receive recognition during the conference.
 
 ---
 
-### Experience Enhancements
+## Additional Custom Opportunities
 
-- **Special Suite / Meeting Space** — *TBD*
-- **Opening Reception** — *TBD*
-
----
-
-## Additional Conference Support Opportunities
-
-Sponsors may also:
+We welcome creative collaborations. Sponsors may also:
 
 - Provide branded swag for attendee bags
 - Host off-site social events
-- Sponsor refreshments or networking events
-- Support student participation programs
+- Sponsor informal networking gatherings
+- Support student participation initiatives
+
+If you have a unique idea, we're happy to work with you to design a custom sponsorship experience.
 
 ---
 
-## Marketing and Recruitment Opportunities
-
-As a sponsor, your organization will receive:
-
-- **Website and promotional visibility**
-- **Recognition in the conference program**
-- **Networking opportunities with attendees**
-
----
-
-## US-RSE Code of Conduct
+## Code of Conduct
 
 All participants must follow the
 [Code of Conduct](https://us-rse.org/about/code-of-conduct/).
