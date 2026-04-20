@@ -175,7 +175,7 @@ These opportunities provide high-impact visibility while directly enhancing the 
 - **Conference Dinner / Signature Event**
 - **Opening Reception**
 - **Student Event / Mixer**
-- **Student–Mentor Lunch / Offsite Experience**\
+- **Student–Mentor Lunch / Offsite Experience**
 - **Special Suite / Meeting Space**
 
 ### Attendee Services and Amenities
