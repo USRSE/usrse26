@@ -12201,6 +12201,16 @@ article > a:visited:hover {
     color: #741755;
 }
 
+.section-subtitle {
+    color: #67758d;
+    font-size: 1.125em;
+    line-height: 1.6;
+    max-width: 680px;
+    margin: -0.75em auto 0;
+    text-align: center;
+
+}
+
 /* === Sponsor Carousel === */
 .sponsor-carousel {
   position: relative;

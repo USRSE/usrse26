@@ -6,7 +6,14 @@
     <center>
       <h1>{{ cards.section_title }}</h1>
     </center>
-    <br>
+  {% endif %}
+  {% if cards.section_subtitle %}
+  <center>
+    <p class="section-subtitle">
+      {{ cards.section_subtitle }}
+    </p>
+  </center>
+  <br>
   {% endif %}
 
   <div class="inner">    
