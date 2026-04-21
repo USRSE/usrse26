@@ -10,10 +10,10 @@ set_last_modified: true
 
 ## Introduction
 
-Dear Prospective US-RSE'26 Conference Sponsor,
+Dear Prospective USRSE'26 Conference Sponsor,
 
 We are delighted to invite you to join us for the United States Research
-Software Engineer (US-RSE) Conference!
+Software Engineer (USRSE) Conference!
 
 The US-RSE Association is the leading professional community of research
 software engineering practitioners in the United States. Our members are
@@ -24,7 +24,8 @@ As a sponsor, you will connect with a highly skilled and engaged audience of
 research software engineers, developers, and technical leaders from academia,
 national labs, and industry.
 
-We anticipate approximately 300 attendees and a growing, vibrant community.
+For our conference in October 19-21, 2026, in San Jose, CA, we anticipate
+approximately 300 attendees and a growing, vibrant community.
 Sponsorship provides a unique opportunity to support this important field while
 increasing your organization's visibility and recruitment reach.
 
@@ -40,6 +41,38 @@ We expect:
 - ~300 in-person attendees
 - Representation from academia, national labs, and industry
 - Nationwide and international participation
+- Social media presence
+  - Slack: 3400+ | X/Twitter: 2600+ | Mastodon: 400+ | LinkedIn: 1100+
+
+
+<div class="sponsor-carousel">
+  <div class="carousel-track">
+    {% for image in site.static_files %}
+      {% if image.path contains '/assets/img/sponsors/' %}
+        <img src="{{ image.path | relative_url }}" alt="USRSE sponsor engagement">
+      {% endif %}
+    {% endfor %}
+  </div>
+  <button class="carousel-btn prev" aria-label="Previous image">&#8249;</button>
+  <button class="carousel-btn next" aria-label="Next image">&#8250;</button>
+</div>
+
+<script>
+const track = document.querySelector('.carousel-track');
+const imgs = track.querySelectorAll('img');
+let current = 0;
+
+function goTo(n) {
+  current = (n + imgs.length) % imgs.length;
+  track.style.transform = `translateX(-${current * 100}%)`;
+}
+
+document.querySelector('.next').addEventListener('click', () => goTo(current + 1));
+document.querySelector('.prev').addEventListener('click', () => goTo(current - 1));
+
+setInterval(() => goTo(current + 1), 4000);
+</script>
+
 
 ---
 
@@ -201,8 +234,6 @@ These opportunities are designed to maximize your organization's **brand visibil
 - **Conference Badges (Printing)** — *TBD*
 - **Wayfinding Signage** — *TBD*
 - **Printed Programs** — *TBD*
-- **WiFi Service** — *TBD*
-- **Charging Stations** — *TBD*
 
 ### Awards and Recognition
 
