@@ -20,9 +20,9 @@ software engineering practitioners in the United States. Our members are
 dedicated to creating research software that is sustainable, reliable, and
 impactful across disciplines.
 
-As a sponsor, you will connect with a highly skilled and engaged audience of
-research software engineers, developers, and technical leaders from academia,
-national labs, and industry.
+As a sponsor, you will connect with a highly skilled and influential
+audience of research software engineers, scientists, developers, and
+technical decision-makers from academia, national labs, and industry.
 
 For our conference in October 19-21, 2026, in San Jose, CA, we anticipate
 approximately 300 attendees and a growing, vibrant community.
