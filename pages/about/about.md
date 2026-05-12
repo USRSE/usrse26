@@ -12,6 +12,7 @@ set_last_modified: true
 
 <div style="width: 30%;">
     <img src="{{ site.baseurl }}/assets/img/usrse26-round-logo.svg">
+    <p style="text-align: center; font-size: 0.7em;">Logos design by Katrina Turner, ESnet</p>
 </div>
 
 

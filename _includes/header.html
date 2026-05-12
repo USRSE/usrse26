@@ -2,9 +2,7 @@
     <div class="container">
         <div class="navbar-brand">
             <a href="{{ site.baseurl }}/" class="navbar-item {% if page.url == "/" %}is-active{% endif %}">
-                <div style="width: 10%;">
-                    <img src="{{ site.baseurl }}/assets/img/usrse26-long-logo.svg">
-                </div>
+            <img src="{{ site.baseurl }}/assets/img/usrse26-long-logo.svg" style="width: 10%;">
             </a>
             <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navMenu" :class="{ 'is-active': openNav }" x-on:click="openNav = !openNav">
                 <span aria-hidden="true"></span>
