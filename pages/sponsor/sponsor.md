@@ -78,6 +78,8 @@ setInterval(() => goTo(current + 1), 4000);
 
 ## Sponsorship Levels
 
+> **NOTE**: If you are interested in a joint sponsorship with another institution, please [contact us](mailto:sponsor-contact@us-rse.org) to discuss.
+
 <table class="tg">
 <thead>
   <tr>
