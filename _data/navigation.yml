@@ -4,6 +4,9 @@
   link: program/
 - name: Attend
   link: attend/
+  dropdown:
+    - name: Overview
+      link: attend/
 - name: Organization
   link: organization/
 - name: Sponsor
