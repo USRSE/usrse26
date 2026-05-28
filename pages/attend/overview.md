@@ -9,7 +9,7 @@ menubar_toc: true
 set_last_modified: true
 ---
 
-<img src = "https://us-rse.org/usrse25/assets/img/group_long.jpg">
+<img src = "{{ site.baseurl }}//assets/img/prev-conf/USRSEConference2025_group.jpg">
 
 ## Venue Information
 
