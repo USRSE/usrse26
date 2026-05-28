@@ -1,6 +1,6 @@
 - label: Attend
   items:
-    - name: Overview
+    - name: Overview 
       link: attend/
     - name: Hotel and Travel
       link: attend/travel/

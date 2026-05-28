@@ -27,7 +27,7 @@ Additional evening reception events with some food and drinks will also be held 
 * The San Francisco International Airport (SFO) is about 36 miles (45-75+ minutes by car, depending on traffic) from the conference hotel.
 * The Oakland International Airport (OAK) is about 36 miles (45-75+ minutes by car, depending on traffic) from San Jose and may offer less expensive flights from some parts of the country.
 
-### Transportation around the Bay
+## Transportation around the Bay
 
 * **Taxi/Rideshare:**
   Taxis and rideshares will be the most convenient option from any airport to the hotel, especially if you're carrying luggage or arriving during off-peak hours. If you're being reimbursed by your company, this is usually the simplest and most efficient choice.
