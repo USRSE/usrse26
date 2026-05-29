@@ -43,10 +43,6 @@ All submissions are peer-reviewed for quality, relevance, and novelty, which wil
 
 **Please note** *— if your Paper, Talk, Notebook, Birds of a Feather, or Workshop submission is rejected we would highly encourage you to consider submitting a Poster for an opportunity to engage with the community. The Poster deadline is intentionally after notification of acceptance or rejection for the other tracks. If your Poster submission is rejected then we would furthermore encourage you to participate in the event via the Rapid Access Microtalks opportunity if you are still interested and able to attend in person.*
 
-### **Volunteer to Review**
-
-You can volunteer as a reviewer by filling out this [Google Form](https://forms.gle/hDGsK52sJFqUA2MA7). A Reviewers’ guide will be shared with reviewers for reference.
-
 # **USRSE'26 Submission Information Summary**
 
 The following table summarizes the key information for the submission types for USRSE'26. Note: 

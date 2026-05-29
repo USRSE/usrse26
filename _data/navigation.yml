@@ -4,6 +4,11 @@
   link: program/
 - name: Attend
   link: attend/
+  dropdown:
+    - name: Overview
+      link: attend/
+    - name: Hotel and Travel
+      link: attend/travel/
 - name: Organization
   link: organization/
 - name: Sponsor
