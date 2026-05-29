@@ -39,7 +39,7 @@ jobs:
         timeout: 10
 
         # Exclude these patterns from the checker
-        exclude_patterns: supercomputing.org,https://www.hyatt.com/shop/chixl?location=Hyatt%20House%20Chicago%20%2F%20West%20Loop-Fulton%20Market&checkinDate=2023-10-15&checkoutDate=2023-10-19&rooms=1&adults=1&kids=0&corp_id=g-uicf
+        exclude_patterns: https://www.amtrak.com/capitol-corridor-train
 
         # Exclude these files from the checker
         exclude_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows
