@@ -6,13 +6,7 @@ items:
     description: "Share your work with the RSE community. Submissions open now!"                                                                                                                                                                                                                      
     link: /participate/                                                                                                                                                                                                                                                                               
     link_name: Learn More                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                      
-  - title: Review
-    subtitle: "Help shape the program"
-    description: "Volunteer as a reviewer to provide constructive feedback on proposals submitted to USRSE'26."
-    link: https://forms.gle/hDGsK52sJFqUA2MA7
-    link_name: Sign Up to Review
-                                                                                                                                                                                                                                                                                                      
+
   - title: Sponsor
     subtitle: "Support the RSE community"
     description: "Help make USRSE'26 possible. View our sponsorship packages."
