@@ -9,6 +9,8 @@
       link: attend/
     - name: Hotel and Travel
       link: attend/travel/
+    - name: Photo Policy
+      link: attend/photos/
 - name: Organization
   link: organization/
 - name: Sponsor
