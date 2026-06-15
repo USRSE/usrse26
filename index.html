@@ -20,22 +20,41 @@ cards: home
 
 {% include cards.html %}
 
-<div class="sectionheader" style="text-align: center;">
-  <h2>Conference Sponsors</h2>
+<div
+  class="sectionheader"
+  style="
+    background-color: #C16531;
+    border-radius: 14px;
+    padding: 12px 20px;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  "
+>
+  <h2 style="margin: 0; color: white;">Conference Sponsors</h2>
 </div>
 
-<div style="width: 100%; padding-top: 5%; clear: both;">
-  <h3>Gold Sponsors</h3>
-</div>
+<div style="padding-top: 2rem; text-align: center;">
+  <h3 style="margin-bottom: 1.5rem;">Gold Sponsors</h3>
 
-<div style="margin-top: 1rem; overflow: auto;">
-  <a href="https://globus.org/">
-    <img
-      src="{{ site.baseurl }}/assets/img/sponsor-logos/globus.png"
-      alt="Globus logo"
-      style="display: block; width: 20%; margin-left: 4%;"
-    />
-  </a>
+  <div
+    style="
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 2rem;
+      width: 100%;
+    "
+  >
+    <a href="https://globus.org/">
+      <img
+        src="{{ site.baseurl }}/assets/img/sponsor-logos/globus.png"
+        alt="Globus logo"
+        style="max-width: 220px; width: 100%; height: auto; display: block;"
+      />
+    </a>
+
+  </div>
 </div>
 
 <h1 style="text-align: center;">Conference News &amp; Updates</h1>
