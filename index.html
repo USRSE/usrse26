@@ -1,55 +1,55 @@
 ---
 layout: page
-title: 
-subtitle: 
+title:
+subtitle:
 use-site-title: true
 fb-img:
 cards: home
 ---
+
 <figure>
-  <img src="{{ site.baseurl }}/assets/img/home_banner.jpg"
-    style="width:100%; border-radius: 15px; display: block; margin-bottom: 0;" alt="US-RSE 2026 Conference Banner" />
-  <figcaption style="margin-top: 0; text-align: right;">Photo courtesy of <a href="https://www.sanjose.org">Visit San
-      Jose</a></figcaption>
+  <img
+    src="{{ site.baseurl }}/assets/img/home_banner.jpg"
+    alt="US-RSE 2026 Conference Banner"
+    style="width: 100%; border-radius: 15px; display: block; margin-bottom: 0;"
+  />
+  <figcaption style="margin-top: 0; text-align: right;">
+    Photo courtesy of <a href="https://www.sanjose.org">Visit San Jose</a>
+  </figcaption>
 </figure>
 
 {% include cards.html %}
 
-
-<div class="sectionheader">
-  <center>
-<h2 class="sectionheader"> Conference Sponsors </h2>
-  </center>
+<div class="sectionheader" style="text-align: center;">
+  <h2>Conference Sponsors</h2>
 </div>
 
-<div style="display: block; width: 100%; padding-top: 5%; clear: both;">
-<h3>Gold Sponsors</h3>
-</div>
-<div>
-    <br>
-<a href="https://globus.org/">
-    <img src="{{ site.baseurl }}/assets/img/sponsor-logos/globus.png"
-         style="display: block; float: left; margin-top: 1%; margin-left: 4%; margin-right: auto; width: 20%;"
-         alt="Globus logo">
-</a>
+<div style="width: 100%; padding-top: 5%; clear: both;">
+  <h3>Gold Sponsors</h3>
 </div>
 
+<div style="margin-top: 1rem; overflow: auto;">
+  <a href="https://globus.org/">
+    <img
+      src="{{ site.baseurl }}/assets/img/sponsor-logos/globus.png"
+      alt="Globus logo"
+      style="display: block; width: 20%; margin-left: 4%;"
+    />
+  </a>
+</div>
 
-<h1><center> Conference News & Updates </center> </h1>
+<h1 style="text-align: center;">Conference News &amp; Updates</h1>
 <hr>
-
 
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+      <h2 class="post-title">{{ post.title }}</h2>
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+      {% endif %}
     </a>
 
     <p class="post-meta">
@@ -60,18 +60,19 @@ cards: home
       {% if post.image %}
       <div class="post-image">
         <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
+          <img src="{{ post.image }}" alt="" />
         </a>
       </div>
       {% endif %}
+
       <div class="post-entry">
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
-        <br>
-        <hr>
+        <br />
+        <hr />
       </div>
     </div>
 
@@ -79,16 +80,15 @@ cards: home
     <div class="blog-tags">
       Tags:
       {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
+        {% for tag in post.tags %}
+        <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+        {% endfor %}
       {% else %}
         {{ post.tags | join: ", " }}
       {% endif %}
     </div>
     {% endif %}
-
-   </article>
+  </article>
   {% endfor %}
 </div>
 
@@ -106,3 +106,4 @@ cards: home
   {% endif %}
 </ul>
 {% endif %}
+
