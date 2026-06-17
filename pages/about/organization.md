@@ -3,7 +3,7 @@ layout: page
 title: Planning Committee
 description: Organizing Committees
 menubar: organization
-permalink: organization/
+permalink: about/organization/
 set_last_modified: true
 ---
 
