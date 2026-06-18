@@ -9,11 +9,11 @@ set_last_modified: true
 
 ## Registration Rates
 
-| Registration Type & Deadline  | Professional         | Student           |
-|-------------------------------|----------------------|-------------------|
-| Early Bird (until July 31)    | $750                 | $550              |
-| Regular (Aug. 1 - Sep. 31)    | $850                 | $600              |
-| Late (Oct. 1 - Oct. 21)       | $950                 | $675              |
+| Registration Type & Deadline | Professional         | Student           |
+|------------------------------|----------------------|-------------------|
+| Early Bird (until July 31)   | $750                 | $550              |
+| Regular (Aug. 1 - Sep. 30)   | $850                 | $600              |
+| Late (Oct. 1 - Oct. 21)      | $950                 | $675              |
 
 
 Registration rates are inclusive of all fees.  Registration includes coffee breaks and lunch Monday-Wednesday and evening receptions.
