@@ -1,8 +1,8 @@
 section_title: "Advancing Science in the Age of AI"
 section_subtitle: "Explore how RSEs and collaborators increase research impact during these rapidly changing times"
 items:                                                                                                                                                                                                                                                                                                
-  - title: Submit a Proposal                                                                                                                                                                                                                                                                          
-    subtitle: "Talks, panels, workshops, and posters"                                                                                                                                                                                                                                                 
+  - title: Submit a Proposal
+    subtitle: "Poster submissions open until August 7th"
     description: "Share your work with the RSE community. Submissions open now!"                                                                                                                                                                                                                      
     link: /participate/                                                                                                                                                                                                                                                                               
     link_name: Learn More                                                                                                                                                                                                                                                                             
@@ -12,6 +12,12 @@ items:
     description: "Help make USRSE'26 possible. View our sponsorship packages."
     link: /sponsor/                                                                                                                                                                                                                                                                                   
     link_name: Become a Sponsor
+
+  - title: Register
+    subtitle: "Register to attend USRSE26"
+    description: "Join us for three days to share your work and learn from others."
+    link: attend/registration/
+    link_name: Register now
 
   - title: Mailing List
     subtitle: "Stay up to date"

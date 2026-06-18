@@ -9,11 +9,18 @@
       link: attend/
     - name: Hotel and Travel
       link: attend/travel/
+    - name: Things To Do in San Jose
+      link: attend/local-info/
+    - name: Registration
+      link: attend/registration/
     - name: Photo Policy
       link: attend/photos/
-- name: Organization
-  link: organization/
 - name: Sponsor
   link: sponsor/
 - name: About
   link: about/
+  dropdown:
+    - name: Planning Committee
+      link: about/organization/
+    - name: Code of Conduct
+      link: about/code-of-conduct/
