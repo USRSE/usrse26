@@ -36,6 +36,11 @@ Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_em
 * Miranda Mundt, Sandia National Laboratory
 * Sandra Gesing, US-RSE
 
+### Student Chairs
+
+- Scott Michael, Indiana University
+- Stephanie Brink, Lawrence Livermore National Laboratory
+
 ### Communications Chairs
 
 * J.C. Subida, Northwestern University
