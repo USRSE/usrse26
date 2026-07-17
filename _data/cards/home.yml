@@ -14,10 +14,16 @@ items:
     link_name: Become a Sponsor
 
   - title: Register
-    subtitle: "Register to attend USRSE26"
+    subtitle: "Register to attend USRSE'26"
     description: "Join us for three days to share your work and learn from others."
     link: attend/registration/
     link_name: Register now
+
+  - title: Hotel Block
+    subtitle: "Book your stay at the Hyatt Place San Jose"
+    description: "Secure your stay in the room block."
+    link: attend/travel/
+    link_name: Book your room
 
   - title: Mailing List
     subtitle: "Stay up to date"
