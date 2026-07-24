@@ -12270,3 +12270,38 @@ article > a:visited:hover {
   transform: scale(1.08);
   box-shadow: 0 8px 24px rgba(0, 0, 0, 0.3);
 }
+
+/* === Sponsor Logos === */
+ .sponsor-logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 3rem;
+    width: 100%;
+    margin-top: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+ .sponsor-logo img {
+    display: block;
+    margin: 0 auto;
+    object-fit: contain;
+    width:  clamp(80px, 10vw, 100px);
+    height: clamp(48px, 6vw, 60px);
+}
+
+.sponsor-logo.platinum img {
+    width:  clamp(340px, 30vw, 420px);
+    height: clamp(160px, 20vw, 200px);
+}
+
+.sponsor-logo.gold img {
+    width:  clamp(220px, 20vw, 300px);
+    height: clamp(100px, 15vw, 140px);
+}
+
+.sponsor-logo.silver img {
+    width:  clamp(140px, 15vw, 180px);
+    height: clamp(65px,  7vw,  90px);
+}
