@@ -12283,25 +12283,31 @@ article > a:visited:hover {
     margin-bottom: 2rem;
 }
 
- .sponsor-logo img {
+/* Default sponsor logo styles */
+.sponsor-logo img {
     display: block;
     margin: 0 auto;
     object-fit: contain;
-    width:  clamp(80px, 10vw, 100px);
-    height: clamp(48px, 6vw, 60px);
-}
-
-.sponsor-logo.platinum img {
-    width:  clamp(340px, 30vw, 420px);
-    height: clamp(160px, 20vw, 200px);
-}
-
-.sponsor-logo.gold img {
     width:  clamp(220px, 20vw, 300px);
     height: clamp(100px, 15vw, 140px);
 }
 
-.sponsor-logo.silver img {
+.sponsor-platinum .sponsor-logo img {
+    width:  clamp(340px, 30vw, 420px);
+    height: clamp(160px, 20vw, 200px);
+}
+
+.sponsor-gold .sponsor-logo img {
+    width:  clamp(220px, 20vw, 300px);
+    height: clamp(100px, 15vw, 140px);
+}
+
+.sponsor-silver .sponsor-logo img {
     width:  clamp(140px, 15vw, 180px);
     height: clamp(65px,  7vw,  90px);
+}
+
+.sponsor-bronze .sponsor-logo img {
+    width:  clamp(100px, 10vw, 120px);
+    height: clamp(50px, 10vw, 60px);
 }
