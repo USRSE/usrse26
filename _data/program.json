@@ -1,0 +1,755 @@
+{
+  "timezone": "-07:00",
+  "days": [
+    {
+      "date": "2026-10-19",
+      "weekday": "Monday",
+      "label": "October 19",
+      "slots": [
+        {
+          "start": "7:30am",
+          "end": "8:30am",
+          "startISO": "2026-10-19T07:30:00-07:00",
+          "endISO": "2026-10-19T08:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Registration",
+              "type": "Registration",
+              "room": "Prefunction",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "8:30am",
+          "end": "10am",
+          "startISO": "2026-10-19T08:30:00-07:00",
+          "endISO": "2026-10-19T10:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Welcome and Plenary Session",
+              "type": "Plenary",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": true,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10am",
+          "end": "10:30am",
+          "startISO": "2026-10-19T10:00:00-07:00",
+          "endISO": "2026-10-19T10:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Morning Break",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10:30am",
+          "end": "12pm",
+          "startISO": "2026-10-19T10:30:00-07:00",
+          "endISO": "2026-10-19T12:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "RAG Assistants",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": [
+                {
+                  "title": "Talk 2",
+                  "speakers": ""
+                },
+                {
+                  "title": "Talk 1 Edited",
+                  "speakers": ""
+                }
+              ]
+            },
+            {
+              "title": "Case Studies Demonstrating RSE Impacts Part",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "AI Assisted Code Development",
+              "type": "Talks",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "12pm",
+          "end": "1:30pm",
+          "startISO": "2026-10-19T12:00:00-07:00",
+          "endISO": "2026-10-19T13:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Lunch Break",
+              "type": "Meal",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "1:30pm",
+          "end": "3pm",
+          "startISO": "2026-10-19T13:30:00-07:00",
+          "endISO": "2026-10-19T15:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Notebooks",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Lessons from Training Users & RSEs",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "AI + Software Quality",
+              "type": "Talks",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "3pm",
+          "end": "3:30pm",
+          "startISO": "2026-10-19T15:00:00-07:00",
+          "endISO": "2026-10-19T15:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Afternoon Break",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "3:30pm",
+          "end": "5pm",
+          "startISO": "2026-10-19T15:30:00-07:00",
+          "endISO": "2026-10-19T17:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "5:15pm",
+          "end": "6:30pm",
+          "startISO": "2026-10-19T17:15:00-07:00",
+          "endISO": "2026-10-19T18:30:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Posters (light food)",
+              "type": "Posters",
+              "room": "Prefunction",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "6:30pm",
+          "end": "7:30pm",
+          "startISO": "2026-10-19T18:30:00-07:00",
+          "endISO": "2026-10-19T19:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Dinner on your own",
+              "type": "Meal",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-20",
+      "weekday": "Tuesday",
+      "label": "October 20",
+      "slots": [
+        {
+          "start": "7:30am",
+          "end": "8:30am",
+          "startISO": "2026-10-20T07:30:00-07:00",
+          "endISO": "2026-10-20T08:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Registration",
+              "type": "Registration",
+              "room": "Prefunction",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "8:30am",
+          "end": "10am",
+          "startISO": "2026-10-20T08:30:00-07:00",
+          "endISO": "2026-10-20T10:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Plenary II, Sponsor Talks",
+              "type": "Plenary",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": true,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10am",
+          "end": "10:30am",
+          "startISO": "2026-10-20T10:00:00-07:00",
+          "endISO": "2026-10-20T10:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Morning Break",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10:30am",
+          "end": "12pm",
+          "startISO": "2026-10-20T10:30:00-07:00",
+          "endISO": "2026-10-20T12:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "RSE Practices in the Age of AI Part I",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "The Human Factor",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Job Fair",
+              "type": "",
+              "room": "Prefunction",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "HPC + AI",
+              "type": "Talks",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "12pm",
+          "end": "1:30pm",
+          "startISO": "2026-10-20T12:00:00-07:00",
+          "endISO": "2026-10-20T13:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Lunch Break",
+              "type": "Meal",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "12:45pm",
+          "end": "1:15pm",
+          "startISO": "2026-10-20T12:45:00-07:00",
+          "endISO": "2026-10-20T13:15:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Working Group Fair (Presentations during lunch + guaranteed Poster)",
+              "type": "Meal",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "1:30pm",
+          "end": "3pm",
+          "startISO": "2026-10-20T13:30:00-07:00",
+          "endISO": "2026-10-20T15:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Afternoon Tech Session (Workshops / BoFs)",
+              "type": "Workshops / BoFs",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "3pm",
+          "end": "3:30pm",
+          "startISO": "2026-10-20T15:00:00-07:00",
+          "endISO": "2026-10-20T15:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Afternoon Break",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "3:30pm",
+          "end": "5pm",
+          "startISO": "2026-10-20T15:30:00-07:00",
+          "endISO": "2026-10-20T17:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Case Studies Demonstrating RSE Impacts Part II",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Code Modernization Using AI",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Decision Makers Panel",
+              "type": "Panel",
+              "room": "Market Street",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Workflows",
+              "type": "Talks",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "5pm",
+          "end": "5:30pm",
+          "startISO": "2026-10-20T17:00:00-07:00",
+          "endISO": "2026-10-20T17:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Free time",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "5:30pm",
+          "end": "6pm",
+          "startISO": "2026-10-20T17:30:00-07:00",
+          "endISO": "2026-10-20T18:00:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Transit to Dinner / Break",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "6pm",
+          "end": "9pm",
+          "startISO": "2026-10-20T18:00:00-07:00",
+          "endISO": "2026-10-20T21:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Conference Dinner",
+              "type": "",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "date": "2026-10-21",
+      "weekday": "Wednesday",
+      "label": "October 21",
+      "slots": [
+        {
+          "start": "7:30am",
+          "end": "8:30am",
+          "startISO": "2026-10-21T07:30:00-07:00",
+          "endISO": "2026-10-21T08:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Registration",
+              "type": "Registration",
+              "room": "Prefunction",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "8:30am",
+          "end": "10am",
+          "startISO": "2026-10-21T08:30:00-07:00",
+          "endISO": "2026-10-21T10:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Plenary III, Sponsor Talks",
+              "type": "Plenary",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards",
+              "plenary": true,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10am",
+          "end": "10:30am",
+          "startISO": "2026-10-21T10:00:00-07:00",
+          "endISO": "2026-10-21T10:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Morning Break",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10:30am",
+          "end": "12pm",
+          "startISO": "2026-10-21T10:30:00-07:00",
+          "endISO": "2026-10-21T12:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Collaboration & Community Building",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Software Quality",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Generative AI + Applications",
+              "type": "Talks",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "12pm",
+          "end": "1:30pm",
+          "startISO": "2026-10-21T12:00:00-07:00",
+          "endISO": "2026-10-21T13:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Lunch Break",
+              "type": "Meal",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "1:30pm",
+          "end": "3pm",
+          "startISO": "2026-10-21T13:30:00-07:00",
+          "endISO": "2026-10-21T15:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "RSE Practices in the Age of AI Part II",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Reflections on RSE Roles & Pathways",
+              "type": "Talks",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            },
+            {
+              "title": "Building Infrastructure for Communities or Organizations",
+              "type": "Talks",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "3pm",
+          "end": "3:30pm",
+          "startISO": "2026-10-21T15:00:00-07:00",
+          "endISO": "2026-10-21T15:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Transition Break",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "3:15pm",
+          "end": "4:30pm",
+          "startISO": "2026-10-21T15:15:00-07:00",
+          "endISO": "2026-10-21T16:30:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Random Access Microtalks (RAM), Closing",
+              "type": "",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
