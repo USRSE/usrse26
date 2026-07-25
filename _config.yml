@@ -53,10 +53,12 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
-exclude: 
+exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - scripts
+  - fixtures
 
 livereload: true
 

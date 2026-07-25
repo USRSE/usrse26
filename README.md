@@ -102,3 +102,16 @@ repository **secret** (not a variable) so it stays out of the source and is mask
 Until the secret is set, scheduled runs skip quietly; a manual **Run workflow** fails with an
 explicit error instead, so you can tell the workflow is unconfigured rather than broken.
 
+### CircleCI PR previews
+
+Every pull request gets a site preview from the CircleCI `build-site` job
+(`.circleci/config.yml`), which runs `bundle exec jekyll build` and stores the resulting
+`_site` as build artifacts. That job never runs `scripts/build-program.js` and has no access
+to the sheet — the preview renders whatever versions of `_includes/program-schedule.html`
+and `_data/program.json` are committed on the branch. So if a change should affect the
+program page, commit the regenerated artifacts and the preview will reflect them; no
+CircleCI configuration is needed.
+
+`scripts/` and `fixtures/` are listed under `exclude` in `_config.yml` so the build tooling
+is not copied into the built site or the preview artifacts.
+
