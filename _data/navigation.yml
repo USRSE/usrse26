@@ -2,9 +2,6 @@
   link: participate/
 - name: Program
   link: program/
-  dropdown:
-    - name: Student Program
-      link: program/student-program/
 - name: Attend
   link: attend/
   dropdown:
