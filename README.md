@@ -64,3 +64,41 @@ docker run --rm -it -p 4000:4000 \
 Change a source file, such as `index.html` for example, and save the changes. You will see Jekyll automatically regenerate the site,
 after which you can reload the page in your browser to see the rendered changes.
 
+## Building the Program Schedule
+
+The program page is generated from the "Schedule" tab of the program Google Sheet by
+`scripts/build-program.js` (Node 18+, no dependencies), which writes
+`_includes/program-schedule.html` and `_data/program.json`. Edit the sheet, not those files.
+
+The sheet ID is intentionally not committed to the repo. The script reads it from the
+`PROGRAM_SHEET_ID` environment variable — it is the long token in the sheet's
+`docs.google.com/spreadsheets/d/<id>/...` URL.
+
+### Local development
+
+Rebuild from the live sheet:
+
+```bash
+PROGRAM_SHEET_ID=<sheet-id> node scripts/build-program.js
+```
+
+Or build offline from the checked-in fixture, which needs no sheet ID:
+
+```bash
+node scripts/build-program.js --file fixtures/schedule.csv
+```
+
+Then preview the site as described above to see the regenerated program page.
+
+### GitHub Action
+
+The `Rebuild program schedule` workflow (`.github/workflows/build-program.yml`) rebuilds the
+program daily and commits only when the schedule changed. It requires the sheet ID as a
+repository **secret** (not a variable) so it stays out of the source and is masked in logs:
+
+1. Go to the repo's **Settings → Secrets and variables → Actions → Secrets**.
+2. Add a repository secret named `PROGRAM_SHEET_ID` with the sheet ID as its value.
+
+Until the secret is set, scheduled runs skip quietly; a manual **Run workflow** fails with an
+explicit error instead, so you can tell the workflow is unconfigured rather than broken.
+
