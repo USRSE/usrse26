@@ -160,7 +160,7 @@ function toRecords(rows) {
 /** "8:30 AM" / "10:30am" / "15:00" -> minutes since midnight. */
 function parseTime(raw, ctx) {
   const m = raw.trim().match(/^(\d{1,2})(?::(\d{2}))?\s*([AaPp])?\.?[Mm]?\.?$/);
-  if (!m) throw new Error(`Unparseable time "${raw}" (${ctx})`);
+  if (!m) throw new Error(`Unparsable time "${raw}" (${ctx})`);
   let h = parseInt(m[1], 10);
   const min = m[2] ? parseInt(m[2], 10) : 0;
   const half = m[3] ? m[3].toLowerCase() : null;
@@ -195,7 +195,7 @@ function parseDate(raw, ctx) {
     const year = m[3] || String(CONF_YEAR);
     return `${year}-${m[1].padStart(2, '0')}-${m[2].padStart(2, '0')}`;
   }
-  throw new Error(`Unparseable date "${raw}" (${ctx})`);
+  throw new Error(`Unparsable date "${raw}" (${ctx})`);
 }
 
 /**
