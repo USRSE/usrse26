@@ -355,6 +355,8 @@ function renderHTML(days) {
     '<div class="program">',
   ];
   lines.push('  <nav class="program-nav" aria-label="Program days">');
+  // Decorative for sighted users; the nav's aria-label already names it.
+  lines.push('    <span class="program-nav__label" aria-hidden="true">Jump to</span>');
   for (const day of days) {
     lines.push(`    <a class="program-nav__pill" href="#day-${day.weekday.toLowerCase()}">${day.weekday}</a>`);
   }
@@ -362,7 +364,8 @@ function renderHTML(days) {
   for (const day of days) {
     const id = `day-${day.weekday.toLowerCase()}`;
     lines.push(`  <section class="program-day" id="${id}" aria-labelledby="${id}-title">`);
-    lines.push(`    <h2 class="program-day__title" id="${id}-title">${day.weekday}<span class="program-day__date">, ${day.label}</span></h2>`);
+    // The draft note comes off once the program is final.
+    lines.push(`    <h2 class="program-day__title" id="${id}-title">${day.weekday}<span class="program-day__date">, ${day.label}</span><span class="program-day__draft">  (Draft — subject to change)</span></h2>`);
     lines.push('    <ol class="program-day__slots">');
     for (const slot of day.slots) {
       const cls = slot.break ? 'slot slot--break' : 'slot';

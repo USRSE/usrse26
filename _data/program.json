@@ -76,11 +76,11 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "Talk 2",
+                  "title": "Talk 1",
                   "speakers": ""
                 },
                 {
-                  "title": "Talk 1 Edited",
+                  "title": "Talk 2",
                   "speakers": ""
                 }
               ]
@@ -185,13 +185,18 @@
           "break": false,
           "sessions": [
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "Afternoon Tech Session",
+              "type": "",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
               "plenary": false,
               "muted": false,
-              "talks": []
+              "talks": [
+                {
+                  "title": "BoF 1",
+                  "speakers": ""
+                }
+              ]
             },
             {
               "title": "Afternoon Tech Session (Workshops / BoFs)",
@@ -200,7 +205,12 @@
               "info": "",
               "plenary": false,
               "muted": false,
-              "talks": []
+              "talks": [
+                {
+                  "title": "Session 2",
+                  "speakers": ""
+                }
+              ]
             },
             {
               "title": "Afternoon Tech Session (Workshops / BoFs)",
@@ -209,7 +219,12 @@
               "info": "",
               "plenary": false,
               "muted": false,
-              "talks": []
+              "talks": [
+                {
+                  "title": "Session 3",
+                  "speakers": ""
+                }
+              ]
             },
             {
               "title": "Afternoon Tech Session (Workshops / BoFs)",
