@@ -122,11 +122,11 @@ setInterval(() => goTo(current + 1), 4000);
     <td></td>
   </tr>
   <tr>
-    <td>Job Fair Participation, included</td>
-    <td>Job Fair Participation, discounted rate</td>
-    <td></td>
-    <td></td>
-  </tr>
+  <td>Job Fair participation included</td>
+  <td>Job Fair participation — $600 (40% discount)</td>
+  <td></td>
+  <td></td>
+</tr>
   <tr>
     <td>Name and logo on website and program</td>
     <td>Name and logo on website and program</td>
@@ -185,8 +185,8 @@ early-career professionals, and experienced research software engineers.
 ### Participation Options
 
 - **Included with Platinum sponsorship**
-- **Gold sponsors** — discounted participation
-- **All other sponsors / organizations** — *TBD pricing*
+- **Gold sponsors and US-RSE Organizational Members** — **$600 per spot** (40% discount)
+- **All other sponsors / organizations** — **$1,000 per spot**
 
 ### Details
 
@@ -215,12 +215,12 @@ These opportunities provide high-impact visibility while directly enhancing the 
 
 ### Attendee Services and Amenities
 
-- **Coffee Breaks / Refreshments** — *TBD*
-- **Conference Photographer** — *TBD*
+- **Coffee Breaks / Refreshments** — Sponsor a single break for $4,000 or a full day of breaks for $7,000
+- **Conference Photographer** — $5,000
 
 ### Student and Community Support
 
-- **Student Sponsorship (per attendee)** — *~$2,000 / person*
+- **Student Sponsorship (per attendee)** — ~$2,000 / person
 
 Support the participation of students and early-career attendees and help broaden access to the conference.
 
@@ -232,10 +232,31 @@ These opportunities are designed to maximize your organization's **brand visibil
 
 ### On-Site Branding
 
-- **Lanyards** — *TBD*
-- **Conference Badges (Printing)** — *TBD*
-- **Wayfinding Signage** — *TBD*
-- **Printed Programs** — *TBD*
+- **Lanyards**
+- **Conference Badges (Printing)**
+- **Wayfinding Signage**
+- **Printed Programs**
+
+### Additional On-Site Branding Opportunities
+
+Sponsors may also have the opportunity to add branded visibility throughout the conference venue. Availability and pricing will vary based on venue requirements, production timelines, and sponsor needs.
+
+Potential opportunities include:
+
+- Lobby projection screen branding
+- Logo projection in high-traffic areas
+- Lobby floor decals
+- Pillar wraps
+- Digital meeting room door signs
+- Elevator wraps
+- Custom room keys
+- Large window decals
+- Guestroom TV branding
+- Custom interactive lobby display or branded activation
+
+> Note: These opportunities are subject to venue approval, availability, production
+> requirements, and scheduling constraints. Please [contact us](mailto:sponsor-contact@us-rse.org)
+> to discuss options.
 
 ### Awards and Recognition
 
