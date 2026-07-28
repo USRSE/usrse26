@@ -217,6 +217,7 @@ These opportunities provide high-impact visibility while directly enhancing the 
 
 - **Coffee Breaks / Refreshments** — Sponsor a single break for $4,000 or a full day of breaks for $7,000
 - **Conference Photographer** — $5,500
+- **Lunch Breaks** — Please reach out
 
 ### Student and Community Support
 
