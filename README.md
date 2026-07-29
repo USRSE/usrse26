@@ -115,3 +115,18 @@ CircleCI configuration is needed.
 `scripts/` and `fixtures/` are listed under `exclude` in `_config.yml` so the build tooling
 is not copied into the built site or the preview artifacts.
 
+## Adding logos to the website
+
+There is an `_include` file, `add-sponsor-logo.html`, that can be used to add a
+sponsor's logo anywhere on the website.
+You can use the function by calling:
+`{% include add-sponsor-logo.html sponsor_url="some_url" logo_file="logo-filename.png" logo_alt="Some alt text for users" %}`
+See the include file for details on the variable names.
+The logo files need to be added to the `assets/img/sponsor-logos/` directory.
+
+### Logos on the main page
+
+To add the sponsor logos to the main page, follow the same directions as above,
+but make sure the include call is in the correct tier section for the sponsor.
+For example, UIUC is a platinum sponsor, so they are added to the
+`<div class="row sponsor-platinum ...>` block.
