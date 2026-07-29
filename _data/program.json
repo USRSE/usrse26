@@ -167,10 +167,10 @@
           "break": true,
           "sessions": [
             {
-              "title": "Lunch Break",
+              "title": "Lunch Break (Sponsorship available)",
               "type": "Meal",
               "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "",
+              "info": "Early Career Mentor/Mentee Lunch",
               "plenary": false,
               "muted": true,
               "talks": []
@@ -521,31 +521,13 @@
         },
         {
           "start": "12pm",
-          "end": "1pm",
-          "startISO": "2026-10-20T12:00:00-07:00",
-          "endISO": "2026-10-20T13:00:00-07:00",
-          "break": true,
-          "sessions": [
-            {
-              "title": "Early Career Mentor/Mentee Lunch",
-              "type": "Meal",
-              "room": "San Jose Ballroom Salon 1 & 2",
-              "info": "",
-              "plenary": false,
-              "muted": true,
-              "talks": []
-            }
-          ]
-        },
-        {
-          "start": "12pm",
           "end": "1:30pm",
           "startISO": "2026-10-20T12:00:00-07:00",
           "endISO": "2026-10-20T13:30:00-07:00",
           "break": true,
           "sessions": [
             {
-              "title": "Lunch Break",
+              "title": "Lunch Break (Sponsorship available)",
               "type": "Meal",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
@@ -923,7 +905,7 @@
           "break": true,
           "sessions": [
             {
-              "title": "Lunch Break",
+              "title": "Lunch Break (Sponsorship available)",
               "type": "Meal",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
