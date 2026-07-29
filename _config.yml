@@ -28,6 +28,10 @@ conf_theme_short: "Advancing Science in the Age of AI"
 favicon: /assets/img/favicon.ico
 fixed_navbar: top
 
+# Disable the github-pages gem's default Primer theme; its style.scss otherwise
+# compiles over our static assets/css/style.css during watch rebuilds.
+theme: null
+
 paginate: 5
 paginate_path: "/news/page:num/"
 
@@ -49,10 +53,12 @@ plugins:
   - jekyll-paginate
   - jekyll-feed
 
-exclude: 
+exclude:
   - Gemfile
   - Gemfile.lock
   - vendor
+  - scripts
+  - fixtures
 
 livereload: true
 
