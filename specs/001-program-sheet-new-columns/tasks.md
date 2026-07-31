@@ -55,7 +55,7 @@ regression check, applied continuously. Design section references are to
   never touching banner-less files. Verify: fixture build green, no pages
   generated (fixture has no Format column yet), `.tbd` files untouched.
 
-- [ ] 8. **Menubar generator** (Story 5; §9) — Emit
+- [x] 8. **Menubar generator** (Story 5; §9) — Emit
   `_data/menus/program.yml` (banner comment, Full Program first, format
   entries in vocabulary order) when abstract pages exist; delete a
   banner-carrying file when none do; `_data/menus/hidden/program.yml` is
