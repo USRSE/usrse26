@@ -66,7 +66,7 @@ regression check, applied continuously. Design section references are to
   distinct from `.talk__speakers` and the plain title. Verify: fixture
   build green (CSS not touched by the script).
 
-- [ ] 10. **Fixture extension and end-to-end check** (Story 7 + all; §11,
+- [x] 10. **Fixture extension and end-to-end check** (Story 7 + all; §11,
   §12) — Add the four columns to `fixtures/schedule.csv` with the §11
   cases (several formats, "and"-variant People, Other with and without
   Title, legacy empty-format row, multi-paragraph quoted Info_md). Build
