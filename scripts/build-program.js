@@ -461,9 +461,19 @@ function renderSession(s, pad) {
   if (s.talks.length) {
     lines.push(`${pad}  <ol class="session__talks">`);
     for (const t of s.talks) {
+      // Page formats render a pill; Other/unknown/empty render nothing.
+      const pill = t._format
+        ? `<span class="talk__format">${esc(t._format.label)}</span> ` : '';
+      // With an abstract (Info_md) on a page format, the title deep-links
+      // to its entry on that format's page. The include is Liquid-processed
+      // when Jekyll renders it, so relative_url keeps the baseurl correct.
+      let title = `<span class="talk__title">${esc(t.title)}</span>`;
+      if (t._format && t.infoMd) {
+        title = `<a class="talk__link" href="{{ '${t._format.permalink}' | relative_url }}#${t._anchor}">${title}</a>`;
+      }
       const speakers = t.speakers
         ? ` <span class="talk__speakers">${esc(t.speakers)}</span>` : '';
-      lines.push(`${pad}    <li class="talk"><span class="talk__title">${esc(t.title)}</span>${speakers}</li>`);
+      lines.push(`${pad}    <li class="talk">${pill}${title}${speakers}</li>`);
     }
     lines.push(`${pad}  </ol>`);
   }

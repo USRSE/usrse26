@@ -40,7 +40,7 @@ regression check, applied continuously. Design section references are to
   `slugify(title)` anchors. Verify: fixture build green, artifacts
   unchanged (new JSON fields append only when non-empty).
 
-- [ ] 6. **Schedule rendering and JSON output** (Stories 1–3, 7; §6, §7) —
+- [x] 6. **Schedule rendering and JSON output** (Stories 1–3, 7; §6, §7) —
   In `renderSession`: format pill for page formats, title wrapped in the
   `relative_url` deep link when `infoMd` and a page format are present,
   people span as typed. In the JSON writer: conditional `people`, `format`,
