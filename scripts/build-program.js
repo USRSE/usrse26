@@ -206,6 +206,22 @@ function validateTitles(records) {
   }
 }
 
+/**
+ * "A, B and C" / "A, B, and C" / "A and B" -> ["A", "B", "C"]. The parsed
+ * list feeds program.json only; display always uses the cell as typed. A
+ * single name legitimately containing " and " cannot be told apart from
+ * two names — accepted limitation.
+ * @param {string} raw
+ */
+function parsePeople(raw) {
+  return raw
+    .split(',')
+    .map((seg) => seg.trim().replace(/^and\s+/, ''))
+    .flatMap((seg) => seg.split(/\s+and\s+/))
+    .map((name) => name.trim())
+    .filter((name) => name !== '');
+}
+
 // ---------------------------------------------------------------------------
 // Wall-clock time handling (no JS Date arithmetic on times of day)
 // ---------------------------------------------------------------------------

@@ -27,7 +27,7 @@ regression check, applied continuously. Design section references are to
   fixture build green; a scratch CSV with two offending rows fails with
   both rows named in the message (scratch file not committed).
 
-- [ ] 4. **People parser** (Story 1; §4) — Add `parsePeople()` splitting on
+- [x] 4. **People parser** (Story 1; §4) — Add `parsePeople()` splitting on
   commas and "and" per §4. Verify with `node -e` spot checks: "A, B and C",
   "A, B, and C", "A and B", single name, empty → expected arrays with no
   empty or "and"-polluted entries; fixture build green, artifacts
