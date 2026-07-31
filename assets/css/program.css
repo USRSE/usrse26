@@ -284,6 +284,36 @@
   background: var(--program-accent);
 }
 
+/* Format pill — bordered accent tag ahead of the title, sized like the
+   session eyebrow so the two label systems read as one family, and clearly
+   set off from the muted speakers text. */
+.talk__format {
+  display: inline-block;
+  padding: 0.05rem 0.5rem;
+  border: 1px solid var(--program-accent);
+  border-radius: 999px;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: var(--program-accent);
+}
+
+/* Abstract deep link — accent underline; the wrapped title keeps its
+   weight. Two classes out-rank the theme's `.content a` color. */
+.program .talk__link {
+  color: var(--program-accent);
+  text-decoration: underline;
+  text-underline-offset: 0.15em;
+  text-decoration-thickness: 1px;
+}
+
+.program .talk__link:hover,
+.program .talk__link:focus-visible {
+  text-decoration-thickness: 2px;
+}
+
 .talk__speakers {
   font-size: 0.875rem;
   color: var(--program-muted);

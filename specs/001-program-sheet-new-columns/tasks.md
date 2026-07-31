@@ -61,7 +61,7 @@ regression check, applied continuously. Design section references are to
   banner-carrying file when none do; `_data/menus/hidden/program.yml` is
   never touched. Verify: fixture build green, no menubar file created.
 
-- [ ] 9. **CSS for the new elements** (Story 6) — Add `.talk__format` pill
+- [x] 9. **CSS for the new elements** (Story 6) — Add `.talk__format` pill
   and `.talk__link` styles to `assets/css/program.css` per §6, visually
   distinct from `.talk__speakers` and the plain title. Verify: fixture
   build green (CSS not touched by the script).
