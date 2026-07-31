@@ -8,7 +8,7 @@ committed artifacts must come out byte-identical — that is the Story 7
 regression check, applied continuously. Design section references are to
 `design.md`.
 
-- [ ] 1. **Header aliases and docstring** (Stories 1–4; §1) — In
+- [x] 1. **Header aliases and docstring** (Stories 1–4; §1) — In
   `scripts/build-program.js`: repoint `title` from `session` to a new
   `title` canonical, add `people → speakers`, `format`, `infomd` aliases;
   update the docstring's expected-columns list. Verify: fixture build

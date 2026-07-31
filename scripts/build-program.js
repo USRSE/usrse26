@@ -16,11 +16,13 @@
  *   node scripts/build-program.js --file fixtures/schedule.csv   # offline
  *
  * Expected sheet columns (case-insensitive): Start, End, Location, Session,
- * Talk, Order, Info. Start/End carry the date and 24h wall-clock time
- * ("10/19 13:30"). Session types are inferred from the session title (the
- * "Talk Session Name:" prefix, "… Break", "Plenary …", and so on). A row
- * with a Talk value attaches a talk to the session matching its
- * Start/Session/Location; talks sort by Order.
+ * Talk, Order, Info, plus the optional event-level columns Title, People,
+ * Format, and Info_md — read only on rows with a Talk value. Start/End carry
+ * the date and 24h wall-clock time ("10/19 13:30"). Session types are
+ * inferred from the session title (the "Talk Session Name:" prefix,
+ * "… Break", "Plenary …", and so on). A row with a Talk value attaches a
+ * talk to the session matching its Start/Session/Location; talks sort by
+ * Order.
  */
 
 'use strict';
@@ -129,10 +131,14 @@ const HEADER_ALIASES = {
   start: 'start', starttime: 'start',
   end: 'end', endtime: 'end',
   type: 'type', sessiontype: 'type',
-  session: 'session', sessiontitle: 'session', title: 'session',
+  session: 'session', sessiontitle: 'session',
   room: 'room', location: 'room',
   talk: 'talk', talktitle: 'talk',
+  title: 'title',
   speakers: 'speakers', speaker: 'speakers', presenters: 'speakers',
+  people: 'speakers',
+  format: 'format',
+  infomd: 'infomd',
   order: 'order',
   info: 'info', notes: 'info',
 };
