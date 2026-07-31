@@ -77,7 +77,7 @@ regression check, applied continuously. Design section references are to
   and delete the fixture-generated abstract pages and menubar so only
   `fixtures/schedule.csv` is committed from this task.
 
-- [ ] 11. **Workflow and README** (Story 5; §10, §11) — Extend the commit
+- [x] 11. **Workflow and README** (Story 5; §10, §11) — Extend the commit
   step in `.github/workflows/build-program.yml` (diff guard + `git add -A`)
   to cover `pages/program/abstracts` and `_data/menus/program.yml`; update
   the README's build section with the new columns and artifacts. Verify:
