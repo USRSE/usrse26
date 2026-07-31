@@ -584,10 +584,11 @@ function renderAbstractPage(format, entries) {
     PAGE_BANNER,
   ];
   for (const e of entries) {
-    // The {#anchor} header IAL pins the id the schedule deep-links to —
+    // USRSE'25 entry style: h2 title, italic byline, abstract. The
+    // {#anchor} header IAL pins the id the schedule deep-links to —
     // no reliance on kramdown's auto-ID algorithm.
-    lines.push('', `##### ${escMd(e.title)} {#${e.anchor}}`);
-    if (e.people) lines.push('', `**${escMd(e.people)}**`);
+    lines.push('', `## ${escMd(e.title)} {#${e.anchor}}`);
+    if (e.people) lines.push('', `_${escMd(e.people)}_`);
     if (e.infoMd) lines.push('', escMd(e.infoMd));
   }
   return lines.join('\n') + '\n';
