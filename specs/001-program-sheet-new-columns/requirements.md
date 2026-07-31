@@ -172,7 +172,8 @@ grid.
 - Each page SHALL list every event of that format; each entry SHALL render
   the event's Title as a heading, the event's People as an italic byline,
   and the event's Info_md content as Markdown body text (mirroring the
-  USRSE'25 layout: `##` title, `_names_`, abstract paragraph).
+  USRSE'25 layout: `##` title, `_names_`, abstract paragraph, horizontal
+  rules between entries, and a `menubar_toc` sidebar contents).
 - WHEN an event has a Format but an empty Info_md, THE system SHALL still
   list the entry (title and byline, no abstract).
 - Each generated page SHALL carry Jekyll front matter consistent with the

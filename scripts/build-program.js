@@ -579,18 +579,21 @@ function renderAbstractPage(format, entries) {
     `description: ${format.label} abstracts at USRSE'26`,
     'menubar: program',
     `permalink: ${format.permalink}`,
+    'menubar_toc: true',
     'set_last_modified: true',
     '---',
     PAGE_BANNER,
   ];
-  for (const e of entries) {
-    // USRSE'25 entry style: h2 title, italic byline, abstract. The
-    // {#anchor} header IAL pins the id the schedule deep-links to —
-    // no reliance on kramdown's auto-ID algorithm.
+  entries.forEach((e, i) => {
+    // USRSE'25 entry style: h2 title, italic byline, abstract, entries
+    // separated by horizontal rules. The {#anchor} header IAL pins the id
+    // the schedule deep-links to — no reliance on kramdown's auto-ID
+    // algorithm.
+    if (i) lines.push('', '------');
     lines.push('', `## ${escMd(e.title)} {#${e.anchor}}`);
     if (e.people) lines.push('', `_${escMd(e.people)}_`);
     if (e.infoMd) lines.push('', escMd(e.infoMd));
-  }
+  });
   return lines.join('\n') + '\n';
 }
 
