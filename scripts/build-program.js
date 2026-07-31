@@ -471,9 +471,9 @@ function renderSession(s, pad) {
       if (t._format && t.infoMd) {
         title = `<a class="talk__link" href="{{ '${t._format.permalink}' | relative_url }}#${t._anchor}">${title}</a>`;
       }
-      const speakers = t.speakers
-        ? ` <span class="talk__speakers">${esc(t.speakers)}</span>` : '';
-      lines.push(`${pad}    <li class="talk">${pill}${title}${speakers}</li>`);
+      // People deliberately don't render here — the schedule stays compact;
+      // bylines live on the abstract pages (and in program.json).
+      lines.push(`${pad}    <li class="talk">${pill}${title}</li>`);
     }
     lines.push(`${pad}  </ol>`);
   }

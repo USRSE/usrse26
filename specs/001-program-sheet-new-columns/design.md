@@ -14,7 +14,7 @@ human-authored files.
 
 | File / module | Change |
 | --- | --- |
-| `scripts/build-program.js` | Header aliases; People parser; Format normalization + Title validation; fold carries new talk fields; schedule renderer adds format pill, people span, deep links; new abstract-page and menubar generators with banner-guarded pruning |
+| `scripts/build-program.js` | Header aliases; People parser; Format normalization + Title validation; fold carries new talk fields; schedule renderer adds format pill and deep links (people render only on abstract pages — amended 2026-07-31); new abstract-page and menubar generators with banner-guarded pruning |
 | `assets/css/program.css` | New `.talk__format` pill and `.talk__link` styles |
 | `fixtures/schedule.csv` | Add the four columns with representative values |
 | `.github/workflows/build-program.yml` | Commit step covers the new generated paths, including deletions |
@@ -74,9 +74,10 @@ any remaining segment on `/\s+and\s+/`; trim; drop empties. Handles
 single name legitimately containing " and " cannot be distinguished from
 two names.
 
-Display always uses the cell **as typed** (schedule and abstract byline) —
-editors control phrasing, and legacy `Speakers` cells render byte-identical
-(Story 7). The parsed array goes only to `program.json` (`people`).
+Display always uses the cell **as typed** (the abstract-page byline) —
+editors control phrasing. The parsed array goes only to `program.json`
+(`people`). Amended 2026-07-31: people no longer render on the schedule
+at all (the legacy speakers span is gone too).
 
 ### 5. `fold()` additions
 
@@ -97,9 +98,11 @@ The talk `<li>` becomes:
 <li class="talk">
   <span class="talk__format">Paper</span>            <!-- page formats only -->
   <span class="talk__title">…title…</span>           <!-- or wrapped in a link -->
-  <span class="talk__speakers">…people as typed…</span>
 </li>
 ```
+
+(Amended 2026-07-31: no speakers span — people appear only on the
+abstract pages and in `program.json`.)
 
 - Format pill renders only for the seven page formats — Other, unknown,
   and empty render nothing (Stories 2/3).
@@ -111,10 +114,9 @@ The talk `<li>` becomes:
 - All text passes through the existing `esc()`.
 
 CSS: `.talk__format` — small uppercase pill (bordered, `--program-accent`,
-sized like `.session__eyebrow`) clearly distinct from the muted
-`.talk__speakers`; `.talk__link` — accent-colored underlined link that
-keeps the title weight. Rows with none of the new values produce identical
-markup to today (Story 6/7).
+sized like `.session__eyebrow`); `.talk__link` — accent-colored underlined
+link that keeps the title weight. The `.talk__speakers` rule is removed
+along with the span (2026-07-31 amendment).
 
 ### 7. `program.json`
 

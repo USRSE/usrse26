@@ -285,8 +285,7 @@
 }
 
 /* Format pill — bordered accent tag ahead of the title, sized like the
-   session eyebrow so the two label systems read as one family, and clearly
-   set off from the muted speakers text. */
+   session eyebrow so the two label systems read as one family. */
 .talk__format {
   display: inline-block;
   padding: 0.05rem 0.5rem;
@@ -312,11 +311,6 @@
 .program .talk__link:hover,
 .program .talk__link:focus-visible {
   text-decoration-thickness: 2px;
-}
-
-.talk__speakers {
-  font-size: 0.875rem;
-  color: var(--program-muted);
 }
 
 /* --------------------------------------------------------------------------

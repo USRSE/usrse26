@@ -67,9 +67,10 @@ the title text.
   THE system SHALL parse the individual names without producing empty
   entries or names polluted with "and".
 - WHEN an event row (non-empty Talk cell) has a People value, THE system
-  SHALL attach the names to that event, render them with the event entry
-  (visually distinct from the title and from the format label), and include
-  them in `program.json` as a list of name strings.
+  SHALL attach the names to that event, publish them as the entry's byline
+  on its abstract page, and include them in `program.json` as a list of
+  name strings; the schedule grid SHALL NOT display them (amended
+  2026-07-31 — originally people also rendered with the schedule entry).
 - WHEN a session row (empty Talk cell) has a People value, THE system SHALL
   ignore it — People is event-level only.
 - WHEN a People cell is empty, THE system SHALL render the row exactly as it
@@ -211,8 +212,9 @@ readable at a glance.
 - WHEN an event has a value for one or more of the new columns,
   `assets/css/program.css` SHALL style the new elements it renders — no
   unstyled bare text.
-- An event's people (authors) and its format label SHALL be styled
-  differently from each other, and both distinct from the event title.
+- An event's format label SHALL be styled distinct from the event title
+  (amended 2026-07-31: people no longer render on the schedule, so no
+  author styling applies there).
 - WHEN an entry has none of the new values, its appearance SHALL be
   unchanged from today.
 
