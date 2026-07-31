@@ -33,7 +33,7 @@ regression check, applied continuously. Design section references are to
   empty or "and"-polluted entries; fixture build green, artifacts
   unchanged.
 
-- [ ] 5. **fold() carries the new fields and assigns anchors** (Stories
+- [x] 5. **fold() carries the new fields and assigns anchors** (Stories
   1–3, 5; §5) — Talk entries gain displayed title (`rec.title ||
   rec.talk`), `peopleRaw`, `people`, `formatRaw`, `FORMATS` entry, and
   `infoMd`; add the traversal pass assigning per-page deduplicated

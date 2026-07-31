@@ -335,8 +335,14 @@ function fold(records) {
 
     if (rec.talk) {
       session.talks.push({
-        title: rec.talk,
+        // Displayed title: the Title cell when present, else the legacy
+        // Talk cell (which may still embed "by Author" text on old rows).
+        title: rec.title || rec.talk,
         speakers: rec.speakers || '',
+        people: parsePeople(rec.speakers || ''),
+        formatRaw: rec.format || '',
+        format: normalizeFormat(rec.format || ''),
+        infoMd: rec.infomd || '',
         order: rec.order ? parseInt(rec.order, 10) : Number.MAX_SAFE_INTEGER,
         _row: rec._row,
       });
@@ -365,7 +371,19 @@ function fold(records) {
                 muted: s.muted,
                 talks: s.talks
                   .sort((a, b) => a.order - b.order || a._row - b._row)
-                  .map((t) => ({ title: t.title, speakers: t.speakers })),
+                  .map((t) => {
+                    // New fields append only when non-empty so a CSV
+                    // without the new columns produces byte-identical
+                    // JSON. Underscored keys are internal (render/anchor
+                    // plumbing) — the JSON writer strips them.
+                    /** @type {{title: string, speakers: string, people?: string[], format?: string, infoMd?: string, href?: string, _format?: (typeof FORMATS)[string], _anchor?: string}} */
+                    const talk = { title: t.title, speakers: t.speakers };
+                    if (t.people.length) talk.people = t.people;
+                    if (t.formatRaw) talk.format = t.formatRaw;
+                    if (t.infoMd) talk.infoMd = t.infoMd;
+                    if (t.format && t.format.slug) talk._format = t.format;
+                    return talk;
+                  }),
               }));
             return {
               start: fmtTime(slot.start),
@@ -378,6 +396,42 @@ function fold(records) {
           }),
       };
     });
+}
+
+/** Lowercase, non-alphanumerics -> hyphens, trimmed of hyphens.
+ * @param {string} s */
+function slugify(s) {
+  return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
+}
+
+/**
+ * Assign every page-format event a stable anchor for its abstract-page
+ * entry, walking the folded days in schedule traversal order (day -> slot
+ * -> room-ranked session -> order-sorted talk) — the same order the pages
+ * list entries in, so anchors are deterministic across rebuilds. Anchors
+ * are slugified titles, deduplicated per page with -2/-3 suffixes. Events
+ * that also carry Info_md get the site-relative deep link the schedule
+ * (and program.json) renders.
+ * @param {ReturnType<typeof fold>} days
+ */
+function assignAnchors(days) {
+  const used = new Map(); // page slug -> Map(anchor base -> count)
+  for (const day of days) {
+    for (const slot of day.slots) {
+      for (const session of slot.sessions) {
+        for (const talk of session.talks) {
+          if (!talk._format) continue;
+          if (!used.has(talk._format.slug)) used.set(talk._format.slug, new Map());
+          const seen = used.get(talk._format.slug);
+          const base = slugify(talk.title);
+          const n = (seen.get(base) || 0) + 1;
+          seen.set(base, n);
+          talk._anchor = n === 1 ? base : `${base}-${n}`;
+          if (talk.infoMd) talk.href = `${talk._format.permalink}#${talk._anchor}`;
+        }
+      }
+    }
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -500,13 +554,17 @@ async function main() {
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
   validateTitles(records);
   const days = fold(records);
+  assignAnchors(days);
 
   const sessionCount = days.reduce(
     (n, d) => n + d.slots.reduce((m, s) => m + s.sessions.length, 0), 0);
   console.log(`Parsed ${records.length} rows -> ${days.length} days, ${sessionCount} sessions.`);
 
   writeIfChanged(OUT_HTML, renderHTML(days));
-  writeIfChanged(OUT_JSON, JSON.stringify({ timezone: TZ_OFFSET, days }, null, 2) + '\n');
+  // Underscored keys are internal plumbing — program.json carries text only.
+  writeIfChanged(OUT_JSON, JSON.stringify(
+    { timezone: TZ_OFFSET, days },
+    (key, value) => (key.startsWith('_') ? undefined : value), 2) + '\n');
 }
 
 main().catch((err) => {
