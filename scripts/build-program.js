@@ -88,6 +88,31 @@ function classify(rawTitle) {
   return { title, type: '', muted: false };
 }
 
+// Event formats (the sheet's Format column), keyed by lowercased trimmed
+// cell value. The seven "page formats" carry a pill label on the schedule
+// and generate an abstract page (pageTitle/permalink/slug); "Other" opts an
+// event out of both. Unknown values are treated as Other, never an error —
+// the raw cell text is carried separately for program.json.
+/** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null}>} */
+const FORMATS = {
+  'bird of a feather': { label: 'Bird of a Feather', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
+  'keynote': { label: 'Keynote', pageTitle: 'Keynotes', permalink: 'program/keynotes/', slug: 'keynotes' },
+  'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
+  'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
+  'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },
+  'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
+  'workshop': { label: 'Workshop', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
+  'other': { label: null, pageTitle: null, permalink: null, slug: null },
+};
+
+/** Empty cell -> null; known value -> its entry; anything else -> Other.
+ * @param {string} raw */
+function normalizeFormat(raw) {
+  const v = (raw || '').trim();
+  if (!v) return null;
+  return FORMATS[v.toLowerCase()] || FORMATS.other;
+}
+
 const REPO_ROOT = path.join(__dirname, '..');
 const OUT_HTML = path.join(REPO_ROOT, '_includes', 'program-schedule.html');
 const OUT_JSON = path.join(REPO_ROOT, '_data', 'program.json');

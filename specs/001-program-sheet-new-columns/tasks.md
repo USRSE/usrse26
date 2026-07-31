@@ -15,7 +15,7 @@ regression check, applied continuously. Design section references are to
   green, `_includes/program-schedule.html` and `_data/program.json`
   unchanged (`git diff --stat` clean).
 
-- [ ] 2. **Format vocabulary and normalization** (Story 2; §2) — Add the
+- [x] 2. **Format vocabulary and normalization** (Story 2; §2) — Add the
   `FORMATS` lookup (seven page formats with label/page-title/permalink/slug
   plus Other) and `normalizeFormat()` mapping empty → null, known values →
   entry, unknown → Other while preserving the raw text. Verify: fixture
