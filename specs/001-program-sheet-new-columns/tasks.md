@@ -47,7 +47,7 @@ regression check, applied continuously. Design section references are to
   `infoMd`, `href` fields. Verify: fixture build green, artifacts still
   byte-identical.
 
-- [ ] 7. **Abstract page generator with pruning** (Stories 4, 5; §8) —
+- [x] 7. **Abstract page generator with pruning** (Stories 4, 5; §8) —
   Emit `pages/program/abstracts/<slug>.md` per active format: program.md
   -style front matter, generator banner, entries in traversal order
   (`##### title {#anchor}`, bold byline, HTML-escaped Info_md), via
