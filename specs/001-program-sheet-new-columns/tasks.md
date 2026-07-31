@@ -21,7 +21,7 @@ regression check, applied continuously. Design section references are to
   entry, unknown → Other while preserving the raw text. Verify: fixture
   build green, artifacts unchanged.
 
-- [ ] 3. **Title validation** (Story 3; §3) — After `toRecords`, collect
+- [x] 3. **Title validation** (Story 3; §3) — After `toRecords`, collect
   every event record whose format is a page format but whose `title` is
   empty; throw one Error listing all offenders with row numbers. Verify:
   fixture build green; a scratch CSV with two offending rows fails with

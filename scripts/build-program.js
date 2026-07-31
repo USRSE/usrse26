@@ -184,6 +184,28 @@ function toRecords(rows) {
   }).filter((r) => r.start && r.session);
 }
 
+/**
+ * Title is required on every event row (non-empty Talk) whose Format maps
+ * to an abstract page; "Other", unknown, and empty formats leave Title
+ * optional. All offenders are collected into one error so a program chair
+ * fixes every gap in a single pass. Session rows never read the new
+ * event-level columns, so stray values there are inert.
+ * @param {ReturnType<typeof toRecords>} records
+ */
+function validateTitles(records) {
+  const missing = [];
+  for (const rec of records) {
+    if (!rec.talk) continue;
+    const format = normalizeFormat(rec.format || '');
+    if (format && format.slug && !rec.title) {
+      missing.push(`row ${rec._row}: Format "${format.label}" requires a Title`);
+    }
+  }
+  if (missing.length) {
+    throw new Error(['Missing Title on event rows:', ...missing].join('\n  '));
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Wall-clock time handling (no JS Date arithmetic on times of day)
 // ---------------------------------------------------------------------------
@@ -460,6 +482,7 @@ async function main() {
   const csv = await loadCSV();
   const records = toRecords(parseCSV(csv));
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
+  validateTitles(records);
   const days = fold(records);
 
   const sessionCount = days.reduce(
