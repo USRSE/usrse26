@@ -70,11 +70,14 @@ The program page is generated from the "Schedule" tab of the program Google Shee
 `scripts/build-program.js` (Node 18+, no dependencies), which writes
 `_includes/program-schedule.html` and `_data/program.json`. Edit the sheet, not those files.
 
-The sheet's core columns are Start, End, Location, Session, Talk, Order, and Info. Event
-rows (rows with a Talk value) may also carry Title (the clean display title — required for
-every Format except "Other"), People (speakers as "A, B and C"), Format (Bird of a Feather,
-Keynote, Other, Paper, Plenary, Poster, Talk, or Workshop), and Info_md (the event's
-abstract, as Markdown). When events carry a Format other than "Other", the script also
+The sheet's core columns are Start, End, Location, Session Topic, Event Title, and Order.
+Session rows may carry Session Format (used exactly as given — never inferred from the
+topic; Break, Meal, and Registration render as muted rows, Plenary gets the highlighted
+plenary treatment), Session Chair (shown next to the format), and Session Description
+(Markdown). Event rows (rows with an Event Title) may also carry People (speakers as
+"A, B and C"), Event Format (Bird of a Feather, Keynote, Other, Paper, Plenary, Poster,
+Random Access Microtalk, Talk, or Workshop), and Event Description (the event's abstract,
+as Markdown). When events carry an Event Format other than "Other", the script also
 generates one abstract page per format under `pages/program/abstracts/` and the program
 menubar `_data/menus/program.yml` linking those pages — both script-managed: they carry a
 generator banner, are pruned when their format leaves the sheet, and must not be edited by

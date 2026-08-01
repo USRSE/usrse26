@@ -3,11 +3,13 @@
  * build-program.js — build the USRSE'26 program page from the Schedule sheet.
  *
  * Pulls the "Schedule" tab of the program Google Sheet via its CSV export
- * endpoint, folds the flat rows into days -> time slots -> sessions -> talks,
- * and writes two artifacts:
+ * endpoint, folds the flat rows into days -> time slots -> sessions -> events,
+ * and writes four kinds of artifact:
  *
  *   _includes/program-schedule.html   Jekyll include rendered on the program page
  *   _data/program.json                normalized data (site.data.program)
+ *   pages/program/abstracts/<slug>.md one page per event format (abstracts)
+ *   _data/menus/program.yml           program menubar linking those pages
  *
  * The sheet stays the only thing anyone edits. Requires Node 18+ (global
  * fetch); zero dependencies.
@@ -15,14 +17,16 @@
  *   PROGRAM_SHEET_ID=<id> node scripts/build-program.js    # live from Sheets
  *   node scripts/build-program.js --file fixtures/schedule.csv   # offline
  *
- * Expected sheet columns (case-insensitive): Start, End, Location, Session,
- * Talk, Order, Info, plus the optional event-level columns Title, People,
- * Format, and Info_md — read only on rows with a Talk value. Start/End carry
- * the date and 24h wall-clock time ("10/19 13:30"). Session types are
- * inferred from the session title (the "Talk Session Name:" prefix,
- * "… Break", "Plenary …", and so on). A row with a Talk value attaches a
- * talk to the session matching its Start/Session/Location; talks sort by
- * Order.
+ * Expected sheet columns (case-insensitive): Start, End, Location,
+ * Session Topic, Event Title, Order, the session-level columns
+ * Session Format, Session Chair, and Session Description (Markdown), and
+ * the event-level columns People, Event Format, and Event Description
+ * (Markdown) — event columns are read only on rows with an Event Title.
+ * Start/End carry the date and 24h wall-clock time ("10/19 13:30").
+ * Session Format is used exactly as given, never inferred from the topic:
+ * Break/Meal/Registration render muted, Plenary gets the plenary field.
+ * A row with an Event Title attaches an event to the session matching its
+ * Start/Session Topic/Location; events sort by Order.
  */
 
 'use strict';
@@ -61,32 +65,10 @@ const ROOM_ORDER = [
   'Anywhere',
 ];
 
-// Session types that render as a compressed, muted row instead of a full
-// session block.
+// Session Format values that render as a compressed, muted row instead of
+// a full session block. The format is always taken from the sheet as
+// typed — nothing is inferred from the session topic.
 const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
-
-/**
- * The sheet has no Type column — classify from the session title. Returns
- * the display title (prefix stripped), the eyebrow type ('' renders no
- * eyebrow), and whether the row is muted.
- */
-/** @param {string} rawTitle */
-function classify(rawTitle) {
-  const title = rawTitle.trim();
-  const prefixed = title.match(/^talk session name:\s*(.*)$/i);
-  if (prefixed) return { title: prefixed[1].trim(), type: 'Talks', muted: false };
-  const t = title.toLowerCase();
-  if (t.includes('registration')) return { title, type: 'Registration', muted: true };
-  if (t.includes('lunch') || t.includes('dinner on your own')) return { title, type: 'Meal', muted: true };
-  if (t.includes('break') || t.includes('free time') || t.includes('transit')) {
-    return { title, type: 'Break', muted: true };
-  }
-  if (t.includes('plenary')) return { title, type: 'Plenary', muted: false };
-  if (t.includes('poster')) return { title, type: 'Posters', muted: false };
-  if (t.includes('workshop') || t.includes('bof')) return { title, type: 'Workshops / BoFs', muted: false };
-  if (t.includes('panel')) return { title, type: 'Panel', muted: false };
-  return { title, type: '', muted: false };
-}
 
 // Event formats (the sheet's Format column), keyed by lowercased trimmed
 // cell value. The seven "page formats" carry a pill label on the schedule
@@ -100,6 +82,7 @@ const FORMATS = {
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
   'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },
+  'random access microtalk': { label: 'Random Access Microtalk', pageTitle: 'Random Access Microtalks', permalink: 'program/microtalks/', slug: 'microtalks' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
   'workshop': { label: 'Workshop', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
   'other': { label: null, pageTitle: null, permalink: null, slug: null },
@@ -150,22 +133,25 @@ function parseCSV(text) {
   return rows.filter((r) => r.some((cell) => cell.trim() !== ''));
 }
 
+// Current sheet headers first; the older names each column replaced stay
+// recognized as aliases so an in-transition sheet still builds.
 /** @type {Record<string, string>} */
 const HEADER_ALIASES = {
   date: 'date', day: 'date',
   start: 'start', starttime: 'start',
   end: 'end', endtime: 'end',
-  type: 'type', sessiontype: 'type',
-  session: 'session', sessiontitle: 'session',
+  sessionformat: 'type', type: 'type', sessiontype: 'type',
+  sessiontopic: 'session', session: 'session', sessiontitle: 'session',
+  sessionchair: 'chair',
   room: 'room', location: 'room',
-  talk: 'talk', talktitle: 'talk',
+  eventtitle: 'talk', talk: 'talk', talktitle: 'talk',
   title: 'title',
   speakers: 'speakers', speaker: 'speakers', presenters: 'speakers',
   people: 'speakers',
-  format: 'format',
-  infomd: 'infomd',
+  eventformat: 'format', format: 'format',
+  eventdescription: 'infomd', infomd: 'infomd',
   order: 'order',
-  info: 'info', notes: 'info',
+  sessiondescription: 'info', info: 'info', notes: 'info',
 };
 
 function normalizeHeader(h) {
@@ -182,28 +168,6 @@ function toRecords(rows) {
     });
     return rec;
   }).filter((r) => r.start && r.session);
-}
-
-/**
- * Title is required on every event row (non-empty Talk) whose Format maps
- * to an abstract page; "Other", unknown, and empty formats leave Title
- * optional. All offenders are collected into one error so a program chair
- * fixes every gap in a single pass. Session rows never read the new
- * event-level columns, so stray values there are inert.
- * @param {ReturnType<typeof toRecords>} records
- */
-function validateTitles(records) {
-  const missing = [];
-  for (const rec of records) {
-    if (!rec.talk) continue;
-    const format = normalizeFormat(rec.format || '');
-    if (format && format.slug && !rec.title) {
-      missing.push(`row ${rec._row}: Format "${format.label}" requires a Title`);
-    }
-  }
-  if (missing.length) {
-    throw new Error(['Missing Title on event rows:', ...missing].join('\n  '));
-  }
 }
 
 /**
@@ -317,13 +281,13 @@ function fold(records) {
     if (!slots.has(slotKey)) slots.set(slotKey, { start, end, sessions: new Map() });
     const slot = slots.get(slotKey);
 
-    const meta = classify(rec.session);
     const sessionKey = `${rec.session}|${rec.room || ''}`;
     if (!slot.sessions.has(sessionKey)) {
       slot.sessions.set(sessionKey, {
-        title: meta.title,
-        type: rec.type || meta.type,
-        muted: rec.type ? MUTED_TYPES.has(rec.type.toLowerCase()) : meta.muted,
+        title: rec.session,
+        type: rec.type || '',
+        muted: rec.type ? MUTED_TYPES.has(rec.type.toLowerCase()) : false,
+        chair: rec.chair || '',
         room: rec.room || '',
         info: rec.info || '',
         talks: [],
@@ -332,6 +296,7 @@ function fold(records) {
     }
     const session = slot.sessions.get(sessionKey);
     if (!session.info && rec.info) session.info = rec.info;
+    if (!session.chair && rec.chair) session.chair = rec.chair;
 
     if (rec.talk) {
       session.talks.push({
@@ -365,6 +330,7 @@ function fold(records) {
               .map((s) => ({
                 title: s.title,
                 type: s.type,
+                ...(s.chair ? { chair: s.chair } : {}),
                 room: s.room,
                 info: s.info,
                 plenary: s.type.toLowerCase() === 'plenary',
@@ -443,6 +409,15 @@ function esc(s) {
     .replace(/"/g, '&quot;');
 }
 
+/** Escape text bound for a Liquid {% capture %} block: HTML-escape plus
+ * neutralize "{" so sheet content can never run Liquid tags or filters.
+ * kramdown decodes the entities back to literal text when it renders.
+ * @param {string} s */
+function escLiquid(s) {
+  return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
+    .replace(/\{/g, '&#123;');
+}
+
 function renderSession(s, pad) {
   const cls = ['session'];
   if (s.plenary) cls.push('session--plenary');
@@ -452,11 +427,16 @@ function renderSession(s, pad) {
     ? ` <span class="session__room">— ${esc(s.room)}</span>`
     : '';
   lines.push(`${pad}  <h3 class="session__title">${esc(s.title)}${room}</h3>`);
-  if (!s.muted && s.type) {
-    lines.push(`${pad}  <p class="session__eyebrow">${esc(s.type)}</p>`);
+  if (!s.muted && (s.type || s.chair)) {
+    const chair = s.chair
+      ? `<span class="session__chair">${s.type ? ' · ' : ''}Chair: ${esc(s.chair)}</span>` : '';
+    lines.push(`${pad}  <p class="session__eyebrow">${esc(s.type)}${chair}</p>`);
   }
   if (s.info) {
-    lines.push(`${pad}  <p class="session__info">${esc(s.info)}</p>`);
+    // Session Description may be Markdown; the include is Liquid-processed
+    // when Jekyll renders it, so markdownify does the conversion with the
+    // same kramdown as the rest of the site.
+    lines.push(`${pad}  <div class="session__info">{% capture session_info_md %}${escLiquid(s.info)}{% endcapture %}{{ session_info_md | markdownify }}</div>`);
   }
   if (s.talks.length) {
     lines.push(`${pad}  <ol class="session__talks">`);
@@ -702,7 +682,6 @@ async function main() {
   const csv = await loadCSV();
   const records = toRecords(parseCSV(csv));
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
-  validateTitles(records);
   const days = fold(records);
   assignAnchors(days);
 

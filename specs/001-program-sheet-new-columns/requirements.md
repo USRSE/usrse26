@@ -303,3 +303,20 @@ columns to keep working unchanged.
 
 None — all resolved (see Resolved decisions). Requirements approved
 2026-07-31.
+
+## Amendments
+
+- 2026-08-01 — sheet columns renamed: Session → Session Topic, Talk →
+  Event Title, Info → Session Description, Info_md → Event Description,
+  Format → Event Format (old headers stay recognized as aliases). Session
+  classification is no longer inferred from titles: the new Session Format
+  column is used exactly as given (Break/Meal/Registration mute the row,
+  Plenary gets the plenary field), so the Story 2 "classification
+  unchanged" and Story 7 legacy-CSV criteria are superseded. A new Session
+  Chair column renders next to the Session Format value. Session
+  Description and Event Description are both Markdown (session
+  descriptions render via Liquid markdownify in the include). Event Format
+  gains "Random Access Microtalk" (page "Random Access Microtalks" at
+  `program/microtalks/`). The Title column and its required-Title build
+  error are retired — Event Title is the clean display title (a Title
+  column still overrides it if present).

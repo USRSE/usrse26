@@ -253,6 +253,15 @@
   color: var(--program-accent);
 }
 
+/* Session chair, tucked next to the format on the eyebrow line — same
+   size, but normal case and muted so the name doesn't read as a label. */
+.session__chair {
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--program-muted);
+}
+
 .session__info {
   padding-top: 0.3rem;
   font-size: 0.875rem;
