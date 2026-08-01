@@ -10,8 +10,6 @@
 name: Rebuild program schedule
 
 on:
-  schedule:
-    - cron: "0 13 * * *" # daily, 6am Pacific
   workflow_dispatch:
 
 permissions:
