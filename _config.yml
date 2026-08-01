@@ -59,6 +59,7 @@ exclude:
   - vendor
   - scripts
   - fixtures
+  - specs
 
 livereload: true
 

@@ -316,7 +316,8 @@ None — all resolved (see Resolved decisions). Requirements approved
   Chair column renders next to the Session Format value. Session
   Description and Event Description are both Markdown (session
   descriptions render via Liquid markdownify in the include). Event Format
-  gains "Random Access Microtalk" (page "Random Access Microtalks" at
-  `program/microtalks/`). The Title column and its required-Title build
+  gains "Random Access Microtalk", abbreviated RAM on the schedule pill
+  (page "Random Access Microtalks" at `program/rams/`). The Title column
+  and its required-Title build
   error are retired — Event Title is the clean display title (a Title
   column still overrides it if present).

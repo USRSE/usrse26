@@ -267,7 +267,8 @@ new Session Chair column renders inside the eyebrow as
 Markdown: the include emits it through a Liquid
 `{% capture %}…{{ … | markdownify }}` pair with `{` escaped to `&#123;` so
 sheet text can never run Liquid. `FORMATS` gains Random Access Microtalk
-("Random Access Microtalks", `program/microtalks/`, slug `microtalks`).
+(pill label "RAM", page "Random Access Microtalks", `program/rams/`, slug
+`rams`).
 `validateTitles()` is removed — Event Title is the clean display title, so
 the required-Title error is obsolete (a Title column still overrides when
 present).

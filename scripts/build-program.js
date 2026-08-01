@@ -82,7 +82,7 @@ const FORMATS = {
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
   'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },
-  'random access microtalk': { label: 'Random Access Microtalk', pageTitle: 'Random Access Microtalks', permalink: 'program/microtalks/', slug: 'microtalks' },
+  'random access microtalk': { label: 'RAM', pageTitle: 'Random Access Microtalks', permalink: 'program/rams/', slug: 'rams' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
   'workshop': { label: 'Workshop', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
   'other': { label: null, pageTitle: null, permalink: null, slug: null },
