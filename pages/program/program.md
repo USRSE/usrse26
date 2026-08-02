@@ -7,6 +7,8 @@ permalink: program/
 set_last_modified: true
 ---
 
+{% include scrolltop.html %}
+
 <!-- Build-time stamp busts browser caches when the stylesheet changes. -->
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/program.css?v={{ site.time | date: '%s' }}">
 
