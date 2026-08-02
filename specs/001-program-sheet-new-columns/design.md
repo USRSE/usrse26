@@ -106,7 +106,8 @@ abstract pages and in `program.json`.)
 
 - Format pill renders only for the seven page formats — Other, unknown,
   and empty render nothing (Stories 2/3).
-- When the event has non-empty `infoMd` **and** a page format, the title is
+- When the event has a page format **and** non-empty `infoMd` or People
+  (amended 2026-08-01; was `infoMd` only), the title is
   wrapped: `<a class="talk__link" href="{{ 'program/<slug>/' | relative_url }}#<anchor>">`.
   The include is processed by Liquid when Jekyll includes it, so
   `relative_url` keeps links correct under the `/usrse26` baseurl and in
@@ -129,7 +130,8 @@ non-empty** so legacy CSVs produce byte-identical JSON (Story 7):
 - `format` — the Format cell as typed (unknown values preserved)
 - `infoMd` — the raw Markdown string, never HTML (decision 6)
 - `href` — site-relative deep link `program/<slug>/#<anchor>` when one is
-  rendered on the schedule
+  rendered on the schedule (page format with a description or People —
+  amended 2026-08-01)
 
 ### 8. Abstract pages (`pages/program/abstracts/<slug>.md`)
 

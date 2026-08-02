@@ -321,3 +321,8 @@ None — all resolved (see Resolved decisions). Requirements approved
   and its required-Title build
   error are retired — Event Title is the clean display title (a Title
   column still overrides it if present).
+- 2026-08-01 — schedule deep links widen: a page-format event's title
+  links to its abstract-page entry when it has an Event Description **or**
+  People (previously Event Description only) — the entry has an abstract
+  or a byline worth jumping to either way. Other/unknown/empty formats
+  stay unlinked.

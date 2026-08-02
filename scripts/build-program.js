@@ -376,8 +376,9 @@ function slugify(s) {
  * -> room-ranked session -> order-sorted talk) — the same order the pages
  * list entries in, so anchors are deterministic across rebuilds. Anchors
  * are slugified titles, deduplicated per page with -2/-3 suffixes. Events
- * that also carry Info_md get the site-relative deep link the schedule
- * (and program.json) renders.
+ * that also carry an Event Description or People get the site-relative
+ * deep link the schedule (and program.json) renders — their page entry
+ * has an abstract or a byline worth jumping to.
  * @param {ReturnType<typeof fold>} days
  */
 function assignAnchors(days) {
@@ -393,7 +394,7 @@ function assignAnchors(days) {
           const n = (seen.get(base) || 0) + 1;
           seen.set(base, n);
           talk._anchor = n === 1 ? base : `${base}-${n}`;
-          if (talk.infoMd) talk.href = `${talk._format.permalink}#${talk._anchor}`;
+          if (talk.infoMd || talk.speakers) talk.href = `${talk._format.permalink}#${talk._anchor}`;
         }
       }
     }
@@ -444,11 +445,12 @@ function renderSession(s, pad) {
       // Page formats render a pill; Other/unknown/empty render nothing.
       const pill = t._format
         ? `<span class="talk__format">${esc(t._format.label)}</span> ` : '';
-      // With an abstract (Info_md) on a page format, the title deep-links
-      // to its entry on that format's page. The include is Liquid-processed
-      // when Jekyll renders it, so relative_url keeps the baseurl correct.
+      // With an abstract or byline (Event Description or People) on a page
+      // format, the title deep-links to its entry on that format's page.
+      // The include is Liquid-processed when Jekyll renders it, so
+      // relative_url keeps the baseurl correct.
       let title = `<span class="talk__title">${esc(t.title)}</span>`;
-      if (t._format && t.infoMd) {
+      if (t._format && (t.infoMd || t.speakers)) {
         title = `<a class="talk__link" href="{{ '${t._format.permalink}' | relative_url }}#${t._anchor}">${title}</a>`;
       }
       // People deliberately don't render here — the schedule stays compact;
