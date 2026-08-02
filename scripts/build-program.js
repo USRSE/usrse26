@@ -26,7 +26,10 @@
  * Session Format is used exactly as given, never inferred from the topic:
  * Break/Meal/Registration render muted, Plenary gets the plenary field.
  * A row with an Event Title attaches an event to the session matching its
- * Start/Session Topic/Location; events sort by Order.
+ * Start/Session Topic/Location; events sort by Order. Rows still in the
+ * pre-2026 layout (every event column empty) are normalized: a
+ * "Session Chair: X" row sets the session's chair instead of listing as
+ * an event, and a "<title> by <names>" byline splits into title + People.
  */
 
 'use strict';
@@ -299,18 +302,40 @@ function fold(records) {
     if (!session.chair && rec.chair) session.chair = rec.chair;
 
     if (rec.talk) {
-      session.talks.push({
-        // Displayed title: the Title cell when present, else the legacy
-        // Talk cell (which may still embed "by Author" text on old rows).
-        title: rec.title || rec.talk,
-        speakers: rec.speakers || '',
-        people: parsePeople(rec.speakers || ''),
-        formatRaw: rec.format || '',
-        format: normalizeFormat(rec.format || ''),
-        infoMd: rec.infomd || '',
-        order: rec.order ? parseInt(rec.order, 10) : Number.MAX_SAFE_INTEGER,
-        _row: rec._row,
-      });
+      // The pre-2026 sheet layout wrote "Session Chair: X" as an event row
+      // and embedded authors in the title as "… by A, B and C". Normalize
+      // both — absorb the chair, split the byline into People — so
+      // unmigrated rows render in the current style. Only rows with every
+      // event column empty are treated as legacy, so a new-style row whose
+      // title happens to contain " by " is never split.
+      const legacy = !rec.title && !rec.speakers && !rec.format && !rec.infomd;
+      const chairRow = legacy && rec.talk.match(/^(?:session\s+)?chair\s*:\s*(.*)$/i);
+      if (chairRow) {
+        if (!session.chair && chairRow[1].trim()) session.chair = chairRow[1].trim();
+      } else {
+        // Displayed title: the Title cell when present, else the Talk cell.
+        let title = rec.title || rec.talk;
+        let speakers = rec.speakers || '';
+        if (legacy) {
+          // Split on the last " by "; the tail must parse as names that
+          // each start uppercase, so "… by automating triage" stays whole.
+          const m = rec.talk.match(/^(.+)\s+by\s+(.+)$/);
+          if (m && parsePeople(m[2]).every((name) => /^[A-Z]/.test(name))) {
+            title = m[1];
+            speakers = m[2];
+          }
+        }
+        session.talks.push({
+          title,
+          speakers,
+          people: parsePeople(speakers),
+          formatRaw: rec.format || '',
+          format: normalizeFormat(rec.format || ''),
+          infoMd: rec.infomd || '',
+          order: rec.order ? parseInt(rec.order, 10) : Number.MAX_SAFE_INTEGER,
+          _row: rec._row,
+        });
+      }
     }
   }
 

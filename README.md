@@ -83,6 +83,11 @@ menubar `_data/menus/program.yml` linking those pages — both script-managed: t
 generator banner, are pruned when their format leaves the sheet, and must not be edited by
 hand.
 
+Rows still in the pre-2026 sheet layout — an Event Title with every other event column
+empty — are normalized while the sheet migrates: a "Session Chair: X" row sets the
+session's chair instead of listing as an event, and a "&lt;title&gt; by &lt;names&gt;"
+byline splits into a clean title plus People.
+
 The sheet ID is intentionally not committed to the repo. The script reads it from the
 `PROGRAM_SHEET_ID` environment variable — it is the long token in the sheet's
 `docs.google.com/spreadsheets/d/<id>/...` URL.

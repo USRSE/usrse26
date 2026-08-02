@@ -326,3 +326,11 @@ None — all resolved (see Resolved decisions). Requirements approved
   People (previously Event Description only) — the entry has an abstract
   or a byline worth jumping to either way. Other/unknown/empty formats
   stay unlinked.
+- 2026-08-02 — legacy row normalization: rows still in the pre-2026
+  layout (an Event Title with every other event column empty) render in
+  the current style. A "Session Chair: X" event row sets the session's
+  chair (when the Session Chair column hasn't already) instead of listing
+  as an event, and a "&lt;title&gt; by &lt;names&gt;" byline splits into a
+  clean title plus People — only when the tail after the last " by "
+  parses as names that each start uppercase, so titles like "… by
+  automating triage" stay whole. New-style rows are never touched.

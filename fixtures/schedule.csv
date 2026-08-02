@@ -8,8 +8,12 @@ Start,End,Location,Session Topic,Event Title,Order,Session Description,People,Ev
 We present a receipts-first design where every generated claim carries a link to the retrieved chunk that supports it, evaluated on three archives with **12% fewer** unsupported claims.",Talks,Jordan Ramirez
 10/19 10:30,10/19 12:00,San Jose Ballroom Salon 1 & 2,RAG Assistants,Grounded Notebooks,1,,"Rosalind Franklin, Barbara McClintock, and Katherine Johnson",Talk,A single-paragraph abstract with `code` and **bold** text.,,
 10/19 10:30,10/19 12:00,San Jose Ballroom Salon 5 & 6,Case Studies Demonstrating RSE Impacts Part I,,,,,,,Talks,
+10/19 10:30,10/19 12:00,San Jose Ballroom Salon 5 & 6,Case Studies Demonstrating RSE Impacts Part I,Session Chair: TBD,,,,,,,
+10/19 10:30,10/19 12:00,San Jose Ballroom Salon 5 & 6,Case Studies Demonstrating RSE Impacts Part I,Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports by Sophie Breitbart,1,,,,,,
+10/19 10:30,10/19 12:00,San Jose Ballroom Salon 5 & 6,Case Studies Demonstrating RSE Impacts Part I,"Poisonous Books: Detecting Toxic Pigments in Victorian Bookbindings by Kevin Bhimani, Asritha Polu and Sunita Chandrasekaran",2,,,,,,
 10/19 10:30,10/19 12:00,Willow Glen Room,AI Assisted Code Development,,,,,,,Talks,Casey Lin
 10/19 10:30,10/19 12:00,Willow Glen Room,AI Assisted Code Development,Pair Programming Field Notes,1,,,,,,
+10/19 10:30,10/19 12:00,Willow Glen Room,AI Assisted Code Development,Scaling Support by automating triage,2,,,,,,
 10/19 12:00,10/19 13:30,Anywhere,Lunch Break,,,,,,,Meal,
 10/19 13:30,10/19 15:00,San Jose Ballroom Salon 1 & 2,Notebooks,,,,,,,Talks,
 10/19 13:30,10/19 15:00,San Jose Ballroom Salon 5 & 6,Lessons from Training Users & RSEs,,,,,,,Talks,

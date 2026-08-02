@@ -274,3 +274,16 @@ sheet text can never run Liquid. `FORMATS` gains Random Access Microtalk
 `validateTitles()` is removed — Event Title is the clean display title, so
 the required-Title error is obsolete (a Title column still overrides when
 present).
+
+## Amendment (2026-08-02) — legacy row normalization
+
+`fold()` normalizes event rows still in the pre-2026 layout, detected as
+an Event Title with every other event column (Title, People, Event
+Format, Event Description) empty. A `Session Chair: X` row (with or
+without the "Session " prefix, case-insensitive) is absorbed into
+`session.chair` when the column left it empty, and never becomes a talk.
+Otherwise the title is split on its **last** ` by ` into title + People,
+but only when the tail parses (via `parsePeople`) into names that each
+start with an uppercase letter — a lowercase tail ("… by automating
+triage") leaves the row untouched. New-style rows can never be split,
+whatever their title contains.
