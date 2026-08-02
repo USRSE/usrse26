@@ -46,8 +46,8 @@
                             centering it on the title's first line */
   --slot-pad-y: 0.9rem;
 
-  /* Format-label gutter in each talk row: wide enough for WORKSHOP on one
-     line; BIRD OF A FEATHER wraps. */
+  /* Cap on the talk label column. Each session sizes the column to its
+     widest label, up to this — BIRD OF A FEATHER wraps beyond it. */
   --talk-gutter: 5.25rem;
 
   color: var(--program-ink);
@@ -277,8 +277,18 @@
   padding-top: 0.4rem;
 }
 
-/* Two-column row: format label right-aligned in a fixed gutter, title in
-   the text column. No list marker — the aligned labels are the rhythm. */
+/* Sessions that label events form a shared two-column grid whose label
+   column hugs the session's widest label (capped at --talk-gutter), so a
+   PAPER/TALK session indents titles ~3rem, not worst-case width, and a
+   mixed session still aligns every title. Formatless sessions never form
+   the grid — their titles stay on the session's left edge. No list
+   marker either way — the aligned labels are the rhythm. */
+.session__talks:has(.talk__format) {
+  display: grid;
+  grid-template-columns: fit-content(var(--talk-gutter)) minmax(0, 1fr);
+  column-gap: 0.75rem;
+}
+
 .talk {
   display: grid;
   grid-template-columns: minmax(0, 1fr);
@@ -289,13 +299,14 @@
   line-height: 1.4;
 }
 
-/* The label gutter exists only in sessions that actually label events, so
-   a formatless session's titles stay on the session's left edge instead
-   of indenting past an empty gutter. Session-level, not per-talk, so a
-   mixed session still aligns every title. (Browsers without :has() keep
-   the gutter everywhere — cosmetic only.) */
+/* Each labeled row spans both tracks and aligns its label/title to the
+   session's shared columns via subgrid. The fixed-gutter line before it
+   is the fallback for browsers without subgrid; without :has() at all,
+   rows are plain single-column — cosmetic degradation only. */
 .session__talks:has(.talk__format) .talk {
+  grid-column: 1 / -1;
   grid-template-columns: var(--talk-gutter) minmax(0, 1fr);
+  grid-template-columns: subgrid;
 }
 
 /* Format label — quiet muted tag, sized like the session eyebrow so the
