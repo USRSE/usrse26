@@ -281,12 +281,21 @@
    the text column. No list marker — the aligned labels are the rhythm. */
 .talk {
   display: grid;
-  grid-template-columns: var(--talk-gutter) minmax(0, 1fr);
+  grid-template-columns: minmax(0, 1fr);
   column-gap: 0.75rem;
   align-items: baseline;
   padding: 0.35rem 0;
   font-size: 0.9375rem;
   line-height: 1.4;
+}
+
+/* The label gutter exists only in sessions that actually label events, so
+   a formatless session's titles stay on the session's left edge instead
+   of indenting past an empty gutter. Session-level, not per-talk, so a
+   mixed session still aligns every title. (Browsers without :has() keep
+   the gutter everywhere — cosmetic only.) */
+.session__talks:has(.talk__format) .talk {
+  grid-template-columns: var(--talk-gutter) minmax(0, 1fr);
 }
 
 /* Format label — quiet muted tag, sized like the session eyebrow so the
@@ -303,11 +312,12 @@
 }
 
 /* The title (span when unlinked, anchor when linked) always occupies the
-   text column, so sessions mixing labeled and unlabeled events keep one
-   shared title edge. */
+   last column — the text column when the gutter exists, the whole row
+   when it doesn't — so sessions mixing labeled and unlabeled events keep
+   one shared title edge. */
 .talk > .talk__title,
 .talk > .talk__link {
-  grid-column: 2;
+  grid-column: -2 / -1;
 }
 
 /* Abstract deep link — body-colored text over a quiet underline that
