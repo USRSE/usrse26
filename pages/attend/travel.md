@@ -27,7 +27,7 @@ The room block covers Sunday, Monday, and Tuesday nights (October 18-20), with c
 The deadline to reserve a room in the conference room block is September 25, 2026, but the room block may fill up before the deadline, so we encourage attendees to reserve a room as soon as possible.
 
 * [Attendee reservation link](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URAT): $259/night + taxes
-* [Government rate reservation link](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URGO): at check-in, guests will be required to provide eligible ID.
+* Government rate: the government rate room block is FULL. You may still be able to book a government rate room at the Hyatt Place directly through the [hotel's website](https://www.hyatt.com/shop/rooms/sjczj?checkinDate=2026-10-18&checkoutDate=2026-10-22&rooms=1&adults=1&kids=0&rate=Govt&accessibilityCheck=false) by selecting the "Government/Military Business" option under "Special Rates". At check-in, guests will be required to provide eligible ID.
 
 If you plan to arrive early or stay late, we encourage you to make your room reservation early. Blocked rooms for those dates are limited, and weekends and overlapping conferences in the area may limit non-block availability.
 
