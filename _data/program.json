@@ -149,14 +149,18 @@
                   "speakers": "Sophie Breitbart",
                   "people": [
                     "Sophie Breitbart"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports"
                 },
                 {
                   "title": "A Modular Threaded Software Application for Axion Detection with DMRadio",
                   "speakers": "Pamela Stark",
                   "people": [
                     "Pamela Stark"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#a-modular-threaded-software-application-for-axion-detection-with-dmradio"
                 },
                 {
                   "title": "Poisonous Books: Rule Based Physics Pipeline and Agentic LLMs for Detecting and Analyzing Toxic Pigments in Victorian Bookbindings",
@@ -168,14 +172,18 @@
                     "Rosie Grayburn",
                     "Amelia Oakes",
                     "Sunita Chandrasekaran"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#poisonous-books-rule-based-physics-pipeline-and-agentic-llms-for-detecting-and-analyzing-toxic-pigments-in-victorian-bookbindings"
                 },
                 {
                   "title": "Building Modern Tools for Computational Science in Flutter to Track the American Chestnut",
                   "speakers": "Jay Billings",
                   "people": [
                     "Jay Billings"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#building-modern-tools-for-computational-science-in-flutter-to-track-the-american-chestnut"
                 }
               ]
             },
@@ -197,7 +205,9 @@
                     "Austin Macdonald",
                     "Isaac To",
                     "Vadim Melnik"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con"
                 },
                 {
                   "title": "Drinking from the Firehose: Practical Strategies for Research Software Engineers to Stay Current on AI Tools and Agents",
@@ -205,7 +215,9 @@
                   "people": [
                     "Nick Ross",
                     "Tim Hannifan"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#drinking-from-the-firehose-practical-strategies-for-research-software-engineers-to-stay-current-on-ai-tools-and-agents"
                 },
                 {
                   "title": "Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development",
@@ -215,7 +227,9 @@
                     "John Hetrick",
                     "Peter Peterson",
                     "Mathieu Doucet"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development"
                 },
                 {
                   "title": "Designing for Trust in AI-Assisted Scientific Computing",
@@ -226,7 +240,9 @@
                     "Johanna Cohoon",
                     "Dan Gunter",
                     "Sheng Pang"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#designing-for-trust-in-ai-assisted-scientific-computing"
                 }
               ]
             }
@@ -267,19 +283,23 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[Notebook] Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets",
+                  "title": "Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets",
                   "speakers": "Zachary Katz and Tasha Snow",
                   "people": [
                     "Zachary Katz",
                     "Tasha Snow"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets"
                 },
                 {
                   "title": "Marimo: an open-source reactive notebook for Python",
                   "speakers": "Akshay Agrawal",
                   "people": [
                     "Akshay Agrawal"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#marimo-an-open-source-reactive-notebook-for-python"
                 },
                 {
                   "title": "[Notebook] Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation",
@@ -288,7 +308,9 @@
                     "Pariksheet Nanda",
                     "Rocco Caprara",
                     "Jason Shoemaker"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#notebook-beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation"
                 },
                 {
                   "title": "From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins",
@@ -298,7 +320,9 @@
                     "Gopika Bhardwaj",
                     "Ryan Roussel",
                     "Auralee Edelen"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins"
                 }
               ]
             },
@@ -317,7 +341,9 @@
                   "people": [
                     "Ian Cosden",
                     "Jeffrey Carver"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps"
                 },
                 {
                   "title": "Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era",
@@ -326,7 +352,9 @@
                     "Simon Stone",
                     "William Cowen",
                     "Christian Darabos"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era"
                 },
                 {
                   "title": "Building Open Source Communities Through Effective Tutorials",
@@ -334,7 +362,9 @@
                   "people": [
                     "Alec Scott",
                     "Gregory Becker"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#building-open-source-communities-through-effective-tutorials"
                 },
                 {
                   "title": "Evolving HPC User Support: Just-in-Time Learning with Instructional Videos",
@@ -344,7 +374,9 @@
                     "Afton Geil",
                     "Lisa Claus",
                     "Adam Lavely"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#evolving-hpc-user-support-just-in-time-learning-with-instructional-videos"
                 }
               ]
             },
@@ -366,17 +398,21 @@
                     "Dave Bunten",
                     "Gregory Way",
                     "Jineta Banerjee"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems"
                 },
                 {
-                  "title": "[Paper] Measuring What Matters in the Age of AI: The Research Software Metrics Landscape",
+                  "title": "Measuring What Matters in the Age of AI: The Research Software Metrics Landscape",
                   "speakers": "Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus",
                   "people": [
                     "Addi Malviya Thakur",
                     "Reed Milewicz",
                     "Gregory Watson",
                     "Audris Mockus"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape"
                 },
                 {
                   "title": "Back to Basics: Design-First Development in the Age of AI Coding Assistants",
@@ -386,7 +422,9 @@
                     "Rob Kooper",
                     "Marcos Frenkel",
                     "Chris Stephens"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants"
                 },
                 {
                   "title": "Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software",
@@ -398,7 +436,9 @@
                     "Lavínia Paganini",
                     "Bogdan Vasilescu",
                     "Audris Mockus"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software"
                 }
               ]
             }
@@ -409,15 +449,15 @@
           "end": "3:30pm",
           "startISO": "2026-10-19T15:00:00-07:00",
           "endISO": "2026-10-19T15:30:00-07:00",
-          "break": false,
+          "break": true,
           "sessions": [
             {
               "title": "Afternoon Break (Sponsorship available)",
-              "type": "",
+              "type": "Break",
               "room": "Anywhere",
               "info": "",
               "plenary": false,
-              "muted": false,
+              "muted": true,
               "talks": []
             }
           ]
@@ -439,7 +479,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges",
+                  "title": "Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges",
                   "speakers": "Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown",
                   "people": [
                     "Daniel Madren",
@@ -455,7 +495,9 @@
                     "William Cowen",
                     "Abbey Roelofs",
                     "Daniel Shown"
-                  ]
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges"
                 }
               ]
             },
@@ -469,7 +511,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] Building an Institutional RSE Community",
+                  "title": "Building an Institutional RSE Community",
                   "speakers": "Julia Damerow, J.C. Subida, Alex Koufos, Dan Woulfin and Trevor Spreadbury",
                   "people": [
                     "Julia Damerow",
@@ -477,7 +519,9 @@
                     "Alex Koufos",
                     "Dan Woulfin",
                     "Trevor Spreadbury"
-                  ]
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#building-an-institutional-rse-community"
                 }
               ]
             },
@@ -491,13 +535,15 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] Better Scientific Software Fellowship Community",
+                  "title": "Better Scientific Software Fellowship Community",
                   "speakers": "Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung",
                   "people": [
                     "Adam Lavely",
                     "Elsa Gonsiorowski",
                     "Mary Ann Leung"
-                  ]
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#better-scientific-software-fellowship-community"
                 }
               ]
             },
@@ -511,7 +557,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[Workshop] A Group Attempt at Threat Modeling for Research Software Systems",
+                  "title": "A Group Attempt at Threat Modeling for Research Software Systems",
                   "speakers": "James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson",
                   "people": [
                     "James Davis",
@@ -519,7 +565,9 @@
                     "Jeffrey Carver",
                     "Kelechi G Kalu",
                     "Alexandra Harris-Watson"
-                  ]
+                  ],
+                  "format": "Workshop",
+                  "href": "program/workshops/#a-group-attempt-at-threat-modeling-for-research-software-systems"
                 }
               ]
             }
@@ -611,7 +659,9 @@
                     "Ian Cosden",
                     "Daniel S. Katz",
                     "Stephan Druskat"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#research-software-engineering-in-the-age-of-generative-ai"
                 },
                 {
                   "title": "Beyond Editing Code: Uses for AI Tools in Scientific Work",
@@ -619,14 +669,18 @@
                   "people": [
                     "Johanna Cohoon",
                     "Drew Paine"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-editing-code-uses-for-ai-tools-in-scientific-work"
                 },
                 {
                   "title": "Ten Projects, Two Teams, One Question: How Does AI Impact Development?",
                   "speakers": "Dave Brownell",
                   "people": [
                     "Dave Brownell"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#ten-projects-two-teams-one-question-how-does-ai-impact-development"
                 },
                 {
                   "title": "Coding with LLM Agents: The Research Software Engineer as the Quality Gate",
@@ -634,7 +688,9 @@
                   "people": [
                     "Nicole Tebaldi",
                     "Kyle Crocker"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#coding-with-llm-agents-the-research-software-engineer-as-the-quality-gate"
                 }
               ]
             },
@@ -652,7 +708,9 @@
                   "speakers": "Md Hasan Shahriar Simanto",
                   "people": [
                     "Md Hasan Shahriar Simanto"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows"
                 },
                 {
                   "title": "From Mood Boards to Web Components: Our Journey Building a Design System for Research",
@@ -660,21 +718,27 @@
                   "people": [
                     "Katrina Turner",
                     "Freddy Mande"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-mood-boards-to-web-components-our-journey-building-a-design-system-for-research"
                 },
                 {
                   "title": "Human in the Loop: Requirements Gathering and Researcher Trust in the Age of AI",
                   "speakers": "Michael Kennel",
                   "people": [
                     "Michael Kennel"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#human-in-the-loop-requirements-gathering-and-researcher-trust-in-the-age-of-ai"
                 },
                 {
                   "title": "Designing for Two Audiences: AI-Readiness and Human Data Usability",
                   "speakers": "Cody O'Donnell",
                   "people": [
                     "Cody O'Donnell"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#designing-for-two-audiences-ai-readiness-and-human-data-usability"
                 }
               ]
             },
@@ -688,7 +752,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[Paper] DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments",
+                  "title": "DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments",
                   "speakers": "Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel",
                   "people": [
                     "Abdur Rouf",
@@ -696,34 +760,42 @@
                     "Benjamin Keene",
                     "Shafaq Chaudhry",
                     "Murat Yuksel"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments"
                 },
                 {
-                  "title": "[Paper] Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC",
+                  "title": "Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC",
                   "speakers": "Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle",
                   "people": [
                     "Nil Tianchen Mu",
                     "William Dizon",
                     "Glen Otero",
                     "Torey Battelle"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc"
                 },
                 {
-                  "title": "[Paper] Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools",
+                  "title": "Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools",
                   "speakers": "Smruti Padhy, Anagha Jamthe and Joe Stubbs",
                   "people": [
                     "Smruti Padhy",
                     "Anagha Jamthe",
                     "Joe Stubbs"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools"
                 },
                 {
-                  "title": "[Paper] Structuring agentic AI for HPC code modernization",
+                  "title": "Structuring agentic AI for HPC code modernization",
                   "speakers": "Anthony Marinov and Igor Sfiligoi",
                   "people": [
                     "Anthony Marinov",
                     "Igor Sfiligoi"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#structuring-agentic-ai-for-hpc-code-modernization"
                 }
               ]
             }
@@ -781,9 +853,18 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] How to train an RSE: A discussion of RSE skill training - past, future, and present by Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien",
-                  "speakers": "",
-                  "format": "Bird of a Feather"
+                  "title": "How to train an RSE: A discussion of RSE skill training - past, future, and present",
+                  "speakers": "Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien",
+                  "people": [
+                    "Ellianna Abrahams",
+                    "Lauren Milechin",
+                    "Jeffrey Carver",
+                    "Daniel Woulfin",
+                    "Patrick Diehl",
+                    "Gabrielle O'Brien"
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#how-to-train-an-rse-a-discussion-of-rse-skill-training-past-future-and-present"
                 }
               ]
             },
@@ -796,7 +877,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[Workshop] Journey Mapping: A technique to see opportunities and recognize gaps in user experience",
+                  "title": "Journey Mapping: A technique to see opportunities and recognize gaps in user experience",
                   "speakers": "Johanna Cohoon, Rajshree Deshmukh, Md Hasan Shahriar Simanto, Mary Goldman, Katrina Turner, Sarah Poon",
                   "people": [
                     "Johanna Cohoon",
@@ -805,7 +886,9 @@
                     "Mary Goldman",
                     "Katrina Turner",
                     "Sarah Poon"
-                  ]
+                  ],
+                  "format": "Workshop",
+                  "href": "program/workshops/#journey-mapping-a-technique-to-see-opportunities-and-recognize-gaps-in-user-experience"
                 }
               ]
             },
@@ -818,7 +901,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] How can institutional RSE hubs and OSPOs work together for the betterment of research outputs?",
+                  "title": "How can institutional RSE hubs and OSPOs work together for the betterment of research outputs?",
                   "speakers": "William Gearty, Jeffrey Young, Collin Capano, Ian Cosden, Daniel Katz, Richard Littauer, Fang Liu and Daniel Shown",
                   "people": [
                     "William Gearty",
@@ -829,7 +912,9 @@
                     "Richard Littauer",
                     "Fang Liu",
                     "Daniel Shown"
-                  ]
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#how-can-institutional-rse-hubs-and-ospos-work-together-for-the-betterment-of-research-outputs"
                 }
               ]
             },
@@ -842,12 +927,14 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[Workshop] Fixer-Upper Software: Refactoring Code for Reuse and Impact",
+                  "title": "Fixer-Upper Software: Refactoring Code for Reuse and Impact",
                   "speakers": "Brian Ward and Jeff Soules",
                   "people": [
                     "Brian Ward",
                     "Jeff Soules"
-                  ]
+                  ],
+                  "format": "Workshop",
+                  "href": "program/workshops/#fixer-upper-software-refactoring-code-for-reuse-and-impact"
                 }
               ]
             }
@@ -888,7 +975,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "[Paper] Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language",
+                  "title": "Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language",
                   "speakers": "A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs",
                   "people": [
                     "A Pottinger",
@@ -898,26 +985,32 @@
                     "Nicolas Graver",
                     "Amanda Anderson-You",
                     "Maya Weltman-Fahs"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language"
                 },
                 {
-                  "title": "[Paper] Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline",
+                  "title": "Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline",
                   "speakers": "Jing Qi, William Cowen and Christian Darabos",
                   "people": [
                     "Jing Qi",
                     "William Cowen",
                     "Christian Darabos"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline"
                 },
                 {
-                  "title": "[Paper] Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines",
+                  "title": "Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines",
                   "speakers": "Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier",
                   "people": [
                     "Pavel Belakurski",
                     "Dmitry Etin",
                     "Mark Chumack",
                     "Michael Bouzinier"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines"
                 },
                 {
                   "title": "Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions",
@@ -929,7 +1022,9 @@
                     "Peter Peterson",
                     "John Hetrick",
                     "Addi Malviya-Thakur"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions"
                 }
               ]
             },
@@ -948,21 +1043,27 @@
                   "people": [
                     "Peter Peterson",
                     "Addi Malviya-Thakur"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#agentic-code-modernization"
                 },
                 {
                   "title": "Scientific Agentic Engineering: A Framework for Reliable AI Agents in Research Software",
                   "speakers": "Victor Weeks",
                   "people": [
                     "Victor Weeks"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#scientific-agentic-engineering-a-framework-for-reliable-ai-agents-in-research-software"
                 },
                 {
                   "title": "From Laptop to Cluster: HPC Translation Patterns for AI Stacks",
                   "speakers": "Parmanand Sinha",
                   "people": [
                     "Parmanand Sinha"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-laptop-to-cluster-hpc-translation-patterns-for-ai-stacks"
                 },
                 {
                   "title": "Beyond Code Pairs: Generating Test-Grounded Data for AI-Assisted Scientific Software Modernization",
@@ -970,7 +1071,9 @@
                   "people": [
                     "Le Chen",
                     "Rajeev Thakur"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-code-pairs-generating-test-grounded-data-for-ai-assisted-scientific-software-modernization"
                 }
               ]
             },
@@ -988,14 +1091,18 @@
                   "speakers": "Eli Mizrachi",
                   "people": [
                     "Eli Mizrachi"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#cloud-native-graphical-and-programmatic-cross-database-access-to-experiment-metadata-with-trino-superset-and-ibis"
                 },
                 {
                   "title": "Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution",
                   "speakers": "Hilario Torres",
                   "people": [
                     "Hilario Torres"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution"
                 },
                 {
                   "title": "OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration by Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam",
@@ -1010,7 +1117,7 @@
                   "href": "program/talks/#osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration-by-fernando-garzon-steven-yeu-scott-sakai-and-subhashini-sivagnanam"
                 },
                 {
-                  "title": "[Paper] Fabla: An Open-Source Voice-First EMA Platform for Clinical Research",
+                  "title": "Fabla: An Open-Source Voice-First EMA Platform for Clinical Research",
                   "speakers": "Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan",
                   "people": [
                     "Santiago Arconada Alvarez",
@@ -1022,7 +1129,9 @@
                     "Morgan Greenleaf",
                     "Wilbur Lam",
                     "Deanna Kaplan"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research"
                 }
               ]
             }
@@ -1111,21 +1220,27 @@
                   "people": [
                     "Laura Theademan",
                     "Suzanna Gardner"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#building-inclusive-talent-pathways-scaling-outreach-workforce-development-and-community-engagement-for-rse"
                 },
                 {
                   "title": "HPC Carpentry and Community Building at NIST",
                   "speakers": "Andrew Reid",
                   "people": [
                     "Andrew Reid"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#hpc-carpentry-and-community-building-at-nist"
                 },
                 {
                   "title": "Navigating the Code Review Process as a Team: A Case Study",
                   "speakers": "Abbey Roelofs",
                   "people": [
                     "Abbey Roelofs"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#navigating-the-code-review-process-as-a-team-a-case-study"
                 },
                 {
                   "title": "Collaboration within RSE group at Princeton: development of slurmise for resource usage estimation",
@@ -1134,7 +1249,9 @@
                     "Troy Comi",
                     "Ioannis Paraskevakos",
                     "Rob Bierman"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#collaboration-within-rse-group-at-princeton-development-of-slurmise-for-resource-usage-estimation"
                 }
               ]
             },
@@ -1169,31 +1286,39 @@
                     "Rob Bierman",
                     "Lance Parsons",
                     "David Luet"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton"
                 },
                 {
-                  "title": "[Paper] We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI",
+                  "title": "We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI",
                   "speakers": "Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos",
                   "people": [
                     "Reed Milewicz",
                     "Connor Brynteson",
                     "Ella Luedeke",
                     "Italo Santos"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai"
                 },
                 {
                   "title": "Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows",
                   "speakers": "Niharika Pramod Pujari",
                   "people": [
                     "Niharika Pramod Pujari"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows"
                 },
                 {
                   "title": "Performance Portable Software Design Patterns – What they can do and why we should collect them.",
                   "speakers": "Jakob Bludau",
                   "people": [
                     "Jakob Bludau"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#performance-portable-software-design-patterns-what-they-can-do-and-why-we-should-collect-them"
                 }
               ]
             },
@@ -1212,7 +1337,9 @@
                   "people": [
                     "Alice Duan",
                     "Launa Greer"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-chaos-to-schema-llm-powered-document-information-extraction"
                 },
                 {
                   "title": "Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases",
@@ -1222,7 +1349,9 @@
                     "Martine de Vos",
                     "Nicola Cortinovis",
                     "Dawa Ometto"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#generative-ai-for-research-data-processing-lessons-learnt-from-three-use-cases"
                 },
                 {
                   "title": "Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models",
@@ -1230,14 +1359,18 @@
                   "people": [
                     "Nicholas Reinicke",
                     "Robert Fitzgerald"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models"
                 },
                 {
                   "title": "Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs",
                   "speakers": "Shailaja Keyur Sampat",
                   "people": [
                     "Shailaja Keyur Sampat"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms"
                 }
               ]
             }
@@ -1271,14 +1404,18 @@
             {
               "title": "RSE Practices in the Age of AI Part II",
               "type": "Talks",
-              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[Paper] AI-Augmented Research Software Engineering: Risks, Challenges, and Practices",
+                  "title": "Session Chair: TBD",
+                  "speakers": "",
+                  "format": "Talk"
+                },
+                {
+                  "title": "AI-Augmented Research Software Engineering: Risks, Challenges, and Practices",
                   "speakers": "I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song",
                   "people": [
                     "I Luk Kim",
@@ -1289,10 +1426,12 @@
                     "Jaewoo Shin",
                     "Lan Zhao",
                     "Carol X. Song"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices"
                 },
                 {
-                  "title": "[Paper] A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training",
+                  "title": "A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training",
                   "speakers": "Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song",
                   "people": [
                     "Xiao Liu",
@@ -1301,21 +1440,27 @@
                     "Jaewoo Shin",
                     "Chimdia Kabuo",
                     "Carol Song"
-                  ]
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training"
                 },
                 {
                   "title": "A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions",
                   "speakers": "William Gearty",
                   "people": [
                     "William Gearty"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions"
                 },
                 {
                   "title": "Preparing Students for AI-Assisted Research Workflows",
                   "speakers": "Alejandra Castillo",
                   "people": [
                     "Alejandra Castillo"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#preparing-students-for-ai-assisted-research-workflows"
                 }
               ]
             },
@@ -1333,21 +1478,27 @@
                   "speakers": "Ritika Giri",
                   "people": [
                     "Ritika Giri"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#what-they-don-t-tell-you-about-the-data-science-to-rse-transition"
                 },
                 {
                   "title": "Bears, Bottlenecks, and Bus Factors: Why Embedded RSEs Pay Off",
                   "speakers": "Miranda Mundt",
                   "people": [
                     "Miranda Mundt"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#bears-bottlenecks-and-bus-factors-why-embedded-rses-pay-off"
                 },
                 {
                   "title": "Mission Control: Service and the Stewardship of Science",
                   "speakers": "Malcolm Barrett",
                   "people": [
                     "Malcolm Barrett"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#mission-control-service-and-the-stewardship-of-science"
                 },
                 {
                   "title": "Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers",
@@ -1355,7 +1506,9 @@
                   "people": [
                     "Julia Damerow",
                     "Susan Massey"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers"
                 }
               ]
             },
@@ -1383,7 +1536,9 @@
                     "Chris Mungall",
                     "Paramvir Dehal",
                     "Adam P. Arkin"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-lakehouse-to-labmate-kbase-s-vision-for-ai-enabled-scientific-discovery"
                 },
                 {
                   "title": "HEROIC: A Research Software Infrastructure for Real-Time Multi-Messenger Observatory Coordination",
@@ -1392,7 +1547,9 @@
                     "Jon Nation",
                     "Fabián Araneda-Baltierra",
                     "Curtis McCully"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#heroic-a-research-software-infrastructure-for-real-time-multi-messenger-observatory-coordination"
                 },
                 {
                   "title": "A Managed Database-as-a-Service Platform for Scientific Computing",
@@ -1401,14 +1558,18 @@
                     "Jingyan Jiang",
                     "Huihuo Zheng",
                     "Venkatram Vishwanath"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#a-managed-database-as-a-service-platform-for-scientific-computing"
                 },
                 {
                   "title": "One Size Fits None: Rethinking Campus Research Computing",
                   "speakers": "Christopher Heller",
                   "people": [
                     "Christopher Heller"
-                  ]
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#one-size-fits-none-rethinking-campus-research-computing"
                 }
               ]
             }

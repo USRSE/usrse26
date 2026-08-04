@@ -18,3 +18,75 @@ Scientific research increasingly relies on large, heterogeneous data sources, mo
 In astronomy, this development follows a long history of computational infrastructure development, from archival databases and SQL-based systems to LLM-assisted research tools. This paper presents a domain-expert evaluation of faithfulness for AquiLLM, an open-weight, offline RAG-LLM platform designed to support scientific research groups in the use and preservation of tacit and formal knowledge.
 
 We define faithfulness as the extent to which generated responses remain grounded in retrieved scientific context without unsupported claims or omissions. We report results from an astronomy case study evaluating AquiLLM across retrieval and scientific analysis tasks. AquiLLM performs most reliably on explicit retrieval-oriented questions grounded in the RAG collection, while faithfulness degrades for queries requiring synthesis or ambiguity resolution. These results highlight both the promise and limitations of open-weight RAG-LLM systems for scientific research and demonstrate the importance of domain-expert evaluation beyond standard benchmark leaderboards.
+
+------
+
+## Measuring What Matters in the Age of AI: The Research Software Metrics Landscape {#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape}
+
+_Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus_
+
+------
+
+## DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments {#dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments}
+
+_Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel_
+
+------
+
+## Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC {#ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc}
+
+_Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle_
+
+------
+
+## Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools {#tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools}
+
+_Smruti Padhy, Anagha Jamthe and Joe Stubbs_
+
+------
+
+## Structuring agentic AI for HPC code modernization {#structuring-agentic-ai-for-hpc-code-modernization}
+
+_Anthony Marinov and Igor Sfiligoi_
+
+------
+
+## Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language {#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language}
+
+_A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs_
+
+------
+
+## Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline {#take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline}
+
+_Jing Qi, William Cowen and Christian Darabos_
+
+------
+
+## Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines {#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines}
+
+_Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier_
+
+------
+
+## Fabla: An Open-Source Voice-First EMA Platform for Clinical Research {#fabla-an-open-source-voice-first-ema-platform-for-clinical-research}
+
+_Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan_
+
+------
+
+## We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI {#we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai}
+
+_Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos_
+
+------
+
+## AI-Augmented Research Software Engineering: Risks, Challenges, and Practices {#ai-augmented-research-software-engineering-risks-challenges-and-practices}
+
+_I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song_
+
+------
+
+## A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training {#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training}
+
+_Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song_
