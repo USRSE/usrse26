@@ -21,7 +21,7 @@
    ========================================================================== */
 
 .program {
-  --program-accent: #741755;
+  --program-accent: var(--us-rse-main);
   --program-ink: #4a4a4a;
   --program-strong: #363636;
   --program-muted: #757575;
@@ -45,6 +45,10 @@
   --tick-top: 0.38rem;   /* offset from slot content top to the tick,
                             centering it on the title's first line */
   --slot-pad-y: 0.9rem;
+
+  /* Cap on the talk label column. Each session sizes the column to its
+     widest label, up to this — BIRD OF A FEATHER wraps beyond it. */
+  --talk-gutter: 5.25rem;
 
   color: var(--program-ink);
 }
@@ -253,6 +257,15 @@
   color: var(--program-accent);
 }
 
+/* Session chair, tucked next to the format on the eyebrow line — same
+   size, but normal case and muted so the name doesn't read as a label. */
+.session__chair {
+  font-weight: 600;
+  letter-spacing: normal;
+  text-transform: none;
+  color: var(--program-muted);
+}
+
 .session__info {
   padding-top: 0.3rem;
   font-size: 0.875rem;
@@ -264,29 +277,75 @@
   padding-top: 0.4rem;
 }
 
+/* Sessions that label events form a shared two-column grid whose label
+   column hugs the session's widest label (capped at --talk-gutter), so a
+   PAPER/TALK session indents titles ~3rem, not worst-case width, and a
+   mixed session still aligns every title. Formatless sessions never form
+   the grid — their titles stay on the session's left edge. No list
+   marker either way — the aligned labels are the rhythm. */
+.session__talks:has(.talk__format) {
+  display: grid;
+  grid-template-columns: fit-content(var(--talk-gutter)) minmax(0, 1fr);
+  column-gap: 0.75rem;
+}
+
 .talk {
-  position: relative;
-  padding: 0.15rem 0 0.15rem 1.05rem;
+  display: grid;
+  grid-template-columns: minmax(0, 1fr);
+  column-gap: 0.75rem;
+  align-items: baseline;
+  padding: 0.35rem 0;
   font-size: 0.9375rem;
   line-height: 1.4;
 }
 
-/* Accent dot marker, centered on the first text line (padding-top plus
-   half the 1.4 line-height, minus half the 5px dot). */
-.talk::before {
-  content: "";
-  position: absolute;
-  left: 0.15rem;
-  top: calc(0.15rem + 0.7em - 2.5px);
-  width: 5px;
-  height: 5px;
-  border-radius: 50%;
-  background: var(--program-accent);
+/* Each labeled row spans both tracks and aligns its label/title to the
+   session's shared columns via subgrid. The fixed-gutter line before it
+   is the fallback for browsers without subgrid; without :has() at all,
+   rows are plain single-column — cosmetic degradation only. */
+.session__talks:has(.talk__format) .talk {
+  grid-column: 1 / -1;
+  grid-template-columns: var(--talk-gutter) minmax(0, 1fr);
+  grid-template-columns: subgrid;
 }
 
-.talk__speakers {
-  font-size: 0.875rem;
+/* Format label — quiet muted tag, sized like the session eyebrow so the
+   two label systems read as one family. Long labels (BIRD OF A FEATHER)
+   wrap inside the gutter, still right-aligned. */
+.talk__format {
+  grid-column: 1;
+  text-align: right;
+  font-size: 0.6875rem;
+  font-weight: 700;
+  letter-spacing: 0.09em;
+  text-transform: uppercase;
   color: var(--program-muted);
+}
+
+/* The title (span when unlinked, anchor when linked) always occupies the
+   last column — the text column when the gutter exists, the whole row
+   when it doesn't — so sessions mixing labeled and unlabeled events keep
+   one shared title edge. */
+.talk > .talk__title,
+.talk > .talk__link {
+  grid-column: -2 / -1;
+}
+
+/* Abstract deep link — body-colored text over a quiet underline that
+   turns accent on hover; the wrapped title keeps its weight. Two classes
+   out-rank the theme's `.content a` color. */
+.program .talk__link {
+  color: var(--program-strong);
+  text-decoration: underline;
+  text-decoration-color: #b5b5b5;   /* the theme's grey-light */
+  text-underline-offset: 0.2em;
+  text-decoration-thickness: 1px;
+}
+
+.program .talk__link:hover,
+.program .talk__link:focus-visible {
+  text-decoration-color: var(--program-accent);
+  text-decoration-thickness: 2px;
 }
 
 /* --------------------------------------------------------------------------

@@ -70,90 +70,179 @@
             {
               "title": "RAG Assistants",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
-                },
-                {
-                  "title": "[Paper] AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research",
-                  "speakers": ""
+                  "title": "AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research",
+                  "speakers": "Bernie Boscoe, Tuan Do, Jack Stark, Srinath Saikrishnan, Vikram Seenivasan, PJ Allen, Morgan Himes, Jonathan Soriano, Andrew Lizarraga",
+                  "people": [
+                    "Bernie Boscoe",
+                    "Tuan Do",
+                    "Jack Stark",
+                    "Srinath Saikrishnan",
+                    "Vikram Seenivasan",
+                    "PJ Allen",
+                    "Morgan Himes",
+                    "Jonathan Soriano",
+                    "Andrew Lizarraga"
+                  ],
+                  "format": "Paper",
+                  "infoMd": "Scientific research increasingly relies on large, heterogeneous data sources, motivating interest in retrievalaugmented generation (RAG) systems that provide natural language access to scientific knowledge and research workflows. Researchers are exploring the viability of these systems as natural language interfaces for document search and for generating analysis code and pipeline components. At the same time, concerns about data privacy and control over research infrastructure have motivated interest in open-weight models and open-source deployments hosted within research institutions.\n\nIn astronomy, this development follows a long history of computational infrastructure development, from archival databases and SQL-based systems to LLM-assisted research tools. This paper presents a domain-expert evaluation of faithfulness for AquiLLM, an open-weight, offline RAG-LLM platform designed to support scientific research groups in the use and preservation of tacit and formal knowledge.\n\nWe define faithfulness as the extent to which generated responses remain grounded in retrieved scientific context without unsupported claims or omissions. We report results from an astronomy case study evaluating AquiLLM across retrieval and scientific analysis tasks. AquiLLM performs most reliably on explicit retrieval-oriented questions grounded in the RAG collection, while faithfulness degrades for queries requiring synthesis or ambiguity resolution. These results highlight both the promise and limitations of open-weight RAG-LLM systems for scientific research and demonstrate the importance of domain-expert evaluation beyond standard benchmark leaderboards.",
+                  "href": "program/papers/#aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research"
                 },
                 {
                   "title": "LZ Oracle: an AI-assisted knowledge retrieval platform for the LUX-ZEPLIN dark matter experiment",
-                  "speakers": ""
+                  "speakers": "Maris Arthurs, Jeonghwa Kim, Ibles Olcina",
+                  "people": [
+                    "Maris Arthurs",
+                    "Jeonghwa Kim",
+                    "Ibles Olcina"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "LUX-ZEPLIN (LZ) is the world's largest dark matter direct detection experiment using a dual-phase xenon time projection chamber with a 7-ton active volume, situated a mile underground at the Sanford Underground Research Facility, South Dakota, USA.\n\nLarge experimental physics collaborations, such as LZ, produce and maintain a broad range of technical knowledge, including detector documentation, operation records, analysis notes, software repositories, and data-processing workflows. While this information is essential for scientific productivity, it is often distributed across many platforms and evolves continuously over the lifetime of an experiment. This creates a practical challenge for collaboration members. Finding context-aware answers often requires knowing where to search, which terminology to use, and which information is current.\n\nWe present LZ Oracle, an AI-assisted platform being developed for the LZ dark matter experiment to improve access to collaboration knowledge and support scientific and operational workflows. The system combines retrieval-augmented generation with an agentic exploration that can search indexed documentation, inspect relevant context, and synthesize responses grounded in collaboration materials. Current development focuses on improving reliability, expanding knowledge coverage, and designing evaluation workflows that allow domain experts to benchmark answer quality and provide structured feedback.\n\nThis talk will describe the design goals, architecture, deployment considerations, and lessons learned from developing an AI-assisted knowledge retrieval platform for the LZ collaboration.",
+                  "href": "program/talks/#lz-oracle-an-ai-assisted-knowledge-retrieval-platform-for-the-lux-zeplin-dark-matter-experiment"
                 },
                 {
-                  "title": "Data Sherpa: An AI-Powered Assistant for Scientific Collaboration Knowledge Management by Fabián Araneda-Baltierra and Felipe Menanteau",
-                  "speakers": ""
+                  "title": "Data Sherpa: An AI-Powered Assistant for Scientific Collaboration Knowledge Management",
+                  "speakers": "Fabián Araneda-Baltierra and Felipe Menanteau",
+                  "people": [
+                    "Fabián Araneda-Baltierra",
+                    "Felipe Menanteau"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#data-sherpa-an-ai-powered-assistant-for-scientific-collaboration-knowledge-management"
                 },
                 {
-                  "title": "AskALCF: A RAG Assistant for HPC User Support by Jingyan Jiang, Huihuo Zheng, Akhilesh Bondapalli, Krishna Rauniyar, Murat Keceli, Yasaman Ghadar, Venkatram Vishwanath, Rong Ge and Haritha Siddabathuni Som",
-                  "speakers": ""
+                  "title": "AskALCF: A RAG Assistant for HPC User Support",
+                  "speakers": "Jingyan Jiang, Huihuo Zheng, Akhilesh Bondapalli, Krishna Rauniyar, Murat Keceli, Yasaman Ghadar, Venkatram Vishwanath, Rong Ge and Haritha Siddabathuni Som",
+                  "people": [
+                    "Jingyan Jiang",
+                    "Huihuo Zheng",
+                    "Akhilesh Bondapalli",
+                    "Krishna Rauniyar",
+                    "Murat Keceli",
+                    "Yasaman Ghadar",
+                    "Venkatram Vishwanath",
+                    "Rong Ge",
+                    "Haritha Siddabathuni Som"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#askalcf-a-rag-assistant-for-hpc-user-support"
                 }
               ]
             },
             {
               "title": "Case Studies Demonstrating RSE Impacts Part I",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports",
+                  "speakers": "Sophie Breitbart",
+                  "people": [
+                    "Sophie Breitbart"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports"
                 },
                 {
-                  "title": "Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports by Sophie Breitbart",
-                  "speakers": ""
+                  "title": "A Modular Threaded Software Application for Axion Detection with DMRadio",
+                  "speakers": "Pamela Stark",
+                  "people": [
+                    "Pamela Stark"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#a-modular-threaded-software-application-for-axion-detection-with-dmradio"
                 },
                 {
-                  "title": "A Modular Threaded Software Application for Axion Detection with DMRadio by Pamela Stark",
-                  "speakers": ""
+                  "title": "Poisonous Books: Rule Based Physics Pipeline and Agentic LLMs for Detecting and Analyzing Toxic Pigments in Victorian Bookbindings",
+                  "speakers": "Kevin Bhimani, Asritha Polu, Melissa Tedone, Rosie Grayburn, Amelia Oakes and Sunita Chandrasekaran",
+                  "people": [
+                    "Kevin Bhimani",
+                    "Asritha Polu",
+                    "Melissa Tedone",
+                    "Rosie Grayburn",
+                    "Amelia Oakes",
+                    "Sunita Chandrasekaran"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#poisonous-books-rule-based-physics-pipeline-and-agentic-llms-for-detecting-and-analyzing-toxic-pigments-in-victorian-bookbindings"
                 },
                 {
-                  "title": "Poisonous Books: Rule Based Physics Pipeline and Agentic LLMs for Detecting and Analyzing Toxic Pigments in Victorian Bookbindings by Kevin Bhimani, Asritha Polu, Melissa Tedone, Rosie Grayburn, Amelia Oakes and Sunita Chandrasekaran",
-                  "speakers": ""
-                },
-                {
-                  "title": "Building Modern Tools for Computational Science in Flutter to Track the American Chestnut by Jay Billings",
-                  "speakers": ""
+                  "title": "Building Modern Tools for Computational Science in Flutter to Track the American Chestnut",
+                  "speakers": "Jay Billings",
+                  "people": [
+                    "Jay Billings"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#building-modern-tools-for-computational-science-in-flutter-to-track-the-american-chestnut"
                 }
               ]
             },
             {
               "title": "AI Assisted Code Development",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON",
+                  "speakers": "Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik",
+                  "people": [
+                    "Yaroslav Halchenko",
+                    "Cody Baker",
+                    "Austin Macdonald",
+                    "Isaac To",
+                    "Vadim Melnik"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con"
                 },
                 {
-                  "title": "Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON by Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik",
-                  "speakers": ""
+                  "title": "Drinking from the Firehose: Practical Strategies for Research Software Engineers to Stay Current on AI Tools and Agents",
+                  "speakers": "Nick Ross and Tim Hannifan",
+                  "people": [
+                    "Nick Ross",
+                    "Tim Hannifan"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#drinking-from-the-firehose-practical-strategies-for-research-software-engineers-to-stay-current-on-ai-tools-and-agents"
                 },
                 {
-                  "title": "Drinking from the Firehose: Practical Strategies for Research Software Engineers to Stay Current on AI Tools and Agents by Nick Ross and Tim Hannifan",
-                  "speakers": ""
+                  "title": "Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development",
+                  "speakers": "Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet",
+                  "people": [
+                    "Addi Malviya Thakur",
+                    "John Hetrick",
+                    "Peter Peterson",
+                    "Mathieu Doucet"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development"
                 },
                 {
-                  "title": "Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development by Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet",
-                  "speakers": ""
-                },
-                {
-                  "title": "Designing for Trust in AI-Assisted Scientific Computing by Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang",
-                  "speakers": ""
+                  "title": "Designing for Trust in AI-Assisted Scientific Computing",
+                  "speakers": "Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang",
+                  "people": [
+                    "Rajshree Deshmukh",
+                    "Sarah Poon",
+                    "Johanna Cohoon",
+                    "Dan Gunter",
+                    "Sheng Pang"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#designing-for-trust-in-ai-assisted-scientific-computing"
                 }
               ]
             }
@@ -164,15 +253,15 @@
           "end": "1:30pm",
           "startISO": "2026-10-19T12:00:00-07:00",
           "endISO": "2026-10-19T13:30:00-07:00",
-          "break": true,
+          "break": false,
           "sessions": [
             {
               "title": "Lunch Break (Sponsorship available)",
-              "type": "Meal",
+              "type": "",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "Early Career Mentor/Mentee Lunch",
               "plenary": false,
-              "muted": true,
+              "muted": false,
               "talks": []
             }
           ]
@@ -187,90 +276,169 @@
             {
               "title": "Notebooks",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets",
+                  "speakers": "Zachary Katz and Tasha Snow",
+                  "people": [
+                    "Zachary Katz",
+                    "Tasha Snow"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets"
                 },
                 {
-                  "title": "[Notebook] Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets by Zachary Katz and Tasha Snow",
-                  "speakers": ""
+                  "title": "Marimo: an open-source reactive notebook for Python",
+                  "speakers": "Akshay Agrawal",
+                  "people": [
+                    "Akshay Agrawal"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#marimo-an-open-source-reactive-notebook-for-python"
                 },
                 {
-                  "title": "Marimo: an open-source reactive notebook for Python by Akshay Agrawal",
-                  "speakers": ""
+                  "title": "[Notebook] Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation",
+                  "speakers": "Pariksheet Nanda, Rocco Caprara and Jason Shoemaker",
+                  "people": [
+                    "Pariksheet Nanda",
+                    "Rocco Caprara",
+                    "Jason Shoemaker"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#notebook-beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation"
                 },
                 {
-                  "title": "[Notebook] Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation by Pariksheet Nanda, Rocco Caprara and Jason Shoemaker",
-                  "speakers": ""
-                },
-                {
-                  "title": "From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins by Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen",
-                  "speakers": ""
+                  "title": "From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins",
+                  "speakers": "Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen",
+                  "people": [
+                    "Sara Miskovich",
+                    "Gopika Bhardwaj",
+                    "Ryan Roussel",
+                    "Auralee Edelen"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins"
                 }
               ]
             },
             {
               "title": "Lessons from Training Users & RSEs",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps",
+                  "speakers": "Ian Cosden and Jeffrey Carver",
+                  "people": [
+                    "Ian Cosden",
+                    "Jeffrey Carver"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps"
                 },
                 {
-                  "title": "INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps by Ian Cosden and Jeffrey Carver",
-                  "speakers": ""
+                  "title": "Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era",
+                  "speakers": "Simon Stone, William Cowen and Christian Darabos",
+                  "people": [
+                    "Simon Stone",
+                    "William Cowen",
+                    "Christian Darabos"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era"
                 },
                 {
-                  "title": "Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era by Simon Stone, William Cowen and Christian Darabos",
-                  "speakers": ""
+                  "title": "Building Open Source Communities Through Effective Tutorials",
+                  "speakers": "Alec Scott and Gregory Becker",
+                  "people": [
+                    "Alec Scott",
+                    "Gregory Becker"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#building-open-source-communities-through-effective-tutorials"
                 },
                 {
-                  "title": "Building Open Source Communities Through Effective Tutorials by Alec Scott and Gregory Becker",
-                  "speakers": ""
-                },
-                {
-                  "title": "Evolving HPC User Support: Just-in-Time Learning with Instructional Videos by Lipi Gupta, Afton Geil, Lisa Claus and Adam Lavely",
-                  "speakers": ""
+                  "title": "Evolving HPC User Support: Just-in-Time Learning with Instructional Videos",
+                  "speakers": "Lipi Gupta, Afton Geil, Lisa Claus and Adam Lavely",
+                  "people": [
+                    "Lipi Gupta",
+                    "Afton Geil",
+                    "Lisa Claus",
+                    "Adam Lavely"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#evolving-hpc-user-support-just-in-time-learning-with-instructional-videos"
                 }
               ]
             },
             {
               "title": "AI + Software Quality",
-              "type": "Talks",
+              "type": "",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems",
+                  "speakers": "Aditi Gopalan, Adam Taylor, Dave Bunten, Gregory Way and Jineta Banerjee",
+                  "people": [
+                    "Aditi Gopalan",
+                    "Adam Taylor",
+                    "Dave Bunten",
+                    "Gregory Way",
+                    "Jineta Banerjee"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems"
                 },
                 {
-                  "title": "Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems by Aditi Gopalan, Adam Taylor, Dave Bunten, Gregory Way and Jineta Banerjee",
-                  "speakers": ""
+                  "title": "Measuring What Matters in the Age of AI: The Research Software Metrics Landscape",
+                  "speakers": "Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus",
+                  "people": [
+                    "Addi Malviya Thakur",
+                    "Reed Milewicz",
+                    "Gregory Watson",
+                    "Audris Mockus"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape"
                 },
                 {
-                  "title": "[Paper] Measuring What Matters in the Age of AI: The Research Software Metrics Landscape by Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus",
-                  "speakers": ""
+                  "title": "Back to Basics: Design-First Development in the Age of AI Coding Assistants",
+                  "speakers": "Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens",
+                  "people": [
+                    "Chris Pond",
+                    "Rob Kooper",
+                    "Marcos Frenkel",
+                    "Chris Stephens"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants"
                 },
                 {
-                  "title": "Back to Basics: Design-First Development in the Age of AI Coding Assistants by Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens",
-                  "speakers": ""
-                },
-                {
-                  "title": "Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software by Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus",
-                  "speakers": ""
+                  "title": "Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software",
+                  "speakers": "Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus",
+                  "people": [
+                    "Addi Malviya Thakur",
+                    "Reed Milewicz",
+                    "Mahmoud Jahanshahi",
+                    "Lavínia Paganini",
+                    "Bogdan Vasilescu",
+                    "Audris Mockus"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software"
                 }
               ]
             }
@@ -302,58 +470,104 @@
           "break": false,
           "sessions": [
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "RSE Team Operations",
+              "type": "Workshop",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges by Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown",
-                  "speakers": ""
+                  "title": "Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges",
+                  "speakers": "Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown",
+                  "people": [
+                    "Daniel Madren",
+                    "Geoffrey Lentner",
+                    "Laura Theademan",
+                    "Chris Bentley",
+                    "Christina Maimone",
+                    "Ian Cosden",
+                    "Sandra Gesing",
+                    "Adam Rubens",
+                    "David Pettifor",
+                    "Elizabeth Leake",
+                    "William Cowen",
+                    "Abbey Roelofs",
+                    "Daniel Shown"
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges"
                 }
               ]
             },
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "Institutional RSE Community",
+              "type": "Workshop",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] Building an Institutional RSE Community by Julia Damerow, J.C. Subida, Alex Koufos, Dan Woulfin and Trevor Spreadbury",
-                  "speakers": ""
+                  "title": "Building an Institutional RSE Community",
+                  "speakers": "Julia Damerow, J.C. Subida, Alex Koufos, Dan Woulfin and Trevor Spreadbury",
+                  "people": [
+                    "Julia Damerow",
+                    "J.C. Subida",
+                    "Alex Koufos",
+                    "Dan Woulfin",
+                    "Trevor Spreadbury"
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#building-an-institutional-rse-community"
                 }
               ]
             },
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "Better Scientific Software Fellowship",
+              "type": "Workshop",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] Better Scientific Software Fellowship Community by Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung",
-                  "speakers": ""
+                  "title": "Better Scientific Software Fellowship Community",
+                  "speakers": "Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung",
+                  "people": [
+                    "Adam Lavely",
+                    "Elsa Gonsiorowski",
+                    "Mary Ann Leung"
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#better-scientific-software-fellowship-community"
                 }
               ]
             },
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "Threat Modeling for Research Software Systems",
+              "type": "Workshop",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[Workshop] A Group Attempt at Threat Modeling for Research Software Systems by James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson",
-                  "speakers": ""
+                  "title": "A Group Attempt at Threat Modeling for Research Software Systems",
+                  "speakers": "James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson",
+                  "people": [
+                    "James Davis",
+                    "George K. Thiruvathukal",
+                    "Jeffrey Carver",
+                    "Kelechi G Kalu",
+                    "Alexandra Harris-Watson"
+                  ],
+                  "format": "Workshop",
+                  "href": "program/workshops/#a-group-attempt-at-threat-modeling-for-research-software-systems"
                 }
               ]
             }
@@ -430,90 +644,158 @@
             {
               "title": "RSE Practices in the Age of AI Part I",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Research Software Engineering in the Age of Generative AI",
+                  "speakers": "Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat",
+                  "people": [
+                    "Christina Maimone",
+                    "Sandra Gesing",
+                    "Ian Cosden",
+                    "Daniel S. Katz",
+                    "Stephan Druskat"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#research-software-engineering-in-the-age-of-generative-ai"
                 },
                 {
-                  "title": "Research Software Engineering in the Age of Generative AI by Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat",
-                  "speakers": ""
+                  "title": "Beyond Editing Code: Uses for AI Tools in Scientific Work",
+                  "speakers": "Johanna Cohoon and Drew Paine",
+                  "people": [
+                    "Johanna Cohoon",
+                    "Drew Paine"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-editing-code-uses-for-ai-tools-in-scientific-work"
                 },
                 {
-                  "title": "Beyond Editing Code: Uses for AI Tools in Scientific Work by Johanna Cohoon and Drew Paine",
-                  "speakers": ""
+                  "title": "Ten Projects, Two Teams, One Question: How Does AI Impact Development?",
+                  "speakers": "Dave Brownell",
+                  "people": [
+                    "Dave Brownell"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#ten-projects-two-teams-one-question-how-does-ai-impact-development"
                 },
                 {
-                  "title": "Ten Projects, Two Teams, One Question: How Does AI Impact Development? by Dave Brownell",
-                  "speakers": ""
-                },
-                {
-                  "title": "Coding with LLM Agents: The Research Software Engineer as the Quality Gate by Nicole Tebaldi and Kyle Crocker",
-                  "speakers": ""
+                  "title": "Coding with LLM Agents: The Research Software Engineer as the Quality Gate",
+                  "speakers": "Nicole Tebaldi and Kyle Crocker",
+                  "people": [
+                    "Nicole Tebaldi",
+                    "Kyle Crocker"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#coding-with-llm-agents-the-research-software-engineer-as-the-quality-gate"
                 }
               ]
             },
             {
               "title": "The Human Factor",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows",
+                  "speakers": "Md Hasan Shahriar Simanto",
+                  "people": [
+                    "Md Hasan Shahriar Simanto"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows"
                 },
                 {
-                  "title": "Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows by Md Hasan Shahriar Simanto",
-                  "speakers": ""
+                  "title": "From Mood Boards to Web Components: Our Journey Building a Design System for Research",
+                  "speakers": "Katrina Turner and Freddy Mande",
+                  "people": [
+                    "Katrina Turner",
+                    "Freddy Mande"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-mood-boards-to-web-components-our-journey-building-a-design-system-for-research"
                 },
                 {
-                  "title": "From Mood Boards to Web Components: Our Journey Building a Design System for Research by Katrina Turner and Freddy Mande",
-                  "speakers": ""
+                  "title": "Human in the Loop: Requirements Gathering and Researcher Trust in the Age of AI",
+                  "speakers": "Michael Kennel",
+                  "people": [
+                    "Michael Kennel"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#human-in-the-loop-requirements-gathering-and-researcher-trust-in-the-age-of-ai"
                 },
                 {
-                  "title": "Human in the Loop: Requirements Gathering and Researcher Trust in the Age of AI by Michael Kennel",
-                  "speakers": ""
-                },
-                {
-                  "title": "Designing for Two Audiences: AI-Readiness and Human Data Usability by Cody O'Donnell",
-                  "speakers": ""
+                  "title": "Designing for Two Audiences: AI-Readiness and Human Data Usability",
+                  "speakers": "Cody O'Donnell",
+                  "people": [
+                    "Cody O'Donnell"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#designing-for-two-audiences-ai-readiness-and-human-data-usability"
                 }
               ]
             },
             {
               "title": "HPC + AI",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments",
+                  "speakers": "Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel",
+                  "people": [
+                    "Abdur Rouf",
+                    "Fahad Ahmad Khan",
+                    "Benjamin Keene",
+                    "Shafaq Chaudhry",
+                    "Murat Yuksel"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments"
                 },
                 {
-                  "title": "[Paper] DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments by Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel",
-                  "speakers": ""
+                  "title": "Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC",
+                  "speakers": "Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle",
+                  "people": [
+                    "Nil Tianchen Mu",
+                    "William Dizon",
+                    "Glen Otero",
+                    "Torey Battelle"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc"
                 },
                 {
-                  "title": "[Paper] Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC by Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle",
-                  "speakers": ""
+                  "title": "Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools",
+                  "speakers": "Smruti Padhy, Anagha Jamthe and Joe Stubbs",
+                  "people": [
+                    "Smruti Padhy",
+                    "Anagha Jamthe",
+                    "Joe Stubbs"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools"
                 },
                 {
-                  "title": "[Paper] Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools by Smruti Padhy, Anagha Jamthe and Joe Stubbs",
-                  "speakers": ""
-                },
-                {
-                  "title": "[Paper] Structuring agentic AI for HPC code modernization by Anthony Marinov and Igor Sfiligoi",
-                  "speakers": ""
+                  "title": "Structuring agentic AI for HPC code modernization",
+                  "speakers": "Anthony Marinov and Igor Sfiligoi",
+                  "people": [
+                    "Anthony Marinov",
+                    "Igor Sfiligoi"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#structuring-agentic-ai-for-hpc-code-modernization"
                 }
               ]
             }
@@ -542,15 +824,15 @@
           "end": "1:15pm",
           "startISO": "2026-10-20T12:45:00-07:00",
           "endISO": "2026-10-20T13:15:00-07:00",
-          "break": true,
+          "break": false,
           "sessions": [
             {
               "title": "Working Group Fair (Presentations during lunch)",
-              "type": "Meal",
+              "type": "",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
               "plenary": false,
-              "muted": true,
+              "muted": false,
               "talks": []
             }
           ]
@@ -563,58 +845,96 @@
           "break": false,
           "sessions": [
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "RSE Skill Training",
+              "type": "BoF",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] How to train an RSE: A discussion of RSE skill training - past, future, and present by Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien",
-                  "speakers": ""
+                  "title": "How to train an RSE: A discussion of RSE skill training - past, future, and present",
+                  "speakers": "Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien",
+                  "people": [
+                    "Ellianna Abrahams",
+                    "Lauren Milechin",
+                    "Jeffrey Carver",
+                    "Daniel Woulfin",
+                    "Patrick Diehl",
+                    "Gabrielle O'Brien"
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#how-to-train-an-rse-a-discussion-of-rse-skill-training-past-future-and-present"
                 }
               ]
             },
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "User Experience: Journey Mapping",
+              "type": "Workshop",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[Workshop] Journey Mapping: A technique to see opportunities and recognize gaps in user experience by Johanna Cohoon, Rajshree Deshmukh, Md Hasan Shahriar Simanto, Mary Goldman, Katrina Turner, Sarah Poon",
-                  "speakers": ""
+                  "title": "Journey Mapping: A technique to see opportunities and recognize gaps in user experience",
+                  "speakers": "Johanna Cohoon, Rajshree Deshmukh, Md Hasan Shahriar Simanto, Mary Goldman, Katrina Turner, Sarah Poon",
+                  "people": [
+                    "Johanna Cohoon",
+                    "Rajshree Deshmukh",
+                    "Md Hasan Shahriar Simanto",
+                    "Mary Goldman",
+                    "Katrina Turner",
+                    "Sarah Poon"
+                  ],
+                  "format": "Workshop",
+                  "href": "program/workshops/#journey-mapping-a-technique-to-see-opportunities-and-recognize-gaps-in-user-experience"
                 }
               ]
             },
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "Improve Research Outputs by Improving Institutional Collaboration",
+              "type": "BoF",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[BoF] How can institutional RSE hubs and OSPOs work together for the betterment of research outputs? by William Gearty, Jeffrey Young, Collin Capano, Ian Cosden, Daniel Katz, Richard Littauer, Fang Liu and Daniel Shown",
-                  "speakers": ""
+                  "title": "How can institutional RSE hubs and OSPOs work together for the betterment of research outputs?",
+                  "speakers": "William Gearty, Jeffrey Young, Collin Capano, Ian Cosden, Daniel Katz, Richard Littauer, Fang Liu and Daniel Shown",
+                  "people": [
+                    "William Gearty",
+                    "Jeffrey Young",
+                    "Collin Capano",
+                    "Ian Cosden",
+                    "Daniel Katz",
+                    "Richard Littauer",
+                    "Fang Liu",
+                    "Daniel Shown"
+                  ],
+                  "format": "Bird of a Feather",
+                  "href": "program/bofs/#how-can-institutional-rse-hubs-and-ospos-work-together-for-the-betterment-of-research-outputs"
                 }
               ]
             },
             {
-              "title": "Afternoon Tech Session (Workshops / BoFs)",
-              "type": "Workshops / BoFs",
+              "title": "Refactoring Code for Reuse and Impact",
+              "type": "Workshop",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "[Workshop] Fixer-Upper Software: Refactoring Code for Reuse and Impact by Brian Ward and Jeff Soules",
-                  "speakers": ""
+                  "title": "Fixer-Upper Software: Refactoring Code for Reuse and Impact",
+                  "speakers": "Brian Ward and Jeff Soules",
+                  "people": [
+                    "Brian Ward",
+                    "Jeff Soules"
+                  ],
+                  "format": "Workshop",
+                  "href": "program/workshops/#fixer-upper-software-refactoring-code-for-reuse-and-impact"
                 }
               ]
             }
@@ -648,90 +968,170 @@
             {
               "title": "Case Studies Demonstrating RSE Impacts Part II",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language",
+                  "speakers": "A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs",
+                  "people": [
+                    "A Pottinger",
+                    "Nick Gondek",
+                    "Lucia Layritz",
+                    "Maya Zomer",
+                    "Nicolas Graver",
+                    "Amanda Anderson-You",
+                    "Maya Weltman-Fahs"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language"
                 },
                 {
-                  "title": "[Paper] Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language by A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs",
-                  "speakers": ""
+                  "title": "Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline",
+                  "speakers": "Jing Qi, William Cowen and Christian Darabos",
+                  "people": [
+                    "Jing Qi",
+                    "William Cowen",
+                    "Christian Darabos"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline"
                 },
                 {
-                  "title": "[Paper] Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline by Jing Qi, William Cowen and Christian Darabos",
-                  "speakers": ""
+                  "title": "Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines",
+                  "speakers": "Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier",
+                  "people": [
+                    "Pavel Belakurski",
+                    "Dmitry Etin",
+                    "Mark Chumack",
+                    "Michael Bouzinier"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines"
                 },
                 {
-                  "title": "[Paper] Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines by Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier",
-                  "speakers": ""
-                },
-                {
-                  "title": "Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions by Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur",
-                  "speakers": ""
+                  "title": "Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions",
+                  "speakers": "Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur",
+                  "people": [
+                    "Marie Backman",
+                    "Darsh Dinger",
+                    "Mathieu Doucet",
+                    "Peter Peterson",
+                    "John Hetrick",
+                    "Addi Malviya-Thakur"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions"
                 }
               ]
             },
             {
               "title": "Code Modernization Using AI",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Agentic code modernization",
+                  "speakers": "Peter Peterson and Addi Malviya-Thakur",
+                  "people": [
+                    "Peter Peterson",
+                    "Addi Malviya-Thakur"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#agentic-code-modernization"
                 },
                 {
-                  "title": "Agentic code modernization by Peter Peterson and Addi Malviya-Thakur",
-                  "speakers": ""
+                  "title": "Scientific Agentic Engineering: A Framework for Reliable AI Agents in Research Software",
+                  "speakers": "Victor Weeks",
+                  "people": [
+                    "Victor Weeks"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#scientific-agentic-engineering-a-framework-for-reliable-ai-agents-in-research-software"
                 },
                 {
-                  "title": "Scientific Agentic Engineering: A Framework for Reliable AI Agents in Research Software by Victor Weeks",
-                  "speakers": ""
+                  "title": "From Laptop to Cluster: HPC Translation Patterns for AI Stacks",
+                  "speakers": "Parmanand Sinha",
+                  "people": [
+                    "Parmanand Sinha"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-laptop-to-cluster-hpc-translation-patterns-for-ai-stacks"
                 },
                 {
-                  "title": "From Laptop to Cluster: HPC Translation Patterns for AI Stacks by Parmanand Sinha",
-                  "speakers": ""
-                },
-                {
-                  "title": "Beyond Code Pairs: Generating Test-Grounded Data for AI-Assisted Scientific Software Modernization by Le Chen and Rajeev Thakur",
-                  "speakers": ""
+                  "title": "Beyond Code Pairs: Generating Test-Grounded Data for AI-Assisted Scientific Software Modernization",
+                  "speakers": "Le Chen and Rajeev Thakur",
+                  "people": [
+                    "Le Chen",
+                    "Rajeev Thakur"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-code-pairs-generating-test-grounded-data-for-ai-assisted-scientific-software-modernization"
                 }
               ]
             },
             {
               "title": "Workflows",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Cloud-Native Graphical and Programmatic Cross-Database Access to Experiment Metadata with Trino, Superset and Ibis",
+                  "speakers": "Eli Mizrachi",
+                  "people": [
+                    "Eli Mizrachi"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#cloud-native-graphical-and-programmatic-cross-database-access-to-experiment-metadata-with-trino-superset-and-ibis"
                 },
                 {
-                  "title": "Cloud-Native Graphical and Programmatic Cross-Database Access to Experiment Metadata with Trino, Superset and Ibis by Eli Mizrachi",
-                  "speakers": ""
-                },
-                {
-                  "title": "Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution by Hilario Torres",
-                  "speakers": ""
+                  "title": "Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution",
+                  "speakers": "Hilario Torres",
+                  "people": [
+                    "Hilario Torres"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution"
                 },
                 {
                   "title": "OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration by Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam",
-                  "speakers": ""
+                  "speakers": "Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam",
+                  "people": [
+                    "Fernando Garzon",
+                    "Steven Yeu",
+                    "Scott Sakai",
+                    "Subhashini Sivagnanam"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration-by-fernando-garzon-steven-yeu-scott-sakai-and-subhashini-sivagnanam"
                 },
                 {
-                  "title": "[Paper] Fabla: An Open-Source Voice-First EMA Platform for Clinical Research by Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan",
-                  "speakers": ""
+                  "title": "Fabla: An Open-Source Voice-First EMA Platform for Clinical Research",
+                  "speakers": "Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan",
+                  "people": [
+                    "Santiago Arconada Alvarez",
+                    "Tulika Banerjee",
+                    "Wiza Munthali",
+                    "Kennedy Linzie",
+                    "Mabuchi Nyrienda",
+                    "Hope Madziakapita",
+                    "Morgan Greenleaf",
+                    "Wilbur Lam",
+                    "Deanna Kaplan"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research"
                 }
               ]
             }
@@ -808,90 +1208,169 @@
             {
               "title": "Collaboration & Community Building",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE",
+                  "speakers": "Laura Theademan and Suzanna Gardner",
+                  "people": [
+                    "Laura Theademan",
+                    "Suzanna Gardner"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#building-inclusive-talent-pathways-scaling-outreach-workforce-development-and-community-engagement-for-rse"
                 },
                 {
-                  "title": "Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE by Laura Theademan and Suzanna Gardner",
-                  "speakers": ""
+                  "title": "HPC Carpentry and Community Building at NIST",
+                  "speakers": "Andrew Reid",
+                  "people": [
+                    "Andrew Reid"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#hpc-carpentry-and-community-building-at-nist"
                 },
                 {
-                  "title": "HPC Carpentry and Community Building at NIST by Andrew Reid",
-                  "speakers": ""
+                  "title": "Navigating the Code Review Process as a Team: A Case Study",
+                  "speakers": "Abbey Roelofs",
+                  "people": [
+                    "Abbey Roelofs"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#navigating-the-code-review-process-as-a-team-a-case-study"
                 },
                 {
-                  "title": "Navigating the Code Review Process as a Team: A Case Study by Abbey Roelofs",
-                  "speakers": ""
-                },
-                {
-                  "title": "Collaboration within RSE group at Princeton: development of slurmise for resource usage estimation by Troy Comi, Ioannis Paraskevakos and Rob Bierman",
-                  "speakers": ""
+                  "title": "Collaboration within RSE group at Princeton: development of slurmise for resource usage estimation",
+                  "speakers": "Troy Comi, Ioannis Paraskevakos and Rob Bierman",
+                  "people": [
+                    "Troy Comi",
+                    "Ioannis Paraskevakos",
+                    "Rob Bierman"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#collaboration-within-rse-group-at-princeton-development-of-slurmise-for-resource-usage-estimation"
                 }
               ]
             },
             {
               "title": "Software Quality",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "Developing a Handbook of best practices for research software sustainability at Princeton",
+                  "speakers": "Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet",
+                  "people": [
+                    "Tai Sakuma",
+                    "Joel Bretheim",
+                    "Ian Cosden",
+                    "Jacob Murel",
+                    "Robert Caddy",
+                    "Henry Schreiner",
+                    "Lucas Sawade",
+                    "Rohit Kakodkar",
+                    "Mohamed Abdellatif",
+                    "Georgios Artavanis",
+                    "Andres Rios Tascon",
+                    "Rebecca Sutton Koeser",
+                    "Anushka Acharya",
+                    "Luca Bonaldo",
+                    "Amy Defnet",
+                    "Rob Bierman",
+                    "Lance Parsons",
+                    "David Luet"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton"
                 },
                 {
-                  "title": "Developing a Handbook of best practices for research software sustainability at Princeton by Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet",
-                  "speakers": ""
+                  "title": "We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI",
+                  "speakers": "Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos",
+                  "people": [
+                    "Reed Milewicz",
+                    "Connor Brynteson",
+                    "Ella Luedeke",
+                    "Italo Santos"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai"
                 },
                 {
-                  "title": "[Paper] We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI by Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos",
-                  "speakers": ""
+                  "title": "Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows",
+                  "speakers": "Niharika Pramod Pujari",
+                  "people": [
+                    "Niharika Pramod Pujari"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows"
                 },
                 {
-                  "title": "Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows by Niharika Pramod Pujari",
-                  "speakers": ""
-                },
-                {
-                  "title": "Performance Portable Software Design Patterns – What they can do and why we should collect them. by Jakob Bludau",
-                  "speakers": ""
+                  "title": "Performance Portable Software Design Patterns – What they can do and why we should collect them.",
+                  "speakers": "Jakob Bludau",
+                  "people": [
+                    "Jakob Bludau"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#performance-portable-software-design-patterns-what-they-can-do-and-why-we-should-collect-them"
                 }
               ]
             },
             {
               "title": "Generative AI + Applications",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "From Chaos to Schema: LLM-Powered Document Information Extraction",
+                  "speakers": "Alice Duan and Launa Greer",
+                  "people": [
+                    "Alice Duan",
+                    "Launa Greer"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-chaos-to-schema-llm-powered-document-information-extraction"
                 },
                 {
-                  "title": "From Chaos to Schema: LLM-Powered Document Information Extraction by Alice Duan and Launa Greer",
-                  "speakers": ""
+                  "title": "Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases",
+                  "speakers": "Modhurita Mitra, Martine de Vos, Nicola Cortinovis and Dawa Ometto",
+                  "people": [
+                    "Modhurita Mitra",
+                    "Martine de Vos",
+                    "Nicola Cortinovis",
+                    "Dawa Ometto"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#generative-ai-for-research-data-processing-lessons-learnt-from-three-use-cases"
                 },
                 {
-                  "title": "Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases by Modhurita Mitra, Martine de Vos, Nicola Cortinovis and Dawa Ometto",
-                  "speakers": ""
+                  "title": "Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models",
+                  "speakers": "Nicholas Reinicke and Robert Fitzgerald",
+                  "people": [
+                    "Nicholas Reinicke",
+                    "Robert Fitzgerald"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models"
                 },
                 {
-                  "title": "Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models by Nicholas Reinicke and Robert Fitzgerald",
-                  "speakers": ""
-                },
-                {
-                  "title": "Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs by Shailaja Keyur Sampat",
-                  "speakers": ""
+                  "title": "Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs",
+                  "speakers": "Shailaja Keyur Sampat",
+                  "people": [
+                    "Shailaja Keyur Sampat"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms"
                 }
               ]
             }
@@ -932,83 +1411,165 @@
               "talks": [
                 {
                   "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "speakers": "",
+                  "format": "Talk"
                 },
                 {
-                  "title": "[Paper] AI-Augmented Research Software Engineering: Risks, Challenges, and Practices by I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song",
-                  "speakers": ""
+                  "title": "AI-Augmented Research Software Engineering: Risks, Challenges, and Practices",
+                  "speakers": "I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song",
+                  "people": [
+                    "I Luk Kim",
+                    "Xiao Liu",
+                    "Jungha Woo",
+                    "Elham J Barezi",
+                    "Jorge Ivan Fuentes Rosado",
+                    "Jaewoo Shin",
+                    "Lan Zhao",
+                    "Carol X. Song"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices"
                 },
                 {
-                  "title": "[Paper] A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training by Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song",
-                  "speakers": ""
+                  "title": "A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training",
+                  "speakers": "Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song",
+                  "people": [
+                    "Xiao Liu",
+                    "Jungha Woo",
+                    "Lan Zhao",
+                    "Jaewoo Shin",
+                    "Chimdia Kabuo",
+                    "Carol Song"
+                  ],
+                  "format": "Paper",
+                  "href": "program/papers/#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training"
                 },
                 {
-                  "title": "A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions by William Gearty",
-                  "speakers": ""
+                  "title": "A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions",
+                  "speakers": "William Gearty",
+                  "people": [
+                    "William Gearty"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions"
                 },
                 {
-                  "title": "Preparing Students for AI-Assisted Research Workflows by Alejandra Castillo",
-                  "speakers": ""
+                  "title": "Preparing Students for AI-Assisted Research Workflows",
+                  "speakers": "Alejandra Castillo",
+                  "people": [
+                    "Alejandra Castillo"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#preparing-students-for-ai-assisted-research-workflows"
                 }
               ]
             },
             {
               "title": "Reflections on RSE Roles & Pathways",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "What They Don’t Tell You About the Data Science to RSE Transition",
+                  "speakers": "Ritika Giri",
+                  "people": [
+                    "Ritika Giri"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#what-they-don-t-tell-you-about-the-data-science-to-rse-transition"
                 },
                 {
-                  "title": "What They Don’t Tell You About the Data Science to RSE Transition by Ritika Giri",
-                  "speakers": ""
+                  "title": "Bears, Bottlenecks, and Bus Factors: Why Embedded RSEs Pay Off",
+                  "speakers": "Miranda Mundt",
+                  "people": [
+                    "Miranda Mundt"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#bears-bottlenecks-and-bus-factors-why-embedded-rses-pay-off"
                 },
                 {
-                  "title": "Bears, Bottlenecks, and Bus Factors: Why Embedded RSEs Pay Off by Miranda Mundt",
-                  "speakers": ""
+                  "title": "Mission Control: Service and the Stewardship of Science",
+                  "speakers": "Malcolm Barrett",
+                  "people": [
+                    "Malcolm Barrett"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#mission-control-service-and-the-stewardship-of-science"
                 },
                 {
-                  "title": "Mission Control: Service and the Stewardship of Science by Malcolm Barrett",
-                  "speakers": ""
-                },
-                {
-                  "title": "Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers by Julia Damerow and Susan Massey",
-                  "speakers": ""
+                  "title": "Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers",
+                  "speakers": "Julia Damerow and Susan Massey",
+                  "people": [
+                    "Julia Damerow",
+                    "Susan Massey"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers"
                 }
               ]
             },
             {
               "title": "Building Infrastructure for Communities or Organizations",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Session Chair: TBD",
-                  "speakers": ""
+                  "title": "From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery",
+                  "speakers": "Mikaela Cashman, David Lyon, Christopher J. Neely, Benjamin Allen, Christopher S. Henry, Robert Cottingham, Gazi Mahmud, Elisha M. Wood-Charlson, Chris Mungall, Paramvir Dehal and Adam P. Arkin",
+                  "people": [
+                    "Mikaela Cashman",
+                    "David Lyon",
+                    "Christopher J. Neely",
+                    "Benjamin Allen",
+                    "Christopher S. Henry",
+                    "Robert Cottingham",
+                    "Gazi Mahmud",
+                    "Elisha M. Wood-Charlson",
+                    "Chris Mungall",
+                    "Paramvir Dehal",
+                    "Adam P. Arkin"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#from-lakehouse-to-labmate-kbase-s-vision-for-ai-enabled-scientific-discovery"
                 },
                 {
-                  "title": "From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery by Mikaela Cashman, David Lyon, Christopher J. Neely, Benjamin Allen, Christopher S. Henry, Robert Cottingham, Gazi Mahmud, Elisha M. Wood-Charlson, Chris Mungall, Paramvir Dehal and Adam P. Arkin",
-                  "speakers": ""
+                  "title": "HEROIC: A Research Software Infrastructure for Real-Time Multi-Messenger Observatory Coordination",
+                  "speakers": "Jon Nation, Fabián Araneda-Baltierra and Curtis McCully",
+                  "people": [
+                    "Jon Nation",
+                    "Fabián Araneda-Baltierra",
+                    "Curtis McCully"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#heroic-a-research-software-infrastructure-for-real-time-multi-messenger-observatory-coordination"
                 },
                 {
-                  "title": "HEROIC: A Research Software Infrastructure for Real-Time Multi-Messenger Observatory Coordination by Jon Nation, Fabián Araneda-Baltierra and Curtis McCully",
-                  "speakers": ""
+                  "title": "A Managed Database-as-a-Service Platform for Scientific Computing",
+                  "speakers": "Jingyan Jiang, Huihuo Zheng and Venkatram Vishwanath",
+                  "people": [
+                    "Jingyan Jiang",
+                    "Huihuo Zheng",
+                    "Venkatram Vishwanath"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#a-managed-database-as-a-service-platform-for-scientific-computing"
                 },
                 {
-                  "title": "A Managed Database-as-a-Service Platform for Scientific Computing by Jingyan Jiang, Huihuo Zheng and Venkatram Vishwanath",
-                  "speakers": ""
-                },
-                {
-                  "title": "One Size Fits None: Rethinking Campus Research Computing by Christopher Heller",
-                  "speakers": ""
+                  "title": "One Size Fits None: Rethinking Campus Research Computing",
+                  "speakers": "Christopher Heller",
+                  "people": [
+                    "Christopher Heller"
+                  ],
+                  "format": "Talk",
+                  "href": "program/talks/#one-size-fits-none-rethinking-campus-research-computing"
                 }
               ]
             }
@@ -1041,10 +1602,10 @@
           "sessions": [
             {
               "title": "Random Access Microtalks (RAM), Closing Remarks",
-              "type": "",
+              "type": "Plenary",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
-              "plenary": false,
+              "plenary": true,
               "muted": false,
               "talks": []
             }
