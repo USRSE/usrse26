@@ -13,11 +13,17 @@ set_last_modified: true
 
 _Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown_
 
+Research Software Engineering (RSE) groups are increasingly central to the modern research enterprise, yet the operational challenges of leading, sustaining, and evolving these groups remain complex and often under-discussed. As RSE teams respond to changing research demands, evolving funding landscapes, staffing pressures, institutional expectations, and the rapid emergence of AI-enabled workflows, group leaders and operational decision-makers need practical spaces to compare challenges, share strategies, and identify reusable community resources.
+
+Building on discussions from the USRSE’24 workshop, “Establishing RSE Programs – From Early Stage Formalization to Mature Models,” this Birds of a Feather (BoF) session will provide a peer problem-solving forum for individuals involved in RSE group operations, leadership, management, and strategic decision-making. The session will feature short lightning reflections from community members followed by facilitated breakout discussions focused on identifying common challenges, sharing practical strategies, and collecting reusable operational resources for the broader RSE community. Topics may include hiring and identifying RSE talent, funding and business justification, AI-driven changes to productivity and team structure, outreach and researcher engagement, leadership development, organizational sustainability, and burnout.
+
 ------
 
 ## Building an Institutional RSE Community {#building-an-institutional-rse-community}
 
 _Julia Damerow, J.C. Subida, Alex Koufos, Dan Woulfin and Trevor Spreadbury_
+
+This Birds of a Feather (BoF) session, organized by the Institutional RSE Networking Affinity Group, plans to address a structural issue in the Research Software Engineering (RSEng) landscape: the isolation of individual Research Software Engineers (RSEs) within large institutions. By drawing on self-determination theory and communities of practice (Wenger, 1998), we aim to answer why RSEs seek out local communities and what those communities ideally look like. While national and international RSE networks are growing, many RSEs lack a local peer group to share expertise, vent frustrations, or organize for structural change. This session will provide a space for attendees to identify local needs and co-create strategies for establishing institutional RSE communities. Through interactive polling and facilitated breakout groups, participants will move from identifying shared challenges to collectively brainstorming ideas to build local networks. Key points of the discussion will be shared as a blog post after the conference.
 
 ------
 
@@ -25,14 +31,22 @@ _Julia Damerow, J.C. Subida, Alex Koufos, Dan Woulfin and Trevor Spreadbury_
 
 _Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung_
 
+Software developers face increasing complexity in computational models, computer architectures, and emerging workflows. In this environment Research Software Engineers need to continually improve software practices and constantly hone their craft. To address this need, the Better Scientific Software (BSSw) Fellowship Program launched in 2018 to seed a community of like-minded individuals interested in improving all aspects of the work of software development. The BSSw Birds of a Feather session brings together alumni, honorable mentions, current fellows, BSSw leadership and potential applicants to discuss software best practices and the upcoming 2027 Fellowship requirements and deadlines.
+
 ------
 
 ## How to train an RSE: A discussion of RSE skill training - past, future, and present {#how-to-train-an-rse-a-discussion-of-rse-skill-training-past-future-and-present}
 
 _Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien_
 
+What skills are necessary to be a Research Software Engineer (RSE) in the age of AI? The US-RSE curates [a list of skills](https://us-rse.org/wg/education_training/skills/) that an RSE might possess in order to help direct individuals looking to invest in learning new skills in preparation for a career in RSEing. At this BoF, we will meet to reevaluate this list of [US-RSE recommended skills](https://us-rse.org/wg/education_training/skills/), and to update the list of skills to prepare aspiring RSEs in the era of Agentic AI. Which skills remain fundamental, and which become more or less important with this technology? How do we balance the tension between researchers trying to adopt software engineering practices and software engineers trying work within a research domain?
+
+This BoF will be composed of a short, directed discussion to capture audience perspectives on the incorporation of LLM/AI tools in educational pathways for training in RSE skills like software engineering and research computing, followed by breakout discussions that evaluate what skills and topics are necessary and beneficial to train an RSE in 2027. During these discussions, we will encourage participants to explore the frictions inherent in becoming a RSE: domain knowledge or software engineering; self-taught or formal education; fundamentals or emerging technology; etc. Participants will share their groups’ conclusions and we intend to incorporate the outcomes into an updated list of US-RSE recommended skills and training pathways. We welcome broad participation from across the US-RSE ecosystem at all learning and professional stages, and look forward to seeing you there!
+
 ------
 
 ## How can institutional RSE hubs and OSPOs work together for the betterment of research outputs? {#how-can-institutional-rse-hubs-and-ospos-work-together-for-the-betterment-of-research-outputs}
 
 _William Gearty, Jeffrey Young, Collin Capano, Ian Cosden, Daniel Katz, Richard Littauer, Fang Liu and Daniel Shown_
+
+As nearly all research becomes more complex and computational, many institutions have begun to develop organizational structures to manage the people, tools, and best practices involved in the production of research software, data, and publications. One strategy for this involves a centralized research software engineering hub that hires software engineers who work with researchers and faculty across the institution (e.g., Princeton Research Software Engineering). Another approach is the creation of an Open Source Program Office (OSPO), which oversees and consults on the creation and use of open software and other open digital goods (e.g., Syracuse University OSPO). While these two types of institutional organizations often have similar goals, they are not mutually exclusive, and some institutions have both (e.g., Georgia Tech). This BoF brings together a panel of experts across the RSE/OSPO spectrum to discuss the priorities and values of RSE hubs and OSPOs. The panel and audience will then discuss how RSE hubs and OSPOs can work together to multiply—rather than duplicate—each others' efforts to strengthen research outputs across the institution. Anyone in the research software pipeline is welcome!
