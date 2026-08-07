@@ -1,23 +1,23 @@
 section_title: "Advancing Science in the Age of AI"
 section_subtitle: "Explore how RSEs and collaborators increase research impact during these rapidly changing times"
-items:                                                                                                                                                                                                                                                                                                
-  - title: Submit a Proposal
-    subtitle: "Poster submissions open until August 7th"
-    description: "Share your work with the RSE community. Submissions open now!"                                                                                                                                                                                                                      
-    link: /participate/                                                                                                                                                                                                                                                                               
-    link_name: Learn More                                                                                                                                                                                                                                                                             
-
-  - title: Sponsor
-    subtitle: "Support the RSE community"
-    description: "Help make USRSE'26 possible. View our sponsorship packages."
-    link: /sponsor/                                                                                                                                                                                                                                                                                   
-    link_name: Become a Sponsor
-
+items:
   - title: Register
     subtitle: "Register to attend USRSE'26"
     description: "Join us for three days to share your work and learn from others."
     link: attend/registration/
     link_name: Register now
+
+  - title: Financial Support
+    subtitle: "Apply for Financial Support"
+    description: "Need support to attend? Apply by August 16th."
+    link: attend/financial-support/
+    link_name: Learn More
+
+  - title: Sponsor
+    subtitle: "Support the RSE community"
+    description: "Help make USRSE'26 possible. View our sponsorship packages."
+    link: /sponsor/
+    link_name: Become a Sponsor
 
   - title: Hotel Block
     subtitle: "Book your stay at the Hyatt Place San Jose"
