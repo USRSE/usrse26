@@ -9,15 +9,13 @@ set_last_modified: true
 
 ## Call for Submissions
 
-USRSE'26 is accepting submissions for all tracks for **in person** presentation at the conference with the aim of fostering a dynamic and varied technical program that will appeal to conference attendees from all RSE backgrounds. Beyond the core technical program, all conference participants will also have the opportunity to propose a Rapid Access Microtalk in person at the event (see below).
-
-The theme of this year’s conference is **"Advancing Science in the Age of AI"**. The Program Committee welcomes submissions directly engaged with this theme as well as topics connected to US-RSE in general.
+All submissions for USRSE'26 are **closed**. Still want to participate? You will be able to submit a Rapid Access Microtalk (RAM) in person at the conference.
 
 Questions may be directed to the Technical Program chairs at [usrse26-tech-committee@us-rse.org](mailto:usrse26-tech-committee@us-rse.org) 
 
 ## Tracks
 
-USRSE’26 is looking for a variety of types of submissions to foster an exciting event. 
+USRSE’26 accepts a variety of types of submissions to foster an exciting event. 
 
 * Papers — this track requires original work, not published elsewhere, describing a contribution of interest and relevant to the RSE community.  
 * Talks — an abstract for a talk on any topics of interest to the conference, and may cover work published elsewhere.  
