@@ -90,7 +90,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
   Verify: fixture build green; serve the site and exercise each behavior in a
   browser.
 
-- [ ] 7. **Browser verification and README** (all stories; §8, §9) — Build and
+- [x] 7. **Browser verification and README** (all stories; §8, §9) — Build and
   serve (`bundle exec jekyll serve`, or the `Rakefile`/`Dockerfile` path).
   Check, on a fixture-generated abstracts page: collapsed rows show title and
   byline; opening one leaves others open; Tab reaches each summary with a

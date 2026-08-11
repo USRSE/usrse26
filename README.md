@@ -83,6 +83,15 @@ menubar `_data/menus/program.yml` linking those pages — both script-managed: t
 generator banner, are pruned when their format leaves the sheet, and must not be edited by
 hand.
 
+Each abstract page lists its entries as collapsed rows carrying the title and byline, with
+the abstract behind a native `<details>` disclosure; an entry with no Event Description
+renders as a plain row with no control to open. The pages link two hand-written assets, so
+both must ship alongside the generator: `assets/css/abstracts.css` styles the rows, and
+`assets/js/abstracts.js` opens the entry a schedule deep link points at, drives the
+expand/collapse-all control, and opens every entry for printing. The disclosure toggle
+itself is native browser behavior — with JavaScript off the rows still open, minus the
+expand-all control.
+
 Rows still in the pre-2026 sheet layout — an Event Title with every other event column
 empty — are normalized while the sheet migrates: a "Session Chair: X" row sets the
 session's chair instead of listing as an event, and a "&lt;title&gt; by &lt;names&gt;"
