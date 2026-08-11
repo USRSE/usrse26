@@ -57,7 +57,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
   `.abstract__people` span (task 1b) and that the whitespace-only description
   (task 1c) rendered static. Restore artifacts.
 
-- [ ] 4. **Toolbar** (Stories 5, 7; §5) — Emit
+- [x] 4. **Toolbar** (Stories 5, 7; §5) — Emit
   `<div class="abstracts__toolbar" hidden><button class="abstracts__toggle-all"
   type="button">Expand all</button></div>` as the first child of `.abstracts`,
   and omit it entirely when the page has no collapsible entries. Verify:

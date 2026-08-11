@@ -638,6 +638,15 @@ function renderAbstractPage(format, entries) {
     '',
     '<div class="abstracts">',
   ];
+  // Rendered hidden and revealed by abstracts.js, so without JS the control
+  // never appears promising something it cannot do. A page of entries that
+  // all lack abstracts has nothing to expand, so it gets no toolbar at all.
+  if (entries.some((e) => e.infoMd.trim())) {
+    lines.push(
+      '  <div class="abstracts__toolbar" hidden>',
+      '    <button class="abstracts__toggle-all" type="button">Expand all</button>',
+      '  </div>');
+  }
   for (const e of entries) lines.push(...renderAbstractEntry(e, '  '));
   lines.push('</div>');
   // Deferred: the tag sits at the end of the body, but the theme renders
