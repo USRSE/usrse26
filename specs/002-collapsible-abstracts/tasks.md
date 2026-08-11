@@ -43,7 +43,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
   heading. Not yet wired into `renderAbstractPage`. Verify: fixture build green,
   no artifact changes (helpers unreferenced).
 
-- [ ] 3. **Rewrite `renderAbstractPage`** (Stories 1–4, 8; §1–§4) — Drop
+- [x] 3. **Rewrite `renderAbstractPage`** (Stories 1–4, 8; §1–§4) — Drop
   `menubar_toc: true` from the front matter; keep `PAGE_BANNER` immediately
   after it; emit the `abstracts.css` `<link>` with the
   `?v={{ site.time | date: '%s' }}` cache-buster (mirroring
