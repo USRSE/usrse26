@@ -1,6 +1,6 @@
 # Requirements — collapsible abstracts
 
-Status: approved
+Status: done
 
 ## Summary
 

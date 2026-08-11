@@ -103,7 +103,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
   that abstract pages depend on `assets/css/abstracts.css` and
   `assets/js/abstracts.js`. Restore artifacts.
 
-- [ ] 8. **Regenerate the committed abstract pages** (Story 8) — The four
+- [x] 8. **Regenerate the committed abstract pages** (Story 8) — The four
   committed pages under `pages/program/abstracts/` are live-sheet output in the
   old flat format and stay stale until the generator runs against the real
   sheet. Either run `PROGRAM_SHEET_ID=<id> node scripts/build-program.js`
