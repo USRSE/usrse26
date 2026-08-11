@@ -21,7 +21,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
 
 ---
 
-- [ ] 1. **Extend the fixture to cover the new branches** (Stories 1, 4, 5;
+- [x] 1. **Extend the fixture to cover the new branches** (Stories 1, 4, 5;
   §3, §5, §9) — `fixtures/schedule.csv` today has no case for three design
   branches. Add: (a) a **Bird of a Feather** event with People and an empty
   Event Description, so `bofs` becomes a page whose entries are *all* static
