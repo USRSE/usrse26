@@ -64,7 +64,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
   fixture build green; `talks.md` has the toolbar, the all-static `bofs.md`
   from task 1a does not. Restore artifacts.
 
-- [ ] 5. **`assets/css/abstracts.css`** (Stories 1, 2, 4, 6, 7; §7) — New
+- [x] 5. **`assets/css/abstracts.css`** (Stories 1, 2, 4, 6, 7; §7) — New
   stylesheet with a header comment in the idiom of
   `assets/css/program.css:1-21`. Scoped token block on `.abstracts` mirroring
   program.css's palette; **narrow** theme neutralization (heading and wrapper
