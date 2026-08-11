@@ -316,11 +316,6 @@ This talk will describe the design goals, architecture, deployment consideration
       <span class="abstract__people">Shailaja Keyur Sampat</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="session-chair-tbd">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Session Chair: TBD</span>
-    </h2>
-  </div>
   <div class="abstract abstract--static" id="a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions">
     <h2 class="abstract__heading">
       <span class="abstract__title">A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions</span>
