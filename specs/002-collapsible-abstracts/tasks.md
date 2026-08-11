@@ -32,7 +32,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
   build exits 0; restore artifacts per the hygiene note; only
   `fixtures/schedule.csv` is committed.
 
-- [ ] 2. **Heading and entry helpers** (Stories 1, 4; §2, §3) — In
+- [x] 2. **Heading and entry helpers** (Stories 1, 4; §2, §3) — In
   `scripts/build-program.js`, add `renderAbstractHeading(entry)` emitting
   `<h2 class="abstract__heading">` with an `.abstract__title` span and, only
   when People is non-empty, an `.abstract__people` span — both through `esc()`

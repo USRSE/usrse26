@@ -575,6 +575,55 @@ function collectAbstracts(days) {
 }
 
 /**
+ * The heading both entry shapes share. It lives inside <summary> on a
+ * collapsible entry, so it stays a single element: <summary>'s content model
+ * allows phrasing content or one heading, never two siblings. The heading is
+ * also the disclosure control's accessible name, which is why the byline
+ * belongs inside it. People is omitted entirely when empty rather than
+ * emitted as an empty span.
+ * @param {{title: string, people: string}} e
+ * @param {string} pad
+ */
+function renderAbstractHeading(e, pad) {
+  const lines = [`${pad}<h2 class="abstract__heading">`];
+  lines.push(`${pad}  <span class="abstract__title">${esc(e.title)}</span>`);
+  if (e.people) lines.push(`${pad}  <span class="abstract__people">${esc(e.people)}</span>`);
+  lines.push(`${pad}</h2>`);
+  return lines;
+}
+
+/**
+ * One entry: a native <details> disclosure when there is an abstract to
+ * reveal, an inert <div> row when there is not — no control should open onto
+ * nothing. The anchor goes on the wrapper, so it is both what
+ * getElementById() opens and what scroll-margin-top clears.
+ *
+ * The body reuses the schedule's Liquid-capture pattern (see renderSession):
+ * kramdown will not process Markdown inside a block-level HTML element, so
+ * markdownify does the conversion, and escLiquid keeps sheet content from
+ * running Liquid tags or raw HTML.
+ * @param {{title: string, people: string, infoMd: string, anchor: string}} e
+ * @param {string} pad
+ */
+function renderAbstractEntry(e, pad) {
+  if (!e.infoMd.trim()) {
+    return [
+      `${pad}<div class="abstract abstract--static" id="${e.anchor}">`,
+      ...renderAbstractHeading(e, `${pad}  `),
+      `${pad}</div>`,
+    ];
+  }
+  return [
+    `${pad}<details class="abstract" id="${e.anchor}">`,
+    `${pad}  <summary class="abstract__summary">`,
+    ...renderAbstractHeading(e, `${pad}    `),
+    `${pad}  </summary>`,
+    `${pad}  <div class="abstract__body">{% capture abstract_md %}${escLiquid(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}</div>`,
+    `${pad}</details>`,
+  ];
+}
+
+/**
  * @param {(typeof FORMATS)[string]} format
  * @param {{title: string, people: string, infoMd: string, anchor: string}[]} entries
  */
