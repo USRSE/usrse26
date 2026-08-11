@@ -36,6 +36,15 @@
      chevron, so a static entry doesn't look outdented next to its
      collapsible neighbors. */
   --chevron-gutter: 1.35rem;
+  --chevron-size: 0.45rem;
+
+  /* The chevron is a square rotated 45°, so its corners reach ~0.21× its
+     side beyond the layout box. Closed, that overhang is vertical and has
+     the summary's padding to live in; open, it turns horizontal, and with
+     the box flush against the content column the left arm is clipped. The
+     summary reserves this much to its left, and the gap below gives it
+     back, so every title keeps the one shared edge. */
+  --chevron-overhang: 0.15rem;
 
   --summary-pad-y: 0.85rem;
 
@@ -106,8 +115,8 @@
 .abstract__summary {
   display: flex;
   align-items: flex-start;
-  gap: calc(var(--chevron-gutter) - 0.45rem);
-  padding: var(--summary-pad-y) 0;
+  gap: calc(var(--chevron-gutter) - var(--chevron-overhang) - var(--chevron-size));
+  padding: var(--summary-pad-y) 0 var(--summary-pad-y) var(--chevron-overhang);
   cursor: pointer;
 
   /* Suppress the UA disclosure triangle in favor of the chevron below.
@@ -125,8 +134,8 @@
 .abstract__summary::before {
   content: "";
   flex: none;
-  width: 0.45rem;
-  height: 0.45rem;
+  width: var(--chevron-size);
+  height: var(--chevron-size);
   margin-top: 0.35rem;
   border-right: 2px solid var(--abstract-muted);
   border-bottom: 2px solid var(--abstract-muted);
