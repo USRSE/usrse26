@@ -78,7 +78,7 @@ The one deliberate exception is task 8, which lands the regenerated pages.
   chevron plus the `display: block` fallback. Verify: fixture build green (the
   generator does not touch CSS); `bundle exec jekyll build` clean.
 
-- [ ] 6. **`assets/js/abstracts.js`** (Stories 3, 5, 6; §6) — New IIFE, no
+- [x] 6. **`assets/js/abstracts.js`** (Stories 3, 5, 6; §6) — New IIFE, no
   jQuery/Bootstrap/Alpine. (a) `reveal()` on load and on `hashchange`: resolve
   `location.hash`, guard with `root.contains(el)`, set `open` when the target is
   a `DETAILS`, then `scrollIntoView()` — non-`DETAILS` targets fall through to
