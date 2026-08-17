@@ -80,7 +80,7 @@ const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
 // the raw cell text is carried separately for program.json.
 /** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null}>} */
 const FORMATS = {
-  'bird of a feather': { label: 'Bird of a Feather', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
+  'bird of a feather': { label: '', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
   'keynote': { label: 'Keynote', pageTitle: 'Keynotes', permalink: 'program/keynotes/', slug: 'keynotes' },
   'notebook': { label: 'Notebook', pageTitle: 'Notebooks', permalink: 'program/notebooks/', slug: 'notebooks' },
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
@@ -88,7 +88,7 @@ const FORMATS = {
   'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },
   'random access microtalk': { label: 'RAM', pageTitle: 'Random Access Microtalks', permalink: 'program/rams/', slug: 'rams' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
-  'workshop': { label: 'Workshop', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
+  'workshop': { label: '', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
   'other': { label: null, pageTitle: null, permalink: null, slug: null },
 };
 
