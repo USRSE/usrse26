@@ -1,0 +1,13 @@
+<!-- Add sponsor logo -->
+ <!-- 
+    sponsor_url: The URL of the sponsor's website, e.g. "https://globus.org"
+    logo_file: The file name of the sponsor's logo, e.g. "uiuc.png"
+    logo_alt: The alternative text for the sponsor's logo, e.g. "UIUC logo"
+ -->
+<div class="col sponsor-logo">
+    <a href="{{ include.sponsor_url }}">
+        <img
+            src="{{ site.baseurl }}/assets/img/sponsor-logos/{{ include.logo_file }}"
+            alt="{{ include.logo_alt }}" />
+    </a>
+</div>

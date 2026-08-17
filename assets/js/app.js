@@ -32,6 +32,7 @@ $(document).ready(function() {
 
   // Smooth scrolling
   var scroll = new SmoothScroll('a[href*="#"]', {
+    header: '.navbar.is-fixed-top',
     offset: 20,
     speed: 400,
     speedAsDuration: true,

@@ -1,15 +1,15 @@
-FROM jekyll/jekyll:stable
+FROM ruby:3.1
 
-ENV JEKYLL_UID=1000
-ENV JEKYLL_GID=1000
+WORKDIR /srv/jekyll
 
 ## Install required gems
 COPY ./Gemfile ./Gemfile
-RUN bundle install
-
-USER ${JEKYLL_UID}
+COPY ./Gemfile.lock ./Gemfile.lock
+RUN gem install bundler -v 2.5.17 && bundle install
 
 ## Copy source files
-COPY --chown=${JEKYLL_UID}:${JEKYLL_GID} ./ ./
+COPY ./ ./
+
+EXPOSE 4000
 
 CMD ["bundle", "exec", "jekyll", "serve", "--host=0.0.0.0", "--watch", "--drafts"]

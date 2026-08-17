@@ -2,5 +2,7 @@
   items:
     - name: Important Dates
       link: about/dates/
+    - name: Overview
+      link: organization/
     - name: Code of Conduct
       link: about/code-of-conduct/

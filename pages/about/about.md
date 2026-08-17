@@ -10,7 +10,11 @@ set_last_modified: true
 ---
 
 
-<!-- <img src="{{ site.baseurl }}/assets/img/logo.png"> -->
+<div style="width: 30%;">
+    <img src="{{ site.baseurl }}/assets/img/usrse26-round-logo.svg">
+    <p style="text-align: center; font-size: 0.7em;">Logos design by Katrina Turner, ESnet</p>
+</div>
+
 
 USRSE'26 is the fourth installment of the annual US Research Software Engineering Conference.
 It is hosted by the US Research Software Engineer Association (US-RSE).

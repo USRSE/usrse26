@@ -1,0 +1,66 @@
+# Rebuilds the program page artifacts from the Schedule Google Sheet once a
+# day, committing only when the schedule actually changed.
+#
+# The sheet ID is never committed to the repo: set it as a repository secret
+# named PROGRAM_SHEET_ID (Settings -> Secrets and variables -> Actions ->
+# Secrets) so it also stays masked in logs. Scheduled runs are quietly
+# skipped until the secret exists; a manual "Run workflow" without it fails
+# loudly so misconfiguration is visible.
+
+name: Rebuild program schedule
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      PROGRAM_SHEET_ID: ${{ secrets.PROGRAM_SHEET_ID }}
+    steps:
+      # Secrets are invisible to job-level `if`, so this step gates the rest.
+      - name: Check the sheet ID is configured
+        id: config
+        run: |
+          if [ -n "$PROGRAM_SHEET_ID" ]; then
+            echo "ok=true" >> "$GITHUB_OUTPUT"
+          elif [ "$GITHUB_EVENT_NAME" = "workflow_dispatch" ]; then
+            echo "::error::The PROGRAM_SHEET_ID secret is not set."
+            exit 1
+          else
+            echo "PROGRAM_SHEET_ID secret not set — skipping scheduled rebuild."
+            echo "ok=false" >> "$GITHUB_OUTPUT"
+          fi
+
+      - uses: actions/checkout@v4
+        if: steps.config.outputs.ok == 'true'
+
+      - uses: actions/setup-node@v4
+        if: steps.config.outputs.ok == 'true'
+        with:
+          node-version: 20
+
+      - name: Build program from sheet
+        if: steps.config.outputs.ok == 'true'
+        run: node scripts/build-program.js
+
+      - name: Commit if changed
+        if: steps.config.outputs.ok == 'true'
+        run: |
+          # Stage before checking: `git diff --quiet` alone would miss newly
+          # generated (untracked) abstract pages, and -A stages pruning
+          # deletions too. Directory pathspecs, because naming a generated
+          # file that does not exist yet would fail the add outright.
+          git add -A -- _includes/program-schedule.html _data/program.json \
+            pages/program/abstracts _data/menus
+          if git diff --quiet --cached; then
+            echo "Schedule unchanged — nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Rebuild program schedule from sheet"
+            git push
+          fi

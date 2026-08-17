@@ -1,36 +1,85 @@
 ---
 layout: page
-title: 
-subtitle: 
+title:
+subtitle:
 use-site-title: true
 fb-img:
 cards: home
 ---
+
 <figure>
-  <img src="{{ site.baseurl }}/assets/img/home_banner.jpg"
-    style="width:100%; border-radius: 15px; display: block; margin-bottom: 0;" alt="US-RSE 2026 Conference Banner" />
-  <figcaption style="margin-top: 0; text-align: right;">Photo courtesy of <a href="https://www.sanjose.org">Visit San
-      Jose</a></figcaption>
+  <img
+    src="{{ site.baseurl }}/assets/img/home_banner.jpg"
+    alt="US-RSE 2026 Conference Banner"
+    style="width: 100%; border-radius: 15px; display: block; margin-bottom: 0;"
+  />
+  <figcaption style="margin-top: 0; text-align: right;">
+    Photo courtesy of <a href="https://www.sanjose.org">Visit San Jose</a>
+  </figcaption>
 </figure>
 
 {% include cards.html %}
 
+<div
+  class="sectionheader"
+  style="
+    background-color: #C16531;
+    border-radius: 14px;
+    padding: 12px 20px;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  "
+>
+  <h2 style="margin: 0; color: white;">Conference Sponsors</h2>
+</div>
 
-<h1><center> Conference News & Updates </center> </h1>
+<section class="text-center pt-4">
+  <h3>Platinum Sponsors</h3>
+
+  <div class="row sponsor-platinum row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center align-items-center">
+    {% include add-sponsor-logo.html sponsor_url="https://illinois.edu/" logo_file="uiuc.png" logo_alt="The University of Illinois at Urbana-Champaign (UIUC) logo. UIUC is a Platinum sponsor of the USRSE26 Conference." %}
+    {% include add-sponsor-logo.html sponsor_url="https://www.princeton.edu/" logo_file="princeton.svg" logo_alt="The Princetion University logo. Princeton is a Platinum sponsor of the USRSE26 Conference." %}
+  </div>
+</section>
+
+<section class="text-center pt-4">
+  <h3>Gold Sponsors</h3>
+
+  <div class="row sponsor-gold row-cols-2 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center align-items-center">
+    {% include add-sponsor-logo.html sponsor_url="https://globus.org/" logo_file="globus.png" logo_alt="The Globus logo. Globus is a Gold sponsor of the USRSE26 Conference." %}
+  </div>
+</section>
+
+<section class="text-center pt-4">
+  <h3>Silver Sponsors</h3>
+
+  <div class="row sponsor-silver row-cols-2 row-cols-md-3 row-cols-lg-4 g-4 justify-content-center align-items-center">
+    {% include add-sponsor-logo.html sponsor_url="https://lanl.gov/" logo_file="lanl.png" logo_alt="The Los Alamos National Laboratory (LANL) logo. LANL is a Silver sponsor of the USRSE26 Conference." %}
+  </div>
+</section>
+
+<section class="text-center pt-4">
+  <h3>Bronze Sponsors</h3>
+
+  <div class="row sponsor-bronze row-cols-2 row-cols-md-4 row-cols-lg-5 g-4 justify-content-center align-items-center">
+    {% include add-sponsor-logo.html sponsor_url="www.hpe.com/us/en/home.html" logo_file="hpe.png" logo_alt="The Hewlett Packard Enterprise (HPE) logo. HPE is a Bronze sponsor of the USRSE26 Conference." %}
+    {% include add-sponsor-logo.html sponsor_url="https://shinstitute.org/" logo_file="shinstitute.png" logo_alt="The Sustainable Horizons Institute (SHI) logo. Sustainable Horizons Institute is a Bronze sponsor of the USRSE26 Conference." %}
+  </div>
+</section>
+
+
+<h1 style="text-align: center;">Conference News &amp; Updates</h1>
 <hr>
-
 
 <div class="posts-list">
   {% for post in paginator.posts %}
   <article class="post-preview">
     <a href="{{ post.url | prepend: site.baseurl }}">
-	  <h2 class="post-title">{{ post.title }}</h2>
+      <h2 class="post-title">{{ post.title }}</h2>
 
-	  {% if post.subtitle %}
-	  <h3 class="post-subtitle">
-	    {{ post.subtitle }}
-	  </h3>
-	  {% endif %}
+      {% if post.subtitle %}
+      <h3 class="post-subtitle">{{ post.subtitle }}</h3>
+      {% endif %}
     </a>
 
     <p class="post-meta">
@@ -41,18 +90,19 @@ cards: home
       {% if post.image %}
       <div class="post-image">
         <a href="{{ post.url | prepend: site.baseurl }}">
-          <img src="{{ post.image }}">
+          <img src="{{ post.image }}" alt="" />
         </a>
       </div>
       {% endif %}
+
       <div class="post-entry">
         {{ post.excerpt | strip_html | xml_escape | truncatewords: site.excerpt_length }}
         {% assign excerpt_word_count = post.excerpt | number_of_words %}
         {% if post.content != post.excerpt or excerpt_word_count > site.excerpt_length %}
           <a href="{{ post.url | prepend: site.baseurl }}" class="post-read-more">[Read&nbsp;More]</a>
         {% endif %}
-        <br>
-        <hr>
+        <br />
+        <hr />
       </div>
     </div>
 
@@ -60,16 +110,15 @@ cards: home
     <div class="blog-tags">
       Tags:
       {% if site.link-tags %}
-      {% for tag in post.tags %}
-      <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
-      {% endfor %}
+        {% for tag in post.tags %}
+        <a href="{{ site.baseurl }}/tags#{{- tag -}}">{{- tag -}}</a>
+        {% endfor %}
       {% else %}
         {{ post.tags | join: ", " }}
       {% endif %}
     </div>
     {% endif %}
-
-   </article>
+  </article>
   {% endfor %}
 </div>
 
@@ -87,3 +136,4 @@ cards: home
   {% endif %}
 </ul>
 {% endif %}
+

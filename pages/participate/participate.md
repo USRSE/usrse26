@@ -9,15 +9,13 @@ set_last_modified: true
 
 ## Call for Submissions
 
-USRSE'26 is accepting submissions for all tracks for **in person** presentation at the conference with the aim of fostering a dynamic and varied technical program that will appeal to conference attendees from all RSE backgrounds. Beyond the core technical program, all conference participants will also have the opportunity to propose a Rapid Access Microtalk in person at the event (see below).
-
-The theme of this year’s conference is **"Advancing Science in the Age of AI"**. The Program Committee welcomes submissions directly engaged with this theme as well as topics connected to US-RSE in general.
+All submissions for USRSE'26 are **closed**. Still want to participate? You will be able to submit a Rapid Access Microtalk (RAM) in person at the conference.
 
 Questions may be directed to the Technical Program chairs at [usrse26-tech-committee@us-rse.org](mailto:usrse26-tech-committee@us-rse.org) 
 
 ## Tracks
 
-USRSE’26 is looking for a variety of types of submissions to foster an exciting event. 
+USRSE’26 accepts a variety of types of submissions to foster an exciting event. 
 
 * Papers — this track requires original work, not published elsewhere, describing a contribution of interest and relevant to the RSE community.  
 * Talks — an abstract for a talk on any topics of interest to the conference, and may cover work published elsewhere.  
@@ -43,10 +41,6 @@ All submissions are peer-reviewed for quality, relevance, and novelty, which wil
 
 **Please note** *— if your Paper, Talk, Notebook, Birds of a Feather, or Workshop submission is rejected we would highly encourage you to consider submitting a Poster for an opportunity to engage with the community. The Poster deadline is intentionally after notification of acceptance or rejection for the other tracks. If your Poster submission is rejected then we would furthermore encourage you to participate in the event via the Rapid Access Microtalks opportunity if you are still interested and able to attend in person.*
 
-### **Volunteer to Review**
-
-You can volunteer as a reviewer by filling out this [Google Form](https://forms.gle/hDGsK52sJFqUA2MA7). A Reviewers’ guide will be shared with reviewers for reference.
-
 # **USRSE'26 Submission Information Summary**
 
 The following table summarizes the key information for the submission types for USRSE'26. Note: 
@@ -65,3 +59,5 @@ The following table summarizes the key information for the submission types for 
 | Workshop | A short description (250 words maximum) for the conference program. Session information abstract (1 page maximum) covering: topic summary, activities and exercises, target audience and learning outcomes, format | [Workshop Submission Template](https://docs.google.com/document/d/1pEHabwQAmRIf2vpaTlDZJ5t7meQdIMGHWweqA4N1lCs/edit?usp=sharing) | PDF | Friday May 22, 2026 | Tuesday July 28, 2026 | 90 minute session | Workshop descriptions are published in the conference program and website, but abstracts are not included in the conference proceedings. |
 | Poster | Abstract (1 page maximum) | [Poster Submission Template](https://docs.google.com/document/d/11jKPQu_CYlJeFUdCBc8D1ftmtHvUtw601cF0-6F9upw/edit?tab=t.0#heading=h.gjdgxs) | PDF | Friday August 7, 2026 | Tuesday August 25, 2026 | 90 minute session | Posters will be included in the conference proceedings on [Zenodo](https://zenodo.org/communities/usrse26/). Camera-ready Wednesday October 21st, 2026 |
 | Rapid Access Microtalk (RAM) | N/A | N/A | N/A | In person at USRSE'26 | In person at USRSE'26 | 5 minute talk | Slides will be collected and if the presenter agrees will be published in conference proceedings on [Zenodo](https://zenodo.org/communities/usrse26/).   |
+
+

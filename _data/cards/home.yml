@@ -1,32 +1,38 @@
 section_title: "Advancing Science in the Age of AI"
 section_subtitle: "Explore how RSEs and collaborators increase research impact during these rapidly changing times"
-items:                                                                                                                                                                                                                                                                                                
-  - title: Submit a Proposal                                                                                                                                                                                                                                                                          
-    subtitle: "Talks, panels, workshops, and posters"                                                                                                                                                                                                                                                 
-    description: "Share your work with the RSE community. Submissions open now!"                                                                                                                                                                                                                      
-    link: /participate/                                                                                                                                                                                                                                                                               
-    link_name: Learn More                                                                                                                                                                                                                                                                             
-                                                                                                                                                                                                                                                                                                      
-  - title: Review
-    subtitle: "Help shape the program"
-    description: "Volunteer as a reviewer to provide constructive feedback on proposals submitted to US-RSE'26."
-    link: https://forms.gle/hDGsK52sJFqUA2MA7
-    link_name: Sign Up to Review
-                                                                                                                                                                                                                                                                                                      
+items:
+  - title: Register
+    subtitle: "Register to attend USRSE'26"
+    description: "Join us for three days to share your work and learn from others."
+    link: attend/registration/
+    link_name: Register now
+
+  - title: Financial Support
+    subtitle: "Apply for Financial Support"
+    description: "Need support to attend? Apply by August 16th."
+    link: attend/financial-support/
+    link_name: Learn More
+
   - title: Sponsor
     subtitle: "Support the RSE community"
-    description: "Help make US-RSE'26 possible. View our sponsorship packages."
-    link: /sponsor/                                                                                                                                                                                                                                                                                   
+    description: "Help make USRSE'26 possible. View our sponsorship packages."
+    link: /sponsor/
     link_name: Become a Sponsor
+
+  - title: Hotel Block
+    subtitle: "Book your stay at the San Jose Marriott or the Hyatt Place San Jose"
+    description: "Secure your stay in the room block."
+    link: attend/travel/
+    link_name: Book your room
 
   - title: Mailing List
     subtitle: "Stay up to date"
-    description: "Join the US-RSE'26 mailing list to receive updates about the conference, including important dates and announcements."
+    description: "Join the USRSE'26 mailing list to receive updates about the conference, including important dates and announcements."
     link: "https://groups.google.com/a/us-rse.org/g/usrse-conference"
     link_name: Join the Mailing List
 
   - title: Questions?
     subtitle: "Get in touch"
-    description: "Have questions about US-RSE'26? Reach out to the conference organizers and we'll be happy to help."
+    description: "Have questions about USRSE'26? Reach out to the conference organizers and we'll be happy to help."
     link: "mailto:usrse26-conference@us-rse.org"
     link_name: Contact Us
