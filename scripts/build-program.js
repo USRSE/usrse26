@@ -74,7 +74,7 @@ const ROOM_ORDER = [
 const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
 
 // Event formats (the sheet's Format column), keyed by lowercased trimmed
-// cell value. The seven "page formats" carry a pill label on the schedule
+// cell value. The "page formats" carry a pill label on the schedule
 // and generate an abstract page (pageTitle/permalink/slug); "Other" opts an
 // event out of both. Unknown values are treated as Other, never an error —
 // the raw cell text is carried separately for program.json.
@@ -82,6 +82,7 @@ const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
 const FORMATS = {
   'bird of a feather': { label: 'Bird of a Feather', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
   'keynote': { label: 'Keynote', pageTitle: 'Keynotes', permalink: 'program/keynotes/', slug: 'keynotes' },
+  'notebook': { label: 'Notebook', pageTitle: 'Notebooks', permalink: 'program/notebooks/', slug: 'notebooks' },
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
   'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },

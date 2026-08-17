@@ -75,8 +75,8 @@ Session rows may carry Session Format (used exactly as given — never inferred 
 topic; Break, Meal, and Registration render as muted rows, Plenary gets the highlighted
 plenary treatment), Session Chair (shown next to the format), and Session Description
 (Markdown). Event rows (rows with an Event Title) may also carry People (speakers as
-"A, B and C"), Event Format (Bird of a Feather, Keynote, Other, Paper, Plenary, Poster,
-Random Access Microtalk, Talk, or Workshop), and Event Description (the event's abstract,
+"A, B and C"), Event Format (Bird of a Feather, Keynote, Notebook, Other, Paper, Plenary,
+Poster, Random Access Microtalk, Talk, or Workshop), and Event Description (the event's abstract,
 as Markdown). When events carry an Event Format other than "Other", the script also
 generates one abstract page per format under `pages/program/abstracts/` and the program
 menubar `_data/menus/program.yml` linking those pages — both script-managed: they carry a
