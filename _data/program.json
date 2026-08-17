@@ -345,8 +345,7 @@
                     "Zachary Katz",
                     "Tasha Snow"
                   ],
-                  "format": "Talk",
-                  "href": "program/talks/#effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets"
+                  "format": "Notebook"
                 },
                 {
                   "title": "Marimo: an open-source reactive notebook for Python",
@@ -358,15 +357,14 @@
                   "href": "program/talks/#marimo-an-open-source-reactive-notebook-for-python"
                 },
                 {
-                  "title": "[Notebook] Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation",
+                  "title": "Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation",
                   "speakers": "Pariksheet Nanda, Rocco Caprara and Jason Shoemaker",
                   "people": [
                     "Pariksheet Nanda",
                     "Rocco Caprara",
                     "Jason Shoemaker"
                   ],
-                  "format": "Talk",
-                  "href": "program/talks/#notebook-beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation"
+                  "format": "Notebook"
                 },
                 {
                   "title": "From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins",
@@ -527,7 +525,7 @@
           "sessions": [
             {
               "title": "RSE Team Operations",
-              "type": "Workshop",
+              "type": "BoF",
               "chair": "TBD",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
@@ -560,7 +558,7 @@
             },
             {
               "title": "Institutional RSE Community",
-              "type": "Workshop",
+              "type": "BoF",
               "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
@@ -585,7 +583,7 @@
             },
             {
               "title": "Better Scientific Software Fellowship",
-              "type": "Workshop",
+              "type": "BoF",
               "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",

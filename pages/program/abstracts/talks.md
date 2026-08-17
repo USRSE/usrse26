@@ -88,22 +88,10 @@ This talk will describe the design goals, architecture, deployment consideration
       <span class="abstract__people">Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets</span>
-      <span class="abstract__people">Zachary Katz and Tasha Snow</span>
-    </h2>
-  </div>
   <div class="abstract abstract--static" id="marimo-an-open-source-reactive-notebook-for-python">
     <h2 class="abstract__heading">
       <span class="abstract__title">Marimo: an open-source reactive notebook for Python</span>
       <span class="abstract__people">Akshay Agrawal</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="notebook-beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">[Notebook] Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation</span>
-      <span class="abstract__people">Pariksheet Nanda, Rocco Caprara and Jason Shoemaker</span>
     </h2>
   </div>
   <div class="abstract abstract--static" id="from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins">
