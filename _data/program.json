@@ -218,7 +218,7 @@
             {
               "title": "AI Assisted Code Development",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Adam Rubens",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
@@ -526,7 +526,6 @@
             {
               "title": "RSE Team Operations",
               "type": "BoF",
-              "chair": "TBD",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
               "plenary": false,
@@ -551,7 +550,7 @@
                     "Daniel Shown"
                   ],
                   "format": "Bird of a Feather",
-                  "infoMd": "Research Software Engineering (RSE) groups are increasingly central to the modern research enterprise, yet the operational challenges of leading, sustaining, and evolving these groups remain complex and often under-discussed. As RSE teams respond to changing research demands, evolving funding landscapes, staffing pressures, institutional expectations, and the rapid emergence of AI-enabled workflows, group leaders and operational decision-makers need practical spaces to compare challenges, share strategies, and identify reusable community resources.\n\nBuilding on discussions from the USRSE’24 workshop, “Establishing RSE Programs – From Early Stage Formalization to Mature Models,” this Birds of a Feather (BoF) session will provide a peer problem-solving forum for individuals involved in RSE group operations, leadership, management, and strategic decision-making. The session will feature short lightning reflections from community members followed by facilitated breakout discussions focused on identifying common challenges, sharing practical strategies, and collecting reusable operational resources for the broader RSE community. Topics may include hiring and identifying RSE talent, funding and business justification, AI-driven changes to productivity and team structure, outreach and researcher engagement, leadership development, organizational sustainability, and burnout.",
+                  "infoMd": "Research Software Engineering (RSE) groups are increasingly central to the modern research enterprise, yet the operational challenges of leading, sustaining, and evolving these groups remain complex and often under-discussed. As RSE teams respond to changing research demands, evolving funding landscapes, staffing pressures, institutional expectations, and the rapid emergence of AI-enabled workflows, group leaders and operational decision-makers need practical spaces to compare challenges, share strategies, and identify reusable community resources.\n\nBuilding on discussions from the USRSE’24 workshop, “Establishing RSE Programs – From Early Stage Formalization to Mature Models,” this Birds of a Feather (BoF) session will provide a peer problem-solving forum for individuals involved in RSE group operations, leadership, management, and strategic decision-making. The session will feature short lightning reflections from community members followed by facilitated breakout discussions focused on identifying common challenges, sharing practical strategies, and collecting reusable operational resources for the broader RSE community. Topics may include hiring and identifying RSE talent, funding and business justification, AI-driven changes to productivity and team structure, outreach and researcher engagement, leadership development, organizational sustainability, and burnout.\n\nWe recommend bringing laptops/smart devices to access BoF materials.",
                   "href": "program/bofs/#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges"
                 }
               ]
@@ -559,7 +558,6 @@
             {
               "title": "Institutional RSE Community",
               "type": "BoF",
-              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -567,12 +565,12 @@
               "talks": [
                 {
                   "title": "Building an Institutional RSE Community",
-                  "speakers": "Julia Damerow, J.C. Subida, Alex Koufos, Dan Woulfin and Trevor Spreadbury",
+                  "speakers": "Julia Damerow, J.C. Subida, Alex Koufos, Daniel Woulfin and Trevor Spreadbury",
                   "people": [
                     "Julia Damerow",
                     "J.C. Subida",
                     "Alex Koufos",
-                    "Dan Woulfin",
+                    "Daniel Woulfin",
                     "Trevor Spreadbury"
                   ],
                   "format": "Bird of a Feather",
@@ -584,7 +582,6 @@
             {
               "title": "Better Scientific Software Fellowship",
               "type": "BoF",
-              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -607,7 +604,6 @@
             {
               "title": "Threat Modeling for Research Software Systems",
               "type": "Workshop",
-              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
@@ -702,6 +698,7 @@
             {
               "title": "RSE Practices in the Age of AI Part I",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -754,6 +751,7 @@
             {
               "title": "The Human Factor",
               "type": "Talks",
+              "chair": "Kate Arneson",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -801,6 +799,7 @@
             {
               "title": "HPC + AI",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
@@ -1027,6 +1026,7 @@
             {
               "title": "Case Studies Demonstrating RSE Impacts Part II",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -1089,6 +1089,7 @@
             {
               "title": "Code Modernization Using AI",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -1137,6 +1138,7 @@
             {
               "title": "Workflows",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
@@ -1264,6 +1266,7 @@
             {
               "title": "Collaboration & Community Building",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -1313,6 +1316,7 @@
             {
               "title": "Software Quality",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -1379,6 +1383,7 @@
             {
               "title": "Generative AI + Applications",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
@@ -1457,6 +1462,7 @@
             {
               "title": "RSE Practices in the Age of AI Part II",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -1515,6 +1521,7 @@
             {
               "title": "Reflections on RSE Roles & Pathways",
               "type": "Talks",
+              "chair": "TBD",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -1562,6 +1569,7 @@
             {
               "title": "Building Infrastructure for Communities or Organizations",
               "type": "Talks",
+              "chair": "TBD",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
@@ -1647,7 +1655,7 @@
           "break": false,
           "sessions": [
             {
-              "title": "Random Access Microtalks (RAM), Closing Remarks",
+              "title": "Rapid Access Microtalks (RAM), Closing Remarks",
               "type": "Plenary",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
