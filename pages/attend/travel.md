@@ -16,11 +16,11 @@ The conference will be held at the [San Jose Marriott](https://www.marriott.com/
 We have two room blocks: one in the conference hotel itself, the San Jose Marriott, and one in the Hyatt Place San Jose. 
 
 
-[Hyatt Place San Jose/Downtown](https://www.hyatt.com/en-US/hotel/california/hyatt-place-san-jose-downtown/sjczj) <br>
+[Hyatt Place San Jose/Downtown](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URAT) <br>
 * 282 Almaden Boulevard, San Jose, CA 95113 ([Google Maps](https://www.google.com/maps/search/?api=1&query=Hyatt+Place+San+Jose%2FDowntown%2C+282+Almaden+Boulevard%2C+San+Jose%2C+CA+95113))
 * The Hyatt Place San Jose/Downtown is a 5 minute walk (0.2 miles) from the venue.
 
-[San Jose Marriott](https://www.marriott.com/en-us/hotels/sjcsj-san-jose-marriott/overview/) <br>
+[San Jose Marriott](https://book.passkey.com/go/USRSE2026) <br>
 * 2301 South Market Street, San Jose, CA 95113 ([Google Maps](https://www.google.com/maps/search/?api=1&query=San+Jose+Marriott+2301+South+Market+Street%2C+San+Jose%2C+CA+95113))
 * The San Jose Marriott is where the conference will take place.
 
