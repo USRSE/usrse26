@@ -24,5 +24,7 @@
   dropdown:
     - name: Planning Committee
       link: about/organization/
+    - name: Reviewers
+      link: about/reviewers/
     - name: Code of Conduct
       link: about/code-of-conduct/
