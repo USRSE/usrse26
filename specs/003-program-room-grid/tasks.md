@@ -61,7 +61,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   articles carry `-2`/`-3`/`-4` suffixes; rerunning the build changes
   nothing; JSON byte-identical. Restore artifacts.
 
-- [ ] 4. **Grid skeleton renderer** (Stories 1, 9; §2, §3, §8) — Add
+- [x] 4. **Grid skeleton renderer** (Stories 1, 9; §2, §3, §8) — Add
   `OUT_GRID` beside `OUT_HTML` (`:104`) and `renderGridHTML(days)` emitting:
   generator banner, `<div class="program-grid" hidden>`, the
   `program-grid__nav` pills (`#grid-day-<weekday>`), and per day: the
