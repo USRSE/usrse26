@@ -223,6 +223,7 @@
 
 .session {
   padding-left: var(--session-inset);
+  scroll-margin-top: 5rem;   /* grid-card links clear the fixed navbar */
 }
 
 .session + .session {

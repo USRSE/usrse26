@@ -115,7 +115,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   `border-left` instead of wash). Verify: fixture build green (generator
   ignores CSS); `bundle exec jekyll build` clean.
 
-- [ ] 7. **Page wiring** (Stories 5, 8; §5) — In
+- [x] 7. **Page wiring** (Stories 5, 8; §5) — In
   `pages/program/program.md`: add the `program-grid.css` link with the
   `site.time` cache-buster after the `program.css` link (`:13`), the hidden
   `program-toolbar` markup (List/Grid `aria-pressed` buttons + hidden
