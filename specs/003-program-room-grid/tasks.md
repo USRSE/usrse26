@@ -167,7 +167,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   page is today's list, no toolbar, no grid. Fix what fails; restore
   artifacts.
 
-- [ ] 11. **Regenerate the committed artifacts from the live sheet**
+- [x] 11. **Regenerate the committed artifacts from the live sheet**
   (Story 9) — The committed `_includes/program-schedule.html` lacks the new
   session ids and `_includes/program-grid.html` does not exist yet, so a
   fresh checkout cannot Jekyll-build `program.md`. Run

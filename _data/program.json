@@ -345,7 +345,8 @@
                     "Zachary Katz",
                     "Tasha Snow"
                   ],
-                  "format": "Notebook"
+                  "format": "Notebook",
+                  "href": "program/notebooks/#effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets"
                 },
                 {
                   "title": "Marimo: an open-source reactive notebook for Python",
@@ -364,7 +365,8 @@
                     "Rocco Caprara",
                     "Jason Shoemaker"
                   ],
-                  "format": "Notebook"
+                  "format": "Notebook",
+                  "href": "program/notebooks/#beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation"
                 },
                 {
                   "title": "From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins",

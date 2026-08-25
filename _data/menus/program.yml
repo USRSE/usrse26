@@ -5,6 +5,8 @@
       link: program/
     - name: Birds of a Feather
       link: program/bofs/
+    - name: Notebooks
+      link: program/notebooks/
     - name: Papers
       link: program/papers/
     - name: Talks

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Birds of a Feather
-description: Bird of a Feather abstracts at USRSE'26
+description:  abstracts at USRSE'26
 menubar: program
 permalink: program/bofs/
 set_last_modified: true
