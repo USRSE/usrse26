@@ -42,7 +42,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   restore artifacts per the hygiene note; only `fixtures/schedule.csv`
   committed.
 
-- [ ] 2. **`fold()` keeps minutes and rows** (Story 9; §1) — Take the JSON
+- [x] 2. **`fold()` keeps minutes and rows** (Story 9; §1) — Take the JSON
   baseline first. Then: slot return object (`scripts/build-program.js:380-387`)
   gains `_startMins: slot.start, _endMins: slot.end`; session mapping
   (`:356`) gains `_row: s._row`. Verify: fixture build green;

@@ -361,6 +361,8 @@ function fold(records) {
                 info: s.info,
                 plenary: s.type.toLowerCase() === 'plenary',
                 muted: s.muted,
+                // Sheet row, for tie-breaking room order in the grid view.
+                _row: s._row,
                 talks: s.talks
                   .sort((a, b) => a.order - b.order || a._row - b._row)
                   .map((t) => {
@@ -384,6 +386,9 @@ function fold(records) {
               endISO: fmtISO(date, slot.end),
               break: sessions.every((s) => s.muted),
               sessions,
+              // Wall-clock minutes for the grid renderer's row lattice.
+              _startMins: slot.start,
+              _endMins: slot.end,
             };
           }),
       };
