@@ -127,7 +127,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   commit `program.md` + `program.css` only (grid include stays uncommitted
   — see the header note).
 
-- [ ] 8. **`assets/js/program-view.js`** (Stories 2, 5, 7, 8; §7) — New
+- [x] 8. **`assets/js/program-view.js`** (Stories 2, 5, 7, 8; §7) — New
   dependency-free deferred IIFE per the §7 skeleton: bail unless toolbar,
   `.program`, and `.program-grid` all exist; try/catch localStorage
   (`usrse26:program-view`, `usrse26:program-details`); `setView()` swaps
