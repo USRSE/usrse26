@@ -96,7 +96,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   their label; every card `href` matches a session `id` in the fixture
   schedule include (`grep` both, compare sets). Restore artifacts.
 
-- [ ] 6. **`assets/css/program-grid.css`** (Stories 1, 2, 3, 4, 6, 7, 8;
+- [x] 6. **`assets/css/program-grid.css`** (Stories 1, 2, 3, 4, 6, 7, 8;
   §6) — New stylesheet, header comment in the `program.css:1-21` idiom.
   Token block on `.program-grid` (palette duplicated as in `abstracts.css`),
   theme neutralization (`program.css:52-68` pattern), `--grid-rail`,
