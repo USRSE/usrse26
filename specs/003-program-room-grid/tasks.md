@@ -31,7 +31,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
 
 ---
 
-- [ ] 1. **Fixture: same-room overlap** (Stories 4, 9) — The fixture has both
+- [x] 1. **Fixture: same-room overlap** (Stories 4, 9) — The fixture has both
   card-over-band cases (Tue 12:45–1:15 Working Group Fair inside the
   12:00–1:30 lunch; Wed 3:00–3:30 break vs the 3:15–4:30 closing) but no
   same-room card overlap, so lanes (§4) would ship untested. Add one row
