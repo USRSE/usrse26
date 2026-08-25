@@ -50,7 +50,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   `:773-775` strips underscore keys); `_includes/program-schedule.html`
   unchanged. Restore artifacts.
 
-- [ ] 3. **Session ids in the list view** (Story 5; §1) — Add
+- [x] 3. **Session ids in the list view** (Story 5; §1) — Add
   `assignSessionIds(days)`: schedule-traversal walk, base
   `slugify(day.weekday + '-' + session.title)`, document-wide dedup map with
   `-2`/`-3` suffixes (mirror `assignAnchors()` `:410-428`); call it from

@@ -432,6 +432,29 @@ function assignAnchors(days) {
   }
 }
 
+/**
+ * Give every session a stable id for its <article> in the schedule include,
+ * so the grid view's cards (and external links) can target it. Same
+ * traversal order and dedupe scheme as assignAnchors: base is the weekday
+ * plus the slugified title, and repeats across the whole document take
+ * -2/-3 suffixes — "Afternoon Tech Session (Workshops / BoFs)" runs in four
+ * rooms at once, so its ids are ...-workshops-bofs, -2, -3, -4.
+ * @param {ReturnType<typeof fold>} days
+ */
+function assignSessionIds(days) {
+  const seen = new Map(); // id base -> count
+  for (const day of days) {
+    for (const slot of day.slots) {
+      for (const session of slot.sessions) {
+        const base = slugify(`${day.weekday}-${session.title}`);
+        const n = (seen.get(base) || 0) + 1;
+        seen.set(base, n);
+        session._sid = n === 1 ? base : `${base}-${n}`;
+      }
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Rendering
 // ---------------------------------------------------------------------------
@@ -454,7 +477,7 @@ function renderSession(s, pad) {
   const cls = ['session'];
   if (s.plenary) cls.push('session--plenary');
   if (s.muted) cls.push('session--muted');
-  const lines = [`${pad}<article class="${cls.join(' ')}">`];
+  const lines = [`${pad}<article class="${cls.join(' ')}" id="${s._sid}">`];
   const room = s.room && s.room.toLowerCase() !== 'anywhere'
     ? ` <span class="session__room">— ${esc(s.room)}</span>`
     : '';
@@ -768,6 +791,7 @@ async function main() {
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
   const days = fold(records);
   assignAnchors(days);
+  assignSessionIds(days);
 
   const sessionCount = days.reduce(
     (n, d) => n + d.slots.reduce((m, s) => m + s.sessions.length, 0), 0);
