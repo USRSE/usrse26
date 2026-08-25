@@ -68,7 +68,16 @@ after which you can reload the page in your browser to see the rendered changes.
 
 The program page is generated from the "Schedule" tab of the program Google Sheet by
 `scripts/build-program.js` (Node 18+, no dependencies), which writes
-`_includes/program-schedule.html` and `_data/program.json`. Edit the sheet, not those files.
+`_includes/program-schedule.html` (the list view), `_includes/program-grid.html` (the room ×
+time grid view), and `_data/program.json`. Edit the sheet, not those files.
+
+The Full Program page shows the list by default with a List / Grid toggle above it; the
+grid lays each day out with rooms as columns and time down the side, breaks and other
+venue-wide sessions spanning every column, and each card linking to its entry in the list.
+The toggle, the reader's remembered choice, and the grid's "Talk details" switch are driven
+by `assets/js/program-view.js`, and `assets/css/program-grid.css` styles the grid — both
+hand-written and must ship alongside the generator. With JavaScript off the page is the
+list alone: the toggle and the grid include ship hidden and are never revealed.
 
 The sheet's core columns are Start, End, Location, Session Topic, Event Title, and Order.
 Session rows may carry Session Format (used exactly as given — never inferred from the

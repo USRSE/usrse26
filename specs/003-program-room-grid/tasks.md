@@ -141,7 +141,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   when the hash already matches). Day-pill clicks are *not* intercepted.
   Verify: fixture build green; behavior exercised in task 10.
 
-- [ ] 9. **Workflow and README** (Story 9; §8) — Add
+- [x] 9. **Workflow and README** (Story 9; §8) — Add
   `_includes/program-grid.html` to the commit step's pathspec list in
   `.github/workflows/build-program.yml` (`:57-59`), with a comment line
   noting the generator writes it unconditionally in the same job so naming
