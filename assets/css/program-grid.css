@@ -242,11 +242,15 @@
    Grid tracks — counts from the generator, sizes from here
    -------------------------------------------------------------------------- */
 
+/* The theme's reboot.css also has a `.grid` (a flex row with -0.9375em
+   side margins); this two-class rule out-ranks it, and the margin reset
+   is what keeps the rail from sliding under the scroller's left edge. */
 .program-grid .grid {
   display: grid;
   grid-template-columns: var(--grid-rail) repeat(var(--grid-cols), minmax(var(--grid-col-min), 1fr));
   grid-template-rows: auto repeat(var(--grid-rows), var(--grid-row-h));
   column-gap: var(--grid-gap);
+  margin: 0;
   background: #fff;
 }
 
@@ -318,9 +322,11 @@
 .grid__band {
   grid-column: 2 / -1;
   display: flex;
-  align-items: center;
+  align-items: flex-start;   /* label at the top, clear of a card that
+                                starts mid-band (Working Group Fair in
+                                the middle of lunch) */
   min-width: 0;
-  padding: 0 0.5rem;
+  padding: 0.2rem 0.5rem;
   background: var(--grid-band);
   border-top: 1px dashed var(--grid-hairline);
   border-bottom: 1px dashed var(--grid-hairline);

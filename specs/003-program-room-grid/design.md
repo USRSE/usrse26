@@ -272,7 +272,9 @@ reason `abstracts.css` duplicates them: `program.css` scopes its block to
 - **Theme neutralization**: `.content .program-grid :is(h2, h3, p)` /
   `ol` / `li + li` margins re-zeroed, the same block `program.css:52-68`
   uses; `.program-grid .program-grid__title` copies the two-class
-  day-title override (`program.css:118-128`).
+  day-title override (`program.css:118-128`). The theme's `reboot.css`
+  also styles a generic `.grid` (flex row, `-0.9375em` side margins), so
+  `.program-grid .grid` resets `margin: 0` alongside `display: grid`.
 - **Scroller**: `overflow: auto; max-height: 85vh` — both axes scroll
   *inside* it, which is the only way `position: sticky` headers can work
   while the grid also scrolls horizontally (sticky pins to the nearest

@@ -150,7 +150,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   and the no-JS fallback. Verify: YAML loads (`actionlint` if available);
   fixture build green.
 
-- [ ] 10. **Browser verification** (all stories) — Generator run, then serve
+- [x] 10. **Browser verification** (all stories) — Generator run, then serve
   (`bundle exec jekyll serve` or the Docker path) and check on the fixture
   data: toggle appears and swaps views with no page load; choice survives
   reload; Grid shows its own working day pills (SmoothScroll animates, clears
