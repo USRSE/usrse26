@@ -79,7 +79,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   one day's `--grid-rows` against hand-computed bounds; Tue/Wed have no
   Prefunction column (Registration is muted). Restore artifacts (the `rm`).
 
-- [ ] 5. **Bands, cards, lanes** (Stories 2, 3, 4; §2, §3, §4) — Emit per
+- [x] 5. **Bands, cards, lanes** (Stories 2, 3, 4; §2, §3, §4) — Emit per
   day, after the rail: chronological `grid__band`s (`grid-row` from slot
   minutes; label = title + `— room` when the sheet named one + compact time;
   `--muted` modifier), then per room in column order, start-sorted
