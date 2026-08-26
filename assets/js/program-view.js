@@ -84,9 +84,20 @@
     clampTitles();
   }
 
+  // Stamp the current history entry with the view the reader chose, so a
+  // later Back that lands on this entry restores what they were looking
+  // at — not what an earlier card click recorded for it. Merged, not
+  // replaced: SmoothScroll keeps its own record on the same entry, and
+  // that record is what scrolls the page back to where it was.
+  function recordView(view) {
+    history.replaceState(Object.assign({}, history.state, { programView: view }), '');
+  }
+
   Array.prototype.forEach.call(viewButtons, function (b) {
     b.addEventListener('click', function () {
-      setView(b.getAttribute('data-view'));
+      var view = b.getAttribute('data-view');
+      setView(view);
+      recordView(view);
     });
   });
 
@@ -115,14 +126,26 @@
     var id = card.getAttribute('href').slice(1);
     var el = document.getElementById(id);
     if (!el) return;
-    history.replaceState({ programView: 'grid' }, '');
+    recordView('grid');
     history.pushState({ programView: 'list' }, '', '#' + id);
     setView('list');
     el.scrollIntoView();
   });
 
-  window.addEventListener('popstate', function (e) {
-    if (e.state && e.state.programView) setView(e.state.programView);
+  // Landing on an entry this script stamped: restore its view, then put
+  // the page where the entry says. SmoothScroll animates entries carrying
+  // its own record (day pills, and the initial entry when it was still
+  // unstamped at the first pill click), so those are left to it; the rest
+  // — a stamped initial entry, a card jump — scroll to their hash target
+  // or, with no hash, to the top.
+  window.addEventListener('popstate', function () {
+    var state = history.state;
+    if (!state || !state.programView) return;
+    setView(state.programView);
+    if (state.smoothScroll) return;
+    var target = location.hash && document.getElementById(location.hash.slice(1));
+    if (target) target.scrollIntoView();
+    else window.scrollTo(0, 0);
   });
 
   // ------------------------------------------------------------------

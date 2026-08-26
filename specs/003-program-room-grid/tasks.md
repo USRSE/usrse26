@@ -192,3 +192,7 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
 - [x] 14. **Back returns to the grid** — a card click pushed a hash entry,
   so Back showed the list, then left the page. Card clicks now record the
   view in history state and `popstate` restores it.
+- [x] 15. **Stale view stamp on Back** — card → Back → toolbar List → day
+  pill → Back restored the grid (the entry still carried the card click's
+  "grid" stamp). Toolbar switches now re-stamp the current entry, and
+  `popstate` onto a stamped entry scrolls to its hash target or the top.

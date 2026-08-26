@@ -375,7 +375,12 @@ Notes:
   then call `scrollIntoView()` themselves (pushState never scrolls). A
   `popstate` listener restores whichever view the entry recorded, so Back
   returns to the grid and Forward to the list entry; on load a recorded
-  view wins over the stored preference for that entry.
+  view wins over the stored preference for that entry. Toolbar switches
+  re-stamp the current entry too (merged over SmoothScroll's record, never
+  replacing it), otherwise Back after "card → Back → List → day pill"
+  would land on a stale "grid" stamp. Stamped entries without a
+  SmoothScroll record get their scroll from this script on `popstate`:
+  the hash target if any, else the top.
 - **Title clamp.** `clampTitles()` measures each card's room below the
   time and eyebrow and sets `-webkit-line-clamp` on the title; it runs on
   every `setView('grid')` (hidden elements have no layout) and, debounced,
