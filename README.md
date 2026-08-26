@@ -74,8 +74,8 @@ time grid view), and `_data/program.json`. Edit the sheet, not those files.
 The Full Program page shows the list by default with a List / Grid toggle above it; the
 grid lays each day out with rooms as columns and time down the side, breaks and other
 venue-wide sessions spanning every column, and each card linking to its entry in the list.
-The toggle, the reader's remembered choice, and the grid's "Talk details" switch are driven
-by `assets/js/program-view.js`, and `assets/css/program-grid.css` styles the grid — both
+The toggle, the reader's remembered choice, and card-to-list navigation are driven by
+`assets/js/program-view.js`, and `assets/css/program-grid.css` styles the grid — both
 hand-written and must ship alongside the generator. With JavaScript off the page is the
 list alone: the toggle and the grid include ship hidden and are never revealed.
 

@@ -693,8 +693,9 @@ function renderGridBand(b, pad) {
  * One session card: a link to the session's list-view entry wrapping all
  * its text, so the accessible name reads "time, room, title, …" in that
  * order. The room is visually hidden — the column header carries it for
- * sighted readers. Talks list in Order, each with its format pill when the
- * format has a label; no Markdown renders here, so plain esc() suffices.
+ * sighted readers. Talks are deliberately not listed: a card is only as
+ * tall as its slot, and the list entry it links to has them. No Markdown
+ * renders here, so plain esc() suffices.
  * @param {{session: ReturnType<typeof fold>[number]['slots'][number]['sessions'][number], slot: ReturnType<typeof fold>[number]['slots'][number], startRow: number, endRow: number, lane: number, lanes: number}} c
  * @param {number} column
  * @param {string} pad
@@ -711,15 +712,6 @@ function renderGridCard(c, column, pad) {
     lines.push(`${pad}  <p class="grid__card-eyebrow">${esc(s.type)}${chair}</p>`);
   }
   lines.push(`${pad}  <h3 class="grid__card-title">${esc(s.title)}</h3>`);
-  if (s.talks.length) {
-    lines.push(`${pad}  <ol class="grid__card-talks">`);
-    for (const t of s.talks) {
-      const pill = t._format && t._format.label
-        ? `<span class="grid__talk-format">${esc(t._format.label)}</span> ` : '';
-      lines.push(`${pad}    <li class="grid__talk">${pill}${esc(t.title)}</li>`);
-    }
-    lines.push(`${pad}  </ol>`);
-  }
   lines.push(`${pad}</a>`);
   return lines;
 }

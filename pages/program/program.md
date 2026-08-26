@@ -29,7 +29,6 @@ All times are US Pacific (PDT).
     <button type="button" class="program-toolbar__view" data-view="list" aria-pressed="true">List</button>
     <button type="button" class="program-toolbar__view" data-view="grid" aria-pressed="false">Grid</button>
   </div>
-  <button type="button" class="program-toolbar__details" aria-pressed="true" hidden>Talk details</button>
 </div>
 
 {% include program-schedule.html %}
