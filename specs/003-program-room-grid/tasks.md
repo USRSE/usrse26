@@ -179,3 +179,16 @@ scratchpad; after the change, rerun and `diff` the two. Comparing against the
   card `href` fragment matches a session id; `bundle exec jekyll build`
   clean from a pristine checkout. From now on the hygiene note's `rm`
   becomes a `git checkout`.
+
+## Follow-ups (post-verification, 2026-08-26)
+
+- [x] 12. **Drop talk lists and the "Talk details" toggle** — talk lists
+  were cut off inside short cards. Generator no longer emits
+  `grid__card-talks`; toolbar loses the details button; CSS/JS/README
+  follow; live include regenerated.
+- [x] 13. **Ellipsis on over-long titles** — the Working Group Fair title
+  was sliced mid-line. `program-view.js` measures each card and sets
+  `-webkit-line-clamp` on the title (on view switch and resize).
+- [x] 14. **Back returns to the grid** — a card click pushed a hash entry,
+  so Back showed the list, then left the page. Card clicks now record the
+  view in history state and `popstate` restores it.

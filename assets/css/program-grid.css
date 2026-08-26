@@ -40,7 +40,7 @@
   /* Track geometry. The rail clears "10:30am" at 11px semibold; a room
      column never shrinks below --grid-col-min, so the scroller overflows
      horizontally instead of crushing cards. 0.5rem per five minutes puts a
-     90-minute session at 9rem — room for a title and a few talk lines. */
+     90-minute session at 9rem. */
   --grid-rail: 3.5rem;
   --grid-col-min: 10rem;
   --grid-row-h: 0.5rem;
@@ -87,8 +87,8 @@
 }
 
 /* --------------------------------------------------------------------------
-   Toolbar — List / Grid segmented control plus the talk-details switch.
-   Hand-authored in program.md, shipped hidden, revealed by program-view.js.
+   Toolbar — the List / Grid segmented control. Hand-authored in
+   program.md, shipped hidden, revealed by program-view.js.
    Pills match .program-nav__pill; the pressed state carries the accent.
    -------------------------------------------------------------------------- */
 
@@ -105,8 +105,7 @@
   gap: 0.25rem;
 }
 
-.program-toolbar__view,
-.program-toolbar__details {
+.program-toolbar__view {
   padding: 0.3rem 1rem;
   border: 1px solid #dbdbdb;
   border-radius: 999px;
@@ -119,27 +118,18 @@
   cursor: pointer;
 }
 
-.program-toolbar__details {
-  margin-left: auto;
-  font-size: 0.875rem;
-}
-
 .program-toolbar__view:hover,
-.program-toolbar__view:focus-visible,
-.program-toolbar__details:hover,
-.program-toolbar__details:focus-visible {
+.program-toolbar__view:focus-visible {
   border-color: var(--us-rse-main);
   color: var(--us-rse-main);
 }
 
-.program-toolbar__view:focus-visible,
-.program-toolbar__details:focus-visible {
+.program-toolbar__view:focus-visible {
   outline: 2px solid var(--us-rse-main);
   outline-offset: 2px;
 }
 
-.program-toolbar__view[aria-pressed="true"],
-.program-toolbar__details[aria-pressed="true"] {
+.program-toolbar__view[aria-pressed="true"] {
   border-color: var(--us-rse-main);
   background: #f4ecf1;
   color: var(--us-rse-main);
@@ -423,38 +413,20 @@
   color: var(--grid-muted);
 }
 
-/* Two classes out-rank the theme's `.content h3` (size, weight, color). */
+/* Two classes out-rank the theme's `.content h3` (size, weight, color).
+   A title that will not fit its card ends in an ellipsis rather than a
+   sliced line: program-view.js measures the room left under the time and
+   eyebrow and sets -webkit-line-clamp per card, which is why the box
+   model here is -webkit-box. */
 .program-grid .grid__card-title {
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
   padding-top: 0.1rem;
   font-size: 0.9375rem;
   font-weight: 600;
   line-height: 1.25;
   color: var(--grid-strong);
-}
-
-.grid__card-talks {
-  padding-top: 0.3rem;
-}
-
-.grid__talk {
-  padding-top: 0.15rem;
-  font-size: 0.8125rem;
-  line-height: 1.3;
-}
-
-/* Format pill, sized like the eyebrow so the two label systems read as
-   one family (cf. .talk__format in the list view). */
-.grid__talk-format {
-  font-size: 0.625rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--grid-muted);
-}
-
-/* "Talk details" off — one class on the root, flipped by program-view.js. */
-.program-grid--no-details .grid__card-talks {
-  display: none;
 }
 
 /* --------------------------------------------------------------------------
@@ -485,10 +457,6 @@
 
   .program-grid .grid__card-title {
     font-size: 0.8125rem;
-  }
-
-  .grid__talk {
-    font-size: 0.75rem;
   }
 
   .grid__band-label {
@@ -574,18 +542,13 @@
   }
 
   .grid__card-time,
-  .grid__card-eyebrow,
-  .grid__talk-format {
+  .grid__card-eyebrow {
     font-size: 6pt;
   }
 
   .program-grid .grid__card-title {
     font-size: 8pt;
     color: #000;
-  }
-
-  .grid__talk {
-    font-size: 7pt;
   }
 
   .grid__band {

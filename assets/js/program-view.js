@@ -9,8 +9,9 @@
    missed. This file adds the three things that need a script:
 
      1. the view switch itself, remembered in localStorage,
-     2. the "Talk details" switch that hides the talk lists on grid cards,
-     3. card clicks, which switch to the list and jump to the entry.
+     2. card clicks, which switch to the list and jump to the entry — and
+        put the grid back when the reader presses Back,
+     3. the ellipsis on card titles that do not fit their card.
 
    Dependency-free on purpose: the site's jQuery/Bootstrap bundle loads
    after this script and has nothing to offer it.
@@ -25,19 +26,45 @@
   if (!toolbar || !list || !grid) return;
 
   var viewButtons = toolbar.querySelectorAll('.program-toolbar__view');
-  var detailsButton = toolbar.querySelector('.program-toolbar__details');
 
   var KEY_VIEW = 'usrse26:program-view';
-  var KEY_DETAILS = 'usrse26:program-details';
 
   // localStorage throws in some private modes and when site data is
-  // blocked; the switches still work, the choice just lasts the page view.
+  // blocked; the switch still works, the choice just lasts the page view.
   function store(key, value) {
     try { localStorage.setItem(key, value); } catch (e) { /* no-op */ }
   }
   function read(key) {
     try { return localStorage.getItem(key); } catch (e) { return null; }
   }
+
+  // ------------------------------------------------------------------
+  // 3. Card titles — clamp to the lines that fit, with an ellipsis
+  // ------------------------------------------------------------------
+
+  // A card is exactly as tall as its slot, so a long title in a short
+  // session would be sliced mid-line by the card's overflow: hidden.
+  // Measure what is left below the time and eyebrow and let
+  // -webkit-line-clamp end the last fitting line with "…". Runs whenever
+  // the grid becomes visible (hidden elements have no layout) and on
+  // resize, since the breakpoints change the type size.
+  function clampTitles() {
+    if (grid.hidden) return;
+    Array.prototype.forEach.call(grid.querySelectorAll('.grid__card-title'), function (title) {
+      var card = title.parentNode;
+      var cs = getComputedStyle(card);
+      var avail = card.clientHeight - parseFloat(cs.paddingBottom) - title.offsetTop;
+      var lineHeight = parseFloat(getComputedStyle(title).lineHeight);
+      var lines = Math.max(1, Math.floor(avail / lineHeight));
+      title.style.webkitLineClamp = String(lines);
+    });
+  }
+
+  var resizeTimer = null;
+  window.addEventListener('resize', function () {
+    clearTimeout(resizeTimer);
+    resizeTimer = setTimeout(clampTitles, 100);
+  });
 
   // ------------------------------------------------------------------
   // 1. List / Grid
@@ -53,9 +80,8 @@
     Array.prototype.forEach.call(viewButtons, function (b) {
       b.setAttribute('aria-pressed', String(b.getAttribute('data-view') === view));
     });
-    // The details switch only means something while the grid is showing.
-    if (detailsButton) detailsButton.hidden = !showGrid;
     store(KEY_VIEW, view);
+    clampTitles();
   }
 
   Array.prototype.forEach.call(viewButtons, function (b) {
@@ -65,34 +91,17 @@
   });
 
   // ------------------------------------------------------------------
-  // 2. Talk details
-  // ------------------------------------------------------------------
-
-  // One class on the grid root; the stylesheet hides the talk lists under
-  // it. The label stays fixed and aria-pressed carries the state — a
-  // swapping label plus aria-pressed would announce the state twice.
-  function setDetails(shown) {
-    grid.classList.toggle('program-grid--no-details', !shown);
-    if (detailsButton) detailsButton.setAttribute('aria-pressed', String(shown));
-    store(KEY_DETAILS, shown ? 'shown' : 'hidden');
-  }
-
-  if (detailsButton) {
-    detailsButton.addEventListener('click', function () {
-      setDetails(detailsButton.getAttribute('aria-pressed') !== 'true');
-    });
-  }
-
-  // ------------------------------------------------------------------
-  // 3. Card clicks — switch to the list, then jump to the entry
+  // 2. Card clicks — switch to the list, jump to the entry, keep Back
   // ------------------------------------------------------------------
 
   // A card's href is the id of its <article> in the list, which is hidden
-  // while the grid shows, so the list must come back before the browser
-  // scrolls. Setting location.hash after that makes the scroll native, and
-  // .session's scroll-margin-top clears the fixed navbar. The same-hash
-  // branch covers clicking one card twice — a hash that does not change
-  // does not scroll. stopPropagation keeps app.js's SmoothScroll (one
+  // while the grid shows, so the list must come back before anything
+  // scrolls. The jump is a pushed history entry that records the view, and
+  // the entry we leave is stamped with the grid, so Back restores the grid
+  // (and Forward the list) instead of dropping the reader on a list they
+  // never chose — or off the page. scrollIntoView does the scroll itself
+  // (pushState never scrolls); .session's scroll-margin-top clears the
+  // fixed navbar. stopPropagation keeps app.js's SmoothScroll (one
   // delegated listener on document, bubble phase) from seeing the click
   // and animating toward a target that was hidden when it measured it.
   // Day-pill clicks are deliberately left alone: their targets are visible
@@ -103,14 +112,17 @@
     if (!card) return;
     e.preventDefault();
     e.stopPropagation();
-    setView('list');
     var id = card.getAttribute('href').slice(1);
-    if ('#' + id === location.hash) {
-      var el = document.getElementById(id);
-      if (el) el.scrollIntoView();
-    } else {
-      location.hash = id;
-    }
+    var el = document.getElementById(id);
+    if (!el) return;
+    history.replaceState({ programView: 'grid' }, '');
+    history.pushState({ programView: 'list' }, '', '#' + id);
+    setView('list');
+    el.scrollIntoView();
+  });
+
+  window.addEventListener('popstate', function (e) {
+    if (e.state && e.state.programView) setView(e.state.programView);
   });
 
   // ------------------------------------------------------------------
@@ -119,8 +131,9 @@
 
   // The toolbar is rendered hidden, so it never appears on a page where
   // this script didn't run. Default view is the list, so first paint
-  // never flashes; details default to shown.
+  // never flashes. A history entry that recorded a view (a reload after a
+  // card jump, say) wins over the stored preference for that entry.
   toolbar.hidden = false;
-  setView(read(KEY_VIEW) === 'grid' ? 'grid' : 'list');
-  setDetails(read(KEY_DETAILS) !== 'hidden');
+  var initial = history.state && history.state.programView;
+  setView(initial || (read(KEY_VIEW) === 'grid' ? 'grid' : 'list'));
 })();

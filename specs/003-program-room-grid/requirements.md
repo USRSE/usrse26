@@ -79,17 +79,13 @@ session is so that I can decide whether to be in that room.
   the style of `.session__eyebrow`.
 - WHEN a session has a chair, THE system SHALL show "Chair: <name>" on the
   card in the style of `.session__chair`.
-- WHEN a session has events (talks), THE system SHALL list the event titles
-  on the card, in `Order` sequence, at a smaller size than the session title,
-  each carrying its format pill when the event has a page format.
-- WHEN JavaScript is available and the grid view is active, THE system SHALL
-  show a "Details" toggle that hides and shows the talk lists on every card,
-  leaving the eyebrow, title, chair, and time visible when hidden — an
-  escape hatch in case the full cards read as too busy. Talk lists SHALL be
-  shown by default.
-- WHEN a card's content is taller than the space its duration allows, THE
-  system SHALL clip the overflow within the card (visibly truncated, never
-  spilling into the next card) while keeping the session title readable.
+- WHEN a session has events (talks), THE system SHALL NOT list them on the
+  card — the card links to the list entry, which has them. (Revised after
+  verification: talk lists were clipped inside short cards; see Resolved
+  decision 5.)
+- WHEN a session title is taller than the space its duration allows, THE
+  system SHALL truncate it with an ellipsis on the last line that fits,
+  never slicing a line or spilling into the next card.
 - WHEN a session is a plenary, THE system SHALL render its card with the
   plenary treatment (accent bar and wash) used by `.session--plenary`.
 - WHEN a session is muted (Break / Meal / Registration), THE system SHALL
@@ -160,6 +156,10 @@ navigation aid, not a dead end.
 - WHEN a reader activates a session card in the grid, THE system SHALL
   switch to the list view and scroll to that session's entry, landing clear
   of the fixed navbar.
+- WHEN a reader presses the browser's Back button after activating a card,
+  THE system SHALL return to the grid view on the same page (and Forward
+  SHALL return to the list entry), never leaving the page on that first
+  Back.
 - WHEN the list view renders, THE system SHALL give every `.session` article
   a stable, deterministic `id` so that cards (and external links) can target
   it, and rerunning the generator on unchanged input SHALL yield the same
@@ -199,7 +199,7 @@ one-page-per-day room chart can be handed out.
   within the page width (no clipping from the on-screen scroll container)
   and drop sticky positioning.
 - WHEN the grid view is printed, THE system SHALL omit the day navigation
-  pills and the view and details toggles.
+  pills and the view toggle.
 - WHEN the grid view is printed, THE system SHALL preserve the plenary and
   muted distinctions in a way that survives greyscale printing (borders or
   hatching, not colour alone).
@@ -218,9 +218,9 @@ schedule from me.
 - WHEN a card is a link (Story 5), THE system SHALL make it reachable by Tab
   with a visible focus indicator, and its accessible name SHALL include the
   session title and time range.
-- WHEN the view toggle and the details toggle render, THE system SHALL make
-  them keyboard-operable with a visible focus indicator, and each SHALL
-  expose its current state to assistive technology.
+- WHEN the view toggle renders, THE system SHALL make it keyboard-operable
+  with a visible focus indicator, and each button SHALL expose its current
+  state to assistive technology.
 - WHEN JavaScript is unavailable, THE system SHALL render the list view
   exactly as today, and SHALL NOT display the view toggle or the grid markup
   (the grid ships `hidden`, the same pattern as the abstracts toolbar).
@@ -285,9 +285,11 @@ build stays green.
 4. **Muted sessions always span.** A muted session in a named room (e.g.
    Lunch in Salon 3 & 4) renders as a full-width band with the room named in
    its text, so Prefunction/Registration never spawns a lonely column.
-5. **Talks listed on cards, with an escape hatch.** Cards list their talks,
-   clipped to the card's height; a "Details" toggle can hide all talk lists
-   if the full cards prove too busy. Default: shown.
+5. **No talks on cards.** Originally cards listed their talks behind a
+   "Talk details" toggle; in verification the lists were cut off inside
+   short cards, so both the lists and the toggle were removed. Cards carry
+   time, eyebrow, and title, and the title ends in an ellipsis when it does
+   not fit.
 6. **On-page toggle, not a separate page.** The grid renders on `program/`
    behind a JS-driven List / Grid toggle. Without JS the page is the list,
    exactly as today.

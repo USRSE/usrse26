@@ -48,7 +48,7 @@ row (used for room ordering, currently dropped by the mapping at `:356-379`).
 | `pages/program/program.md` | Adds the `program-grid.css` link, the hidden toolbar, `{% include program-grid.html %}`, and the deferred `program-view.js` script. |
 | `assets/css/program.css` | One addition: `scroll-margin-top: 5rem` on `.session`, so card links land clear of the fixed navbar (same value as `.program-day`, `:120`). |
 | `assets/css/program-grid.css` | **New.** Tokens, grid geometry, sticky rail/headers, cards, bands, lanes, toolbar, mobile, print. |
-| `assets/js/program-view.js` | **New.** View toggle + persistence, details toggle, card-click view switch. |
+| `assets/js/program-view.js` | **New.** View toggle + persistence, card-click view switch with history state, card-title line clamp. |
 | `.github/workflows/build-program.yml` | Commit step stages `_includes/program-grid.html` too. |
 | `README.md` | "Building the Program Schedule" documents the new artifact and its two assets. |
 | `fixtures/schedule.csv` | Gains one same-room overlap pair (Story 4 has no fixture coverage today; the card-over-band cases already exist — Tue 12:45–1:15 inside lunch, Wed 3:00–3:30 vs the 3:15 closing). |
@@ -190,12 +190,9 @@ Element by element:
   `:516-518`), a visually-hidden room span (`grid__sr` — the column header
   conveys room only visually), the eyebrow (`type`, and
   `· Chair: <name>` when present, mirroring `renderSession()` `:457-461`),
-  the `<h3>` title, and — when the session has talks — an `<ol
-  class="grid__card-talks">` of `Order`-sorted talk titles, each prefixed
-  with its `t._format.label` pill span when the talk has a page format
-  (same condition as `renderSession()` `:472-473`). Card text goes through
-  `esc()` (`:434-437`); no Markdown is rendered on cards, so no Liquid
-  capture is involved.
+  and the `<h3>` title. Talks are not listed (Resolved decision 5, revised
+  after verification). Card text goes through `esc()` (`:434-437`); no
+  Markdown is rendered on cards, so no Liquid capture is involved.
 - **DOM order** inside `.grid`: header cells, rail, bands (chronological),
   then cards **grouped by room in column order, sorted by start** — the
   Story 8 reading order. Grid placement is independent of source order, and
@@ -242,7 +239,6 @@ include (`:23`):
     <button type="button" class="program-toolbar__view" data-view="list" aria-pressed="true">List</button>
     <button type="button" class="program-toolbar__view" data-view="grid" aria-pressed="false">Grid</button>
   </div>
-  <button type="button" class="program-toolbar__details" aria-pressed="true" hidden>Talk details</button>
 </div>
 
 {% include program-schedule.html %}
@@ -255,10 +251,7 @@ include (`:23`):
   the page, not to either generated include) and ships `hidden` — Story 8's
   no-JS criterion.
 - View buttons use `aria-pressed`, one true at a time — a segmented control
-  a screen reader announces as "List, toggle button, pressed". The details
-  button keeps the **fixed label** "Talk details" with `aria-pressed`
-  flipping — label-swapping plus `aria-pressed` double-signals, which is why
-  the abstracts toggle-all chose label-only and this one chooses state-only.
+  a screen reader announces as "List, toggle button, pressed".
 - Liquid processes the includes as before; nothing else on the page moves.
 
 ### 6. `assets/css/program-grid.css`
@@ -291,14 +284,14 @@ reason `abstracts.css` duplicates them: `program.css` scopes its block to
   (`program.css:108-112`). `grid__card--plenary` reuses the wash +
   `inset 3px 0 0` accent shadow of `.session--plenary` (`program.css:305-311`);
   muted cards never exist (muted ⇒ band). Type ramp: time and eyebrow at
-  0.6875rem like `.session__eyebrow`, title at 0.9375rem/600, talks at
-  0.8125rem with format pills styled like `.talk__format`
-  (`program.css:255-263`).
+  0.6875rem like `.session__eyebrow`, title at 0.9375rem/600. The title is
+  a `-webkit-box` with `overflow: hidden`; `program-view.js` sets its
+  `-webkit-line-clamp` per card to the lines that fit below the time and
+  eyebrow, so an over-long title ends in an ellipsis instead of a sliced
+  line.
 - **Bands**: full-track background (`#fafafa`), dashed top/bottom hairlines,
   centered single-line label in the muted ramp of `.session--muted`
   (`program.css:340-345`).
-- **Details toggle hook**: `.program-grid--no-details .grid__card-talks
-  { display: none }` — one class on the root, flipped by JS.
 - **Toolbar**: pill-styled buttons matching `.program-nav__pill`;
   `[aria-pressed="true"]` gets the accent border + wash.
 - **Mobile (`max-width: 40rem`)**: `--grid-col-min: 7.5rem`, tighter card
@@ -315,7 +308,9 @@ reason `abstracts.css` duplicates them: `program.css` scopes its block to
 
 ### 7. `assets/js/program-view.js`
 
-Dependency-free IIFE, deferred. Skeleton:
+Dependency-free IIFE, deferred. Skeleton (as first built; see the notes
+for the two later revisions — the details toggle is gone, and card clicks
+now go through `history.pushState` so Back restores the grid):
 
 ```js
 (function () {
@@ -375,8 +370,16 @@ Notes:
   Grid **day-pill** clicks are deliberately *not* intercepted: their
   targets are visible whenever the pills are, so SmoothScroll handles them
   with the same animated, navbar-offset scroll the list pills get.
-- **Details toggle** flips one class on `.program-grid` (§6) — Story 2's
-  escape hatch, default shown (Resolved decision 5).
+- **History.** Card clicks `replaceState({programView:'grid'})` on the
+  entry being left and `pushState({programView:'list'}, '', '#<sid>')`,
+  then call `scrollIntoView()` themselves (pushState never scrolls). A
+  `popstate` listener restores whichever view the entry recorded, so Back
+  returns to the grid and Forward to the list entry; on load a recorded
+  view wins over the stored preference for that entry.
+- **Title clamp.** `clampTitles()` measures each card's room below the
+  time and eyebrow and sets `-webkit-line-clamp` on the title; it runs on
+  every `setView('grid')` (hidden elements have no layout) and, debounced,
+  on resize.
 
 ### 8. Generator wiring, workflow, README
 
@@ -429,9 +432,8 @@ Nothing. Every acceptance criterion is mapped below.
 | 1 — sticky headers (vertical) and rail (horizontal) | §6 Scroller + Sticky chrome |
 | 2 — eyebrow with Session Format | §3 card eyebrow |
 | 2 — chair on card | §3 card eyebrow |
-| 2 — talks in Order, smaller, with pills | §3 card talks list |
-| 2 — Details toggle, default shown | §5 toolbar; §6 hook; §7 setDetails |
-| 2 — clipping within card | §6 `overflow: hidden` |
+| 2 — no talks on cards | §3 card content |
+| 2 — title ellipsis | §6 title clamp; §7 clampTitles |
 | 2 — plenary treatment | §6 `grid__card--plenary` |
 | 2 — muted treatment | §6 bands (muted ⇒ band, §2) |
 | 2 — compact time on card | §3 card time / `fmtTime` dedupe |
@@ -447,6 +449,7 @@ Nothing. Every acceptance criterion is mapped below.
 | 5 — persisted choice, default list | §7 localStorage |
 | 5 — grid's own pills, no id collisions | §3 day nav |
 | 5 — card ⇒ list view + scroll clear of navbar | §7 card click; `scroll-margin-top` in program.css |
+| 5 — Back returns to the grid | §7 History |
 | 5 — stable deterministic session ids | §1 assignSessionIds |
 | 6 — horizontal scroll in container, body never scrolls | §6 Scroller |
 | 6 — heading/pills outside scroller | §3 structure (nav and h2 precede scroller) |
@@ -458,7 +461,7 @@ Nothing. Every acceptance criterion is mapped below.
 | 7 — greyscale-safe distinctions | §6 Print borders/dashes |
 | 8 — DOM reading order by room/start with time+room+title | §3 DOM order + card `grid__sr` room span |
 | 8 — cards tabbable, focus ring, accessible name | §3 cards as `<a>`; §6 focus styles |
-| 8 — toggles keyboard-operable, state exposed | §5 `aria-pressed`; §6 toolbar styles |
+| 8 — toggle keyboard-operable, state exposed | §5 `aria-pressed`; §6 toolbar styles |
 | 8 — no JS ⇒ today's list, no toggle/grid | §3 root `hidden`; §5 toolbar `hidden` |
 | 9 — unchanged input ⇒ no write | §8 |
 | 9 — written via writeIfChanged | §8 |
