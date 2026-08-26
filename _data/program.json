@@ -281,15 +281,15 @@
           "end": "1:30pm",
           "startISO": "2026-10-19T12:00:00-07:00",
           "endISO": "2026-10-19T13:30:00-07:00",
-          "break": false,
+          "break": true,
           "sessions": [
             {
               "title": "Lunch Break (Sponsorship available)",
-              "type": "",
+              "type": "Meal",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "Early Career Mentor/Mentee Lunch",
               "plenary": false,
-              "muted": false,
+              "muted": true,
               "talks": []
             }
           ]
