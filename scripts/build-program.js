@@ -4,9 +4,10 @@
  *
  * Pulls the "Schedule" tab of the program Google Sheet via its CSV export
  * endpoint, folds the flat rows into days -> time slots -> sessions -> events,
- * and writes four kinds of artifact:
+ * and writes five kinds of artifact:
  *
  *   _includes/program-schedule.html   Jekyll include rendered on the program page
+ *   _includes/program-grid.html       room x time grid view of the same page
  *   _data/program.json                normalized data (site.data.program)
  *   pages/program/abstracts/<slug>.md one page per event format (abstracts)
  *   _data/menus/program.yml           program menubar linking those pages
@@ -74,20 +75,21 @@ const ROOM_ORDER = [
 const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
 
 // Event formats (the sheet's Format column), keyed by lowercased trimmed
-// cell value. The seven "page formats" carry a pill label on the schedule
+// cell value. The "page formats" carry a pill label on the schedule
 // and generate an abstract page (pageTitle/permalink/slug); "Other" opts an
 // event out of both. Unknown values are treated as Other, never an error —
 // the raw cell text is carried separately for program.json.
 /** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null}>} */
 const FORMATS = {
-  'bird of a feather': { label: 'Bird of a Feather', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
+  'bird of a feather': { label: '', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
   'keynote': { label: 'Keynote', pageTitle: 'Keynotes', permalink: 'program/keynotes/', slug: 'keynotes' },
+  'notebook': { label: 'Notebook', pageTitle: 'Notebooks', permalink: 'program/notebooks/', slug: 'notebooks' },
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
   'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },
   'random access microtalk': { label: 'RAM', pageTitle: 'Random Access Microtalks', permalink: 'program/rams/', slug: 'rams' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
-  'workshop': { label: 'Workshop', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
+  'workshop': { label: '', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
   'other': { label: null, pageTitle: null, permalink: null, slug: null },
 };
 
@@ -101,6 +103,7 @@ function normalizeFormat(raw) {
 
 const REPO_ROOT = path.join(__dirname, '..');
 const OUT_HTML = path.join(REPO_ROOT, '_includes', 'program-schedule.html');
+const OUT_GRID = path.join(REPO_ROOT, '_includes', 'program-grid.html');
 const OUT_JSON = path.join(REPO_ROOT, '_data', 'program.json');
 
 // ---------------------------------------------------------------------------
@@ -360,6 +363,8 @@ function fold(records) {
                 info: s.info,
                 plenary: s.type.toLowerCase() === 'plenary',
                 muted: s.muted,
+                // Sheet row, for tie-breaking room order in the grid view.
+                _row: s._row,
                 talks: s.talks
                   .sort((a, b) => a.order - b.order || a._row - b._row)
                   .map((t) => {
@@ -383,6 +388,9 @@ function fold(records) {
               endISO: fmtISO(date, slot.end),
               break: sessions.every((s) => s.muted),
               sessions,
+              // Wall-clock minutes for the grid renderer's row lattice.
+              _startMins: slot.start,
+              _endMins: slot.end,
             };
           }),
       };
@@ -426,6 +434,29 @@ function assignAnchors(days) {
   }
 }
 
+/**
+ * Give every session a stable id for its <article> in the schedule include,
+ * so the grid view's cards (and external links) can target it. Same
+ * traversal order and dedupe scheme as assignAnchors: base is the weekday
+ * plus the slugified title, and repeats across the whole document take
+ * -2/-3 suffixes — "Afternoon Tech Session (Workshops / BoFs)" runs in four
+ * rooms at once, so its ids are ...-workshops-bofs, -2, -3, -4.
+ * @param {ReturnType<typeof fold>} days
+ */
+function assignSessionIds(days) {
+  const seen = new Map(); // id base -> count
+  for (const day of days) {
+    for (const slot of day.slots) {
+      for (const session of slot.sessions) {
+        const base = slugify(`${day.weekday}-${session.title}`);
+        const n = (seen.get(base) || 0) + 1;
+        seen.set(base, n);
+        session._sid = n === 1 ? base : `${base}-${n}`;
+      }
+    }
+  }
+}
+
 // ---------------------------------------------------------------------------
 // Rendering
 // ---------------------------------------------------------------------------
@@ -448,7 +479,7 @@ function renderSession(s, pad) {
   const cls = ['session'];
   if (s.plenary) cls.push('session--plenary');
   if (s.muted) cls.push('session--muted');
-  const lines = [`${pad}<article class="${cls.join(' ')}">`];
+  const lines = [`${pad}<article class="${cls.join(' ')}" id="${s._sid}">`];
   const room = s.room && s.room.toLowerCase() !== 'anywhere'
     ? ` <span class="session__room">— ${esc(s.room)}</span>`
     : '';
@@ -488,6 +519,18 @@ function renderSession(s, pad) {
   return lines.join('\n');
 }
 
+/**
+ * "7:30am–8:30am" reads as "7:30–8:30am": drop the start meridiem when
+ * both ends share it. fmtTime output always ends with am/pm.
+ * @param {{start: string, end: string, startISO: string, endISO: string}} slot
+ */
+function fmtRange(slot) {
+  const startText = slot.start.slice(-2) === slot.end.slice(-2)
+    ? slot.start.slice(0, -2)
+    : slot.start;
+  return `<time datetime="${slot.startISO}">${startText}</time>–<time datetime="${slot.endISO}">${slot.end}</time>`;
+}
+
 function renderHTML(days) {
   const lines = [
     '<!-- Generated by scripts/build-program.js — do not edit by hand.',
@@ -510,18 +553,223 @@ function renderHTML(days) {
     for (const slot of day.slots) {
       const cls = slot.break ? 'slot slot--break' : 'slot';
       lines.push(`      <li class="${cls}">`);
-      // "7:30am–8:30am" reads as "7:30–8:30am": drop the start meridiem
-      // when both ends share it. fmtTime output always ends with am/pm.
-      const startText = slot.start.slice(-2) === slot.end.slice(-2)
-        ? slot.start.slice(0, -2)
-        : slot.start;
-      lines.push(`        <p class="slot__time"><time datetime="${slot.startISO}">${startText}</time>–<time datetime="${slot.endISO}">${slot.end}</time></p>`);
+      lines.push(`        <p class="slot__time">${fmtRange(slot)}</p>`);
       lines.push('        <div class="slot__body">');
       for (const s of slot.sessions) lines.push(renderSession(s, '          '));
       lines.push('        </div>');
       lines.push('      </li>');
     }
     lines.push('    </ol>');
+    lines.push('  </section>');
+  }
+  lines.push('</div>');
+  return lines.join('\n') + '\n';
+}
+
+// ---------------------------------------------------------------------------
+// Grid view — one CSS Grid per day: a time rail, one column per room, and
+// one row per five minutes, so a session's grid-row places and sizes it
+// proportionally with no script. The generator emits counts and positions;
+// assets/css/program-grid.css owns the tracks and everything visual.
+// ---------------------------------------------------------------------------
+
+// Minutes per grid row. Every sheet time so far sits on :00/:15/:30/:45,
+// but parseTime admits any minute, so placement rounds to this lattice;
+// displayed times stay exact.
+const GRID_STEP = 5;
+
+// Shortest card, in rows: a session whose End cell is empty has end ==
+// start and would otherwise draw at zero height.
+const GRID_MIN_SPAN = 3;
+
+/**
+ * Whole-venue sessions span every room column instead of occupying one:
+ * anything muted (a Break/Meal/Registration in a named room still spans,
+ * and names the room in its label — so Prefunction never gets a column of
+ * nothing but Registration) and anything with no room or "Anywhere".
+ * @param {{muted: boolean, room: string}} s
+ */
+function isBand(s) {
+  return s.muted || !s.room || s.room.toLowerCase() === 'anywhere';
+}
+
+/**
+ * Lay a day out on the row lattice. Rows are 5-minute units counted from
+ * dayStart (the earliest start floored to the half hour); minute m maps to
+ * grid line 2 + (m - dayStart) / 5 — line 1 opens the header row. Columns
+ * are the rooms hosting at least one card that day, in ROOM_ORDER rank and
+ * then by first appearance in the sheet.
+ * @param {ReturnType<typeof fold>[number]} day
+ */
+function computeDayGrid(day) {
+  const items = [];
+  for (const slot of day.slots) {
+    for (const session of slot.sessions) items.push({ session, slot });
+  }
+  const dayStart = Math.floor(Math.min(...items.map((i) => i.slot._startMins)) / 30) * 30;
+  const dayEnd = Math.ceil(Math.max(...items.map((i) => i.slot._endMins)) / 30) * 30;
+  const toRow = (mins) => 2 + Math.round((mins - dayStart) / GRID_STEP);
+
+  const placed = items.map(({ session, slot }) => {
+    const startRow = toRow(slot._startMins);
+    const endRow = Math.max(toRow(slot._endMins), startRow + GRID_MIN_SPAN);
+    return { session, slot, startRow, endRow, band: isBand(session) };
+  });
+
+  // Rooms come from cards only; a room hosting nothing but bands gets no
+  // column. Rank first, then the room's earliest sheet row that day.
+  const firstRow = new Map();
+  for (const p of placed) {
+    if (p.band) continue;
+    const seen = firstRow.get(p.session.room);
+    if (seen === undefined || p.session._row < seen) firstRow.set(p.session.room, p.session._row);
+  }
+  const rooms = [...firstRow.keys()]
+    .sort((a, b) => roomRank(a) - roomRank(b) || firstRow.get(a) - firstRow.get(b));
+
+  return {
+    dayStart,
+    dayEnd,
+    rows: (dayEnd - dayStart) / GRID_STEP,
+    toRow,
+    rooms,
+    bands: placed.filter((p) => p.band),
+    cards: placed.filter((p) => !p.band),
+  };
+}
+
+/**
+ * Split same-room overlaps into side-by-side lanes. Cards are swept in
+ * start order; a cluster grows while the next card starts before the
+ * cluster's running end, and within it each card takes the lowest lane
+ * whose last occupant has finished. Every card in a cluster carries the
+ * cluster's lane count, so a lone card keeps --lane:0;--lanes:1 (full
+ * width) and a pair of overlaps splits the column in two. Overlap is
+ * judged on grid rows, so the minimum-span clamp counts.
+ * @param {{startRow: number, endRow: number, session: {_row: number}, lane?: number, lanes?: number}[]} cards
+ */
+function assignLanes(cards) {
+  cards.sort((a, b) => a.startRow - b.startRow || a.session._row - b.session._row);
+  let cluster = [];
+  let laneEnds = [];
+  let clusterEnd = -Infinity;
+  const flush = () => {
+    for (const c of cluster) c.lanes = laneEnds.length;
+    cluster = [];
+    laneEnds = [];
+  };
+  for (const c of cards) {
+    if (c.startRow >= clusterEnd) flush();
+    let lane = laneEnds.findIndex((end) => end <= c.startRow);
+    if (lane === -1) lane = laneEnds.push(c.endRow) - 1;
+    else laneEnds[lane] = c.endRow;
+    c.lane = lane;
+    cluster.push(c);
+    clusterEnd = cluster.length === 1 ? c.endRow : Math.max(clusterEnd, c.endRow);
+  }
+  flush();
+}
+
+/**
+ * A whole-venue band spanning every room column (the column span lives in
+ * CSS). The label names the room when the sheet gave one — Lunch in Salon
+ * 3 & 4 still spans, but says where — and carries the compact time range.
+ * @param {{session: ReturnType<typeof fold>[number]['slots'][number]['sessions'][number], slot: ReturnType<typeof fold>[number]['slots'][number], startRow: number, endRow: number}} b
+ * @param {string} pad
+ */
+function renderGridBand(b, pad) {
+  const { session: s, slot } = b;
+  const cls = s.muted ? 'grid__band grid__band--muted' : 'grid__band';
+  const room = s.room && s.room.toLowerCase() !== 'anywhere'
+    ? ` <span class="grid__band-room">— ${esc(s.room)}</span>` : '';
+  return [
+    `${pad}<div class="${cls}" style="grid-row:${b.startRow}/${b.endRow}">`,
+    `${pad}  <p class="grid__band-label">${esc(s.title)}${room} <span class="grid__band-time">${fmtRange(slot)}</span></p>`,
+    `${pad}</div>`,
+  ];
+}
+
+/**
+ * One session card: a link to the session's list-view entry wrapping all
+ * its text, so the accessible name reads "time, room, title, …" in that
+ * order. The room is visually hidden — the column header carries it for
+ * sighted readers. Talks are deliberately not listed: a card is only as
+ * tall as its slot, and the list entry it links to has them. No Markdown
+ * renders here, so plain esc() suffices.
+ * @param {{session: ReturnType<typeof fold>[number]['slots'][number]['sessions'][number], slot: ReturnType<typeof fold>[number]['slots'][number], startRow: number, endRow: number, lane: number, lanes: number}} c
+ * @param {number} column
+ * @param {string} pad
+ */
+function renderGridCard(c, column, pad) {
+  const { session: s, slot } = c;
+  const cls = s.plenary ? 'grid__card grid__card--plenary' : 'grid__card';
+  const style = `grid-column:${column};grid-row:${c.startRow}/${c.endRow};--lane:${c.lane};--lanes:${c.lanes}`;
+  const lines = [`${pad}<a class="${cls}" href="#${s._sid}" style="${style}">`];
+  lines.push(`${pad}  <p class="grid__card-time">${fmtRange(slot)}<span class="grid__sr">, ${esc(s.room)}</span></p>`);
+  if (s.type || s.chair) {
+    const chair = s.chair
+      ? `<span class="grid__card-chair">${s.type ? ' · ' : ''}Chair: ${esc(s.chair)}</span>` : '';
+    lines.push(`${pad}  <p class="grid__card-eyebrow">${esc(s.type)}${chair}</p>`);
+  }
+  lines.push(`${pad}  <h3 class="grid__card-title">${esc(s.title)}</h3>`);
+  lines.push(`${pad}</a>`);
+  return lines;
+}
+
+function renderGridHTML(days) {
+  const lines = [
+    '<!-- Generated by scripts/build-program.js — do not edit by hand.',
+    '     Edit the Schedule sheet and re-run the script instead. -->',
+    // Hidden until assets/js/program-view.js reveals it, so without
+    // JavaScript the page is the list view alone, exactly as before.
+    '<div class="program-grid" hidden>',
+  ];
+  // Own day nav with grid-day-* ids: both views share the DOM, so nothing
+  // here may collide with the list's day-* set.
+  lines.push('  <nav class="program-grid__nav" aria-label="Program days (grid)">');
+  lines.push('    <span class="program-grid__nav-label" aria-hidden="true">Jump to</span>');
+  for (const day of days) {
+    lines.push(`    <a class="program-grid__pill" href="#grid-day-${day.weekday.toLowerCase()}">${day.weekday}</a>`);
+  }
+  lines.push('  </nav>');
+  for (const day of days) {
+    const id = `grid-day-${day.weekday.toLowerCase()}`;
+    const g = computeDayGrid(day);
+    lines.push(`  <section class="program-grid__day" id="${id}" aria-labelledby="${id}-title">`);
+    // The draft note comes off once the program is final (as in renderHTML).
+    lines.push(`    <h2 class="program-grid__title" id="${id}-title">${day.weekday}<span class="program-grid__date">, ${day.label}</span><span class="program-grid__draft">  (Draft — subject to change)</span></h2>`);
+    // The scroller owns both scroll axes (sticky headers need a vertical
+    // scrollport). Focusable and named so keyboards can scroll it too.
+    lines.push(`    <div class="program-grid__scroller" tabindex="0" role="region" aria-label="${day.weekday} room grid">`);
+    lines.push(`      <div class="grid" style="--grid-cols:${g.rooms.length};--grid-rows:${g.rows}">`);
+    lines.push('        <div class="grid__corner"></div>');
+    g.rooms.forEach((room, i) => {
+      lines.push(`        <div class="grid__room" style="grid-column:${i + 2}">${esc(room)}</div>`);
+    });
+    // Rail: a rule every half hour (heavier on the hour) and a label per
+    // hour spanning down to the next. Decoration to a screen reader —
+    // every band and card announces its own times.
+    for (let t = g.dayStart; t < g.dayEnd; t += 30) {
+      const hour = t % 60 === 0;
+      const cls = hour ? 'grid__rule grid__rule--hour' : 'grid__rule';
+      lines.push(`        <div class="${cls}" style="grid-row:${g.toRow(t)}" aria-hidden="true"></div>`);
+      if (hour) {
+        const next = Math.min(t + 60, g.dayEnd);
+        lines.push(`        <div class="grid__time" style="grid-row:${g.toRow(t)}/${g.toRow(next)}" aria-hidden="true">${fmtTime(t)}</div>`);
+      }
+    }
+    // Bands first, then cards grouped by room in column order and sorted
+    // by start — the reading order for anyone consuming the DOM linearly.
+    // Painting follows DOM order too, which is what draws a card above the
+    // band it sits inside (the Working Group Fair during lunch).
+    for (const b of g.bands) lines.push(...renderGridBand(b, '        '));
+    g.rooms.forEach((room, i) => {
+      const cards = g.cards.filter((c) => c.session.room === room);
+      assignLanes(cards);
+      for (const c of cards) lines.push(...renderGridCard(c, i + 2, '        '));
+    });
+    lines.push('      </div>');
+    lines.push('    </div>');
     lines.push('  </section>');
   }
   lines.push('</div>');
@@ -762,12 +1010,14 @@ async function main() {
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
   const days = fold(records);
   assignAnchors(days);
+  assignSessionIds(days);
 
   const sessionCount = days.reduce(
     (n, d) => n + d.slots.reduce((m, s) => m + s.sessions.length, 0), 0);
   console.log(`Parsed ${records.length} rows -> ${days.length} days, ${sessionCount} sessions.`);
 
   writeIfChanged(OUT_HTML, renderHTML(days));
+  writeIfChanged(OUT_GRID, renderGridHTML(days));
   // Underscored keys are internal plumbing — program.json carries text only.
   writeIfChanged(OUT_JSON, JSON.stringify(
     { timezone: TZ_OFFSET, days },

@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Workshops
-description: Workshop abstracts at USRSE'26
+description:  abstracts at USRSE'26
 menubar: program
 permalink: program/workshops/
 set_last_modified: true
