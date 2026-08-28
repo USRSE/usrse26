@@ -281,15 +281,15 @@
           "end": "1:30pm",
           "startISO": "2026-10-19T12:00:00-07:00",
           "endISO": "2026-10-19T13:30:00-07:00",
-          "break": false,
+          "break": true,
           "sessions": [
             {
               "title": "Lunch Break (Sponsorship available)",
-              "type": "",
+              "type": "Meal",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "Early Career Mentor/Mentee Lunch",
               "plenary": false,
-              "muted": false,
+              "muted": true,
               "talks": []
             }
           ]
@@ -327,6 +327,135 @@
           "end": "3pm",
           "startISO": "2026-10-19T13:30:00-07:00",
           "endISO": "2026-10-19T15:00:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "RSE Team Operations",
+              "type": "BoF",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": [
+                {
+                  "title": "Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges",
+                  "speakers": "Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown",
+                  "people": [
+                    "Daniel Madren",
+                    "Geoffrey Lentner",
+                    "Laura Theademan",
+                    "Chris Bentley",
+                    "Christina Maimone",
+                    "Ian Cosden",
+                    "Sandra Gesing",
+                    "Adam Rubens",
+                    "David Pettifor",
+                    "Elizabeth Leake",
+                    "William Cowen",
+                    "Abbey Roelofs",
+                    "Daniel Shown"
+                  ],
+                  "format": "Bird of a Feather",
+                  "infoMd": "Research Software Engineering (RSE) groups are increasingly central to the modern research enterprise, yet the operational challenges of leading, sustaining, and evolving these groups remain complex and often under-discussed. As RSE teams respond to changing research demands, evolving funding landscapes, staffing pressures, institutional expectations, and the rapid emergence of AI-enabled workflows, group leaders and operational decision-makers need practical spaces to compare challenges, share strategies, and identify reusable community resources.\n\nBuilding on discussions from the USRSE’24 workshop, “Establishing RSE Programs – From Early Stage Formalization to Mature Models,” this Birds of a Feather (BoF) session will provide a peer problem-solving forum for individuals involved in RSE group operations, leadership, management, and strategic decision-making. The session will feature short lightning reflections from community members followed by facilitated breakout discussions focused on identifying common challenges, sharing practical strategies, and collecting reusable operational resources for the broader RSE community. Topics may include hiring and identifying RSE talent, funding and business justification, AI-driven changes to productivity and team structure, outreach and researcher engagement, leadership development, organizational sustainability, and burnout.\n\nWe recommend bringing laptops/smart devices to access BoF materials.",
+                  "href": "program/bofs/#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges"
+                }
+              ]
+            },
+            {
+              "title": "Institutional RSE Community",
+              "type": "BoF",
+              "room": "San Jose Ballroom Salon 1 & 2",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": [
+                {
+                  "title": "Building an Institutional RSE Community",
+                  "speakers": "Julia Damerow, J.C. Subida, Alex Koufos, Daniel Woulfin and Trevor Spreadbury",
+                  "people": [
+                    "Julia Damerow",
+                    "J.C. Subida",
+                    "Alex Koufos",
+                    "Daniel Woulfin",
+                    "Trevor Spreadbury"
+                  ],
+                  "format": "Bird of a Feather",
+                  "infoMd": "This Birds of a Feather (BoF) session, organized by the Institutional RSE Networking Affinity Group, plans to address a structural issue in the Research Software Engineering (RSEng) landscape: the isolation of individual Research Software Engineers (RSEs) within large institutions. By drawing on self-determination theory and communities of practice (Wenger, 1998), we aim to answer why RSEs seek out local communities and what those communities ideally look like. While national and international RSE networks are growing, many RSEs lack a local peer group to share expertise, vent frustrations, or organize for structural change. This session will provide a space for attendees to identify local needs and co-create strategies for establishing institutional RSE communities. Through interactive polling and facilitated breakout groups, participants will move from identifying shared challenges to collectively brainstorming ideas to build local networks. Key points of the discussion will be shared as a blog post after the conference.",
+                  "href": "program/bofs/#building-an-institutional-rse-community"
+                }
+              ]
+            },
+            {
+              "title": "Better Scientific Software Fellowship",
+              "type": "BoF",
+              "room": "San Jose Ballroom Salon 5 & 6",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": [
+                {
+                  "title": "Better Scientific Software Fellowship Community",
+                  "speakers": "Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung",
+                  "people": [
+                    "Adam Lavely",
+                    "Elsa Gonsiorowski",
+                    "Mary Ann Leung"
+                  ],
+                  "format": "Bird of a Feather",
+                  "infoMd": "Software developers face increasing complexity in computational models, computer architectures, and emerging workflows. In this environment Research Software Engineers need to continually improve software practices and constantly hone their craft. To address this need, the Better Scientific Software (BSSw) Fellowship Program launched in 2018 to seed a community of like-minded individuals interested in improving all aspects of the work of software development. The BSSw Birds of a Feather session brings together alumni, honorable mentions, current fellows, BSSw leadership and potential applicants to discuss software best practices and the upcoming 2027 Fellowship requirements and deadlines.",
+                  "href": "program/bofs/#better-scientific-software-fellowship-community"
+                }
+              ]
+            },
+            {
+              "title": "Threat Modeling for Research Software Systems",
+              "type": "Workshop",
+              "room": "Willow Glen Room",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": [
+                {
+                  "title": "A Group Attempt at Threat Modeling for Research Software Systems",
+                  "speakers": "James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson",
+                  "people": [
+                    "James Davis",
+                    "George K. Thiruvathukal",
+                    "Jeffrey Carver",
+                    "Kelechi G Kalu",
+                    "Alexandra Harris-Watson"
+                  ],
+                  "format": "Workshop",
+                  "infoMd": "Research software environments must reach an increasingly high standard for security. But we all know that “security” is hard to measure. The typical method is threat modeling, in which one constructs a system model, identifies attackers and their capabilities, and looks for ways in which the system can be hardened to prevent or mitigate attacks. However, threat modeling remains challenging to apply effectively in the context of RSEs, whose operating environments involve complex, distributed environments, intricate dependencies, and emerging concerns related to software agents. Many in the community feel there are latent \"vulnerabilities\" but lack a clear notion of the actual threat surface.\n\nThis interactive, group-based workshop works towards a group understanding of the problem and the methods to resolving it. We will introduce a high-level system model for a typical research software project and an initial, draft threat model. Participants will be divided into small groups to collaboratively analyze, critique, and specialize this model for their contexts. The exercises will focus on identifying specific threats related to the software supply chain, dependency management, and organizational factors. Attendees will gain actionable, hands-on experience in structuring their security analysis, transforming abstract concerns into defined threats and tangible hardening measures. This workshop is designed for Research Software Engineers (RSEs) who wish to operationalize security and better communicate risk in their projects\n\nParticipants are expected to bring a laptop.",
+                  "href": "program/workshops/#a-group-attempt-at-threat-modeling-for-research-software-systems"
+                }
+              ]
+            }
+          ]
+        },
+        {
+          "start": "3pm",
+          "end": "3:30pm",
+          "startISO": "2026-10-19T15:00:00-07:00",
+          "endISO": "2026-10-19T15:30:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Afternoon Break (Sponsorship available)",
+              "type": "Break",
+              "room": "Anywhere",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "3:30pm",
+          "end": "5pm",
+          "startISO": "2026-10-19T15:30:00-07:00",
+          "endISO": "2026-10-19T17:00:00-07:00",
           "break": false,
           "sessions": [
             {
@@ -493,135 +622,6 @@
                   ],
                   "format": "Talk",
                   "href": "program/talks/#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "start": "3pm",
-          "end": "3:30pm",
-          "startISO": "2026-10-19T15:00:00-07:00",
-          "endISO": "2026-10-19T15:30:00-07:00",
-          "break": true,
-          "sessions": [
-            {
-              "title": "Afternoon Break (Sponsorship available)",
-              "type": "Break",
-              "room": "Anywhere",
-              "info": "",
-              "plenary": false,
-              "muted": true,
-              "talks": []
-            }
-          ]
-        },
-        {
-          "start": "3:30pm",
-          "end": "5pm",
-          "startISO": "2026-10-19T15:30:00-07:00",
-          "endISO": "2026-10-19T17:00:00-07:00",
-          "break": false,
-          "sessions": [
-            {
-              "title": "RSE Team Operations",
-              "type": "BoF",
-              "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "",
-              "plenary": false,
-              "muted": false,
-              "talks": [
-                {
-                  "title": "Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges",
-                  "speakers": "Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown",
-                  "people": [
-                    "Daniel Madren",
-                    "Geoffrey Lentner",
-                    "Laura Theademan",
-                    "Chris Bentley",
-                    "Christina Maimone",
-                    "Ian Cosden",
-                    "Sandra Gesing",
-                    "Adam Rubens",
-                    "David Pettifor",
-                    "Elizabeth Leake",
-                    "William Cowen",
-                    "Abbey Roelofs",
-                    "Daniel Shown"
-                  ],
-                  "format": "Bird of a Feather",
-                  "infoMd": "Research Software Engineering (RSE) groups are increasingly central to the modern research enterprise, yet the operational challenges of leading, sustaining, and evolving these groups remain complex and often under-discussed. As RSE teams respond to changing research demands, evolving funding landscapes, staffing pressures, institutional expectations, and the rapid emergence of AI-enabled workflows, group leaders and operational decision-makers need practical spaces to compare challenges, share strategies, and identify reusable community resources.\n\nBuilding on discussions from the USRSE’24 workshop, “Establishing RSE Programs – From Early Stage Formalization to Mature Models,” this Birds of a Feather (BoF) session will provide a peer problem-solving forum for individuals involved in RSE group operations, leadership, management, and strategic decision-making. The session will feature short lightning reflections from community members followed by facilitated breakout discussions focused on identifying common challenges, sharing practical strategies, and collecting reusable operational resources for the broader RSE community. Topics may include hiring and identifying RSE talent, funding and business justification, AI-driven changes to productivity and team structure, outreach and researcher engagement, leadership development, organizational sustainability, and burnout.\n\nWe recommend bringing laptops/smart devices to access BoF materials.",
-                  "href": "program/bofs/#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges"
-                }
-              ]
-            },
-            {
-              "title": "Institutional RSE Community",
-              "type": "BoF",
-              "room": "San Jose Ballroom Salon 1 & 2",
-              "info": "",
-              "plenary": false,
-              "muted": false,
-              "talks": [
-                {
-                  "title": "Building an Institutional RSE Community",
-                  "speakers": "Julia Damerow, J.C. Subida, Alex Koufos, Daniel Woulfin and Trevor Spreadbury",
-                  "people": [
-                    "Julia Damerow",
-                    "J.C. Subida",
-                    "Alex Koufos",
-                    "Daniel Woulfin",
-                    "Trevor Spreadbury"
-                  ],
-                  "format": "Bird of a Feather",
-                  "infoMd": "This Birds of a Feather (BoF) session, organized by the Institutional RSE Networking Affinity Group, plans to address a structural issue in the Research Software Engineering (RSEng) landscape: the isolation of individual Research Software Engineers (RSEs) within large institutions. By drawing on self-determination theory and communities of practice (Wenger, 1998), we aim to answer why RSEs seek out local communities and what those communities ideally look like. While national and international RSE networks are growing, many RSEs lack a local peer group to share expertise, vent frustrations, or organize for structural change. This session will provide a space for attendees to identify local needs and co-create strategies for establishing institutional RSE communities. Through interactive polling and facilitated breakout groups, participants will move from identifying shared challenges to collectively brainstorming ideas to build local networks. Key points of the discussion will be shared as a blog post after the conference.",
-                  "href": "program/bofs/#building-an-institutional-rse-community"
-                }
-              ]
-            },
-            {
-              "title": "Better Scientific Software Fellowship",
-              "type": "BoF",
-              "room": "San Jose Ballroom Salon 5 & 6",
-              "info": "",
-              "plenary": false,
-              "muted": false,
-              "talks": [
-                {
-                  "title": "Better Scientific Software Fellowship Community",
-                  "speakers": "Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung",
-                  "people": [
-                    "Adam Lavely",
-                    "Elsa Gonsiorowski",
-                    "Mary Ann Leung"
-                  ],
-                  "format": "Bird of a Feather",
-                  "infoMd": "Software developers face increasing complexity in computational models, computer architectures, and emerging workflows. In this environment Research Software Engineers need to continually improve software practices and constantly hone their craft. To address this need, the Better Scientific Software (BSSw) Fellowship Program launched in 2018 to seed a community of like-minded individuals interested in improving all aspects of the work of software development. The BSSw Birds of a Feather session brings together alumni, honorable mentions, current fellows, BSSw leadership and potential applicants to discuss software best practices and the upcoming 2027 Fellowship requirements and deadlines.",
-                  "href": "program/bofs/#better-scientific-software-fellowship-community"
-                }
-              ]
-            },
-            {
-              "title": "Threat Modeling for Research Software Systems",
-              "type": "Workshop",
-              "room": "Willow Glen Room",
-              "info": "",
-              "plenary": false,
-              "muted": false,
-              "talks": [
-                {
-                  "title": "A Group Attempt at Threat Modeling for Research Software Systems",
-                  "speakers": "James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson",
-                  "people": [
-                    "James Davis",
-                    "George K. Thiruvathukal",
-                    "Jeffrey Carver",
-                    "Kelechi G Kalu",
-                    "Alexandra Harris-Watson"
-                  ],
-                  "format": "Workshop",
-                  "infoMd": "Research software environments must reach an increasingly high standard for security. But we all know that “security” is hard to measure. The typical method is threat modeling, in which one constructs a system model, identifies attackers and their capabilities, and looks for ways in which the system can be hardened to prevent or mitigate attacks. However, threat modeling remains challenging to apply effectively in the context of RSEs, whose operating environments involve complex, distributed environments, intricate dependencies, and emerging concerns related to software agents. Many in the community feel there are latent \"vulnerabilities\" but lack a clear notion of the actual threat surface.\n\nThis interactive, group-based workshop works towards a group understanding of the problem and the methods to resolving it. We will introduce a high-level system model for a typical research software project and an initial, draft threat model. Participants will be divided into small groups to collaboratively analyze, critique, and specialize this model for their contexts. The exercises will focus on identifying specific threats related to the software supply chain, dependency management, and organizational factors. Attendees will gain actionable, hands-on experience in structuring their security analysis, transforming abstract concerns into defined threats and tangible hardening measures. This workshop is designed for Research Software Engineers (RSEs) who wish to operationalize security and better communicate risk in their projects\n\nParticipants are expected to bring a laptop.",
-                  "href": "program/workshops/#a-group-attempt-at-threat-modeling-for-research-software-systems"
                 }
               ]
             }

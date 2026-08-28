@@ -82,10 +82,10 @@
           </article>
         </div>
       </li>
-      <li class="slot">
+      <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-19T12:00:00-07:00">12</time>–<time datetime="2026-10-19T13:30:00-07:00">1:30pm</time></p>
         <div class="slot__body">
-          <article class="session">
+          <article class="session session--muted">
             <h3 class="session__title">Lunch Break (Sponsorship available) <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
             <div class="session__info">{% capture session_info_md %}Early Career Mentor/Mentee Lunch{% endcapture %}{{ session_info_md | markdownify }}</div>
           </article>
@@ -105,6 +105,47 @@
       </li>
       <li class="slot">
         <p class="slot__time"><time datetime="2026-10-19T13:30:00-07:00">1:30</time>–<time datetime="2026-10-19T15:00:00-07:00">3pm</time></p>
+        <div class="slot__body">
+          <article class="session">
+            <h3 class="session__title">RSE Team Operations <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
+            <p class="session__eyebrow">BoF</p>
+            <ol class="session__talks">
+              <li class="talk"><span class="talk__format">Bird of a Feather</span> <a class="talk__link" href="{{ 'program/bofs/' | relative_url }}#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges"><span class="talk__title">Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges</span></a></li>
+            </ol>
+          </article>
+          <article class="session">
+            <h3 class="session__title">Institutional RSE Community <span class="session__room">— San Jose Ballroom Salon 1 &amp; 2</span></h3>
+            <p class="session__eyebrow">BoF</p>
+            <ol class="session__talks">
+              <li class="talk"><span class="talk__format">Bird of a Feather</span> <a class="talk__link" href="{{ 'program/bofs/' | relative_url }}#building-an-institutional-rse-community"><span class="talk__title">Building an Institutional RSE Community</span></a></li>
+            </ol>
+          </article>
+          <article class="session">
+            <h3 class="session__title">Better Scientific Software Fellowship <span class="session__room">— San Jose Ballroom Salon 5 &amp; 6</span></h3>
+            <p class="session__eyebrow">BoF</p>
+            <ol class="session__talks">
+              <li class="talk"><span class="talk__format">Bird of a Feather</span> <a class="talk__link" href="{{ 'program/bofs/' | relative_url }}#better-scientific-software-fellowship-community"><span class="talk__title">Better Scientific Software Fellowship Community</span></a></li>
+            </ol>
+          </article>
+          <article class="session">
+            <h3 class="session__title">Threat Modeling for Research Software Systems <span class="session__room">— Willow Glen Room</span></h3>
+            <p class="session__eyebrow">Workshop</p>
+            <ol class="session__talks">
+              <li class="talk"><span class="talk__format">Workshop</span> <a class="talk__link" href="{{ 'program/workshops/' | relative_url }}#a-group-attempt-at-threat-modeling-for-research-software-systems"><span class="talk__title">A Group Attempt at Threat Modeling for Research Software Systems</span></a></li>
+            </ol>
+          </article>
+        </div>
+      </li>
+      <li class="slot slot--break">
+        <p class="slot__time"><time datetime="2026-10-19T15:00:00-07:00">3</time>–<time datetime="2026-10-19T15:30:00-07:00">3:30pm</time></p>
+        <div class="slot__body">
+          <article class="session session--muted">
+            <h3 class="session__title">Afternoon Break (Sponsorship available)</h3>
+          </article>
+        </div>
+      </li>
+      <li class="slot">
+        <p class="slot__time"><time datetime="2026-10-19T15:30:00-07:00">3:30</time>–<time datetime="2026-10-19T17:00:00-07:00">5pm</time></p>
         <div class="slot__body">
           <article class="session">
             <h3 class="session__title">Notebooks <span class="session__room">— San Jose Ballroom Salon 1 &amp; 2</span></h3>
@@ -134,47 +175,6 @@
               <li class="talk"><span class="talk__format">Paper</span> <a class="talk__link" href="{{ 'program/papers/' | relative_url }}#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape"><span class="talk__title">Measuring What Matters in the Age of AI: The Research Software Metrics Landscape</span></a></li>
               <li class="talk"><span class="talk__format">Talk</span> <a class="talk__link" href="{{ 'program/talks/' | relative_url }}#back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants"><span class="talk__title">Back to Basics: Design-First Development in the Age of AI Coding Assistants</span></a></li>
               <li class="talk"><span class="talk__format">Talk</span> <a class="talk__link" href="{{ 'program/talks/' | relative_url }}#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software"><span class="talk__title">Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software</span></a></li>
-            </ol>
-          </article>
-        </div>
-      </li>
-      <li class="slot slot--break">
-        <p class="slot__time"><time datetime="2026-10-19T15:00:00-07:00">3</time>–<time datetime="2026-10-19T15:30:00-07:00">3:30pm</time></p>
-        <div class="slot__body">
-          <article class="session session--muted">
-            <h3 class="session__title">Afternoon Break (Sponsorship available)</h3>
-          </article>
-        </div>
-      </li>
-      <li class="slot">
-        <p class="slot__time"><time datetime="2026-10-19T15:30:00-07:00">3:30</time>–<time datetime="2026-10-19T17:00:00-07:00">5pm</time></p>
-        <div class="slot__body">
-          <article class="session">
-            <h3 class="session__title">RSE Team Operations <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
-            <p class="session__eyebrow">BoF</p>
-            <ol class="session__talks">
-              <li class="talk"><span class="talk__format">Bird of a Feather</span> <a class="talk__link" href="{{ 'program/bofs/' | relative_url }}#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges"><span class="talk__title">Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges</span></a></li>
-            </ol>
-          </article>
-          <article class="session">
-            <h3 class="session__title">Institutional RSE Community <span class="session__room">— San Jose Ballroom Salon 1 &amp; 2</span></h3>
-            <p class="session__eyebrow">BoF</p>
-            <ol class="session__talks">
-              <li class="talk"><span class="talk__format">Bird of a Feather</span> <a class="talk__link" href="{{ 'program/bofs/' | relative_url }}#building-an-institutional-rse-community"><span class="talk__title">Building an Institutional RSE Community</span></a></li>
-            </ol>
-          </article>
-          <article class="session">
-            <h3 class="session__title">Better Scientific Software Fellowship <span class="session__room">— San Jose Ballroom Salon 5 &amp; 6</span></h3>
-            <p class="session__eyebrow">BoF</p>
-            <ol class="session__talks">
-              <li class="talk"><span class="talk__format">Bird of a Feather</span> <a class="talk__link" href="{{ 'program/bofs/' | relative_url }}#better-scientific-software-fellowship-community"><span class="talk__title">Better Scientific Software Fellowship Community</span></a></li>
-            </ol>
-          </article>
-          <article class="session">
-            <h3 class="session__title">Threat Modeling for Research Software Systems <span class="session__room">— Willow Glen Room</span></h3>
-            <p class="session__eyebrow">Workshop</p>
-            <ol class="session__talks">
-              <li class="talk"><span class="talk__format">Workshop</span> <a class="talk__link" href="{{ 'program/workshops/' | relative_url }}#a-group-attempt-at-threat-modeling-for-research-software-systems"><span class="talk__title">A Group Attempt at Threat Modeling for Research Software Systems</span></a></li>
             </ol>
           </article>
         </div>
