@@ -24,7 +24,7 @@ Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_em
 
 #### Committee Members  
   * Papers: Shailaja Sampat & William Godoy  
-  * Publications: Patrick Diehl, Dan Gunter  
+  * Publications: Patrick Diehl (Los Alamos National Laboratory), Dan Gunter  
   * Talks: Adam Rubens, Anas AlSobeh  
   * Notebooks: Yuxi (Ethan) Cui, Primus Kabuo  
   * Birds of a Feather (BoFs):Brian Kyanjo, Vani Walvekar  
