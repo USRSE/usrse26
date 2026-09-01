@@ -10,10 +10,6 @@
 name: Rebuild program schedule
 
 on:
-  # 09:40 UTC is 02:40 US Pacific — after the working day the sheet is edited
-  # in, so a morning visitor sees the previous day's edits already live.
-  schedule:
-    - cron: '40 9 * * *'
   workflow_dispatch:
 
 permissions:

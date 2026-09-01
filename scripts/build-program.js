@@ -982,7 +982,10 @@ const OUT_LLMS_FULL = path.join(REPO_ROOT, 'program', 'llms-full.txt');
  * the assembly below would have to reason about.
  */
 function quoteBlock(md) {
-  return String(md).trim().split('\n').map((l) => (l.trim() ? `> ${l}` : '>'));
+  // Split on CRLF as well as LF: parseCSV preserves \r verbatim inside a
+  // quoted field, so a cell pasted in from Windows would otherwise leave a
+  // stray carriage return at the end of every quoted line.
+  return String(md).trim().split(/\r?\n/).map((l) => (l.trim() ? `> ${l}` : '>'));
 }
 
 /** Collapse whitespace so a value can occupy a single labelled line. */
@@ -1088,17 +1091,22 @@ function eachTalk(days, fn) {
 }
 
 /**
- * The abstract pages this program actually links to, as [url, title] pairs in
- * FORMATS order. Derived from the talks' hrefs rather than from the format
- * cells, so a page only ever appears here when something links to it.
+ * The abstract pages this run generates, as [url, title] pairs in FORMATS
+ * order. Keyed off the format cell, matching writeAbstractPages' condition
+ * exactly — keying off talk.href instead would miss a page whose talks are
+ * all still titles only, since assignAnchors sets href only once a talk has
+ * an abstract or a byline. A format in that state (posters listed before the
+ * abstracts land, say) still gets a page and a menubar entry, and this list
+ * would have claimed the site had none.
  */
 function abstractPages(days) {
   const seen = new Set();
   eachTalk(days, (talk) => {
-    if (talk.href) seen.add(String(talk.href).split('#')[0]);
+    const format = normalizeFormat(talk.format);
+    if (format && format.slug) seen.add(format.slug);
   });
   return Object.values(FORMATS)
-    .filter((f) => f.permalink && seen.has(f.permalink))
+    .filter((f) => f.slug && seen.has(f.slug))
     .map((f) => [absUrl(f.permalink), f.pageTitle]);
 }
 
@@ -1210,16 +1218,22 @@ function renderLlmsTalkBrief(talk, pad) {
 
 /**
  * One talk as its own block in the full file, abstract included. The abstract
- * is emitted as-is: it is Markdown in a Markdown file, and a plain-text
- * consumer reads it as prose either way.
+ * goes through quoteBlock: it is author-written Markdown, so emitting it at
+ * column 0 would let a submitter's "## Background" open a heading at the level
+ * this file reserves for conference days.
  */
 function renderLlmsTalkFull(talk) {
   const lines = ['', `#### ${oneLine(talk.title)}`, ''];
+  const beforeFields = lines.length;
   if (talk.format) lines.push(`- Format: ${oneLine(talk.format)}`);
   if (talk.speakers) lines.push(`- Presenters: ${oneLine(talk.speakers)}`);
   if (talk.href) lines.push(`- Abstract page: ${absUrl(talk.href)}`);
   if (talk.infoMd && talk.infoMd.trim()) {
-    lines.push('', 'Abstract:', '', ...quoteBlock(talk.infoMd));
+    // Only separate from the bullets when there were any: a talk still
+    // missing its Event Format and People cells emits none, and the heading
+    // above already left a blank line behind it.
+    if (lines.length > beforeFields) lines.push('');
+    lines.push('Abstract:', '', ...quoteBlock(talk.infoMd));
   } else {
     lines.push('- Abstract: not yet published');
   }
