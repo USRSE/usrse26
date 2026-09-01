@@ -69,7 +69,9 @@ after which you can reload the page in your browser to see the rendered changes.
 The program page is generated from the "Schedule" tab of the program Google Sheet by
 `scripts/build-program.js` (Node 18+, no dependencies), which writes
 `_includes/program-schedule.html` (the list view), `_includes/program-grid.html` (the room ×
-time grid view), and `_data/program.json`. Edit the sheet, not those files.
+time grid view), `_data/program.json`, and the two plain-text files described under
+[Program files for AI assistants](#program-files-for-ai-assistants). Edit the sheet, not
+those files.
 
 The Full Program page shows the list by default with a List / Grid toggle above it; the
 grid lays each day out with rooms as columns and time down the side, breaks and other
@@ -109,6 +111,31 @@ byline splits into a clean title plus People.
 The sheet ID is intentionally not committed to the repo. The script reads it from the
 `PROGRAM_SHEET_ID` environment variable — it is the long token in the sheet's
 `docs.google.com/spreadsheets/d/<id>/...` URL.
+
+### Program files for AI assistants
+
+The generator also writes `program/llms.txt` and `program/llms-full.txt`, served at
+`https://us-rse.org/usrse26/program/llms.txt` and `.../llms-full.txt`. They are the whole
+schedule as plain text, for attendees who want an AI assistant to build them a personal
+schedule; the Full Program page links both and shows an example prompt.
+
+`llms.txt` carries every session and talk — times (wall-clock and ISO 8601), room, type,
+chair, presenters, which sessions each one is concurrent with, and a link to each talk's
+abstract entry. `llms-full.txt` is the same document with abstract text inlined.
+"Concurrent with" is computed by comparing ISO ranges across the whole day, not by slot
+grouping, so partially overlapping sessions are caught.
+
+They live in a root-level `program/` directory rather than under `pages/` so Jekyll copies
+them verbatim to `_site/program/`. That is deliberate: a static file is never
+Liquid-processed, and abstract text out of the sheet may contain `{{` or `{%` — the HTML
+abstract pages have to escape exactly that. Giving these files front matter to set a
+permalink would reintroduce the hazard for nothing. The directory does not collide with the
+Full Program page, which has `permalink: program/` and so writes `_site/program/index.html`.
+
+Both are generated: they carry no banner (a comment would be noise in a file meant to be
+read as prose), but they are rebuilt on every run and must not be edited by hand. The
+renderer reads only the fields `_data/program.json` also carries, so it can be driven from
+the committed JSON as well as from a fresh sheet fetch.
 
 ### Local development
 

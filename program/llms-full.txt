@@ -1,0 +1,1018 @@
+# USRSE'26 — Program
+
+> The complete program for USRSE'26 (US-RSE Conference 2026), the annual
+> conference of the US Research Software Engineer Association (US-RSE), held
+> October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
+> in the Age of AI". 3 days, 45 sessions, 82 talks (10 with published
+> abstracts). All times are US Pacific (UTC-07:00).
+
+This file is generated from the conference schedule and changes only when the
+schedule does. The program is not final and is subject to change — check the
+program page for the authoritative current version.
+
+## How to use this file
+
+- Every session carries both a wall-clock time and an ISO 8601 range. Prefer
+  the ISO range for anything you compute.
+- Sessions are listed in chronological order within each day, and each one
+  lists the sessions it runs against under "Concurrent with" — that is the
+  choice to resolve when picking between parallel tracks.
+- Breaks, meals and registration are listed too. They are not filler: they are
+  the gaps an attendee schedule is built around.
+- Talk titles link to that talk's entry on its abstract page.
+- Abstracts are included below, inline, for every talk that has published one.
+  For a smaller file carrying the same schedule without abstract text, fetch:
+  https://us-rse.org/usrse26/program/llms.txt
+
+Human-readable program page: https://us-rse.org/usrse26/program/
+
+## Conference pages
+
+- https://us-rse.org/usrse26/ — USRSE'26 home
+- https://us-rse.org/usrse26/program/ — Full program (this schedule, as a web page)
+- https://us-rse.org/usrse26/program/bofs/ — Birds of a Feather — abstracts
+- https://us-rse.org/usrse26/program/notebooks/ — Notebooks — abstracts
+- https://us-rse.org/usrse26/program/papers/ — Papers — abstracts
+- https://us-rse.org/usrse26/program/talks/ — Talks — abstracts
+- https://us-rse.org/usrse26/program/workshops/ — Workshops — abstracts
+- https://us-rse.org/usrse26/attend/ — Attending: overview
+- https://us-rse.org/usrse26/attend/registration/ — Registration
+- https://us-rse.org/usrse26/attend/travel/ — Travel and venue
+- https://us-rse.org/usrse26/attend/local-info/ — Things to do in San Jose
+- https://us-rse.org/usrse26/attend/financial-support/ — Financial support
+- https://us-rse.org/usrse26/about/code-of-conduct/ — Code of conduct
+
+## Monday, October 19, 2026
+
+### 7:30–8:30am — Registration
+
+- Time: 2026-10-19T07:30:00-07:00 to 2026-10-19T08:30:00-07:00 (60 min)
+- Room: Prefunction
+- Type: Registration
+- Concurrent with: nothing (the only session at this time)
+
+### 8:30–10am — Welcome and Plenary Session
+
+- Time: 2026-10-19T08:30:00-07:00 to 2026-10-19T10:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Plenary
+- Plenary: yes
+- Concurrent with: nothing (the only session at this time)
+
+### 10–10:30am — Morning Break (Sponsorship available)
+
+- Time: 2026-10-19T10:00:00-07:00 to 2026-10-19T10:30:00-07:00 (30 min)
+- Type: Break
+- Concurrent with: nothing (the only session at this time)
+
+### 10:30–11:30am — Student Program Activity
+
+- Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T11:30:00-07:00 (60 min)
+- Room: Market Street
+- Type: Student
+- Concurrent with: RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
+
+#### Student Program Activity
+
+- Format: Other
+- Presenters: Scott Michael, Stephanie Brink
+- Abstract: not yet published
+
+### 10:30am–12pm — RAG Assistants
+
+- Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T12:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Student Program Activity (10:30–11:30am, Market Street); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
+
+#### AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research
+
+- Format: Paper
+- Presenters: Bernie Boscoe, Tuan Do, Jack Stark, Srinath Saikrishnan, Vikram Seenivasan, PJ Allen, Morgan Himes, Jonathan Soriano, Andrew Lizarraga
+- Abstract page: https://us-rse.org/usrse26/program/papers/#aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research
+
+Abstract:
+
+> Scientific research increasingly relies on large, heterogeneous data sources, motivating interest in retrievalaugmented generation (RAG) systems that provide natural language access to scientific knowledge and research workflows. Researchers are exploring the viability of these systems as natural language interfaces for document search and for generating analysis code and pipeline components. At the same time, concerns about data privacy and control over research infrastructure have motivated interest in open-weight models and open-source deployments hosted within research institutions.
+>
+> In astronomy, this development follows a long history of computational infrastructure development, from archival databases and SQL-based systems to LLM-assisted research tools. This paper presents a domain-expert evaluation of faithfulness for AquiLLM, an open-weight, offline RAG-LLM platform designed to support scientific research groups in the use and preservation of tacit and formal knowledge.
+>
+> We define faithfulness as the extent to which generated responses remain grounded in retrieved scientific context without unsupported claims or omissions. We report results from an astronomy case study evaluating AquiLLM across retrieval and scientific analysis tasks. AquiLLM performs most reliably on explicit retrieval-oriented questions grounded in the RAG collection, while faithfulness degrades for queries requiring synthesis or ambiguity resolution. These results highlight both the promise and limitations of open-weight RAG-LLM systems for scientific research and demonstrate the importance of domain-expert evaluation beyond standard benchmark leaderboards.
+
+#### LZ Oracle: an AI-assisted knowledge retrieval platform for the LUX-ZEPLIN dark matter experiment
+
+- Format: Talk
+- Presenters: Maris Arthurs, Jeonghwa Kim, Ibles Olcina
+- Abstract page: https://us-rse.org/usrse26/program/talks/#lz-oracle-an-ai-assisted-knowledge-retrieval-platform-for-the-lux-zeplin-dark-matter-experiment
+
+Abstract:
+
+> LUX-ZEPLIN (LZ) is the world's largest dark matter direct detection experiment using a dual-phase xenon time projection chamber with a 7-ton active volume, situated a mile underground at the Sanford Underground Research Facility, South Dakota, USA.
+>
+> Large experimental physics collaborations, such as LZ, produce and maintain a broad range of technical knowledge, including detector documentation, operation records, analysis notes, software repositories, and data-processing workflows. While this information is essential for scientific productivity, it is often distributed across many platforms and evolves continuously over the lifetime of an experiment. This creates a practical challenge for collaboration members. Finding context-aware answers often requires knowing where to search, which terminology to use, and which information is current.
+>
+> We present LZ Oracle, an AI-assisted platform being developed for the LZ dark matter experiment to improve access to collaboration knowledge and support scientific and operational workflows. The system combines retrieval-augmented generation with an agentic exploration that can search indexed documentation, inspect relevant context, and synthesize responses grounded in collaboration materials. Current development focuses on improving reliability, expanding knowledge coverage, and designing evaluation workflows that allow domain experts to benchmark answer quality and provide structured feedback.
+>
+> This talk will describe the design goals, architecture, deployment considerations, and lessons learned from developing an AI-assisted knowledge retrieval platform for the LZ collaboration.
+
+#### Data Sherpa: An AI-Powered Assistant for Scientific Collaboration Knowledge Management
+
+- Format: Talk
+- Presenters: Fabián Araneda-Baltierra and Felipe Menanteau
+- Abstract page: https://us-rse.org/usrse26/program/talks/#data-sherpa-an-ai-powered-assistant-for-scientific-collaboration-knowledge-management
+- Abstract: not yet published
+
+#### AskALCF: A RAG Assistant for HPC User Support
+
+- Format: Talk
+- Presenters: Jingyan Jiang, Huihuo Zheng, Akhilesh Bondapalli, Krishna Rauniyar, Murat Keceli, Yasaman Ghadar, Venkatram Vishwanath, Rong Ge and Haritha Siddabathuni Som
+- Abstract page: https://us-rse.org/usrse26/program/talks/#askalcf-a-rag-assistant-for-hpc-user-support
+- Abstract: not yet published
+
+### 10:30am–12pm — Case Studies Demonstrating RSE Impacts Part I
+
+- Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T12:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: Talks
+- Chair: Primus Chimdia Kabuo
+- Concurrent with: Student Program Activity (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
+
+#### Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports
+
+- Format: Talk
+- Presenters: Sophie Breitbart
+- Abstract page: https://us-rse.org/usrse26/program/talks/#automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports
+- Abstract: not yet published
+
+#### A Modular Threaded Software Application for Axion Detection with DMRadio
+
+- Format: Talk
+- Presenters: Pamela Stark
+- Abstract page: https://us-rse.org/usrse26/program/talks/#a-modular-threaded-software-application-for-axion-detection-with-dmradio
+- Abstract: not yet published
+
+#### Poisonous Books: Rule Based Physics Pipeline and Agentic LLMs for Detecting and Analyzing Toxic Pigments in Victorian Bookbindings
+
+- Format: Talk
+- Presenters: Kevin Bhimani, Asritha Polu, Melissa Tedone, Rosie Grayburn, Amelia Oakes and Sunita Chandrasekaran
+- Abstract page: https://us-rse.org/usrse26/program/talks/#poisonous-books-rule-based-physics-pipeline-and-agentic-llms-for-detecting-and-analyzing-toxic-pigments-in-victorian-bookbindings
+- Abstract: not yet published
+
+#### Building Modern Tools for Computational Science in Flutter to Track the American Chestnut
+
+- Format: Talk
+- Presenters: Jay Billings
+- Abstract page: https://us-rse.org/usrse26/program/talks/#building-modern-tools-for-computational-science-in-flutter-to-track-the-american-chestnut
+- Abstract: not yet published
+
+### 10:30am–12pm — AI Assisted Code Development
+
+- Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T12:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Talks
+- Chair: Adam Rubens
+- Concurrent with: Student Program Activity (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+
+#### Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON
+
+- Format: Talk
+- Presenters: Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik
+- Abstract page: https://us-rse.org/usrse26/program/talks/#reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con
+- Abstract: not yet published
+
+#### Drinking from the Firehose: Practical Strategies for Research Software Engineers to Stay Current on AI Tools and Agents
+
+- Format: Talk
+- Presenters: Nick Ross and Tim Hannifan
+- Abstract page: https://us-rse.org/usrse26/program/talks/#drinking-from-the-firehose-practical-strategies-for-research-software-engineers-to-stay-current-on-ai-tools-and-agents
+- Abstract: not yet published
+
+#### Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development
+
+- Format: Talk
+- Presenters: Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet
+- Abstract page: https://us-rse.org/usrse26/program/talks/#research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development
+- Abstract: not yet published
+
+#### Designing for Trust in AI-Assisted Scientific Computing
+
+- Format: Talk
+- Presenters: Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang
+- Abstract page: https://us-rse.org/usrse26/program/talks/#designing-for-trust-in-ai-assisted-scientific-computing
+- Abstract: not yet published
+
+### 12–1:30pm — Lunch Break (Sponsorship available)
+
+- Time: 2026-10-19T12:00:00-07:00 to 2026-10-19T13:30:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Meal
+- Concurrent with: nothing (the only session at this time)
+
+About this session:
+
+> Early Career Mentor/Mentee Lunch
+
+### 1:30–2:30pm — Student Program Activity
+
+- Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T14:30:00-07:00 (60 min)
+- Room: Market Street
+- Type: Student
+- Concurrent with: RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+
+#### Student Program Activity
+
+- Format: Other
+- Presenters: Scott Michael, Stephanie Brink
+- Abstract: not yet published
+
+### 1:30–3pm — RSE Team Operations
+
+- Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: BoF
+- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+
+#### Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges
+
+- Format: Bird of a Feather
+- Presenters: Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown
+- Abstract page: https://us-rse.org/usrse26/program/bofs/#navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges
+
+Abstract:
+
+> Research Software Engineering (RSE) groups are increasingly central to the modern research enterprise, yet the operational challenges of leading, sustaining, and evolving these groups remain complex and often under-discussed. As RSE teams respond to changing research demands, evolving funding landscapes, staffing pressures, institutional expectations, and the rapid emergence of AI-enabled workflows, group leaders and operational decision-makers need practical spaces to compare challenges, share strategies, and identify reusable community resources.
+>
+> Building on discussions from the USRSE’24 workshop, “Establishing RSE Programs – From Early Stage Formalization to Mature Models,” this Birds of a Feather (BoF) session will provide a peer problem-solving forum for individuals involved in RSE group operations, leadership, management, and strategic decision-making. The session will feature short lightning reflections from community members followed by facilitated breakout discussions focused on identifying common challenges, sharing practical strategies, and collecting reusable operational resources for the broader RSE community. Topics may include hiring and identifying RSE talent, funding and business justification, AI-driven changes to productivity and team structure, outreach and researcher engagement, leadership development, organizational sustainability, and burnout.
+>
+> We recommend bringing laptops/smart devices to access BoF materials.
+
+### 1:30–3pm — Institutional RSE Community
+
+- Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: BoF
+- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+
+#### Building an Institutional RSE Community
+
+- Format: Bird of a Feather
+- Presenters: Julia Damerow, J.C. Subida, Alex Koufos, Daniel Woulfin and Trevor Spreadbury
+- Abstract page: https://us-rse.org/usrse26/program/bofs/#building-an-institutional-rse-community
+
+Abstract:
+
+> This Birds of a Feather (BoF) session, organized by the Institutional RSE Networking Affinity Group, plans to address a structural issue in the Research Software Engineering (RSEng) landscape: the isolation of individual Research Software Engineers (RSEs) within large institutions. By drawing on self-determination theory and communities of practice (Wenger, 1998), we aim to answer why RSEs seek out local communities and what those communities ideally look like. While national and international RSE networks are growing, many RSEs lack a local peer group to share expertise, vent frustrations, or organize for structural change. This session will provide a space for attendees to identify local needs and co-create strategies for establishing institutional RSE communities. Through interactive polling and facilitated breakout groups, participants will move from identifying shared challenges to collectively brainstorming ideas to build local networks. Key points of the discussion will be shared as a blog post after the conference.
+
+### 1:30–3pm — Better Scientific Software Fellowship
+
+- Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: BoF
+- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+
+#### Better Scientific Software Fellowship Community
+
+- Format: Bird of a Feather
+- Presenters: Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung
+- Abstract page: https://us-rse.org/usrse26/program/bofs/#better-scientific-software-fellowship-community
+
+Abstract:
+
+> Software developers face increasing complexity in computational models, computer architectures, and emerging workflows. In this environment Research Software Engineers need to continually improve software practices and constantly hone their craft. To address this need, the Better Scientific Software (BSSw) Fellowship Program launched in 2018 to seed a community of like-minded individuals interested in improving all aspects of the work of software development. The BSSw Birds of a Feather session brings together alumni, honorable mentions, current fellows, BSSw leadership and potential applicants to discuss software best practices and the upcoming 2027 Fellowship requirements and deadlines.
+
+### 1:30–3pm — Threat Modeling for Research Software Systems
+
+- Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Workshop
+- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6)
+
+#### A Group Attempt at Threat Modeling for Research Software Systems
+
+- Format: Workshop
+- Presenters: James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson
+- Abstract page: https://us-rse.org/usrse26/program/workshops/#a-group-attempt-at-threat-modeling-for-research-software-systems
+
+Abstract:
+
+> Research software environments must reach an increasingly high standard for security. But we all know that “security” is hard to measure. The typical method is threat modeling, in which one constructs a system model, identifies attackers and their capabilities, and looks for ways in which the system can be hardened to prevent or mitigate attacks. However, threat modeling remains challenging to apply effectively in the context of RSEs, whose operating environments involve complex, distributed environments, intricate dependencies, and emerging concerns related to software agents. Many in the community feel there are latent "vulnerabilities" but lack a clear notion of the actual threat surface.
+>
+> This interactive, group-based workshop works towards a group understanding of the problem and the methods to resolving it. We will introduce a high-level system model for a typical research software project and an initial, draft threat model. Participants will be divided into small groups to collaboratively analyze, critique, and specialize this model for their contexts. The exercises will focus on identifying specific threats related to the software supply chain, dependency management, and organizational factors. Attendees will gain actionable, hands-on experience in structuring their security analysis, transforming abstract concerns into defined threats and tangible hardening measures. This workshop is designed for Research Software Engineers (RSEs) who wish to operationalize security and better communicate risk in their projects
+>
+> Participants are expected to bring a laptop.
+
+### 3–3:30pm — Afternoon Break (Sponsorship available)
+
+- Time: 2026-10-19T15:00:00-07:00 to 2026-10-19T15:30:00-07:00 (30 min)
+- Type: Break
+- Concurrent with: nothing (the only session at this time)
+
+### 3:30–5pm — Notebooks
+
+- Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: Talks
+- Chair: Shailaja Sampat
+- Concurrent with: Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6); AI + Software Quality (3:30–5pm, Willow Glen Room)
+
+#### Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets
+
+- Format: Notebook
+- Presenters: Zachary Katz and Tasha Snow
+- Abstract page: https://us-rse.org/usrse26/program/notebooks/#effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets
+- Abstract: not yet published
+
+#### Marimo: an open-source reactive notebook for Python
+
+- Format: Talk
+- Presenters: Akshay Agrawal
+- Abstract page: https://us-rse.org/usrse26/program/talks/#marimo-an-open-source-reactive-notebook-for-python
+- Abstract: not yet published
+
+#### Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation
+
+- Format: Notebook
+- Presenters: Pariksheet Nanda, Rocco Caprara and Jason Shoemaker
+- Abstract page: https://us-rse.org/usrse26/program/notebooks/#beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation
+- Abstract: not yet published
+
+#### From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins
+
+- Format: Talk
+- Presenters: Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen
+- Abstract page: https://us-rse.org/usrse26/program/talks/#from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins
+- Abstract: not yet published
+
+### 3:30–5pm — Lessons from Training Users & RSEs
+
+- Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Notebooks (3:30–5pm, San Jose Ballroom Salon 1 & 2); AI + Software Quality (3:30–5pm, Willow Glen Room)
+
+#### INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps
+
+- Format: Talk
+- Presenters: Ian Cosden and Jeffrey Carver
+- Abstract page: https://us-rse.org/usrse26/program/talks/#intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps
+- Abstract: not yet published
+
+#### Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era
+
+- Format: Talk
+- Presenters: Simon Stone, William Cowen and Christian Darabos
+- Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era
+- Abstract: not yet published
+
+#### Building Open Source Communities Through Effective Tutorials
+
+- Format: Talk
+- Presenters: Alec Scott and Gregory Becker
+- Abstract page: https://us-rse.org/usrse26/program/talks/#building-open-source-communities-through-effective-tutorials
+- Abstract: not yet published
+
+#### Evolving HPC User Support: Just-in-Time Learning with Instructional Videos
+
+- Format: Talk
+- Presenters: Lipi Gupta, Afton Geil, Lisa Claus and Adam Lavely
+- Abstract page: https://us-rse.org/usrse26/program/talks/#evolving-hpc-user-support-just-in-time-learning-with-instructional-videos
+- Abstract: not yet published
+
+### 3:30–5pm — AI + Software Quality
+
+- Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Notebooks (3:30–5pm, San Jose Ballroom Salon 1 & 2); Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6)
+
+#### Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems
+
+- Format: Talk
+- Presenters: Aditi Gopalan, Adam Taylor, Dave Bunten, Gregory Way and Jineta Banerjee
+- Abstract page: https://us-rse.org/usrse26/program/talks/#software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems
+- Abstract: not yet published
+
+#### Measuring What Matters in the Age of AI: The Research Software Metrics Landscape
+
+- Format: Paper
+- Presenters: Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus
+- Abstract page: https://us-rse.org/usrse26/program/papers/#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape
+- Abstract: not yet published
+
+#### Back to Basics: Design-First Development in the Age of AI Coding Assistants
+
+- Format: Talk
+- Presenters: Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens
+- Abstract page: https://us-rse.org/usrse26/program/talks/#back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants
+- Abstract: not yet published
+
+#### Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software
+
+- Format: Talk
+- Presenters: Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus
+- Abstract page: https://us-rse.org/usrse26/program/talks/#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
+- Abstract: not yet published
+
+## Tuesday, October 20, 2026
+
+### 7:30–8:30am — Registration
+
+- Time: 2026-10-20T07:30:00-07:00 to 2026-10-20T08:30:00-07:00 (60 min)
+- Room: Prefunction
+- Type: Registration
+- Concurrent with: nothing (the only session at this time)
+
+### 8:30–10am — Plenary II, Sponsor Talks
+
+- Time: 2026-10-20T08:30:00-07:00 to 2026-10-20T10:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Plenary
+- Plenary: yes
+- Concurrent with: nothing (the only session at this time)
+
+### 10–10:30am — Morning Break (Sponsorship available)
+
+- Time: 2026-10-20T10:00:00-07:00 to 2026-10-20T10:30:00-07:00 (30 min)
+- Type: Break
+- Concurrent with: nothing (the only session at this time)
+
+### 10:30am–12pm — RSE Practices in the Age of AI Part I
+
+- Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T12:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: Talks
+- Chair: TBD
+- Concurrent with: The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+
+#### Research Software Engineering in the Age of Generative AI
+
+- Format: Talk
+- Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
+- Abstract page: https://us-rse.org/usrse26/program/talks/#research-software-engineering-in-the-age-of-generative-ai
+- Abstract: not yet published
+
+#### Beyond Editing Code: Uses for AI Tools in Scientific Work
+
+- Format: Talk
+- Presenters: Johanna Cohoon and Drew Paine
+- Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-editing-code-uses-for-ai-tools-in-scientific-work
+- Abstract: not yet published
+
+#### Ten Projects, Two Teams, One Question: How Does AI Impact Development?
+
+- Format: Talk
+- Presenters: Dave Brownell
+- Abstract page: https://us-rse.org/usrse26/program/talks/#ten-projects-two-teams-one-question-how-does-ai-impact-development
+- Abstract: not yet published
+
+#### Coding with LLM Agents: The Research Software Engineer as the Quality Gate
+
+- Format: Talk
+- Presenters: Nicole Tebaldi and Kyle Crocker
+- Abstract page: https://us-rse.org/usrse26/program/talks/#coding-with-llm-agents-the-research-software-engineer-as-the-quality-gate
+- Abstract: not yet published
+
+### 10:30am–12pm — The Human Factor
+
+- Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T12:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: Talks
+- Chair: Kate Arneson
+- Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
+
+#### Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows
+
+- Format: Talk
+- Presenters: Md Hasan Shahriar Simanto
+- Abstract page: https://us-rse.org/usrse26/program/talks/#usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows
+- Abstract: not yet published
+
+#### From Mood Boards to Web Components: Our Journey Building a Design System for Research
+
+- Format: Talk
+- Presenters: Katrina Turner and Freddy Mande
+- Abstract page: https://us-rse.org/usrse26/program/talks/#from-mood-boards-to-web-components-our-journey-building-a-design-system-for-research
+- Abstract: not yet published
+
+#### Human in the Loop: Requirements Gathering and Researcher Trust in the Age of AI
+
+- Format: Talk
+- Presenters: Michael Kennel
+- Abstract page: https://us-rse.org/usrse26/program/talks/#human-in-the-loop-requirements-gathering-and-researcher-trust-in-the-age-of-ai
+- Abstract: not yet published
+
+#### Designing for Two Audiences: AI-Readiness and Human Data Usability
+
+- Format: Talk
+- Presenters: Cody O'Donnell
+- Abstract page: https://us-rse.org/usrse26/program/talks/#designing-for-two-audiences-ai-readiness-and-human-data-usability
+- Abstract: not yet published
+
+### 10:30am–12pm — HPC + AI
+
+- Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T12:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Talks
+- Chair: Vani Walvekar
+- Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+
+#### DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments
+
+- Format: Paper
+- Presenters: Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel
+- Abstract page: https://us-rse.org/usrse26/program/papers/#dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments
+- Abstract: not yet published
+
+#### Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC
+
+- Format: Paper
+- Presenters: Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle
+- Abstract page: https://us-rse.org/usrse26/program/papers/#ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc
+- Abstract: not yet published
+
+#### Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools
+
+- Format: Paper
+- Presenters: Smruti Padhy, Anagha Jamthe and Joe Stubbs
+- Abstract page: https://us-rse.org/usrse26/program/papers/#tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools
+- Abstract: not yet published
+
+#### Structuring agentic AI for HPC code modernization
+
+- Format: Paper
+- Presenters: Anthony Marinov and Igor Sfiligoi
+- Abstract page: https://us-rse.org/usrse26/program/papers/#structuring-agentic-ai-for-hpc-code-modernization
+- Abstract: not yet published
+
+### 12–1:30pm — Lunch Break (Sponsorship available)
+
+- Time: 2026-10-20T12:00:00-07:00 to 2026-10-20T13:30:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Meal
+- Concurrent with: Working Group Fair (Presentations during lunch) (12:45–1:15pm, San Jose Ballroom Salon 3 & 4)
+
+About this session:
+
+> Working Group Fair
+
+### 12:45–1:15pm — Working Group Fair (Presentations during lunch)
+
+- Time: 2026-10-20T12:45:00-07:00 to 2026-10-20T13:15:00-07:00 (30 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Concurrent with: Lunch Break (Sponsorship available) (12–1:30pm, San Jose Ballroom Salon 3 & 4)
+
+### 1:30–3pm — RSE Skill Training
+
+- Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: BoF
+- Concurrent with: User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+
+#### How to train an RSE: A discussion of RSE skill training - past, future, and present
+
+- Format: Bird of a Feather
+- Presenters: Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien
+- Abstract page: https://us-rse.org/usrse26/program/bofs/#how-to-train-an-rse-a-discussion-of-rse-skill-training-past-future-and-present
+
+Abstract:
+
+> What skills are necessary to be a Research Software Engineer (RSE) in the age of AI? The US-RSE curates [a list of skills](https://us-rse.org/wg/education_training/skills/) that an RSE might possess in order to help direct individuals looking to invest in learning new skills in preparation for a career in RSEing. At this BoF, we will meet to reevaluate this list of [US-RSE recommended skills](https://us-rse.org/wg/education_training/skills/), and to update the list of skills to prepare aspiring RSEs in the era of Agentic AI. Which skills remain fundamental, and which become more or less important with this technology? How do we balance the tension between researchers trying to adopt software engineering practices and software engineers trying work within a research domain?
+>
+> This BoF will be composed of a short, directed discussion to capture audience perspectives on the incorporation of LLM/AI tools in educational pathways for training in RSE skills like software engineering and research computing, followed by breakout discussions that evaluate what skills and topics are necessary and beneficial to train an RSE in 2027. During these discussions, we will encourage participants to explore the frictions inherent in becoming a RSE: domain knowledge or software engineering; self-taught or formal education; fundamentals or emerging technology; etc. Participants will share their groups’ conclusions and we intend to incorporate the outcomes into an updated list of US-RSE recommended skills and training pathways. We welcome broad participation from across the US-RSE ecosystem at all learning and professional stages, and look forward to seeing you there!
+
+### 1:30–3pm — User Experience: Journey Mapping
+
+- Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: Workshop
+- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+
+#### Journey Mapping: A technique to see opportunities and recognize gaps in user experience
+
+- Format: Workshop
+- Presenters: Johanna Cohoon, Rajshree Deshmukh, Md Hasan Shahriar Simanto, Mary Goldman, Katrina Turner, Sarah Poon
+- Abstract page: https://us-rse.org/usrse26/program/workshops/#journey-mapping-a-technique-to-see-opportunities-and-recognize-gaps-in-user-experience
+
+Abstract:
+
+> Do you want to improve how users interact with your product or organization? By creating a journey map, you can recognize opportunities to improve the user's experience, increase their satisfaction, and create vital documentation for your development team. Journey maps are chronological narratives that visualize interactions between users and products or organizations. Additionally, journey maps can be valuable tools for building empathy with users and are appropriate for use at any point during your development lifecycle. Journey maps compel their authors to consider each step of a workflow in detail, making it easy to see when user experience drops off and when an interface can be simplified or made more predictable. This hands-on workshop will teach you how to create a journey map of your own and how it can be used to identify opportunities to improve user experience. Bring your computer.
+
+### 1:30–3pm — Improve Research Outputs by Improving Institutional Collaboration
+
+- Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: BoF
+- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+
+#### How can institutional RSE hubs and OSPOs work together for the betterment of research outputs?
+
+- Format: Bird of a Feather
+- Presenters: William Gearty, Jeffrey Young, Collin Capano, Ian Cosden, Daniel Katz, Richard Littauer, Fang Liu and Daniel Shown
+- Abstract page: https://us-rse.org/usrse26/program/bofs/#how-can-institutional-rse-hubs-and-ospos-work-together-for-the-betterment-of-research-outputs
+
+Abstract:
+
+> As nearly all research becomes more complex and computational, many institutions have begun to develop organizational structures to manage the people, tools, and best practices involved in the production of research software, data, and publications. One strategy for this involves a centralized research software engineering hub that hires software engineers who work with researchers and faculty across the institution (e.g., Princeton Research Software Engineering). Another approach is the creation of an Open Source Program Office (OSPO), which oversees and consults on the creation and use of open software and other open digital goods (e.g., Syracuse University OSPO). While these two types of institutional organizations often have similar goals, they are not mutually exclusive, and some institutions have both (e.g., Georgia Tech). This BoF brings together a panel of experts across the RSE/OSPO spectrum to discuss the priorities and values of RSE hubs and OSPOs. The panel and audience will then discuss how RSE hubs and OSPOs can work together to multiply—rather than duplicate—each others' efforts to strengthen research outputs across the institution. Anyone in the research software pipeline is welcome!
+
+### 1:30–3pm — Refactoring Code for Reuse and Impact
+
+- Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Workshop
+- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6)
+
+#### Fixer-Upper Software: Refactoring Code for Reuse and Impact
+
+- Format: Workshop
+- Presenters: Brian Ward and Jeff Soules
+- Abstract page: https://us-rse.org/usrse26/program/workshops/#fixer-upper-software-refactoring-code-for-reuse-and-impact
+
+Abstract:
+
+> An all-too-common life cycle of research software begins with enthusiasm and momentum, generating (whether by agent or by postdoc) a lot of code for a specific problem, only to go dormant when interest moves to a slightly different research problem or a key contributor leaves the project. The resulting code base either becomes a brittle fossil whose eventual failure everyone dreads, or is thrown away entirely, leaving the team to reinvent the same solutions for the next project. How can that work be reused?
+>
+> In this workshop, we’ll discuss how to refactor heirloom code so it can be maintained, understood, and used for new problems. We will look at how to create an appropriate organizational principle for a project that lacks an explicit design or structure. We’ll also introduce common patterns of simplification that will help make the code more legible to you and others, and best practices for doing your renovations safely and efficiently. Working in small groups, participants will engage with a case study project to identify reusable functionality, break the code into discrete components, and rewrite for readability and maintenance.
+>
+> A computer will be needed for full participation, though the discussion will be informative for attendees without one. Exercises will be provided in Python (typed and untyped).
+
+### 3–3:30pm — Afternoon Break (Sponsorship available)
+
+- Time: 2026-10-20T15:00:00-07:00 to 2026-10-20T15:30:00-07:00 (30 min)
+- Type: Break
+- Concurrent with: nothing (the only session at this time)
+
+### 3:30–5pm — Case Studies Demonstrating RSE Impacts Part II
+
+- Time: 2026-10-20T15:30:00-07:00 to 2026-10-20T17:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Code Modernization Using AI (3:30–5pm, San Jose Ballroom Salon 5 & 6); Workflows (3:30–5pm, Willow Glen Room)
+
+#### Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language
+
+- Format: Paper
+- Presenters: A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
+- Abstract page: https://us-rse.org/usrse26/program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language
+- Abstract: not yet published
+
+#### Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline
+
+- Format: Paper
+- Presenters: Jing Qi, William Cowen and Christian Darabos
+- Abstract page: https://us-rse.org/usrse26/program/papers/#take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline
+- Abstract: not yet published
+
+#### Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines
+
+- Format: Paper
+- Presenters: Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier
+- Abstract page: https://us-rse.org/usrse26/program/papers/#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines
+- Abstract: not yet published
+
+#### Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions
+
+- Format: Talk
+- Presenters: Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur
+- Abstract page: https://us-rse.org/usrse26/program/talks/#automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions
+- Abstract: not yet published
+
+### 3:30–5pm — Code Modernization Using AI
+
+- Time: 2026-10-20T15:30:00-07:00 to 2026-10-20T17:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Case Studies Demonstrating RSE Impacts Part II (3:30–5pm, San Jose Ballroom Salon 1 & 2); Workflows (3:30–5pm, Willow Glen Room)
+
+#### Agentic code modernization
+
+- Format: Talk
+- Presenters: Peter Peterson and Addi Malviya-Thakur
+- Abstract page: https://us-rse.org/usrse26/program/talks/#agentic-code-modernization
+- Abstract: not yet published
+
+#### Scientific Agentic Engineering: A Framework for Reliable AI Agents in Research Software
+
+- Format: Talk
+- Presenters: Victor Weeks
+- Abstract page: https://us-rse.org/usrse26/program/talks/#scientific-agentic-engineering-a-framework-for-reliable-ai-agents-in-research-software
+- Abstract: not yet published
+
+#### From Laptop to Cluster: HPC Translation Patterns for AI Stacks
+
+- Format: Talk
+- Presenters: Parmanand Sinha
+- Abstract page: https://us-rse.org/usrse26/program/talks/#from-laptop-to-cluster-hpc-translation-patterns-for-ai-stacks
+- Abstract: not yet published
+
+#### Beyond Code Pairs: Generating Test-Grounded Data for AI-Assisted Scientific Software Modernization
+
+- Format: Talk
+- Presenters: Le Chen and Rajeev Thakur
+- Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-code-pairs-generating-test-grounded-data-for-ai-assisted-scientific-software-modernization
+- Abstract: not yet published
+
+### 3:30–5pm — Workflows
+
+- Time: 2026-10-20T15:30:00-07:00 to 2026-10-20T17:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Case Studies Demonstrating RSE Impacts Part II (3:30–5pm, San Jose Ballroom Salon 1 & 2); Code Modernization Using AI (3:30–5pm, San Jose Ballroom Salon 5 & 6)
+
+#### Cloud-Native Graphical and Programmatic Cross-Database Access to Experiment Metadata with Trino, Superset and Ibis
+
+- Format: Talk
+- Presenters: Eli Mizrachi
+- Abstract page: https://us-rse.org/usrse26/program/talks/#cloud-native-graphical-and-programmatic-cross-database-access-to-experiment-metadata-with-trino-superset-and-ibis
+- Abstract: not yet published
+
+#### Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution
+
+- Format: Talk
+- Presenters: Hilario Torres
+- Abstract page: https://us-rse.org/usrse26/program/talks/#custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution
+- Abstract: not yet published
+
+#### OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration by Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam
+
+- Format: Talk
+- Presenters: Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam
+- Abstract page: https://us-rse.org/usrse26/program/talks/#osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration-by-fernando-garzon-steven-yeu-scott-sakai-and-subhashini-sivagnanam
+- Abstract: not yet published
+
+#### Fabla: An Open-Source Voice-First EMA Platform for Clinical Research
+
+- Format: Paper
+- Presenters: Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan
+- Abstract page: https://us-rse.org/usrse26/program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research
+- Abstract: not yet published
+
+## Wednesday, October 21, 2026
+
+### 7:30–8:30am — Registration
+
+- Time: 2026-10-21T07:30:00-07:00 to 2026-10-21T08:30:00-07:00 (60 min)
+- Room: Prefunction
+- Type: Registration
+- Concurrent with: nothing (the only session at this time)
+
+### 8:30–10am — Plenary III, Sponsor Talks
+
+- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T10:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Plenary
+- Plenary: yes
+- Concurrent with: nothing (the only session at this time)
+
+About this session:
+
+> Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
+
+### 10–10:30am — Morning Break (Sponsorship available)
+
+- Time: 2026-10-21T10:00:00-07:00 to 2026-10-21T10:30:00-07:00 (30 min)
+- Type: Break
+- Concurrent with: nothing (the only session at this time)
+
+### 10:30am–12pm — Collaboration & Community Building
+
+- Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Software Quality (10:30am–12pm, San Jose Ballroom Salon 5 & 6); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
+
+#### Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE
+
+- Format: Talk
+- Presenters: Laura Theademan and Suzanna Gardner
+- Abstract page: https://us-rse.org/usrse26/program/talks/#building-inclusive-talent-pathways-scaling-outreach-workforce-development-and-community-engagement-for-rse
+- Abstract: not yet published
+
+#### HPC Carpentry and Community Building at NIST
+
+- Format: Talk
+- Presenters: Andrew Reid
+- Abstract page: https://us-rse.org/usrse26/program/talks/#hpc-carpentry-and-community-building-at-nist
+- Abstract: not yet published
+
+#### Navigating the Code Review Process as a Team: A Case Study
+
+- Format: Talk
+- Presenters: Abbey Roelofs
+- Abstract page: https://us-rse.org/usrse26/program/talks/#navigating-the-code-review-process-as-a-team-a-case-study
+- Abstract: not yet published
+
+#### Collaboration within RSE group at Princeton: development of slurmise for resource usage estimation
+
+- Format: Talk
+- Presenters: Troy Comi, Ioannis Paraskevakos and Rob Bierman
+- Abstract page: https://us-rse.org/usrse26/program/talks/#collaboration-within-rse-group-at-princeton-development-of-slurmise-for-resource-usage-estimation
+- Abstract: not yet published
+
+### 10:30am–12pm — Software Quality
+
+- Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
+
+#### Developing a Handbook of best practices for research software sustainability at Princeton
+
+- Format: Talk
+- Presenters: Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet
+- Abstract page: https://us-rse.org/usrse26/program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton
+- Abstract: not yet published
+
+#### We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI
+
+- Format: Paper
+- Presenters: Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos
+- Abstract page: https://us-rse.org/usrse26/program/papers/#we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai
+- Abstract: not yet published
+
+#### Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows
+
+- Format: Talk
+- Presenters: Niharika Pramod Pujari
+- Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows
+- Abstract: not yet published
+
+#### Performance Portable Software Design Patterns – What they can do and why we should collect them.
+
+- Format: Talk
+- Presenters: Jakob Bludau
+- Abstract page: https://us-rse.org/usrse26/program/talks/#performance-portable-software-design-patterns-what-they-can-do-and-why-we-should-collect-them
+- Abstract: not yet published
+
+### 10:30am–12pm — Generative AI + Applications
+
+- Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Software Quality (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+
+#### From Chaos to Schema: LLM-Powered Document Information Extraction
+
+- Format: Talk
+- Presenters: Alice Duan and Launa Greer
+- Abstract page: https://us-rse.org/usrse26/program/talks/#from-chaos-to-schema-llm-powered-document-information-extraction
+- Abstract: not yet published
+
+#### Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases
+
+- Format: Talk
+- Presenters: Modhurita Mitra, Martine de Vos, Nicola Cortinovis and Dawa Ometto
+- Abstract page: https://us-rse.org/usrse26/program/talks/#generative-ai-for-research-data-processing-lessons-learnt-from-three-use-cases
+- Abstract: not yet published
+
+#### Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models
+
+- Format: Talk
+- Presenters: Nicholas Reinicke and Robert Fitzgerald
+- Abstract page: https://us-rse.org/usrse26/program/talks/#steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models
+- Abstract: not yet published
+
+#### Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs
+
+- Format: Talk
+- Presenters: Shailaja Keyur Sampat
+- Abstract page: https://us-rse.org/usrse26/program/talks/#logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms
+- Abstract: not yet published
+
+### 12–1:30pm — Lunch Break (Sponsorship available)
+
+- Time: 2026-10-21T12:00:00-07:00 to 2026-10-21T13:30:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Meal
+- Concurrent with: nothing (the only session at this time)
+
+### 1:30–3pm — RSE Practices in the Age of AI Part II
+
+- Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 1 & 2
+- Type: Talks
+- Chair: TBD
+- Concurrent with: Reflections on RSE Roles & Pathways (1:30–3pm, San Jose Ballroom Salon 5 & 6); Building Infrastructure for Communities or Organizations (1:30–3pm, Willow Glen Room)
+
+#### AI-Augmented Research Software Engineering: Risks, Challenges, and Practices
+
+- Format: Paper
+- Presenters: I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song
+- Abstract page: https://us-rse.org/usrse26/program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices
+- Abstract: not yet published
+
+#### A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training
+
+- Format: Paper
+- Presenters: Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song
+- Abstract page: https://us-rse.org/usrse26/program/papers/#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training
+- Abstract: not yet published
+
+#### A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions
+
+- Format: Talk
+- Presenters: William Gearty
+- Abstract page: https://us-rse.org/usrse26/program/talks/#a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions
+- Abstract: not yet published
+
+#### Preparing Students for AI-Assisted Research Workflows
+
+- Format: Talk
+- Presenters: Alejandra Castillo
+- Abstract page: https://us-rse.org/usrse26/program/talks/#preparing-students-for-ai-assisted-research-workflows
+- Abstract: not yet published
+
+### 1:30–3pm — Reflections on RSE Roles & Pathways
+
+- Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
+- Room: San Jose Ballroom Salon 5 & 6
+- Type: Talks
+- Chair: TBD
+- Concurrent with: RSE Practices in the Age of AI Part II (1:30–3pm, San Jose Ballroom Salon 1 & 2); Building Infrastructure for Communities or Organizations (1:30–3pm, Willow Glen Room)
+
+#### What They Don’t Tell You About the Data Science to RSE Transition
+
+- Format: Talk
+- Presenters: Ritika Giri
+- Abstract page: https://us-rse.org/usrse26/program/talks/#what-they-don-t-tell-you-about-the-data-science-to-rse-transition
+- Abstract: not yet published
+
+#### Bears, Bottlenecks, and Bus Factors: Why Embedded RSEs Pay Off
+
+- Format: Talk
+- Presenters: Miranda Mundt
+- Abstract page: https://us-rse.org/usrse26/program/talks/#bears-bottlenecks-and-bus-factors-why-embedded-rses-pay-off
+- Abstract: not yet published
+
+#### Mission Control: Service and the Stewardship of Science
+
+- Format: Talk
+- Presenters: Malcolm Barrett
+- Abstract page: https://us-rse.org/usrse26/program/talks/#mission-control-service-and-the-stewardship-of-science
+- Abstract: not yet published
+
+#### Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers
+
+- Format: Talk
+- Presenters: Julia Damerow and Susan Massey
+- Abstract page: https://us-rse.org/usrse26/program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers
+- Abstract: not yet published
+
+### 1:30–3pm — Building Infrastructure for Communities or Organizations
+
+- Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
+- Room: Willow Glen Room
+- Type: Talks
+- Chair: TBD
+- Concurrent with: RSE Practices in the Age of AI Part II (1:30–3pm, San Jose Ballroom Salon 1 & 2); Reflections on RSE Roles & Pathways (1:30–3pm, San Jose Ballroom Salon 5 & 6)
+
+#### From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery
+
+- Format: Talk
+- Presenters: Mikaela Cashman, David Lyon, Christopher J. Neely, Benjamin Allen, Christopher S. Henry, Robert Cottingham, Gazi Mahmud, Elisha M. Wood-Charlson, Chris Mungall, Paramvir Dehal and Adam P. Arkin
+- Abstract page: https://us-rse.org/usrse26/program/talks/#from-lakehouse-to-labmate-kbase-s-vision-for-ai-enabled-scientific-discovery
+- Abstract: not yet published
+
+#### HEROIC: A Research Software Infrastructure for Real-Time Multi-Messenger Observatory Coordination
+
+- Format: Talk
+- Presenters: Jon Nation, Fabián Araneda-Baltierra and Curtis McCully
+- Abstract page: https://us-rse.org/usrse26/program/talks/#heroic-a-research-software-infrastructure-for-real-time-multi-messenger-observatory-coordination
+- Abstract: not yet published
+
+#### A Managed Database-as-a-Service Platform for Scientific Computing
+
+- Format: Talk
+- Presenters: Jingyan Jiang, Huihuo Zheng and Venkatram Vishwanath
+- Abstract page: https://us-rse.org/usrse26/program/talks/#a-managed-database-as-a-service-platform-for-scientific-computing
+- Abstract: not yet published
+
+#### One Size Fits None: Rethinking Campus Research Computing
+
+- Format: Talk
+- Presenters: Christopher Heller
+- Abstract page: https://us-rse.org/usrse26/program/talks/#one-size-fits-none-rethinking-campus-research-computing
+- Abstract: not yet published
+
+### 3–3:15pm — Transition Break
+
+- Time: 2026-10-21T15:00:00-07:00 to 2026-10-21T15:15:00-07:00 (15 min)
+- Type: Break
+- Concurrent with: nothing (the only session at this time)
+
+### 3:15–4:30pm — Rapid Access Microtalks (RAM), Closing Remarks
+
+- Time: 2026-10-21T15:15:00-07:00 to 2026-10-21T16:30:00-07:00 (75 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Plenary
+- Plenary: yes
+- Chair: Cordero Core, Jennifer Gregory
+- Concurrent with: nothing (the only session at this time)

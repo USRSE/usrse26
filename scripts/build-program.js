@@ -4,13 +4,15 @@
  *
  * Pulls the "Schedule" tab of the program Google Sheet via its CSV export
  * endpoint, folds the flat rows into days -> time slots -> sessions -> events,
- * and writes five kinds of artifact:
+ * and writes seven kinds of artifact:
  *
  *   _includes/program-schedule.html   Jekyll include rendered on the program page
  *   _includes/program-grid.html       room x time grid view of the same page
  *   _data/program.json                normalized data (site.data.program)
  *   pages/program/abstracts/<slug>.md one page per event format (abstracts)
  *   _data/menus/program.yml           program menubar linking those pages
+ *   program/llms.txt                  plain-text schedule index for AI agents
+ *   program/llms-full.txt             the same, with abstracts inlined
  *
  * The sheet stays the only thing anyone edits. Requires Node 18+ (global
  * fetch); zero dependencies.
@@ -928,6 +930,370 @@ function writeAbstractPages(days) {
 }
 
 // ---------------------------------------------------------------------------
+// llms.txt — the program as plain text, for conference attendees' AI agents
+//
+// Two files, both generated from the same folded days:
+//
+//   program/llms.txt        every session and talk with times, rooms, people
+//                           and links, but no abstract text
+//   program/llms-full.txt   the same, with each abstract inlined
+//
+// They live in a root-level program/ directory rather than under pages/ so
+// Jekyll copies them verbatim to _site/program/. A static file is never
+// Liquid-processed, which matters here: abstract text comes from the sheet
+// and may legitimately contain "{{" or "{%" (renderAbstractEntry has to
+// escape exactly that for the HTML pages). Giving these files front matter
+// to set a permalink would reintroduce the hazard for no gain.
+//
+// Everything below reads only the fields program.json also carries — never
+// the _-prefixed internals — so renderLlms() can be driven either from a
+// fresh fold() or from the committed _data/program.json.
+// ---------------------------------------------------------------------------
+
+// Absolute site root: _config.yml's url + baseurl. Agents fetch these files
+// on their own, with no site.baseurl to resolve a relative link against, so
+// every URL here is absolute.
+const SITE_BASE = 'https://us-rse.org/usrse26/';
+
+// Conference facts that live in _config.yml, not in the schedule sheet. This
+// script deliberately reads no Jekyll config (see CONF_YEAR, TZ_OFFSET,
+// ROOM_ORDER above, which hardcode conference facts for the same reason), so
+// these mirror it by hand. The dates are NOT here — they are derived from the
+// schedule itself below, where they cannot drift.
+const CONF = {
+  name: "USRSE'26",
+  fullName: 'US-RSE Conference 2026',
+  org: 'US Research Software Engineer Association (US-RSE)',
+  location: 'San Jose, California, USA',
+  theme: 'Advancing Science in the Age of AI',
+};
+
+const OUT_LLMS = path.join(REPO_ROOT, 'program', 'llms.txt');
+const OUT_LLMS_FULL = path.join(REPO_ROOT, 'program', 'llms-full.txt');
+
+/**
+ * Sheet-supplied Markdown as a blockquote. Abstracts are authored text: a
+ * submitter writing "## Background" is ordinary, and emitted at column 0 it
+ * would open a heading at the level this file reserves for conference days,
+ * making the abstract's sections parse as days and sessions. Quoting keeps
+ * the prose readable, marks plainly where it starts and stops, and keeps
+ * every line out of the document's own heading structure. Blank lines become
+ * ">" rather than empty, so quoted text never introduces a paragraph break
+ * the assembly below would have to reason about.
+ */
+function quoteBlock(md) {
+  return String(md).trim().split('\n').map((l) => (l.trim() ? `> ${l}` : '>'));
+}
+
+/** Collapse whitespace so a value can occupy a single labelled line. */
+function oneLine(s) {
+  return String(s == null ? '' : s).replace(/\s+/g, ' ').trim();
+}
+
+/** Site-relative href from assignAnchors -> absolute URL. */
+function absUrl(href) {
+  return SITE_BASE + String(href).replace(/^\/+/, '');
+}
+
+/**
+ * Wall-clock minutes past midnight from an ISO stamp, read by substring
+ * rather than by constructing a Date — the reason given at TZ_OFFSET applies
+ * here too. Slots are same-day by construction (fold keys them by date), so
+ * subtracting two of these is a valid duration.
+ */
+function isoMinutes(iso) {
+  const m = /T(\d\d):(\d\d)/.exec(String(iso));
+  return m ? Number(m[1]) * 60 + Number(m[2]) : 0;
+}
+
+/** Greedy word wrap, each line prefixed. Keeps the preamble readable at any
+ * terminal width without hand-wrapping interpolated values. */
+function wrap(text, width, prefix) {
+  const out = [];
+  let line = '';
+  for (const word of oneLine(text).split(' ')) {
+    if (!line) line = word;
+    else if (`${line} ${word}`.length + prefix.length <= width) line += ` ${word}`;
+    else { out.push(prefix + line); line = word; }
+  }
+  if (line) out.push(prefix + line);
+  return out;
+}
+
+/**
+ * Which sessions each session actually competes with, keyed by session
+ * object. Slots overlap partially — a 10:30–11:30 session runs against a
+ * 10:30–12:00 one in a different slot — so this compares every pair within a
+ * day by ISO range rather than trusting the slot grouping. Half-open
+ * comparison: a session ending at 12:00 does not conflict with one starting
+ * at 12:00.
+ * @param {{slots: any[]}} day
+ */
+function concurrencyMap(day) {
+  const items = [];
+  for (const slot of day.slots) {
+    for (const session of slot.sessions) {
+      const start = isoMinutes(slot.startISO);
+      items.push({
+        session,
+        start,
+        // A row with a blank End cell folds to end === start. Widen that to a
+        // one-minute point so it still overlaps whatever is running: under a
+        // half-open test an empty interval overlaps nothing, which would
+        // print "Concurrent with: nothing" over four parallel tracks.
+        end: Math.max(isoMinutes(slot.endISO), start + 1),
+        label: sessionLabel(slot, session),
+      });
+    }
+  }
+  const map = new Map();
+  for (const a of items) {
+    map.set(a.session, items
+      .filter((b) => b !== a && b.start < a.end && a.start < b.end)
+      .map((b) => b.label));
+  }
+  return map;
+}
+
+/**
+ * "Student Program Activity (10:30–11:30am, Market Street)". Session titles
+ * repeat within a day — Monday already runs two "Student Program Activity"
+ * sessions — so a bare title cannot tell a reader which one it means, which
+ * is the whole point of naming what a session competes with.
+ */
+function sessionLabel(slot, session) {
+  const where = session.room && session.room.toLowerCase() !== 'anywhere'
+    ? `, ${oneLine(session.room)}` : '';
+  return `${oneLine(session.title)} (${textRange(slot)}${where})`;
+}
+
+/** "7:30am–8:30am" -> "7:30–8:30am", the way fmtRange does it for HTML. */
+function textRange(slot) {
+  if (slot.startISO === slot.endISO) return slot.start;
+  const startText = slot.start.slice(-2) === slot.end.slice(-2)
+    ? slot.start.slice(0, -2)
+    : slot.start;
+  return `${startText}–${slot.end}`;
+}
+
+/** Walk every talk in schedule order. */
+function eachTalk(days, fn) {
+  for (const day of days) {
+    for (const slot of day.slots) {
+      for (const session of slot.sessions) {
+        for (const talk of session.talks) fn(talk, session, slot, day);
+      }
+    }
+  }
+}
+
+/**
+ * The abstract pages this program actually links to, as [url, title] pairs in
+ * FORMATS order. Derived from the talks' hrefs rather than from the format
+ * cells, so a page only ever appears here when something links to it.
+ */
+function abstractPages(days) {
+  const seen = new Set();
+  eachTalk(days, (talk) => {
+    if (talk.href) seen.add(String(talk.href).split('#')[0]);
+  });
+  return Object.values(FORMATS)
+    .filter((f) => f.permalink && seen.has(f.permalink))
+    .map((f) => [absUrl(f.permalink), f.pageTitle]);
+}
+
+/** A wrapped list item: "- " on the first line, continuations hanging-indented. */
+function bullet(text) {
+  return wrap(text, 78, '  ').map((line, i) => (i === 0 ? `- ${line.slice(2)}` : line));
+}
+
+/**
+ * Preamble: what this file is, how to read it, and the conference facts an
+ * agent needs before it can reason about any of the sessions below.
+ * @param {boolean} full
+ */
+function renderLlmsHeader(days, timezone, full) {
+  let sessions = 0;
+  let talks = 0;
+  let abstracts = 0;
+  for (const day of days) {
+    for (const slot of day.slots) {
+      sessions += slot.sessions.length;
+    }
+  }
+  eachTalk(days, (talk) => {
+    talks += 1;
+    if (talk.infoMd && talk.infoMd.trim()) abstracts += 1;
+  });
+
+  const first = days[0];
+  const last = days[days.length - 1];
+  const year = first.date.slice(0, 4);
+  // "October 19–21, 2026" when the run stays in one month, "October 31 –
+  // November 2, 2026" when it does not.
+  const firstMonth = first.label.split(' ')[0];
+  const lastMonth = last.label.split(' ')[0];
+  let dates;
+  if (first === last) dates = `${first.label}, ${year}`;
+  else if (firstMonth === lastMonth) dates = `${first.label}–${last.label.split(' ')[1]}, ${year}`;
+  else dates = `${first.label} – ${last.label}, ${year}`;
+
+  const other = full
+    ? ['Abstracts are included below, inline, for every talk that has published'
+       + ' one. For a smaller file carrying the same schedule without abstract'
+       + ' text, fetch:', `${SITE_BASE}program/llms.txt`]
+    : ['Abstract text is not in this file. For the same schedule with every'
+       + ' published abstract inlined, fetch:', `${SITE_BASE}program/llms-full.txt`];
+
+  const lines = [
+    `# ${CONF.name} — Program`,
+    '',
+    ...wrap(
+      `The complete program for ${CONF.name} (${CONF.fullName}), the annual `
+      + `conference of the ${CONF.org}, held ${dates} in ${CONF.location}. `
+      + `Theme: "${CONF.theme}". ${days.length} days, ${sessions} sessions, `
+      + `${talks} talks (${abstracts} with published abstracts). All times are `
+      + `US Pacific (UTC${timezone}).`, 78, '> '),
+    '',
+    ...wrap('This file is generated from the conference schedule and changes only'
+      + ' when the schedule does. The program is not final and is subject to'
+      + ' change — check the program page for the authoritative current version.',
+    78, ''),
+    '',
+    '## How to use this file',
+    '',
+    ...bullet('Every session carries both a wall-clock time and an ISO 8601'
+      + ' range. Prefer the ISO range for anything you compute.'),
+    ...bullet('Sessions are listed in chronological order within each day, and'
+      + ' each one lists the sessions it runs against under "Concurrent with" —'
+      + ' that is the choice to resolve when picking between parallel tracks.'),
+    ...bullet('Breaks, meals and registration are listed too. They are not'
+      + ' filler: they are the gaps an attendee schedule is built around.'),
+    ...bullet('Talk titles link to that talk\'s entry on its abstract page.'),
+    ...bullet(other[0]),
+    `  ${other[1]}`,
+    '',
+    `Human-readable program page: ${SITE_BASE}program/`,
+    '',
+    '## Conference pages',
+    '',
+  ];
+  for (const [url, title] of [
+    [`${SITE_BASE}`, `${CONF.name} home`],
+    [`${SITE_BASE}program/`, 'Full program (this schedule, as a web page)'],
+    ...abstractPages(days).map(([u, t]) => [u, `${t} — abstracts`]),
+    [`${SITE_BASE}attend/`, 'Attending: overview'],
+    [`${SITE_BASE}attend/registration/`, 'Registration'],
+    [`${SITE_BASE}attend/travel/`, 'Travel and venue'],
+    [`${SITE_BASE}attend/local-info/`, 'Things to do in San Jose'],
+    [`${SITE_BASE}attend/financial-support/`, 'Financial support'],
+    [`${SITE_BASE}about/code-of-conduct/`, 'Code of conduct'],
+  ]) {
+    lines.push(`- ${url} — ${title}`);
+  }
+  lines.push('');
+  return lines;
+}
+
+/**
+ * One talk as a bullet in the index file: title, format, people, link.
+ * @param {string} pad
+ */
+function renderLlmsTalkBrief(talk, pad) {
+  const bits = [`"${oneLine(talk.title)}"`];
+  if (talk.format) bits.push(`(${oneLine(talk.format)})`);
+  const line = [`${pad}- ${bits.join(' ')}`];
+  if (talk.speakers) line.push(`${pad}  Presenters: ${oneLine(talk.speakers)}`);
+  if (talk.href) line.push(`${pad}  ${absUrl(talk.href)}`);
+  return line;
+}
+
+/**
+ * One talk as its own block in the full file, abstract included. The abstract
+ * is emitted as-is: it is Markdown in a Markdown file, and a plain-text
+ * consumer reads it as prose either way.
+ */
+function renderLlmsTalkFull(talk) {
+  const lines = ['', `#### ${oneLine(talk.title)}`, ''];
+  if (talk.format) lines.push(`- Format: ${oneLine(talk.format)}`);
+  if (talk.speakers) lines.push(`- Presenters: ${oneLine(talk.speakers)}`);
+  if (talk.href) lines.push(`- Abstract page: ${absUrl(talk.href)}`);
+  if (talk.infoMd && talk.infoMd.trim()) {
+    lines.push('', 'Abstract:', '', ...quoteBlock(talk.infoMd));
+  } else {
+    lines.push('- Abstract: not yet published');
+  }
+  return lines;
+}
+
+/**
+ * One session: labelled fields, then its talks.
+ * @param {string[]} concurrent titles of the sessions this one runs against
+ */
+function renderLlmsSession(slot, session, concurrent, full) {
+  const lines = [`### ${textRange(slot)} — ${oneLine(session.title)}`, ''];
+  const mins = isoMinutes(slot.endISO) - isoMinutes(slot.startISO);
+  // A blank End cell folds to end === start; say so rather than claim 0 min.
+  lines.push(mins > 0
+    ? `- Time: ${slot.startISO} to ${slot.endISO} (${mins} min)`
+    : `- Time: ${slot.startISO} (end time not published)`);
+  // "Anywhere" means the whole venue; renderSession suppresses it too.
+  if (session.room && session.room.toLowerCase() !== 'anywhere') {
+    lines.push(`- Room: ${oneLine(session.room)}`);
+  }
+  if (session.type) lines.push(`- Type: ${oneLine(session.type)}`);
+  if (session.plenary) lines.push('- Plenary: yes');
+  if (session.chair) lines.push(`- Chair: ${oneLine(session.chair)}`);
+  // Computed from the ISO ranges rather than asserted: whether a plenary or
+  // anything else has competition is a fact about the sheet, not a rule.
+  // One line, not a nested list: the talks below are the only nested list in
+  // the file, so "  - " unambiguously means a talk. A second nested list here
+  // would share that marker and a parser not tracking which field it sits
+  // under would read concurrent sessions as talks.
+  lines.push(concurrent.length
+    ? `- Concurrent with: ${concurrent.join('; ')}`
+    : '- Concurrent with: nothing (the only session at this time)');
+  if (session.info && session.info.trim()) {
+    // Collapsed to a line in the index, kept whole in the full file — the
+    // same split the two files make for abstracts.
+    if (full) lines.push('', 'About this session:', '', ...quoteBlock(session.info));
+    else lines.push(`- About: ${oneLine(session.info)}`);
+  }
+  if (session.talks.length) {
+    if (full) {
+      for (const talk of session.talks) lines.push(...renderLlmsTalkFull(talk));
+    } else {
+      lines.push(`- Talks (${session.talks.length}):`);
+      for (const talk of session.talks) lines.push(...renderLlmsTalkBrief(talk, '  '));
+    }
+  }
+  return lines;
+}
+
+/**
+ * @param {ReturnType<typeof fold>} days
+ * @param {string} timezone UTC offset the ISO stamps carry, e.g. "-07:00"
+ * @param {{full: boolean}} opts
+ */
+function renderLlms(days, timezone, { full }) {
+  const lines = renderLlmsHeader(days, timezone, full);
+  for (const day of days) {
+    const concurrent = concurrencyMap(day);
+    lines.push(`## ${day.weekday}, ${day.label}, ${day.date.slice(0, 4)}`, '');
+    for (const slot of day.slots) {
+      for (const session of slot.sessions) {
+        // The separator is added here, at the join, rather than inside the
+        // block: a blank line is the assembly's business, and collapsing
+        // them afterwards with a global regex would rewrite quoted abstract
+        // text this generator does not own.
+        lines.push(...renderLlmsSession(slot, session, concurrent.get(session) || [], full), '');
+      }
+    }
+  }
+  return `${lines.join('\n').replace(/\n+$/, '')}\n`;
+}
+
+// ---------------------------------------------------------------------------
 // Program menubar — script-managed while abstract pages exist
 // ---------------------------------------------------------------------------
 
@@ -1023,6 +1389,8 @@ async function main() {
     { timezone: TZ_OFFSET, days },
     (key, value) => (key.startsWith('_') ? undefined : value), 2) + '\n');
   writeMenubar(writeAbstractPages(days));
+  writeIfChanged(OUT_LLMS, renderLlms(days, TZ_OFFSET, { full: false }));
+  writeIfChanged(OUT_LLMS_FULL, renderLlms(days, TZ_OFFSET, { full: true }));
 }
 
 main().catch((err) => {
