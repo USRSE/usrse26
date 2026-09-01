@@ -19,6 +19,7 @@
  *
  *   PROGRAM_SHEET_ID=<id> node scripts/build-program.js    # live from Sheets
  *   node scripts/build-program.js --file fixtures/schedule.csv   # offline
+ *   node scripts/build-program.js --from-json   # llms files only, from _data
  *
  * Expected sheet columns (case-insensitive): Start, End, Location,
  * Session Topic, Event Title, Order, the session-level columns
@@ -1384,7 +1385,29 @@ function writeIfChanged(file, content) {
   return true;
 }
 
+/**
+ * Rewrite only the llms files, reading the committed _data/program.json
+ * instead of the sheet. program.json carries no _-prefixed internals, so the
+ * HTML includes, abstract pages and menubar cannot be rebuilt from it — but
+ * renderLlms reads public fields only, which is exactly what makes this
+ * possible. The pull-request check runs this and fails if anything changed,
+ * proving the committed llms files still match the committed schedule.
+ */
+function mainFromJson() {
+  if (!fs.existsSync(OUT_JSON)) {
+    throw new Error(`${path.relative(REPO_ROOT, OUT_JSON)} does not exist.`);
+  }
+  console.log(`Reading ${path.relative(REPO_ROOT, OUT_JSON)}`);
+  const { days, timezone } = JSON.parse(fs.readFileSync(OUT_JSON, 'utf8'));
+  if (!Array.isArray(days) || !days.length) {
+    throw new Error('program.json has no days — refusing to write empty files.');
+  }
+  writeIfChanged(OUT_LLMS, renderLlms(days, timezone, { full: false }));
+  writeIfChanged(OUT_LLMS_FULL, renderLlms(days, timezone, { full: true }));
+}
+
 async function main() {
+  if (process.argv.includes('--from-json')) return mainFromJson();
   const csv = await loadCSV();
   const records = toRecords(parseCSV(csv));
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');

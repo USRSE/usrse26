@@ -1,0 +1,52 @@
+# Guards the generated plain-text program files against drift.
+#
+# program/llms.txt and program/llms-full.txt are written by
+# scripts/build-program.js in the same run as the program page, so on the
+# normal path — the Rebuild program schedule workflow — they cannot fall out
+# of step. This catches the other path: a pull request that edits the
+# schedule data or the generator by hand and does not regenerate them.
+#
+# It re-renders from the committed _data/program.json rather than the sheet,
+# so it needs no secret and works on pull requests from forks. Read-only: it
+# never commits, it only reports.
+
+name: Check program llms.txt
+
+on:
+  pull_request:
+    paths:
+      - '_data/program.json'
+      - 'scripts/build-program.js'
+      - 'program/**'
+
+concurrency:
+  group: ${{ github.workflow }}-${{ github.event.pull_request.number }}
+  cancel-in-progress: true
+
+permissions:
+  contents: read
+
+jobs:
+  check:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Re-render from the committed schedule
+        run: node scripts/build-program.js --from-json
+
+      - name: Fail if the committed files are stale
+        run: |
+          if git diff --quiet -- program; then
+            echo "program/llms.txt and program/llms-full.txt match _data/program.json."
+            exit 0
+          fi
+          echo "::error::The generated program files are out of date. Run" \
+               "'node scripts/build-program.js --from-json' and commit the result."
+          git diff -- program
+          exit 1

@@ -135,7 +135,23 @@ Full Program page, which has `permalink: program/` and so writes `_site/program/
 Both are generated: they carry no banner (a comment would be noise in a file meant to be
 read as prose), but they are rebuilt on every run and must not be edited by hand. The
 renderer reads only the fields `_data/program.json` also carries, so it can be driven from
-the committed JSON as well as from a fresh sheet fetch.
+the committed JSON as well as from a fresh sheet fetch:
+
+```bash
+node scripts/build-program.js --from-json
+```
+
+That rewrites just the two `.txt` files, needs no sheet ID, and is the quickest way to see
+a renderer change. It cannot rebuild the HTML includes or the abstract pages — those need
+the `_`-prefixed internals that `program.json` deliberately drops.
+
+The `Check program llms.txt` workflow (`.github/workflows/check-program-llms.yml`) runs
+that same command on every pull request touching `_data/program.json`,
+`scripts/build-program.js`, or `program/`, and fails if the result differs from what is
+committed. On the normal path — the `Rebuild program schedule` workflow — the `.txt` files
+and the program page are written in the same run and cannot drift; this catches the other
+path, a pull request that edits the schedule data or the generator by hand without
+regenerating. It is read-only, needs no secret, and works on pull requests from forks.
 
 ### Local development
 
