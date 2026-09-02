@@ -37,7 +37,7 @@ live-sheet output.
   value throws `--posters-file requires a path`; artifacts unchanged
   (`git status` clean after the run apart from nothing).
 
-- [ ] 2. **Posters parser** (Stories 1, 2; §2) — Take the baseline. Add
+- [x] 2. **Posters parser** (Stories 1, 2; §2) — Take the baseline. Add
   `POSTER_HEADER_ALIASES`, give `normalizeHeader()` (`:163-165`) an
   `aliases = HEADER_ALIASES` parameter, and add `toPosterRecords(rows)` with
   the missing-column throw. In `main()`, parse `postersCsv` into `posters`

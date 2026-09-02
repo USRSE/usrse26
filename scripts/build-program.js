@@ -161,13 +161,16 @@ const HEADER_ALIASES = {
   sessiondescription: 'info', info: 'info', notes: 'info',
 };
 
-function normalizeHeader(h) {
-  return HEADER_ALIASES[h.toLowerCase().replace(/[^a-z]/g, '')] || null;
+/** Header cell -> canonical key, or null for a column the map ignores.
+ * @param {string} h
+ * @param {Record<string, string>} aliases */
+function normalizeHeader(h, aliases = HEADER_ALIASES) {
+  return aliases[h.toLowerCase().replace(/[^a-z]/g, '')] || null;
 }
 
 /** Turn raw CSV rows into objects keyed by canonical column names. */
 function toRecords(rows) {
-  const header = rows[0].map(normalizeHeader);
+  const header = rows[0].map((h) => normalizeHeader(h));
   return rows.slice(1).map((cells, i) => {
     const rec = { _row: i + 2 }; // 1-based sheet row, counting the header
     header.forEach((key, col) => {
@@ -175,6 +178,41 @@ function toRecords(rows) {
     });
     return rec;
   }).filter((r) => r.start && r.session);
+}
+
+// The Posters tab has its own small header map. Any other column (a poster
+// number, say) maps to null and is read past.
+/** @type {Record<string, string>} */
+const POSTER_HEADER_ALIASES = {
+  authors: 'authors',
+  postertitle: 'title', title: 'title',
+  abstract: 'abstract',
+  doi: 'doi',
+};
+
+/**
+ * Posters tab rows -> {title, authors, abstractMd, doi, _row} in sheet
+ * order, rows without a title dropped. A missing "Poster Title" column is
+ * fatal: a renamed or absent tab must fail the build, not serve a stale
+ * page.
+ * @param {string[][]} rows
+ */
+function toPosterRecords(rows) {
+  const header = (rows[0] || []).map((h) => normalizeHeader(h, POSTER_HEADER_ALIASES));
+  if (!header.includes('title')) {
+    throw new Error(
+      `"${POSTERS_SHEET_NAME}" tab has no "Poster Title" column — is the tab named ${POSTERS_SHEET_NAME}?`);
+  }
+  return rows.slice(1).map((cells, i) => {
+    const rec = { _row: i + 2, title: '', authors: '', abstractMd: '', doi: '' };
+    header.forEach((key, col) => {
+      if (!key) return;
+      const v = (cells[col] || '').trim();
+      if (key === 'abstract') rec.abstractMd = v;
+      else rec[key] = v;
+    });
+    return rec;
+  }).filter((r) => r.title);
 }
 
 /**
@@ -1041,6 +1079,7 @@ async function main() {
   const postersCsv = await loadPostersCSV();
   const records = toRecords(parseCSV(csv));
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
+  const posters = postersCsv === null ? null : toPosterRecords(parseCSV(postersCsv));
   const days = fold(records);
   assignAnchors(days);
   assignSessionIds(days);
@@ -1048,6 +1087,7 @@ async function main() {
   const sessionCount = days.reduce(
     (n, d) => n + d.slots.reduce((m, s) => m + s.sessions.length, 0), 0);
   console.log(`Parsed ${records.length} rows -> ${days.length} days, ${sessionCount} sessions.`);
+  console.log(posters ? `Parsed ${posters.length} poster rows.` : 'Posters skipped.');
 
   writeIfChanged(OUT_HTML, renderHTML(days));
   writeIfChanged(OUT_GRID, renderGridHTML(days));
