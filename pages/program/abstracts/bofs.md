@@ -3,6 +3,7 @@ layout: page
 title: Birds of a Feather
 description:  abstracts at USRSE'26
 menubar: program
+menubar_toc: true
 permalink: program/bofs/
 set_last_modified: true
 ---
@@ -13,9 +14,9 @@ set_last_modified: true
   <div class="abstracts__toolbar" hidden>
     <button class="abstracts__toggle-all" type="button">Expand all</button>
   </div>
-  <details class="abstract" id="navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="navigating-rse-team-operations-leadership-sustainability-and-emerging-challenges">
         <span class="abstract__title">Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges</span>
         <span class="abstract__people">Daniel Madren, Geoffrey Lentner, Laura Theademan, Chris Bentley, Christina Maimone, Ian Cosden, Sandra Gesing, Adam Rubens, David Pettifor, Elizabeth Leake, William Cowen, Abbey Roelofs and Daniel Shown</span>
       </h2>
@@ -26,27 +27,27 @@ Building on discussions from the USRSE’24 workshop, “Establishing RSE Progra
 
 We recommend bringing laptops/smart devices to access BoF materials.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <details class="abstract" id="building-an-institutional-rse-community">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="building-an-institutional-rse-community">
         <span class="abstract__title">Building an Institutional RSE Community</span>
         <span class="abstract__people">Julia Damerow, J.C. Subida, Alex Koufos, Daniel Woulfin and Trevor Spreadbury</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}This Birds of a Feather (BoF) session, organized by the Institutional RSE Networking Affinity Group, plans to address a structural issue in the Research Software Engineering (RSEng) landscape: the isolation of individual Research Software Engineers (RSEs) within large institutions. By drawing on self-determination theory and communities of practice (Wenger, 1998), we aim to answer why RSEs seek out local communities and what those communities ideally look like. While national and international RSE networks are growing, many RSEs lack a local peer group to share expertise, vent frustrations, or organize for structural change. This session will provide a space for attendees to identify local needs and co-create strategies for establishing institutional RSE communities. Through interactive polling and facilitated breakout groups, participants will move from identifying shared challenges to collectively brainstorming ideas to build local networks. Key points of the discussion will be shared as a blog post after the conference.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <details class="abstract" id="better-scientific-software-fellowship-community">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="better-scientific-software-fellowship-community">
         <span class="abstract__title">Better Scientific Software Fellowship Community</span>
         <span class="abstract__people">Adam Lavely, Elsa Gonsiorowski and Mary Ann Leung</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Software developers face increasing complexity in computational models, computer architectures, and emerging workflows. In this environment Research Software Engineers need to continually improve software practices and constantly hone their craft. To address this need, the Better Scientific Software (BSSw) Fellowship Program launched in 2018 to seed a community of like-minded individuals interested in improving all aspects of the work of software development. The BSSw Birds of a Feather session brings together alumni, honorable mentions, current fellows, BSSw leadership and potential applicants to discuss software best practices and the upcoming 2027 Fellowship requirements and deadlines.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <details class="abstract" id="how-to-train-an-rse-a-discussion-of-rse-skill-training-past-future-and-present">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="how-to-train-an-rse-a-discussion-of-rse-skill-training-past-future-and-present">
         <span class="abstract__title">How to train an RSE: A discussion of RSE skill training - past, future, and present</span>
         <span class="abstract__people">Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien</span>
       </h2>
@@ -55,9 +56,9 @@ We recommend bringing laptops/smart devices to access BoF materials.{% endcaptur
 
 This BoF will be composed of a short, directed discussion to capture audience perspectives on the incorporation of LLM/AI tools in educational pathways for training in RSE skills like software engineering and research computing, followed by breakout discussions that evaluate what skills and topics are necessary and beneficial to train an RSE in 2027. During these discussions, we will encourage participants to explore the frictions inherent in becoming a RSE: domain knowledge or software engineering; self-taught or formal education; fundamentals or emerging technology; etc. Participants will share their groups’ conclusions and we intend to incorporate the outcomes into an updated list of US-RSE recommended skills and training pathways. We welcome broad participation from across the US-RSE ecosystem at all learning and professional stages, and look forward to seeing you there!{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <details class="abstract" id="how-can-institutional-rse-hubs-and-ospos-work-together-for-the-betterment-of-research-outputs">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="how-can-institutional-rse-hubs-and-ospos-work-together-for-the-betterment-of-research-outputs">
         <span class="abstract__title">How can institutional RSE hubs and OSPOs work together for the betterment of research outputs?</span>
         <span class="abstract__people">William Gearty, Jeffrey Young, Collin Capano, Ian Cosden, Daniel Katz, Richard Littauer, Fang Liu and Daniel Shown</span>
       </h2>

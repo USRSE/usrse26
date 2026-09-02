@@ -3,6 +3,7 @@ layout: page
 title: Notebooks
 description: Notebook abstracts at USRSE'26
 menubar: program
+menubar_toc: true
 permalink: program/notebooks/
 set_last_modified: true
 ---
@@ -10,14 +11,14 @@ set_last_modified: true
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/abstracts.css?v={{ site.time | date: '%s' }}">
 
 <div class="abstracts">
-  <div class="abstract abstract--static" id="effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets">
       <span class="abstract__title">Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets</span>
       <span class="abstract__people">Zachary Katz and Tasha Snow</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation">
       <span class="abstract__title">Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation</span>
       <span class="abstract__people">Pariksheet Nanda, Rocco Caprara and Jason Shoemaker</span>
     </h2>

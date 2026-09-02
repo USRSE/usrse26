@@ -3,6 +3,7 @@ layout: page
 title: Papers
 description: Paper abstracts at USRSE'26
 menubar: program
+menubar_toc: true
 permalink: program/papers/
 set_last_modified: true
 ---
@@ -13,9 +14,9 @@ set_last_modified: true
   <div class="abstracts__toolbar" hidden>
     <button class="abstracts__toggle-all" type="button">Expand all</button>
   </div>
-  <details class="abstract" id="aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research">
         <span class="abstract__title">AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research</span>
         <span class="abstract__people">Bernie Boscoe, Tuan Do, Jack Stark, Srinath Saikrishnan, Vikram Seenivasan, PJ Allen, Morgan Himes, Jonathan Soriano, Andrew Lizarraga</span>
       </h2>
@@ -26,74 +27,74 @@ In astronomy, this development follows a long history of computational infrastru
 
 We define faithfulness as the extent to which generated responses remain grounded in retrieved scientific context without unsupported claims or omissions. We report results from an astronomy case study evaluating AquiLLM across retrieval and scientific analysis tasks. AquiLLM performs most reliably on explicit retrieval-oriented questions grounded in the RAG collection, while faithfulness degrades for queries requiring synthesis or ambiguity resolution. These results highlight both the promise and limitations of open-weight RAG-LLM systems for scientific research and demonstrate the importance of domain-expert evaluation beyond standard benchmark leaderboards.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <div class="abstract abstract--static" id="measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape">
       <span class="abstract__title">Measuring What Matters in the Age of AI: The Research Software Metrics Landscape</span>
       <span class="abstract__people">Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments">
       <span class="abstract__title">DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments</span>
       <span class="abstract__people">Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc">
       <span class="abstract__title">Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC</span>
       <span class="abstract__people">Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools">
       <span class="abstract__title">Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools</span>
       <span class="abstract__people">Smruti Padhy, Anagha Jamthe and Joe Stubbs</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="structuring-agentic-ai-for-hpc-code-modernization">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="structuring-agentic-ai-for-hpc-code-modernization">
       <span class="abstract__title">Structuring agentic AI for HPC code modernization</span>
       <span class="abstract__people">Anthony Marinov and Igor Sfiligoi</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language">
       <span class="abstract__title">Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language</span>
       <span class="abstract__people">A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline">
       <span class="abstract__title">Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline</span>
       <span class="abstract__people">Jing Qi, William Cowen and Christian Darabos</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines">
       <span class="abstract__title">Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines</span>
       <span class="abstract__people">Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="fabla-an-open-source-voice-first-ema-platform-for-clinical-research">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="fabla-an-open-source-voice-first-ema-platform-for-clinical-research">
       <span class="abstract__title">Fabla: An Open-Source Voice-First EMA Platform for Clinical Research</span>
       <span class="abstract__people">Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai">
       <span class="abstract__title">We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI</span>
       <span class="abstract__people">Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="ai-augmented-research-software-engineering-risks-challenges-and-practices">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="ai-augmented-research-software-engineering-risks-challenges-and-practices">
       <span class="abstract__title">AI-Augmented Research Software Engineering: Risks, Challenges, and Practices</span>
       <span class="abstract__people">I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song</span>
     </h2>
   </div>
-  <div class="abstract abstract--static" id="a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training">
-    <h2 class="abstract__heading">
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training">
       <span class="abstract__title">A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training</span>
       <span class="abstract__people">Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song</span>
     </h2>
