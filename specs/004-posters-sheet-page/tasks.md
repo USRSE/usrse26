@@ -88,7 +88,7 @@ live-sheet output.
   `10.5281/zenodo.1` → `https://doi.org/10.5281/zenodo.1`;
   `https://doi.org/10.1/x` and `HTTP://…` pass through.
 
-- [ ] 7. **Poster entries and page registration** (Stories 3, 4, 6; §4, §5)
+- [x] 7. **Poster entries and page registration** (Stories 3, 4, 6; §4, §5)
   — Add `posterEntries(posters)` (DOI link when present, then the
   `Link to this poster` permalink). Change `writeAbstractPages(days, posters)`
   per §5: register the page when `posters.length`, add the keep-marker after

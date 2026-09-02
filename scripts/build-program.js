@@ -1014,15 +1014,45 @@ function renderAbstractPage(format, entries) {
 }
 
 /**
+ * Posters-tab records -> page entries. Every poster carries at least the
+ * permalink, so every row is collapsible and a visitor can copy a link to
+ * one poster from its open body.
+ * @param {ReturnType<typeof toPosterRecords>} posters
+ * @returns {AbstractEntry[]}
+ */
+function posterEntries(posters) {
+  return posters.map((p) => {
+    const meta = [];
+    if (p.doi) meta.push({ href: doiHref(p.doi), text: p.doi });
+    meta.push({ href: `#${p._anchor}`, text: 'Link to this poster' });
+    return { title: p.title, people: p.authors, infoMd: p.abstractMd, anchor: p._anchor, meta };
+  });
+}
+
+/**
  * Write one page per active format and prune banner-carrying pages whose
  * format no longer appears in the sheet. Returns the page map for the
  * menubar writer.
  * @param {ReturnType<typeof fold>} days
+ * @param {ReturnType<typeof toPosterRecords>|null} posters  null = Posters
+ *   tab skipped (offline without --posters-file)
  */
-function writeAbstractPages(days) {
+function writeAbstractPages(days, posters) {
   const pages = collectAbstracts(days);
+  if (posters && posters.length) {
+    pages.set(FORMATS.poster.slug, { format: FORMATS.poster, entries: posterEntries(posters) });
+  }
   for (const [slug, { format, entries }] of pages) {
     writeIfChanged(path.join(ABSTRACTS_DIR, `${slug}.md`), renderAbstractPage(format, entries));
+  }
+  // Tab skipped: keep an existing generated posters page and its menu entry
+  // rather than pruning what this run did not rebuild. Registered after the
+  // write loop so the marker is never written; a fetched-but-empty tab
+  // (posters = []) falls through to pruning like any format that left.
+  const postersFile = path.join(ABSTRACTS_DIR, `${FORMATS.poster.slug}.md`);
+  if (posters === null && fs.existsSync(postersFile)
+      && fs.readFileSync(postersFile, 'utf8').includes(PAGE_BANNER)) {
+    pages.set(FORMATS.poster.slug, { format: FORMATS.poster, entries: [] });
   }
   if (fs.existsSync(ABSTRACTS_DIR)) {
     for (const name of fs.readdirSync(ABSTRACTS_DIR)) {
@@ -1167,7 +1197,7 @@ async function main() {
   writeIfChanged(OUT_JSON, JSON.stringify(
     { timezone: TZ_OFFSET, days },
     (key, value) => (key.startsWith('_') ? undefined : value), 2) + '\n');
-  writeMenubar(writeAbstractPages(days));
+  writeMenubar(writeAbstractPages(days, posters));
 }
 
 main().catch((err) => {
