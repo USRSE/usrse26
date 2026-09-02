@@ -48,6 +48,7 @@ const path = require('path');
 // --file need no ID at all.
 const SHEET_ID = process.env.PROGRAM_SHEET_ID || '';
 const SHEET_NAME = 'Schedule';
+const POSTERS_SHEET_NAME = 'Posters';
 
 // Sheet dates are "M/DD" with no year.
 const CONF_YEAR = 2026;
@@ -971,24 +972,55 @@ function writeMenubar(pages) {
 // Main
 // ---------------------------------------------------------------------------
 
-async function loadCSV() {
-  const fileFlag = process.argv.indexOf('--file');
-  if (fileFlag !== -1) {
-    const file = process.argv[fileFlag + 1];
-    if (!file) throw new Error('--file requires a path');
-    console.log(`Reading ${file}`);
-    return fs.readFileSync(path.resolve(file), 'utf8');
-  }
+/** Value following a `--flag`, or null when the flag is absent. */
+function argValue(flag) {
+  const i = process.argv.indexOf(flag);
+  if (i === -1) return null;
+  const v = process.argv[i + 1];
+  if (!v || v.startsWith('--')) throw new Error(`${flag} requires a path`);
+  return v;
+}
+
+/** One tab of the program spreadsheet, via the gviz CSV export endpoint. */
+async function fetchSheet(sheetName) {
   if (!SHEET_ID) {
     throw new Error(
       'PROGRAM_SHEET_ID is not set. Export the sheet ID as an environment '
       + 'variable, or run with --file fixtures/schedule.csv.');
   }
-  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_NAME)}`;
-  console.log(`Fetching "${SHEET_NAME}" tab from Google Sheets…`);
+  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(sheetName)}`;
+  console.log(`Fetching "${sheetName}" tab from Google Sheets…`);
   const res = await fetch(url, { redirect: 'follow' });
-  if (!res.ok) throw new Error(`Sheet fetch failed: HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`"${sheetName}" tab fetch failed: HTTP ${res.status}`);
   return res.text();
+}
+
+/** Schedule tab: the --file path when given, else the live sheet. */
+async function loadScheduleCSV() {
+  const file = argValue('--file');
+  if (file) {
+    console.log(`Reading ${file}`);
+    return fs.readFileSync(path.resolve(file), 'utf8');
+  }
+  return fetchSheet(SHEET_NAME);
+}
+
+/**
+ * Posters tab: the --posters-file path when given; null (skipped) when the
+ * schedule came from a file and no posters file was given, so an offline
+ * build never needs the network; else the live sheet.
+ */
+async function loadPostersCSV() {
+  const file = argValue('--posters-file');
+  if (file) {
+    console.log(`Reading ${file}`);
+    return fs.readFileSync(path.resolve(file), 'utf8');
+  }
+  if (argValue('--file')) {
+    console.log('No --posters-file — skipping posters.');
+    return null;
+  }
+  return fetchSheet(POSTERS_SHEET_NAME);
 }
 
 /** Write only when content changed so a scheduled runner commits no churn. */
@@ -1005,7 +1037,8 @@ function writeIfChanged(file, content) {
 }
 
 async function main() {
-  const csv = await loadCSV();
+  const csv = await loadScheduleCSV();
+  const postersCsv = await loadPostersCSV();
   const records = toRecords(parseCSV(csv));
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
   const days = fold(records);

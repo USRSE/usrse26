@@ -26,7 +26,7 @@ live-sheet output.
 
 ---
 
-- [ ] 1. **Loader split** (Story 1; §1) — Add `POSTERS_SHEET_NAME`
+- [x] 1. **Loader split** (Story 1; §1) — Add `POSTERS_SHEET_NAME`
   beside `SHEET_NAME` (`scripts/build-program.js:50`). Replace `loadCSV()`
   (`:974-993`) with `argValue()`, `fetchSheet(sheetName)`,
   `loadScheduleCSV()`, and `loadPostersCSV()`; `main()` calls
