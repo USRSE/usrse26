@@ -1,0 +1,11 @@
+Poster,Authors,Poster Title,Abstract,DOI
+1,Chris Woodruff and Dana Scully,Reproducible Pipelines on a Budget,"Cheap, cacheable pipelines for **small labs**, built from nothing but Make and a content-addressed store.
+
+A second paragraph shows that Markdown paragraphs survive the trip through the sheet.",10.5281/zenodo.1000001
+2,"Ada Lovelace, Grace Hopper and Alan Turing",Provenance Graphs for Notebook Outputs,Every output cell carries a hash of the inputs that produced it.,https://doi.org/10.5281/zenodo.1000002
+3,Rosalind Franklin,Sharing Beamline Software Across Facilities,An abstract with no DOI — the metadata line carries only the permalink.,
+4,Barbara McClintock and Katherine Johnson,Containerized Field Sensors,,10.5281/zenodo.1000004
+5,,A Poster With No Listed Authors,The heading shows the title alone; no empty byline is emitted.,10.5281/zenodo.1000005
+6,Elena Petrova,Provenance Graphs for Notebook Outputs,A second poster with the same title takes the -2 anchor.,10.5281/zenodo.1000006
+7,Jamie Fox,Sheet Content Stays Literal,"This abstract contains {% raw %}Liquid{% endraw %} and a <script>alert(1)</script> tag, both of which must render as text.",10.5281/zenodo.1000007
+8,Sam Park,,This row has authors and an abstract but no title and must be skipped.,10.5281/zenodo.1000008

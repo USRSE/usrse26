@@ -102,7 +102,7 @@ live-sheet output.
   and keeps the menu line; a run with an empty-but-headed posters CSV
   prunes it and drops the menu line. Restore artifacts.
 
-- [ ] 8. **Fixtures** (Stories 5, 7, 8; §7) — Create `fixtures/posters.csv`
+- [x] 8. **Fixtures** (Stories 5, 7, 8; §7) — Create `fixtures/posters.csv`
   with every row in the §7 table, including the title
   `Reproducible Pipelines on a Budget`. Append a `DOI` column to
   `fixtures/schedule.csv` (header plus a trailing comma on every row) with
