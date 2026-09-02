@@ -1,6 +1,6 @@
 # Requirements — posters sheet page
 
-Status: approved
+Status: done
 
 ## Summary
 

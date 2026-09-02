@@ -138,7 +138,7 @@ live-sheet output.
   top). Verify: fixture build green; `git diff` touches only comments and
   README.
 
-- [ ] 11. **Regenerate the committed artifacts from the live sheet**
+- [x] 11. **Regenerate the committed artifacts from the live sheet**
   (Stories 4, 8) — Run `PROGRAM_SHEET_ID=<id> node scripts/build-program.js`
   locally (or merge and dispatch the workflow). Verify against §8: the diff
   is `pages/program/abstracts/posters.md` (new), the "Posters" line in
