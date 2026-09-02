@@ -19,10 +19,13 @@ We have two room blocks: one in the conference hotel itself, the San Jose Marrio
 [Hyatt Place San Jose/Downtown](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URAT) <br>
 * 282 Almaden Boulevard, San Jose, CA 95113 ([Google Maps](https://www.google.com/maps/search/?api=1&query=Hyatt+Place+San+Jose%2FDowntown%2C+282+Almaden+Boulevard%2C+San+Jose%2C+CA+95113))
 * The Hyatt Place San Jose/Downtown is a 5 minute walk (0.2 miles) from the venue.
+* This hotel block gives you the option of checking in as early as Saturday, Oct 17th and checking out Thursday, Oct 22nd. 
 
 [San Jose Marriott](https://book.passkey.com/go/USRSE2026) <br>
 * 2301 South Market Street, San Jose, CA 95113 ([Google Maps](https://www.google.com/maps/search/?api=1&query=San+Jose+Marriott+2301+South+Market+Street%2C+San+Jose%2C+CA+95113))
 * The San Jose Marriott is where the conference will take place.
+* Check in starts from Sunday, Oct 18th and check out is Wednesday, Oct 21st.
+  * **If you plan on leaving Wednesday, we would encourage you to use this hotel block.**
 
 ### Room Reservations
 
