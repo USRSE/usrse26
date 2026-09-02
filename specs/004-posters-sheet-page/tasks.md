@@ -70,7 +70,7 @@ live-sheet output.
   other entry and page identical; `_data/menus/program.yml` drops
   "Posters". Restore artifacts.
 
-- [ ] 5. **Schedule DOI column** (Story 7; §2, §3) — Add `doi: 'doi'` to
+- [x] 5. **Schedule DOI column** (Story 7; §2, §3) — Add `doi: 'doi'` to
   `HEADER_ALIASES`; in `fold()` carry `doi: rec.doi || ''` on the raw talk
   (`:344-352`) and append `if (t.doi) talk.doi = t.doi;` after `infoMd`
   (`:366`). Widen the `assignAnchors()` link test (`:437`) to

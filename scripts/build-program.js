@@ -160,6 +160,7 @@ const HEADER_ALIASES = {
   people: 'speakers',
   eventformat: 'format', format: 'format',
   eventdescription: 'infomd', infomd: 'infomd',
+  doi: 'doi',
   order: 'order',
   sessiondescription: 'info', info: 'info', notes: 'info',
 };
@@ -377,6 +378,7 @@ function fold(records) {
           formatRaw: rec.format || '',
           format: normalizeFormat(rec.format || ''),
           infoMd: rec.infomd || '',
+          doi: rec.doi || '',
           order: rec.order ? parseInt(rec.order, 10) : Number.MAX_SAFE_INTEGER,
           _row: rec._row,
         });
@@ -414,11 +416,12 @@ function fold(records) {
                     // without the new columns produces byte-identical
                     // JSON. Underscored keys are internal (render/anchor
                     // plumbing) — the JSON writer strips them.
-                    /** @type {{title: string, speakers: string, people?: string[], format?: string, infoMd?: string, href?: string, _format?: (typeof FORMATS)[string], _anchor?: string}} */
+                    /** @type {{title: string, speakers: string, people?: string[], format?: string, infoMd?: string, doi?: string, href?: string, _format?: (typeof FORMATS)[string], _anchor?: string}} */
                     const talk = { title: t.title, speakers: t.speakers };
                     if (t.people.length) talk.people = t.people;
                     if (t.formatRaw) talk.format = t.formatRaw;
                     if (t.infoMd) talk.infoMd = t.infoMd;
+                    if (t.doi) talk.doi = t.doi;
                     if (t.format && t.format.slug) talk._format = t.format;
                     return talk;
                   }),
@@ -499,7 +502,7 @@ function assignAnchors(days, posterAnchors) {
           }
           if (!used.has(talk._format.slug)) used.set(talk._format.slug, new Map());
           talk._anchor = nextAnchor(used.get(talk._format.slug), slugify(talk.title));
-          if (talk.infoMd || talk.speakers) talk.href = `${talk._format.permalink}#${talk._anchor}`;
+          if (talk.infoMd || talk.speakers || talk.doi) talk.href = `${talk._format.permalink}#${talk._anchor}`;
         }
       }
     }
