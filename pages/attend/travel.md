@@ -25,7 +25,7 @@ We have two room blocks: one in the conference hotel itself, the San Jose Marrio
 * 2301 South Market Street, San Jose, CA 95113 ([Google Maps](https://www.google.com/maps/search/?api=1&query=San+Jose+Marriott+2301+South+Market+Street%2C+San+Jose%2C+CA+95113))
 * The San Jose Marriott is where the conference will take place.
 * Check in starts from Sunday, Oct 18th and check out is Wednesday, Oct 21st
-  * If you plan on leaving Wednesday, we suggest using this hotel block
+  * **If you plan on leaving Wednesday, we would encourage you to use this hotel block.**
 
 ### Room Reservations
 
