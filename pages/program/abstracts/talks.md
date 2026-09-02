@@ -101,12 +101,15 @@ This talk will describe the design goals, architecture, deployment consideration
       <span class="abstract__people">Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen</span>
     </h2>
   </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps">
-      <span class="abstract__title">INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps</span>
-      <span class="abstract__people">Ian Cosden and Jeffrey Carver</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps">
+        <span class="abstract__title">INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps</span>
+        <span class="abstract__people">Ian Cosden and Jeffrey Carver</span>
+      </h2>
+    </summary>
+    <div class="abstract__body"><p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.22049760">https://doi.org/10.5281/zenodo.22049760</a></p></div>
+  </details>
   <div class="abstract abstract--static">
     <h2 class="abstract__heading" id="beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era">
       <span class="abstract__title">Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era</span>
