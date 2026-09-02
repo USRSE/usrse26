@@ -41,5 +41,6 @@ jobs:
         # Exclude these patterns from the checker
         exclude_patterns: https://www.amtrak.com/capitol-corridor-train
 
-        # Exclude these files from the checker
-        exclude_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows
+        # Exclude these files from the checker. specs/ holds design notes
+        # whose URLs are illustrative (templated sheet URLs, example DOIs).
+        exclude_files: README.md,SocialNetworks.yml,_config.yml,tests/test_,.github/workflows,specs/

@@ -1,29 +1,35 @@
 #!/usr/bin/env node
 /**
- * build-program.js — build the USRSE'26 program page from the Schedule sheet.
+ * build-program.js — build the USRSE'26 program pages from the program sheet.
  *
- * Pulls the "Schedule" tab of the program Google Sheet via its CSV export
- * endpoint, folds the flat rows into days -> time slots -> sessions -> events,
- * and writes five kinds of artifact:
+ * Pulls two tabs of the program Google Sheet via its CSV export endpoint.
+ * The "Schedule" tab is folded into days -> time slots -> sessions ->
+ * events; the "Posters" tab is a flat list of accepted posters. Together
+ * they produce five kinds of artifact:
  *
  *   _includes/program-schedule.html   Jekyll include rendered on the program page
  *   _includes/program-grid.html       room x time grid view of the same page
- *   _data/program.json                normalized data (site.data.program)
- *   pages/program/abstracts/<slug>.md one page per event format (abstracts)
+ *   _data/program.json                normalized schedule data (site.data.program)
+ *   pages/program/abstracts/<slug>.md one page per event format (abstracts);
+ *                                     posters.md comes from the Posters tab
  *   _data/menus/program.yml           program menubar linking those pages
  *
  * The sheet stays the only thing anyone edits. Requires Node 18+ (global
  * fetch); zero dependencies.
  *
  *   PROGRAM_SHEET_ID=<id> node scripts/build-program.js    # live from Sheets
- *   node scripts/build-program.js --file fixtures/schedule.csv   # offline
+ *   node scripts/build-program.js --file fixtures/schedule.csv \
+ *                                 --posters-file fixtures/posters.csv   # offline
  *
- * Expected sheet columns (case-insensitive): Start, End, Location,
+ * Offline with --file alone, the posters page is skipped: an existing
+ * generated posters.md is left in place rather than rebuilt or pruned.
+ *
+ * Expected Schedule columns (case-insensitive): Start, End, Location,
  * Session Topic, Event Title, Order, the session-level columns
  * Session Format, Session Chair, and Session Description (Markdown), and
- * the event-level columns People, Event Format, and Event Description
- * (Markdown) — event columns are read only on rows with an Event Title.
- * Start/End carry the date and 24h wall-clock time ("10/19 13:30").
+ * the event-level columns People, Event Format, Event Description
+ * (Markdown), and DOI — event columns are read only on rows with an Event
+ * Title. Start/End carry the date and 24h wall-clock time ("10/19 13:30").
  * Session Format is used exactly as given, never inferred from the topic:
  * Break/Meal/Registration render muted, Plenary gets the plenary field.
  * A row with an Event Title attaches an event to the session matching its
@@ -31,6 +37,14 @@
  * pre-2026 layout (every event column empty) are normalized: a
  * "Session Chair: X" row sets the session's chair instead of listing as
  * an event, and a "<title> by <names>" byline splits into title + People.
+ *
+ * Expected Posters columns: Authors, Poster Title (or Title), Abstract
+ * (Markdown), and DOI, in any order; other columns are ignored. Rows
+ * without a Poster Title are skipped. The Posters tab owns posters.md:
+ * Schedule events with Event Format "Poster" keep their pill and link into
+ * the page (to the entry whose slugified title matches, else the page
+ * top) but never become entries on it. A missing or renamed Posters tab
+ * fails the build.
  */
 
 'use strict';
@@ -48,6 +62,7 @@ const path = require('path');
 // --file need no ID at all.
 const SHEET_ID = process.env.PROGRAM_SHEET_ID || '';
 const SHEET_NAME = 'Schedule';
+const POSTERS_SHEET_NAME = 'Posters';
 
 // Sheet dates are "M/DD" with no year.
 const CONF_YEAR = 2026;
@@ -78,15 +93,18 @@ const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
 // cell value. The "page formats" carry a pill label on the schedule
 // and generate an abstract page (pageTitle/permalink/slug); "Other" opts an
 // event out of both. Unknown values are treated as Other, never an error —
-// the raw cell text is carried separately for program.json.
-/** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null}>} */
+// the raw cell text is carried separately for program.json. A format with
+// `tab` has its page built from that other sheet tab instead of from
+// schedule rows: its events keep the pill and link into the page, but
+// never become entries on it.
+/** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null, tab?: string}>} */
 const FORMATS = {
   'bird of a feather': { label: '', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
   'keynote': { label: 'Keynote', pageTitle: 'Keynotes', permalink: 'program/keynotes/', slug: 'keynotes' },
   'notebook': { label: 'Notebook', pageTitle: 'Notebooks', permalink: 'program/notebooks/', slug: 'notebooks' },
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
-  'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },
+  'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters', tab: 'Posters' },
   'random access microtalk': { label: 'RAM', pageTitle: 'Random Access Microtalks', permalink: 'program/rams/', slug: 'rams' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
   'workshop': { label: '', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
@@ -156,17 +174,21 @@ const HEADER_ALIASES = {
   people: 'speakers',
   eventformat: 'format', format: 'format',
   eventdescription: 'infomd', infomd: 'infomd',
+  doi: 'doi',
   order: 'order',
   sessiondescription: 'info', info: 'info', notes: 'info',
 };
 
-function normalizeHeader(h) {
-  return HEADER_ALIASES[h.toLowerCase().replace(/[^a-z]/g, '')] || null;
+/** Header cell -> canonical key, or null for a column the map ignores.
+ * @param {string} h
+ * @param {Record<string, string>} aliases */
+function normalizeHeader(h, aliases = HEADER_ALIASES) {
+  return aliases[h.toLowerCase().replace(/[^a-z]/g, '')] || null;
 }
 
 /** Turn raw CSV rows into objects keyed by canonical column names. */
 function toRecords(rows) {
-  const header = rows[0].map(normalizeHeader);
+  const header = rows[0].map((h) => normalizeHeader(h));
   return rows.slice(1).map((cells, i) => {
     const rec = { _row: i + 2 }; // 1-based sheet row, counting the header
     header.forEach((key, col) => {
@@ -174,6 +196,41 @@ function toRecords(rows) {
     });
     return rec;
   }).filter((r) => r.start && r.session);
+}
+
+// The Posters tab has its own small header map. Any other column (a poster
+// number, say) maps to null and is read past.
+/** @type {Record<string, string>} */
+const POSTER_HEADER_ALIASES = {
+  authors: 'authors',
+  postertitle: 'title', title: 'title',
+  abstract: 'abstract',
+  doi: 'doi',
+};
+
+/**
+ * Posters tab rows -> {title, authors, abstractMd, doi, _row} in sheet
+ * order, rows without a title dropped. A missing "Poster Title" column is
+ * fatal: a renamed or absent tab must fail the build, not serve a stale
+ * page.
+ * @param {string[][]} rows
+ */
+function toPosterRecords(rows) {
+  const header = (rows[0] || []).map((h) => normalizeHeader(h, POSTER_HEADER_ALIASES));
+  if (!header.includes('title')) {
+    throw new Error(
+      `"${POSTERS_SHEET_NAME}" tab has no "Poster Title" column — is the tab named ${POSTERS_SHEET_NAME}?`);
+  }
+  return rows.slice(1).map((cells, i) => {
+    const rec = { _row: i + 2, title: '', authors: '', abstractMd: '', doi: '' };
+    header.forEach((key, col) => {
+      if (!key) return;
+      const v = (cells[col] || '').trim();
+      if (key === 'abstract') rec.abstractMd = v;
+      else rec[key] = v;
+    });
+    return rec;
+  }).filter((r) => r.title);
 }
 
 /**
@@ -335,6 +392,7 @@ function fold(records) {
           formatRaw: rec.format || '',
           format: normalizeFormat(rec.format || ''),
           infoMd: rec.infomd || '',
+          doi: rec.doi || '',
           order: rec.order ? parseInt(rec.order, 10) : Number.MAX_SAFE_INTEGER,
           _row: rec._row,
         });
@@ -372,11 +430,12 @@ function fold(records) {
                     // without the new columns produces byte-identical
                     // JSON. Underscored keys are internal (render/anchor
                     // plumbing) — the JSON writer strips them.
-                    /** @type {{title: string, speakers: string, people?: string[], format?: string, infoMd?: string, href?: string, _format?: (typeof FORMATS)[string], _anchor?: string}} */
+                    /** @type {{title: string, speakers: string, people?: string[], format?: string, infoMd?: string, doi?: string, href?: string, _format?: (typeof FORMATS)[string], _anchor?: string}} */
                     const talk = { title: t.title, speakers: t.speakers };
                     if (t.people.length) talk.people = t.people;
                     if (t.formatRaw) talk.format = t.formatRaw;
                     if (t.infoMd) talk.infoMd = t.infoMd;
+                    if (t.doi) talk.doi = t.doi;
                     if (t.format && t.format.slug) talk._format = t.format;
                     return talk;
                   }),
@@ -403,6 +462,28 @@ function slugify(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+/** Next unique anchor for `base` within `seen` (base -> count so far):
+ * the base itself first, then base-2, base-3, …
+ * @param {Map<string, number>} seen
+ * @param {string} base */
+function nextAnchor(seen, base) {
+  const n = (seen.get(base) || 0) + 1;
+  seen.set(base, n);
+  return n === 1 ? base : `${base}-${n}`;
+}
+
+/**
+ * Sheet-order anchors for the posters page, same slug + dedupe scheme as
+ * assignAnchors. Returns the anchor set so Schedule Poster events can be
+ * linked to a matching entry.
+ * @param {ReturnType<typeof toPosterRecords>} posters
+ */
+function assignPosterAnchors(posters) {
+  const seen = new Map();
+  for (const p of posters) p._anchor = nextAnchor(seen, slugify(p.title));
+  return new Set(posters.map((p) => p._anchor));
+}
+
 /**
  * Assign every page-format event a stable anchor for its abstract-page
  * entry, walking the folded days in schedule traversal order (day -> slot
@@ -412,22 +493,30 @@ function slugify(s) {
  * that also carry an Event Description or People get the site-relative
  * deep link the schedule (and program.json) renders — their page entry
  * has an abstract or a byline worth jumping to.
+ *
+ * Events of a tab-owned format (FORMATS[*].tab) get no entry of their own:
+ * they link to the matching Posters-tab entry when the slugified titles
+ * agree, else to the page top.
  * @param {ReturnType<typeof fold>} days
+ * @param {Set<string>} posterAnchors  anchors on the posters page (empty
+ *   when the tab was skipped or had no rows)
  */
-function assignAnchors(days) {
+function assignAnchors(days, posterAnchors) {
   const used = new Map(); // page slug -> Map(anchor base -> count)
   for (const day of days) {
     for (const slot of day.slots) {
       for (const session of slot.sessions) {
         for (const talk of session.talks) {
           if (!talk._format) continue;
+          if (talk._format.tab) {
+            const slug = slugify(talk.title);
+            talk.href = posterAnchors.has(slug)
+              ? `${talk._format.permalink}#${slug}` : talk._format.permalink;
+            continue;
+          }
           if (!used.has(talk._format.slug)) used.set(talk._format.slug, new Map());
-          const seen = used.get(talk._format.slug);
-          const base = slugify(talk.title);
-          const n = (seen.get(base) || 0) + 1;
-          seen.set(base, n);
-          talk._anchor = n === 1 ? base : `${base}-${n}`;
-          if (talk.infoMd || talk.speakers) talk.href = `${talk._format.permalink}#${talk._anchor}`;
+          talk._anchor = nextAnchor(used.get(talk._format.slug), slugify(talk.title));
+          if (talk.infoMd || talk.speakers || talk.doi) talk.href = `${talk._format.permalink}#${talk._anchor}`;
         }
       }
     }
@@ -501,13 +590,15 @@ function renderSession(s, pad) {
       // Page formats render a pill; Other/unknown/empty render nothing.
       const pill = t._format
         ? `<span class="talk__format">${esc(t._format.label)}</span> ` : '';
-      // With an abstract or byline (Event Description or People) on a page
-      // format, the title deep-links to its entry on that format's page.
-      // The include is Liquid-processed when Jekyll renders it, so
-      // relative_url keeps the baseurl correct.
+      // assignAnchors set href when the event has a page entry worth
+      // jumping to (or a tab-owned page to land on). The include is
+      // Liquid-processed when Jekyll renders it, so relative_url keeps the
+      // baseurl correct; the fragment, if any, stays outside the filter.
       let title = `<span class="talk__title">${esc(t.title)}</span>`;
-      if (t._format && (t.infoMd || t.speakers)) {
-        title = `<a class="talk__link" href="{{ '${t._format.permalink}' | relative_url }}#${t._anchor}">${title}</a>`;
+      if (t.href) {
+        const [page, anchor] = t.href.split('#');
+        const frag = anchor ? `#${anchor}` : '';
+        title = `<a class="talk__link" href="{{ '${page}' | relative_url }}${frag}">${title}</a>`;
       }
       // People deliberately don't render here — the schedule stays compact;
       // bylines live on the abstract pages (and in program.json).
@@ -787,10 +878,29 @@ const ABSTRACTS_DIR = path.join(REPO_ROOT, 'pages', 'program', 'abstracts');
 const PAGE_BANNER = '<!-- Generated by scripts/build-program.js — do not edit by hand. -->';
 
 /**
+ * One row on an abstract page. `meta` is an optional list of links shown on
+ * a line after the abstract (the DOI).
+ * @typedef {{title: string, people: string, infoMd: string, anchor: string, meta?: {href: string, text: string}[]}} AbstractEntry
+ */
+
+/** DOI cell -> absolute URL: already a URL, as given; else a bare DOI.
+ * @param {string} doi */
+function doiHref(doi) {
+  return /^https?:\/\//i.test(doi) ? doi : `https://doi.org/${doi}`;
+}
+
+/** Whether an entry has anything to disclose — an abstract or metadata
+ * links — and so renders as a collapsible <details>.
+ * @param {AbstractEntry} e */
+function hasBody(e) {
+  return Boolean(e.infoMd.trim() || (e.meta && e.meta.length));
+}
+
+/**
  * Group page-format events by page slug, in the same traversal order
  * assignAnchors used — the entry order on each abstract page.
  * @param {ReturnType<typeof fold>} days
- * @returns {Map<string, {format: (typeof FORMATS)[string], entries: {title: string, people: string, infoMd: string, anchor: string}[]}>}
+ * @returns {Map<string, {format: (typeof FORMATS)[string], entries: AbstractEntry[]}>}
  */
 function collectAbstracts(days) {
   const pages = new Map();
@@ -798,16 +908,20 @@ function collectAbstracts(days) {
     for (const slot of day.slots) {
       for (const session of slot.sessions) {
         for (const talk of session.talks) {
-          if (!talk._format) continue;
+          // Tab-owned pages are built from their own tab, not from here.
+          if (!talk._format || talk._format.tab) continue;
           if (!pages.has(talk._format.slug)) {
             pages.set(talk._format.slug, { format: talk._format, entries: [] });
           }
-          pages.get(talk._format.slug).entries.push({
+          /** @type {AbstractEntry} */
+          const entry = {
             title: talk.title,
             people: talk.speakers,
             infoMd: talk.infoMd || '',
             anchor: talk._anchor,
-          });
+          };
+          if (talk.doi) entry.meta = [{ href: doiHref(talk.doi), text: talk.doi }];
+          pages.get(talk._format.slug).entries.push(entry);
         }
       }
     }
@@ -822,11 +936,18 @@ function collectAbstracts(days) {
  * also the disclosure control's accessible name, which is why the byline
  * belongs inside it. People is omitted entirely when empty rather than
  * emitted as an empty span.
- * @param {{title: string, people: string}} e
+ *
+ * The entry's anchor goes on the heading: the theme's sidebar contents list
+ * (_includes/toc.html) reads ids off h2/h3 elements, so this is what makes
+ * the page's contents list carry one link per entry. A fragment lands on the heading, which is
+ * always visible even when the entry is closed; abstracts.js then opens
+ * the enclosing <details>, and the heading's scroll-margin-top clears the
+ * navbar.
+ * @param {{title: string, people: string, anchor: string}} e
  * @param {string} pad
  */
 function renderAbstractHeading(e, pad) {
-  const lines = [`${pad}<h2 class="abstract__heading">`];
+  const lines = [`${pad}<h2 class="abstract__heading" id="${e.anchor}">`];
   lines.push(`${pad}  <span class="abstract__title">${esc(e.title)}</span>`);
   if (e.people) lines.push(`${pad}  <span class="abstract__people">${esc(e.people)}</span>`);
   lines.push(`${pad}</h2>`);
@@ -834,48 +955,59 @@ function renderAbstractHeading(e, pad) {
 }
 
 /**
- * One entry: a native <details> disclosure when there is an abstract to
- * reveal, an inert <div> row when there is not — no control should open onto
- * nothing. The anchor goes on the wrapper, so it is both what
- * getElementById() opens and what scroll-margin-top clears.
+ * One entry: a native <details> disclosure when there is something to
+ * reveal — an abstract or a metadata line — and an inert <div> row when
+ * there is not: no control should open onto nothing. The anchor lives on
+ * the heading (see renderAbstractHeading), not the wrapper.
  *
  * The body reuses the schedule's Liquid-capture pattern (see renderSession):
  * kramdown will not process Markdown inside a block-level HTML element, so
  * markdownify does the conversion, and escLiquid keeps sheet content from
- * running Liquid tags or raw HTML.
- * @param {{title: string, people: string, infoMd: string, anchor: string}} e
+ * running Liquid tags or raw HTML. The metadata line is plain HTML after
+ * the capture; with no meta the body is exactly the capture string.
+ * @param {AbstractEntry} e
  * @param {string} pad
  */
 function renderAbstractEntry(e, pad) {
-  if (!e.infoMd.trim()) {
+  if (!hasBody(e)) {
     return [
-      `${pad}<div class="abstract abstract--static" id="${e.anchor}">`,
+      `${pad}<div class="abstract abstract--static">`,
       ...renderAbstractHeading(e, `${pad}  `),
       `${pad}</div>`,
     ];
   }
+  const body = [];
+  if (e.infoMd.trim()) {
+    body.push(`{% capture abstract_md %}${escLiquid(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}`);
+  }
+  if (e.meta && e.meta.length) {
+    const links = e.meta.map((m) => `<a href="${esc(m.href)}">${esc(m.text)}</a>`).join(' · ');
+    body.push(`<p class="abstract__meta">${links}</p>`);
+  }
   return [
-    `${pad}<details class="abstract" id="${e.anchor}">`,
+    `${pad}<details class="abstract">`,
     `${pad}  <summary class="abstract__summary">`,
     ...renderAbstractHeading(e, `${pad}    `),
     `${pad}  </summary>`,
-    `${pad}  <div class="abstract__body">{% capture abstract_md %}${escLiquid(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}</div>`,
+    `${pad}  <div class="abstract__body">${body.join('')}</div>`,
     `${pad}</details>`,
   ];
 }
 
 /**
  * @param {(typeof FORMATS)[string]} format
- * @param {{title: string, people: string, infoMd: string, anchor: string}[]} entries
+ * @param {AbstractEntry[]} entries
  */
 function renderAbstractPage(format, entries) {
-  // No menubar_toc: a page of collapsed titles is its own contents list.
+  // menubar_toc: the theme's sidebar contents list (as on the Attend and
+  // Sponsor pages), one link per entry — the way to copy a link to one.
   const lines = [
     '---',
     'layout: page',
     `title: ${format.pageTitle}`,
     `description: ${format.label} abstracts at USRSE'26`,
     'menubar: program',
+    'menubar_toc: true',
     `permalink: ${format.permalink}`,
     'set_last_modified: true',
     '---',
@@ -888,8 +1020,8 @@ function renderAbstractPage(format, entries) {
   ];
   // Rendered hidden and revealed by abstracts.js, so without JS the control
   // never appears promising something it cannot do. A page of entries that
-  // all lack abstracts has nothing to expand, so it gets no toolbar at all.
-  if (entries.some((e) => e.infoMd.trim())) {
+  // all lack a body has nothing to expand, so it gets no toolbar at all.
+  if (entries.some(hasBody)) {
     lines.push(
       '  <div class="abstracts__toolbar" hidden>',
       '    <button class="abstracts__toggle-all" type="button">Expand all</button>',
@@ -904,15 +1036,45 @@ function renderAbstractPage(format, entries) {
 }
 
 /**
+ * Posters-tab records -> page entries, the same shape collectAbstracts
+ * builds from schedule rows. Links to individual posters come from the
+ * page's sidebar contents list, not from the body.
+ * @param {ReturnType<typeof toPosterRecords>} posters
+ * @returns {AbstractEntry[]}
+ */
+function posterEntries(posters) {
+  return posters.map((p) => {
+    /** @type {AbstractEntry} */
+    const entry = { title: p.title, people: p.authors, infoMd: p.abstractMd, anchor: p._anchor };
+    if (p.doi) entry.meta = [{ href: doiHref(p.doi), text: p.doi }];
+    return entry;
+  });
+}
+
+/**
  * Write one page per active format and prune banner-carrying pages whose
  * format no longer appears in the sheet. Returns the page map for the
  * menubar writer.
  * @param {ReturnType<typeof fold>} days
+ * @param {ReturnType<typeof toPosterRecords>|null} posters  null = Posters
+ *   tab skipped (offline without --posters-file)
  */
-function writeAbstractPages(days) {
+function writeAbstractPages(days, posters) {
   const pages = collectAbstracts(days);
+  if (posters && posters.length) {
+    pages.set(FORMATS.poster.slug, { format: FORMATS.poster, entries: posterEntries(posters) });
+  }
   for (const [slug, { format, entries }] of pages) {
     writeIfChanged(path.join(ABSTRACTS_DIR, `${slug}.md`), renderAbstractPage(format, entries));
+  }
+  // Tab skipped: keep an existing generated posters page and its menu entry
+  // rather than pruning what this run did not rebuild. Registered after the
+  // write loop so the marker is never written; a fetched-but-empty tab
+  // (posters = []) falls through to pruning like any format that left.
+  const postersFile = path.join(ABSTRACTS_DIR, `${FORMATS.poster.slug}.md`);
+  if (posters === null && fs.existsSync(postersFile)
+      && fs.readFileSync(postersFile, 'utf8').includes(PAGE_BANNER)) {
+    pages.set(FORMATS.poster.slug, { format: FORMATS.poster, entries: [] });
   }
   if (fs.existsSync(ABSTRACTS_DIR)) {
     for (const name of fs.readdirSync(ABSTRACTS_DIR)) {
@@ -971,24 +1133,55 @@ function writeMenubar(pages) {
 // Main
 // ---------------------------------------------------------------------------
 
-async function loadCSV() {
-  const fileFlag = process.argv.indexOf('--file');
-  if (fileFlag !== -1) {
-    const file = process.argv[fileFlag + 1];
-    if (!file) throw new Error('--file requires a path');
-    console.log(`Reading ${file}`);
-    return fs.readFileSync(path.resolve(file), 'utf8');
-  }
+/** Value following a `--flag`, or null when the flag is absent. */
+function argValue(flag) {
+  const i = process.argv.indexOf(flag);
+  if (i === -1) return null;
+  const v = process.argv[i + 1];
+  if (!v || v.startsWith('--')) throw new Error(`${flag} requires a path`);
+  return v;
+}
+
+/** One tab of the program spreadsheet, via the gviz CSV export endpoint. */
+async function fetchSheet(sheetName) {
   if (!SHEET_ID) {
     throw new Error(
       'PROGRAM_SHEET_ID is not set. Export the sheet ID as an environment '
       + 'variable, or run with --file fixtures/schedule.csv.');
   }
-  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(SHEET_NAME)}`;
-  console.log(`Fetching "${SHEET_NAME}" tab from Google Sheets…`);
+  const url = `https://docs.google.com/spreadsheets/d/${SHEET_ID}/gviz/tq?tqx=out:csv&sheet=${encodeURIComponent(sheetName)}`;
+  console.log(`Fetching "${sheetName}" tab from Google Sheets…`);
   const res = await fetch(url, { redirect: 'follow' });
-  if (!res.ok) throw new Error(`Sheet fetch failed: HTTP ${res.status}`);
+  if (!res.ok) throw new Error(`"${sheetName}" tab fetch failed: HTTP ${res.status}`);
   return res.text();
+}
+
+/** Schedule tab: the --file path when given, else the live sheet. */
+async function loadScheduleCSV() {
+  const file = argValue('--file');
+  if (file) {
+    console.log(`Reading ${file}`);
+    return fs.readFileSync(path.resolve(file), 'utf8');
+  }
+  return fetchSheet(SHEET_NAME);
+}
+
+/**
+ * Posters tab: the --posters-file path when given; null (skipped) when the
+ * schedule came from a file and no posters file was given, so an offline
+ * build never needs the network; else the live sheet.
+ */
+async function loadPostersCSV() {
+  const file = argValue('--posters-file');
+  if (file) {
+    console.log(`Reading ${file}`);
+    return fs.readFileSync(path.resolve(file), 'utf8');
+  }
+  if (argValue('--file')) {
+    console.log('No --posters-file — skipping posters.');
+    return null;
+  }
+  return fetchSheet(POSTERS_SHEET_NAME);
 }
 
 /** Write only when content changed so a scheduled runner commits no churn. */
@@ -1005,16 +1198,20 @@ function writeIfChanged(file, content) {
 }
 
 async function main() {
-  const csv = await loadCSV();
+  const csv = await loadScheduleCSV();
+  const postersCsv = await loadPostersCSV();
   const records = toRecords(parseCSV(csv));
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
+  const posters = postersCsv === null ? null : toPosterRecords(parseCSV(postersCsv));
+  const posterAnchors = posters ? assignPosterAnchors(posters) : new Set();
   const days = fold(records);
-  assignAnchors(days);
+  assignAnchors(days, posterAnchors);
   assignSessionIds(days);
 
   const sessionCount = days.reduce(
     (n, d) => n + d.slots.reduce((m, s) => m + s.sessions.length, 0), 0);
   console.log(`Parsed ${records.length} rows -> ${days.length} days, ${sessionCount} sessions.`);
+  console.log(posters ? `Parsed ${posters.length} poster rows.` : 'Posters skipped.');
 
   writeIfChanged(OUT_HTML, renderHTML(days));
   writeIfChanged(OUT_GRID, renderGridHTML(days));
@@ -1022,7 +1219,7 @@ async function main() {
   writeIfChanged(OUT_JSON, JSON.stringify(
     { timezone: TZ_OFFSET, days },
     (key, value) => (key.startsWith('_') ? undefined : value), 2) + '\n');
-  writeMenubar(writeAbstractPages(days));
+  writeMenubar(writeAbstractPages(days, posters));
 }
 
 main().catch((err) => {

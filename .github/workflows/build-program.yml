@@ -1,5 +1,7 @@
-# Rebuilds the program page artifacts from the Schedule Google Sheet once a
-# day, committing only when the schedule actually changed.
+# Rebuilds the program page artifacts from the program Google Sheet once a
+# day — the Schedule tab (list, grid, program.json, per-format abstract
+# pages) and the Posters tab (the posters page) — committing only when
+# something actually changed.
 #
 # The sheet ID is never committed to the repo: set it as a repository secret
 # named PROGRAM_SHEET_ID (Settings -> Secrets and variables -> Actions ->

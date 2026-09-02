@@ -3,6 +3,7 @@ layout: page
 title: Workshops
 description:  abstracts at USRSE'26
 menubar: program
+menubar_toc: true
 permalink: program/workshops/
 set_last_modified: true
 ---
@@ -13,9 +14,9 @@ set_last_modified: true
   <div class="abstracts__toolbar" hidden>
     <button class="abstracts__toggle-all" type="button">Expand all</button>
   </div>
-  <details class="abstract" id="a-group-attempt-at-threat-modeling-for-research-software-systems">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="a-group-attempt-at-threat-modeling-for-research-software-systems">
         <span class="abstract__title">A Group Attempt at Threat Modeling for Research Software Systems</span>
         <span class="abstract__people">James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson</span>
       </h2>
@@ -26,18 +27,18 @@ This interactive, group-based workshop works towards a group understanding of th
 
 Participants are expected to bring a laptop.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <details class="abstract" id="journey-mapping-a-technique-to-see-opportunities-and-recognize-gaps-in-user-experience">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="journey-mapping-a-technique-to-see-opportunities-and-recognize-gaps-in-user-experience">
         <span class="abstract__title">Journey Mapping: A technique to see opportunities and recognize gaps in user experience</span>
         <span class="abstract__people">Johanna Cohoon, Rajshree Deshmukh, Md Hasan Shahriar Simanto, Mary Goldman, Katrina Turner, Sarah Poon</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Do you want to improve how users interact with your product or organization? By creating a journey map, you can recognize opportunities to improve the user's experience, increase their satisfaction, and create vital documentation for your development team. Journey maps are chronological narratives that visualize interactions between users and products or organizations. Additionally, journey maps can be valuable tools for building empathy with users and are appropriate for use at any point during your development lifecycle. Journey maps compel their authors to consider each step of a workflow in detail, making it easy to see when user experience drops off and when an interface can be simplified or made more predictable. This hands-on workshop will teach you how to create a journey map of your own and how it can be used to identify opportunities to improve user experience. Bring your computer.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <details class="abstract" id="fixer-upper-software-refactoring-code-for-reuse-and-impact">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="fixer-upper-software-refactoring-code-for-reuse-and-impact">
         <span class="abstract__title">Fixer-Upper Software: Refactoring Code for Reuse and Impact</span>
         <span class="abstract__people">Brian Ward and Jeff Soules</span>
       </h2>
