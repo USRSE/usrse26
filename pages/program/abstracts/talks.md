@@ -108,7 +108,17 @@ This talk will describe the design goals, architecture, deployment consideration
         <span class="abstract__people">Ian Cosden and Jeffrey Carver</span>
       </h2>
     </summary>
-    <div class="abstract__body"><p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.22049760">https://doi.org/10.5281/zenodo.22049760</a></p></div>
+    <div class="abstract__body">{% capture abstract_md %}There is a well-documented gap in software development and engineering training opportunities for intermediate and advanced research software developers. While introductory workshops are common, fewer programs address higher-level practices such as software design, collaborative development workflows, testing strategies, and long-term sustainability of research software.
+
+To address this gap, we present INnovative Training Enabled by a Research Software Engineering Community of Trainers (INTERSECT), an NSF-sponsored initiative focused on delivering Research Software Engineer (RSE)-led training to experienced developers of research software. INTERSECT is guided by three primary goals: 
+
+1) Develop an open-source, modular training framework that supports community contribution and reuse
+2) Deliver RSE-led research software engineering training targeting research software developers
+3) Grow and deepen the connections within the national community of Research Software Engineers
+
+Over the past three years, INTERSECT has designed and delivered three intensive 4.5-day Research Software Engineering Bootcamps, each serving approximately 35 participants from a diverse set of U.S.-based institutions and research domains. The bootcamps consist of a set of independent, hands-on modules covering topics such as software design, packaging and distribution, collaborative Git workflows, issue tracking, pull requests, documentation, licensing, project management, code review, testing, and CI/CD. Modules are intentionally designed to be stand-alone, enabling reuse and learners outside the full bootcamp context.
+
+This talk focuses on lessons learned from three years of INTERSECT bootcamps, emphasizing evidence gathered from pre- and post-bootcamp participant surveys and instructor reflections. We discuss what has worked well, where participants report the greatest learning gains, which topics remain challenging, and how bootcamp design choices (e.g., modularity and pacing) impact participant outcomes. We also highlight changes made across bootcamp iterations in response to early feedback and assessment data. We conclude with key takeaways for others designing advanced RSE training programs and discuss opportunities for community members to reuse INTERSECT materials, contribute modules, and/or participate in future bootcamps.{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.22049760">https://doi.org/10.5281/zenodo.22049760</a></p></div>
   </details>
   <div class="abstract abstract--static">
     <h2 class="abstract__heading" id="beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era">
