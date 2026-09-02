@@ -77,7 +77,7 @@ live-sheet output.
   `talk.infoMd || talk.speakers || talk.doi`. Verify: fixture build green;
   baseline diff identical to task 4's (the fixture has no DOI column yet).
 
-- [ ] 6. **Metadata line in entries** (Stories 3, 7; §4) — Add `doiHref()`
+- [x] 6. **Metadata line in entries** (Stories 3, 7; §4) — Add `doiHref()`
   and `hasBody()`. `collectAbstracts()` attaches `meta` from `talk.doi`.
   Rewrite `renderAbstractEntry()` (`:849-869`) to build the body from the
   optional capture and the optional `<p class="abstract__meta">`, keeping
