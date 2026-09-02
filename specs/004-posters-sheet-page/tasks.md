@@ -57,7 +57,7 @@ live-sheet output.
   duplicated title yields anchors `x` and `x-2` (temporary `console.log`,
   removed before commit).
 
-- [ ] 4. **Tab-owned format on the schedule side** (Story 5; §3) — Add
+- [x] 4. **Tab-owned format on the schedule side** (Story 5; §3) — Add
   `tab: 'Posters'` to `FORMATS.poster` (`:90`). Give `assignAnchors()` the
   `posterAnchors` parameter and the tab branch (match → `permalink#slug`,
   else `permalink`; `continue`). Change the `renderSession()` link test

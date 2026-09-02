@@ -79,15 +79,18 @@ const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
 // cell value. The "page formats" carry a pill label on the schedule
 // and generate an abstract page (pageTitle/permalink/slug); "Other" opts an
 // event out of both. Unknown values are treated as Other, never an error —
-// the raw cell text is carried separately for program.json.
-/** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null}>} */
+// the raw cell text is carried separately for program.json. A format with
+// `tab` has its page built from that other sheet tab instead of from
+// schedule rows: its events keep the pill and link into the page, but
+// never become entries on it.
+/** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null, tab?: string}>} */
 const FORMATS = {
   'bird of a feather': { label: '', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
   'keynote': { label: 'Keynote', pageTitle: 'Keynotes', permalink: 'program/keynotes/', slug: 'keynotes' },
   'notebook': { label: 'Notebook', pageTitle: 'Notebooks', permalink: 'program/notebooks/', slug: 'notebooks' },
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
-  'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters' },
+  'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters', tab: 'Posters' },
   'random access microtalk': { label: 'RAM', pageTitle: 'Random Access Microtalks', permalink: 'program/rams/', slug: 'rams' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
   'workshop': { label: '', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
@@ -473,15 +476,27 @@ function assignPosterAnchors(posters) {
  * that also carry an Event Description or People get the site-relative
  * deep link the schedule (and program.json) renders — their page entry
  * has an abstract or a byline worth jumping to.
+ *
+ * Events of a tab-owned format (FORMATS[*].tab) get no entry of their own:
+ * they link to the matching Posters-tab entry when the slugified titles
+ * agree, else to the page top.
  * @param {ReturnType<typeof fold>} days
+ * @param {Set<string>} posterAnchors  anchors on the posters page (empty
+ *   when the tab was skipped or had no rows)
  */
-function assignAnchors(days) {
+function assignAnchors(days, posterAnchors) {
   const used = new Map(); // page slug -> Map(anchor base -> count)
   for (const day of days) {
     for (const slot of day.slots) {
       for (const session of slot.sessions) {
         for (const talk of session.talks) {
           if (!talk._format) continue;
+          if (talk._format.tab) {
+            const slug = slugify(talk.title);
+            talk.href = posterAnchors.has(slug)
+              ? `${talk._format.permalink}#${slug}` : talk._format.permalink;
+            continue;
+          }
           if (!used.has(talk._format.slug)) used.set(talk._format.slug, new Map());
           talk._anchor = nextAnchor(used.get(talk._format.slug), slugify(talk.title));
           if (talk.infoMd || talk.speakers) talk.href = `${talk._format.permalink}#${talk._anchor}`;
@@ -558,13 +573,15 @@ function renderSession(s, pad) {
       // Page formats render a pill; Other/unknown/empty render nothing.
       const pill = t._format
         ? `<span class="talk__format">${esc(t._format.label)}</span> ` : '';
-      // With an abstract or byline (Event Description or People) on a page
-      // format, the title deep-links to its entry on that format's page.
-      // The include is Liquid-processed when Jekyll renders it, so
-      // relative_url keeps the baseurl correct.
+      // assignAnchors set href when the event has a page entry worth
+      // jumping to (or a tab-owned page to land on). The include is
+      // Liquid-processed when Jekyll renders it, so relative_url keeps the
+      // baseurl correct; the fragment, if any, stays outside the filter.
       let title = `<span class="talk__title">${esc(t.title)}</span>`;
-      if (t._format && (t.infoMd || t.speakers)) {
-        title = `<a class="talk__link" href="{{ '${t._format.permalink}' | relative_url }}#${t._anchor}">${title}</a>`;
+      if (t.href) {
+        const [page, anchor] = t.href.split('#');
+        const frag = anchor ? `#${anchor}` : '';
+        title = `<a class="talk__link" href="{{ '${page}' | relative_url }}${frag}">${title}</a>`;
       }
       // People deliberately don't render here — the schedule stays compact;
       // bylines live on the abstract pages (and in program.json).
@@ -855,7 +872,8 @@ function collectAbstracts(days) {
     for (const slot of day.slots) {
       for (const session of slot.sessions) {
         for (const talk of session.talks) {
-          if (!talk._format) continue;
+          // Tab-owned pages are built from their own tab, not from here.
+          if (!talk._format || talk._format.tab) continue;
           if (!pages.has(talk._format.slug)) {
             pages.set(talk._format.slug, { format: talk._format, entries: [] });
           }
@@ -1100,7 +1118,7 @@ async function main() {
   const posters = postersCsv === null ? null : toPosterRecords(parseCSV(postersCsv));
   const posterAnchors = posters ? assignPosterAnchors(posters) : new Set();
   const days = fold(records);
-  assignAnchors(days);
+  assignAnchors(days, posterAnchors);
   assignSessionIds(days);
 
   const sessionCount = days.reduce(
