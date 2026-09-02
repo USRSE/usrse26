@@ -104,8 +104,11 @@
    `.session + .session` on the schedule.
    -------------------------------------------------------------------------- */
 
-.abstract {
-  scroll-margin-top: 5rem;   /* deep links clear the fixed navbar */
+/* Deep links target the entry heading (its id lives there so the theme's
+   sidebar contents list can find it), so the margin that clears the fixed
+   navbar goes on the heading. */
+.abstract__heading {
+  scroll-margin-top: 5rem;
 }
 
 .abstract + .abstract {
@@ -185,6 +188,17 @@
   padding: 0 0 1.1rem var(--chevron-gutter);
   font-size: 0.9375rem;
   line-height: 1.55;
+}
+
+/* --------------------------------------------------------------------------
+   Sidebar contents list — pages with `menubar_toc` get one link per entry,
+   built by the theme from each heading's inner HTML. The byline span comes
+   along for the ride; the list wants titles only, so it is dropped here
+   (display:none also keeps it out of the link's accessible name).
+   -------------------------------------------------------------------------- */
+
+.nav__list .abstract__people {
+  display: none;
 }
 
 /* --------------------------------------------------------------------------

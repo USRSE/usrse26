@@ -103,9 +103,10 @@ the build fails rather than serving a stale page.
 
 Each abstract page lists its entries as collapsed rows carrying the title and byline, with
 the abstract behind a native `<details>` disclosure. Below the abstract, a metadata line
-carries the DOI link when the row has one and, on the Posters page, a "Link to this poster"
-permalink that puts the entry's anchor in the address bar for sharing. An entry with no
-Event Description and no DOI renders as a plain row with no control to open. The pages link two hand-written assets, so
+carries the DOI link when the row has one. An entry with no Event Description and no DOI
+renders as a plain row with no control to open. The Posters page also gets the theme's
+sidebar contents list (`menubar_toc`, as on the Attend and Sponsor pages), one link per
+poster, which is how a visitor gets a shareable link to a single poster. The pages link two hand-written assets, so
 both must ship alongside the generator: `assets/css/abstracts.css` styles the rows, and
 `assets/js/abstracts.js` opens the entry a schedule deep link points at, drives the
 expand/collapse-all control, and opens every entry for printing. The disclosure toggle

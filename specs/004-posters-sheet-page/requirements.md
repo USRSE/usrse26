@@ -284,6 +284,12 @@ generated artifacts so that scheduled rebuilds stay quiet and reproducible.
   same rule as posters. Not shown on the schedule list or grid.
 - **Permalinks:** posters only. Schedule-derived entries already have deep
   links from the schedule and get no permalink line (unchanged output).
+  *Superseded 2026-09-02 after review:* the in-body "Link to this poster"
+  line was dropped in favor of the theme's sidebar contents list
+  (`menubar_toc`, as on the Attend and Sponsor pages), one link per
+  poster. To make the theme's TOC include find them, entry anchors moved
+  from the `<details>` wrapper to the `<h2>` heading on every abstract
+  page, and `abstracts.js` opens the enclosing `<details>`.
 - **Columns:** `Authors`, `Poster Title`, `Abstract`, `DOI`. The generator
   ignores any column it does not recognize.
 - **Permalink placement:** inside the expanded body, on a metadata line with
