@@ -76,348 +76,863 @@ Our community of BSSw Fellowship alums serve as leaders, mentors, and consultant
       <span class="abstract__people">Alex Koufos, Lance Parsons</span>
     </h2>
   </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-one-gpu-to-many-software-engineering-patterns-for-scaling-scientific-python-to-multi-node-hpc">
-      <span class="abstract__title">From One GPU to Many: Software Engineering Patterns for Scaling Scientific Python to Multi-Node HPC</span>
-      <span class="abstract__people">Robert Bates</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="the-assumption-stack-what-ai-assisted-development-takes-for-granted-and-who-gets-left-out">
-      <span class="abstract__title">The Assumption Stack: What AI-Assisted Development Takes for Granted, and Who Gets Left Out</span>
-      <span class="abstract__people">Zeinab Serhan</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="open-science-data-federation-pelican-project-and-national-research-platform-providing-data-to-your-project">
-      <span class="abstract__title">Open Science data federation, Pelican Project, and National Research platform: providing data to your project</span>
-      <span class="abstract__people">Fabio Andrijauskas</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="repropilot-an-ai-assisted-reproducibility-framework-for-sustainable-scientific-software-and-ai-enabled-hpc-workflows">
-      <span class="abstract__title">ReproPilot: An AI-Assisted Reproducibility Framework for Sustainable Scientific Software and AI-Enabled HPC Workflows</span>
-      <span class="abstract__people">Suzan Anwar</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="accessing-data-using-the-open-science-data-federation-emerging-scholars-perspective">
-      <span class="abstract__title">Accessing data using the Open Science Data Federation — emerging scholars’ perspective</span>
-      <span class="abstract__people">Fabio Andrijauskas, Nitza Camila Alvarado Gutierrez, Natalia Alejandra Sanchez Gomez</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-working-to-working-sustaining-a-wildlife-detection-pipeline-through-dependency-drift">
-      <span class="abstract__title">From Working to Working: Sustaining a Wildlife-Detection Pipeline Through Dependency Drift</span>
-      <span class="abstract__people">Katherine Nunn, Bernadette Boscoe</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="using-gpu-only-buffers-in-openmp-target-offload">
-      <span class="abstract__title">Using GPU-only buffers in OpenMP Target Offload</span>
-      <span class="abstract__people">Igor Sfiligoi</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="when-science-admits-its-shortcuts-detecting-and-managing-self-admitted-technical-debt-in-scientific-software">
-      <span class="abstract__title">When Science Admits Its Shortcuts: Detecting and Managing Self-Admitted Technical Debt in Scientific Software</span>
-      <span class="abstract__people">Eric Melin, Nasir Eisty, Gregory Watson, Addi Malviya-Thakur</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="aligning-research-software-teams-strategies-from-ux">
-      <span class="abstract__title">Aligning Research Software Teams: Strategies from UX</span>
-      <span class="abstract__people">Kate Arneson</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="stamped-principles-pragmatic-practices-for-reproducible-science">
-      <span class="abstract__title">STAMPED Principles: Pragmatic practices for reproducible science</span>
-      <span class="abstract__people">Cody Baker, Austin Macdonald, John Lee, Yaroslav Halchenko</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="llm-customization-for-merge-conflict-resolution-in-the-planet-s-largest-git-codebase">
-      <span class="abstract__title">LLM Customization for Merge Conflict Resolution in the planet's largest git codebase</span>
-      <span class="abstract__people">Advitya Gemawat</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="audit-your-own-metadata-in-the-age-of-ai-where-surfaces-disagree-about-your-software">
-      <span class="abstract__title">Audit Your Own Metadata in the Age of AI: Where Surfaces Disagree About Your Software</span>
-      <span class="abstract__people">Pengyin Shan</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="bssw-io-community-resources-for-improving-scientific-software-productivity-and-sustainability">
-      <span class="abstract__title">BSSw.io: Community resources for improving scientific software productivity and sustainability</span>
-      <span class="abstract__people">Rinku Gupta, David Bernholdt, Roscoe Bartlett, Keith Beattie, Patricia A Grubel, Lois Curfman McInnes</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="how-to-share-your-data-interactively-using-datapages">
-      <span class="abstract__title">How to share your data interactively using Datapages</span>
-      <span class="abstract__people">Mika Braginsky, Michael Frank</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="oeps-an-open-source-data-ecosystem-for-opioid-environment-policy-scan">
-      <span class="abstract__title">OEPS: An Open-Source Data Ecosystem for Opioid Environment Policy Scan</span>
-      <span class="abstract__people">Yong Wook Kim, Adam Cox, Mahjabin Kabir Adrita, Sara Lambert, Mallikarjun Bhusnoor, Marynia Kolak</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="introducing-quail-an-environment-for-agentic-qualitative-analysis">
-      <span class="abstract__title">Introducing Quail: An Environment for Agentic Qualitative Analysis</span>
-      <span class="abstract__people">Dashiell Coyier</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="sustaining-data-rich-web-portals-with-limited-rse-resources-a-headless-cms-pattern">
-      <span class="abstract__title">Sustaining Data-Rich Web Portals with Limited RSE Resources: A Headless CMS Pattern</span>
-      <span class="abstract__people">Vismayak Mohanarajan, Jong Lee</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="initial-developments-in-ai-informed-quantum-device-engineering">
-      <span class="abstract__title">Initial Developments in AI-Informed Quantum Device Engineering</span>
-      <span class="abstract__people">Adit Shah, Gil Speyer, Dragica Vasileska</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="miasma-an-open-source-lightweight-countermeasure-against-unauthorized-ai-web-scraping">
-      <span class="abstract__title">Miasma: An Open-Source, Lightweight Countermeasure Against Unauthorized AI Web Scraping</span>
-      <span class="abstract__people">Austin Weeks</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="user-experience-resources-for-rses-two-bssw-fellowship-projects">
-      <span class="abstract__title">User Experience Resources for RSEs — Two BSSw Fellowship Projects</span>
-      <span class="abstract__people">Mary Goldman, Drew Paine</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="democratizing-ai-responsibly-through-research-software-a-case-study-in-suicide-prevention-research">
-      <span class="abstract__title">Democratizing AI Responsibly Through Research Software: A Case Study in Suicide Prevention Research</span>
-      <span class="abstract__people">Jasmine Falk, Kara Emery</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="advancing-the-data-assimilation-research-testbed-dart-as-an-early-career-software-engineer">
-      <span class="abstract__title">Advancing The Data Assimilation Research Testbed (DART) as an Early-Career Software Engineer</span>
-      <span class="abstract__people">Marlena Smith</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="is-the-datasquad-model-for-you">
-      <span class="abstract__title">Is the DataSquad Model For You?</span>
-      <span class="abstract__people">Paula Lackie</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="reproducible-software-environments-for-hardware-accelerated-science">
-      <span class="abstract__title">Reproducible Software Environments for Hardware-Accelerated Science</span>
-      <span class="abstract__people">Matthew Feickert</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="gray-swans-in-two-sciences-a-portable-diagnosis-for-where-ai-for-science-models-break">
-      <span class="abstract__title">Gray Swans in Two Sciences: A Portable Diagnosis for Where AI-for-Science Models Break</span>
-      <span class="abstract__people">Mohsen Zand</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="tabray-a-python-package-for-generating-and-comparing-tabular-and-array-data-structures-with-different-topologies">
-      <span class="abstract__title">tabray: a Python Package for Generating and Comparing Tabular and Array Data Structures with Different Topologies</span>
-      <span class="abstract__people">Enrico Milanese</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="building-ese-dashboard-with-ai-assisted-packets-design-system">
-      <span class="abstract__title">Building ESE Dashboard with AI Assisted Packets Design System</span>
-      <span class="abstract__people">Charles DeVilholm</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="optimizing-plasma-based-chip-manufacturing-using-hpc-and-agentic-ai">
-      <span class="abstract__title">Optimizing Plasma-based chip manufacturing using HPC and agentic AI</span>
-      <span class="abstract__people">Rohith Muthukumar, Yingheng Tang, Jorge Quiroga, Andrew Myers, Andrew Fierro, Revathi Jambunathan</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="agent-friendly-provenance-capture-with-con-duct">
-      <span class="abstract__title">Agent-friendly Provenance Capture with `con-duct`</span>
-      <span class="abstract__people">Austin Macdonald, Cody Baker, John Lee, Yaroslav Halchenko</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="abstracting-the-mess-building-a-framework-agnostic-out-of-core-interpretability-pipeline-for-ai">
-      <span class="abstract__title">Abstracting the Mess: Building a Framework-Agnostic, Out-of-Core Interpretability Pipeline for AI</span>
-      <span class="abstract__people">Zakaria Al Mamun</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="improving-peer-code-review-in-research-software-from-rse-practices-to-evaluating-llm-generated-feedback">
-      <span class="abstract__title">Improving Peer Code Review in Research Software: From RSE Practices to Evaluating LLM-Generated Feedback</span>
-      <span class="abstract__people">Md Ariful Islam Malik, Jeffrey C. Carver, Nasir U. Eisty</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="an-overview-of-ensuring-consistent-scheduler-policies-across-a-multi-system-facility">
-      <span class="abstract__title">An Overview of Ensuring Consistent Scheduler Policies Across a Multi-System Facility</span>
-      <span class="abstract__people">James Davis, Aaron Barlow, Alan Longcoy</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-bounded-to-decidable-extending-beacons-verification-to-gated-and-attention-based-pde-solvers">
-      <span class="abstract__title">From Bounded to Decidable: Extending BEACONS Verification to Gated and Attention-Based PDE Solvers</span>
-      <span class="abstract__people">Aanya Bhandari</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="stamped-in-practice-reproducing-a-scientific-result-using-abcd-neuroimaging-data">
-      <span class="abstract__title">STAMPED in Practice: Reproducing a Scientific Result Using ABCD Neuroimaging Data</span>
-      <span class="abstract__people">John Lee, Austin Macdonald, Cody Baker, Yaroslav Halchenko</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="beyond-the-lab-website-reusing-structured-research-metadata-across-lab-operations">
-      <span class="abstract__title">Beyond the Lab Website: Reusing Structured Research Metadata Across Lab Operations</span>
-      <span class="abstract__people">John Lee, Isaac To, Yaroslav Halchenko</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="pscompose-a-web-ui-to-compose-perfsonar-configurations-in-the-age-of-ai">
-      <span class="abstract__title">pSCompose: A Web UI to compose perfSONAR Configurations in the Age of AI</span>
-      <span class="abstract__people">Johanna Lee</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="classical-software-to-support-quantum-computing">
-      <span class="abstract__title">Classical Software to Support Quantum Computing</span>
-      <span class="abstract__people">Charles Ferenbaugh</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-microscopy-to-simulation-an-end-to-end-research-software-pipeline-for-computational-neuroscience">
-      <span class="abstract__title">From Microscopy to Simulation: An End-to-End Research Software Pipeline for Computational Neuroscience</span>
-      <span class="abstract__people">Jordan Fox, Brian Fischer, William Debello, Jose Peña</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="harness-engineering-for-agentic-ai-a-checklist-for-research-software-engineers">
-      <span class="abstract__title">Harness Engineering for Agentic AI: A Checklist for Research Software Engineers</span>
-      <span class="abstract__people">Yaping Yang</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="migrating-an-entrenched-community-between-laboratory-information-management-systems">
-      <span class="abstract__title">Migrating an Entrenched Community between Laboratory Information Management Systems</span>
-      <span class="abstract__people">Jonathan Guyer</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="getting-perspectives-on-quality-in-the-age-of-ai">
-      <span class="abstract__title">Getting Perspectives on Quality in the Age of AI</span>
-      <span class="abstract__people">Connor Brynteson, Ella Luedeke, Italo Santos, Reed Milewicz</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="designing-trustworthy-ai-systems-for-modeling-critical-minerals-recovery-processes">
-      <span class="abstract__title">Designing Trustworthy AI Systems for Modeling Critical Minerals Recovery Processes</span>
-      <span class="abstract__people">Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter, Sheng Pang, Tanushree Subramanian</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="fitting-cognitive-simulators-to-people-distributed-and-hierarchical-parameter-estimation-in-psyneulink">
-      <span class="abstract__title">Fitting Cognitive Simulators to People: Distributed and Hierarchical Parameter Estimation in PsyNeuLink</span>
-      <span class="abstract__people">Aryan Pandey, David Turner, Jonathan D. Cohen</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="coreloop-lusee-night-flight-software">
-      <span class="abstract__title">Coreloop - LuSEE-Night Flight Software</span>
-      <span class="abstract__people">Arnur Nigmetov</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="building-ai-physics-digital-twins-for-hurricanes-with-fourcastnet-v2-and-erf">
-      <span class="abstract__title">Building AI–Physics Digital Twins for Hurricanes With FourCastNet v2 and ERF</span>
-      <span class="abstract__people">Mahesh Natarajan, Aaron Lattanzi, Ann Almgren, Jean Sexton, Weiqun Zhang, Travis O'Brien, William Collins</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="ai-and-the-reorganization-of-rse-work">
-      <span class="abstract__title">AI and the reorganization of RSE work</span>
-      <span class="abstract__people">Will Sutherland, Anissa Tanweer, Jim Herbsleb, Thomas Bock, Curtis Atkisson, Bogdan Vasilescu</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="introducing-pegasusai-studio-a-new-way-of-artificial-intelligence-assisted-workflow-management-on-national-cyberinfrastructure">
-      <span class="abstract__title">Introducing PegasusAI Studio: A new way of Artificial Intelligence Assisted Workflow Management on National Cyberinfrastructure</span>
-      <span class="abstract__people">Mats Rynge, Komal Thareja, Karan Vahi</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="quarto-manuals-a-starter-template-and-framework-for-notebook-driven-scientific-software-operations-manuals">
-      <span class="abstract__title">Quarto Manuals: A Starter Template and Framework for Notebook-Driven Scientific Software Operations Manuals</span>
-      <span class="abstract__people">Tinashe Tapera, Michelle Audirac, Danielle Braun, Christopher Golden</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="connecting-scientific-data-in-the-age-of-ai">
-      <span class="abstract__title">Connecting Scientific Data in the Age of AI</span>
-      <span class="abstract__people">Dorota Jarecka, Tek Raj Chhetri, Nima Dehghani, Nader Nikbakht, Suliman Sharif, Puja Trivedi, David Keator, Satrajit Ghosh</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="a-multi-agent-ai-system-for-automating-tokamak-plasma-simulation-for-nuclear-fusion-energy">
-      <span class="abstract__title">A Multi-agent AI System for Automating Tokamak-Plasma Simulation for Nuclear Fusion Energy.</span>
-      <span class="abstract__people">Sarthak Sharma, Junchao Zhang, Lois Curfman McInnes</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="palyim-a-modular-open-source-science-gateway-for-ai-enabled-palynology-image-analysis">
-      <span class="abstract__title">PALYIM: A Modular, Open-Source Science Gateway for AI-Enabled Palynology Image Analysis</span>
-      <span class="abstract__people">Sandeep Puthanveetil Satheesan, Luigi Marini, Shu Kong, Carlos Jaramillo, Kenton G. McHenry, Charless C. Fowlkes, Surangi W. Punyasena</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="preprint-bot-an-ai-based-tool-for-staying-abreast-of-research-papers-on-arxiv">
-      <span class="abstract__title">Preprint Bot: an AI-based tool for staying abreast of research papers on arXiv</span>
-      <span class="abstract__people">Collin Capano, William Gearty</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="building-a-self-improving-agentic-harness-for-rse-projects">
-      <span class="abstract__title">Building a Self-Improving Agentic Harness for RSE Projects</span>
-      <span class="abstract__people">Geoffrey Lentner</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="spotmod-parallel-simulation-of-runoff-exposure-from-precision-field-applications">
-      <span class="abstract__title">SPOTMOD: Parallel simulation of runoff exposure from precision field applications</span>
-      <span class="abstract__people">Tj Schultz, Jorge Olivares-Rivas, Stefan Reichenberger, Robin Sur, Rafael Muñoz-Carpena</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="philologically-grounded-error-generation-and-machine-learning-based-correction-for-premodern-greek">
-      <span class="abstract__title">Philologically Grounded Error Generation and Machine-Learning Based Correction for Premodern Greek</span>
-      <span class="abstract__people">Jacob Murel, Lune Duong</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="schema-drift-in-public-financial-regulatory-data-a-validation-harness-for-reproducible-and-ai-assisted-analysis">
-      <span class="abstract__title">Schema Drift in Public Financial-Regulatory Data: A Validation Harness for Reproducible and AI-Assisted Analysis</span>
-      <span class="abstract__people">Elmurad Abbasov</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="test-suite-decluttering-why-doing-too-many-tests-became-a-problem-for-our-project-and-what-we-tried-to-address-it">
-      <span class="abstract__title">Test suite decluttering; why doing too many tests became a problem for our project, and what we tried to address it</span>
-      <span class="abstract__people">Sufi Kaur, Ludovico Bianchi</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-one-gpu-to-many-software-engineering-patterns-for-scaling-scientific-python-to-multi-node-hpc">
+        <span class="abstract__title">From One GPU to Many: Software Engineering Patterns for Scaling Scientific Python to Multi-Node HPC</span>
+        <span class="abstract__people">Robert Bates</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific software teams routinely face a familiar problem: a research prototype works beautifully on one GPU, but the science needs it to run on a hundred. The path from prototype to platform is rarely about the parallelization framework chosen — it is about implicit assumptions baked into the original code, the shared state that emerges as the obvious bottleneck only after the obvious one is fixed, and the domain knowledge required to tell a real optimization opportunity from a tempting dead end. This poster distills software engineering patterns for that journey, drawing on an engagement that took α,β-CROWN (VerifiedIntelligence, n.d.; Wang et al., 2021), the winning tool in VNN-COMP 2021–2025 (Brix et al., 2024), from a single-GPU research prototype to a multi-node, multi-GPU verification platform.
+
+The first pattern is recognizing that frameworks are necessary but not sufficient. After evaluating several Python-compatible options, we adopted Ray (Moritz et al., 2018) for its pipeline abstractions and actor-based execution model, and re-architected both branch-and-bound (BaB) variants on top of it. Adopting Ray was the easy part; the engineering work that mattered came from confronting shared state. A centralized global task queue, invisible at single-GPU scale, became the dominant bottleneck the moment work was distributed. We replaced it with a hierarchical task-management scheme: a global pool at the cluster level, local queues per GPU, synchronization only when necessary. The general lesson — that shared mutable state silently caps the optimizations available to you, and that scaling exposes it before any profiler will — is one we expect other RSE teams to recognize from their own engagements.
+
+The second pattern is letting domain intuition steer where to dig. Verification workloads have characteristic search-space shapes, and conversations with the PIs about which subproblems tend to dominate runtime were more valuable than any general-purpose profiler in deciding which decoupling efforts to pursue and which to abandon. Treating the PIs as collaborators on the optimization strategy — not just as customers of the final code — let us short-circuit several promising-looking directions before sinking weeks into them.
+
+The result was a hierarchically scheduled, Ray-based distributed verifier that exceeded the project's 4:3 scale-out target on benchmark jobs, achieving 4:3.8 for ReLU BaB and 4:3.9 for Input BaB while preserving ~90% of single-GPU performance. CI coverage, documentation, and a single-command SLURM execution harness shipped with the code and were merged upstream. More important than the numbers, though, are the transferable practices the poster shares: how to evaluate parallelization frameworks for an existing Python research stack, how to recognize shared-state ceilings before they cap your speedup, and how to structure an RSEPI engagement so that domain intuition shapes the optimization plan from the start. Project details, additional metrics, and visualizations are available on the CSSE project showcase (Georgia Tech Center for Scientific Software Engineering, n.d.).{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="the-assumption-stack-what-ai-assisted-development-takes-for-granted-and-who-gets-left-out">
+        <span class="abstract__title">The Assumption Stack: What AI-Assisted Development Takes for Granted, and Who Gets Left Out</span>
+        <span class="abstract__people">Zeinab Serhan</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Software development is rapidly coming to assume AI assistance as a baseline: in productivity expectations, in hiring, and increasingly in how research software itself is built. But that assumption holds only under conditions much of the world does not share. This poster asks what AI-assisted development means for research software engineers in low-resource countries and communities, and whether building research software around an assumed dependence on AI is equitable, or even wise.
+
+This poster proposes a provisional framework, the assumption stack: a set of preconditions on which AI-assisted development quietly depends, each one an equity fault line.
+
+1. Connectivity: Most coding assistants round-trip to a cloud-hosted model and degrade where bandwidth is intermittent, throttled, or capped.
+
+2. Affordability and payment: Subscriptions and metered APIs assume particular currencies and payment rails, locking out skilled developers who cannot pay in the expected way.
+
+3. Compute and energy: Modern hardware and reliable power are assumed, while heavy compute remains concentrated in a few geographies.
+
+4. Language and context: Models perform best in English and mainstream stacks, so developers working in other languages or on local systems receive less uplift even with full access.
+
+5. Governance: Tools, standards, and priorities are largely set centrally and delivered outward, with little participation from those who use them.
+
+The consequences are critical for research software and for science itself. As scientific progress comes to depend on AI-accelerated work, these preconditions determine who can prototype, reproduce, and iterate quickly. Well-resourced developers reproduce results and extend the shared software base faster, while developers in less-resourced settings contribute less, constrained by access rather than ability. Reproducibility that depends on compute and connectivity becomes a privilege rather than a standard, and the capacity to build, maintain, and vouch for research software concentrates accordingly.
+
+As work in progress, this poster maps the assumption stack against current evidence, presents design and structural responses (offline and open-weight models, low-bandwidth and intermittency-tolerant workflows, multilingual tooling, shared compute, and participatory governance), and invites the community to weigh a harder question: should research software assume AI access at all, when that assumption excludes whole regions and communities?{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="open-science-data-federation-pelican-project-and-national-research-platform-providing-data-to-your-project">
+        <span class="abstract__title">Open Science data federation, Pelican Project, and National Research platform: providing data to your project</span>
+        <span class="abstract__people">Fabio Andrijauskas</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The Open Science Data Federation (OSDF) and the National Research Platform (NRP) provide a reliable, secure environment for high-performance scientific research. By integrating the OSDF’s robust data distribution capabilities with the NRP’s distributed, Kubernetes-based "Nautilus" infrastructure, researchers can confidently orchestrate data-intensive workflows across a federated backbone of compute and networking resources. As a community-driven cyberinfrastructure, the combined OSDF and NRP framework provides a scalable, vendor-neutral environment that bridges the gap between heterogeneous data repositories and high-speed processing, fostering trust and confidence in open science collaboration. The Pelican platform provides a state-of-the-art solution to provide data to any project, using HTTP requests, the HTCondor plugin, and file system support. All these parts create an environment with seamless data access, and an agile deployment process delivers an efficient system for data to any project.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="repropilot-an-ai-assisted-reproducibility-framework-for-sustainable-scientific-software-and-ai-enabled-hpc-workflows">
+        <span class="abstract__title">ReproPilot: An AI-Assisted Reproducibility Framework for Sustainable Scientific Software and AI-Enabled HPC Workflows</span>
+        <span class="abstract__people">Suzan Anwar</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific software is becoming increasingly dependent on artificial intelligence (AI), complex software stacks, and high-performance computing (HPC), making reproducibility more difficult to achieve. Missing documentation, inconsistent software environments, limited testing, and incomplete experiment tracking frequently prevent researchers from reproducing computational results across platforms. This poster presents ReproPilot, an AI-assisted reproducibility framework designed to help researchers evaluate and improve the reproducibility of scientific software repositories. The framework combines a transparent rule-based assessment with a local large language model (LLM) to provide both quantitative reproducibility scores and human-readable recommendations. Unlike cloud-based solutions, the framework employs a privacy-preserving local LLM, making it suitable for restricted HPC environments. The framework evaluates repositories using reproducibility indicators including documentation, dependency management, environment specifications, testing, containerization, experiment tracking, licensing, and HPC-specific configuration. The deterministic assessment provides an objective reproducibility score, while the LLM explains deficiencies, prioritizes improvements, and recommends practical remediation steps using repository metadata and selected file contents rather than repository URLs alone. The current prototype includes an executable Jupyter notebook, reusable repository templates, an extensible scoring rubric, and educational resources developed through the Better Scientific Software (BSSw) Fellowship. The poster presents the framework architecture, demonstrates before-and-after reproducibility assessment on representative repositories, discusses lessons learned from prototype development, and outlines future work toward domain-specific reproducibility profiles and self-healing scientific workflows.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="accessing-data-using-the-open-science-data-federation-emerging-scholars-perspective">
+        <span class="abstract__title">Accessing data using the Open Science Data Federation — emerging scholars’ perspective</span>
+        <span class="abstract__people">Fabio Andrijauskas, Nitza Camila Alvarado Gutierrez, Natalia Alejandra Sanchez Gomez</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Data access is the first step in running any computer simulation, artificial intelligence processing, and many other forms of research. The Pelican platform is a data distribution software used to access international data through the Open Science Data Federation (OSDF). This software states: ”Software designed to make data distribution easy.” But for some researchers, installing the Pelican platform client can be challenging if they lack prior knowledge of POSIX/command-line interfaces. The purpose of this investigation is to analyze the process of using the OSDF through the Pelican Platform. To evaluate the software, two researchers with no prior experience installed it, downloaded data to two computers running different operating systems (Mac and Windows), and conducted a transfer-rate benchmark. This required using the terminal on macOS and Windows computers, as well as information collected from the internet and Pelican’s page. After repeating this process twice on different operating systems to better gauge the likelihood of success, the results indicated a high probability of success, with the analyzed cases serving as examples of complete installations. Given this aspect of the study, the difficulty of working with the software can be considered a variable that depends on the individual, their prior experience with other software, and the information available to them. The persistent problem the research faced was the lack of detailed online information. When users tried to run the command ”wget” to download the Pelican client, macOS Terminal was unable to connect to the Pelican website due to a missing certificate chain. This points to a lack of specificity because it fails to account for other types of computer restrictions and many variables that had to be discovered firsthand. On another matter, when the user is required to run commands in PowerShell, it is necessary to know which hardware and software must be installed, and some commands require running PowerShell as an administrator. This type of research allows those involved to gauge how easily the public can perform the tasks that researchers carry out. In conclusion, it is necessary to add more information to the Pelican website about which certificates are used and how to install the required chain; moreover, listing the available namespaces in the command line would be useful. The benchmark results show a stable connection to the caches, with an average of 16.35 MB/s, and that the 500 MB and 1000 MB files were the most efficient for data transfer.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-working-to-working-sustaining-a-wildlife-detection-pipeline-through-dependency-drift">
+        <span class="abstract__title">From Working to Working: Sustaining a Wildlife-Detection Pipeline Through Dependency Drift</span>
+        <span class="abstract__people">Katherine Nunn, Bernadette Boscoe</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}This poster documents an ongoing effort to stabilize and modernize a wildlife-detection pipeline for the Land Bridge / GreenCrossingAI project, which uses MegaDetector to automatically identify animals in camera trap images and video collected at wildlife crossing sites. The poster is framed around a recurring reality of research software: environments do not stay working on their own, and the real work is in going from "working" to "working" again, one dependency at a time.
+
+The pipeline runs on a shared Windows machine, split across three Jupyter notebooks handling image processing, video processing, and Linux-based batch workflows. The poster traces a recent migration of MegaDetector from a manually cloned GitHub repository to a pip-installable package maintained by its current developer, a shift made necessary as the project's original install fell out of step with the actively developed codebase. This migration surfaced a machine-wide environment variable silently shadowing every pip install on the system with an outdated clone, the kind of invisible dependency conflict that can undo an upgrade without any obvious error message. Diagnosing and removing it, alongside rebuilding a clean Python environment with verified GPU support, forms one of the poster's central case studies in tracing failures back to their root cause rather than the nearest symptom.
+
+The poster also addresses ongoing work to make the video processing notebook resilient to failure at scale. Processing camera trap video currently means one bad file can halt an entire batch, with no way to resume partway through and no reliable way to distinguish an interrupted run from a completed one. The poster presents the fixes underway, wrapping subprocess calls in explicit error handling, using the pipeline's native checkpoint and resume support, and correcting logging so that progress is tracked accurately, alongside the reasoning for each choice.
+
+Throughout, the poster emphasizes documentation as a form of infrastructure in its own right. Each change made to the pipeline, along with why it was necessary, is logged as it happens, both to preserve continuity across a project shared with collaborators and to surface the everyday, often invisible labor of keeping a research computing environment functional. By presenting this as a continuing narrative rather than a single fix, the poster offers other research software teams a concrete account of what dependency maintenance actually looks like in practice, and why treating environment stability as ongoing work, not a one-time setup step, is essential to any research pipeline built on external tools that keep evolving.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="using-gpu-only-buffers-in-openmp-target-offload">
+        <span class="abstract__title">Using GPU-only buffers in OpenMP Target Offload</span>
+        <span class="abstract__people">Igor Sfiligoi</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}GPUs provide significantly more compute performance than CPUs, both in terms of raw compute power and memory bandwidth, prompting scientific software developers to write codes that can execute on those compute resources. Note that this is a somewhat similar transition as the scientific compute community encountered when CPUs moved from being purely sequential resources to being massively multi-threaded. It is thus perhaps not a surprise that OpenMP, originally developed for CPU-based parallelization, can now address the parallelization needs of GPUs as well. From a purely computational point of view, many OpenMPbased codes can be ported to GPU compute with a simple tweaking of the OpenMP pragmas, i.e. by telling the OpenMP runtime to execute the parallel code portion on the GPU instead of doing it on the CPU.
+
+Unfortunately, most GPUs come with their own memory subsystems, requiring separate management of memory buffers on CPU and GPU compute cores. OpenMP Target offload provides the means for automatically copying the buffers between the two memory subsystems as needed, but at a significant cost, which can negate the GPU compute performance advantage, if used naively. The recommended alternative is to use OpenMP to create a persistent copy, and then manually synchronize the two only when needed, which is indeed performant, but can be error prone.
+
+OpenMP Target offload abstracts away the distinction between the CPU and GPU memory copies by translating at compile time all CPU pointers to their GPU equivalents, when running on GPU cores. This requires the compiler to know the conversion logic of every pointer that is accessing a memory location. It works remarkably well for contiguous buffers, but often fails for tree-like structures, especially when accessed from opaque functions, like it is common in Object Oriented programming, e.g. in C++. While there are ways to work around this limitation, they tend to be cumbersome and error prone.
+
+Memory translation is, however, not a hard requirement in OpenMP Target offload. If one stores a GPU-only pointer in a variable, it can be used as-is to access the relevant memory buffer from the GPU code, although the user does have to notify the compiler to disable the automatic conversion on it, which can be error prone in its own right. This makes accessing both flat and tree-like data structures trivial, as long as all the pointers inside the tree already point to the GPU memory subsystem.
+
+Finally, OpenMP also provides an API to create GPU-resident buffers, further simplifying the process, although it is definitely more cumbersome than using language-native memory allocation instructions. The major downside is the fact that such a buffer cannot be used directly from the CPU code, but that is often acceptable, given the performance difference between CPU and GPU compute.
+
+One final benefit of GPU-only buffers is the reduced memory usage of the CPU memory. The default memory management requires at least as much CPU memory as there is GPU memory in use. While this was not a problem when GPUs had tiny memory amounts, modern GPU systems can have more GPU than CPU memory. With GPU-only pointers, this issue is avoided.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="when-science-admits-its-shortcuts-detecting-and-managing-self-admitted-technical-debt-in-scientific-software">
+        <span class="abstract__title">When Science Admits Its Shortcuts: Detecting and Managing Self-Admitted Technical Debt in Scientific Software</span>
+        <span class="abstract__people">Eric Melin, Nasir Eisty, Gregory Watson, Addi Malviya-Thakur</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific software (SSW) supports research in domains where software limitations may affect both maintainability and the validity or reproducibility of scientific results. Self-admitted technical debt (SATD) captures such limitations when developers explicitly acknowledge shortcuts, incomplete implementations, or unresolved concerns. However, prior SATD research has largely focused on general-purpose software and source-code comments, overlooking domainspecific scientific concerns and debt documented across other development artifacts.
+
+This poster combines two complementary multi-artifact studies of SATD in SSW. First, we construct and validate a 115,524-instance dataset spanning code comments, commit messages, pull requests, and issue sections, including scientific debt as a distinct category for acknowledged assumptions, approximations, accuracy limitations, missing scientific cases, and outdated scientific knowledge. A multi-source classifier achieves 0.916 accuracy and 0.826 macro F1 and is applied to 900,358 artifacts from 23 SSW projects. SATD is more prevalent in pull requests and issues than in code comments, while traditional SATD classifiers frequently miss scientific debt. Practitioner validation further confirms that scientific debt is recognizable and useful for software maintenance [2].
+
+Second, the classifier is applied to approximately 1.94 million artifacts from nine mature SSW repositories to examine prioritization, sentiment, persistence, and cross-artifact propagation. SATD in commits, comments, and pull requests receives higher priority than debt in issues, and negative sentiment is associated with greater urgency. Only 37.8% of SATD comments are eventually removed, with removed instances persisting for approximately 690 days on average. Most SATD remains confined to its originating artifact, but the rare instances that propagate across longer issue–pull request–commit–comment chains exhibit higher priority [1]. Together, these findings provide an end-to-end perspective on identifying and managing SATD in scientific software and support the development of tools for debt detection, prioritization, monitoring, and maintenance planning.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="aligning-research-software-teams-strategies-from-ux">
+        <span class="abstract__title">Aligning Research Software Teams: Strategies from UX</span>
+        <span class="abstract__people">Kate Arneson</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software teams – especially in academic and research environments – are often lean, without dedicated roles like product or project managers, or even designers. Positioned at the intersection of PIs, researchers, students, and domain experts, research software engineers (RSEs) are often left to make sense of competing priorities (and people) in order to deliver a software product. In this poster, approaches from user experience (UX) will be shared for translating research goals into a shared, user-centered vision for aligning software teams.
+
+Using examples from an end-to-end AI-assisted synthetic biology platform, iCloudBiofoundry, developed at the University of Illinois Urbana-Champaign, this poster will advocate for the use of a Product Requirements Document (PRD) as a centralized tool for aligning software teams and stakeholders. To support this, the poster will introduce methods from UX for gathering and synthesizing requirements (stakeholder interviews, user groups), provide an annotated example PRD from the iCloudBiofoundry project, and share key tips and takeaways – including real-world lessons learned, practical strategies for ensuring PRDs are actionable and useful, and access to templates to get started. The poster may also explore perspectives on AI, such as where in this workflow AI may accelerate the process, and where a more human approach may be beneficial.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="stamped-principles-pragmatic-practices-for-reproducible-science">
+        <span class="abstract__title">STAMPED Principles: Pragmatic practices for reproducible science</span>
+        <span class="abstract__people">Cody Baker, Austin Macdonald, John Lee, Yaroslav Halchenko</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Neuroscience increasingly depends on the interplay of code, data, and computational environments, yet the record of how they were used together is often incomplete, scattered across repositories, wikis, and notebooks, or lost entirely. This fragmentation undermines rigor, reproducibility, reusability, and efficiency in BRAIN Initiative pipelines that routinely span multiple institutions, archives, and compute platforms. Existing frameworks such as FAIR and FAIR4RS govern discovery and interoperability of digital objects, but do not specify how research objects should be structured and managed so they can be re-executed, extended, and audited. The community lacks a shared vocabulary for this operational layer.
+
+Building on the YODA and VAMP traditions from neuroimaging, and on patterns that have independently converged across geophysics, genomics, statistics, and neuroscience over three decades, we formalize seven principles a research object should satisfy: Self-containment, Tracking, Actionability, Modularity, Portability, Ephemerality, and Distributability, collectively STAMPED. Each spans a spectrum from practical minimum to aspirational ideal, so adoption is non-prescriptive and incremental. Formal LinkML schemas, an interactive compliance checklist, and the curated collection of examples are provided as enabling tools to this end.
+
+We demonstrate STAMPED through two major neuroscience pipelines. OpenNeuroDerivatives reorganized derivative neuroimaging datasets so they exist as independent Ephemeral units that reference raw inputs as subdatasets rather than nesting under them, removing an upward dependency that previously violated Self-containment, Modularity, and Portability. DANDI Compute, utilizing the Allen Institute for Neural Dynamics electrophysiology pipeline, packages spike-sorting outputs into nested BIDS-derivative units in which each leaf contains the exact code, runtime logs, outputs, and provenance metadata needed to re-execute the analysis, satisfying STAMPED end-to-end.
+
+These adoptions show that STAMPED provides a tool-agnostic, incrementally adoptable vocabulary that lets researchers, reviewers, collaborators, and emerging AI agents evaluate and improve the operational maturity of computational neuroscience. By making research objects re-executable and inspectable by construction, STAMPED converts reproducibility from an aspiration into a measurable property of everyday neuroscience practice.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="llm-customization-for-merge-conflict-resolution-in-the-planet-s-largest-git-codebase">
+        <span class="abstract__title">LLM Customization for Merge Conflict Resolution in the planet's largest git codebase</span>
+        <span class="abstract__people">Advitya Gemawat</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Merge Conflicts in software programming occur in 20% of all merges in open-source projects, incurring a median resolution time of ~6 minutes for a single conflict at best, or multiple days (from conflict detection to incorrect resolution to fixing downstream feature regressions) at worst, especially in large-scale software projects. The combination of domain-heavy context and non-existence in project/git history (leading to lack of sufficient training data / input for LLMs) renders Merge Conflict Resolution as one of the most manual and painstaking processes in the software development lifecycle today.
+
+Drawing inspiration from the scale and complexity of merge conflicts in one of the planet's largest codebases (the Windows OS repo at Microsoft), this talk will touch upon a variety of insights across crafting custom LLM Evals, Azure OpenAI Fine-Tuning, Qualitative Insights, and implementation best practices around crafting a scalable LLM-powered Merge Conflict Resolver adapted towards codebase-specific conflict resolution patterns, which has reduced avg conflict resolution times for Windows developers by 4x.
+
+Similar to how LLM Coding Agents transformed the SWE workflow from writing code to generating &amp; reviewing code, this project is a natural evolution of the manually-driven Merge Conflict Resolution process in terms of reviewing LLM-generated conflict resolutions. The Fine-Tuning and Evals aspect of adapting the LLM towards a particular codebase makes the approach unique and &gt;2x better performant than the AI-based conflict resolution capabilities with vanilla LLMs offered in most IDEs.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="audit-your-own-metadata-in-the-age-of-ai-where-surfaces-disagree-about-your-software">
+        <span class="abstract__title">Audit Your Own Metadata in the Age of AI: Where Surfaces Disagree About Your Software</span>
+        <span class="abstract__people">Pengyin Shan</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software citation metadata was written for human readers and patient indexers. Its audience has changed. AI agents now discover, install, and reference research software directly from the files a project publishes about itself: CITATION.cff, codemeta.json, zenodo.json, README citation sections, archival DOI records, and package-registry entries [1-7]. These consumers do not ask clarifying questions and do not reconcile conflicts. They parse one surface and propagate whatever it says, so when a project's surfaces disagree about its own authors, version, identifier, or license, credit and provenance quietly follow whichever file a machine happened to read first.
+
+This poster will give RSEs a practical answer: a self-audit workflow that takes minutes per project. Using an open-source pipeline, we harvest the metadata surfaces a project exposes, normalize each to a canonical record, and score every pairwise combination with a multi-level rubric (exact, minor, conflict, missing), with stratified hand-verification to measure the pipeline's precision. The audit produces a gap map organized around five recurring failure modes: missing metadata, stale metadata, author-list divergence, identifier divergence, and version-versus-concept DOI confusion. Every fix it suggests is an ordinary pull request.
+
+The workflow is grounded in evidence. We will report illustrative results from an audit of &gt;50 HPC and quantum-computing projects plus a multi-discipline community baseline of curated open-source research software, showing which surfaces disagree most, on which fields, and what the failure modes look like in real projects. The complete measurement study will be presented at RDA Plenary 27 (London, October 6 2026); this poster is its engineering companion for the RSE community.
+
+Attendees leave with three things: the workflow, a short checklist for making their own project's metadata agree with itself, and a concrete way to reason about a question this year's theme raises directly: what changes about our work when its primary readers include automated machines.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="bssw-io-community-resources-for-improving-scientific-software-productivity-and-sustainability">
+        <span class="abstract__title">BSSw.io: Community resources for improving scientific software productivity and sustainability</span>
+        <span class="abstract__people">Rinku Gupta, David Bernholdt, Roscoe Bartlett, Keith Beattie, Patricia A Grubel, Lois Curfman McInnes</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific software drives computational science, yet developing sustainable and reproducible code remains a major challenge for many research teams. Because many scientists lack formal software engineering training, research teams often struggle to adopt vital best practices. As a result, developers frequently create ad-hoc solutions to recurring infrastructure challenges and bottlenecks rather than relying on established, reusable approaches.
+
+The Better Scientific Software (BSSw) initiative was specifically created to address these challenges by bringing together an international group of researchers, research software engineers (RSEs), developers, educators, and other key stakeholders within the scientific community. At the core of this initiative is the BSSw.io web portal, a community-driven site that shares practical development resources and real-world experiences while promoting better software practices tailored to scientific computing. With focus on software productivity, quality, and sustainability, the BSSw.io website serves as a popular outreach channel for the BSSw community. By exploring the platform, community members can find domain-specific guidance across the software lifecycle, including project planning, design, documentation, testing, reproducibility, performance optimization, etc. Because the content is tailored to scientific computing, researchers can find immediate, actionable guidance rather than generic software advice. The BSSw.io portal also serves as a community hub, highlighting events and training opportunities, academic conferences, software-focused funding programs, career development pathways, and networks for research software engineers.
+
+The BSSw ecosystem welcomes contributions from across the community, including universities, national laboratories, industry, and open-source projects. Contributions may include project experiences, case studies, and other practical insights that can benefit the broader scientific software community. The BSSw.io editorial team reviews all submissions to ensure scientific rigor and scope of contribution. The goal of this poster is to familiarize the audience with the BSSw initiative, highlight its extensive library of resources, and demonstrate how attendees can actively navigate and contribute back to the platform to share insights and thus help to advance the sustainability of computational research. [1,2,3]{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="how-to-share-your-data-interactively-using-datapages">
+        <span class="abstract__title">How to share your data interactively using Datapages</span>
+        <span class="abstract__people">Mika Braginsky, Michael Frank</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Data sharing is both a critical scientific need and, increasingly, a mandate by many research funders. The FAIR principles – that data should be findable, accessible, interoperable, and reusable – are a widespread guide to how data are shared. But sharing data in accordance with these principles presents a challenge for many researchers, especially those with limited technical expertise or resources. If datasets are shared, it's most often as static files, decreasing impact. Some high-profile datasets are shared on custom webpages with interactive tools, but these can be complicated and expensive to create and maintain.
+
+We bridge this gap by introducing a set of open-source tools and templates for easily creating Datapages, interactive websites to disseminate de-identified data for broad reuse. Datapages enables researchers and other data distributors to easily share versioned datasets along with interactive visualizations, rich documentation, and user-friendly access functionality.
+
+A Datapage is a web-based interface to a dataset – a way that users can learn more about it and access it as seamlessly as possible. This functionality is enabled by storing the data in Redivis, a data platform for academic research which provides datasets with versioning, flexible access controls, and multi-platform API access. The Datapage itself is a website (built using the Quarto publishing system) that is connected to one or more Redivis datasets and is automatically populated with interactive visualizations (built using Observable Plot), as well as an embedded data browser, documentation on programmatic access, and information on citation, DOI, metadata, and more. An automated deployment pipeline renders this website and publishes it as a static site, so it can be hosted on a serverless platform such as GitHub pages. As such, a user without much technical expertise can create a Datapage for their dataset without writing any code or setting up any deployment infrastructure. More advanced users can build out their Datapage with custom visualizations, theming, and any content they may wish to add.
+
+We've created a diverse array of Datapages for datasets from psychology, linguistics, economics, education, and atmospheric science (datapages.github.io). We plan to showcase these, demonstrate how to create a Datapage, and share key design insights, with the aim of promoting and improving data sharing.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="oeps-an-open-source-data-ecosystem-for-opioid-environment-policy-scan">
+        <span class="abstract__title">OEPS: An Open-Source Data Ecosystem for Opioid Environment Policy Scan</span>
+        <span class="abstract__people">Yong Wook Kim, Adam Cox, Mahjabin Kabir Adrita, Sara Lambert, Mallikarjun Bhusnoor, Marynia Kolak</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The Opioid Environment Policy Scan (OEPS) is an open-source platform built to streamline research on opioid-related health outcomes by standardizing spatial data across the United States. To date, it integrates over 350 variables spanning four decades across seven thematic domains, available at state, county, ZIP code, and census tract resolutions.
+
+Under the hood, OEPS pairs a Python/Flask backend and Next.js frontend with an R client library (oepsData), backed by cloud storage. Automated GitHub Actions pipelines handle dataset validation, release builds, and versioning. This automation minimizes maintenance overhead while keeping builds reliable and reproducible. To adhere to FAIR data principles, datasets are accessible via Frictionless Data packages, BigQuery, and archived Zenodo releases with assigned DOIs.
+
+Beyond serving as a data repository, OEPS illustrates how applying sound research software engineering principles improves the longevity and reliability of public health data infrastructure. Continuous integration, automated checks, and open tooling directly benefit both spatial researchers and policymakers evaluating community interventions.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="introducing-quail-an-environment-for-agentic-qualitative-analysis">
+        <span class="abstract__title">Introducing Quail: An Environment for Agentic Qualitative Analysis</span>
+        <span class="abstract__people">Dashiell Coyier</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Through our work on the Carleton College DataSquad [1], a student-staffed data and software support group, we have seen campus offices that collect surveys with rich long-answer fields only to review them superficially because they lack the time and infrastructure required for deeper analysis. The immediate setting of this problem is local, but the pattern is general: researchers have a text corpus with real decision-making value, and too little time for exhaustive manual review. Large language models offer an opportunity to lower this barrier, but conventional chat and retrieval systems can obscure the operations connecting evidence to conclusions and struggle to systematically examine a corpus beyond what fits in context. To address these challenges in qualitative work, we introduce Quail, an environment for agents to explore textual data.
+
+At the center of Quail is an analysis language inspired by Cloudflare’s “Code Mode” [2, 3], an approach that lets agents compose tool calls inside code rather than making discrete requests. Quail adapts this general idea into an environment built for qualitative analysis, exposing a symbolic analysis language through a compact Python API. Within this environment, the agent writes blocks of restricted Python that call the analysis API against a processed dataset, using core operations for retrieving, counting, inspecting, and tagging entries. The flexibility of these operations comes from interdependent classes whose objects can be combined and nested to define scope, filtering, and ranking. Successful turns preserve variables and dataset annotations for later analysis, and only what is printed during the Python execution is passed as the result of the tool call. In a way, this environment extends retrieval-augmented generation [4]; retrieval remains a way for the agent to be grounded in evidence, but it is part of a programmable analysis environment instead of the sole capability.
+
+Quail is packaged as a harness-agnostic MCP server with explicit local and remote server modes [5]. Remote deployments can be backed by a Clerk authentication layer [6] and provide a persistent server to which multiple agents can connect. This works well for long-standing datasets and shared use, but can be unnecessarily heavy for the ephemeral sensemaking where qualitative analysis often begins. Local mode, on the other hand, allows an agent to instantiate a one-off Quail server only accessible locally. Cloud agents backed by temporary virtual machines in common AI apps align well with local mode [7, 8]; both an agent and Quail can be created for the duration of analysis and discarded afterward, without requiring saved files or strain on-device. The poster presents Quail’s open-source technology [5] making use of this emerging paradigm, where agents and the research tools they depend on can be commissioned for the lifetime of a task.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="sustaining-data-rich-web-portals-with-limited-rse-resources-a-headless-cms-pattern">
+        <span class="abstract__title">Sustaining Data-Rich Web Portals with Limited RSE Resources: A Headless CMS Pattern</span>
+        <span class="abstract__people">Vismayak Mohanarajan, Jong Lee</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Public-facing sites for scientific and policy reporting constantly evolve as narratives, imagery, and visualizations are revised by domain experts with little to no coding experience. While edits are continuous and unpredictable, developer capacity remains limited. This leads to a bottleneck that delays updating cycles. It reflects not a shortage of development time, but where the boundary between content and code is drawn.
+
+Existing approaches draw this boundary in different places, each striking a different balance of editorial reach and engineering effort. Code-first and static site generator (SSG) approaches are flexible but require code changes and redeployments for routine content edits. Traditional content management systems (CMS) make content editing easy for non-coders but struggle to support reusable, interactive components like dynamic charts. Visual Analytics tools excel at open-ended data exploration but are less suited to narrative, page-level storytelling. None of these options let a non-coder restructure a narrative page containing live, styled, accessible visualizations.
+
+We address this gap with a headless CMS architecture, a system that separates content storage from the frontend. Content is structured as data and served through application programming interfaces (APIs) to a developer-built frontend. This split lets developers focus on dynamic components while domain experts control the content and data. We demonstrate this pattern on the public portal of the Illinois Nutrient Loss Reduction Strategy (NLRS), which is the Illinois statewide initiative to reduce nitrogen and phosphorus pollution in Illinois waters. We chose Strapi, a self-hostable, open-source CMS, over alternatives like WordPress and Payload because it pairs composable-block content modeling with an admin interface simple enough for non-technical contributors.
+
+Strapi is paired with a component-based frontend built in Next.js. Pages are modeled as an ordered sequence of blocks where each block type maps to a specific frontend component. Chart data and display configurations are stored as structured data (JSON) allowing per-chart customizations in the CMS. The site currently utilizes 25 reusable components to create 60 pages having more than 90 data visualizations. Per-chart-type Python scripts update this full chart set through Strapi's API each year, in a matter of minutes. Some data, particularly exploration-heavy geospatial views, is better served by embedded dashboards than by native components; we currently use the commercial tool, Tableau.
+
+This division of labor extends to accessibility. Component-level concerns, such as color contrast, are tackled by the developer in the component library. Content-level concerns, such as screen-reader descriptions, are authored by domain experts within the CMS. The result is that site-wide accessibility becomes easier to achieve and maintain.
+
+Development is concentrated in the beginning and then tapers off, making handovers to non-coders easy. 56% of components existed within 5 months of the project. This is reflected in the commit history: half of all commits landed within a 2-month window. The CMS's intuitive interface meant only brief training and documentation were needed, and a staged dev-to-production workflow let contributors edit without risking the live site. Narrative content no longer requires developer involvement; only chart and data updates still route through the developer, which requires only rerunning a few scripts.
+
+The architecture has real costs: consistent component mapping requires ongoing design discipline as the site grows, and the addition of a CMS introduces one more point of failure. However, by drawing the boundary between content and code clearly, we are able to sustain a public, data-rich site with just one developer while domain experts retain complete ownership of structure and content — a pattern that can be adopted by other small teams facing the same asymmetry.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="initial-developments-in-ai-informed-quantum-device-engineering">
+        <span class="abstract__title">Initial Developments in AI-Informed Quantum Device Engineering</span>
+        <span class="abstract__people">Adit Shah, Gil Speyer, Dragica Vasileska</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Quantum computing is an emerging field of technology that uses qubits, superposition of states, and entanglement to pursue specific problem solutions that take prohibitively long to execute on classical computers [1]. There are multiple proposals to the practical realization of qubits, including the quantum dot arrays that are being investigated in this work. To analyze quantum dot systems, it is necessary to solve the 2D Schrödinger equation for a given device geometry manifested as a quantum potential [2]. This can be a computationally expensive task. In this work, we investigate if convolutional neural networks (CNNs) can classify the outputs of a 2D Schrödinger equation solver in the form of images across quantum dot geometries. In particular, our focus is on isolating High-Density-Low-Transmission (HDLT) states directly from available simulation images. These specific outputs are of interest as they are characterized by “pointer” states, desirable to exploit as qubits for their long coherence lifetimes [3].
+
+We trained an image-only CNN pipeline with SMOTE-based oversampling in CNN feature space and evaluated classification performance across 22 geometries spanning 1x1 to 5x5 circular and square dot arrays [4]. An EMNIST control experiment (digit 5 vs. other; natural precision 0.500, natural recall 0.86, five F1 Score (F1 Scores take into account false positives and false negatives, making it useful in unbalanced datasets) = 0.63) demonstrated that the high-recall, low-precision failure pattern exists on the natural EMNIST distribution [5]. Evaluated on the natural class-imbalanced test distribution, HDLT F1 scores ranged from 0.642 to 0.972 across geometries. Seven geometries achieved F1 &gt; 0.92, with the 1x1 yielding the highest one with 0.972 (precision 0.950, recall 0.994). Performance decreased as array size and symmetry increased. The five lowest-performing geometries (4x5, 4x5sq, 5x3sq, 5x5, 5x5sq) with an F1 &lt; 0.7 were all large, near-square configurations. In these cases, recall remained moderate to high (0.70–0.93) while precision collapsed (0.52–0.64). This collapse shows the model over-predicts HDLT instead of missing it. The reasons for this failure are investigated using post processing tools such as GradCam and GradCam++ [6,7].
+
+Our findings suggest that CNN-based HDLT screening is reliable for elongated, asymmetric geometries and identify dense, near-square arrays as a challenge for image-based quantum state classification. More generally, this investigation explores the capabilities of AI-assisted insights into the engineering of systems with nonlinear properties.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="miasma-an-open-source-lightweight-countermeasure-against-unauthorized-ai-web-scraping">
+        <span class="abstract__title">Miasma: An Open-Source, Lightweight Countermeasure Against Unauthorized AI Web Scraping</span>
+        <span class="abstract__people">Austin Weeks</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The widespread adoption of large language models has greatly increased demand for publicly accessible web data, resulting in increased web scraping activity across the internet. This trend has increased bandwidth and compute costs for website operators while complicating efforts to control how publicly available content is collected and reused. [1] While existing mitigations such as rate limiting, CAPTCHAs, and robots.txt rules provide mechanisms for discouraging unwanted crawlers, enterprise-grade services have also begun exploring deception-based defenses such as Cloudflare's AI Labyrinth. [2] Additionally, there has been growing interest in deliberately adversarial countermeasures against AI scraping, motivated by research suggesting that even small quantities of poisoned training data may influence model behavior. [3][4]
+
+Miasma is an open-source, lightweight tarpit designed to provide an accessible defense against unauthorized AI web scraping. Implemented in Rust, Miasma operates as either a standalone reverse proxy or an embeddable library that redirects unwanted crawlers into a recursively generated network of self-referential links containing deliberately poisoned content. Rather than passively blocking requests, Miasma aims to reduce the utility of unauthorized data collection while maintaining an extremely small operational footprint. To date, the project has reached 1200+ stars on GitHub, with 6 total contributors, and is available through Docker, Homebrew, and AUR. To achieve the primary design objective of minimal resource utilization, Miasma leverages asynchronous request handling, bounded concurrency, and a custom response generation system that minimizes per-request memory allocations. In production, Miasma has successfully served millions of requests from major AI web crawlers while operating on commodity hardware with minimal CPU and memory requirements. The application is able to serve ~100 concurrent requests while staying below 20MB memory usage.
+
+This poster presents the architecture and implementation of Miasma, the engineering tradeoffs involved in building a high-throughput, resource-efficient system, and lessons learned from maintaining an open-source project.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="user-experience-resources-for-rses-two-bssw-fellowship-projects">
+        <span class="abstract__title">User Experience Resources for RSEs — Two BSSw Fellowship Projects</span>
+        <span class="abstract__people">Mary Goldman, Drew Paine</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}User Experience (UX) is not widely practiced for scientific software due to several factors. RSEs typically have limited time and resources to do the long and involved UX methodologies that are recommended in industry or to hire an expert to do these. Additionally, as current and former co-chairs of the US-RSE User Experience Working Group we have seen that there is a need for community spaces to share challenges and opportunities along with easily digestible information on performing UX work in RSE contexts.
+
+This poster presents two UX resources being created by 2026 Better Scientific Software (BSSw) Fellows [1] to address these needs. Discussion at this poster will provide both authors with valuable community feedback to help us enhance our in progress fellowship deliverables so that they are as relevant as possible to RSEs.
+
+The first is a web-based UX resource for RSE developers that will detail what UX is and how it can be applied to scientific software. It will catalogue easy-to-implement UX methodologies and how they can be applied to the research software development process. The resource will focus on methods that can be done with few resources, such as heuristic evaluation and paper prototypes. This tailored UX resource will give RSEs the tools they need to make scientific software more usable and ultimately better serve the needs of the researchers who are using it.
+
+The second is an online open community hub, UX in Science, that coalesces and advocates resources for scientific user experience (UX) knowledge and resources. This hub will enable two goals. First is to help existing working groups and teams across organizations more formally share their efforts and outputs to grow the burgeoning scientific UX community. Second, UX in Science will provide a curated environment for broader scientific software development communities (such as BSSw) to turn to for a wide range of trusted information. This will help scientific software developers more easily be able to learn new skills that advance their own practices in resource limited environments, furthering workforce development.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="democratizing-ai-responsibly-through-research-software-a-case-study-in-suicide-prevention-research">
+        <span class="abstract__title">Democratizing AI Responsibly Through Research Software: A Case Study in Suicide Prevention Research</span>
+        <span class="abstract__people">Jasmine Falk, Kara Emery</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The rapid democratization of AI and machine learning (ML) capabilities through foundation models and accessible computational infrastructure is reshaping scientific research, in part by enabling a broader community of nontechnical researchers to leverage advanced computational techniques [1]. However, expanded access to AI capabilities does not inherently democratize the expertise and methodologies required to responsibly evaluate, interpret, and audit outputs [2], especially given that many existing frameworks for ethical principles are high-level and do not provide operationalized guidance [3]. These considerations are especially acute in high-stakes domains such as suicide prevention, where research results may influence clinical decision-making, public policy, and resource allocation. ML methods have shown promise in revealing the complex risk and protective factors underlying suicide, often outperforming traditional statistical approaches [4], as well as informing culturally and demographically responsive interventions [5]. Yet adoption remains underutilized in the field due to constraints on resources, exposure, and training, particularly in the ethical deployment of these methods.
+
+We present the Suicide Risk Dashboard (SRD), an interactive tool for data analysis and visualization developed through collaboration between research software engineers (RSEs), data scientists, and suicide prevention researchers, as a case study in operationalizing and democratizing responsible AI through research software. The SRD seeks to bridge the gap between the promise and practice of AI/ML methodologies in suicide prevention research by following responsible-AI-by-design principles [3]. To enable researchers with varying levels of computational expertise to responsibly evaluate and interpret analysis results, the SRD embeds as product features explainability techniques, such as global and local explanations using SHAP; fairness assessments, including equal subgroup performance tests and equalized odds checking; interpretable reporting based on user-centered design practices; and accessible visual analytics.
+
+As AI capabilities become increasingly democratized, RSEs have an opportunity to shape their use by translating responsible AI principles into scientific practice. The SRD illustrates as a case study how research software engineering can operationalize responsible AI guidelines as core product features of scientific software. In doing so, we demonstrate that research software can help disseminate not only AI capabilities, but also the methods and practices required to translate those capabilities into trustworthy scientific impact.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="advancing-the-data-assimilation-research-testbed-dart-as-an-early-career-software-engineer">
+        <span class="abstract__title">Advancing The Data Assimilation Research Testbed (DART) as an Early-Career Software Engineer</span>
+        <span class="abstract__people">Marlena Smith</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The Data Assimilation Research Testbed, or DART, is an open-source, freely available software facility for ensemble data assimilation, supporting a vast and diverse community of users for over 25 years. Ensemble data assimilation is a statistical method that is used to combine information from numerical model predictions with measurements of the Earth system to enhance the value of both. Applications include ensemble forecasting, generating initial conditions for forecasts and predictability studies, diagnosing model error and bias, and assessing the value of existing and planned observations.
+
+DART includes interfaces to many models and observations across all Earth system domains. DART also allows for the use of a variety of assimilation algorithms, including novel methods developed by the DAReS team that are especially effective for pollutants, sea ice concentration, and soil moisture. Our modular software design and generalized model interface routines facilitates the addition of new models, observations, and assimilation algorithms and allows for users to easily switch between the available options.
+
+Focusing on accessibility, our software is carefully engineered to run efficiently on systems ranging from laptops to top performing supercomputers. DART utilizes the power of HPC through distributed memory and parallel computation with the Message Passing Interface (MPI) to be able to run with complex, high resolution models and large numbers of observations and ensemble members. This further extends the versatility of DART by allowing users to work on more computationally demanding projects.
+
+For these reasons, DART is able to support a diverse, long-standing, and continuously growing user community. This inherent diversity in DART has also enabled me to contribute to a broad spectrum of projects, each requiring unique skills and technologies.This poster will detail the versatility of DART and its functionalities, showing how this has shaped my early-career work and development as one of two software engineers on the team. Working with DART has allowed me to engage with a wide variety of systems, environments, programming languages, assimilation algorithms, models, observations, background science, and collaborators.
+
+The poster will also describe my varied technical contributions and specifically highlight a few of my larger projects that showcase the interdisciplinary and multifaceted nature of my role in DAReS. Examples include collaborative projects with the NASA Goddard Space Flight Center and the NSF NCAR High Altitude Observatory (HAO), facilitating the use of DART data assimilation with space weather models on NASA’s Pleiades Supercomputer and the co-development of pyDARTdiags, a Python package for manipulating observation sequences and calculating observation-space diagnostics for DART.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="is-the-datasquad-model-for-you">
+        <span class="abstract__title">Is the DataSquad Model For You?</span>
+        <span class="abstract__people">Paula Lackie</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The DataSquad at Carleton College addresses a common problem in higher education: limited capacity for data and software support services and few opportunities for students to gain practical experience with RSE and data support. The challenge for students to acquire foundational experience is even more challenging due to the relative obscurity of the work; most especially for those from underrepresented backgrounds. In this gap between technical service/support needs and student experience we also find an opportunity; if we can harness the motivation of students to expand their experience, perhaps we can grow local support capacity, diversify people who thrive in RSE/data support areas, and enjoy our problem-solving work!
+
+In this poster I hope to attract supervisors of student workers to compare our obstacles &amp; solutions. I will share my strategies for managing a high-impact team of novices without a dedicated budget or full-time oversight, and offer practical resources—including job descriptions, confidentiality agreements, and project management frameworks—to help supervisors implement the DataSquad model in their own environments.
+
+Motivations for converting more standard student labor into a DataSquad model will be unique to each institution/organization type. However, there is one aspect that I have found to be crucial for a successful DataSquad. It is the mindset shift from using student labor as a means to deliver a technical service to recognizing that developing skilled students IS itself a primary service. Students are not just the tool, they are a beneficial product of your service point. While putting effort into training students who end up moving into research labs may feel counterproductive, it’s actually taking advantage of Rogers’ Diffusion of Innovations to your benefit by disseminating best practices (through your trained students) across your campus.
+
+Student members of the DataSquad gain the necessary experience in best-practices while they focus on their projects; integrating FAIR data principles, useful markup &amp; documentation practices into their work patterns. Working across different communication styles and technical experience levels also improves their communication skills.
+
+From the perspective of those of us managing students, it’s not a stretch to see how students may find their passion in RSE and data in their work-study job. What is more difficult is figuring out how to manage a team of novices while trying to get a support service delivered. In this poster I’ll share my strategies for how I manage it without a separate budget and as only a percentage of my FTE.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="reproducible-software-environments-for-hardware-accelerated-science">
+        <span class="abstract__title">Reproducible Software Environments for Hardware-Accelerated Science</span>
+        <span class="abstract__people">Matthew Feickert</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific researchers need reproducible software environments for complex applications that can run across heterogeneous computing platforms. Modern open source tools, like Pixi [1], provide automatic reproducibility solutions for all dependencies while providing a high-level interface well suited for researchers. This poster will provide a practical overview of using Pixi to easily create scientific and artificial intelligence (AI) and machine learning (ML) environments that benefit from hardware acceleration, across multiple machines and platforms. The focus will be on CUDA applications, such as machine learning frameworks, and CUDA-enabled research software [2-4].
+
+As AI/ML becomes a modern part of the scientific toolkit, the need to have robustly reproducible scientific computing environments that support hardware acceleration, e.g. with CUDA, becomes more important. However, historically just installing a working CUDA environment on a single machine, let alone on multiple platforms with different requirements, could be a difficult task for non-experts. This led to many scientific machine learning workflows being reliably runnable on only particular machines, and, even worse, with environments that were not reproducible across time.
+
+With significant recent advancements by the NVIDIA open source team and the conda-forge open source community, the entire CUDA stack — from compilers to development libraries — is now distributed on conda-forge. This significantly reduces the overhead to install CUDA dependencies, but packaging and distribution of binaries alone does not solve the problem of reproducibility. With automatic multi-platform digest-level lock file support for all dependencies that are available on package indexes (like PyPI and conda-forge), highly efficient solving strategies, and high-level user interfaces, Pixi provides a missing piece to the scientific researcher toolkit. The technology allows researchers to easily specify the hardware acceleration requirements they have, multiple different computational environments needed for their experiments, and required software dependencies. They can then quickly solve for a multi-platform lock file of all the dependencies required, down to the compiler level. This makes it possible to have multiple hardware-accelerated environments defined that are able to run hardware-accelerated workflows across heterogeneous machines with different GPU types and CUDA compatibility.
+
+The poster will also cover practical recommendations for deployment of locked software environments into production computing environments on traditional batch computing systems (e.g. HTCondor, Slurm) as well as cloud-native computing systems (e.g. Kubernetes, commercial cloud instances) [5]. It will also provide examples and links to published resources that provide fully templated Linux container definition files for arbitrary Pixi workspaces and computing requirements.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="gray-swans-in-two-sciences-a-portable-diagnosis-for-where-ai-for-science-models-break">
+        <span class="abstract__title">Gray Swans in Two Sciences: A Portable Diagnosis for Where AI-for-Science Models Break</span>
+        <span class="abstract__people">Mohsen Zand</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}AI surrogate models are being adopted across the sciences faster than the practices for checking them. The same failure is recurring in domain after domain: the model reaches excellent accuracy on the bulk of the distribution and fails on the rare, physically possible event that motivated the work in the first place. Climate science calls these events gray swans [1]. Most fields have no name or standard test for them, so each field is rediscovering the failure independently and paying full price to do it. This poster presents the same failure diagnosed in two domains that share no literature and extracts the part that transfers between them. Domain one: tropical cyclones. Working with atmospheric and statistical scientists, our team asked whether AI weather models can forecast storms more intense than anything in their training data [1]. Answering it was an engineering problem before it was a scientific one: training sets built with specific classes of events surgically removed, counterfactual experiments run across ocean basins at scale, and a comparison clean enough that a negative result would be believed. Trained on decades of data with every storm above Category 2 excluded, then given atmospheric conditions that produce a Category 5, the model returned a Category 2. It could not extrapolate past the intensities it had seen, though it could transfer what it learned from storms in other regions, a result with direct consequences for disaster preparedness and one that reached well beyond the field [2, 3].
+
+Domain two: autonomous vehicles. I carried that framing into trajectory prediction, where models, likewise, perform well on ordinary driving and fail systematically on the tail: near-collisions, emergency maneuvers, and unusual pedestrian behavior. The structure is identical. Rare events are underrepresented in training data, so a purely data-driven predictor has no mechanism for respecting physics it has never observed and no way to signal that it is guessing. The remedy transferred along with the diagnosis, encoding physical constraints structurally rather than waiting for data coverage to solve what more data cannot, and requiring the model to report when it is operating outside its own distribution. Experiments on standard driving benchmarks [4, 5, 6] are underway now, and quantitative results will be presented on the poster.
+
+What the poster offers. Alongside the two case studies, I present the short diagnostic I now apply on first contact with any AI-for-science project: how to construct a genuine held-out regime rather than a random split, where leakage hides in scientific data, and the heuristic for judging whether a cross-domain analogy is worth an engineer’s time. Most analogies are not worth it. This one transferred because the two problems shared a deep structure, physical constraints governing a rare tail, rather than a surface resemblance, and distinguishing the two cases before committing effort is the reusable skill.
+
+The poster format suits this argument. The two domains are best seen side by side, where the shared shape of the failure is visible at a glance and where the natural question is which third domain in the room has the same problem and has not yet noticed.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="tabray-a-python-package-for-generating-and-comparing-tabular-and-array-data-structures-with-different-topologies">
+        <span class="abstract__title">tabray: a Python Package for Generating and Comparing Tabular and Array Data Structures with Different Topologies</span>
+        <span class="abstract__people">Enrico Milanese</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Data management teams are frequently tasked with deciding what data structure is best suited for a project. The options generally fall into one of two buckets: table or array. Tabular data is formatted such that each record is a row in a table (e.g. CSV, Parquet, Pandas DataFrames), while arrays exploit the existence of a coordinate system to assign a variable’s value to each grid point (e.g. netCDF, Zarr, Xarray Datasets). When one focuses on performance, arrays are usually preferred for highly gridded measurements (e.g., satellite observations) and tables for sparse data (e.g., in situ observations), but where is the trade-off?
+
+Here, I introduce tabray, an open-source Python package that generates equivalent table and array representations of synthetic datasets with customizable topologies. Users can prescribe parameters including the number and size of both dimensions and measured variables, data sparsity and grid regularity, and concurrence of measurements at the same points for different variables. I will present different examples to show the spectrum of performances from highly sparse to densely gridded data and in-between, focusing on simple computations and in-memory and on-disk size. While many factors influence performance (e.g., hardware and environment), the goal of tabray is to support informed decision making on data formats by exploring situations where the advantages of one format over the other are not obvious.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="building-ese-dashboard-with-ai-assisted-packets-design-system">
+        <span class="abstract__title">Building ESE Dashboard with AI Assisted Packets Design System</span>
+        <span class="abstract__people">Charles DeVilholm</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}When it comes to network automation software, there are often many folks hard at work coming up with brilliant solutions to tough problems, but not a single unified source of truth to access each other’s data. Data can be stored anywhere from spreadsheets to one off user applications. A common problem is people knowing what they want to do, but not where and how the appropriate data is stored.
+
+ES Enterprise (or ESE) seeks to improve this experience by unifying several different data sources under one umbrella, all with a unified look and feel defined by ESNet’s Packets Design System. This poster will illustrate how ESNet centralizes and clarifies data across many systems, by having a predictable interface using building blocks that seamlessly display complex data intuitively. ESE utilizes modern front end trends including NextJS and React, and connects to several different databases across ESNet, being a central place for our internal inventory, bandwidth reservation, and much more in the future.
+
+ESE has fully replaced the UI of several systems already, and there are future plans of migrating more applications to use the same client, as well as create user researched interfaces that display data uniquely according to someone’s particular role. This poster will demonstrate how ESE was able to effectively use Packets Design System to create a seamless experience and framework for reasoning across several different systems, as well as the ease of creating such a system with the Packets Design System Skills.md for AI tools like Claude Code. This is a great demonstration of how to provide AI with a predictable framework that can output reliable interfaces with minimal correction needed.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="optimizing-plasma-based-chip-manufacturing-using-hpc-and-agentic-ai">
+        <span class="abstract__title">Optimizing Plasma-based chip manufacturing using HPC and agentic AI</span>
+        <span class="abstract__people">Rohith Muthukumar, Yingheng Tang, Jorge Quiroga, Andrew Myers, Andrew Fierro, Revathi Jambunathan</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Simulations of RF chambers for chip manufacturing have been used to understand the process of plasma-based chip manufacturing. However, ﬁnding the optimum set of parameters for precise chip manufacturing is expensive. In this paper, we demonstrate a data-analysis workﬂow capable of ﬁnding the optimum operating conditions by submitting simulations, performing data analysis and generating pareto frontiers. We further automate this workﬂow using agentic AI, enabling the agent to be extended to a broad class of data-analysis pipelines.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="agent-friendly-provenance-capture-with-con-duct">
+        <span class="abstract__title">Agent-friendly Provenance Capture with `con-duct`</span>
+        <span class="abstract__people">Austin Macdonald, Cody Baker, John Lee, Yaroslav Halchenko</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Whether trying out a new tool, testing pipelines, or meticulously analyzing data for research, the daily work of RSEs and their agents depends on keeping context lean but relevant. The terminal outputs of tools and scripts frequently hold the necessary information, but they are often either invisible (and bloating) in an agent’s context window, or forgotten after a human’s terminal scrolls past the buffer.
+
+con-duct is a lightweight, Python-based command line tool: just use duct &lt;cmd&gt; instead of pure &lt;cmd&gt; to run a command. A wrapped run leaves a trail: full stdout and stderr streamed to disk; resource usage sampled across the command’s process tree; and a record of the invocation, wall clock time, peak memory, exit code, and system and environment details. While workflow managers or experiment-tracking systems can produce a richer record, con-duct strikes a balance, collecting basic provenance with so little effort it can be used on everything, producing uniform records.
+
+In daily work, humans and agents now execute commands side by side. Using con-duct, the full record stays out of the context window until it is needed. Even better, multiple runs can be filtered and grepped, ready for the questions nobody knew to ask. When did our tests start having that warning? Did this run take longer? con-duct ls makes the answers discoverable, filtering on any captured field with a Python expression:
+
+• con-duct ls -e "message=='&lt;tag&gt;'" retrieves runs tagged at capture time with duct -m "&lt;tag&gt;".
+
+• con-duct ls -e "exit_code != 0" lists failures.
+
+• con-duct ls -e "peak_rss &gt; 8e9" finds runs that exceeded a memory budget.
+
+Tools can adopt con-duct internally rather than reinventing per-tool monitoring: ReproNim’s containers
+
+[5] and ReproStim [6] both offer it already, and one con-duct ls query spans the records from all of them.
+
+For research, the record stops being a convenience, and starts being a part of the provenance chain. Pairing con-duct with datalad (git-based version control for data)[2] is an easy win for rigor. datalad run "duct &lt;cmd&gt; ..." completes the execution and then commits the diff (including the duct logs). The invocation results in a complete provenance record binding results of running the command, along with duct collected logs, and automated commit message with optional specification of inputs and outputs. On HPC, last month’s measured wall time and peak memory are already recorded, and can help inform tomorrow’s SLURM request. When an expensive job fails, the bug-report evidence is already on disk, no re-run necessary to file an issue.
+
+con-duct is on PyPI (pip install con-duct), conda-forge, registered as RRID:SCR_025436, and developed openly [1].{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="abstracting-the-mess-building-a-framework-agnostic-out-of-core-interpretability-pipeline-for-ai">
+        <span class="abstract__title">Abstracting the Mess: Building a Framework-Agnostic, Out-of-Core Interpretability Pipeline for AI</span>
+        <span class="abstract__people">Zakaria Al Mamun</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}As machine learning in medical imaging advances, the need to rigorously audit models for demographic bias has never been more critical. However, achieving mechanistic, "white-box" interpretability for high-dimensional medical data (e.g., 3D MRI volumes) requires heavy GPU compute and complex batch-job orchestration. This creates a severe friction point: domain scientists need advanced interpretability, but forcing them to write bespoke code for SLURM/batch environments alienates the end-user.
+
+This poster details the software engineering architecture of PRISM (Probing and Reporting Identity-based Shortcut Metrics), an open-source, framework-agnostic auditing pipeline designed with rigorous user empathy. To provide a "no-code" solution for high-strength compute workflows, PRISM employs a decoupled Headless Dispatch system. User interactions in the desktop GUI are serialized into JSON payloads, while an SSH-tunneling module automatically generates and dispatches SLURM .sh scripts. To maintain a responsive developer experience, the execution engine features "chatty" telemetry, safely piping asynchronous progress updates and remote logs back to the integrated UI.
+
+Furthermore, we will detail PRISM’s focus on computational efficiency and responsibility. Attendees will see how the tool dynamically walks computational graphs to intercept hidden layers mid-flight and safely detach them to prevent VRAM leaks. Because extracting these embeddings can easily exceed hardware quotas, PRISM utilizes a fault-robust, out-of-core caching execution engine. It writes massive multi-gigabyte feature vectors directly to disk via HDF5, streaming only the specific data needed, layer-by-layer, during downstream analysis to prevent out-of-memory crashes.
+
+Finally, the poster demonstrates PRISM’s AI bias exploration in an Alzheimer’s disease classification case study (using ADNI and NACC datasets). We outline the statistical safeguards engineered into the tool, specifically the automated injection of "Control Probes" (shuffled-label permutations) to prevent spurious mathematical matching and ensure the linear probes are not merely overfitting to high-dimensional noise. By abstracting the messy compute layer, PRISM successfully enabled the discovery of severe demographic shortcuts, surfacing a White-Black F1 gap of up to 17 percentage points that was concealed behind a 90.2% global accuracy metric. Attendees will leave with practical strategies for building empathetic, fault-tolerant tools that empower scientists to focus on AI fairness rather than infrastructure.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="improving-peer-code-review-in-research-software-from-rse-practices-to-evaluating-llm-generated-feedback">
+        <span class="abstract__title">Improving Peer Code Review in Research Software: From RSE Practices to Evaluating LLM-Generated Feedback</span>
+        <span class="abstract__people">Md Ariful Islam Malik, Jeffrey C. Carver, Nasir U. Eisty</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software supports scientific discovery through data analysis, simulation, modeling, and other computational activities [4]. Defects in research software can affect the validity and reproducibility of scientific results. Peer code review can help identify such defects and improve software quality, maintainability, and reliability [3]. However, research software engineers (RSEs) often conduct reviews with limited reviewer availability, small teams, specialized scientific requirements, incomplete documentation, and competing research responsibilities [1], [2].
+
+This poster presents three connected studies that investigate peer code review in research software. The first study surveyed 61 RSEs to characterize their review practices, perceived benefits, challenges, and desired improvements. Participants associated code review with improved code quality, knowledge sharing, bug detection, performance analysis, maintainability, and technical debt reduction. They also identified time constraints, administrative and cultural barriers, small teams, limited domain knowledge, and insufficiently formalized review processes [1].
+
+The second study used semi-structured interviews with 20 RSEs to examine how research software teams implement code review improvements and what limits their sustained adoption. Participants described limited reviewer capacity, time pressure, gaps in Git and software engineering skills, informal review standards, and difficulties establishing supportive review cultures. They recommended lightweight pull-request workflows, automated continuous-integration checks, review templates and checklists, clearer expectations, mentorship, and greater recognition of review work [2].
+
+The third study will evaluate human-authored and LLM-generated code review comments in research software. RSEs and research software researchers will assess anonymized comments based on correctness, relevance, actionability, importance, and conciseness. The study will also examine the reasons underlying participants’ assessments and their perceptions of the strengths, limitations, and suitable uses of LLM support. The poster will present the proposed study design and recruit eligible RSEs and research software researchers for the forthcoming evaluation. Interested attendees may express interest in participating in accordance with the approved research ethics and recruitment procedures.
+
+Together, these studies connect empirical evidence about current practices and implementation barriers with an evaluation of emerging AI support. The poster will solicit community feedback to help develop practical guidance for effective and sustainable LLM-assisted code review in research software.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="an-overview-of-ensuring-consistent-scheduler-policies-across-a-multi-system-facility">
+        <span class="abstract__title">An Overview of Ensuring Consistent Scheduler Policies Across a Multi-System Facility</span>
+        <span class="abstract__people">James Davis, Aaron Barlow, Alan Longcoy</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}An integral part of research software engineering is the system a piece of scientific software is ultimately run on. However, the system requirements for each application can differ wildly. As a result, among the vast number of facilities at a researcher’s disposal, each one can have a multitude of different systems, each catering to a unique set of requirements. An operational problem can arise in a facility when it must manage multiple systems; how can project or facility wide policies be maintained across a wide variety of systems while minimizing inconsistencies due to the mechanisms of different schedulers or architectures?
+
+At the Oak Ridge Leadership Computing Facility (OLCF), this is a consistently pertinent question. The OLCF currently has over 20 actively managed systems, and as many research projects at the OLCF use multiple systems to achieve their goals, often using different workload managers, it is important that consistency is kept between them regardless of which one is in use. While manually managing policies among multiple systems can be an option, it is far from an ideal one at the scale of the OLCF. There are many reasons for this, such as ensuring consistencies in time sensitive environments like management prior to or following a job, or encountering difficulties in mapping policy intentions between schedulers which may have different semantics.
+
+RATS CRM has been introduced in the OLCF to significantly ease this issue by managing scheduler-agnostic configurations, many of which are created automatically based on system or facility wide requirements, which are then synchronized with each system via regularly occurring jobs. These configurations ensure that time sensitive changes are handled automatically, such as penalties being applied to jobs exceeding their allocation on a resource, and they also greatly reduce the operational cost required to maintain consistent policies at such a scale.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-bounded-to-decidable-extending-beacons-verification-to-gated-and-attention-based-pde-solvers">
+        <span class="abstract__title">From Bounded to Decidable: Extending BEACONS Verification to Gated and Attention-Based PDE Solvers</span>
+        <span class="abstract__people">Aanya Bhandari</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The BEACONS framework for formally-verified neural PDE solvers is extended to recurrent and transformer-based architectures, with the goal of determining whether bounded-error guarantees can be obtained for these architecture classes under extrapolatory conditions. A gated recurrent unit (GRU) and a transformer block are implemented within the BEACONS pipeline and trained in a pointwise regression setting on spatiotemporal solution data for the inviscid Burgers' and linear advection equations, discretized via the Lax-Friedrichs scheme. Under the formulation considered, both architectures are shown to degenerate to gated multilayer perceptrons: the GRU because its hidden state is zero-initialized with no recurrent rollout, and the transformer because its attention mechanism is element-wise rather than dot-product. While formal bounded-error certificates in the sense required by BEACONS are not obtained for either architecture, it is shown that finite-error verification, that is, a decidable true/false determination of whether worst-case error remains below a specified threshold, is achievable. Hyperparameter sweeps are conducted over network width, depth, and spatial grid resolution, with generalization evaluated via rollout divergence, defined as the per-step L2 and L∞ error between network predictions and a Lax-Friedrichs reference computed beyond the training window. Networks are trained on t ∈ [0, 0.4] and extrapolated to t = 0.6 and t = 0.8. Shock formation is further examined using a smooth sinusoidal initial condition, which develops a discontinuity at the analytically predicted breaking time t_b = 1/π ≈ 0.318, allowing the relationship between finite-error verification and the transition from smooth to discontinuous solution regimes to be characterized. These results clarify what forms of formal guarantee are attainable for gated and attention-based architectures within the BEACONS framework, and where the gap remains relative to the bounded-error certificates achievable for compositional feedforward solvers.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="stamped-in-practice-reproducing-a-scientific-result-using-abcd-neuroimaging-data">
+        <span class="abstract__title">STAMPED in Practice: Reproducing a Scientific Result Using ABCD Neuroimaging Data</span>
+        <span class="abstract__people">John Lee, Austin Macdonald, Cody Baker, Yaroslav Halchenko</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software engineers routinely encounter computational analyses whose code is available but whose data, parameters, software environments, execution context, and provenance are diﬀicult to reconstruct. This missing context makes analyses harder to review, maintain, transfer, and extend. AI-assisted tools can accelerate development, testing, and documentation, but their high output volume and nondeterministic behavior further complicate these tasks and heighten the need for explicit context and reviewable intermediate states. STAMPED (https://stampedprinciples.org) defines seven properties for organizing these materials as a durable and more useful research object [1]. The framework complements the established FAIR (Findable, Accessible, Interoperable, and Reusable) principles by focusing on the organization and execution of computational research objects [7].
+
+This poster presents our application of STAMPED to an existing analysis presented at OHBM 2025 on age-dependent bias in cortical morphometry tools using Adolescent Brain Cognitive Development (ABCD) Study data [3]. We use the principles to guide improvements to the research object surrounding the analysis [2]. We use AI extensively in development, testing, and documentation, making the reconstruction a practical test of the STAMPED vision for AI-assisted research.
+
+Following a review of the original analysis, we use a coordinated set of tools to improve the research object across the seven properties: DataLad and git-annex for composition and versioned state [4]; Git, DataLad run records, con-duct, NIDM, and PROV for provenance [4,6]; tested BIDS Apps and Pixi tasks for executable interfaces [5]; Apptainer, BABS, and Slurm for portable, fresh execution [5]; and persistent git-annex remotes with separate access boundaries for distribution [4]. We show how these tools work in concert to make the data, environments, operations, and results more FAIR and STAMPED.
+
+Collectively, the decisions on how to implement the principles provide a worked example of how to use STAMPED to guide choices about research-object boundaries, provenance, execution, validation, and distribution. We report the practical details of this process: the effort and judgment required, problems encountered, tradeoffs made, evidence produced, and interactions among principles and tools. Although we demonstrate the approach through a scientific reproduction, it is easier and more scientifically valuable when integrated from the start of the analysis [8]. The poster invites RSEs to consider which parts apply to their own shared or domain-specific challenges.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="beyond-the-lab-website-reusing-structured-research-metadata-across-lab-operations">
+        <span class="abstract__title">Beyond the Lab Website: Reusing Structured Research Metadata Across Lab Operations</span>
+        <span class="abstract__people">John Lee, Isaac To, Yaroslav Halchenko</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research groups repeatedly need the same facts (academic records, publications) for their basic operations (CVs, grant applications, yearly reporting etc.). Those facts are scattered across email, spreadsheets, proposals, institutional systems, and web pages, so each task begins by recovering what the lab already knows. There is a growing number of systems (doi.org, ORCID, SciENcv, etc.) aiming to centralize collection and management of records of specific types (bibliography entries, personal records). Research groups still need an open, reusable way to integrate these systems with a locally governed collection spanning record types and operational relationships. A shared, open, and reusable infrastructure to help organize this data improves eﬀiciency and accuracy in lab operations. A lab website is a good example of something that would greatly benefit from being built on top of such an information system.
+
+Research-information management is an established field [1]-[3]. CERIF, VIVO, and DSpace-CRIS model institutional records, while OpenAIRE and OpenAlex demonstrate connected scholarly metadata at global scale [1], [4], [5]. Many of these systems use Linked Data, which makes relationships machine-readable across independently maintained sources by using shared identifiers and formally defined terms, allowing information to be connected and reused without requiring every system to maintain its own copy. By reusing identifiers such as ORCID, ROR, and DOI and mappings to terms in PROV-O, a lab-scale schema can participate in this broader information landscape rather than create another silo, while retaining the flexibility to describe the local roles, relationships, tools, and emerging work needed for day-to-day operations. Such a schema organizes the records, constrains their structure, and supports validation as data is entered. This explicit modeling of lab metadata becomes especially valuable with AI: as AI makes it easier to extract and generate candidate content, the harder task is organizing, validating, and reviewing that content so that only trustworthy information enters the lab’s oﬀicial record.
+
+To address the issue, our long-time collaborator Michael Hanke and colleagues at the INM-7 Institute of Forschungszentrum Jülich in Germany developed ORINOCO (Organized Research Information: Ontologymapping, Curation, Orchestration). ORINOCO addresses this need at research-group scale through an open, self-hostable set of interoperating components [6]. It is grounded in LinkML schemas which provide machine-readable definitions of people, projects, grants, research outputs, and their relationships. These schemas drive browser-based forms for entering records and a service that validates submissions and stages them for review before they join the lab’s curated knowledge pool. Query and rendering tools can then follow the relationships among approved records and reshape them for websites, reports, catalogs, discovery, and other lab operations.
+
+Lab-in-a-Box places ORINOCO alongside other lab-operated services [7]. The Psychoinformatics group website demonstrates how linked records organize pages, related-item lists, backlinks, and graph navigation; TRR379 applies the same research-information approach at consortium scale, with schema-generated interfaces accepting records from people and automated processes [6]. Together, these deployments illustrate the wider value of curating and modeling research metadata for reuse across group operations.
+
+Recognizing this utility, CON adopted ORINOCO as the information foundation for our lab website and broader research-information needs, retaining its schemas and processing tools while adapting their operation to our GitHub-centered collaboration and review practices. For now, we call this adaptation ORINOCO-Lite [8]. Modeled YAML records in Git constitute the oﬀicial collection. Whether edited directly or prepared automatically from existing lab sources such as our Zotero publication group, all proposed changes are reviewed through pull requests. A GitHub Action starts the required ORINOCO components for each build and uses them to validate the records and regenerate the website. We will compare the trade-offs between Psychoinformatics’ service-backed deployment and CON’s GitHub-based adaptation, and invite other labs to consider how structured research information could support their own operations.
+
+For RSEs, the central opportunity is to treat lab metadata as shared infrastructure rather than maintain it separately for each application. A website provides an immediate and visible use for that infrastructure, but its larger value is an enduring body of curated, structured information that can be reused as the lab’s needs and tools evolve.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="pscompose-a-web-ui-to-compose-perfsonar-configurations-in-the-age-of-ai">
+        <span class="abstract__title">pSCompose: A Web UI to compose perfSONAR Configurations in the Age of AI</span>
+        <span class="abstract__people">Johanna Lee</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Reliable network performance is critical in distributed research for data movement, experimental throughput, and end-to-end usage expectations. perfSONAR provides federated network measurement capabilities and is deployed at thousands of universities, research labs and education networks around the globe, but turning those capabilities into usable, repeatable measurement setups can be difficult. Composing and maintaining perfSONAR configurations—especially those that incorporate topology context and integrate with downstream scheduling—can be challenging for users and hard to reproduce across time and sites.
+
+This poster presents pSCompose, a web-based UI to compose configuration that drives automated tests executed by perfSONAR test nodes. The application supports structured creation and management of measurement datatypes including Templates, Archives, Groups, Hosts, and Tests. By guiding users through the correct object relationships and generating the resulting configuration outputs, the application reduces configuration drift and improves repeatability across teams and institutions.
+
+pSCompose is implemented with a maintainable, conservative architecture: a frontend using HTMX/Vanilla JavaScript/JSON Forms, a FastAPI backend exposing RESTful CRUD operations, and a PostgreSQL database. It integrates with perfSONAR components via the Lookup Service API for host discovery and the pScheduler API to obtain JSON schemas used to generate tests, contexts, and archives.
+
+pSCompose has progressed from early mockups to prototypes and full deployments over the past year. It is now ready to ship, with packaging planned for inclusion in perfSONAR 5.3.0 by October. This poster presents the development process and key implementation details, and it aims to gather community feedback—particularly around usability findings and user-driven workflow improvements. In the “Age of AI,” pSCompose enables more trustworthy, repeatable network measurement artifacts that can serve as standardized inputs for automated analysis and AI-assisted scientific workflows.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="classical-software-to-support-quantum-computing">
+        <span class="abstract__title">Classical Software to Support Quantum Computing</span>
+        <span class="abstract__people">Charles Ferenbaugh</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Software for quantum computing is just beginning to cross the threshold that many traditional software packages have crossed in the past 10, 20, or 30 years: the transition from research codes written by physicists to production software packages developed in collaboration with research software engineers (RSEs). Much of the software that is currently written is not directly executed on quantum computers, but is run on classical computers to simulate small-scale quantum computations or to analyze quantum algorithms. All of this is in preparation to eventually run on quantum hardware that has limited availability or that doesn’t even exist today.
+
+An example of such classical software is LANL’s Quantum Hamiltonian Analysis Toolkit (QHAT), a package to help physicists analyze electron states in chemical molecules. QHAT builds on other similar tools such as PyLIQTR from MIT Lincoln Laboratory, and Cirq and Qualtran from Google Quantum AI. It is intended to provide a physicistfriendly interface for numerical simulation, error evaluation, resource estimation, and other similar analyses.
+
+Importantly, even though QHAT is currently considered a research code, there are already software engineers on its development team to encourage basic software quality practices now, and to plan for more extensive practices in the future. This serves as an example of the role RSEs might play in developing classical software as quantum computing continues to grow in importance in the research computing world.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-microscopy-to-simulation-an-end-to-end-research-software-pipeline-for-computational-neuroscience">
+        <span class="abstract__title">From Microscopy to Simulation: An End-to-End Research Software Pipeline for Computational Neuroscience</span>
+        <span class="abstract__people">Jordan Fox, Brian Fischer, William Debello, Jose Peña</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Computational neuroscience research increasingly requires software pipelines that integrate multiphase computational tasks into reproducible research workflows. This presentation describes a research software pipeline we developed to transform neuronal electron microscopy data into high-resolution biophysical simulations for investigating neuronal electrical activity. We focus on the software engineering decisions that shaped its design.
+
+A critical component of the pipeline is MASCAF [1], an open-source Python package for constructing simulation-ready cable models from microscopy-derived morphology. MASCAF contains a series of geometric fitting and optimization algorithms to robustly reconstruct complex neuronal morphology data in simulation format. While motivated by particularly complex neurons in the barn owl auditory system, MASCAF was designed as a general-purpose tool and follows modern scientific Python development practices.
+
+Downstream from MASCAF, the morphology is incorporated into an application-specific simulation framework built on Arbor, a large-scale modern multicompartmental simulation software. This simulation stage integrates neuronal morphology construction, biophysical mechanisms, synaptic input models, parameter exploration, visualization, and quantitative analysis within a unified environment. Together, these components enable reproducible investigation of detailed neuronal computation while supporting rapid model development and refinement.
+
+This presentation discusses the software architecture and engineering questions involved in building and maintaining a research software ecosystem that spans computational geometry, high-performance simulation, data analysis, and visualization. Particular emphasis is placed on developing reusable software components while balancing the specialized requirements of an active scientific investigation.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="harness-engineering-for-agentic-ai-a-checklist-for-research-software-engineers">
+        <span class="abstract__title">Harness Engineering for Agentic AI: A Checklist for Research Software Engineers</span>
+        <span class="abstract__people">Yaping Yang</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Large language models are now used for more than answering questions. They increasingly carry out multi step tasks on their own. They research a topic, synthesize what they find, and write results back to external systems of record. Across recent work on these systems, one lesson keeps coming up: an agent's reliability depends far more on the system built around the model than on the model itself. That surrounding system is made up of the tools, memory, execution environment, feedback loops, and evaluation methods that turn raw model output into something trustworthy. It is often called the agent's harness. It is the subject of growing research on agent architecture [1] and on frameworks that interleave reasoning with acting [2].
+
+This poster translates that research into a practical checklist. The checklist is for research software engineers who build, adopt, or evaluate agent based tools, including tools for summarizing literature, extracting dataset metadata, or verifying citations.
+
+The checklist addresses four questions.
+
+First, what does the harness consist of? Recent surveys converge on a small set of components that structure an agent's behavior: how it represents its role, what it remembers, how it plans, and how it acts on and retrieves information from the world [1]. Each component addresses a specific limitation of the underlying model.
+
+Second, where do unsupported claims enter the pipeline, and how are they caught? Hallucination is a model asserting claims its sources do not support. It is a well documented failure mode in LLM based agents. We describe an extraction, verification, and synthesis pattern that mitigates it by anchoring generation to retrieved evidence. This strategy has been shown to measurably reduce hallucination rates, both in interleaved reasoning and acting frameworks [2] and in retrieval grounded generation more broadly [3].
+
+Third, how is reliability actually measured, rather than assumed? Benchmark work testing dozens of models has found large, persistent gaps between how agents perform and what reliable task completion requires. These failures trace back to weaknesses in long horizon reasoning, decision making, and instruction following [4]. Occasional spot checking is not a substitute for rigorous, ground truth evaluation.
+
+Fourth, what remains unsolved? The same benchmark work points to evaluation itself as a bottleneck. Open questions remain around how to confirm that a grounded claim is actually correct, and around what standardized reliability metrics for agentic systems in research computing would even look like.
+
+Attendees will leave with three things: a literature grounded definition of harness engineering, a transferable pattern for reducing hallucination, and a practical checklist for judging whether an agent based research tool is trustworthy enough to deploy.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="migrating-an-entrenched-community-between-laboratory-information-management-systems">
+        <span class="abstract__title">Migrating an Entrenched Community between Laboratory Information Management Systems</span>
+        <span class="abstract__people">Jonathan Guyer</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The NIST Center for Automotive Lightweighting (NCAL) [1] serves the automotive industry and its material suppliers by developing measurements, test methods, and standards to characterize the complex mechanical behavior of advanced lightweight materials. NCAL comprises a wide range of heavily instrumented mechanical test frames, operated by a changing cast of post doctoral researchers, guest researchers, and permanent staff. The resulting variety and volume of data is augmented by data from external facilities (e.g., electron microscopes and synchrotrons) and finite element simulations. More than a decade ago, NCAL set about finding a laboratory information management system (LIMS) to bring order to existing data, facilitate capturing new data, and enable dissemination of benchmark datasets with full provenance to their stakeholders. They settled on a commercial LIMS system used in the materials science and engineering community. They have invested considerable time and resources in developing consistent naming schemes, data schemae, importers, and reports. Due to rising costs for both licensing and system administration, NCAL now finds itself in need of a migration path.
+
+NexusLIMS [2, 3] is a NIST-developed Open Source LIMS system. It was designed to support the NIST Electron Microscopy Nexus, a multi-user co-op instrument facility. NexusLIMS is a modular system, consisting of a backend that captures experimental data and metadata with minimal user input and a frontend that provides a user interface for search, exploration and data access. NexusLIMS was designed to minimize the need for human annotation of data sets with instrument configuration, calibration details, and sample provenance. Automated data capture and annotation is initiated by activating a pre-existing reservation on an instrument. The frontend is implemented with the NIST-developed Configurable Data Curation System (CDCS) [4, 5]. CDCS data structure and presentation is customized for NexusLIMS via XML Schema Definition (XSD) and eXstensible Style Language (XSL) files.
+
+NexusLIMS is undergoing a major redesign, both to address limitations discovered in use and to expand its utility beyond electron microscopy. The mature NCAL data and workflows, combined with the need for a migration path, present an opportune case study for expanding the capabilities of NexusLIMS. It is essential to provide a solution that minimizes migration pain and retains existing workflows. NCAL team members have been interviewed about what is essential (or annoying) about their existing schemae, workflows, and user interfaces. Further, team members familiar with NexusLIMS have been queried about what they do and don’t like about its current implementation. Concurrently, scripts have been developed to automate the generation of XSD from existing NCAL data dictionaries and XML from existing data exports. XSL templates have been devised to replicate the look and feel of the existing NCAL LIMS. Because NCAL is largely happy with what they have now (their migration being driven by external forces), this prototype must demonstrate that all data in the existing NCAL LIMS system can be represented in NexusLIMS.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="getting-perspectives-on-quality-in-the-age-of-ai">
+        <span class="abstract__title">Getting Perspectives on Quality in the Age of AI</span>
+        <span class="abstract__people">Connor Brynteson, Ella Luedeke, Italo Santos, Reed Milewicz</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research Software Engineering (RSEng) is grounded in the belief that better, higher-quality software enables better research. As we look to the future of RSEng, we see that generative AI could substantially accelerate and expand the scope of research software development, but it also fundamentally shifts the nature of research software development by making code easier to generate than to understand, validate, or maintain. This is especially consequential in scientific computing, where software quality is directly tied to reproducibility, trust, and scientific validity. For RSEs, there is now an urgent need to advance a practical vision for how we will succeed in producing high-quality, trustworthy software under these new circumstances.
+
+In our paper accepted to US-RSE’26 (“We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI”), we argue that in the age of AI for science, developers play an essential role in creating quality by reasoning about, negotiating, and ensuring it across the software lifecycle. We advance a theory that helps explain what, exactly, developers contribute by focusing on three constructs: values, which shape which quality attributes matter; expertise, which enables individuals to pursue and evaluate those attributes; and collaboration, which coordinates diverse forms of knowledge and accountability. To both build better AI tools for research software development and prepare our workforce, we need to better understand which values, what kinds of expertise, and what forms of collaboration will prove most helpful. For that, we seek expert input from RSEs.
+
+This poster provides participants with an entertaining, interactive experience with the core ideas of our research. We invite the audience to reflect on what quality means in their own practice, and the work that is needed to achieve it in concert with AI. Attendees can contribute responses on post-it notes attached to the poster and will be invited to continue the conversation through a survey. We will encourage those who wish to learn more about our team’s ongoing work on these topics to attend our talk.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="designing-trustworthy-ai-systems-for-modeling-critical-minerals-recovery-processes">
+        <span class="abstract__title">Designing Trustworthy AI Systems for Modeling Critical Minerals Recovery Processes</span>
+        <span class="abstract__people">Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter, Sheng Pang, Tanushree Subramanian</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}As AI assistance lowers the barrier to coding, domain experts with limited programming experience are increasingly engaging with scientific computing software. However, a critical gap persists: evaluating and trusting AI-generated code remains a significant challenge for verification and validation.
+
+Drawing on our experience building the Process Optimization and Modeling for Minerals Sustainability (PrOMMiS) Flowsheet Inspector, a domain-specific tool for code-driven computational software, this poster details our methodology for building user trust. We demonstrate how we enable AI agents and design intuitive UX features to confidently integrate AI assistance into complex computational workflows.
+
+PrOMMiS allows chemical engineers to model critical minerals recovery, but the reliance on programmatic Python frameworks slows down setup and troubleshooting for non-programmers. We illustrate specific features within the PrOMMiS UI that directly address this: enabling users to validate AI-driven changes, improve diagnostic accessibility, and enhance error discoverability through an intuitive interface.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="fitting-cognitive-simulators-to-people-distributed-and-hierarchical-parameter-estimation-in-psyneulink">
+        <span class="abstract__title">Fitting Cognitive Simulators to People: Distributed and Hierarchical Parameter Estimation in PsyNeuLink</span>
+        <span class="abstract__people">Aryan Pandey, David Turner, Jonathan D. Cohen</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Computational models of cognition are simulators. A model of how someone decides, learns, or switches between tasks can be run to produce choices and response times, but for most such models there is no formula for the probability of the observed data [3]. Fitting one to a participant’s data therefore means evaluating a likelihood by running the simulator thousands of times, inside an optimizer loop. PsyNeuLink [1] is an open-source Python library, developed by the team at Princeton Neuroscience Institute for assembling models of cognition and neural computation as executable computational graphs. Its fitting component had two structural limits:
+
+1. Models already compile to machine code and execute multithreaded, but the fitting loop itself ran in one process, so a realistic fit was capped at a single machine and took hours to days.
+
+2. It fit one dataset at a time: given data from forty participants, a user either fit forty independent models (noisy) or stacked everything into one (biased). Neither uses the obvious fact that participants differ but are not unrelated. [6]
+
+Distributed fitting. We added a Dask [4] execution backend; fitting is distributed and launched under SLURM through a wrapper that builds the scheduler, driver, and workers out of the job’s own ranks [2]. The central engineering constraint is that these models are impractical to ship: a model can nest arbitrarily many sub-models, and its compiled form is generated in-process on first execution, so serializing a built model costs bandwidth. Workers instead receive a small picklable recipe, build the cognitive model locally, and cache it. On an identical problem and evaluation budget, eight workers across two nodes reduced a fit from 256 s to 37 s (6.8x).
+
+Hierarchical fitting. On the same Dask backend we built partial pooling: each participant is estimated under a group distribution learned from the participants themselves, alternating between the two until both settle. The standard route to this is full Bayesian sampling with HMC/NUTS [9], which is practical only for the rare cognitive models that have an analytic likelihood [8]; we instead use a Laplace approximation inside an Expectation-Maximization (EM) loop [5, 7], which only needs a model that can be simulated. Parallelizing over nodes, one worker performs one participant’s expectation step, returning a summary of that person’s estimate rather than a single number, while the driver performs the group-level maximization update. On synthetic data we score recovery as the root-mean-square difference (RMSE) between each participant’s estimated and true drift-rate parameter value, whose true spread across participants was 0.39. Complete pooling scores 0.391, zero pooling 0.190, and partial pooling 0.155.
+
+Learned likelihoods. The usual way to get a likelihood out of a simulator smooths simulated outcomes into a density by KDE [10, 11], which is slow and noisy. On a task-switching model [15], simulation noise made one parameter look unidentifiable (correlation with truth 0.19); on a reinforcement-learning model it destroyed the learning rate outright (correlation −0.05). A likelihood is a probability density over outcomes, and a mixture-density network [12] is a neural network whose output is a probability density. Training one once across the parameter space and evaluating it in place of the simulator [13, 14] recovers both at correlation 0.89 and 0.83, the latter matching an exact likelihood, and the whole pipeline including training costs roughly 60x less time than the simulation route. Furthermore, because the network is cheap and differentiable, MCMC sampling over the whole hierarchy becomes practical – roughly a hundred parameters jointly, which thousands of simulations per evaluation would have put out of reach. Hamiltonian Monte Carlo draws from the joint posterior over participants and group together, so uncertainty comes out of the samples directly. Across twelve datasets it recovers parameters with better coverage and error when compared to EM.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="coreloop-lusee-night-flight-software">
+        <span class="abstract__title">Coreloop - LuSEE-Night Flight Software</span>
+        <span class="abstract__people">Arnur Nigmetov</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Big picture. LuSEE-Night is a joint NASA-DOE pathﬁnder mission whose goal is to place a low-frequency radio spectrometer on the far side of the Moon. Measurements of the redshifted 21-cm signal from the cosmological Dark Ages would be a major advance in cosmology. The far side is uniquely suited to this measurement—the spectrometer there is shielded from terrestrial radio-frequency interference and from solar emissions during lunar night, with no ionosphere to absorb the signal.
+
+Overall structure of the spectrometer ﬂight software (coreloop). Conceptually, the on-board ﬂight software is rather simple. It is written in C; there is no OS, no dynamic memory. A rough outline of the main() function structure is as follows:
+
+C/C++
+
+while(true) &#123;
+
+process next command from the command buffer move data from FPGA buffer to one of the tick/tock buffers do only one of the following:
+
+send heartbeat or housekeeping packet
+
+send spectral data (various types: normal, time-resolved, raw) if (command == TIME_TO_DIE)
+
+break;
+
+}
+
+The coreloop features and lessons learned.
+
+● The spectrometer supports a primitive scripting capability to set a multi-hour observation program with varying settings.
+
+● Various bit-packing schemes are used to send as much data as possible.
+
+● Commands are listed in a Markdown table that serves as the single source of truth.
+
+● The ctypesgen and ctypes Python libraries make interacting with C extremely easy, in particular, for writing unit tests.
+
+● coreloop as a whole can also be tested on a regular computer with a minimalistic simulator, which makes development much easier.
+
+● There remain a few regrettable inconsistencies. It would be better to have a simple header struct in all packets that we send (it is then trivial to construct its Python counterpart from the binary blob). Unfortunately, not all our packets have such a header.
+
+AI and the coreloop. We tried using AI to generate an FFT implementation, but the code was buggy. However, the models at that time were not as powerful as they are now. Later we decided to document the codebase, and GPT-5 was able to almost perfectly understand both the global structure of the code and the small bit-manipulation functions for various encoding schemes.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="building-ai-physics-digital-twins-for-hurricanes-with-fourcastnet-v2-and-erf">
+        <span class="abstract__title">Building AI–Physics Digital Twins for Hurricanes With FourCastNet v2 and ERF</span>
+        <span class="abstract__people">Mahesh Natarajan, Aaron Lattanzi, Ann Almgren, Jean Sexton, Weiqun Zhang, Travis O'Brien, William Collins</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}While purely physical numerical weather models are computationally expensive, pure artificial intelligence (AI) models often struggle to respect physical conservation laws and accurately capture localized extreme events, such as rapid hurricane intensification. To address this challenge, we present a research software workflow that enables a hybrid AI–physics digital twin architecture, combining the execution speed of deep learning with the physical rigor of high-resolution numerical solvers. Our workflow utilizes global weather reanalysis data (GDAS) as initial conditions to drive the ECMWFFourCastNet v2 machine learning framework. FourCastNet v2 rapidly generates multi-day forecast trajectories, providing time-dependent boundary conditions to force the Energy Research and Forecasting (ERF) model—an open-source atmospheric solver built on the exascale AMReX framework. Using an 8 km horizontal resolution mesh with 42 million cells, ERF computes internal convective fluid dynamics, employing Smagorinsky turbulence, Kessler microphysics, and bulk surface parameterizations. We evaluate this framework on a 3-day tracking case study of Hurricane Laura (August 2020) executed across 16 NVIDIA A100 GPUs on NERSC’s Perlmutter supercomputer, completing in 1.5 hours. While both AI-only and hybrid approaches accurately constrain storm trajectory within the NOAA track forecast cone, AI-only predictions severely underestimate storm intensification. Conversely, the hybrid AI–physics framework reasonably reproduces the rapid intensification phase, reaching maximum wind speeds of ~120 knots, broadly consistent with IBTrACS observations. This work highlights the power of coupling AI boundary forcing with exascale physics solvers for high-fidelity extreme weather forecasting.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="ai-and-the-reorganization-of-rse-work">
+        <span class="abstract__title">AI and the reorganization of RSE work</span>
+        <span class="abstract__people">Will Sutherland, Anissa Tanweer, Jim Herbsleb, Thomas Bock, Curtis Atkisson, Bogdan Vasilescu</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Coding agents like Claude Code and Github Copilot have significant implications for the way software is built and maintained in the sciences. Some of these implications center around changes in practice, such as greater or worse productivity and the need for verification practices (He et al., 2025; O'Brien, 2025; Besser et al., 2026; O'Brien and Eisty, 2026). Another dimension of concern, however, is how research software development work will be reorganized around the presence of coding agents. Broader discourse has focused on the possibility of replacement or simple automation of software engineering work by agents, but, as with prior developments, the change is more likely to involve a more complex re-ordering of the work of producing software (Jarrahi, 2018; see also Gesing, 2025). Emerging work in industrial and open source contexts, for instance, suggests that coding agents can affect the interactions around code review (Song et al., 2025; Agarwal et al., 2026), assume different roles in the development process (Agarwal et al., 2026), and can change where particular kinds of development work fall in a team or community (Xu et al., 2025).
+
+This poster explores these shifts in the context of RSE work by examining dynamics of re-delegation going on around the adoption of coding agents by researchers and RSEs. Based on interviews with 25 RSEs and RSE managers in the US, we first outline these RSEs’ rationales about what makes research software development either amenable or unsuitable for the use of AI coding agents. These include niche codebases, siloed working environments, savvy end users, prevalence of prototyping, and the importance of problem formation. We then outline three dynamics of re-delegation, each of which represents a shift in the way work is divided up and assigned (or taken on) amongst human and non-human actors (Ribes et al., 2013). These are: enabling end user development, delegating implementation, and taking on AI training roles. In some cases our interlocutors report quite different, and sometimes contradictory experiences across these categories. This raises two questions that can help stimulate further discussion on this topic: 1) What aspects of RSE working environments might contribute to RSEs’ different experiences with AI coding agents? 2) What organizational changes could RSEs or RSE teams make that might mitigate some of the problems associated with the growing usage of AI coding agents while making best use of those agents’ benefits?{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="introducing-pegasusai-studio-a-new-way-of-artificial-intelligence-assisted-workflow-management-on-national-cyberinfrastructure">
+        <span class="abstract__title">Introducing PegasusAI Studio: A new way of Artificial Intelligence Assisted Workflow Management on National Cyberinfrastructure</span>
+        <span class="abstract__people">Mats Rynge, Komal Thareja, Karan Vahi</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Workflows are a key technology for enabling complex scientific computations. They capture the interdependencies between processing steps in data analysis and simulation pipelines as well as the mechanisms to execute those steps reliably and efficiently. Workflows can capture complex processes, promote sharing and reuse, and also provide provenance information necessary for the verification of scientific results and scientific reproducibility.
+
+PegasusAI 1 (https://pegasus-ai.org/) is an open, AI-infused workflow management framework that extends the Pegasus Workflow Management System 2 to enable intelligent orchestration of scientific workflows across the computing continuum, spanning edge resources, cloud platforms, and high-performance computing (HPC) systems. The project integrates machine learning into workflow planning, resource provisioning, execution monitoring, anomaly detection, performance prediction, and adaptive workflow management, while providing role-based, human-in-the-loop interfaces for scientists, cyberinfrastructure facilitators, and CI operators. PegasusAI also produces curated, AI-ready workflow execution datasets and reusable models to accelerate research in AI for scientific workflows and cyberinfrastructure operations. By combining trusted workflow technologies with AI-driven decision support, PegasusAI aims to improve the resilience, efficiency, and accessibility of distributed scientific computing.
+
+As part of PegasusAI we have been working on a hosted deployment called PegasusAI Studio3  (studio.pegasus-ai.org), that allows users to build, run, monitor, and debug Pegasus workflows with AI assistance — in one persistent browser workspace, from scientific intent to a running, inspectable run. PegasusAI Studio also comes with an in-built marketplace that features a variety of representative workflows from different science domains that users can use as a starting reference point for their workflows. Users can also generate workflows from the chat interface by combining their own prompts with workflow-specific skills, sent to whichever LLM backend they have connected. PegasusAI studio leverages core pegasus monitoring and debugging tools augmented with AI capabilities, including new web-based monitoring tools that give real time feedback to the users about their running workflows. For workflow execution, the studio seamlessly also connects with a variety of national Cyber Infrastructure resources such as ACCESS, PATh Facility, the OSPool, Fabric and Chameleon.
+
+PegasusAI studio is under active development with its public release scheduled for November 2026. In this poster, we present the vision and architecture of PegasusAI Studio and give a preview of its capabilities. Pegasus AI is a joint collaboration between Information Sciences Institute(ISI) at University of Southern California, Renaissance Computing Institute (RENCI) at University of North Carolina-Chapel Hill , University of Tennessee at Knoxville and University of Massachusetts, Amherst4 .{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="quarto-manuals-a-starter-template-and-framework-for-notebook-driven-scientific-software-operations-manuals">
+        <span class="abstract__title">Quarto Manuals: A Starter Template and Framework for Notebook-Driven Scientific Software Operations Manuals</span>
+        <span class="abstract__people">Tinashe Tapera, Michelle Audirac, Danielle Braun, Christopher Golden</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Climate-Smart Public Health (CSPH) is a data-driven approach to detect, quantify, and adapt to climate-related health impacts at a global scale, spanning surveillance, risk assessment, early warning and response, and healthcare systems adaptation (Golden et al., 2025). In practice, CSPH depends on computational workflows that integrate heterogeneous climate, environmental, and health data and must remain understandable, reproducible, and adaptable across collaborators and local settings.
+
+Despite the central role of such workflows in academia and industry, effective, reproducible software documentation remains overlooked (Aghajani et al., 2019). This challenge is likely to intensify as software development by both humans and AI continues to expand in scale and complexity (Martinelli, 2026; Robbes et al., 2026). Developers therefore need solutions beyond static documentation to support workflow execution, verification, and reproducibility in practical, user-friendly ways.
+
+Conventional documentation can describe a workflow, but for complex projects it is often unable to capture and verify runtime details such as platform dependencies, configuration, and stepwise relationships (Ebert et al., 2015). Command-line interface (CLI) wrappers can improve automation and reproducibility by providing a direct interface for complex tasks (van der Aalst et al., 2009), but they introduce a persistent trade-off: specialized wrappers improve consistency but can be rigid, while generic wrappers shift complexity to the user through numerous flags and configuration options (Brack et al., 2022; Sadiq et al., 2005). AI and agentic systems are also promising, but their reproducibility remains limited by non-determinism, and current workflow implementations still require careful human oversight to achieve acceptable reliability (Siddiq et al., 2025; Agrawal et al., 2026).
+
+Executable literate programming approaches can encode complex workflow steps while generating idempotent results (Knuth, 1992). Quarto is a modern, plain-text, multi-language, multi-output framework for creating reproducible documents and workflows (Allaire et al., 2026). Building on Quarto, we introduce Quarto Manuals: a framework for executable software manuals that guide users through workflows as ordered, interactive pages combining explanation, code execution, and verification. Rather than hiding workflow decisions, Quarto Manuals keep them visible and editable, making them well-suited to research computing contexts where local constraints and expert judgment shape execution. We demonstrate the approach with three examples of increasing sophistication: staging datasets; geospatial aggregation of environmental exposure data; and containerizing geospatial data science environments on HPC clusters. Across these cases, Quarto Manuals aim to improve the reproducibility and reliability of scientific workflows, particularly in contexts like CSPH where local constraints and expert judgment shape execution.
+
+For authors, they provide a structured yet adaptable way to turn recurring workflows into reusable operators’ manuals; for operators, they provide a stepwise, testable process for generating reproducible setup and execution artifacts and confirming progress in a structured, auditable way. In future work, we will explore how Quarto Manuals can complement AI and agentic systems by helping keep computational workflows transparent, verifiable, and reproducible as they grow in complexity.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="connecting-scientific-data-in-the-age-of-ai">
+        <span class="abstract__title">Connecting Scientific Data in the Age of AI</span>
+        <span class="abstract__people">Dorota Jarecka, Tek Raj Chhetri, Nima Dehghani, Nader Nikbakht, Suliman Sharif, Puja Trivedi, David Keator, Satrajit Ghosh</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}We are producing scientific data faster than any research community can curate and standardize it. In the age of AI, it is tempting to assume that scale alone will solve the problem, that enough data will reveal the answer. It will not. A number without units, a column without a definition, or a dataset without provenance is not information; it is noise shaped like information. AI can identify powerful patterns in data it can interpret, but missing or ambiguous metadata can also lead to confident but unreliable results. AI-ready science therefore begins not with larger models, but with data that carry enough machine-readable meaning for both computers and people to understand what they represent.
+
+Neuroscience has made substantial progress toward this goal. Community standards and platforms, including BIDS [1], NWB [2], openMINDS [3], NIDM [4], and BICAN [5], enable researchers to describe data using shared, machine-readable structures rather than relying only on ad hoc spreadsheets or free-text documentation. Together, these efforts advance the FAIR principles [6] by making data more findable, accessible, interoperable, and reusable. However, these successes emerged from different communities, use cases, and timelines. As a result, related concepts may still be represented in incompatible ways: an age might be encoded as a number of years, an ISO 8601 duration, or part of a nested object. Having multiple well-described schemas is progress; connecting the concepts expressed by those schemas is the next challenge.
+
+We will explore how AI and Large Language Models (LLMs) can support this connection throughout the metadata lifecycle. AI can help infer candidate schemas from existing data and documentation, identify semantically related fields, propose mappings and transformations between independently developed schemas, and translate researchers’ natural-language questions into structured queries. These capabilities must be combined with deterministic and inspectable infrastructure: ontology identifiers establish shared meaning; schemas and validation rules enforce structure and constraints; and provenance records preserve how each mapping or transformation was produced. In this hybrid model, AI proposes and explains possible connections, while formal representations, automated validation, and human review determine whether those connections should be trusted.
+
+This poster will present ongoing development and early-stage examples from open-source neuroscience software, including NeuroGhost [7], undata [8] and NIDM-based query tools [9], to illustrate a path from heterogeneous source data to connected and searchable metadata. The examples span generating a schema from data, harmonizing metadata across representations, and converting a natural-language research question into an inspectable structured query.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="a-multi-agent-ai-system-for-automating-tokamak-plasma-simulation-for-nuclear-fusion-energy">
+        <span class="abstract__title">A Multi-agent AI System for Automating Tokamak-Plasma Simulation for Nuclear Fusion Energy.</span>
+        <span class="abstract__people">Sarthak Sharma, Junchao Zhang, Lois Curfman McInnes</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Building a correct, performant HPC simulation from a scientific idea demands scarce, largely implicit expertise in numerical methods and library APIs. AI agents can now draft such code, but a draft that looks right is not necessarily one that an engineer can trust. We take a research-software-engineering (RSE) view of a real fusionenergy problem: not whether AI can replace that expertise, but what an RSE must build around a multi-agent AI system (orchestration, verification gates, provenance, and guardrails) to make its output trustworthy.
+
+Using a multi-agent AI system [3], from a plain-language prompt, we generate a PETSc simulation of the tokamak Grad–Shafranov equilibrium for nuclear fusion energy. In this poster, we will present the PETSc multi-agent system and demonstrate its application on this problem. The system includes a mathematical modeling agent, a numerical analysis agent, and an HPC code generation and execution agent. Around them, there is a projectowned orchestration driver that records every artifact (model, discretization decision, generated source code, build / run logs) with full provenance, so that runs are reproducible, resumable, and auditable. There is also a verification harness that gates every result before it is accepted.
+
+From the prompt (“Grad–Shafranov equilibrium for magnetically confined plasma in a tokamak”), the mathematical modeling agent identified the governing equation and returned its strong and weak forms; the numerical analysis agent selected a nonlinear solver on a structured grid; and the HPC code generation and execution agent produced a compact PETSc program that discretizes the operator on a distributed array with a true Jacobian matrix, and embeds a method-of-manufactured-solutions check. We do not treat “it compiled and ran” as sufficient evidence of success: an MPI-parallel grid-refinement study confirms second-order convergence. Verification, not the model’s confidence, decides acceptance. The same pipeline then produced one parameterized solver for several real-machine-shaped equilibria. Each was verified against an exact analytic benchmark and cross-checked against an independent community code. We scaled from the toy anchor to trustworthy shaped cases without re-architecting the generated solver.
+
+Running the AI agents on a shared HPC machine took environment and dependency wrangling, workingdirectory-independent process spawning, and graceful degradation when optional components were absent. There are also guardrails: in one instructive failure, a hard-coded iteration cap in the built-in orchestrator mislabeled a genuinely successful multi-stage run as a failure. We diagnosed it and contributed the fix upstream. Human effort is not eliminated but relocated, from writing solver code to engineering the orchestration, verification, and guardrails that make an AI system’s output trustworthy and its failures legible.
+
+We report per-run decision-gate metrics: correctness (model identified, program compiled and ran, convergence order), efficiency (execution duration, LLM / tool calls), and where human effort went (as a lightweight, reusable way to evaluate an agentic workflow rather than merely admire its output). The contribution is a candid, verification-driven account of how a research software engineer can wrap multi-agent AI code generation so that it produces trustworthy HPC simulation code for a flagship fusion-energy problem, and of the guardrails needed when it does not.
+
+In future work, we will raise the simulation difficulty to nonlinear profiles, time-dependent and resistive magnetohydrodynamics, and three-dimensional tokamak plasma, to map where the system succeeds and where it breaks, and to design guardrails and human-in-the-loop checkpoints that keep engineers in control as problems get harder.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="palyim-a-modular-open-source-science-gateway-for-ai-enabled-palynology-image-analysis">
+        <span class="abstract__title">PALYIM: A Modular, Open-Source Science Gateway for AI-Enabled Palynology Image Analysis</span>
+        <span class="abstract__people">Sandeep Puthanveetil Satheesan, Luigi Marini, Shu Kong, Carlos Jaramillo, Kenton G. McHenry, Charless C. Fowlkes, Surangi W. Punyasena</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}We introduce PALYIM (PALYnology IMage Analysis Platform), a web-based, intelligent, modular, and extensible platform under development for processing and visualizing Z-stack Whole Slide Image (WSI) collections using published AI models for palynological analysis. Palynology refers to the study of pollen grains, spores, and other microscopic organic-walled materials, called palynomorphs, isolated from sediment and rock samples [2]. Palynologists traditionally count fossil pollen and spores mounted on microscope slides visually. The advent of reliable and affordable slide scanning microscopes allows us to produce virtual, digital representations of these slides, though each high-resolution image may use ~10s of GBs of storage. Despite a growing body of published work on automated identification methods, pollen identification remains a highly specialized, laborious, and primarily visual skill; machine learning has not been adopted by the broader palynological community largely due to the mismatch between the expertise of many pollen experts and the skills required for developing and implementing computer vision, deep learning, data management, and HPC workflows. Additionally, most pollen analysts will have limited access to advanced computing resources needed to implement these workflows. PALYIM’s primary goal is to lower these barriers significantly.
+
+We are architecting and developing PALYIM research software modules focusing on ease of use and adaptation by research groups that use different microscopy data formats and have different research foci. These are tested with data from three different research groups to avoid development in isolation, and publicly released as open source software when a basic maturity level is achieved. We present the high-level architecture of PALYIM, which includes Clowder V2 [6] at its core, and describe the developed modules, including Tile Cropping [8], Regions-Of-Interest Segmentation [9], Binary Pollen Classification for initial filtering of pollen and non-pollen segments, Pollen Clustering and Annotation for training data generation, and planned modules, including final Pollen Classification to identify different pollen morphospecies. Clowder offers customizable, extensible features, including event listeners for messaging and data processing, a frontend for data organization and visualization, user account management, and HPC batch-job connectors, and a database. The PALYIM modules are command-line, container-ready applications customizable via run-time parameters that use Singularity and SLURM for HPC execution. These will be integrated into Clowder via event listeners. We share initial results and improvements, including images and metrics (e.g., we obtained ~3-5x speedup in Tile Cropping through I/O optimizations reducing multi-day processing times to ~1.5 days) of applying these modules to process a subset of microscopy data obtained from the Trans Amazonian Drilling Project (TADP) [1] on NCSA Delta [4]. We also outline our future work, including creating a workflow using these modules, data processing of digitized microscopy data collections, offering training to researchers in various career stages, and integration with the biological specimen image repository MorphoSource [7], the fossil specimen occurrence database, the Paleobiological Database (PBDB) [10], and Bioimages Archive [5] to seamlessly coordinate image analysis with the publicly-accessible archival of specimen images and taxonomic information. Modules of PALYIM in its nascent form have been applied to palynology research [3]. Through further development and feedback, we envision PALYIM being widely used by the palynology community and becoming an exemplar science gateway.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="preprint-bot-an-ai-based-tool-for-staying-abreast-of-research-papers-on-arxiv">
+        <span class="abstract__title">Preprint Bot: an AI-based tool for staying abreast of research papers on arXiv</span>
+        <span class="abstract__people">Collin Capano, William Gearty</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}It has become common practice in many fields for researchers to post papers to preprint servers such as arXiv.org before submitting to a journal. Preprint servers have made scientific research more accessible, as papers can be freely downloaded from them. However, the large volume of submitted papers makes it challenging for researchers to stay abreast of recent developments in their field. This problem has been exacerbated by the advent of large language models (LLMs), which has coincided with a rapid increase in publications. For example, arXiv.org now receives over 30,000 submissions per month, nearly double the rate from November 2022, when GPT-3.5 debuted [1]. While tools such as Google Scholar exist to automatically filter new papers and generate alerts, these tend to be relatively simple keyword searches.
+
+We introduce Preprint Bot [2], an open-source, AI-based utility that uses semantic search to identify new preprints that are relevant to a researcher’s interests. Users create profiles in which they upload previous publications that are of interest to them. Embeddings of these papers are created and stored using the SBERT package [3]. When new submissions are announced nightly, Preprint Bot performs a similarity search between the user’s corpus and the new submissions using FAISS [4]. Short, two- to three-sentence summaries of each of the top matches are generated using Llama [5] and posted to the user’s dashboard. Users are also notified of top matches via email. The source code for Preprint Bot is licensed under GPLv3 and available on GitHub. A freely available version is also hosted by the Syracuse University Open Source Program Office at preprint-bot.syr.edu, which currently serves several dozen researchers. All user data is kept private and secure since all dependencies are run locally and without external API calls.
+
+Preprint Bot illustrates how open-source AI-based tools can streamline the scientific process by improving researchers’ ability to discover new works.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="building-a-self-improving-agentic-harness-for-rse-projects">
+        <span class="abstract__title">Building a Self-Improving Agentic Harness for RSE Projects</span>
+        <span class="abstract__people">Geoffrey Lentner</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}AI models have gone from hallucinating curiosities to serious software agents over just a few short years [4,5]. Early evidence was mixed [2,5] and even as late as 2025 studies showed limited success of AI in software use-cases (solving bugs, refactoring, building new software) that varied by domain and human experience [1]. Over the past year (Nov 2025 - today) not only have models become impressively capable, but all of the challenges from prior years presented obvious engineering practice considerations such as multi-agent orchestrator-driven workflows [19], repeated adversarial review [6,7], model fusion, context engineering, MCP tool calling, and project-specific details by way of version controls skills (stored prompts invoked by name) [12,13]. Use of AI in software engineering covers a spectrum from total prohibition, to reluctant tolerance, to proactive policy, to complete unapologetic adoption with the harness as shared infrastructure [3].
+
+This poster highlights my own experiences over the last year working on research software engineering projects since 2025 — from basic AI interrogation and problem solving, to agentic code generation, to complete life-cycle agentic loops. While I’ve adapted these systems in multiple settings, the frontier use-case which has fully matured is in our HyperShell project [14] (hypershell.org/factory) [15]. An end-to-end, complete development life cycle, self improving, agentic loop that follows the spec-driven development pattern [10,11] with my own refinements to the concepts emerging in this space. A set of 8 agent skills and supporting materials and templates [16] that drive feature development in research software engineering projects.
+
+The difference between “vibe coding” (Karpathy, 2025) [18] and “agentic engineering” is in the details. It’s practice, discipline, measured application of rigor, and tooling. A few noteworthy industry players have really pioneered this on the frontier with ‘software factories’ that wire up cloud infrastructure and agents to human collaboration (Warp, 2026) [20,21,22]. We’ve fully adapted this technique with additions and refinements that include more rigorous goal shaping [8,9], planning, adversarial review [6], and importantly a self-improvement loop [7] that involves harness instructions that notice the friction in the harness itself and a practice of recording findings for later remediation in the next cycle.
+
+The poster will include a complete bill-of-materials for the research harness, the skills that drive the methodology [15,16], complete example of the workflow, and supporting illustrations of how they play out in an active software project. My goals are to drive conversations about the challenges still inherent to this style of work and to share perspectives on where we are and where we’re going as a community of practice [17].{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="spotmod-parallel-simulation-of-runoff-exposure-from-precision-field-applications">
+        <span class="abstract__title">SPOTMOD: Parallel simulation of runoff exposure from precision field applications</span>
+        <span class="abstract__people">Tj Schultz, Jorge Olivares-Rivas, Stefan Reichenberger, Robin Sur, Rafael Muñoz-Carpena</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Localized, high-resolution chemical application reduces off-field surface runoff to adjacent water bodies and terrestrial habitats compared to full-field broadcast application. Untreated field area with undisturbed vegetation can act as a sink for dissolved and adsorbed pesticides before the surface runoff exits the field, thus leading to a reduction of pesticide runoff and erosion losses additional to the effect of reduced applied mass.
+
+We developed SPOTMOD, a new 2D mechanistic-probabilistic modeling framework written in Python and leveraging Fortran-based tools to quantify pesticide runoff loss reduction due to precision (spot) application patterns. SPOTMOD was conceived to align with existing regulatory frameworks and tools, and built-in weather, crop, and soil parametrizations are based on existing FOCUS scenarios, but they can be easily adapted to other conditions. It couples PRZM [2], VFSMOD [1] and TOXSWA [3] to quantify pesticide runoff from spot applications and derive long-term predicted environmental concentrations in surface water.
+
+Individual runoff simulations are computed in parallel using MPI to accelerate modeling performance in capable HPC environments. This enables large-scale maps of treated fields to be realistically computable using the modeling framework, and supports grouping simulations in batches to be submitted as single jobs. We present the improved spot application modeling framework, results on real maps of treated fields, and discuss the performance improvements of running maps in multi-node simulations across multiple scenarios.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="philologically-grounded-error-generation-and-machine-learning-based-correction-for-premodern-greek">
+        <span class="abstract__title">Philologically Grounded Error Generation and Machine-Learning Based Correction for Premodern Greek</span>
+        <span class="abstract__people">Jacob Murel, Lune Duong</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Premodern Greek manuscripts reach us through centuries of hand copying, and every copy introduces error. Textual critics repair these errors through emendation, a slow expert process that Project Logion has begun to accelerate with machine learning. Logion’s existing pipeline uses a BERT-style masked language model to flag improbable readings. This work reframes emendation as a sequence-to-sequence task: mapping a corrupted passage directly to its corrected form, and builds the research software required to train and evaluate such a model. The poster presents three connected artifacts: a re-annotated philological error taxonomy, a configurable synthetic error generator, and a training and evaluation pipeline.
+
+A re-annotated benchmark taxonomy. 287 hand-collated emendations from the writings of Michael Psellos were re-annotated under a new seven-category taxonomy — Morphological, Addition, Omission, Phonological, Lexical, Diacritic, and Transposition — replacing an earlier flat scheme of edit operations (add, delete, change, accent, word order, punctuation) that reflected the editor’s process rather than the nature of the scribal’s errors. Annotation conventions were fixed explicitly (Morphological = same lemma, wrong inflection; Phonological = a distinct but sound-similar form; Lexical = spelling corruption or outright substitution). Psellos is excluded from all training data and used solely as the evaluation benchmark.
+
+A philologically parameterized error generator. The generator implements one independent, side-effect-free function per taxonomy category, with all randomness flowing through a single seeded RNG for reproducibility. Corruption sites are chosen by Beta-distribution positional weighting calibrated to observed positional bias; an attested confusion table mined from the annotated benchmark supplies phonological substitutions in preference to rule-generated ones; an empirical dual-error rate pairs two corruptions in one passage; diacritic handling round-trips through NFD decomposition and NFC recomposition so accent errors are isolated from base-letter changes; a suffix blocklist prevents preposition and particle paradigm bleed; and a retry budget with no-op detection drops passages that fail to corrupt rather than silently emitting them unchanged. Shared linguistic resources live in a sibling module so the same machinery can be reconfigured for Latin and other languages. The generator emits JSONL carrying per-event category labels, which is what makes stratified evaluation possible downstream.
+
+Model training. A domain-pretrained ByT5 checkpoint was trained on a roughly 200,000-passage five-author corpus in XML form, then fine-tuned on synthetic corrupt–correct pairs, alongside a matched-hyperparameter architecture comparison of ByT5-base against a subword-level BART-base on a locked deterministic split. Omission remains roughly six times harder than any substitution category, as restoring a dropped word is generation without local signal. Future training is necessary for better emendation results.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="schema-drift-in-public-financial-regulatory-data-a-validation-harness-for-reproducible-and-ai-assisted-analysis">
+        <span class="abstract__title">Schema Drift in Public Financial-Regulatory Data: A Validation Harness for Reproducible and AI-Assisted Analysis</span>
+        <span class="abstract__people">Elmurad Abbasov</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Every federally insured U.S. credit union files a quarterly Call Report (NCUA Form 5300), and the NCUA publishes the resulting data back to March 1994 as quarterly comma-delimited files [1]. The series is free, covers the full federally insured population, and is widely used in economics and public-policy research. It is also less stable than it looks. Account codes are added, retired, and relocated between filing cycles; the March 2022 form revision alone retired or replaced close to 600 codes, added more than 500 new or replacement codes, and moved roughly 400 to new locations on the form [2]. Institutions merge or are liquidated, so charter numbers enter and leave the panel. Corrections to previously filed quarters move through NCUA’s systems on their own schedule: the quarterly ZIP snapshots are published as final, while the same data served through NCUA’s web service continues to change as corrections arrive [1].
+
+None of this is hidden. Each cycle’s changes are documented in the published instructions and account catalogs. But very little of it is checked at the point of analysis. Concatenating the quarterly files raises no exception; it simply yields a plausible number that may be wrong in a direction nobody examined. The problem gets worse as ingestion is delegated to AI-assisted tooling. A generated pipeline that joins files on column names, or an agent that selects fields by description similarity, is blind in exactly the wrong place: a code whose meaning changed while its identifier survived. Automated ingestion raises the burden on data validation rather than lowering it, and the validation has to become machine-checkable instead of living in a practitioner’s head.
+
+I am developing an open validation harness to run against an assembled 5300 panel before analysis. It diffs account-code sets and descriptions across cycles using NCUA’s own published catalogs, reports panelcomposition churn, compares a working dataset against a pinned snapshot to surface restatements, and writes a machine-readable provenance record that travels with the analysis. The design borrows from regulated-industry practice — documented inventories, change control, independent validation — translated into small tooling that fits a research workflow.
+
+The poster will present a taxonomy of drift classes assembled from NCUA’s published form-change documentation, the harness design and its current limitations, and the measurement plan for characterizing drift across the 1994–present series. Bank call report data collected through the FFIEC exhibits the same failure patterns, and I would welcome conversations with RSEs who maintain pipelines over other publicagency datasets where this work should generalize.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="test-suite-decluttering-why-doing-too-many-tests-became-a-problem-for-our-project-and-what-we-tried-to-address-it">
+        <span class="abstract__title">Test suite decluttering; why doing too many tests became a problem for our project, and what we tried to address it</span>
+        <span class="abstract__people">Sufi Kaur, Ludovico Bianchi</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}One of the most common challenges for research software projects is not having enough tests. The solution (at least to the extent that we can ignore the extra eﬀort required) is straightforward enough: just add more tests. However, as a project grows and its tests accumulate, the opposite problem can appear: too much testing, which typically drives up runtime and leaves large amounts of test code that developers and maintainers must keep updating, making the software development process harder for everyone involved.
+
+This challenge compounds in research software built around complex modeling. WaterTAP solves models as large systems of equations, often through simultaneous optimization rather than sequential calculation, so a small change in one part of the model can ripple through and aﬀect other parts in ways that are hard to predict, leaving us with the strange task of trying to anticipate unpredictability. To decide where testing eﬀort actually matters, we need to understand which parts of the system are numerically stable and well-isolated, and which are tightly coupled and more likely to propagate unexpected eﬀects.
+
+Here, the path to a solution is less clear. In the abstract, the solution is to reduce testing, either by cutting the total number of tests or by running some tests less frequently. But how do we decide which tests we need, and which we can cut or run less often? Are there strategies or heuristics that can guide these decisions?
+
+The poster will cover our experience tackling this problem as maintainers of WaterTAP, a software project for equation-oriented modeling and optimization of desalination and water treatment technologies, allowing us to share our approaches, results, and lessons learned with the wider US-RSE community.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>

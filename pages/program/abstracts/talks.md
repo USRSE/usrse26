@@ -29,78 +29,184 @@ We present LZ Oracle, an AI-assisted platform being developed for the LZ dark ma
 
 This talk will describe the design goals, architecture, deployment considerations, and lessons learned from developing an AI-assisted knowledge retrieval platform for the LZ collaboration.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="data-sherpa-an-ai-powered-assistant-for-scientific-collaboration-knowledge-management">
-      <span class="abstract__title">Data Sherpa: An AI-Powered Assistant for Scientific Collaboration Knowledge Management</span>
-      <span class="abstract__people">Fabián Araneda-Baltierra and Felipe Menanteau</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="askalcf-a-rag-assistant-for-hpc-user-support">
-      <span class="abstract__title">AskALCF: A RAG Assistant for HPC User Support</span>
-      <span class="abstract__people">Jingyan Jiang, Huihuo Zheng, Akhilesh Bondapalli, Krishna Rauniyar, Murat Keceli, Yasaman Ghadar, Venkatram Vishwanath, Rong Ge and Haritha Siddabathuni Som</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports">
-      <span class="abstract__title">Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports</span>
-      <span class="abstract__people">Sophie Breitbart</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="a-modular-threaded-software-application-for-axion-detection-with-dmradio">
-      <span class="abstract__title">A Modular Threaded Software Application for Axion Detection with DMRadio</span>
-      <span class="abstract__people">Pamela Stark</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="poisonous-books-rule-based-physics-pipeline-and-agentic-llms-for-detecting-and-analyzing-toxic-pigments-in-victorian-bookbindings">
-      <span class="abstract__title">Poisonous Books: Rule Based Physics Pipeline and Agentic LLMs for Detecting and Analyzing Toxic Pigments in Victorian Bookbindings</span>
-      <span class="abstract__people">Kevin Bhimani, Asritha Polu, Melissa Tedone, Rosie Grayburn, Amelia Oakes and Sunita Chandrasekaran</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="building-modern-tools-for-computational-science-in-flutter-to-track-the-american-chestnut">
-      <span class="abstract__title">Building Modern Tools for Computational Science in Flutter to Track the American Chestnut</span>
-      <span class="abstract__people">Jay Billings</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con">
-      <span class="abstract__title">Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON</span>
-      <span class="abstract__people">Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="drinking-from-the-firehose-practical-strategies-for-research-software-engineers-to-stay-current-on-ai-tools-and-agents">
-      <span class="abstract__title">Drinking from the Firehose: Practical Strategies for Research Software Engineers to Stay Current on AI Tools and Agents</span>
-      <span class="abstract__people">Nick Ross and Tim Hannifan</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development">
-      <span class="abstract__title">Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development</span>
-      <span class="abstract__people">Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="designing-for-trust-in-ai-assisted-scientific-computing">
-      <span class="abstract__title">Designing for Trust in AI-Assisted Scientific Computing</span>
-      <span class="abstract__people">Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="marimo-an-open-source-reactive-notebook-for-python">
-      <span class="abstract__title">Marimo: an open-source reactive notebook for Python</span>
-      <span class="abstract__people">Akshay Agrawal</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins">
-      <span class="abstract__title">From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins</span>
-      <span class="abstract__people">Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="data-sherpa-an-ai-powered-assistant-for-scientific-collaboration-knowledge-management">
+        <span class="abstract__title">Data Sherpa: An AI-Powered Assistant for Scientific Collaboration Knowledge Management</span>
+        <span class="abstract__people">Fabián Araneda-Baltierra and Felipe Menanteau</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Large scientific collaborations face a persistent challenge: critical knowledge is scattered across hundreds of people, documents, datasets, and communication archives, creating steep learning curves and inefficiencies that disproportionately affect early-career researchers and newcomers. Senior scientists are repeatedly drawn away from high-impact research to answer the same operational questions, while valuable institutional knowledge risks being lost as collaborations sunset. Data Sherpa is an open-source, AI-powered assistant designed to address these challenges by providing researchers with fast, accurate, and context-aware access to collaboration-specific knowledge.
+
+The system employs a retrieval-augmented generation (RAG) architecture that integrates large language models with domain-specific scientific data through vector embedding and semantic search, utilizing Weaviate as the vector database. A distinctive design principle of Data Sherpa is its ability to acknowledge uncertainty, unlike typical LLM-based systems, it is engineered to explicitly indicate when it does not know the answer, providing cited, context-grounded responses that prioritize scientific trustworthiness over fluency. The current proof-of-concept demonstrates the system's capabilities using Dark Energy Survey (DES) documentation, publications, and technical material. In parallel, we are developing a locally deployed version using open-source LLMs on National Center for Supercomputing Applications (NCSA) infrastructure, transitioning toward full data sovereignty and long-term sustainability.
+
+The full implementation will expand the architecture to include multi-agent coordination systems (with specialized agents for documentary search, database access, and code generation) as well as fine-tuned domain-specific language models. The framework is designed for portability across scientific domains, with planned deployments for the South Pole Telescope (SPT) and environmental and ecological datasets at the University of Illinois’ Prairie Research Institute (PRI).{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="askalcf-a-rag-assistant-for-hpc-user-support">
+        <span class="abstract__title">AskALCF: A RAG Assistant for HPC User Support</span>
+        <span class="abstract__people">Jingyan Jiang, Huihuo Zheng, Akhilesh Bondapalli, Krishna Rauniyar, Murat Keceli, Yasaman Ghadar, Venkatram Vishwanath, Rong Ge and Haritha Siddabathuni Som</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Traditionally, HPC user support has relied on two main channels: written user guides and direct help from facility staff. That model is under pressure as supercomputing systems become more complex, heterogeneous, and dynamic. At ALCF, users must navigate Aurora, Polaris, inference services, scheduler policies, programming environments, and operational status information spread across multiple documentation pages and service sites. At the same time, the users of these systems now include not only scientists and Software Engineers, but also AI agents that need to retrieve guidance, reason about it, and act on behalf of users. This raises a practical challenge for the AI era: how can facilities use AI to make user support faster, more accurate, and more scalable while keeping answers grounded in trusted documentation and operational context?
+
+AskALCF is a production retrieval-augmented generation (RAG) assistant built to address this challenge. It indexes public user docs from ALCF, NERSC, OLCF, and other DOE facilities into a vector store that preserves images and code blocks. Two front ends share the same retrieval pipeline: a Streamlit web app for end users, and a Model Context Protocol (MCP) server for agent clients such as Claude Code, Codex, and IDE assistants. A second MCP server exposes read-only HPC operations (system status, allocations, IRI facility API), so an agent can combine docs and live cluster state in one tool call.
+
+The talk covers three things. First, the architecture of AskALCF and how we run the system in production: lab authentication, a cross-facility document index refreshed daily as the upstream guides change, and the day-to-day of keeping the service stable. Second, what we learned from a year of real usage — who asks, what they ask, where the chatbot still fails, and what the upgrades actually moved. Third, the roadmap to an autonomous agentic user support system including a planned ticket-solving agent and an offline trace-mining loop that would draft documentation pull requests with verify-by-execution evidence.
+
+The earlier ChatBot underlying this work was published at the SC25 HUST workshop [1]. This talk focuses on our ongoing efforts since then: the dual-MCP interface, production deployment, the measured impact on real users, and the agentic roadmap. We aim to present these contributions and invite comparison with related work at other HPC centers.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports">
+        <span class="abstract__title">Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports</span>
+        <span class="abstract__people">Sophie Breitbart</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}National Oceanic and Atmospheric Administration (NOAA) Fisheries scientists regularly assess hundreds of fish populations across the nation as per the agency’s mission to support sustainable fisheries and resilient marine ecosystems. The documents detailing these findings, called stock assessment reports, are highly technical and undergo rigorous scientific peer review. The reports must also meet federal accessibility standards, which can prove time-intensive to fulfill1 ; among other tasks, authors must add alternative text for oftentimes dozens of figures into their reports. We are developing a workflow that enables a semi-automated, reproducible, and transparent process for writing stock assessment reports with Quarto, based on two R packages (asar 2 and stockplotr3 ). In this talk, I will share our progress developing this workflow and the integration of a feature that partially automates the construction and insertion of data-driven alternative text into Quarto-based PDFs, a solution that preceded the now native support for alternative text in PDFs. I will also describe how this feature fits into a broader suite of tools designed to streamline the creation of accessible Quarto-based reports with less time and manual effort by assessment authors. Importantly, this approach can be readily adapted by research software engineers in any field who need to develop data-based, accessible documentation. Developing open-source solutions for increasing document accessibility is essential for ensuring that stock assessments are transparent and usable by fisheries stakeholders with varying roles and abilities.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="a-modular-threaded-software-application-for-axion-detection-with-dmradio">
+        <span class="abstract__title">A Modular Threaded Software Application for Axion Detection with DMRadio</span>
+        <span class="abstract__people">Pamela Stark</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The QCD axion is a well-motivated dark matter candidate with a striking experimental signature: in the presence of a strong magnetic field, the axion undergoes axion-to-photon conversion and induces effective alternating currents within the detector whose frequencies depend on the mass of the particle. The DMRadio suite of experiments are a series of resonant, lumped-element searches that will probe low mass axions below 1 ueV. The first experiment, DMRadio-50L, will target axions in the 5 kHz to 5 MHz range and is currently being commissioned at Stanford University.
+
+This talk will present an overview of the full software ecosystem of DMRadio-50L data acquisition (DAQ) system, outlining its conceptual design, architecture, and current status as the experiment transitions from commissioning to full operation in Fall 2026. More specifically, this talk will focus on the design and implementation of the “Sequencer” package, a modular, multi-threaded software application that coordinates data collection, performs real-time calibration, and enables remote control and observability of detector operations. This package serves as the first complete implementation of an automated data acquisition software for low-frequency lumped element resonant axion searches and draws from modern software engineering practices to ensure longevity, maintainability, and operational flexibility to serve the DMRadio suite of experiments for years to come.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="poisonous-books-rule-based-physics-pipeline-and-agentic-llms-for-detecting-and-analyzing-toxic-pigments-in-victorian-bookbindings">
+        <span class="abstract__title">Poisonous Books: Rule Based Physics Pipeline and Agentic LLMs for Detecting and Analyzing Toxic Pigments in Victorian Bookbindings</span>
+        <span class="abstract__people">Kevin Bhimani, Asritha Polu, Melissa Tedone, Rosie Grayburn, Amelia Oakes and Sunita Chandrasekaran</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Victorian bookbinding in the nineteenth century used several toxic pigments containing arsenic, lead, chromium, and mercury to color cloth bookbindings. Most notoriously used was the emerald green pigment copper acetoarsenite, which can carry several times the lethal adult dose of arsenic in a single bookbinding. These books often sat on library shelves with readers handling them not knowing they were hazardous. The Poison Book Project at Winterthur Museum and the University of Delaware explores Victorian-era publishers’ bindings, identifying potentially toxic pigments used in bookbinding components and how to handle and store potentially toxic collections more safely. Selected books dating between 1837 and 1900 were screened with X-ray fluorescence (XRF) spectrometry, and positive results confirmed with Raman spectroscopy in a foundational survey by Tedone and Grayburn [1]. That analysis of roughly 500 books identified 38 emerald green bindings containing arsenic.
+
+The XRF spectrum was interpreted by hand using a vendor software, and results were entered into spreadsheets. As the survey of books grew, the manual process became a bottleneck and the project needed a reproducible computational pipeline that could efficiently identify toxic elements and surface trends in their occurrence. A Research Software Engineer (RSE) worked closely with domain experts to rebuild the analysis in packaged, tested, reproducible Python software. Physics based principles were used to automate the identification of eight elements of interest. The output was fed into an HTML dashboard with interactive widgets for element prevalence, year trends, and a spectrum gallery, easily accessible for the conservators.
+
+Bibliographical metadata posed a different problem. Publisher names appear in different spellings, addresses are incomplete or use different toponyms, and records sometimes merge printer, publisher, and distributor into a single field. We built an agent that used Claude API to parse and search the publisher information to geocode the records and publishers. The results were used to render an interactive spatial publisher map, uncovering new toxic element usage trends across North America and Europe.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="building-modern-tools-for-computational-science-in-flutter-to-track-the-american-chestnut">
+        <span class="abstract__title">Building Modern Tools for Computational Science in Flutter to Track the American Chestnut</span>
+        <span class="abstract__people">Jay Billings</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The American Chestnut is a functionally extinct hardwood tree that once accounted for 10-25% of trees in forests in the eastern United States, primarily along the Appalachian range. The population was largely eliminated due to a blight inadvertently introduced from nursery stock of two species of Asian chestnut trees imported for orchards. Efforts to restore the American Chestnut rely on data gathered from decades of selective breeding in research orchards by professional foresters and observations of the wild, remaining population provided by volunteers. Tracking wild American Chestnuts can be tricky due to terrain, network access, and data collection methods, and it is further complicated by the need to use mobile devices in the woods and workstations in the lab. We present a suite of tools, in a codebase called Stager, built with Flutter and used to power a cross-platform, multi-tenant, geographical information system specifically designed to track these trees wherever they may be found. This application, Tracee, combines the tools in Stager to provide a mobile "field tool" app that merges live mapping and geolocation with voice models and mobile cameras to pinpoint trees while capturing images and transcribing live phenotyping notes in a forester-friendly way. Data from the field tool syncs with desktop and web versions of Tracee to put the field data directly in the hands of research scientists. This work presents the end-to-end process of creating and releasing both products, which heavily relied on large-language models (LLMs) in every part of the software development lifecycle, including business modeling and design. The specific challenges of utilizing AI-based code generation are discussed with a special comparison to traditional code generation techniques, such as deterministic project template-based generators. Finally, a straightforward method for driving LLMs to successful coding goal completion while developing these tools is presented to fill in the practical gaps. The combination of these techniques to create new scientific applications and tools in less than a year with only one developer demonstrates the type of impact that AI-enabled engineering can have when used correctly, with a focus on empowering instead of replacing research software engineers.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con">
+        <span class="abstract__title">Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON</span>
+        <span class="abstract__people">Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}For two decades the team of the Center for Open Neuroscience (CON) has been building an open, largely domain-agnostic research-software stack — first for neuroimaging, then for neuroscience broadly, and now used well beyond. Five actions — Reuse, Compose, Extend, Standardize, and Automate — carried us here, and we expect them to keep us productive as AI agents enter the workflow.
+
+The story traces back to 2000, when Yaroslav joined the lab of a Debian developer (Barak A. Pearlmutter) as a graduate student. That immersion introduced open-source practices for reuse of existing tools while developing new neurophysiological analysis methods. Debian’s compositional pattern instilled the discipline of integrating reused components to compose powerful systems, while sharing the maintenance burden with the broader community. Those practices encouraged extending the distribution with our own packages and contributing to upstream projects we depended on daily (e.g., Fail2Ban). Joining forces with like-minded but geographically distant collaborators, notably Michael Hanke, elevated all three actions to the next level. In 2005 we formed a team to package FSL and PyEPL under the pkg-exppsy project, which became NeuroDebian, used by thousands to this day. Recognizing the potential of machine learning for neural data, and the absence of good practice in then-existing implementations, we initiated PyMVPA (2007): an early reproducible-analysis library with a full test suite, CI, and tutorials before any of that was common in scientific Python.
+
+To close the same compositional gap in scientific data management, DataLad (2013) was created to provide data versioning and distribution on top of git and git-annex. Today, datasets.datalad.org aggregates thousands of datasets from many sources. National archives we lead or participate in (DANDI, EMBER, and OpenNeuro) are built on shared standards and accessible via DataLad. registry.datalad.org then federates DataLad datasets across institutions, clouds, and projects, providing discovery of petabytes of data without any central platform. In effect, git and git-annex have become our standard for managing all digital research artifacts — code, data, containers — across these venues. Seeing the need to standardize common “data languages” in neuroscience, we co-founded or joined community efforts on BIDS, NWB, and NGFF / OME-Zarr — serving on their advisory boards and bridging to industry standards such as DICOM.
+
+Given our team size, scaling to this many projects is impossible without automation. Since the early days we practice software- and data-level unit and integration testing, performance benchmarking, CI/CD with con/tinuous archiving logs and artifacts across PRs and builds, daily testing of git-annex and DataLad extensions, auto-rebuilt ReproNim containers, automated MRI/stimuli/aux data acquisition, and automirrored dandisets, among many others.
+
+The “Age of AI” doesn’t make this list optional — it amplifies every entry. AI lets teams move faster than ever while generating an explosion of divergent approaches, drifting styles, and under-reviewed output. Reuse seemingly becomes unnecessary when an agent confidently writes new code instead of finding a robust upstream; Compose appears effortless when AI generates ad-hoc adapters between misaligned components. Such practices are a recipe for fragile systems. Standardize remains the main protection against cacophonies of APIs and data formats, and Automated testing and review the only viable defense at agent-rate output.
+
+AI makes going it alone tempting, you can move fast, you have all the flexibility to do whatever you want, and you have fewer dependencies and supply-chain risks. But even simple code bloats over time to cover all possible cases, security requires many eyes and iterations to harden, collaboration is still more eﬀicient in the long term. The five actions pay off most when invested in common projects, shared standards, and joint maintainership — a hundred isolated agentic projects reinventing the same infrastructure is far worse than one collaborative ecosystem.
+
+This talk walks through ongoing CON projects through those five lenses — alongside our AI adoption — to show how a small RSE team can scale productively through the “Age of AI” in service of our long-standing call:
+
+“Together we can make neuroscience a better science!”{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="drinking-from-the-firehose-practical-strategies-for-research-software-engineers-to-stay-current-on-ai-tools-and-agents">
+        <span class="abstract__title">Drinking from the Firehose: Practical Strategies for Research Software Engineers to Stay Current on AI Tools and Agents</span>
+        <span class="abstract__people">Nick Ross and Tim Hannifan</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The pace of change in artificial intelligence tooling has created a unique challenge for research software engineers (RSEs). New large language models, coding agents, retrieval-augmented generation frameworks, protocol standards such as the Model Context Protocol (MCP), and AI-assisted development environments appear on a near-weekly basis. Each promises to reshape how research software is written, tested, and maintained. RSEs serve as the connective tissue between domain researchers and production-quality software. Falling behind on these developments risks missing genuine productivity gains, while chasing every new release risks burnout and distraction from core work. The challenge is not a lack of information; it is an overwhelming surplus of it.
+
+In this talk, we share practical, low-overhead strategies that our team at the University of Chicago has adopted to stay informed about the rapidly evolving AI landscape without sacrificing focus on our primary research software responsibilities. We organize our approach around three pillars: providing incentives for experimentation, structured team knowledge-sharing, and hands-on evaluation.
+
+First, we discuss how we provide incentives for experimentation. Staying current with AI tools requires more than passive reading; it requires trying things out. We describe how we create dedicated time, space, and encouragement for team members to explore new tools without the pressure of immediate deliverables. This includes allocating time for exploratory work, recognizing experimentation as a valued activity rather than a distraction, and lowering the barrier for team members to spin up proofs of concept with emerging AI tools and agents.
+
+Second, we describe lightweight team rituals for knowledge-sharing: short, recurring sessions where team members present a tool, paper, or technique they have encountered. These sessions serve a dual purpose. They keep the whole team broadly aware of the landscape and they create a low-pressure venue for critical discussion about what is genuinely useful versus what is hype. Third, we outline a simple triage framework for hands-on evaluation. Not every promising tool warrants a deep dive, so we describe how we quickly categorize new AI tools into "watch," "try," and "adopt" tiers based on relevance to our current projects, maturity, community uptake, and integration effort. We share examples of tools that moved through this pipeline, including some that became part of our daily workflow and others that we set aside after brief experimentation.
+
+We conclude with reflections on what has worked, what has not, and what we plan to change. Our goal is to offer fellow RSEs a replicable, low-effort playbook for staying current in a domain that shows no signs of slowing down. We hope this talk sparks a broader conversation within the US-RSE community about how we collectively manage the challenge of continuous learning in an era of rapid technological change.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development">
+        <span class="abstract__title">Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development</span>
+        <span class="abstract__people">Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The Spallation Neutron Source (SNS) and the High Flux Isotope Reactor (HFIR) at Oak Ridge National Laboratory are two of the most advanced neutron scattering facilities in the world, where thousands of researchers each year probe the structure and dynamics of materials at the atomic scale, advancing quantum materials, energy storage, medicine, soft matter, and engineering. The Neutron Data Project provides and maintains more than 40 software packages that support data reduction for all user program instruments (currently 31 instruments) across SNS and HFIR. This software is integral to hundreds of neutron scattering and imaging experiments each year, and the continuity of facility operations depends on its reliability. Our RSE team builds and maintains this portfolio, spanning instrument-specific reduction codes, interactive visualization tools, web applications, and live data services, and also contributes to community analysis software.
+
+This talk presents an honest account of what it takes to build, modernize, and sustain a portfolio of this size in a facility environment. Every instrument has distinct reduction requirements, and highly reconfigurable instruments demand software that adapts to constantly changing instrument states. Several tools predate the careers of the RSEs who maintain them, and legacy code must be modernized without disrupting an operational user program. A small team spread across many packages balances new development against maintenance, bug fixes, and beamline support tied to the facility run cycle. Behind the software sit persistent challenges: stabilizing builds and deployments across heterogeneous environments, taming dependency management, hardening CI/CD pipelines, chasing performance regressions, and capturing requirements from instrument scientists across diverse domains.
+
+We then describe how we are adapting this practice for the age of AI-assisted development. We have provisioned AI coding assistants for the RSE team and RSE-adjacent scientists and are piloting the use of AI to optimize selected phases of our software engineering lifecycle: requirements capture and refinement, design knowledge and domain context, implementation, testing, and documentation. We share our motivations, evaluation approach, and early experience and commit to reporting back to the RSE community on what works, what doesn’t, and what we would advise others at a similar scale.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="designing-for-trust-in-ai-assisted-scientific-computing">
+        <span class="abstract__title">Designing for Trust in AI-Assisted Scientific Computing</span>
+        <span class="abstract__people">Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}As AI assistance lowers the barrier to coding, domain experts with limited programming experience are increasingly able to make use of scientific computing software. Yet a critical gap remains: evaluating and understanding the AI-generated code is still a significant challenge, making it difficult to verify and trust results. This talk presents lessons from building a computational optimization platform for chemical process engineering, sharing UX strategies to build confidence among non-programmers by enabling them to visualize underlying conceptual models and validate AI-driven changes.
+
+As AI tooling becomes increasingly common in research software, there is growing concern about new classes of subtle, hard-to-detect errors. Unlike obvious failures, AI-generated code changes can produce plausible but incorrect results that trigger no exceptions and leave no traces. This is especially problematic in model based scientific software where the internal reasoning can be opaque and complex code changes can be a "black box" for non-programmers. For these users, AI-facilitated changes may feel like trial and error guesswork rather than a deliberate and strategic process. Without better visibility and validation, researchers risk building on flawed results that are difficult and costly to correct later.
+
+Drawing on our experience building the Process Optimization and Modeling for Minerals Sustainability (PrOMMiS) Flowsheet Inspector, a domain-specific application designed for code-driven computational software, this talk shares practical strategies for building trust and confidence among domain experts with limited programming experience. We discuss UX patterns that surface the underlying conceptual models and help users to effectively execute, debug, and verify AI-generated modifications. Through specific examples, we demonstrate how to make diagnostic information more accessible, improve error discoverability, and empower users to evaluate changes through an intuitive interface.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="marimo-an-open-source-reactive-notebook-for-python">
+        <span class="abstract__title">Marimo: an open-source reactive notebook for Python</span>
+        <span class="abstract__people">Akshay Agrawal</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}We introduce marimo, an open-source reactive notebook for Python that addresses several common complaints about first-generation notebooks. marimo notebooks are reproducible, with a reactive runtime that eliminates hidden state; interactive, with UI elements that are automatically synchronized with Python (no callbacks); expressive, supporting markdown that can be parametrized by arbitrary Python values; stored as pure Python files, so they are Git-friendly; executable as scripts; and shareable as web apps or WASM-powered static HTML.
+
+marimo is used today by scientists and developers at several companies and research institutions, including SLAC and Stanford. It is downloaded over 2 million times a month. A reactive programming environment
+
+marimo keeps code, outputs, and program state consistent. Run a cell and marimo reacts by automatically running the cells that reference its declared variables. Delete a cell and marimo scrubs its variables from program memory, eliminating hidden state.
+
+Our reactive runtime is based on static analysis, forming a dataflow graph based on variable declarations and references. To ensure the dataflow graph is well-formed, marimo imposes two constraints on user code: variables can be defined in at most one cell, and cyclic references across cells are disallowed.
+
+The marimo library
+
+marimo is both a notebook and a library — importing the marimo library provides the user with utilities for authoring dynamic markdown; creating interactive UI elements; rendering progress bars; and more.
+
+marimo's interactive elements feed into reactivity: interacting with elements such as sliders or selectable plots automatically sends their values to Python and triggers execution of cells referencing variables bound to the interacted-with elements. We extend this rule to support higher-order elements such as submittable forms, dictionaries, and arrays of constituent elements.
+
+A pure Python ﬁle format
+
+marimo notebooks are stored as pure Python files, designed so that small changes in notebook code yield small diffs. These files are also executable, with cells run in a topologically sorted order. We discuss the design of this file format, as well as trade-offs made.
+
+Shareability
+
+marimo is easily shared: notebooks can be run as read-only apps from the command line, and exported as interactive WASM-powered static HTML.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins">
+        <span class="abstract__title">From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins</span>
+        <span class="abstract__people">Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific user facilities like the Linac Coherent Light Source (LCLS), the world’s brightest X-ray free-electron laser at the SLAC National Accelerator Laboratory, require rapid, continuous control adjustments to maximize beam time and experimental throughput. Machine Learning (ML) surrogate models can help operators navigate complex parameter spaces, but only if those models can be deployed reliably and updated without disrupting operations. How do you reliably and sustainably move ML models from various researchers’ training environments into a facility production system?
+
+In this talk, we present a reproducible MLOps framework 1 that addresses this challenge in the context of digital twin deployments for online accelerator control. We discuss how we standardized the Kubernetes-based deployment of digital twins and ML inference services by prioritizing reproducibility across environments through container-based packaging, rigorous model versioning and experiment tracking integrated into the deployment pipeline, minimal boilerplate templates so domain scientists can onboard models without DevOps expertise, and flexible configuration to adapt across diverse control scenarios. The framework is built around a software ecosystem 2 that provides abstraction layers to wrap simulator-specific backends (PyTorch-based neural network surrogates and physics simulations) behind a common Python API. This design means the deployment infrastructure generalizes across model types rather than being tied to any single simulation code or modeling approach. The same model instance can be used directly in Python-native workflows for development and testing, or deployed as an EPICS IOC for integration with existing control room infrastructure, without changes to the underlying model code.
+
+This approach demonstrates how such software infrastructure can lower the barrier to AI integration in research facilities, allowing scientists to focus on model development while RSEs maintain the reliability, observability, and sustainability of the deployment stack. We discuss lessons learned, remaining challenges around hybrid ML-simulation system models, and paths toward tooling that is shareable across facilities.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
   <details class="abstract">
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps">
@@ -120,264 +226,631 @@ Over the past three years, INTERSECT has designed and delivered three intensive 
 
 This talk focuses on lessons learned from three years of INTERSECT bootcamps, emphasizing evidence gathered from pre- and post-bootcamp participant surveys and instructor reflections. We discuss what has worked well, where participants report the greatest learning gains, which topics remain challenging, and how bootcamp design choices (e.g., modularity and pacing) impact participant outcomes. We also highlight changes made across bootcamp iterations in response to early feedback and assessment data. We conclude with key takeaways for others designing advanced RSE training programs and discuss opportunities for community members to reuse INTERSECT materials, contribute modules, and/or participate in future bootcamps.{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.22049760">https://doi.org/10.5281/zenodo.22049760</a></p></div>
   </details>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era">
-      <span class="abstract__title">Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era</span>
-      <span class="abstract__people">Simon Stone, William Cowen and Christian Darabos</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="building-open-source-communities-through-effective-tutorials">
-      <span class="abstract__title">Building Open Source Communities Through Effective Tutorials</span>
-      <span class="abstract__people">Alec Scott and Gregory Becker</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="evolving-hpc-user-support-just-in-time-learning-with-instructional-videos">
-      <span class="abstract__title">Evolving HPC User Support: Just-in-Time Learning with Instructional Videos</span>
-      <span class="abstract__people">Lipi Gupta, Afton Geil, Lisa Claus and Adam Lavely</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems">
-      <span class="abstract__title">Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems</span>
-      <span class="abstract__people">Aditi Gopalan, Adam Taylor, Dave Bunten, Gregory Way and Jineta Banerjee</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants">
-      <span class="abstract__title">Back to Basics: Design-First Development in the Age of AI Coding Assistants</span>
-      <span class="abstract__people">Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software">
-      <span class="abstract__title">Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software</span>
-      <span class="abstract__people">Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="research-software-engineering-in-the-age-of-generative-ai">
-      <span class="abstract__title">Research Software Engineering in the Age of Generative AI</span>
-      <span class="abstract__people">Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="beyond-editing-code-uses-for-ai-tools-in-scientific-work">
-      <span class="abstract__title">Beyond Editing Code: Uses for AI Tools in Scientific Work</span>
-      <span class="abstract__people">Johanna Cohoon and Drew Paine</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="ten-projects-two-teams-one-question-how-does-ai-impact-development">
-      <span class="abstract__title">Ten Projects, Two Teams, One Question: How Does AI Impact Development?</span>
-      <span class="abstract__people">Dave Brownell</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="coding-with-llm-agents-the-research-software-engineer-as-the-quality-gate">
-      <span class="abstract__title">Coding with LLM Agents: The Research Software Engineer as the Quality Gate</span>
-      <span class="abstract__people">Nicole Tebaldi and Kyle Crocker</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows">
-      <span class="abstract__title">Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows</span>
-      <span class="abstract__people">Md Hasan Shahriar Simanto</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-mood-boards-to-web-components-our-journey-building-a-design-system-for-research">
-      <span class="abstract__title">From Mood Boards to Web Components: Our Journey Building a Design System for Research</span>
-      <span class="abstract__people">Katrina Turner and Freddy Mande</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="human-in-the-loop-requirements-gathering-and-researcher-trust-in-the-age-of-ai">
-      <span class="abstract__title">Human in the Loop: Requirements Gathering and Researcher Trust in the Age of AI</span>
-      <span class="abstract__people">Michael Kennel</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="designing-for-two-audiences-ai-readiness-and-human-data-usability">
-      <span class="abstract__title">Designing for Two Audiences: AI-Readiness and Human Data Usability</span>
-      <span class="abstract__people">Cody O'Donnell</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions">
-      <span class="abstract__title">Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions</span>
-      <span class="abstract__people">Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="agentic-code-modernization">
-      <span class="abstract__title">Agentic code modernization</span>
-      <span class="abstract__people">Peter Peterson and Addi Malviya-Thakur</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="scientific-agentic-engineering-a-framework-for-reliable-ai-agents-in-research-software">
-      <span class="abstract__title">Scientific Agentic Engineering: A Framework for Reliable AI Agents in Research Software</span>
-      <span class="abstract__people">Victor Weeks</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-laptop-to-cluster-hpc-translation-patterns-for-ai-stacks">
-      <span class="abstract__title">From Laptop to Cluster: HPC Translation Patterns for AI Stacks</span>
-      <span class="abstract__people">Parmanand Sinha</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="beyond-code-pairs-generating-test-grounded-data-for-ai-assisted-scientific-software-modernization">
-      <span class="abstract__title">Beyond Code Pairs: Generating Test-Grounded Data for AI-Assisted Scientific Software Modernization</span>
-      <span class="abstract__people">Le Chen and Rajeev Thakur</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="cloud-native-graphical-and-programmatic-cross-database-access-to-experiment-metadata-with-trino-superset-and-ibis">
-      <span class="abstract__title">Cloud-Native Graphical and Programmatic Cross-Database Access to Experiment Metadata with Trino, Superset and Ibis</span>
-      <span class="abstract__people">Eli Mizrachi</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution">
-      <span class="abstract__title">Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution</span>
-      <span class="abstract__people">Hilario Torres</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration-by-fernando-garzon-steven-yeu-scott-sakai-and-subhashini-sivagnanam">
-      <span class="abstract__title">OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration by Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam</span>
-      <span class="abstract__people">Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="building-inclusive-talent-pathways-scaling-outreach-workforce-development-and-community-engagement-for-rse">
-      <span class="abstract__title">Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE</span>
-      <span class="abstract__people">Laura Theademan and Suzanna Gardner</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="hpc-carpentry-and-community-building-at-nist">
-      <span class="abstract__title">HPC Carpentry and Community Building at NIST</span>
-      <span class="abstract__people">Andrew Reid</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="navigating-the-code-review-process-as-a-team-a-case-study">
-      <span class="abstract__title">Navigating the Code Review Process as a Team: A Case Study</span>
-      <span class="abstract__people">Abbey Roelofs</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="collaboration-within-rse-group-at-princeton-development-of-slurmise-for-resource-usage-estimation">
-      <span class="abstract__title">Collaboration within RSE group at Princeton: development of slurmise for resource usage estimation</span>
-      <span class="abstract__people">Troy Comi, Ioannis Paraskevakos and Rob Bierman</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton">
-      <span class="abstract__title">Developing a Handbook of best practices for research software sustainability at Princeton</span>
-      <span class="abstract__people">Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows">
-      <span class="abstract__title">Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows</span>
-      <span class="abstract__people">Niharika Pramod Pujari</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="performance-portable-software-design-patterns-what-they-can-do-and-why-we-should-collect-them">
-      <span class="abstract__title">Performance Portable Software Design Patterns – What they can do and why we should collect them.</span>
-      <span class="abstract__people">Jakob Bludau</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-chaos-to-schema-llm-powered-document-information-extraction">
-      <span class="abstract__title">From Chaos to Schema: LLM-Powered Document Information Extraction</span>
-      <span class="abstract__people">Alice Duan and Launa Greer</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="generative-ai-for-research-data-processing-lessons-learnt-from-three-use-cases">
-      <span class="abstract__title">Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases</span>
-      <span class="abstract__people">Modhurita Mitra, Martine de Vos, Nicola Cortinovis and Dawa Ometto</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models">
-      <span class="abstract__title">Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models</span>
-      <span class="abstract__people">Nicholas Reinicke and Robert Fitzgerald</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms">
-      <span class="abstract__title">Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs</span>
-      <span class="abstract__people">Shailaja Keyur Sampat</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions">
-      <span class="abstract__title">A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions</span>
-      <span class="abstract__people">William Gearty</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="preparing-students-for-ai-assisted-research-workflows">
-      <span class="abstract__title">Preparing Students for AI-Assisted Research Workflows</span>
-      <span class="abstract__people">Alejandra Castillo</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="what-they-don-t-tell-you-about-the-data-science-to-rse-transition">
-      <span class="abstract__title">What They Don’t Tell You About the Data Science to RSE Transition</span>
-      <span class="abstract__people">Ritika Giri</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="bears-bottlenecks-and-bus-factors-why-embedded-rses-pay-off">
-      <span class="abstract__title">Bears, Bottlenecks, and Bus Factors: Why Embedded RSEs Pay Off</span>
-      <span class="abstract__people">Miranda Mundt</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="mission-control-service-and-the-stewardship-of-science">
-      <span class="abstract__title">Mission Control: Service and the Stewardship of Science</span>
-      <span class="abstract__people">Malcolm Barrett</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers">
-      <span class="abstract__title">Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers</span>
-      <span class="abstract__people">Julia Damerow and Susan Massey</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="from-lakehouse-to-labmate-kbase-s-vision-for-ai-enabled-scientific-discovery">
-      <span class="abstract__title">From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery</span>
-      <span class="abstract__people">Mikaela Cashman, David Lyon, Christopher J. Neely, Benjamin Allen, Christopher S. Henry, Robert Cottingham, Gazi Mahmud, Elisha M. Wood-Charlson, Chris Mungall, Paramvir Dehal and Adam P. Arkin</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="heroic-a-research-software-infrastructure-for-real-time-multi-messenger-observatory-coordination">
-      <span class="abstract__title">HEROIC: A Research Software Infrastructure for Real-Time Multi-Messenger Observatory Coordination</span>
-      <span class="abstract__people">Jon Nation, Fabián Araneda-Baltierra and Curtis McCully</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="a-managed-database-as-a-service-platform-for-scientific-computing">
-      <span class="abstract__title">A Managed Database-as-a-Service Platform for Scientific Computing</span>
-      <span class="abstract__people">Jingyan Jiang, Huihuo Zheng and Venkatram Vishwanath</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="one-size-fits-none-rethinking-campus-research-computing">
-      <span class="abstract__title">One Size Fits None: Rethinking Campus Research Computing</span>
-      <span class="abstract__people">Christopher Heller</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era">
+        <span class="abstract__title">Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era</span>
+        <span class="abstract__people">Simon Stone, William Cowen and Christian Darabos</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software development is becoming increasingly decentralized. Domain scientists, data analysts, and research staff who are self- or semi-taught programmers are writing more code than ever, and the rise of AI coding assistants has dramatically lowered the barrier to producing software artifacts. But the fundamentals of good software engineering (like version control, testing, modular design, documentation, collaborative workflows) have not changed. AI tools, when used without guidance, will generate mountains of plausible-looking but poorly structured, untested, and unmaintainable code. The challenge for the research computing community is no longer just producing software but helping their community produce software that is reliable, reproducible, and sustainable.
+
+Research Software Engineers are uniquely positioned to address this challenge. RSEs inhabit the intersection of research practice and software craftsmanship. They understand both the domain pressures that drive researchers to "just get it working" and the engineering disciplines that make software trustworthy over time. But traditional approaches to spreading good practice like workshops, tutorials, learning materials or documentation can only go so far. They convey knowledge, but they rarely produce the kind of durable learning that comes from hands-on experience under real constraints.
+
+We argue that the hackathon format, when deliberately designed around inclusion and learning rather than competition, offers RSEs a powerful vehicle for experiential software engineering education. We present a case study from Dartmouth College, where the RSE team organized an internal hackathon that brought together staff from across Research Computing &amp; Data, including systems administrators, research facilitators, data scientists, and software engineers, to collaboratively build Stepify, a functional AI-powered video-to-tutorial converter, in a single day.
+
+Three design principles guided the event. First, a job for every role: the project scope included UI/UX sketching, test case curation, output evaluation, and documentation alongside code, so that non-coders contributed meaningfully. Second, a sprint, not a race: we removed prizes, judging, and pressure to ship, framing the day as focused collaboration. Third, a prepared mind: RSE arrived with a preliminary architecture but presented it as a starting point, not a specification, leaving room for the team to reshape the design.
+
+The results were more impactful than just the working prototype. Staff who do not identify as software engineers reported feeling more confident engaging with development workflows. The event seeded ongoing conversations about code review, collaborative development, and software quality within the organization. As one participant reflected: "People consistently surprise themselves when they are trusted to try."
+
+This talk will share the hackathon design, its outcomes, and practical guidance for RSE teams looking to catalyze software engineering culture within their organizations by creating structured opportunities to apply best practices instead of lecturing about them.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="building-open-source-communities-through-effective-tutorials">
+        <span class="abstract__title">Building Open Source Communities Through Effective Tutorials</span>
+        <span class="abstract__people">Alec Scott and Gregory Becker</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Over the past nine years, the Spack community has developed and iterated on a hands-on tutorial given at major HPC venues such as SC, ISC, SCAsia, and PEARC. This talk summarizes what we have learned and provides practical guidance to other projects looking to design, run, and maintain their own effective tutorials for open source software projects.
+
+We will present strategies for keeping multi hour sessions engaging, with an emphasis on live, guided exercises supported by standardized cloud and container environments as well as openly available web based materials. Attendees will learn how to structure a strong conference tutorial proposal, build on existing presentations, and how to leverage the resulting visibility from tutorials to grow a community around their project.
+
+Finally, we will describe techniques for making tutorials maintainable over time, including scripted inputs and outputs, integrating CI/CD workflows, and tips for onboarding and training new instructors.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="evolving-hpc-user-support-just-in-time-learning-with-instructional-videos">
+        <span class="abstract__title">Evolving HPC User Support: Just-in-Time Learning with Instructional Videos</span>
+        <span class="abstract__people">Lipi Gupta, Afton Geil, Lisa Claus and Adam Lavely</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}NERSC, the mission high-performance computing facility for the U.S. Dept. of Energy, provides compute resources for 12,000 scientific users and is known for its thorough documentation and highly-rated user support. However, more than 25% of NERSC users each year are new to our facility, and the plurality of our users are graduate and undergraduate users. While some of these users may arrive at NERSC with HPC experience, annual user feedback indicates that an increasing percentage of our user population has little to no HPC experience. Given this shifting landscape, NERSC staff have been pioneering new user support models in order to provide high-quality technical instruction and support to all of our users.
+
+NERSC, like many HPC facilities, provides technical information via online documentation pages. In doing so, we provide accurate and thorough information, but these resources are primarily beneficial to advanced or intermediate users. User survey feedback indicates that some novice users find the documentation hard to understand or intimidating. To address this, the NERSC User Engagement Team has begun developing and implementing New User Onboarding to curate information based on the new user’s experience level. In order to bridge the gap between documentation and accessible, novice-friendly information, our staff have branched into new media.
+
+A commonly requested method for understanding and learning to use NERSC systems is short-form instructional videos. New and novice users frequently encounter specific roadblocks such as logging into the system via ssh, setting up VSCode to connect to NERSC, or running one’s first job on Perlmutter, which can completely stall their progress. These users may find that a solution-focused short video tutorial is more efficient and effective than static documentation. In this way, the short video format enables “just-in-time” learning, particularly for task-oriented users who prefer to get started quickly with minimal preamble. Hosting these videos on YouTube and linking them to documentation and training materials further improves accessibility and discoverability for the broader community, as well as NERSC users.
+
+The evolution of our user support paradigm requires creating technically accurate videos that are learner centered. To achieve this, NERSC staff with Instructional Designer (ID) experience engage with Subject Matter Experts (SMEs) to produce videos. This relationship requires the ID to provide pedagogically-informed resources to the SME, who populates the technical content. In doing so, the resulting videos are accessible, well-produced, and effective learning tools for novice users.
+
+In our talk, NERSC staff will share several resources that can be used by the HPC and RSE community for creating instructional videos. This includes a handbook with best practices, step-by-step guides regarding equipment, set up, and video production. We will also share best practices and resources for engaging with SMEs for instructional video production, to help the broader community adopt these practices to create effective instructional videos at their own institutions.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems">
+        <span class="abstract__title">Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems</span>
+        <span class="abstract__people">Aditi Gopalan, Adam Taylor, Dave Bunten, Gregory Way and Jineta Banerjee</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Modern computational biology depends on research software, yet many scientific tools remain difficult to reproduce, maintain, and reuse. In our previous Software Gardening Almanack (SGA) presentation, we introduced “Software Gardening” as a framework for improving research software sustainability through measurable engineering and governance practices. In this follow-up talk, we present major updates and new findings from ecosystem-scale analyses of more than 10,000 computational biology repositories spanning genomics, RNA-seq, structural biology, imaging, and single-cell analysis.
+
+Our updated analyses show that measurable sustainability signals including licensing, citation metadata, dependency management, issue tracking, and contribution infrastructure are strongly associated with downstream community adoption and sustainability. We also demonstrate that sustainability practices vary substantially across scientific domains, with some repositories consistently exhibiting stronger sustainability patterns than rapidly evolving domains such as RNA-seq.
+
+Beyond static scoring, we introduce the Almanack as a platform for software sustainability analysis, where repository-level assessments can be explored through recommendation-oriented workflows that help developers and maintainers identify actionable improvements in reproducibility, documentation, governance, and project health. We also revisit the concept of “software deadness,” arguing that inactive repositories are not uniformly failures: some remain stable, archival, and scientifically reusable, while others become effectively irreproducible due to missing metadata, unclear stewardship, or incomplete computational environments.
+
+Together, these findings position software sustainability not as administrative overhead, but as measurable infrastructure that directly supports scientific reuse, reproducibility, and long-term impact.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants">
+        <span class="abstract__title">Back to Basics: Design-First Development in the Age of AI Coding Assistants</span>
+        <span class="abstract__people">Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The rise of AI coding assistants, including tools like Claude Code, OpenAI Codex, Cursor, and GitHub Copilot has fundamentally changed how software gets written. Developers can now generate hundreds of lines of working code in seconds. But speed is not the same as correctness, and working code is not the same as well-designed code. As these tools become more common across the research software engineering (RSE) community, a familiar problem is emerging: teams are building first and thinking second. Projects are pushing RSEs to write faster, skip designs, and deliver working code now.
+
+This talk argues for a return to fundamentals. Before writing a single line of code, or prompting an AI to write one, RSEs will benefit from investing time in three basic technical documents: a clear design document, a flowchart or system diagram, and an explicit development plan. These are not bureaucratic overhead, they are the foundation on which good software, and good AI-assisted software, is built.
+
+Drawing on experience building and integrating complex research platforms at the National Center for Supercomputing Applications (NCSA), the authors share what they’ve learned about what goes wrong when design is skipped, and what gets better when it is done well. We present a lightweight, practical framework for pre-coding design that is accessible to RSEs working under typical research project constraints: limited time, shifting requirements, and small teams.
+
+We then look at how this fits into actual AI-assisted development workflows. AI tools are most effective when given well-scoped problems, clear interfaces, and explicit context. A developer who has written a design document and drawn a system flowchart is in a fundamentally better position to prompt an AI tool effectively than one who has not. Conversely, AI tools used without prior design work tend to produce code that looks right until you zoom out, compounding technical debt and making future integration harder. Crucially, these same tools are well-suited to assist in producing the upfront documentation they later benefit from, lowering the cost of design work enough to make it practical even for small lab software projects, where such documentation has traditionally been the first casualty of limited time and resources.
+
+The talk will include concrete examples of design artifacts, before-and-after comparisons of AI-assisted development with and without upfront design, and practical takeaways for RSEs looking to improve their workflows. Attendees will leave with a practical template they can use right away, plus current tool recommendations.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software">
+        <span class="abstract__title">Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software</span>
+        <span class="abstract__people">Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific open-source software (OSS) is essential to scientific innovation, yet often perceived as abandoned, buggy, or hard to use. In contrast to other software, its longevity remains poorly understood, and existing curation efforts are fragmented or small in scale. Motivated by these gaps, our work focuses on building a large, cross-domain catalog of maintained scientific OSS and using it to investigate what shapes its longevity. In this talk, we present an LLM-assisted methodology that classifies project READMEs from the World of Code infrastructure by Hinsen's scientific software stack layers and 13 STEM fields, yielding SciCat, a curated catalog of 18,247 scientific software projects validated against datasets including JOSS and Papers with Code. We then estimate Kaplan-Meier and Cox proportional-hazards survival models. Our findings illustrate that infrastructure projects survive substantially longer than domain- or publication-specific code, presumably because of their foundational role, and that more downstream dependents, mentions of publications or funding, and government participation are associated with longer lifespans, while academic participation appears linked to shorter ones, possibly reflecting the cyclical nature of academic commitments. Surprisingly, scientific OSS in our matched comparison tends to live longer than non-scientific OSS, which runs against common assumptions about its fragility. We will delve into the methodology, validation choices, practical implications for funders and RSEs, and open questions the publicly available SciCat catalog enables for future research.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="research-software-engineering-in-the-age-of-generative-ai">
+        <span class="abstract__title">Research Software Engineering in the Age of Generative AI</span>
+        <span class="abstract__people">Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Generative AI is reshaping how research software is written, reviewed, and maintained — and with it, is changing the role of the people who do that work. In March 2026, about three dozen leaders from across the global research software community gathered in Edinburgh for a 2.5-day workshop to confront this transformation directly: to share emerging practices, examine the risks alongside the opportunities, and begin building a coordinated community response. Working groups determined and addressed nine key areas where further work is needed to understand how generative AI is affecting the research software community and to develop policies, practices, and resources to respond to the changes generative AI is bringing: communicating with policymakers and institutional leadership about the need for continued investment in RSEs and generative AI tools to support RSE work; trade-offs between the costs/risks and benefits of generative AI for research software; changes to publishing, preserving, and crediting code creation and maintenance; verification and validation of research software; definitions of the RSE role; training needs from RSEs and the researcher community; management of RSE teams and OSS (Open-Source Software) communities; accessibility and responsible use of generative AI tools and resources; and collaboration in teams with AI in the mix.
+
+This talk will share the themes and output of the workshop with the broader RSE community, including opportunities to get involved in the dozens of activities that participants identified and prioritized for helping RSEs, funders, researchers, research institutions, governments, and others respond to the risks and opportunities from generative AI for research software.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="beyond-editing-code-uses-for-ai-tools-in-scientific-work">
+        <span class="abstract__title">Beyond Editing Code: Uses for AI Tools in Scientific Work</span>
+        <span class="abstract__people">Johanna Cohoon and Drew Paine</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Critical research advancements require usable, reliable software products—including AI tooling—for high performance data and computing work. To improve AI systems we must understand scientists’ and engineers’ needs and define design best practices for building interfaces that facilitate collaboration between scientists and AI tools across ecosystems. Ensuring the long-term usability and utility of scientific software products and AI systems for communities protects critical investments, supports high quality research, and reduces end user challenges.
+
+This talk will present findings from our semi-structured interview study investigating how scientists and engineers use AI tools for their research work. We recruited from universities and national labs, seeking perspectives from multiple disciplines. Looking beyond common use of AI tools for coding tasks, we sought to understand the varied ways AI is or could be adopted in scientific settings. Our interviews investigated how users determine the utility of AI tools, the concerns they have about adoption, and expectations for agentic tooling in research infrastructures.
+
+In this talk, we discuss opportunities for AI tooling in science and engineering beyond coding support, providing a lens into the development work the US-RSE community may take on in the near future and the socio-technical circumstances driving it. Our results inform development priorities, strategies for issue mitigation, and long-term stewardship in scientific facilities and work. We anticipate our insights helping to improve the usability and stewardship of scientific software, especially for high performance data and computing work.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="ten-projects-two-teams-one-question-how-does-ai-impact-development">
+        <span class="abstract__title">Ten Projects, Two Teams, One Question: How Does AI Impact Development?</span>
+        <span class="abstract__people">Dave Brownell</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}This presentation offers a longitudinal, practice-driven exploration of AI-assisted software development, highlighting key lessons learned and their application across two Research Software Engineering organizations and ten projects at Georgia Tech. We examine the use of AI throughout the software development lifecycle (including coding, testing, planning, code review, and ideation) and show how a project’s Technology Readiness Level (TRL) should guide the selection of AI tools and techniques that accelerate delivery. We conclude by outlining the guiding principles and best practices we use to effectively leverage AI's rapidly evolving capabilities, as well as the metrics that measure AI's impact on our overall velocity.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="coding-with-llm-agents-the-research-software-engineer-as-the-quality-gate">
+        <span class="abstract__title">Coding with LLM Agents: The Research Software Engineer as the Quality Gate</span>
+        <span class="abstract__people">Nicole Tebaldi and Kyle Crocker</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Recent advances in large language models (LLMs) have accelerated their use in many aspects of the scientific research process. Lu et al. (2026) demonstrated the end-to-end automation of the scientific process, producing a paper that passed peer review for a conference workshop. The benefits of full automation center on speed and scale with quality improving alongside better models and more computation. However, the approach is limited in areas of scientific innovation and implementation, methodological rigor, and hallucinated citations. A parallel can be drawn to the use of LLM agents in research codebases and the role of the Research Software Engineer (RSE).
+
+As research software engineering turns toward AI, the RSE faces similar benefits and limitations. AI can understand large codebases quickly, implement planned architecture rapidly, and generate test scaffolding to support the evaluation of code modifications. But it is easy for AI to produce incorrect implementations, lack rigor in developed solutions, and introduce subtle bugs through hallucinations. O'Brien et al. (2025) found that scientists' most common strategy for verifying LLM-generated code is running it and visually inspecting the output, yet user logs revealed unintended behaviors with potential scientific impact that went undetected. This gap between perceived and actual code correctness underscores the need for a more rigorous review process. The RSE can serve as that quality gate bringing experience, creative thinking, and big-picture analysis to ensure scientific results are correct.
+
+This talk presents a practitioner's account of integrating LLM agents into the development cycle, creating an audit trail for results analysis with the RSE as the quality gate. We document the full arc: from initial exploration of an unfamiliar scientific codebase, to iterating over a plan that captures full architectural goals, to development cycles with human review and evaluation. Along the way, we encountered significant hurdles around agent memory loss and risks to scientific correctness. To address these, we developed an approach built on modular, reproducible code design using issue tracking for context management and subagents to carry out focused development work. We report concrete outcomes: where agents excelled (code exploration, test generation, large-scale refactoring) and where they fell short (staying on task, commit granularity, and workflow compliance). We conclude with recommendations for RSEs adopting AI agents, positioning the RSE as an essential layer of human judgment for maintaining scientific correctness.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows">
+        <span class="abstract__title">Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows</span>
+        <span class="abstract__people">Md Hasan Shahriar Simanto</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}AI-assisted tooling is increasingly being integrated into infrastructure management, security operations, software engineering, and scientific computing environments. While discussions around AI adoption often emphasize automation and productivity gains, less attention has been given to the usability challenges that emerge when expert users interact with AI systems in complex technical workflows.
+
+Drawing from UX and human factors work across enterprise cloud systems, backup and recovery platforms, ransomware resilience tooling, identity and access management (IAM) workflows, and scientific software environments, this talk highlights recurring usability challenges that appear across these domains despite their technical differences. Examples include workflow transparency, understanding system state, maintaining appropriate human oversight, calibrating trust in AI-generated recommendations, and recovering from complex AI-generated errors.
+
+Although infrastructure management, cybersecurity, and scientific computing serve different user communities, many of the underlying human-AI interaction challenges appear remarkably similar. As AI systems become increasingly embedded within research software and operational tooling, usability concerns can directly influence workflow reliability, operational resilience, onboarding, collaboration, and decision-making quality.
+
+This session shares cross-domain observations, practical lessons learned, and open questions for the design of AI-assisted technical systems. Rather than presenting a single solution or framework, the goal is to encourage broader discussion around the human-centered challenges that arise when AI capabilities are integrated into infrastructure, security, software engineering, and scientific workflows.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-mood-boards-to-web-components-our-journey-building-a-design-system-for-research">
+        <span class="abstract__title">From Mood Boards to Web Components: Our Journey Building a Design System for Research</span>
+        <span class="abstract__people">Katrina Turner and Freddy Mande</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research institutions often face a unique challenge when building software platforms and scientific tools: users expect polished, intuitive interfaces, but organizations rarely have dedicated UX teams, front-end specialists, or centralized branding resources. At the same time, developers value flexibility and autonomy, making consistency difficult to achieve. In our organization, these challenges led to fragmented user experiences, duplicated front-end efforts, and a growing need for a cohesive visual and technical foundation.
+
+This talk shares our journey designing and implementing a custom design system tailored to the needs of our scientific organization. Rather than adopting an off-the-shelf framework, our we wanted full ownership and control over both the visual identity and the developer experience. We began by working with organizational leadership to define core themes and values and translated those concepts into mood boards and interface mockups. Through iterative reviews with designers, communications staff, developers, and executive leadership, we refined typography, visual language, and accessibility considerations until consensus emerged around a unified visual direction everyone was on board with.
+
+From there, we developed a scalable design system that included a shared color palette, reusable UI components, and implementation patterns designed with research software environments in mind. Due to immediate project needs, our initial component library was built in React, but the system later expanded to include framework-agnostic web components and a lightweight CSS-only implementation to support a broader range of applications and developer preferences.
+
+Attendees will learn how a small team with limited front-end resources created an organizational design system that reduced duplication, improved consistency, and balanced the competing needs of branding, usability, and developer autonomy in a research computing environment.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="human-in-the-loop-requirements-gathering-and-researcher-trust-in-the-age-of-ai">
+        <span class="abstract__title">Human in the Loop: Requirements Gathering and Researcher Trust in the Age of AI</span>
+        <span class="abstract__people">Michael Kennel</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}As agentic AI tools dramatically accelerate the pace of code generation, the bottleneck in research software development is shifting away from writing code and toward understanding what needs to be built in the first place. For generalist RSEs who work across disciplines, this shift is already familiar: the most critical skill has never been mastery of any one research domain, but rather the ability to build trust with research partners and translate their scientific needs into effective technical solutions. This talk argues that in the age of AI, requirements gathering and relationship-building become a defining competency of the RSE role and that RSEs who are able to do this work are uniquely positioned to lead in an AI-accelerated research environment.
+
+Drawing on concrete experience from projects including the Lucy Data Platform, a campus-wide data tool suite whose early development required a significant pivot when the initial product didn't match researcher needs, and ARCOS, a no-code query interface built in close collaboration with researchers working on a dataset from landmark opioid legislation, this talk explores what happens when requirements gathering goes right, and what it costs when it doesn't. It will also share how our group, operating at the intersection of research software engineering, data science, and AI support within Notre Dame's Data, AI, and Computing Initiative, is developing standardized processes for engaging researchers in an era where AI tools can dramatically amplify both the speed of development and the consequences of building the wrong thing. Attendees will leave with concrete strategies for strengthening researcher relationships and a framework for thinking about how traditional software engineering practices such as requirements gathering, iterative feedback, and trust-building are not made obsolete by AI, but amplified in importance by it.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="designing-for-two-audiences-ai-readiness-and-human-data-usability">
+        <span class="abstract__title">Designing for Two Audiences: AI-Readiness and Human Data Usability</span>
+        <span class="abstract__people">Cody O'Donnell</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}This talk introduces an approach to AI-readiness where designers and engineers look at data usability as a User Experience (UX) problem and treat AI models as first-class data consumers. Based on our experience as Fullstack and Data Engineers with the National Microbiome Data Collaborative (NMDC), we will present concrete strategies that practitioners can take to advance the AI-readiness of their data and ultimately the overall usability of their data-heavy products.
+
+While often thought of as a new domain, we found that AI-readiness can benefit from being discussed from a UX perspective. Doing so can lead to practical enhancements that improve data usability for both humans and AI models. Rather than treating human usability and AI usability as competing priorities, it may in fact be better to treat them as largely symbiotic. While the needs of humans and AI agents need to be balanced just like any two groups of users, many of the same design decisions made in the interest of making data more discoverable and understandable for humans can also significantly benefit AI models, and vice versa.
+
+This talk will ground the discussion in design decisions made during enhancements to the NMDC Data Portal, a community platform for discovering and sharing microbiome datasets. These enhancements focused on the human experience of bulk downloading data, however, we discovered that our decisions also had important implications for how an AI agent would interact with our data. These decisions illustrate the interplay between human needs and AI needs, often showing both how human-centered design decisions can lead to AI-readiness improvements and AI-centered design decisions can lead to human usability improvements. During this work, several themes emerged (1) verbosity (e.g. a top-level README in every data download), (2) consistency (e.g. using the same data shapes and identifiers across UIs, downloads, and APIs), and (3) predictability (e.g. including RO-Crate metadata and rich provenance metadata).
+
+By simultaneously looking at data usability as a UX problem and treating AI models as first-class data consumers, we provide an approach that practitioners can take to advance the AI-readiness of their data. In doing so, not only do data become more usable for humans, but AI models that leverage these data become easier to explain, more trustworthy, and more deterministic.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions">
+        <span class="abstract__title">Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions</span>
+        <span class="abstract__people">Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}At the Spallation Neutron Source (SNS) and High Flux Isotope Reactor (HFIR), users can access automatically reduced data both during experiments (“live reduction”) and soon after data collection completes (“autoreduction”). Users can also monitor experiment parameters and view an instrument-specific report from the automated reduction through a web interface.
+
+This presentation introduces the automated data reduction workflow at SNS and HFIR, including how it is configured by Instrument Scientists, how users receive feedback during ongoing experiments, and the software applications involved. We will review the current state of automated reduction and propose future enhancements to improve flexibility in computing resources, provenance, and resilience. Finally, we will discuss the expanding role of automated and AI-enabled experiments, which places new demands on data provenance with the goal of making the data AI-ready.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="agentic-code-modernization">
+        <span class="abstract__title">Agentic code modernization</span>
+        <span class="abstract__people">Peter Peterson and Addi Malviya-Thakur</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Software rots. Between refactors for new features, bug fixes, the continual march of cybersecurity advisories, and the slow drift of dependencies toward end-of-life, code must change or cease to exist. The simple act of keeping up can be overwhelming for research software engineers tasked with maintaining long-lived scientific codebases. To address this maintenance burden, the community has developed a vibrant ecosystem of language- and framework-specific tools, such as Dependabot for dependency bumps [1], Clang-Tidy for C++ static analysis [2], and Python Refurb for idiom modernization [3], alongside a host of similar utilities. These tools, while monumental in their contribution, are necessarily limited in scope: they encode a fixed catalog of transformations, they tend to operate on a single file or a single dependency at a time, and they presumably cannot reason about the broader architectural or semantic consequences of a change. More recently, agentic AI systems have arrived. Unlike single-shot code completion, agentic systems can read across a repository, run tests, observe failures, and iterate, and these behaviors, in principle, may enable a different class of modernization task. In this talk, we present a number of examples in which we attempted to leverage agentic AI to perform maintenance work and modernization work on research software. By exploring successes and failures, the presentation will improve attendees' understanding of when to use AI to assist in modernizing their code.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="scientific-agentic-engineering-a-framework-for-reliable-ai-agents-in-research-software">
+        <span class="abstract__title">Scientific Agentic Engineering: A Framework for Reliable AI Agents in Research Software</span>
+        <span class="abstract__people">Victor Weeks</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Generative AI is reshaping how research software is developed. Tools and patterns ranging from "vibe coding" through the Model Context Protocol (MCP) and autonomous agents now offer compelling productivity gains, but their adoption in scientific computing surfaces failure modes that general-purpose evaluation does not catch: silent unit conversions, violated conservation laws, hallucinated physics, loss of numerical precision, and quietly broken reproducibility. The AI ecosystem itself is moving faster than any single tool's documentation, leaving RSEs to make consequential adoption decisions with little shared vocabulary or principled guidance.
+
+This talk introduces Scientific Agentic Engineering, the central contribution of an in-progress 2026 Better Scientific Software (BSSw) Fellowship: a tool-agnostic methodology for integrating AI agents into high-stakes scientific software workflows. The framework defines how agents, scientific skills, and MCP servers should be structured around validation loops, explicit human-in-the-loop checkpoints, and domain-specific safeguards. The intent is not to recommend any particular AI tool — the ecosystem will shift before this talk is given — but to articulate foundational concepts that remain valid as the underlying technology turns over.
+
+I will share three artifacts from the fellowship to date:
+
+1. The Framework (draft). Shared vocabulary, structural patterns, and an inventory of documented failure modes drawn from real scientific development — including examples from atmospheric and earth-system modeling such as unit confusion in plume-modeling pipelines and visualization-driven misinterpretation in forecast verification.
+
+2. The Reference Workflow. A structured exercise in which RSEs use AI tools to build a small weather-model error-statistics application, applying the framework to avoid the failure modes it documents.
+
+3. The Community Repository. A starter set of scientific MCP server templates, agent skills (organized instructions, scripts, and resources that agents can utilize to perform better at certain tasks), and AI agents configurations, designed to be stepping stones for the community to adapt to a variety of scientific domains.
+
+The talk closes with an invitation: these artifacts are by design community resources, with more planned over the remaining duration of the fellowship. Attendees interested in exploring applied AI-assisted scientific software development and best practices are encouraged to follow along and participate in the coming interactive online tutorial series and live virtual workshop planned for the coming months.
+
+This work engages the conference theme directly by advancing AI-assisted scientific software development from ad-hoc experimentation toward a disciplined, transferable engineering practice.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-laptop-to-cluster-hpc-translation-patterns-for-ai-stacks">
+        <span class="abstract__title">From Laptop to Cluster: HPC Translation Patterns for AI Stacks</span>
+        <span class="abstract__people">Parmanand Sinha</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software teams increasingly inherit AI workflows that were built for laptops or small servers and are then expected to run them on shared HPC systems. The gap is not just one of scale. It reflects a mismatch in operating model. Docker Compose assumes long-lived services, open ports, and local control over processes and storage. HPC centers instead enforce scheduler-mediated execution, restricted container runtimes, shared filesystems, and tighter network boundaries. Moving these stacks is therefore not just a packaging task but a systems translation problem that recurs across research computing support work.
+
+This talk presents work in progress from a Better Scientific Software Fellowship project that is building a practical pattern library for translating multi-service AI stacks into HPC-native workflows. The focus is on recurring technical decisions: treating the scheduler allocation as the orchestration boundary, mapping service graphs to Slurm or PBS launch structures, replacing Docker-centric assumptions with Apptainer and Charliecloud runtime patterns, handling state through job-scoped storage, and restoring interactivity through controlled access paths such as tunneling and brokered services. The project also examines where distributed execution tools such as Globus Compute fit naturally into these designs and where portability limits appear across centers.
+
+The material is informed by active deployment work at the University of Chicago Research Computing Center, including A3RD (AI-Accelerated Archival and Research Data), where prototype AI services had to be re-expressed in terms the cluster can support. That experience has helped identify a stable set of translation patterns around service startup order, GPU-enabled container execution, scheduler coordination, network exposure, and operational boundaries between user environments and centermanaged infrastructure.
+
+Rather than offering a high-level discussion of AI enablement, the talk distills implementation patterns that RSEs can reuse when moving a working multi-container prototype onto a batch-scheduled system. Attendees will see how these patterns reduce rework, make portability boundaries more visible, and provide a more precise way to reason about workflow migration across centers. The result is a technical framing for a problem many RSE groups already face, paired with concrete project outputs that can support continued community use and refinement.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="beyond-code-pairs-generating-test-grounded-data-for-ai-assisted-scientific-software-modernization">
+        <span class="abstract__title">Beyond Code Pairs: Generating Test-Grounded Data for AI-Assisted Scientific Software Modernization</span>
+        <span class="abstract__people">Le Chen and Rajeev Thakur</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific software increasingly needs to evolve across languages, programming models, and hardware platforms, from legacy Fortran codes to modern C++ ecosystems and GPU-accelerated CUDA implementations. Large language models offer a promising path for accelerating this modernization, but one-shot code generation remains unreliable in scientific computing settings where correctness, executability, and maintainability are essential. This challenge is especially significant in low-resource programming domains, where high-quality parallel training data is scarce.
+
+In this talk, I will present our recent work on dialogue-based data generation for LLM-assisted code translation in scientific computing. Instead of relying on manually curated source–target code pairs, our approach automatically generates training data through a tool-grounded dual-LLM Questioner–Solver workflow. The Questioner analyzes translation state, compiler errors, runtime outputs, and unit-test results, while the Solver generates translations, tests, and repairs. This process produces verified code pairs, executable unit tests, and multi-turn reasoning traces that capture how translations are refined through compiler and runtime feedback.
+
+We evaluate this approach on two low-resource scientific software modernization tasks: Fortran-to-C++ translation for legacy code migration and C++-to-CUDA translation for GPU acceleration. The pipeline generates thousands of verified dialogues and code translations, providing process-rich supervision where conventional parallel datasets are scarce. Models trained on this data substantially improve compilation, execution, and unit-test success rates, showing that automatically generated, feedback-rich data can improve functional correctness in specialized scientific computing domains.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="cloud-native-graphical-and-programmatic-cross-database-access-to-experiment-metadata-with-trino-superset-and-ibis">
+        <span class="abstract__title">Cloud-Native Graphical and Programmatic Cross-Database Access to Experiment Metadata with Trino, Superset and Ibis</span>
+        <span class="abstract__people">Eli Mizrachi</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}LUX-ZEPLIN (LZ) is the world’s most sensitive dark matter direct-detection experiment[1], acquiring over a petabyte of data per year[2]. LZ also retains several terabytes of user-facing metadata describing detector conditions and data-processing environments needed for reproducible data selection and processing. These metadata live in six heterogeneous databases (SQL and NoSQL) and have historically been accessed through seven separate programmatic and graphical interfaces that connect to unique subsets of these databases.
+
+This fragmented nature has led to major problems for both users and maintainers. First, maintenance overhead grew disproportionately: for example, our custom python-based GUI for browsing databases grew to thousands of lines of non-reusable code, requiring near-daily manual restarts to recover from silent failures reported to us by users. Second, our programmatic python interfaces lacked expressiveness, pushing users toward ad-hoc scripts to filter/reshape results and making cross-database joins unnecessarily tedious.
+
+More recently, the Genesis Mission and the advent of the American Science Cloud[3] from the US Department of Energy has indicated strong institutional interest in implementing open-source tools and services from the data engineering ecosystem in order to enhance compatibility with AI-based workflows. Recognizing these factors and the aforementioned problems, we consolidated access around three complimentary tools: Trino[4], a distributed SQL query engine which provides a single SQL facade across databases; Superset[5], a graphical dashboard builder which operates directly on Trino; and Ibis[6], a library to create composable SQL queries with dataframe-like python API.
+
+In this talk I will detail the benefits we recouped from deploying these tools. Topics covered include a showcase of how we were able to immediately deprecate our database browser with Superset and Trino, improving query performance by at least a factor of 4 and up to 100 in some cases. I will also discuss using Ibis to improve transparency, performance, and expressiveness over our previous python interfaces, while keeping a smaller code footprint. Finally, I will touch on the utility of moving towards a GitOps workflow, from using Helm to reproducibly deploy these services on Kubernetes, to defining data flows with Ibis that refresh datasets with scheduled CI/CD pipelines.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution">
+        <span class="abstract__title">Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution</span>
+        <span class="abstract__people">Hilario Torres</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific High-Performance Computing (HPC) applications often need to support a wide range of build and runtime environments across a variety of machines. Developers often set up complex continuous integration (CI) workflows that need to configure testing environments across a matrix of compilers, dependencies, and hardware. This environment configuration step happens prior to building the application code or running the tests the CI is designed to execute. Many existing workflows redundantly perform this setup in every CI cycle, which can lead to a significant increase in runtime, particularly when installing large dependencies. Furthermore, failures during this phase can produce misleading signals, where a failed dependency download or installation results in a CI failure as opposed to an actual flaw in the application code being tested. Maintaining these configurations across an entire matrix also poses a substantial burden on developers.
+
+This talk will cover how we approached this challenge for the “Towards Ultra-High Resolution Community Earth System Model (CESM) with MOM6 and Ocean Biogeochemistry” (TURBO) project at the National Science Foundation (NSF) National Center for Atmospheric Research (NCAR). We split this into a two phase process. First, we produce containerized turnkey environments for each case in our CI matrix. We heavily leverage Spack environments in this phase. Spack's ability to treat the pre-installed compilers and libraries as "externals" within environments allows us to easily choose which dependencies Spack built and which we built ourselves based on the needs of the project. Then, these custom project-specific containers are deployed in CI runs on both GitHub-hosted runners and NCAR's on-prem Cirrus Cloud.
+
+By decoupling the environment configuration from the CI execution, we established a more efficient workflow. The development team manages container updates at a cadence of their choosing, while the CI pipeline simply utilizes the most recent image for every trigger. We found this separation of concerns led to quicker turnaround times and reduced the complexity of CI workflows. Furthermore, these CI containers serve as ready-made local development environments. This allows developers to pull images and troubleshoot failures on their own machines, effectively eliminating the need for repetitive debugging through the GitHub Actions interface.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration">
+        <span class="abstract__title">OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration</span>
+        <span class="abstract__people">Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific collaborations increasingly depend on complex digital artifacts, including datasets, configuration files, workflow outputs, software packages, logs, and analysis products. However, these artifacts are often difficult to organize, preserve, verify, and reuse over time. In many research environments, important outputs are distributed across local machines, cloud storage, institutional systems, and ad hoc folder structures, making reproducibility and long-term stewardship challenging.
+
+OSC-IS is a prototype research software infrastructure platform designed to support scientific artifact management, provenance tracking, and reproducible collaboration. The system provides a web-based interface and backend API for uploading, organizing, and managing scientific artifacts and their associated metadata. Its architecture combines a modern web application, RESTful services, relational metadata storage, object storage for large files, asynchronous processing, and a provenance layer designed to improve auditability and trust.
+
+The project was implemented using Angular for the frontend, NestJS for the backend API, PostgreSQL for structured metadata, S3-compatible object storage for artifact files, RabbitMQ for asynchronous processing, and Hyperledger Fabric chaincode for provenance-related operations. The deployment model explored a cloud-native architecture using containerized backend services, worker processes, object storage, managed databases, load balancing, and secure secret management.
+
+This talk will present the motivation, architecture, and lessons learned from building OSC-IS as a research software infrastructure prototype. It will focus on the engineering tradeoffs involved in designing systems that are scalable, maintainable, and useful to scientific communities. Particular attention will be given to artifact lifecycle management, metadata design, asynchronous processing, deployment architecture, and the role of provenance mechanisms in supporting reproducible scientific workflows.
+
+The project is relevant to the research software engineering community because it addresses common challenges faced by teams building and maintaining scientific cyberinfrastructure: how to design systems that preserve research outputs, support collaboration, and remain extensible as scientific workflows evolve. In the context of increasing AI-assisted scientific work, reliable artifact preservation and provenance become even more important, since research teams need to understand where outputs came from, how they were generated, and whether they can be trusted or reproduced.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="building-inclusive-talent-pathways-scaling-outreach-workforce-development-and-community-engagement-for-rse">
+        <span class="abstract__title">Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE</span>
+        <span class="abstract__people">Laura Theademan and Suzanna Gardner</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}High-performance computing (HPC) and artificial intelligence (AI) are central to modern research, yet pathways into the research software engineering (RSE) workforce remain disconnected and inconsistently accessible. Most engagement efforts occur late in the pipeline, limiting development of a sustained, workforce-ready talent base aligned with research computing needs.
+
+This talk discusses how outreach and workforce development must be treated as core infrastructure for research software ecosystems. Rather than discrete or short-term programs, we present a vertically integrated model that connects early exposure, experiential learning, and applied research computing practice into a cohesive, scalable pipeline.
+
+This approach links K-12 engagement, undergraduate research experiences, institutional onboarding, and hands-on participation in real research software and computational workflows. By structuring these activities as a coordinated system, participants are supported in progressing from initial awareness to technical competence and career readiness in RSE contexts. Activities include immersive K-12 programs focused on AI and cybersecurity, workshops and tutorials at national conferences, institutional onboarding initiatives, and hackathons that serve as entry points to continued engagement with research software and cyberinfrastructure.
+
+At its core, this work reframes the workforce development platform for research software engineering. Participants are embedded directly into authentic research environments and workflows, gaining experience with tools, practices, and collaborative models fundamentall to research software development. This emphasis on applied, experiential learning enables participants not only to understand computational methods but to develop the practical skills required to contribute to research software projects and interdisciplinary teams.
+
+The presentation will examine the operational realities of implementing and scaling this model, including challenges such as institutional variability, partner fatigue, and the limitations of one-size-fits-all engagement strategies. It will propose a shift in how success is measured, moving beyond participation counts toward metrics that capture skill development, sustained engagement, software contribution, and workforce outcomes.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="hpc-carpentry-and-community-building-at-nist">
+        <span class="abstract__title">HPC Carpentry and Community Building at NIST</span>
+        <span class="abstract__people">Andrew Reid</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The fields of Research Software Engineering, technical education, and high-performance computing all feature a certain amount of "boundary-crossing" between common research activities, in that, for success, they require practitioners to engage with the process of research, in addition to knowledge production. In any of these endeavors, researchers must think about coding and code management, operation of computational resources, and data and data management. In this talk, some beneficial results of this blurring of boundaries for researcher communities will be discussed through the lens of the HPC Carpentry educational project.
+
+HPC Carpentry[1] is an effort to make novice users in a research environment productive on high-performance computing systems. Based on the broader Carpentries pedagogical method, the hope is that workshop attendees will come away from a one- or two-day workshop with some muscle memory and vocabulary sufficient for them to continue to progress with higher-level system documentation or more focused help.
+
+Over the past couple of years, a group of researchers at the National Institute of Standards and Technology successfully advocated for new high-performance computing resources, including a new support model, including research software engineering support. As part of delivering on this effort, HPC Carpentry workshops were very successful in introducing novice users to the computational resource, but also led to very wide-ranging discussions on strategies for efficient use, and helped the institution to identify opportunities for additional support on many fronts, including research software engineering.
+
+An important higher-level outcome was that, in the same way that the RSE activity challenges the legacy approach to investigator support service, it was also useful to challenge boundaries between categories of support services, focusing instead on a dialog with users and user needs.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="navigating-the-code-review-process-as-a-team-a-case-study">
+        <span class="abstract__title">Navigating the Code Review Process as a Team: A Case Study</span>
+        <span class="abstract__people">Abbey Roelofs</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}While code review is widely recognized as a critical step in the creation of sustainable software, in practice it can often be a pain point in the development process. Questions such as when to request a review, who should be a reviewer, how long reviews should take, and what to look for in reviews can cause disagreement or confusion within a team, often because they aren't explicitly discussed or written down. In addition, this ambiguity can make learning the code review process challenging for new group members. This was the case for the Research Software Engineering group in the University of Michigan's College of Literature, Science, and the Arts (LSA): although the group has existed for over ten years and regularly performs code reviews, goals and expectations for the review process were largely undocumented and varied from project to project.
+
+Following an introduction to the book "Looks Good To Me" by Adrienne Braganza [1] through the US-RSE Code Review Working Group in early 2026, the LSA RSE team decided to go through the process described in this book of creating a Team Working Agreement (TWA) to align and document our expectations around all aspects of code review. During bi-weekly conversations over the course of summer 2026, the team collaboratively created a TWA and added it to our repository of team process documents. This talk will discuss the motivation for creating this document, describe the process of its creation, look at early outcomes of its implementation, and share some lessons learned for those who would like to do something similar in their own teams.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="collaboration-within-rse-group-at-princeton-development-of-slurmise-for-resource-usage-estimation">
+        <span class="abstract__title">Collaboration within RSE group at Princeton: development of slurmise for resource usage estimation</span>
+        <span class="abstract__people">Troy Comi, Ioannis Paraskevakos and Rob Bierman</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}On shared research computing systems (clusters), users must estimate in advance how much time and memory their jobs will need. Getting these estimates correct can be difficult. If resources are underestimated, jobs can fail and waste researcher (and compute) time. If they are overestimated, resources sit idle and increase wait times for everyone. Existing tools, like jobstats and reportseff, can help when jobs are very similar, but they often rely on manual adjustments or assume that resource usage is consistent across runs. In practice, resource usage is frequently tied to input data and parameters in complex ways.
+
+To address this gap, we developed slurmise, a python-based library and CLI which can be configured to parse dependent variables directly from command line invocations. Slurmise helps users record past jobs and predict future resource needs automatically. Surmise integrates into existing workflows with minimal changes, supporting CLI, Python APIs, and workflow systems such as Snakemake. Job resource records are stored locally and accumulate over time, building a database that improves estimation accuracy as more jobs are run. The model for resource estimation uses a simple interface which allows arbitrary models; we currently support polynomial fitting, k-nearest neighbor, and a multi-layer perceptron. The choice of starting models supports various execution types, from well-behaved polynomial scaling to non-parametric nearest neighbors for less predictable workloads.
+
+In addition to the software itself, this project illustrates a model for collaborative RSE development without dedicated funding. Slurmise is too large to develop ad hoc for a single developer, requiring coordination across design, implementation, and testing. Within the Princeton RSE group, a portion of our time is reserved for professional development and smaller side projects. We are also looking for opportunities to build group cohesion, especially across departments, where RSEs are often embedded in disciplinary silos. We utilized two mechanisms within the group to start and continue developing slurmise during allocated professional development time. First, we held a week-long hackathon where 4 RSEs focused on the initial implementation of the system, resulting in a minimum viable product able to parse, record, and estimate resource usage from command line calls. The hackathon format provided dedicated, uninterrupted time to establish core architecture and shared conventions. Since the hackathon, 3 RSEs have continued with biweekly pair programming and standup sessions to coordinate efforts, review contributions, and maintain momentum. This minimal but consistent structure has allowed the project to progress steadily without dedicated funding, and has served as a template for how the Princeton RSE group approaches internally-motivated tool development. We hope that both slurmise itself and this model of collaborative, cross-departmental RSE development may be of interest and use to the broader RSE community. We will share lessons learned and recommendations for future tool development.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton">
+        <span class="abstract__title">Developing a Handbook of best practices for research software sustainability at Princeton</span>
+        <span class="abstract__people">Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}In the early 2010s, the Software Sustainability Institute defined sustainability as "software you use today will be available — and continue to be improved and supported — in the future" [1, 2]. Sustainable research software has enabled research that would otherwise be infeasible. The pursuit of sustainability continues, spanning efficiency, longevity over generations of research projects, and spread across research fields. In this context, the Princeton Research Software Engineering (RSE) group, as one of the first and largest centralized RSE groups in US institutions [3], has both the breadth of RSE experience and the team bandwidth to further advance sustainability.
+
+In the Princeton RSE group, we are developing a handbook of best practices for research software sustainability. As sustainability is inherently contingent [4], it is not possible to prescribe criteria for it. Instead, the Handbook enumerates characteristics of sustainable research software. Software with these characteristics substantially increases its chances of being sustainable. Sustainable research software has reliable tests as its technical foundation; they enable iterative cycles of refactoring and feature addition and also underpin confidence in AI-assisted and agentic development, yielding frequent releases that progressively improve maintainability, reproducibility, and other technical qualities. These technical characteristics are necessary but not sufficient. Long-term sustainable research software also has social and organizational characteristics, including citability, continuous funding, professional maintenance, and active communities.
+
+The Handbook collects best practices, based on our experience, that realize these characteristics, from basics to advanced topics such as how to turn unsustainable research code into a testable package. The Handbook facilitates communication with PIs and research project managers; the best practices describe what we do and how we identify and resolve software engineering issues within research projects.
+
+In this talk, we'll present our approach to building the Handbook; discuss what distinguishes it from other best practices guides, for instance, its grounding in the operational practice of a centralized, multidisciplinary RSE group; review the practices at a high level; and suggest ways for others in the community to leverage the Handbook in their organizations. The Handbook will be publicly available under a Creative Commons license. The Handbook is not a static document that we publish and finish; we develop it as we develop sustainable software, with continuous updates as demanded, most frequently by the rapid evolution of AI tools and practices.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows">
+        <span class="abstract__title">Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows</span>
+        <span class="abstract__people">Niharika Pramod Pujari</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}AI-assisted development tools are increasingly shaping how research software is designed, implemented, documented, and reviewed. These tools can help teams with code generation and reduce friction in routine development tasks, but faster code does not mean better software and does not automatically make software ready for research use. In research software engineering contexts, AI-assisted outputs still need to be easy for people to review, maintain, reproduce, use, and access.
+
+Building on prior exploratory work on productivity and rework in AI-assisted frontend UI development, this talk shifts the focus from speed to software quality. It presents a guardrail framework that research software teams can use when working with AI-assisted developments. The framework focuses on three practical checkpoints: making AI-assisted changes reviewable, making software behaviour reproducible across contributors and environments, and using human-centered quality checks before changes are added into shared research tools.
+
+Accessibility is one concrete example of a quality signal that should be shifted left rather than fixed at the end. Research software often includes dashboards, portals, notebooks, data tools, and web-based interfaces. These tools may look visually complete while still missing accessible names, semantic structure, keyboard support, readable interaction states, or clear feedback for users. By combining reusable templates, design-system defaults, automated checks, and review evidence, teams can catch these issues earlier rather than fixing accessibility issues as an afterthought.
+
+The talk is for research software engineers, scientific software contributors, and technical leads who are exploring AI-assisted development but want ways to protect software quality. Attendees will leave with a simple way for evaluating AI-assisted research software changes: not only “Did AI make this faster?” but also “Can a human review it, reproduce it, maintain it, and use it?”{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="performance-portable-software-design-patterns-what-they-can-do-and-why-we-should-collect-them">
+        <span class="abstract__title">Performance Portable Software Design Patterns – What they can do and why we should collect them.</span>
+        <span class="abstract__people">Jakob Bludau</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}With the transition to heterogeneous supercomputing, the high-performance computing community was tasked with developing solutions to leverage various heterogeneous hardware. This led to the development of performance-portability libraries like Kokkos, Raja, Hemi, YAKL, etc. which provide performance portable abstractions for algorithmic elements (loops, reductions, etc.) and data storage. Nevertheless, leveraging these abstractions in scientific software in a sustainable way is left to the developers of that software.
+
+Software design patterns are a common way to help developers create sustainable software by making software easier to understand and maintain. The design patterns achieve this by representing reusable solutions to common problems [1]. Therefore, they help to reduce complexity of large code bases and allow to design, teach, and learn software in steps. Furthermore, they are designed to be extensible and general, thus ensuring sustainable software design.
+
+Most widely spread software design patterns are CPU focused [1]. But many of the techniques that the software patterns leverage are unavailable on contemporary computing hardware that is heterogeneous and massively parallel. For example, GPUs do not allow to allocate heap memory within kernels and dynamic polymorphism is restricted.
+
+Here a crucial gap appears:
+
+Performance portable design patterns that solve these abstract software design problems lack a central place where they are collected, discussed, and curated. I present a public Github Pages website that showcases performance portable patterns extracted from performance-portable open-source code. The collection helps developers to decide which design patterns apply to a problem via abstract descriptions (synopsis), example implementation, and links to open-source software where they are used. Furthermore, it lists the restrictions of heterogeneous hardware to motivate and explain the patterns.
+
+Although, at the time of submission of this abstract, the work is in its early stages, a first pattern, the Generator-Processor pattern, was already identified and presented [2]. Three other patterns have already been identified. Generalization, reference implementation, and detailed performance evaluation on the Department of Energy supercomputers is planned for the next months.
+
+This work is done as part of my Better Scientific Software (BSSw) fellowship.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-chaos-to-schema-llm-powered-document-information-extraction">
+        <span class="abstract__title">From Chaos to Schema: LLM-Powered Document Information Extraction</span>
+        <span class="abstract__people">Alice Duan and Launa Greer</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Data comes in all forms but often not in the way we need it. There is a wealth of unstructured information in documents like PDFs and plain text files that could be useful for various analyses, but extracting it reliably has historically required significant human intervention. With the introduction of LLMs and their associated tooling to the wider public, the task of inferring schemas from irregular data can now be automated, allowing researchers and engineers to scale data collection processes to an extent that was not possible before.
+
+At the University of Chicago Data Science Institute, the technical research team collaborates with a variety of research and nonprofit partners across a broad range of data science projects. This talk presents case studies from two such projects—Palmwatch and the Sustainable Fisheries Partnership—focused on extracting structured information from PDFs using LLMs.
+
+We will begin with pre-LLM approaches (Camelot, PDFPlumber, and PyMuPDF), examining their practical limitations when applied to irregularly structured documents. We will then explore how LLMs can be combined with deterministic methods, existing tools, and OCR to build more robust extraction pipelines. We will discuss evaluation strategies for assessing generalizability, accuracy against ground truth, failure modes, and the time and cost of both development and operation.
+
+We will conclude our talk by discussing potential applications of these strategies to academic research and beyond.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="generative-ai-for-research-data-processing-lessons-learnt-from-three-use-cases">
+        <span class="abstract__title">Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases</span>
+        <span class="abstract__people">Modhurita Mitra, Martine de Vos, Nicola Cortinovis and Dawa Ometto</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Generative AI has generated enormous interest since ChatGPT was launched in 2022. However, adoption of this new technology in research has been limited due to concerns about the accuracy and consistency of the outputs produced by generative AI.
+
+In an exploratory study on the application of this new technology in research data processing, we identified tasks for which rule-based or traditional machine learning approaches were difficult to apply, and then performed these tasks using generative AI. We demonstrate the feasibility of using the generative AI in three research engineering projects involving complex data processing tasks:
+
+1) Information extraction: Extraction of plant species names from historical seedlists (catalogues of seeds) published by botanical gardens.
+
+2) Natural language understanding: Extraction of certain data points (name of drug, name of health indication, relative effectiveness, cost-effectiveness, etc.) from documents published by different Health Technology Assessment organisations in the EU.
+
+3) Text classification: Assignment of industry codes to projects on the crowdfunding website Kickstarter.
+
+We present the lessons learnt from this study:
+
+1. How to assess if generative AI is a suitable tool for a particular use case, and
+
+2. Strategies for enhancing the accuracy and consistency of the outputs produced by generative AI.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models">
+        <span class="abstract__title">Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models</span>
+        <span class="abstract__people">Nicholas Reinicke and Robert Fitzgerald</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research Software Engineers (RSEs) often work with machine learning (ML) models integrated into scientific software stacks, and incremental model improvements are valuable but expensive in human time and attention. Our team maintains RouteE-Powertrain [1], which predicts vehicle energy consumption and is integrated into RouteE-Compass [2] for energy-aware routing. The existing random forest models are accurate at the trip level, but fail to capture certain link-level energy dynamics that the route search depends on. We want to improve these models, but are faced with limited time and funding.
+
+To address this, we investigated whether a Large Language Model (LLM) agent could help accelerate the discovery process for model improvements by taking on certain elements that are challenging for us, like context switching and managing limited time budgets.
+
+We expanded an existing auto-research harness (forked from Andrej Karpathy's autoresearch [3]) to include elements that are specific to our domain and a mechanism for seeding human direction. For each round of experiments, we provide direction and domain context, and the agent iterates for many hours: propose an experiment, train, and evaluate against held-out data.
+
+After running this modified harness for our particular problem, we ended up with a new 1D Convolutional Neural Network and some novel prediction features that we had not previously considered. We also ran the harness in a situation where we withheld the human direction but kept the same time budget. In that particular run, the agent didn't surface the novel features or the sequence architecture that made up the bulk of the model improvements. We report this as being anecdotal rather than conclusive, but it may suggest that having the human in the loop is important.
+
+Overall, we found that using this modified harness reduced our link-level root mean squared error (RMSE) by 41% and our trip-level RMSE by 2% (relative to our existing random forest architecture) allowing us to significantly improve our vehicle models beyond what our time budget would normally allow. We present this as an open template as we think the general pattern of auto research agents that integrate domain context and human direction may be useful for other RSE teams maintaining domain-specific ML models.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms">
+        <span class="abstract__title">Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs</span>
+        <span class="abstract__people">Shailaja Keyur Sampat</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}As modern scientific pipelines increasingly incorporate large language models and neural networks, researchers and Research Software Engineers (RSEs) face critical challenges regarding the reliability of their systems. While purely connectionist architectures excel at pattern recognition, they often struggle with tasks that require multi-step logical reasoning, resulting in outputs that lack reproducibility and verifiable correctness [1]. Since merely scaling model compute does not address these foundational logic gaps [2], there is a pressing need for architectural paradigms that emphasize both performance and rigorous accountability in high-stakes environments.
+
+This talk introduces Neuro-Symbolic (NeSy) AI as an effective solution to these challenges, through a case study centered on RSE practices. This framework utilizes the pattern recognition capabilities of neural networks while delegating complex reasoning tasks to symbolic engines [3]. The existing tooling landscape will be reviewed, and a technical walkthrough of Scallop [4] (an open-source NeSy library) will be presented, applying it to benchmark tasks. This demonstration will illustrate how this hybrid approach operates within complex research workflows by integrating structural and logical guardrails directly into neural architectures.
+
+Additionally, the talk will explore the advantages of NeSy including: (i) Reasoning Transparency: The clear separation between neural perception and symbolic reasoning creates a traceable audit trail, allowing developers to investigate and verify the logic behind specific decisions at every intermediate step, thereby mitigating the "black box" nature of deep learning systems; (ii) Hallucination Control: NeSy configurations systematically eliminate logically invalid outputs across test applications, as they are constrained by pre-defined domain rules rather than relying solely on probabilistic associations; (iii) Data Efficiency: By allowing researchers to incorporate domain expertise directly into the symbolic layer, the approach reduces dependence on extensive training data.
+
+Through a comparative analysis of NeSy implementations and purely neural baselines, this talk will offer a comprehensive overview of the integration costs and practical trade-offs involved in developing trustworthy AI systems. The presentation will conclude with a critical evaluation of the limits of this paradigm, providing clear criteria to help researchers determine when a neuro-symbolic approach is appropriate for their specific objectives. Attendees will leave with a functional roadmap for building reliable AI, equipped with the insights needed to navigate the essential balance between neural flexibility and symbolic rigor.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions">
+        <span class="abstract__title">A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions</span>
+        <span class="abstract__people">William Gearty</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Learning Unlimited (LU), a national nonprofit empowering college students to deliver educational programs, maintains several open-source codebases (https://github.com/learningunlimited), which I and three other volunteers maintain. Our limited nonprofit budget and unpaid volunteer workforce mean we have limited time and/or money to put towards further development of these codebases, despite issue reports and feature requests perpetually piling up. In an attempt to give our software a jumpstart, we participated in Google Summer of Code (GSoC), a global paid internship program that pairs beginner contributors with experienced mentors to work on real-world open-source projects. Our hope was to attract new contributors to our open-source program-management platform to squash bugs and work on larger new features that we didn’t have the capacity to work on ourselves. Over roughly three months, the project received nearly 1,200 pull requests and 560 issues from 388 GSoC applicants competing for three internship slots. The lack of broader real-world context and characteristic AI errors made it evident that the vast majority of these contributions were generated with substantial AI assistance. This application period simultaneously became LU's most productive and most stressful: GSoC participants closed 140 backlogged issues, some over fourteen years old, while we were forced to triage an unprecedented volume of low-quality, AI-assisted work. Average weekly maintainer activity rose roughly thirtyfold during the contribution period, peaking at over 700 discrete actions in a single week, and more than half of the pull requests that were reviewed were closed without merging. To keep pace, we deployed a set of GitHub Actions automation to assist with assignment enforcement, contributor rate-limiting, triage gates, and activity tracking, reducing required maintainer activity by more than 60%. Further, to combat increasing time-to-review we began implementing AI-assisted code review via integrated GitHub Copilot and external Claude conversations for first-pass review. This appeared to keep some contributors engaged, while others became unresponsive to the AI reviews. Overall, this natural experiment reveals that AI has dramatically lowered the cost of producing code while increasing the human cost of properly evaluating it, with consequences for how RSE teams should structure contributor onboarding, code review, and sustainability practices. Our experience also amplifies concerns about maintainer burnout, especially when the marginal cost of unwanted contributions has approached zero. Finally, in addition to our three interns, a small number of unsuccessful applicants have remained active contributors past the application period, suggesting that the underlying value of programs like GSoC survives even under these new conditions, if maintainers can withstand the volume.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="preparing-students-for-ai-assisted-research-workflows">
+        <span class="abstract__title">Preparing Students for AI-Assisted Research Workflows</span>
+        <span class="abstract__people">Alejandra Castillo</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}When students can obtain a script that runs, it can be easy for them to believe they understand the programming behind it. AI tools make this tension more visible. Students can now generate code, examples, explanations, and error-message fixes quickly, even while they are still developing basic programming fluency. This can lower the barrier to entry for students who are new to computing, but it can also hide important gaps in understanding. Code may run without answering the right question, students may accept unfamiliar solutions they cannot explain, and statistical assumptions may be buried behind polished output.
+
+In this talk, I share lessons from teaching undergraduate statistical computing, with examples from courses using R and Python for data analysis and modeling. I focus on a shift from teaching syntax as the central challenge to teaching computational judgment: reading code, debugging, checking whether output makes sense for the data and scientific context, documenting choices, and explaining results. I also discuss course redesigns that respond to AI-assisted coding, including giving students incorrect AI-generated output to critique and debug, adding written explanations of code and results, and using assessments that ask students to reason about data, models, and reproducibility. This talk connects these classroom experiences to broader questions about how educators can prepare future research software contributors to work responsibly in AI-assisted research workflows.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="what-they-don-t-tell-you-about-the-data-science-to-rse-transition">
+        <span class="abstract__title">What They Don’t Tell You About the Data Science to RSE Transition</span>
+        <span class="abstract__people">Ritika Giri</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}What does it mean to transition from data science to research software engineering? While both involve code, data, and scientific context; the lens through which project decisions are evaluated is dramatically different. Data science centers individual analysis and knowledge creation, while RSE work centers other people’s research and tool creation.
+
+This talk draws on firsthand experience of that transition, grounded in the development of PSIDkinfindR, an R package for reproducible kinship and family network analysis on the Panel Study of Income Dynamics (PSID) – the longest running longitudinal household survey in the world with more than 7600 peer-reviewed publications based on it [1] . I trace the trajectory of RSE skill development through an ongoing project, highlighting key shifts in both mindset and practice:
+
+Co-discovery with domain experts rather than translation – A key mindset shift is recognizing that RSE work is not simply translating the domain expert’s knowledge into code. RSEs work very closely with the data and therefore can often surface assumptions or data decisions that were invisible to the domain expert. Regular meetings, shared decision-making, notebook-driven collaboration, and explicit audit trails of assumptions allow the RSE and the domain expert to discover things together that neither would have found alone.
+
+User-focused communication and requirement gathering – Building for researchers means learning to ask different questions of different people. Who is going to use this tool? How might they use it? Finding a wide variety of real users – faculty, graduate students, new coders, statisticians – each with differing mental models and use-cases is critical to producing software that will actually be used. Conversing with multiple users and learning to gather iterative feedback helps to define the core needs of the user base and narrow the scope of the deliverable to only the most valuable pieces.
+
+AI as mentor for transitioning RSEs – For someone new to RSE practice, LLMs fill an unexpected role. While LLMs failed confidently when precise or convoluted domain knowledge was required, asking “what would a senior RSE recommend here?” was unexpectedly helpful. LLMs enabled me to quickly walk through or brainstorm different architectural patterns, design principles, and tooling conventions that would otherwise take time to learn, understand, and translate into code workflows for my use-cases. Generating quick prototypes of “what might work here” were invaluable in pushing through the initial friction of RSE-skill development.
+
+Learning in phases and separation of concerns – Separating the data science work from RSE craft is a legitimate way forward. Notebook-driven-development pushes knowledge creation forward, while RSE skills for tool creation can be picked up slowly in phases. I describe a deliberate phased approach: first infrastructure (package skeleton, git hooks, pkgdown sites, CI/CD), then software design (modular relational tables, tidy feature engineering, structured function APIs), then data validation (encoding domain assumptions using tools like pointblank), and eventually testing - with metamorphic and relationship-based tests as work in progress.
+
+The talk closes with an open question, connecting to the USRSE’25 keynote on correctness in research software (Cohen, 2025)[2, 3] : can LLMs generate tests that encode true domain logic i.e. metamorphic tests capturing relational and longitudinal constraints – or are they only useful for shallow code checks?{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="bears-bottlenecks-and-bus-factors-why-embedded-rses-pay-off">
+        <span class="abstract__title">Bears, Bottlenecks, and Bus Factors: Why Embedded RSEs Pay Off</span>
+        <span class="abstract__people">Miranda Mundt</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific software projects are often funded to answer a research question or deliver a specific capability, not to provide sustained support for the software itself. That means software work is frequently driven by immediate needs: a feature required for an analysis, a bug fix blocking progress, or a deadline tied to a deliverable. At the same time, scientific software often outlives the effort that first created it, gaining value through reuse, extension, and the ability to support reproducible and shareable research over time. In mature software ecosystems, the real challenges are often the bears, bottlenecks, and bus factors – the legacy design decisions that slow future progress, the infrastructure constraints that limit developer productivity, and the knowledge silos that make a project harder to sustain. This talk uses the Pyomo optimization ecosystem as a case study in why embedded Research Software Engineers (RSEs) can pay dividends over time.
+
+Through sustained engagement with Pyomo, embedded RSE work contributed across multiple layers of the project – extending optimization capabilities, modernizing testing and continuous integration systems, redesigning solver interfaces, and improving release and performance infrastructure. These efforts addressed concrete technical bottlenecks, reduced maintenance burden, and helped the project move beyond one-off fixes toward more durable improvements. They also show that the value of embedded RSE work is not limited to writing code for immediate needs. It includes making the broader software ecosystem more usable, maintainable, and resilient.
+
+Just as importantly, these outcomes were enabled by the relationship itself. Long-term collaboration built the shared context and trust needed to take on harder problems, challenge outdated assumptions, and invest in work whose value would emerge over years rather than weeks. That continuity also helps reduce bus factor by spreading knowledge, improving processes, and creating healthier patterns of stewardship. Using examples from Pyomo, I will argue that scientific software projects benefit when RSEs are positioned not only as short-term problem solvers, but as long-term collaborators who can help projects outrun the bear, remove bottlenecks, and build sustainability into the way the work gets done.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="mission-control-service-and-the-stewardship-of-science">
+        <span class="abstract__title">Mission Control: Service and the Stewardship of Science</span>
+        <span class="abstract__people">Malcolm Barrett</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Like many RSEs, my path to my current work was hardly linear and certainly not where I expected to be. I began my professional career in AmeriCorps, serving for two years at federally-qualified health centers, directly helping patients. I moved to research and trained as an epidemiologist. Now, I work as an embedded RSE at the Health Policy Data Science Lab at Stanford University. It’s the best job I’ve ever had, but the further I’ve gotten from direct service, the more I’ve questioned my relationship with service.
+
+Recently, after attending a training I offered, my department chair described my work as being like NASA Mission Control–the critical support that brings astronauts home safely. I appreciated this not just because I felt valued (I did) but because of the connection to service.
+
+In this talk, I’ll reflect on my journey into a particular subtype of RSE whose work is meant to support science. I’ve come to understand that this work is not merely the production of science but the stewardship of it. While I am further from the clinic than ever, a new path of service has arisen in front of me.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers">
+        <span class="abstract__title">Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers</span>
+        <span class="abstract__people">Julia Damerow and Susan Massey</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}When talking about research software engineers (RSE), the role they play in research, and their skill set, their work is typically framed as writing code and related tasks for software that is created for research. Specifically, RSEs implement best practices to achieve maintainable and sustainable research software (see for example Core 2024). For RSEs who have reached certain seniority levels, their work tasks may also include mentoring and training more junior RSEs or managing one or several RSEs. Rarely, however, does the discussion around an RSE’s tasks and responsibilities focus on the role of RSEs in projects in which external companies are hired to develop software. This is unfortunate, as an experienced RSE can have a crucial impact on the outcome of a project that works with a third-party company to develop research software.
+
+There can be a variety of reasons why a researcher decides to work with an outside company rather than with an internal RSE on their project. The most common reason may be that a researcher’s institution simply does not have a central RSE group and the PI and their collaborators are unable or unwilling to employ their own RSEs. In such cases, contracting with a company may be the only option. However, anecdotal evidence suggests that research software projects developed with support from third-party vendors often fail or significantly underdeliver.
+
+In this talk, we will present the experiences and lessons learned from a project that we have implemented with the support of an external software development company. The Arizona Pathogen Genomics Analytics Platform (APGAP) is a web application to manage pathogen genomics data in Arizona. It is deployed on Google Cloud infrastructure and integrates with Google’s Vertex AI notebooks as well as the bioinformatics platform Seqera. The platform application was developed in four phases: (0) requirement gathering, (1) prototype development, (2) production development, and (3) refinement and maintenance phase. Throughout the phases ASU-internal RSEs were increasingly engaged in the development. Requirements gathering in phase zero focused on functionality and overall operational capacity sought by users. This was done without RSE support. RSEs also had very little involvement with the code base in phase one, but phase two included code audits by RSEs, after some concerns and uncertainties arose. In phase three, ASU RSEs joined the implementation team from the external company to build internal development capacity, with an ASU RSE also assuming management of the implementation process. The increasing involvement of RSEs throughout the development phases, highlighted the substantial impact that RSEs can have on the overall success of a research software development project.
+
+Our presentation explores the long-term effects of partnering with third-party vendors on software sustainability and technical debt. We will highlight the critical role of RSEs as strategic consultants in these collaborations and share firsthand insights into the workflows that flourished and that failed within our specific use case.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="from-lakehouse-to-labmate-kbase-s-vision-for-ai-enabled-scientific-discovery">
+        <span class="abstract__title">From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery</span>
+        <span class="abstract__people">Mikaela Cashman, David Lyon, Christopher J. Neely, Benjamin Allen, Christopher S. Henry, Robert Cottingham, Gazi Mahmud, Elisha M. Wood-Charlson, Chris Mungall, Paramvir Dehal and Adam P. Arkin</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The Department of Energy’s Systems Biology Knowledgebase (KBase) serves as an open source research platform for reproducible and collaborative computational biology workflows based on FAIR data principles. As AI transforms scientific computing, KBase is evolving beyond workflow execution to a knowledge engine that consumes, produces, and exposes reusable scientific assets. The resulting platform integrates harmonized data resources, computational infrastructure, intelligent research capabilities, and a growing body of reusable expertise captured from community use to create an open and extensible analysis platform for next-generation AI-enabled science. This vision aims to lower barriers to scientific exploration while maintaining transparency, reproducibility, and scientific rigor.
+
+This talk highlights these advances through two closely related efforts: development of the KBase Lakehouse and deployment of an AI co-scientist (BERIL) as an initial realization of KBase’s intelligent research capabilities. One core aspect of this vision, the KBase Lakehouse, is a scientific data infrastructure designed to transform fragmented biological datasets into a connected AI-ready data ecosystem. Multi-tenant by design, the lakehouse federates data from KBase, JGI, NMDC, EMSL, NIH, USGS, and other communities. As an initial demonstrator, KBase has deployed BERIL, an AI co-scientist system that operates on the KBase Lakehouse infrastructure. The KBase ecosystem combines the Lakehouse’s diverse harmonized data resources with computational infrastructure, provenance, and community engagement. This enables BERIL to introduce agentic capabilities that together accelerate the cycle of hypothesis generation, analysis, discovery, and communication. Rather than a standalone chatbot, BERIL layers a suite of skills interfacing into the KBase Lakehouse infrastructure that supports transparent, reproducible AI-assisted science through traceable reasoning, reusable scripts, and shared lessons from prior user workflows.
+
+In a recent one-day user experience workshop, first-time users of the new platform produced multiple review-ready publications demonstrating how an AI-assisted research ecosystem can dramatically lower barriers to complex scientific discoveries. We conclude by reflecting on the evolving relationship between scientists and AI systems, the infrastructure design patterns required to build sustainable AI systems, and on the broader challenges of building open, trustworthy, and collaborative AI infrastructure for scientific discovery.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="heroic-a-research-software-infrastructure-for-real-time-multi-messenger-observatory-coordination">
+        <span class="abstract__title">HEROIC: A Research Software Infrastructure for Real-Time Multi-Messenger Observatory Coordination</span>
+        <span class="abstract__people">Jon Nation, Fabián Araneda-Baltierra and Curtis McCully</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The era of multi-messenger astronomy, where gravitational waves, electromagnetic radiation, and neutrinos from the same cosmic event must be correlated across a global network of observatories within minutes, presents a fundamental research software engineering challenge: how do you give the astronomical community instant, programmatic situational awareness of thousands of telescopes worldwide? HEROIC (Hop Enabled Realtime Observatory Information and Coordination) is an open-source research software platform developed by the SCIMMA (Scalable Cyberinfrastructure to support Multi-Messenger Astrophysics) project to address precisely this problem.
+
+HEROIC provides a REST API and an interactive web interface for tracking telescope status, instrument capabilities, and telescope pointings in real time, across observatories that choose to register with the system. The platform organizes data in a four-level hierarchy (Observatory, Site, Telescope, Instrument) and stores all sky coordinates as PostGIS spatial fields, enabling submillisecond spatial queries such as identifying which telescopes have observed (or are planned to observe) a given sky coordinate, using pre-computed field-of-view polygon indexes rather than live geometry calculations.
+
+In this talk we present the architecture and design decisions behind HEROIC, with emphasis on the software engineering challenges specific to real-time astronomical coordination: spatial indexing strategies for sky coordinate queries, automated schedule ingestion at cadence, deployment of stateful scientific services on community cloud infrastructure, and the tradeoffs involved in building sustainable open-source tooling for a small but technically diverse scientific community. We also discuss lessons learned from maintaining a production system that bridges telescope control software, public alert brokers, and end-user astronomers, and outline the roadmap for future development including expanded multi-messenger event follow-up coordination features.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="a-managed-database-as-a-service-platform-for-scientific-computing">
+        <span class="abstract__title">A Managed Database-as-a-Service Platform for Scientific Computing</span>
+        <span class="abstract__people">Jingyan Jiang, Huihuo Zheng and Venkatram Vishwanath</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Scientific computing at HPC facilities increasingly relies on database infrastructure across a growing range of workloads: vector search and retrieval-augmented generation (RAG), structured analytics, and AI-driven knowledge discovery over community corpora spanning documentation, experimental datasets, simulation outputs, and literature collections. These corpora are inherently shared facility resources, serving researchers, facility support staff, and AI agents across projects and institutions. Yet the supporting infrastructure remains built per project: each team provisions, configures, and operates its own database instance, with no facility-level registry, no shared identity layer, and no uniform interface for discovering or accessing the databases hosted across the facility.
+
+Commercial cloud platforms have addressed analogous needs through managed Database-as-a-Service offerings (e.g., Amazon RDS, Snowflake, Pinecone). However, these solutions do not transfer cleanly to scientific computing: they rely on proprietary identity systems, cannot directly access facility filesystems, and incur substantial data egress costs.
+
+We are building the missing piece: a managed database platform that lives inside the HPC facility, developed and evaluated on ALCF Polaris. One federated sign-in (Globus) brings a researcher — or an AI agent acting on their behalf — to every database the facility hosts, through a web UI, a scriptable API, or the Model Context Protocol. Governance, catalog, and access control are handled once by the platform and inherited by every project by default.
+
+The central design choice is scaling, native to HPC. Each workload is decomposed into its resource-consuming stages, and each stage can be scaled independently across nodes. As one representative example, a vector-search workload scales GPU-based embedding generation and search-index serving independently across nodes, reaching 5,197 queries/sec on 8 nodes (4.3× single-node) on ALCF Polaris and still climbing at maximum tested concurrency. Governance adds modest overhead at single-user load and becomes negligible under concurrency. In an end-to-end RAG pipeline built on this workload, retrieval contributes under 2% of total latency — the bottleneck has moved entirely to LLM generation. The same decomposition pattern is designed to extend to other workload types as additional engine adapters are integrated.
+
+The talk presents what changes when scientific data services are native to the facility: who can use them, what AI agents become capable of, and how a single platform can replace per-project infrastructure across an entire lab. We will share the design tradeoffs, what the scaling numbers mean for facility capacity planning, and the next stage of the design co-locating the database service with model-inference services and scaling both on demand against shared facility resources, planned for the coming year. We invite peer facilities to adopt the platform and collaborate with us on a unified, cross-facility scientific data service.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="one-size-fits-none-rethinking-campus-research-computing">
+        <span class="abstract__title">One Size Fits None: Rethinking Campus Research Computing</span>
+        <span class="abstract__people">Christopher Heller</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}High-performance computing infrastructure has never been more capable, but for the majority of researchers, it has also never felt more out of reach. Queue systems, module environments, job scripts, and allocation processes create compounding barriers that stop research before it starts. At the University of Illinois UrbanaChampaign, we set out to ask a different question: what if researchers could start computing in seconds, not weeks?
+
+The Illinois Computes Research Notebooks (ICRN) program, launched in 2023 under the Illinois Computes initiative, is our answer. Built on a Kubernetes-hosted JupyterHub platform, ICRN provides free, browser-based computational notebooks with guaranteed CPU access and shared GPU resources and zero setup burden on the researcher. Critically, access is automatic: every UIUC affiliate with a valid NetID (faculty, staff, students, and retirees alike) gets access without any application or approval process, removing the gatekeeping that typically limits HPC access to well-connected research groups. Since launch, ICRN has grown to serve over 3,350 unique UIUC users, with approximately 94% year-over-year growth, drawing in researchers across all 10 colleges of the university. Files saved in the ICRN environment are also accessible from NCSA's HPC systems, so researchers can transition from a notebook to the Illinois Campus Cluster (and beyond) without rebuilding their work, and Campus Cluster access itself is available through a similarly low-barrier on-ramp.
+
+This talk presents what we built, what we learned, and where we are headed. I will describe the program design philosophy, including deliberate decisions to abstract away HPC complexity while preserving pathways to more powerful resources, and share concrete operational lessons from scaling a multi-tenant JupyterHub platform at a major research university. Topics will include: GPU resource management and shared GPU access across a multi-tenant environment; integration with the Illinois Campus Cluster and other NCSA resources; and the use of a researcher survey to validate priorities and surface barriers. The broader vision is a continuum: researchers begin in a familiar notebook environment and, as their needs grow, have clear, low-friction pathways to progressively more powerful institutional resources. The talk will close with a forward-looking slide on emerging directions: tighter integration between notebooks and larger clusters (including launching HTC and HPC jobs directly from ICRN) as part of a singlepane-of-glass vision for campus research computing; LLM-assisted coding agents; and a Campus AI Cluster initiative with early-stage LLM-as-a-service infrastructure.
+
+Attendees will come away with a replicable model for accessible research computing infrastructure, concrete growth metrics and operational lessons, and a framework for thinking about the researcher experience as a first-class design constraint, not an afterthought.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>

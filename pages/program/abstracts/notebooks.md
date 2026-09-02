@@ -11,18 +11,27 @@ set_last_modified: true
 <link rel="stylesheet" href="{{ site.baseurl }}/assets/css/abstracts.css?v={{ site.time | date: '%s' }}">
 
 <div class="abstracts">
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets">
-      <span class="abstract__title">Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets</span>
-      <span class="abstract__people">Zachary Katz and Tasha Snow</span>
-    </h2>
+  <div class="abstracts__toolbar" hidden>
+    <button class="abstracts__toggle-all" type="button">Expand all</button>
   </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation">
-      <span class="abstract__title">Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation</span>
-      <span class="abstract__people">Pariksheet Nanda, Rocco Caprara and Jason Shoemaker</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets">
+        <span class="abstract__title">Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets</span>
+        <span class="abstract__people">Zachary Katz and Tasha Snow</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Remote sensing research relies on high volumes of openly accessible satellite data products spanning different data formats, time periods, and sizes. Traditionally, resources for data access have been limited to individual satellites based on funding mandates, compartmentalizing tutorials and leaving users stranded in learning how to synthesize their datasets to approach complex real-world problems. In this notebook, we demonstrate challenges and lessons learned from creating a tutorial notebook that progresses users from introducing a new dataset to advanced computations combining multiple datasets in a cloud computing environment. We used this notebook within a set of others to onboard 40 users to the CryoCloud geoscience cloud computing JupyterHub. The notebook guides users to stream satellite altimetry data from two NASA satellites, load background map datasets such as ice velocity, and apply geophysical corrections. Users then plot a comparison of the elevations from each satellite over an ice-shelf rift. Through creating this tutorial, we found three components—speed, flexibility, and interest—amplified the effectiveness of a tutorial notebook combining multiple datasets. The tutorial takes ~4 minutes to run, helping users rapidly learn and confirm the workflow’s validity. We used small test datasets to make this possible and include tips for scaling workflows to larger datasets. We made our tutorial modular, showing various options so users understand the full capabilities of any functions used. We also made our tutorial complete, so users can implement the tutorial without an instructor. Finally, we found solving an engaging real problem such as comparing elevations obtained by two different satellites makes for more effective tutorials. By striving to produce tutorials aligned with these key ideas, they can be an effective tool for reducing the barrier to entry in remote sensing research and other fields with large open-access datasets, leading to more data users and interesting science.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation">
+        <span class="abstract__title">Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation</span>
+        <span class="abstract__people">Pariksheet Nanda, Rocco Caprara and Jason Shoemaker</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Ordinary differential equations (ODEs) are widely used for mathematical modeling of natural systems. A less common but critical ODE solver input is the incorporation of fixed temporal data representing a process whose underlying equation is unknown, called a forcing function. Forcing functions are more readily supported in lower-level programming languages than in higher-level, domain-specific programming languages (DSLs) that allow fewer mathematical primitives and are more complex to extend. In the spirit of this year's USE-RSE conference theme, "Advancing Science in the Age of AI", we propose a higher standard for technical documentation: a notebook designed to explain forcing functions in the Stan DSL that serves both human learners and AI coding agents. We evaluate how well AI agents known to write Stan code can incorporate forcing functions by testing the effects of varied prompts and notebook variants that focus on AI-suitable explanations and reference links. We use the AI assistants built into the Positron and RStudio code editors from Posit to assist with the development of Stan code and compare suggestions for RStan and PyStan projects. Notebook formats tested include raw Markdown, HTML output with minimal JavaScript, and PDF output. As a baseline, we also compare AI-assisted forcing function code against implementations using non-DSL ODE solvers. Our findings yield a ranked set of strategies for teaching AI coding agents new and challenging concepts in DSLs, along with three notebook variants optimized for: (1) human readers, (2) AI agents, and (3) our best balance for both.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>
