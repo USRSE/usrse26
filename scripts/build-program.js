@@ -442,6 +442,28 @@ function slugify(s) {
   return s.toLowerCase().replace(/[^a-z0-9]+/g, '-').replace(/^-+|-+$/g, '');
 }
 
+/** Next unique anchor for `base` within `seen` (base -> count so far):
+ * the base itself first, then base-2, base-3, …
+ * @param {Map<string, number>} seen
+ * @param {string} base */
+function nextAnchor(seen, base) {
+  const n = (seen.get(base) || 0) + 1;
+  seen.set(base, n);
+  return n === 1 ? base : `${base}-${n}`;
+}
+
+/**
+ * Sheet-order anchors for the posters page, same slug + dedupe scheme as
+ * assignAnchors. Returns the anchor set so Schedule Poster events can be
+ * linked to a matching entry.
+ * @param {ReturnType<typeof toPosterRecords>} posters
+ */
+function assignPosterAnchors(posters) {
+  const seen = new Map();
+  for (const p of posters) p._anchor = nextAnchor(seen, slugify(p.title));
+  return new Set(posters.map((p) => p._anchor));
+}
+
 /**
  * Assign every page-format event a stable anchor for its abstract-page
  * entry, walking the folded days in schedule traversal order (day -> slot
@@ -461,11 +483,7 @@ function assignAnchors(days) {
         for (const talk of session.talks) {
           if (!talk._format) continue;
           if (!used.has(talk._format.slug)) used.set(talk._format.slug, new Map());
-          const seen = used.get(talk._format.slug);
-          const base = slugify(talk.title);
-          const n = (seen.get(base) || 0) + 1;
-          seen.set(base, n);
-          talk._anchor = n === 1 ? base : `${base}-${n}`;
+          talk._anchor = nextAnchor(used.get(talk._format.slug), slugify(talk.title));
           if (talk.infoMd || talk.speakers) talk.href = `${talk._format.permalink}#${talk._anchor}`;
         }
       }
@@ -1080,6 +1098,7 @@ async function main() {
   const records = toRecords(parseCSV(csv));
   if (!records.length) throw new Error('No schedule rows found — check the sheet.');
   const posters = postersCsv === null ? null : toPosterRecords(parseCSV(postersCsv));
+  const posterAnchors = posters ? assignPosterAnchors(posters) : new Set();
   const days = fold(records);
   assignAnchors(days);
   assignSessionIds(days);

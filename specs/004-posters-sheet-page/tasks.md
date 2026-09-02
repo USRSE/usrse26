@@ -48,7 +48,7 @@ live-sheet output.
   a scratch CSV with header `Authors,Abstract` fails with the
   `no "Poster Title" column` message and exit 1.
 
-- [ ] 3. **Shared anchor step and poster anchors** (Stories 2, 6; §3) — Add
+- [x] 3. **Shared anchor step and poster anchors** (Stories 2, 6; §3) — Add
   `nextAnchor(seen, base)` and use it inside `assignAnchors()` (`:428-432`).
   Add `assignPosterAnchors(posters)` returning the anchor `Set`; call it in
   `main()` before `assignAnchors()` and keep the set in `posterAnchors`
