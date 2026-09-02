@@ -287,7 +287,8 @@ generated artifacts so that scheduled rebuilds stay quiet and reproducible.
   *Superseded 2026-09-02 after review:* the in-body "Link to this poster"
   line was dropped in favor of the theme's sidebar contents list
   (`menubar_toc`, as on the Attend and Sponsor pages), one link per
-  poster. To make the theme's TOC include find them, entry anchors moved
+  entry, on every abstract page. To make the theme's TOC include find
+  them, entry anchors moved
   from the `<details>` wrapper to the `<h2>` heading on every abstract
   page, and `abstracts.js` opens the enclosing `<details>`.
 - **Columns:** `Authors`, `Poster Title`, `Abstract`, `DOI`. The generator

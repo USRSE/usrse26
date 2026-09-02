@@ -191,8 +191,8 @@
 }
 
 /* --------------------------------------------------------------------------
-   Sidebar contents list — pages with `menubar_toc` get one link per entry,
-   built by the theme from each heading's inner HTML. The byline span comes
+   Sidebar contents list — every abstract page carries `menubar_toc`, so
+   the theme builds one link per entry from each heading's inner HTML. The byline span comes
    along for the ride; the list wants titles only, so it is dropped here
    (display:none also keeps it out of the link's accessible name).
    -------------------------------------------------------------------------- */

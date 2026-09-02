@@ -96,16 +96,15 @@ const MUTED_TYPES = new Set(['break', 'meal', 'registration']);
 // the raw cell text is carried separately for program.json. A format with
 // `tab` has its page built from that other sheet tab instead of from
 // schedule rows: its events keep the pill and link into the page, but
-// never become entries on it. `toc` adds the theme's sidebar contents
-// list to the page, one link per entry.
-/** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null, tab?: string, toc?: boolean}>} */
+// never become entries on it.
+/** @type {Record<string, {label: string|null, pageTitle: string|null, permalink: string|null, slug: string|null, tab?: string}>} */
 const FORMATS = {
   'bird of a feather': { label: '', pageTitle: 'Birds of a Feather', permalink: 'program/bofs/', slug: 'bofs' },
   'keynote': { label: 'Keynote', pageTitle: 'Keynotes', permalink: 'program/keynotes/', slug: 'keynotes' },
   'notebook': { label: 'Notebook', pageTitle: 'Notebooks', permalink: 'program/notebooks/', slug: 'notebooks' },
   'paper': { label: 'Paper', pageTitle: 'Papers', permalink: 'program/papers/', slug: 'papers' },
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
-  'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters', tab: 'Posters', toc: true },
+  'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters', tab: 'Posters' },
   'random access microtalk': { label: 'RAM', pageTitle: 'Random Access Microtalks', permalink: 'program/rams/', slug: 'rams' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
   'workshop': { label: '', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
@@ -940,7 +939,7 @@ function collectAbstracts(days) {
  *
  * The entry's anchor goes on the heading: the theme's sidebar contents list
  * (_includes/toc.html) reads ids off h2/h3 elements, so this is what makes
- * a `toc` page list every entry. A fragment lands on the heading, which is
+ * the page's contents list carry one link per entry. A fragment lands on the heading, which is
  * always visible even when the entry is closed; abstracts.js then opens
  * the enclosing <details>, and the heading's scroll-margin-top clears the
  * navbar.
@@ -1000,16 +999,15 @@ function renderAbstractEntry(e, pad) {
  * @param {AbstractEntry[]} entries
  */
 function renderAbstractPage(format, entries) {
-  // A page of collapsed titles is mostly its own contents list, so the
-  // sidebar contents list is opt-in per format (FORMATS[*].toc): on a long
-  // page it doubles as the way to copy a link to one entry.
+  // menubar_toc: the theme's sidebar contents list (as on the Attend and
+  // Sponsor pages), one link per entry — the way to copy a link to one.
   const lines = [
     '---',
     'layout: page',
     `title: ${format.pageTitle}`,
     `description: ${format.label} abstracts at USRSE'26`,
     'menubar: program',
-    ...(format.toc ? ['menubar_toc: true'] : []),
+    'menubar_toc: true',
     `permalink: ${format.permalink}`,
     'set_last_modified: true',
     '---',
@@ -1040,7 +1038,7 @@ function renderAbstractPage(format, entries) {
 /**
  * Posters-tab records -> page entries, the same shape collectAbstracts
  * builds from schedule rows. Links to individual posters come from the
- * page's sidebar contents list (FORMATS.poster.toc), not from the body.
+ * page's sidebar contents list, not from the body.
  * @param {ReturnType<typeof toPosterRecords>} posters
  * @returns {AbstractEntry[]}
  */
