@@ -116,7 +116,7 @@ live-sheet output.
   abstract appears escaped in `posters.md`; the blank-title row is absent;
   second run all `unchanged`. Restore artifacts; commit only `fixtures/`.
 
-- [ ] 9. **Jekyll build and browser check** (Stories 3, 6, 7) — Two-flag
+- [x] 9. **Jekyll build and browser check** (Stories 3, 6, 7) — Two-flag
   fixture build, then `bundle exec jekyll build` (or the Docker path) must
   exit 0. Serve and check `program/posters/`: rows collapsed showing title
   and authors; expanding shows abstract, DOI link opening `doi.org`, and
