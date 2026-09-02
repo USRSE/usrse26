@@ -127,7 +127,7 @@ live-sheet output.
   its poster entry and the Paper's title lands on its DOI-only entry.
   Restore artifacts.
 
-- [ ] 10. **Docs and comments** (Story 8) — Update the file header comment
+- [x] 10. **Docs and comments** (Story 8) — Update the file header comment
   of `scripts/build-program.js` (`:1-38`) for the second tab, the flag, and
   the DOI column; the header comment of
   `.github/workflows/build-program.yml` (`:1-2`) to say the job reads the

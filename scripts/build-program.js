@@ -1,29 +1,35 @@
 #!/usr/bin/env node
 /**
- * build-program.js — build the USRSE'26 program page from the Schedule sheet.
+ * build-program.js — build the USRSE'26 program pages from the program sheet.
  *
- * Pulls the "Schedule" tab of the program Google Sheet via its CSV export
- * endpoint, folds the flat rows into days -> time slots -> sessions -> events,
- * and writes five kinds of artifact:
+ * Pulls two tabs of the program Google Sheet via its CSV export endpoint.
+ * The "Schedule" tab is folded into days -> time slots -> sessions ->
+ * events; the "Posters" tab is a flat list of accepted posters. Together
+ * they produce five kinds of artifact:
  *
  *   _includes/program-schedule.html   Jekyll include rendered on the program page
  *   _includes/program-grid.html       room x time grid view of the same page
- *   _data/program.json                normalized data (site.data.program)
- *   pages/program/abstracts/<slug>.md one page per event format (abstracts)
+ *   _data/program.json                normalized schedule data (site.data.program)
+ *   pages/program/abstracts/<slug>.md one page per event format (abstracts);
+ *                                     posters.md comes from the Posters tab
  *   _data/menus/program.yml           program menubar linking those pages
  *
  * The sheet stays the only thing anyone edits. Requires Node 18+ (global
  * fetch); zero dependencies.
  *
  *   PROGRAM_SHEET_ID=<id> node scripts/build-program.js    # live from Sheets
- *   node scripts/build-program.js --file fixtures/schedule.csv   # offline
+ *   node scripts/build-program.js --file fixtures/schedule.csv \
+ *                                 --posters-file fixtures/posters.csv   # offline
  *
- * Expected sheet columns (case-insensitive): Start, End, Location,
+ * Offline with --file alone, the posters page is skipped: an existing
+ * generated posters.md is left in place rather than rebuilt or pruned.
+ *
+ * Expected Schedule columns (case-insensitive): Start, End, Location,
  * Session Topic, Event Title, Order, the session-level columns
  * Session Format, Session Chair, and Session Description (Markdown), and
- * the event-level columns People, Event Format, and Event Description
- * (Markdown) — event columns are read only on rows with an Event Title.
- * Start/End carry the date and 24h wall-clock time ("10/19 13:30").
+ * the event-level columns People, Event Format, Event Description
+ * (Markdown), and DOI — event columns are read only on rows with an Event
+ * Title. Start/End carry the date and 24h wall-clock time ("10/19 13:30").
  * Session Format is used exactly as given, never inferred from the topic:
  * Break/Meal/Registration render muted, Plenary gets the plenary field.
  * A row with an Event Title attaches an event to the session matching its
@@ -31,6 +37,14 @@
  * pre-2026 layout (every event column empty) are normalized: a
  * "Session Chair: X" row sets the session's chair instead of listing as
  * an event, and a "<title> by <names>" byline splits into title + People.
+ *
+ * Expected Posters columns: Authors, Poster Title (or Title), Abstract
+ * (Markdown), and DOI, in any order; other columns are ignored. Rows
+ * without a Poster Title are skipped. The Posters tab owns posters.md:
+ * Schedule events with Event Format "Poster" keep their pill and link into
+ * the page (to the entry whose slugified title matches, else the page
+ * top) but never become entries on it. A missing or renamed Posters tab
+ * fails the build.
  */
 
 'use strict';
