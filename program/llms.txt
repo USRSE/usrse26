@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 45 sessions, 82 talks (10 with published
+> in the Age of AI". 3 days, 45 sessions, 82 talks (80 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -33,6 +33,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - https://us-rse.org/usrse26/program/bofs/ — Birds of a Feather — abstracts
 - https://us-rse.org/usrse26/program/notebooks/ — Notebooks — abstracts
 - https://us-rse.org/usrse26/program/papers/ — Papers — abstracts
+- https://us-rse.org/usrse26/program/posters/ — Posters — abstracts
 - https://us-rse.org/usrse26/program/talks/ — Talks — abstracts
 - https://us-rse.org/usrse26/program/workshops/ — Workshops — abstracts
 - https://us-rse.org/usrse26/attend/ — Attending: overview
@@ -475,9 +476,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution" (Talk)
     Presenters: Hilario Torres
     https://us-rse.org/usrse26/program/talks/#custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution
-  - "OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration by Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam" (Talk)
+  - "OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration" (Talk)
     Presenters: Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam
-    https://us-rse.org/usrse26/program/talks/#osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration-by-fernando-garzon-steven-yeu-scott-sakai-and-subhashini-sivagnanam
+    https://us-rse.org/usrse26/program/talks/#osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration
   - "Fabla: An Open-Source Voice-First EMA Platform for Clinical Research" (Paper)
     Presenters: Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan
     https://us-rse.org/usrse26/program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research

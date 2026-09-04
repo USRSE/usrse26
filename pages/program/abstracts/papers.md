@@ -3,6 +3,7 @@ layout: page
 title: Papers
 description: Paper abstracts at USRSE'26
 menubar: program
+menubar_toc: true
 permalink: program/papers/
 set_last_modified: true
 ---
@@ -13,9 +14,9 @@ set_last_modified: true
   <div class="abstracts__toolbar" hidden>
     <button class="abstracts__toggle-all" type="button">Expand all</button>
   </div>
-  <details class="abstract" id="aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research">
+  <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading">
+      <h2 class="abstract__heading" id="aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research">
         <span class="abstract__title">AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research</span>
         <span class="abstract__people">Bernie Boscoe, Tuan Do, Jack Stark, Srinath Saikrishnan, Vikram Seenivasan, PJ Allen, Morgan Himes, Jonathan Soriano, Andrew Lizarraga</span>
       </h2>
@@ -26,78 +27,120 @@ In astronomy, this development follows a long history of computational infrastru
 
 We define faithfulness as the extent to which generated responses remain grounded in retrieved scientific context without unsupported claims or omissions. We report results from an astronomy case study evaluating AquiLLM across retrieval and scientific analysis tasks. AquiLLM performs most reliably on explicit retrieval-oriented questions grounded in the RAG collection, while faithfulness degrades for queries requiring synthesis or ambiguity resolution. These results highlight both the promise and limitations of open-weight RAG-LLM systems for scientific research and demonstrate the importance of domain-expert evaluation beyond standard benchmark leaderboards.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <div class="abstract abstract--static" id="measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Measuring What Matters in the Age of AI: The Research Software Metrics Landscape</span>
-      <span class="abstract__people">Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments</span>
-      <span class="abstract__people">Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC</span>
-      <span class="abstract__people">Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools</span>
-      <span class="abstract__people">Smruti Padhy, Anagha Jamthe and Joe Stubbs</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="structuring-agentic-ai-for-hpc-code-modernization">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Structuring agentic AI for HPC code modernization</span>
-      <span class="abstract__people">Anthony Marinov and Igor Sfiligoi</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language</span>
-      <span class="abstract__people">A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline</span>
-      <span class="abstract__people">Jing Qi, William Cowen and Christian Darabos</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines</span>
-      <span class="abstract__people">Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="fabla-an-open-source-voice-first-ema-platform-for-clinical-research">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">Fabla: An Open-Source Voice-First EMA Platform for Clinical Research</span>
-      <span class="abstract__people">Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI</span>
-      <span class="abstract__people">Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="ai-augmented-research-software-engineering-risks-challenges-and-practices">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">AI-Augmented Research Software Engineering: Risks, Challenges, and Practices</span>
-      <span class="abstract__people">I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static" id="a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training">
-    <h2 class="abstract__heading">
-      <span class="abstract__title">A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training</span>
-      <span class="abstract__people">Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape">
+        <span class="abstract__title">Measuring What Matters in the Age of AI: The Research Software Metrics Landscape</span>
+        <span class="abstract__people">Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software now serves as a primary instrument of science, but the methods the community uses to judge its quality, sustainability, reuse, and impact remain scattered across software engineering, open science, FAIR software, citation, and research-assessment literature. AI-assisted development sharpens the problem: code can be produced at rates that outpace the capacity of developers to review contributions, maintenance activities become more complex, provenance and attribution are harder to track, scholarly credit systems are not able to keep pace, and existing metrics inherit assumptions about how research software gets developed that may no longer apply in an AI-assisted world. To aid in navigating these challenges, we present a focused landscape synthesis of research software metrics based on 49 substantive references, organizing the recurring metrics into eight families described by data source, claimed construct, evidence of validity, automation potential, and susceptibility to misuse. As a transparency artifact for follow-on work, we also provide a reproducible search-and-triage protocol and a 727-record triaged corpus prepared for a future full systematic mapping study. Many widely cited research software metrics serve as partial signals but make weak standalone measures of scientific impact. The AI era opens or widens gaps around provenance, maintainability of generated code, reviewer effort, model and data dependencies, reuse and community-health signal inflation, and credit for human labor that AI does not perform. We argue for responsible, contextual, mixed-method use of research software metrics, and offer decision guidance for Research Software Engineers (RSEs), principal investigators, institutions, and funders selecting metrics that support better software, fairer credit, and more trustworthy science.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments">
+        <span class="abstract__title">DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments</span>
+        <span class="abstract__people">Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Embarrassingly parallel workloads, such as parameter sweeps, Monte Carlo simulations, and hyperparameter searches, are pervasive in research computing, yet running a single experiment across a mix of laptops, lab servers, cloud VMs, and HPC clusters still demands ad hoc SSH tunnels, port forwarding, and scheduler-specific scripts. We present DART, a job distributor that turns any such mix of machines into a single shared queue. DART pairs a Dockerized job server with a oneline worker CLI; a hosted Hub automates reverse tunneling, worker authentication, and public endpoint provisioning, so collaborators on any network (behind NAT or on a personal laptop) can join an experiment with a single API key and no firewall changes. This makes DART especially effective for researchers who combine ACCESS-provisioned HPCs [1] with institutional clusters and personal workstations, federating all resources under one queue with no per-site configuration. All communication is encrypted end-to-end, and access is controlled through API-key authentication and a PIN-protected dashboard. Researchers create experiments, define parameter grids, and monitor jobs entirely from a web dashboard; a work-conserving scheduler dispatches jobs on demand, exploits resource heterogeneity, and automatically re-queues failures. In a real-world deployment of 37,720 jobs across 68 heterogeneous machines spanning an institutional HPC cluster, a national ACCESS resource, and personal computers, DART ’s dynamic allocation achieved a 35× speedup over static partitioning, reducing a multi-month workload to days. DART is open source at https: //github.com/NWSL-UCF/job-distributor; the hosted Hub runs at https://hub.jobdistributor.net.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc">
+        <span class="abstract__title">Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC</span>
+        <span class="abstract__people">Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Long-lived scientific pipelines accumulate technical debt that is hard to remove by incremental patching: Pythonorchestrated task generation, custom step or state managers, parameters mixed across scientific and infrastructure configurations, and monolithic job structures that bury per-task logs and error messages. We present ten generalizable practices for refactoring such pipelines into modern nf-core DSL2 form on shared Slurm HPC clusters with Fairshare scheduling. Some restate the move to Nextflow and nf-core conventions: separating scientific from infrastructure configuration, and decomposing monolithic steps into containerized DSL2 processes. The more distinctive practices target execution under a contended shared scheduler: backfill-fit job sizing, process.array for manytask steps, walltime-based partition routing, Slurm controllerrate mitigations, and defensive failure handling that converts partial failures into easy-to-trace errors. The practices are distilled from refactoring make_lastz_chains, a bioinformatics pipeline for whole-genome pairwise alignment, and other pipelines on the Arizona State University supercomputers. The make_lastz_chains refactor was conducted with heavy use of AI coding assistants; we describe the engineering discipline that kept it safe and, in passing, surfaced hidden pre-existing bugs in the upstream pipeline. We further provide, to our knowledge, the first peer-reviewable quantitative measurement of Nextflow’s process.array directive on a production-scale scientific workflow under shared Fairshare-based Slurm HPC: three configurations across N=3 target–query sample pairs in a blocked-concurrent design on the public cluster, with a matched co-tenancy-free reference run per configuration on a single-user private cluster, comparing total walltime and Slurm scheduler stress. The process.array patch shortens walltime on the large shared cluster but not the small single-user one, while the full refactor is fastest on both. The refactored pipeline, container image, and parity-testing affordance are released as a public artifact structured for portability and reuse.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools">
+        <span class="abstract__title">Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools</span>
+        <span class="abstract__people">Smruti Padhy, Anagha Jamthe and Joe Stubbs</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}AI Agents are rapidly gaining popularity by significantly reducing the “time-to-science” while performing complex scientific tasks, which previously required hours or days of human effort. While modern cyberinfrastructures like Tapis provide powerful, multi-service capabilities for managing distributed research, understanding the services and integrating them into scientific workflows can be a steep learning curve. For new users to navigate quickly and maximize the impact of such robust systems, research software engineers (RSE) are building specialized agentic frameworks using Model Context Protocol (MCP) tools. By engineering these standardized interfaces, RSEs can lower the entry barrier and accelerate domain-specific research. In this paper, we present a case study of the Tapis AI assistant, a system built to address this bottleneck by providing an intuitive, agentic interface that extends the capabilities of Tapis framework. The users of this system can quickly understand Tapis services and integrate them into their scientific workflows. Most importantly, this framework addresses the AI “black-box” observability and tracing issue by integrating traceability via Phoenix Arize. Furthermore, agent evaluation discussed in the paper ensures reliability of agentic systems for high-stakes research. With this study, we demonstrate that by instrumenting and evaluating AI agents to incorporate transparency and reliability, RSEs can build scalable and dependable research pipelines.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="structuring-agentic-ai-for-hpc-code-modernization">
+        <span class="abstract__title">Structuring agentic AI for HPC code modernization</span>
+        <span class="abstract__people">Anthony Marinov and Igor Sfiligoi</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Modernization of legacy scientific codes is often necessary to keep up with the ever-evolving changes in the compute resource ecosystem. Parallelization and migration from poorly supported software ecosystems are two of the most time-consuming activities in the research software engineering field. This paper presents our experience in the successful, two-phase AI-assisted modernization of NMAP-RKPM, a roughly 60,000line, 3D explicit solid mechanics physics engine based on the Reproducing Kernel Particle Method (RKPM). We converted this single threaded, Fortran based MPI application into a OpenMPparallel C++ based MPI tool in the span of a few months. While Large Language Model (LLM) based tools on their own proved inadequate, we developed a highly structured “hand-holding” agentic AI methodology, like providing manually created examples, ensuring continuous buildability and limiting session scope, that was instead highly effective. The paper provides both the AI-assisted steps that were successful and the problems that we had to overcome, alongside the reasoning behind the chosen path.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language">
+        <span class="abstract__title">Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language</span>
+        <span class="abstract__people">A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}We present Josh, a vegetation-focused platform for scalable ecological modeling. Co-developed in collaboration between research software engineers, ecologists, mathematicians, and land managers, this agent-based system aims to both further basic scientific understanding and support land management decisions. More specifically, this cross-disciplinary project centers the goals of both reducing the engineering effort required to author simulations and to offer strong performance in those models. Towards these ends, a domain-specific language (DSL) invites diverse collaborators to concisely specify custom logic for organisms and ergonomically access geospatial data as a first class language element. Then, with minimal to no code changes, this open source platform can move the same simulation from running locally in-browser via WebAssembly (WASM) to local parallelization via Java Virtual Machine (JVM). Finally, Josh can take the same code up to large scale distributed computing workloads. Through this portable computational machinery, a benchmark simulation requires 45% less wall clock time than a comparable framework with considerably less code. Josh is optionally compatible with Docker, Kubernetes, or similar applications. To support this user journey, we also provide contextefficient techniques including MCP and llms.txt to facilitate AI assistance while building models. We test these features across multiple AI assistants from a range of providers. Altogether, this DSL approach seeks to afford a concise way to express performant ecological models.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline">
+        <span class="abstract__title">Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline</span>
+        <span class="abstract__people">Jing Qi, William Cowen and Christian Darabos</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Volunteer field crews documenting culvert condition, roadside ditches, and storm drains routinely work in rural and mountainous terrain where cellular and Wi-Fi access is unreliable or absent, but documenting culvert conditions in remote locations is a situation where accurate, photo-supported reporting matters. Existing platforms such as Survey123 assume continuous connectivity and impose licensing constraints, limited offline customization, and restricted data ownership. These restrictions make them poorly suited to community-driven monitoring efforts. To address this, we built a mobile-compatible Progressive Web App (PWA) for the Culvert Crawlers community science network that captures structured observations, GPS coordinates, and photographic evidence entirely on-device, then synchronizes research data automatically once connectivity is restored.
+
+The architecture separates storage by data type: compact survey fields are queued as JSON in localStorage, while photos are persisted as Blobs in IndexedDB and linked to their parent record by unique ID, avoiding binary overflow in Web Storage and preserving images across device restarts. Synchronization is controlled with a confirmed server reachability check; local data is cleared only after the backend acknowledges successful persistence, eliminating data loss from dropped connections midupload. Deployed to real field users, the app has processed over 400 reports with a 100% submission success rate and zero data loss, enabling town managers and volunteer observers alike to document and act upon infrastructure conditions with minimal training and no specialized equipment. [1]{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines">
+        <span class="abstract__title">Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines</span>
+        <span class="abstract__people">Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Developing and testing software for regulated patient data such as Medicare claims is structurally expensive. Tooling work must occur inside credentialed, audited computing enclaves, where libraries and tools require approval before they can even be tried. This makes pipeline development and debugging far slower and more expensive than on an ordinary open stack. Because derived code and data cannot leave the enclave, pipelines cannot easily be shared, compared, or reproduced by others. We hypothesize that escaping this bind does not require statistically realistic synthetic data. For the purpose of building and testing data tooling, what a pipeline exercises is file format, record structure, schema conformance, edge cases, and dataquality artefacts, not the true magnitude of any clinical or demographic distribution. Format and structural fidelity are therefore sufficient for this use, and statistical fidelity is not necessary.
+
+We make this case concrete with synthmed, an open (Apache2.0) Python package that generates a fully synthetic Medicare-like database conforming to ResDAC File Transfer Summary (FTS) layouts, together with a downloadable companion dataset (CCBY-4.0; calendar years 2011–2016). The generator emits fixedwidth files in the same layouts as real CMS extracts, so an unmodified open ingestion pipeline can process them with no glue code and then run unchanged against the restricted extract inside the enclave. Records are generated from AI-authored FTS specifications combined with public reference data and CMS DESynPUF synthetic Medicare files. An internal beneficiary table maintains identifier and demographic consistency across files and years and injects realistic data-quality artefacts to exercise error-handling and quality-control logic. No individual-level CMS ResDAC data or other real patient-level datasets are used, so the released files contain no PHI or PII.
+
+The generator is bit-reproducible under a fixed seed and has been exercised end to end at 5 million synthetic beneficiaries through the ingestion pipeline. The artefacts are intended for education, methods development, and ETL or analysis pipeline testing in population-health research. As more pipeline code is itself authored by AI, an open, format-faithful substrate of this kind also lowers the cost of independently inspecting, profiling, and regression-testing AI-generated ingestion logic outside the enclave. Consistent with the argument above, they are explicitly not suitable, and not intended, for drawing substantive conclusions about real patients, providers, or health-care utilisation.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="fabla-an-open-source-voice-first-ema-platform-for-clinical-research">
+        <span class="abstract__title">Fabla: An Open-Source Voice-First EMA Platform for Clinical Research</span>
+        <span class="abstract__people">Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Speech is a powerful, well-replicated marker of mental and neurological health, with linguistic and acoustic features linked to depression, schizophrenia, and neurocognitive status across clinical populations and languages. Translating that evidence into technology that can accelerate the field depends on collecting naturalistic speech at scale, and the main obstacle has been the absence of tools that put recording in the hands of participants in their everyday environments. A recent review of 149 mental health apps found that only 8% were partially adaptable and none allowed researchers to add new content. This paper describes Fabla, an open-source voice-first ecological momentary assessment (EMA) platform built by an embedded research software engineering team at Emory University's Clinical and Translational Science Alliance. Fabla combines a JSON-protocol-driven Flutter frontend on iOS and Android, a researcher-facing dashboard built on Retool that lets investigators author study protocols, manage participants, and schedule notifications without writing code, and a HIPAA-eligible AWS backend operating in Emory's IRB-approved infrastructure. Over the past year, Fabla has supported 15 active studies spanning depression, substance use, meditation-based intervention, and social determinants of health collecting more than 30,000 minutes of voice diary audio. A preregistered validation study (n=87) found voice diaries produced more than twice the daily language volume of identical text diaries [1], with linguistic markers of depression detectable in voice but not text. We describe the engineering decisions that made adoption practical, reflect on what embedded RSE teams in clinical research can look like, and outline two architecturally supported directions for future work: an integrated speech analytics module and a conversational-agent layer for semi-structured elicitation.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai">
+        <span class="abstract__title">We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI</span>
+        <span class="abstract__people">Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research Software Engineering (RSEng) is grounded in the belief that better software enables better research. Generative AI could substantially accelerate and expand the scope of research software development, but it also risks producing software that is easier to generate than to understand, validate, or maintain. This is especially consequential in scientific computing, where software quality is directly tied to reproducibility, trust, and scientific validity. In this paper, we introduce a human-centric, middle-range theory of research software quality in AI-mediated development. We argue that people create quality by reasoning about, negotiating, and ensuring it across the software lifecycle. Our theory centers on three constructs: values, which shape which quality attributes matter; expertise, which enables individuals to pursue and evaluate those attributes; and collaboration, which coordinates diverse forms of knowledge and accountability. We use this theory to frame key risks and opportunities for AI in RSEng and to propose testable hypotheses for future research.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="ai-augmented-research-software-engineering-risks-challenges-and-practices">
+        <span class="abstract__title">AI-Augmented Research Software Engineering: Risks, Challenges, and Practices</span>
+        <span class="abstract__people">I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}AI is reshaping research software engineering on two fronts: AI components are increasingly embedded inside research software and science gateways that Research Software Engineers (RSEs) deliver, while AI-assisted and agentic coding tools are changing how RSEs build that software in the first place. This is especially visible in gateway and cyberinfrastructure projects that connect user interfaces, scientific data, HPC systems, and external services. While these tools can accelerate development and architectural exploration, they also introduce new risks: non-deterministic outputs, overconfident reasoning, unsafe tool execution, hidden operational costs, and sustainability pressure from rapid tooling churn. This paper argues that AI-augmented research software engineering requires a shift from unconstrained AI use—whether AI assists development or runs inside the delivered software—to AI-constrained engineering. Through three project cases—SmartSearch, SciOn, and HydroAI—we examine practical strategies for managing AIaugmented complexity: measuring output variance, constraining generation through domain-specific specifications, and governing agentic tool use through human-in-the-loop checkpoints and operational guardrails. Based on these cases, we also propose a progressive training path for AI-augmented RSEs, moving from low-risk familiarization and reviewable implementation toward constrained generation, risk-gated agentic operation, and upstream architectural co-design. We further argue that sustaining engineering judgment under AI augmentation is ultimately a team-level concern, not only an individual one. We conclude that AI does not reduce the need for RSE expertise; instead, it shifts RSE work toward designing the boundaries, validation mechanisms, and sustainable environments in which AI systems can safely contribute to research software.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training">
+        <span class="abstract__title">A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training</span>
+        <span class="abstract__people">Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Large Language Models (LLMs) have shifted the focus of Research Software Engineering (RSE) from basic implementation to systematic selection of effective architectures within a vast landscape of stochastic solutions. This paper addresses the ”paradox of choice” by introducing a generalized evaluation and integration methodology. Our three-phase framework comprises ’fail-fast’ initial, ’broad-spectrum’ improved, and final optimal rounds, supported by a three-level case analysis and a four-step evaluation cycle. We validate this methodology by developing and integrating a smart search engine into CyberFaCES online learning platform, providing a repeatable blueprint for RSEs to navigate complex AI configuration spaces. By sharing our research paths and publicly available implementation, we offer a structured strategy to move beyond ad-hoc experimentation toward reliable, AI-integrated research tools.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>

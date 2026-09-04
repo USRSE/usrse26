@@ -18,6 +18,9 @@ on:
       - '_data/program.json'
       - 'scripts/build-program.js'
       - 'program/**'
+      # The rendered page list names every generated abstract page, and a
+      # tab-owned one (posters.md) is evidenced only by the file itself.
+      - 'pages/program/abstracts/**'
 
 concurrency:
   group: ${{ github.workflow }}-${{ github.event.pull_request.number }}

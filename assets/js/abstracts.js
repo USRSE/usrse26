@@ -7,7 +7,8 @@
    script involved, so the page still works with JavaScript off. This file
    only adds the three things <details> cannot do on its own:
 
-     1. open the entry a schedule deep link points at,
+     1. open the entry a schedule deep link (or the sidebar contents
+        list) points at,
      2. drive the expand / collapse-all control,
      3. open every entry for printing, and put them back afterward.
 
@@ -29,17 +30,22 @@
 
   // Arriving from the schedule is a cross-document navigation, so the
   // browser has already done its own fragment scroll by the time this
-  // runs. Opening the target doesn't move it — the abstract expands below
-  // the summary row — so the scroll here is to re-settle the position and
-  // let the entry's scroll-margin-top clear the fixed navbar. Static
-  // entries have nothing to open and fall through to the same scroll.
+  // runs. The fragment targets the entry's heading, which sits in the
+  // always-visible summary row; opening the enclosing <details> doesn't
+  // move it — the abstract expands below — so the scroll here is to
+  // re-settle the position and let the heading's scroll-margin-top clear
+  // the fixed navbar. Static entries have no <details> to open and fall
+  // through to the same scroll. The page's sidebar contents list (when
+  // present) links to the same ids, so a click there lands here too via
+  // hashchange.
   function reveal() {
     var id = decodeURIComponent(location.hash.slice(1));
     if (!id) return;
     var el = document.getElementById(id);
     // Guards against a fragment that matches something else on the page.
     if (!el || !root.contains(el)) return;
-    if (el.tagName === 'DETAILS') el.open = true;
+    var panel = el.closest('details.abstract');
+    if (panel) panel.open = true;
     el.scrollIntoView();
   }
 

@@ -66,12 +66,12 @@ after which you can reload the page in your browser to see the rendered changes.
 
 ## Building the Program Schedule
 
-The program page is generated from the "Schedule" tab of the program Google Sheet by
-`scripts/build-program.js` (Node 18+, no dependencies), which writes
-`_includes/program-schedule.html` (the list view), `_includes/program-grid.html` (the room ×
-time grid view), `_data/program.json`, and the two plain-text files described under
-[Program files for AI assistants](#program-files-for-ai-assistants). Edit the sheet, not
-those files.
+The program page is generated from the program Google Sheet by `scripts/build-program.js`
+(Node 18+, no dependencies). The "Schedule" tab drives `_includes/program-schedule.html`
+(the list view), `_includes/program-grid.html` (the room × time grid view), `_data/program.json`,
+and the two plain-text files described under
+[Program files for AI assistants](#program-files-for-ai-assistants); the "Posters" tab in the
+same spreadsheet drives the Posters abstract page. Edit the sheet, not those files.
 
 The Full Program page shows the list by default with a List / Grid toggle above it; the
 grid lays each day out with rooms as columns and time down the side, breaks and other
@@ -87,16 +87,27 @@ topic; Break, Meal, and Registration render as muted rows, Plenary gets the high
 plenary treatment), Session Chair (shown next to the format), and Session Description
 (Markdown). Event rows (rows with an Event Title) may also carry People (speakers as
 "A, B and C"), Event Format (Bird of a Feather, Keynote, Notebook, Other, Paper, Plenary,
-Poster, Random Access Microtalk, Talk, or Workshop), and Event Description (the event's abstract,
-as Markdown). When events carry an Event Format other than "Other", the script also
-generates one abstract page per format under `pages/program/abstracts/` and the program
-menubar `_data/menus/program.yml` linking those pages — both script-managed: they carry a
-generator banner, are pruned when their format leaves the sheet, and must not be edited by
-hand.
+Poster, Random Access Microtalk, Talk, or Workshop), Event Description (the event's abstract,
+as Markdown), and DOI (a bare DOI such as `10.5281/zenodo.123`, or a full URL). When events
+carry an Event Format other than "Other", the script also generates one abstract page per
+format under `pages/program/abstracts/` and the program menubar `_data/menus/program.yml`
+linking those pages — both script-managed: they carry a generator banner, are pruned when
+their format leaves the sheet, and must not be edited by hand.
+
+Posters are the exception: the Posters page is built from the "Posters" tab rather than from
+Schedule rows. Its columns are Authors, Poster Title (or Title), Abstract (Markdown), and
+DOI, in any order; other columns are ignored and rows with no Poster Title are skipped. A
+Schedule event whose Event Format is "Poster" keeps its pill on the schedule and links into
+the Posters page — to the entry whose slugified title matches its own, otherwise to the top
+of the page — but never becomes an entry there. If the Posters tab is missing or renamed,
+the build fails rather than serving a stale page.
 
 Each abstract page lists its entries as collapsed rows carrying the title and byline, with
-the abstract behind a native `<details>` disclosure; an entry with no Event Description
-renders as a plain row with no control to open. The pages link two hand-written assets, so
+the abstract behind a native `<details>` disclosure. Below the abstract, a metadata line
+carries the DOI link when the row has one. An entry with no Event Description and no DOI
+renders as a plain row with no control to open. Every abstract page also gets the theme's
+sidebar contents list (`menubar_toc`, as on the Attend and Sponsor pages), one link per
+entry, which is how a visitor gets a shareable link to a single abstract. The pages link two hand-written assets, so
 both must ship alongside the generator: `assets/css/abstracts.css` styles the rows, and
 `assets/js/abstracts.js` opens the entry a schedule deep link points at, drives the
 expand/collapse-all control, and opens every entry for printing. The disclosure toggle
@@ -161,11 +172,14 @@ Rebuild from the live sheet:
 PROGRAM_SHEET_ID=<sheet-id> node scripts/build-program.js
 ```
 
-Or build offline from the checked-in fixture, which needs no sheet ID:
+Or build offline from the checked-in fixtures, which need no sheet ID:
 
 ```bash
-node scripts/build-program.js --file fixtures/schedule.csv
+node scripts/build-program.js --file fixtures/schedule.csv --posters-file fixtures/posters.csv
 ```
+
+With `--file` alone the Posters tab is skipped: every Schedule artifact is rebuilt, and an
+existing generated `posters.md` is left in place rather than rebuilt or pruned.
 
 Then preview the site as described above to see the regenerated program page.
 
