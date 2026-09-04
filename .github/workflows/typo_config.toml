@@ -16,5 +16,10 @@ extend-ignore-re = [
     "Som",
     "Claus",
     "Robin Sur",
-    "Sur"
+    "Sur",
+    # Domain terms in author-submitted abstracts, correct as written:
+    # the accelerator laboratory, microelectronvolt, and branch-and-bound.
+    "SLAC",
+    "ueV",
+    "BaB"
 ]
