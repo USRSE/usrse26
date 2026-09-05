@@ -55,11 +55,12 @@ jobs:
           # Stage before checking: `git diff --quiet` alone would miss newly
           # generated (untracked) abstract pages, and -A stages pruning
           # deletions too. Directory pathspecs, because naming a generated
-          # file that does not exist yet would fail the add outright. The
-          # two includes are safe to name: the generator writes both
-          # unconditionally in the step above.
+          # file that does not exist yet would fail the add outright — that
+          # is also why `program` is named as a directory rather than its
+          # two llms .txt files. The two includes are safe to name: the
+          # generator writes both unconditionally in the step above.
           git add -A -- _includes/program-schedule.html _includes/program-grid.html \
-            _data/program.json pages/program/abstracts _data/menus
+            _data/program.json pages/program/abstracts _data/menus program
           if git diff --quiet --cached; then
             echo "Schedule unchanged — nothing to commit."
           else

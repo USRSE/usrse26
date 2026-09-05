@@ -3,6 +3,18 @@ extend-exclude = [
     ".git/",
     ".github/workflows/typo_config.toml",
     "assets/js/*.min.*",
+    # Generated from the program Google Sheet — author-submitted abstract
+    # prose, rewritten wholesale by every rebuild. A new abstract can bring
+    # in any proper noun, unit or initialism it likes (SLAC, ueV, BaB), so
+    # spell checking these turns unrelated pull requests red on a schedule.
+    # Nobody can act on a hit either: the text belongs to the sheet, and an
+    # edit here is overwritten by the next run. The hand-written .tbd
+    # snapshots alongside them are still checked.
+    "/_data/program.json",
+    "/_includes/program-schedule.html",
+    "/_includes/program-grid.html",
+    "/pages/program/abstracts/*.md",
+    "/program/",
 ]
 ignore-hidden = false
 [default]

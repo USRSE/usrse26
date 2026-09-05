@@ -68,9 +68,10 @@ after which you can reload the page in your browser to see the rendered changes.
 
 The program page is generated from the program Google Sheet by `scripts/build-program.js`
 (Node 18+, no dependencies). The "Schedule" tab drives `_includes/program-schedule.html`
-(the list view), `_includes/program-grid.html` (the room × time grid view), and
-`_data/program.json`; the "Posters" tab in the same spreadsheet drives the Posters abstract
-page. Edit the sheet, not those files.
+(the list view), `_includes/program-grid.html` (the room × time grid view), `_data/program.json`,
+and the two plain-text files described under
+[Program files for AI assistants](#program-files-for-ai-assistants); the "Posters" tab in the
+same spreadsheet drives the Posters abstract page. Edit the sheet, not those files.
 
 The Full Program page shows the list by default with a List / Grid toggle above it; the
 grid lays each day out with rooms as columns and time down the side, breaks and other
@@ -121,6 +122,56 @@ byline splits into a clean title plus People.
 The sheet ID is intentionally not committed to the repo. The script reads it from the
 `PROGRAM_SHEET_ID` environment variable — it is the long token in the sheet's
 `docs.google.com/spreadsheets/d/<id>/...` URL.
+
+The conference facts the generated files state — the site's absolute URL, the conference
+name, its full name, its theme, and the year the sheet's "M/DD" dates fall in — are read
+from `_config.yml` (`url` + `baseurl`, `title`, `description`, `conf_theme_short`,
+`conf_start_date`), so Jekyll and the generator cannot disagree about them. Change them
+there. A missing one fails the build rather than emitting a page with a blank in it. Two
+values are deliberately not read: the room ordering and the `-07:00` program timezone,
+because `conf_start_date` ends `-0900` and San Jose in October is UTC-7 — sourcing it would
+restamp every session two hours off.
+
+### Program files for AI assistants
+
+The generator also writes `program/llms.txt` and `program/llms-full.txt`, served at
+`https://us-rse.org/usrse26/program/llms.txt` and `.../llms-full.txt`. They are the whole
+schedule as plain text, for attendees who want an AI assistant to build them a personal
+schedule; the Full Program page links both and shows an example prompt.
+
+`llms.txt` carries every session and talk — times (wall-clock and ISO 8601), room, type,
+chair, presenters, which sessions each one is concurrent with, and a link to each talk's
+abstract entry. `llms-full.txt` is the same document with abstract text inlined.
+"Concurrent with" is computed by comparing ISO ranges across the whole day, not by slot
+grouping, so partially overlapping sessions are caught.
+
+They live in a root-level `program/` directory rather than under `pages/` so Jekyll copies
+them verbatim to `_site/program/`. That is deliberate: a static file is never
+Liquid-processed, and abstract text out of the sheet may contain `{{` or `{%` — the HTML
+abstract pages have to escape exactly that. Giving these files front matter to set a
+permalink would reintroduce the hazard for nothing. The directory does not collide with the
+Full Program page, which has `permalink: program/` and so writes `_site/program/index.html`.
+
+Both are generated: they carry no banner (a comment would be noise in a file meant to be
+read as prose), but they are rebuilt on every run and must not be edited by hand. The
+renderer reads only the fields `_data/program.json` also carries, so it can be driven from
+the committed JSON as well as from a fresh sheet fetch:
+
+```bash
+node scripts/build-program.js --from-json
+```
+
+That rewrites just the two `.txt` files, needs no sheet ID, and is the quickest way to see
+a renderer change. It cannot rebuild the HTML includes or the abstract pages — those need
+the `_`-prefixed internals that `program.json` deliberately drops.
+
+The `Check program llms.txt` workflow (`.github/workflows/check-program-llms.yml`) runs
+that same command on every pull request touching `_data/program.json`,
+`scripts/build-program.js`, or `program/`, and fails if the result differs from what is
+committed. On the normal path — the `Rebuild program schedule` workflow — the `.txt` files
+and the program page are written in the same run and cannot drift; this catches the other
+path, a pull request that edits the schedule data or the generator by hand without
+regenerating. It is read-only, needs no secret, and works on pull requests from forks.
 
 ### Local development
 
