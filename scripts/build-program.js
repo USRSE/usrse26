@@ -59,6 +59,63 @@ const path = require('path');
 // Configuration
 // ---------------------------------------------------------------------------
 
+const REPO_ROOT = path.join(__dirname, '..');
+
+/**
+ * Top-level scalars from _config.yml, so the facts Jekyll already knows are
+ * stated once rather than restated here.
+ *
+ * Deliberately not a YAML parse. This script has no dependencies, and the
+ * handful of values it wants — url, baseurl, title, description,
+ * conf_theme_short, conf_start_date — are all unindented scalars at the top
+ * of the file. So: read lines of the form "key: value" at column 0, and stop
+ * there. Nested structures (defaults, collections, plugins) are keys with no
+ * value on the line and simply never match; their indented children never
+ * match either. A quoted value keeps its contents verbatim, an unquoted one
+ * loses a trailing " # comment", and nothing else is interpreted — no
+ * anchors, no multi-line scalars, no type coercion.
+ *
+ * Anything this cannot express stays a constant below, with a reason.
+ */
+function readJekyllConfig() {
+  let text;
+  try {
+    text = fs.readFileSync(path.join(REPO_ROOT, '_config.yml'), 'utf8');
+  } catch (err) {
+    configFail(`cannot read _config.yml: ${err.message}`);
+  }
+  const values = new Map();
+  for (const line of text.split(/\r?\n/)) {
+    const m = /^([A-Za-z_][A-Za-z0-9_-]*):[ \t]+(\S.*)$/.exec(line);
+    if (!m) continue;
+    const quoted = /^(["'])([\s\S]*)\1[ \t]*(?:#.*)?$/.exec(m[2]);
+    values.set(m[1], quoted ? quoted[2] : m[2].replace(/[ \t]+#.*$/, '').trim());
+  }
+  return values;
+}
+
+/**
+ * Config problems are fatal, and they surface while the constants below are
+ * being initialized — before main() exists for its .catch to format them. So
+ * they report and exit here, in the same one-line shape every other failure
+ * uses, rather than reaching the top level as a stack trace.
+ */
+function configFail(message) {
+  console.error(`build-program: ${message}`);
+  process.exit(1);
+}
+
+const JEKYLL = readJekyllConfig();
+
+/** A _config.yml value that must be present: the output is wrong without it. */
+function configValue(key) {
+  const v = JEKYLL.get(key);
+  if (v === undefined || v === '') {
+    configFail(`_config.yml has no "${key}" — cannot build the program.`);
+  }
+  return v;
+}
+
 // ID of the program spreadsheet (the long token in its docs.google.com URL).
 // Deliberately kept out of the repo: it must come from the PROGRAM_SHEET_ID
 // environment variable (a repository secret in CI). Offline builds with
@@ -67,11 +124,21 @@ const SHEET_ID = process.env.PROGRAM_SHEET_ID || '';
 const SHEET_NAME = 'Schedule';
 const POSTERS_SHEET_NAME = 'Posters';
 
-// Sheet dates are "M/DD" with no year.
-const CONF_YEAR = 2026;
+// Sheet dates are "M/DD" with no year; _config.yml dates the conference.
+const CONF_YEAR = (() => {
+  const m = /^(\d{4})-/.exec(configValue('conf_start_date'));
+  if (!m) configFail('_config.yml conf_start_date must start with YYYY-.');
+  return Number(m[1]);
+})();
 
 // All program times are wall-clock US Pacific. Never construct JS Date
 // objects from them — a runner in UTC would shift 8:30am to a different day.
+//
+// NOT taken from conf_start_date, which ends "-0900". San Jose in October is
+// PDT, UTC-7; -0900 would restamp every session two hours off and silently
+// move the early ones into the previous day. Reading it here would propagate
+// a wrong value into program.json and both llms files, so this stays a
+// constant until the config is corrected.
 const TZ_OFFSET = '-07:00';
 
 // Concurrent sessions render in this room order regardless of sheet row
@@ -122,7 +189,6 @@ function normalizeFormat(raw) {
   return FORMATS[v.toLowerCase()] || FORMATS.other;
 }
 
-const REPO_ROOT = path.join(__dirname, '..');
 const OUT_HTML = path.join(REPO_ROOT, '_includes', 'program-schedule.html');
 const OUT_GRID = path.join(REPO_ROOT, '_includes', 'program-grid.html');
 const OUT_JSON = path.join(REPO_ROOT, '_data', 'program.json');
@@ -1116,19 +1182,25 @@ function writeAbstractPages(days, posters) {
 // Absolute site root: _config.yml's url + baseurl. Agents fetch these files
 // on their own, with no site.baseurl to resolve a relative link against, so
 // every URL here is absolute.
-const SITE_BASE = 'https://us-rse.org/usrse26/';
+const SITE_BASE = (() => {
+  const origin = configValue('url').replace(/\/+$/, '');
+  const base = (JEKYLL.get('baseurl') || '').replace(/^\/+|\/+$/g, '');
+  return base ? `${origin}/${base}/` : `${origin}/`;
+})();
 
-// Conference facts that live in _config.yml, not in the schedule sheet. This
-// script deliberately reads no Jekyll config (see CONF_YEAR, TZ_OFFSET,
-// ROOM_ORDER above, which hardcode conference facts for the same reason), so
-// these mirror it by hand. The dates are NOT here — they are derived from the
-// schedule itself below, where they cannot drift.
+// Conference facts that live in _config.yml, not in the schedule sheet, and
+// are read from it rather than restated here. The dates are in neither place:
+// they are derived from the schedule itself below, where they cannot drift.
+//
+// org and location have no _config.yml key to read. Inventing one to satisfy
+// the pattern would put the site's only copy of a fact in a file nothing else
+// consults, which is not a single source of truth — it is a second one.
 const CONF = {
-  name: "USRSE'26",
-  fullName: 'US-RSE Conference 2026',
+  name: configValue('title'),
+  fullName: configValue('description'),
   org: 'US Research Software Engineer Association (US-RSE)',
   location: 'San Jose, California, USA',
-  theme: 'Advancing Science in the Age of AI',
+  theme: configValue('conf_theme_short'),
 };
 
 const OUT_LLMS = path.join(REPO_ROOT, 'program', 'llms.txt');

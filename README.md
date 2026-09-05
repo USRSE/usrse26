@@ -123,6 +123,15 @@ The sheet ID is intentionally not committed to the repo. The script reads it fro
 `PROGRAM_SHEET_ID` environment variable — it is the long token in the sheet's
 `docs.google.com/spreadsheets/d/<id>/...` URL.
 
+The conference facts the generated files state — the site's absolute URL, the conference
+name, its full name, its theme, and the year the sheet's "M/DD" dates fall in — are read
+from `_config.yml` (`url` + `baseurl`, `title`, `description`, `conf_theme_short`,
+`conf_start_date`), so Jekyll and the generator cannot disagree about them. Change them
+there. A missing one fails the build rather than emitting a page with a blank in it. Two
+values are deliberately not read: the room ordering and the `-07:00` program timezone,
+because `conf_start_date` ends `-0900` and San Jose in October is UTC-7 — sourcing it would
+restamp every session two hours off.
+
 ### Program files for AI assistants
 
 The generator also writes `program/llms.txt` and `program/llms-full.txt`, served at
