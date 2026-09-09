@@ -469,7 +469,7 @@
           "break": false,
           "sessions": [
             {
-              "title": "Notebooks",
+              "title": "Interactive Computing and Reproducible Workflows",
               "type": "Talks",
               "chair": "Shailaja Sampat",
               "room": "San Jose Ballroom Salon 1 & 2",

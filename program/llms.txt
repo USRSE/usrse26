@@ -207,7 +207,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
-### 3:30–5pm — Notebooks
+### 3:30–5pm — Interactive Computing and Reproducible Workflows
 
 - Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
@@ -234,7 +234,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: TBD
-- Concurrent with: Notebooks (3:30–5pm, San Jose Ballroom Salon 1 & 2); AI + Software Quality (3:30–5pm, Willow Glen Room)
+- Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); AI + Software Quality (3:30–5pm, Willow Glen Room)
 - Talks (4):
   - "INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps" (Talk)
     Presenters: Ian Cosden and Jeffrey Carver
@@ -255,7 +255,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: TBD
-- Concurrent with: Notebooks (3:30–5pm, San Jose Ballroom Salon 1 & 2); Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6)
 - Talks (4):
   - "Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems" (Talk)
     Presenters: Aditi Gopalan, Dave Bunten, Adam Taylor, Susheel Varma, Gregory P. Way, and Jineta Banerjee
