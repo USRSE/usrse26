@@ -40,18 +40,24 @@ Our community of BSSw Fellowship alums serve as leaders, mentors, and consultant
       <span class="abstract__people">David Luet, Nasir Eisty</span>
     </h2>
   </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="community-calls-working-group">
-      <span class="abstract__title">Community Calls Working Group</span>
-      <span class="abstract__people">Julia Damerow, Abbey Roelofs</span>
-    </h2>
-  </div>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="code-review-working-group">
-      <span class="abstract__title">Code Review Working Group</span>
-      <span class="abstract__people">Jeffrey Carver, Alex Koufos, Abbey Roelofs</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="community-calls-working-group">
+        <span class="abstract__title">Community Calls Working Group</span>
+        <span class="abstract__people">Julia Damerow, Abbey Roelofs</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Are you looking for a way to get more involved in US-RSE and talk to other community members in real time instead of just on Slack? Check out the Community Calls Working Group! We plan monthly virtual meetings to promote community connections and share information on topics of interest to US-RSE members. We usually have a brief speaker or two, followed by some time spent in breakout rooms discussing the topic of the month. Topics are chosen based on suggestions from the community and vary widely. Come talk to us to hear how you can get involved!{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="code-review-working-group">
+        <span class="abstract__title">Code Review Working Group</span>
+        <span class="abstract__people">Jeffrey Carver, Alex Koufos, Abbey Roelofs</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}If you regularly participate in code reviews, face challenges when reviewing code, have considered implementing code reviews but aren't sure where to start, or think code reviews are great and want to spread the word, come check out the Code Review Working Group! The goal of this working group is to build a community of RSEs who are interested in code review. The working group will provide a forum to gather resources related to code review, discuss the use of code review in research software projects, and host code-review-related activities for the US-RSE community.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
   <details class="abstract">
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="mentorship-working-group">
