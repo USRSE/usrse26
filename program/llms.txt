@@ -233,7 +233,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
-- Chair: TBD
+- Chair: T. Andrew Manning
 - Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); AI + Software Quality (3:30–5pm, Willow Glen Room)
 - Talks (4):
   - "INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps" (Talk)
