@@ -185,9 +185,23 @@
 /* Indented to the title column so the abstract reads as the heading's
    continuation, not a new block. */
 .abstract__body {
+  display: flow-root; /* contains the portrait float within this entry */
   padding: 0 0 1.1rem var(--chevron-gutter);
   font-size: 0.9375rem;
   line-height: 1.55;
+}
+
+/* Speaker portrait — the sheet's Event Image column gives only a path, and
+   build-program.js renders the tag, so the presentation belongs here rather
+   than in inline styles typed into a spreadsheet cell. max-width keeps a
+   larger source image from outgrowing the text column. */
+.abstract__portrait {
+  float: left;
+  width: 350px;
+  max-width: 40%;
+  height: auto;
+  margin: 0.2rem 1.25rem 0.75rem 0;
+  border-radius: 4px;
 }
 
 /* --------------------------------------------------------------------------
@@ -230,6 +244,13 @@
   .content .abstracts .abstract__heading,
   .abstracts .abstract__heading {
     font-size: 1rem;
+  }
+
+  .abstract__portrait {
+    float: none;
+    width: 100%;
+    max-width: 18rem;
+    margin: 0 0 1rem;
   }
 }
 
