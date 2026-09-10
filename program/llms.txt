@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 46 sessions, 82 talks (80 with published
+> in the Age of AI". 3 days, 46 sessions, 83 talks (81 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -31,6 +31,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - https://us-rse.org/usrse26/ — USRSE'26 home
 - https://us-rse.org/usrse26/program/ — Full program (this schedule, as a web page)
 - https://us-rse.org/usrse26/program/bofs/ — Birds of a Feather — abstracts
+- https://us-rse.org/usrse26/program/keynotes/ — Keynotes — abstracts
 - https://us-rse.org/usrse26/program/notebooks/ — Notebooks — abstracts
 - https://us-rse.org/usrse26/program/papers/ — Papers — abstracts
 - https://us-rse.org/usrse26/program/posters/ — Posters — abstracts
@@ -59,6 +60,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Plenary
 - Plenary: yes
 - Concurrent with: nothing (the only session at this time)
+- Talks (1):
+  - "Fernando Pérez" (Keynote)
+    https://us-rse.org/usrse26/program/keynotes/#fernando-p-rez
 
 ### 10–10:30am — Morning Break (Sponsorship available)
 
@@ -233,7 +237,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
-- Chair: TBD
+- Chair: T. Andrew Manning
 - Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); AI + Software Quality (3:30–5pm, Willow Glen Room)
 - Talks (4):
   - "INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps" (Talk)

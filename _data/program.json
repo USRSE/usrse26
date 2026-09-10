@@ -38,7 +38,16 @@
               "info": "",
               "plenary": true,
               "muted": false,
-              "talks": []
+              "talks": [
+                {
+                  "title": "Fernando Pérez",
+                  "speakers": "",
+                  "format": "Keynote",
+                  "infoMd": "[Fernando Pérez](https://fernandoperez.org) is an Associate Professor in Statistics at UC Berkeley, Faculty Scientist at Lawrence Berkeley National Laboratory, faculty director of the Berkeley Institute for Data Science ([BIDS](https://bids.berkeley.edu)), and co-director of the Eric and Wendy Schmidt Center for Data Science & Environment ([DSE](https://dse.berkeley.edu)). His research focuses on the intersection of interactive computing, open science, and AI-based tools for science, with a particular focus on questions related to the earth's cryosphere, climate change and environmental sustainability. He also co-leads [the JupyterHealth initiative that bring open source and AI into healthcare](http://jupyterhealth.org), in partnership with clinical and biomedical researchers. He created IPython while a graduate student in 2001 and co-founded its successor, [Project Jupyter](https://jupyter.org). At Berkeley, he also leads computing platforms at the Bakar Institute for Digital Materials for the Planet ([BIDMaP](https://bidmap.berkeley.edu)). Also an entrepreneur, he is a co-founder and CTO of [AIMATX](https://aimatx.ai), which uses AI tools to accelerate the discovery of novel materials for the economy of the future.\n\nFernando regularly lectures about scientific computing, data science and open science. He co-founded the International Interactive Computing Collaboration ([2i2c](https://2i2c.org)) to provide open infrastructure for modern science and education, and is also a founding member of [NumFOCUS](https://numfocus.org). He is the recipient of the 2024 Exceptional Public Service Medal from NASA, the 2024 \"Champions of Open Science\" recognition from the White House Office of Science and Technology Policy, the 2017 ACM Software Systems Award and the 2012 Award for the Advancement of Free Software from the Free Software Foundation. He is a Kavli Frontiers Fellow of the US National Academy of Sciences (2016). Fernando holds a PhD in particle physics from the University of Colorado at Boulder, which he followed with postdoctoral research in applied mathematics.",
+                  "image": "/assets/img/perez.jpeg",
+                  "href": "program/keynotes/#fernando-p-rez"
+                }
+              ]
             }
           ]
         },
@@ -182,6 +191,7 @@
                   ],
                   "format": "Talk",
                   "infoMd": "National Oceanic and Atmospheric Administration (NOAA) Fisheries scientists regularly assess hundreds of fish populations across the nation as per the agency’s mission to support sustainable fisheries and resilient marine ecosystems. The documents detailing these findings, called stock assessment reports, are highly technical and undergo rigorous scientific peer review. The reports must also meet federal accessibility standards, which can prove time-intensive to fulfill1 ; among other tasks, authors must add alternative text for oftentimes dozens of figures into their reports. We are developing a workflow that enables a semi-automated, reproducible, and transparent process for writing stock assessment reports with Quarto, based on two R packages (asar 2 and stockplotr3 ). In this talk, I will share our progress developing this workflow and the integration of a feature that partially automates the construction and insertion of data-driven alternative text into Quarto-based PDFs, a solution that preceded the now native support for alternative text in PDFs. I will also describe how this feature fits into a broader suite of tools designed to streamline the creation of accessible Quarto-based reports with less time and manual effort by assessment authors. Importantly, this approach can be readily adapted by research software engineers in any field who need to develop data-based, accessible documentation. Developing open-source solutions for increasing document accessibility is essential for ensuring that stock assessments are transparent and usable by fisheries stakeholders with varying roles and abilities.",
+                  "doi": "https://doi.org/10.5281/zenodo.22305826",
                   "href": "program/talks/#automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports"
                 },
                 {
@@ -528,7 +538,7 @@
             {
               "title": "Lessons from Training Users & RSEs",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "T. Andrew Manning",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -771,6 +781,7 @@
                   ],
                   "format": "Talk",
                   "infoMd": "Critical research advancements require usable, reliable software products—including AI tooling—for high performance data and computing work. To improve AI systems we must understand scientists’ and engineers’ needs and define design best practices for building interfaces that facilitate collaboration between scientists and AI tools across ecosystems. Ensuring the long-term usability and utility of scientific software products and AI systems for communities protects critical investments, supports high quality research, and reduces end user challenges.\n\nThis talk will present findings from our semi-structured interview study investigating how scientists and engineers use AI tools for their research work. We recruited from universities and national labs, seeking perspectives from multiple disciplines. Looking beyond common use of AI tools for coding tasks, we sought to understand the varied ways AI is or could be adopted in scientific settings. Our interviews investigated how users determine the utility of AI tools, the concerns they have about adoption, and expectations for agentic tooling in research infrastructures.\n\nIn this talk, we discuss opportunities for AI tooling in science and engineering beyond coding support, providing a lens into the development work the US-RSE community may take on in the near future and the socio-technical circumstances driving it. Our results inform development priorities, strategies for issue mitigation, and long-term stewardship in scientific facilities and work. We anticipate our insights helping to improve the usability and stewardship of scientific software, especially for high performance data and computing work.",
+                  "doi": "https://doi.org/10.5281/zenodo.22256604",
                   "href": "program/talks/#beyond-editing-code-uses-for-ai-tools-in-scientific-work"
                 },
                 {
@@ -905,6 +916,7 @@
                   ],
                   "format": "Paper",
                   "infoMd": "Modernization of legacy scientific codes is often necessary to keep up with the ever-evolving changes in the compute resource ecosystem. Parallelization and migration from poorly supported software ecosystems are two of the most time-consuming activities in the research software engineering field. This paper presents our experience in the successful, two-phase AI-assisted modernization of NMAP-RKPM, a roughly 60,000line, 3D explicit solid mechanics physics engine based on the Reproducing Kernel Particle Method (RKPM). We converted this single threaded, Fortran based MPI application into a OpenMPparallel C++ based MPI tool in the span of a few months. While Large Language Model (LLM) based tools on their own proved inadequate, we developed a highly structured “hand-holding” agentic AI methodology, like providing manually created examples, ensuring continuous buildability and limiting session scope, that was instead highly effective. The paper provides both the AI-assisted steps that were successful and the problems that we had to overcome, alongside the reasoning behind the chosen path.",
+                  "doi": "https://doi.org/10.5281/zenodo.22283502",
                   "href": "program/papers/#structuring-agentic-ai-for-hpc-code-modernization"
                 }
               ]
