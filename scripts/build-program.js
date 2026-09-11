@@ -31,8 +31,11 @@
  * Session Topic, Event Title, Order, the session-level columns
  * Session Format, Session Chair, and Session Description (Markdown), and
  * the event-level columns People, Event Format, Event Description
- * (Markdown), and DOI — event columns are read only on rows with an Event
- * Title. Start/End carry the date and 24h wall-clock time ("10/19 13:30").
+ * (Markdown), Event Image, and DOI — event columns are read only on rows
+ * with an Event Title. Event Image is a site-relative path to an image
+ * committed in the repo ("/assets/img/perez.jpeg"); the script renders the
+ * <img> itself, so the cell holds a path and never markup. Start/End carry
+ * the date and 24h wall-clock time ("10/19 13:30").
  * Session Format is used exactly as given, never inferred from the topic:
  * Break/Meal/Registration render muted, Plenary gets the plenary field.
  * A row with an Event Title attaches an event to the session matching its
@@ -181,6 +184,30 @@ const FORMATS = {
   'other': { label: null, pageTitle: null, permalink: null, slug: null },
 };
 
+// Event Image cells: a rooted path to a committed image, no parent-dir hop.
+// Remote URLs are deliberately not accepted — the path is passed through
+// Liquid's relative_url, which would prepend the baseurl to one and break it.
+const IMAGE_PATH = /^\/(?!.*\.\.)[\w.\-/]+\.(?:jpe?g|png|webp|avif|gif)$/i;
+
+/**
+ * Event Image cell -> a path the renderer can trust, or "" for an empty or
+ * malformed cell. The value is interpolated into a Liquid string literal and
+ * an HTML attribute, so anything off-shape is dropped with a warning rather
+ * than escaped: a bad cell is a sheet typo, and rendering it as literal text
+ * (the fate of markup pasted into Event Description) would only hide it.
+ * @param {{image?: string, _row: number}} rec
+ */
+function eventImage(rec) {
+  const v = (rec.image || '').trim();
+  if (!v) return '';
+  if (!IMAGE_PATH.test(v)) {
+    console.error(`build-program: row ${rec._row}: ignoring Event Image ${JSON.stringify(v)}`
+      + ' — expected a site-relative image path like /assets/img/name.jpeg');
+    return '';
+  }
+  return v;
+}
+
 /** Empty cell -> null; known value -> its entry; anything else -> Other.
  * @param {string} raw */
 function normalizeFormat(raw) {
@@ -243,6 +270,7 @@ const HEADER_ALIASES = {
   people: 'speakers',
   eventformat: 'format', format: 'format',
   eventdescription: 'infomd', infomd: 'infomd',
+  eventimage: 'image', image: 'image',
   doi: 'doi',
   order: 'order',
   sessiondescription: 'info', info: 'info', notes: 'info',
@@ -437,7 +465,8 @@ function fold(records) {
       // unmigrated rows render in the current style. Only rows with every
       // event column empty are treated as legacy, so a new-style row whose
       // title happens to contain " by " is never split.
-      const legacy = !rec.title && !rec.speakers && !rec.format && !rec.infomd;
+      const legacy = !rec.title && !rec.speakers && !rec.format && !rec.infomd
+        && !rec.image;
       const chairRow = legacy && rec.talk.match(/^(?:session\s+)?chair\s*:\s*(.*)$/i);
       if (chairRow) {
         if (!session.chair && chairRow[1].trim()) session.chair = chairRow[1].trim();
@@ -461,6 +490,7 @@ function fold(records) {
           formatRaw: rec.format || '',
           format: normalizeFormat(rec.format || ''),
           infoMd: rec.infomd || '',
+          image: eventImage(rec),
           doi: rec.doi || '',
           order: rec.order ? parseInt(rec.order, 10) : Number.MAX_SAFE_INTEGER,
           _row: rec._row,
@@ -499,11 +529,12 @@ function fold(records) {
                     // without the new columns produces byte-identical
                     // JSON. Underscored keys are internal (render/anchor
                     // plumbing) — the JSON writer strips them.
-                    /** @type {{title: string, speakers: string, people?: string[], format?: string, infoMd?: string, doi?: string, href?: string, _format?: (typeof FORMATS)[string], _anchor?: string}} */
+                    /** @type {{title: string, speakers: string, people?: string[], format?: string, infoMd?: string, image?: string, doi?: string, href?: string, _format?: (typeof FORMATS)[string], _anchor?: string}} */
                     const talk = { title: t.title, speakers: t.speakers };
                     if (t.people.length) talk.people = t.people;
                     if (t.formatRaw) talk.format = t.formatRaw;
                     if (t.infoMd) talk.infoMd = t.infoMd;
+                    if (t.image) talk.image = t.image;
                     if (t.doi) talk.doi = t.doi;
                     if (t.format && t.format.slug) talk._format = t.format;
                     return talk;
@@ -559,9 +590,9 @@ function assignPosterAnchors(posters) {
  * -> room-ranked session -> order-sorted talk) — the same order the pages
  * list entries in, so anchors are deterministic across rebuilds. Anchors
  * are slugified titles, deduplicated per page with -2/-3 suffixes. Events
- * that also carry an Event Description or People get the site-relative
- * deep link the schedule (and program.json) renders — their page entry
- * has an abstract or a byline worth jumping to.
+ * that also carry an Event Description, Event Image or People get the
+ * site-relative deep link the schedule (and program.json) renders — their
+ * page entry has an abstract, a portrait or a byline worth jumping to.
  *
  * Events of a tab-owned format (FORMATS[*].tab) get no entry of their own:
  * they link to the matching Posters-tab entry when the slugified titles
@@ -585,7 +616,7 @@ function assignAnchors(days, posterAnchors) {
           }
           if (!used.has(talk._format.slug)) used.set(talk._format.slug, new Map());
           talk._anchor = nextAnchor(used.get(talk._format.slug), slugify(talk.title));
-          if (talk.infoMd || talk.speakers || talk.doi) talk.href = `${talk._format.permalink}#${talk._anchor}`;
+          if (talk.infoMd || talk.image || talk.speakers || talk.doi) talk.href = `${talk._format.permalink}#${talk._anchor}`;
         }
       }
     }
@@ -949,7 +980,7 @@ const PAGE_BANNER = '<!-- Generated by scripts/build-program.js — do not edit 
 /**
  * One row on an abstract page. `meta` is an optional list of links shown on
  * a line after the abstract (the DOI).
- * @typedef {{title: string, people: string, infoMd: string, anchor: string, meta?: {href: string, text: string}[]}} AbstractEntry
+ * @typedef {{title: string, people: string, infoMd: string, anchor: string, image?: string, meta?: {href: string, text: string}[]}} AbstractEntry
  */
 
 /** DOI cell -> absolute URL: already a URL, as given; else a bare DOI.
@@ -958,11 +989,11 @@ function doiHref(doi) {
   return /^https?:\/\//i.test(doi) ? doi : `https://doi.org/${doi}`;
 }
 
-/** Whether an entry has anything to disclose — an abstract or metadata
- * links — and so renders as a collapsible <details>.
+/** Whether an entry has anything to disclose — an abstract, a portrait or
+ * metadata links — and so renders as a collapsible <details>.
  * @param {AbstractEntry} e */
 function hasBody(e) {
-  return Boolean(e.infoMd.trim() || (e.meta && e.meta.length));
+  return Boolean(e.infoMd.trim() || e.image || (e.meta && e.meta.length));
 }
 
 /**
@@ -989,6 +1020,7 @@ function collectAbstracts(days) {
             infoMd: talk.infoMd || '',
             anchor: talk._anchor,
           };
+          if (talk.image) entry.image = talk.image;
           if (talk.doi) entry.meta = [{ href: doiHref(talk.doi), text: talk.doi }];
           pages.get(talk._format.slug).entries.push(entry);
         }
@@ -1046,6 +1078,15 @@ function renderAbstractEntry(e, pad) {
     ];
   }
   const body = [];
+  // The portrait is markup the script owns: the sheet supplies only a
+  // validated path, so escLiquid's guard over description text stays whole.
+  // relative_url keeps the baseurl correct, People is the alt text (an empty
+  // People means a decorative image, which takes alt=""), and the float and
+  // small-screen stack live in abstracts.css rather than a spreadsheet cell.
+  if (e.image) {
+    body.push(`<img class="abstract__portrait" src="{{ '${e.image}' | relative_url }}"`
+      + ` alt="${esc(e.people)}">`);
+  }
   if (e.infoMd.trim()) {
     body.push(`{% capture abstract_md %}${escLiquid(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}`);
   }
