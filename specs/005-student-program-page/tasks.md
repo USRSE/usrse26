@@ -86,7 +86,7 @@ against the *committed* files proves nothing — they are live-sheet output.
 
   Nothing else moves. Restore artifacts.
 
-- [ ] 3. **Idempotence and `--from-json` parity** (Story 3, Story 4) — No code
+- [x] 3. **Idempotence and `--from-json` parity** (Story 3, Story 4) — No code
   change. Run the fixture build twice in a row; the second run must report
   `student-program.md`, `_data/menus/program.yml`, and both llms files as
   `unchanged` and write nothing. Then, with the fixture-built
