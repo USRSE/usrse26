@@ -20,7 +20,7 @@ against the *committed* files proves nothing — they are live-sheet output.
 
 ---
 
-- [ ] 1. **Fixture rows, before the code** (Story 4; §7) — Append to
+- [x] 1. **Fixture rows, before the code** (Story 4; §7) — Append to
   `fixtures/schedule.csv`, keeping all 13 columns and the trailing empty `DOI`
   field on every row:
 
