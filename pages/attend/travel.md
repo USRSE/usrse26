@@ -41,13 +41,13 @@ Availability in both blocks is now limited. Tuesday night, October 20, is fully 
 * [Hyatt Attendee reservation link](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URAT): $259/night + taxes
 * Government rate: the government rate room block is FULL. You may still be able to book a government rate room at the Hyatt Place directly through the [hotel's website](https://www.hyatt.com/shop/rooms/sjczj?checkinDate=2026-10-18&checkoutDate=2026-10-22&rooms=1&adults=1&kids=0&rate=Govt&accessibilityCheck=false) by selecting the "Government/Military Business" option under "Special Rates". At check-in, guests will be required to provide eligible ID.
 * Availability: **Tuesday night, October 20, is fully booked.** Rooms remain for check-in Saturday, October 17 through check-out Tuesday, October 20, and for check-in Wednesday, October 21 through check-out Thursday, October 22.
-* Deadline to reserve: September 25th or until the block is full. Room block rates are not guaranteed after September 25th.
+* Deadline to reserve: September 25th or until the block is full
 
 ##### Marriott
 * [Marriott Attendee reservation link](https://book.passkey.com/go/USRSE2026): $319/night + taxes
 * Government rate: unfortunately, there are no government rate rooms in this block.
 * Availability: **this block is booking up fast, with about 15 rooms remaining.**
-* Deadline to reserve: September 21st or until the block is full. Room block rates are not guaranteed after September 21st.
+* Deadline to reserve: September 21st or until the block is full
 
 If you plan to arrive early or stay late, we encourage you to make your room reservation early. Blocked rooms for those dates are limited, and weekends and overlapping conferences in the area may limit non-block availability.
 
