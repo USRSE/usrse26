@@ -49,7 +49,7 @@ against the *committed* files proves nothing — they are live-sheet output.
   `_data/menus/program.yml` is unchanged. Restore artifacts; commit only
   `fixtures/schedule.csv`.
 
-- [ ] 2. **The `FORMATS` entry** (Stories 1, 2, 3; §1, §2, §4, §5) — Insert
+- [x] 2. **The `FORMATS` entry** (Stories 1, 2, 3; §1, §2, §4, §5) — Insert
   one key in `scripts/build-program.js` `FORMATS` (`:174-185`), between
   `'random access microtalk'` (`:181`) and `'talk'` (`:182`):
 
