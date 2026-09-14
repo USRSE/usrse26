@@ -35,7 +35,7 @@ Please plan to arrive on Sunday, October 18, 2026. The conference starts early M
 
 Both room blocks cover Sunday, Monday, and Tuesday nights (October 18-20), with checkout on Wednesday, October 21. The Hyatt block also covers Saturday, October 17 for attendees arriving early and Wednesday, October 21 for attendees staying late.
 
-Availability in both blocks is now limited. Tuesday night, October 20, is fully booked at the Hyatt, so attendees who need that night should book the Marriott block. About 15 rooms remain in the Marriott block, which closes on September 21.
+Availability in both blocks is now limited. Tuesday night, October 20, is fully booked at the Hyatt, so attendees who need that night should book the Marriott block. About 8 rooms remain in the Marriott block, which closes on September 21.
 
 ##### Hyatt
 * [Hyatt Attendee reservation link](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URAT): $259/night + taxes
@@ -46,7 +46,7 @@ Availability in both blocks is now limited. Tuesday night, October 20, is fully 
 ##### Marriott
 * [Marriott Attendee reservation link](https://book.passkey.com/go/USRSE2026): $319/night + taxes
 * Government rate: unfortunately, there are no government rate rooms in this block.
-* Availability: **this block is booking up fast, with about 15 rooms remaining.**
+* Availability: **this block is booking up fast, with about 8 rooms remaining.**
 * Deadline to reserve: September 21st or until the block is full
 
 If you plan to arrive early or stay late, we encourage you to make your room reservation early. Blocked rooms for those dates are limited, and weekends and overlapping conferences in the area may limit non-block availability.
