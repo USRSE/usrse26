@@ -103,7 +103,7 @@ Bibliographical metadata posed a different problem. Publisher names appear in di
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con">
         <span class="abstract__title">Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON</span>
-        <span class="abstract__people">Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik</span>
+        <span class="abstract__people">Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To, John A. Lee and Vadim Melnik</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}For two decades the team of the Center for Open Neuroscience (CON) has been building an open, largely domain-agnostic research-software stack — first for neuroimaging, then for neuroscience broadly, and now used well beyond. Five actions — Reuse, Compose, Extend, Standardize, and Automate — carried us here, and we expect them to keep us productive as AI agents enter the workflow.

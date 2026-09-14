@@ -242,12 +242,13 @@
               "talks": [
                 {
                   "title": "Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON",
-                  "speakers": "Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik",
+                  "speakers": "Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To, John A. Lee and Vadim Melnik",
                   "people": [
                     "Yaroslav Halchenko",
                     "Cody Baker",
                     "Austin Macdonald",
                     "Isaac To",
+                    "John A. Lee",
                     "Vadim Melnik"
                   ],
                   "format": "Talk",

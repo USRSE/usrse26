@@ -224,7 +224,7 @@ Abstract:
 #### Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON
 
 - Format: Talk
-- Presenters: Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To and Vadim Melnik
+- Presenters: Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To, John A. Lee and Vadim Melnik
 - Abstract page: https://us-rse.org/usrse26/program/talks/#reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con
 
 Abstract:
