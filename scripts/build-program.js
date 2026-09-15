@@ -659,10 +659,18 @@ function esc(s) {
 /** Escape text bound for a Liquid {% capture %} block: HTML-escape plus
  * neutralize "{" so sheet content can never run Liquid tags or filters.
  * kramdown decodes the entities back to literal text when it renders.
+ *
+ * A lone newline is also promoted to a Markdown hard break (two trailing
+ * spaces). A line break inside a spreadsheet cell is always deliberate —
+ * nothing soft-wraps a cell — but Markdown's default is to fold one into a
+ * space, so an agenda or a numbered list typed with Alt+Enter rendered as a
+ * run-on line. Blank-line paragraph breaks are left alone, so lists, tables
+ * and multi-paragraph abstracts are unaffected.
  * @param {string} s */
 function escLiquid(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/\{/g, '&#123;');
+    .replace(/\{/g, '&#123;')
+    .replace(/(\S)[ \t]*\r?\n(?![ \t]*\r?\n)/g, '$1  \n');
 }
 
 function renderSession(s, pad) {
