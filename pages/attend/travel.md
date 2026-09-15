@@ -19,7 +19,7 @@ We have two room blocks: one in the conference hotel itself, the San Jose Marrio
 [Hyatt Place San Jose/Downtown](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URAT) <br>
 * 282 Almaden Boulevard, San Jose, CA 95113 ([Google Maps](https://www.google.com/maps/search/?api=1&query=Hyatt+Place+San+Jose%2FDowntown%2C+282+Almaden+Boulevard%2C+San+Jose%2C+CA+95113))
 * The Hyatt Place San Jose/Downtown is a 5 minute walk (0.2 miles) from the venue.
-* This hotel block gives you the option of checking in as early as Saturday, Oct 17th and checking out Thursday, Oct 22nd. 
+* **Tuesday night, Oct 20th, is fully booked in this block.** Rooms remain for check-in Saturday, Oct 17th through check-out Tuesday, Oct 20th, and for check-in Wednesday, Oct 21st through check-out Thursday, Oct 22nd.
 
 [San Jose Marriott](https://book.passkey.com/go/USRSE2026) <br>
 * 301 South Market Street, San Jose, CA 95113 ([Google Maps](https://www.google.com/maps/search/?api=1&query=San+Jose+Marriott+301+South+Market+Street%2C+San+Jose%2C+CA+95113))
@@ -33,16 +33,20 @@ We would greatly appreciate you staying in one of the conference room blocks. Ma
 
 Please plan to arrive on Sunday, October 18, 2026. The conference starts early Monday morning, and we are planning an informal networking event on Sunday evening.
 
-Both room block covers Sunday, Monday, and Tuesday nights (October 18-20), with checkout on Wednesday, October 21. Limited additional rooms are available in the Hyatt for attendees arriving Saturday, October 17 or checking out Thursday, October 22. 
+Both room blocks cover Sunday, Monday, and Tuesday nights (October 18-20), with checkout on Wednesday, October 21. The Hyatt block also covers Saturday, October 17 for attendees arriving early and Wednesday, October 21 for attendees staying late.
+
+Availability in both blocks is now limited. Tuesday night, October 20, is fully booked at the Hyatt, so attendees who need that night should book the Marriott block. About 8 rooms remain in the Marriott block, which closes on September 21.
 
 ##### Hyatt
 * [Hyatt Attendee reservation link](https://www.hyatt.com/events/en-US/group-booking/SJCZJ/G-URAT): $259/night + taxes
 * Government rate: the government rate room block is FULL. You may still be able to book a government rate room at the Hyatt Place directly through the [hotel's website](https://www.hyatt.com/shop/rooms/sjczj?checkinDate=2026-10-18&checkoutDate=2026-10-22&rooms=1&adults=1&kids=0&rate=Govt&accessibilityCheck=false) by selecting the "Government/Military Business" option under "Special Rates". At check-in, guests will be required to provide eligible ID.
+* Availability: **Tuesday night, October 20, is fully booked.** Rooms remain for check-in Saturday, October 17 through check-out Tuesday, October 20, and for check-in Wednesday, October 21 through check-out Thursday, October 22.
 * Deadline to reserve: September 25th or until the block is full
 
 ##### Marriott
 * [Marriott Attendee reservation link](https://book.passkey.com/go/USRSE2026): $319/night + taxes
 * Government rate: unfortunately, there are no government rate rooms in this block.
+* Availability: **this block is booking up fast, with about 8 rooms remaining.**
 * Deadline to reserve: September 21st or until the block is full
 
 If you plan to arrive early or stay late, we encourage you to make your room reservation early. Blocked rooms for those dates are limited, and weekends and overlapping conferences in the area may limit non-block availability.
