@@ -218,8 +218,8 @@ This approach demonstrates how such software infrastructure can lower the barrie
 
 To address this gap, we present INnovative Training Enabled by a Research Software Engineering Community of Trainers (INTERSECT), an NSF-sponsored initiative focused on delivering Research Software Engineer (RSE)-led training to experienced developers of research software. INTERSECT is guided by three primary goals: 
 
-1) Develop an open-source, modular training framework that supports community contribution and reuse
-2) Deliver RSE-led research software engineering training targeting research software developers
+1) Develop an open-source, modular training framework that supports community contribution and reuse  
+2) Deliver RSE-led research software engineering training targeting research software developers  
 3) Grow and deepen the connections within the national community of Research Software Engineers
 
 Over the past three years, INTERSECT has designed and delivered three intensive 4.5-day Research Software Engineering Bootcamps, each serving approximately 35 participants from a diverse set of U.S.-based institutions and research domains. The bootcamps consist of a set of independent, hands-on modules covering topics such as software design, packaging and distribution, collaborative Git workflows, issue tracking, pull requests, documentation, licensing, project management, code review, testing, and CI/CD. Modules are intentionally designed to be stand-alone, enabling reuse and learners outside the full bootcamp context.

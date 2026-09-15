@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 46 sessions, 83 talks (81 with published
+> in the Age of AI". 3 days, 46 sessions, 84 talks (84 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -35,6 +35,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - https://us-rse.org/usrse26/program/notebooks/ — Notebooks — abstracts
 - https://us-rse.org/usrse26/program/papers/ — Papers — abstracts
 - https://us-rse.org/usrse26/program/posters/ — Posters — abstracts
+- https://us-rse.org/usrse26/program/student-early-career-program/ — Student & Early Career — abstracts
 - https://us-rse.org/usrse26/program/talks/ — Talks — abstracts
 - https://us-rse.org/usrse26/program/workshops/ — Workshops — abstracts
 - https://us-rse.org/usrse26/attend/ — Attending: overview
@@ -78,18 +79,30 @@ Abstract:
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
-### 10:30–11:30am — Student Program Activity
+### 10:30–11:30am — Panel
 
 - Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T11:30:00-07:00 (60 min)
 - Room: Market Street
-- Type: Student
+- Type: Student/Early Career
 - Concurrent with: RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 
-#### Student Program Activity
+#### Careers in RSE
 
-- Format: Other
-- Presenters: Scott Michael, Stephanie Brink
-- Abstract: not yet published
+- Format: Student
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#careers-in-rse
+
+Abstract:
+
+> This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&A. Designed with students and early-career RSEs in mind, the session is open to all.
+>
+> Panelists:
+>
+> * Blake Joyce
+> * Hasti Mehta
+> * Julian Pistorus
+> * Fernando Perez
+> * Alec Scott
+> * Suzanne Prentice
 
 ### 10:30am–12pm — RAG Assistants
 
@@ -97,7 +110,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
 - Chair: TBD
-- Concurrent with: Student Program Activity (10:30–11:30am, Market Street); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Panel (10:30–11:30am, Market Street); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 
 #### AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research
 
@@ -165,7 +178,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Primus Chimdia Kabuo
-- Concurrent with: Student Program Activity (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Panel (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 
 #### Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports
 
@@ -219,7 +232,7 @@ Abstract:
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Adam Rubens
-- Concurrent with: Student Program Activity (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Panel (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 
 #### Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON
 
@@ -298,29 +311,43 @@ Abstract:
 - Type: Meal
 - Concurrent with: nothing (the only session at this time)
 
-About this session:
+#### USRSE'26 Mentor/Mentee Lunch
 
-> Early Career Mentor/Mentee Lunch
+- Format: Student
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#usrse-26-mentor-mentee-lunch
 
-### 1:30–2:30pm — Student Program Activity
+Abstract:
+
+> Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference.
+
+### 1:30–2:30pm — New Frontiers, New Voices
 
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T14:30:00-07:00 (60 min)
 - Room: Market Street
-- Type: Student
+- Type: Student/Early Career
 - Concurrent with: RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
 
-#### Student Program Activity
+#### Invited Talks
 
-- Format: Other
-- Presenters: Scott Michael, Stephanie Brink
-- Abstract: not yet published
+- Format: Student
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#invited-talks
+
+Abstract:
+
+> 1:30pm-2pm
+> Topic: Token Management/On-Prem Agentic AI
+> Speaker: Julian Pistorus
+>
+> 2-2:30pm
+> Topic: TBD
+> Speaker: TBD
 
 ### 1:30–3pm — RSE Team Operations
 
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: BoF
-- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
 
 #### Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges
 
@@ -341,7 +368,7 @@ Abstract:
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: BoF
-- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
 
 #### Building an Institutional RSE Community
 
@@ -358,7 +385,7 @@ Abstract:
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: BoF
-- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
 
 #### Better Scientific Software Fellowship Community
 
@@ -375,7 +402,7 @@ Abstract:
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Workshop
-- Concurrent with: Student Program Activity (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6)
 
 #### A Group Attempt at Threat Modeling for Research Software Systems
 
