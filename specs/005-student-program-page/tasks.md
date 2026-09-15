@@ -100,7 +100,7 @@ against the *committed* files proves nothing — they are live-sheet output.
   deleted (logged `removed`) and the two menu lines disappear. Revert the
   fixture. Restore artifacts.
 
-- [ ] 4. **Jekyll build and browser check** (Stories 2, 4) — Fixture build,
+- [x] 4. **Jekyll build and browser check** (Stories 2, 4) — Fixture build,
   then `bundle exec jekyll build` (or the Docker path) must exit 0. Serve and
   check `program/student-early-career-program/`: the page title reads
   `Student & Early Career` with a literal ampersand in the `<h2>`, the browser
