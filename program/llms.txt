@@ -547,7 +547,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Developing a Handbook of best practices for research software sustainability at Princeton" (Talk)
-    Presenters: Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet
+    Presenters: Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Jonathan Hanke, Joshua Carmichael, Lance Parsons, and David Luet
     https://us-rse.org/usrse26/program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton
   - "We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI" (Paper)
     Presenters: Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos
