@@ -940,7 +940,7 @@ Abstract:
 - Time: 2026-10-20T15:30:00-07:00 to 2026-10-20T17:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
+- Chair: Tori Robinson
 - Concurrent with: Code Modernization Using AI (3:30–5pm, San Jose Ballroom Salon 5 & 6); Workflows (3:30–5pm, Willow Glen Room)
 
 #### Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language
