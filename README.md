@@ -87,12 +87,13 @@ topic; Break, Meal, and Registration render as muted rows, Plenary gets the high
 plenary treatment), Session Chair (shown next to the format), and Session Description
 (Markdown). Event rows (rows with an Event Title) may also carry People (speakers as
 "A, B and C"), Event Format (Bird of a Feather, Keynote, Notebook, Other, Paper, Plenary,
-Poster, Random Access Microtalk, Talk, or Workshop), Event Description (the event's abstract,
-as Markdown), and DOI (a bare DOI such as `10.5281/zenodo.123`, or a full URL). When events
-carry an Event Format other than "Other", the script also generates one abstract page per
-format under `pages/program/abstracts/` and the program menubar `_data/menus/program.yml`
-linking those pages — both script-managed: they carry a generator banner, are pruned when
-their format leaves the sheet, and must not be edited by hand.
+Poster, Random Access Microtalk, Student, Talk, or Workshop — any other value is treated as
+"Other"), Event Description (the event's abstract, as Markdown), and DOI (a bare DOI such as
+`10.5281/zenodo.123`, or a full URL). When events carry an Event Format other than "Other",
+the script also generates one abstract page per format under `pages/program/abstracts/` and
+the program menubar `_data/menus/program.yml` linking those pages — both script-managed:
+they carry a generator banner, are pruned when their format leaves the sheet, and must not
+be edited by hand.
 
 Posters are the exception: the Posters page is built from the "Posters" tab rather than from
 Schedule rows. Its columns are Authors, Poster Title (or Title), Abstract (Markdown), and

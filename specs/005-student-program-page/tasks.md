@@ -114,7 +114,7 @@ against the *committed* files proves nothing — they are live-sheet output.
   `#student-program-activity-2` respectively — and the session eyebrows read
   `Student/Early Career` in both list and grid views. Restore artifacts.
 
-- [ ] 5. **README** (Story 4; §8) — In README's "Building the Program
+- [x] 5. **README** (Story 4; §8) — In README's "Building the Program
   Schedule" (`:89-90`), add `Student` to the parenthesized Event Format list,
   in alphabetical position between `Random Access Microtalk` and `Talk`. Do
   **not** touch the file header comment of `scripts/build-program.js` (`:30-45`):
