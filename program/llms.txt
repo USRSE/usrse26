@@ -312,7 +312,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
+- Chair: Luca Bonaldo
 - Concurrent with: The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Research Software Engineering in the Age of Generative AI" (Talk)
