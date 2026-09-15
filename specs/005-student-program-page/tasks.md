@@ -123,7 +123,7 @@ against the *committed* files proves nothing — they are live-sheet output.
 
   Verify: fixture build green; `git diff` touches `README.md` only.
 
-- [ ] 6. **Regenerate the committed artifacts from the live sheet**
+- [x] 6. **Regenerate the committed artifacts from the live sheet**
   (Stories 1, 3, 4; §9) — **Gated on the sheet edit**: the program committee
   must first set Event Format to `Student` and Session Format to
   `Student/Early Career` on the two student sessions. Until then this task

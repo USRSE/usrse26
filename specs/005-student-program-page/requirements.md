@@ -1,6 +1,6 @@
 # Requirements — student program page
 
-Status: approved
+Status: done
 
 ## Summary
 
