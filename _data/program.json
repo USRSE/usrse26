@@ -77,21 +77,18 @@
           "break": false,
           "sessions": [
             {
-              "title": "Student Program Activity",
-              "type": "Student",
+              "title": "Panel",
+              "type": "Student/Early Career",
               "room": "Market Street",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Student Program Activity",
-                  "speakers": "Scott Michael, Stephanie Brink",
-                  "people": [
-                    "Scott Michael",
-                    "Stephanie Brink"
-                  ],
-                  "format": "Other"
+                  "title": "Careers in RSE",
+                  "speakers": "",
+                  "format": "Student",
+                  "infoMd": "This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&A. Designed with students and early-career RSEs in mind, the session is open to all.\n\nPanelists:\n\n* Blake Joyce\n* Hasti Mehta\n* Julian Pistorus\n* Fernando Perez\n* Alec Scott\n* Suzanne Prentice"
                 }
               ]
             }
@@ -308,10 +305,17 @@
               "title": "Lunch Break (Sponsorship available)",
               "type": "Meal",
               "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "Early Career Mentor/Mentee Lunch",
+              "info": "",
               "plenary": false,
               "muted": true,
-              "talks": []
+              "talks": [
+                {
+                  "title": "USRSE'26 Mentor/Mentee Lunch",
+                  "speakers": "",
+                  "format": "Student",
+                  "infoMd": "Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference."
+                }
+              ]
             }
           ]
         },
@@ -323,21 +327,18 @@
           "break": false,
           "sessions": [
             {
-              "title": "Student Program Activity",
-              "type": "Student",
+              "title": "New Frontiers, New Voices",
+              "type": "Student/Early Career",
               "room": "Market Street",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Student Program Activity",
-                  "speakers": "Scott Michael, Stephanie Brink",
-                  "people": [
-                    "Scott Michael",
-                    "Stephanie Brink"
-                  ],
-                  "format": "Other"
+                  "title": "Invited Talks",
+                  "speakers": "",
+                  "format": "Student",
+                  "infoMd": "1:30pm-2pm\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus\n\n2-2:30pm\nTopic: TBD\nSpeaker: TBD"
                 }
               ]
             }
@@ -753,7 +754,7 @@
             {
               "title": "RSE Practices in the Age of AI Part I",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Luca Bonaldo",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
