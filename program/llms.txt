@@ -598,9 +598,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "AI-Augmented Research Software Engineering: Risks, Challenges, and Practices" (Paper)
     Presenters: I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song
     https://us-rse.org/usrse26/program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices
-  - "A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training" (Paper)
+  - "A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFacCES Smart Search" (Paper)
     Presenters: Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song
-    https://us-rse.org/usrse26/program/papers/#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training
+    https://us-rse.org/usrse26/program/papers/#a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfacces-smart-search
   - "A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions" (Talk)
     Presenters: William Gearty
     https://us-rse.org/usrse26/program/talks/#a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions

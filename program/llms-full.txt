@@ -1407,11 +1407,11 @@ Abstract:
 
 > AI is reshaping research software engineering on two fronts: AI components are increasingly embedded inside research software and science gateways that Research Software Engineers (RSEs) deliver, while AI-assisted and agentic coding tools are changing how RSEs build that software in the first place. This is especially visible in gateway and cyberinfrastructure projects that connect user interfaces, scientific data, HPC systems, and external services. While these tools can accelerate development and architectural exploration, they also introduce new risks: non-deterministic outputs, overconfident reasoning, unsafe tool execution, hidden operational costs, and sustainability pressure from rapid tooling churn. This paper argues that AI-augmented research software engineering requires a shift from unconstrained AI use—whether AI assists development or runs inside the delivered software—to AI-constrained engineering. Through three project cases—SmartSearch, SciOn, and HydroAI—we examine practical strategies for managing AIaugmented complexity: measuring output variance, constraining generation through domain-specific specifications, and governing agentic tool use through human-in-the-loop checkpoints and operational guardrails. Based on these cases, we also propose a progressive training path for AI-augmented RSEs, moving from low-risk familiarization and reviewable implementation toward constrained generation, risk-gated agentic operation, and upstream architectural co-design. We further argue that sustaining engineering judgment under AI augmentation is ultimately a team-level concern, not only an individual one. We conclude that AI does not reduce the need for RSE expertise; instead, it shifts RSE work toward designing the boundaries, validation mechanisms, and sustainable environments in which AI systems can safely contribute to research software.
 
-#### A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training
+#### A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFacCES Smart Search
 
 - Format: Paper
 - Presenters: Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song
-- Abstract page: https://us-rse.org/usrse26/program/papers/#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training
+- Abstract page: https://us-rse.org/usrse26/program/papers/#a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfacces-smart-search
 
 Abstract:
 
