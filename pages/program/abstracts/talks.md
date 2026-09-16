@@ -422,7 +422,7 @@ By simultaneously looking at data usability as a UX problem and treating AI mode
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions">
         <span class="abstract__title">Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions</span>
-        <span class="abstract__people">Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur</span>
+        <span class="abstract__people">Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick, Randall Petras and Addi Malviya-Thakur</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}At the Spallation Neutron Source (SNS) and High Flux Isotope Reactor (HFIR), users can access automatically reduced data both during experiments (“live reduction”) and soon after data collection completes (“autoreduction”). Users can also monitor experiment parameters and view an instrument-specific report from the automated reduction through a web interface.

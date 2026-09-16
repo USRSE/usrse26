@@ -448,7 +448,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
     Presenters: Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier
     https://us-rse.org/usrse26/program/papers/#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines
   - "Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions" (Talk)
-    Presenters: Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur
+    Presenters: Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick, Randall Petras and Addi Malviya-Thakur
     https://us-rse.org/usrse26/program/talks/#automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions
 
 ### 3:30–5pm — Code Modernization Using AI

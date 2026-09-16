@@ -1145,13 +1145,14 @@
                 },
                 {
                   "title": "Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions",
-                  "speakers": "Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur",
+                  "speakers": "Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick, Randall Petras and Addi Malviya-Thakur",
                   "people": [
                     "Marie Backman",
                     "Darsh Dinger",
                     "Mathieu Doucet",
                     "Peter Peterson",
                     "John Hetrick",
+                    "Randall Petras",
                     "Addi Malviya-Thakur"
                   ],
                   "format": "Talk",
