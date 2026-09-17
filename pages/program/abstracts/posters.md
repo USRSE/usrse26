@@ -621,21 +621,6 @@ Importantly, even though QHAT is currently considered a research code, there are
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="from-microscopy-to-simulation-an-end-to-end-research-software-pipeline-for-computational-neuroscience">
-        <span class="abstract__title">From Microscopy to Simulation: An End-to-End Research Software Pipeline for Computational Neuroscience</span>
-        <span class="abstract__people">Jordan Fox, Brian Fischer, William Debello, Jose Peña</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Computational neuroscience research increasingly requires software pipelines that integrate multiphase computational tasks into reproducible research workflows. This presentation describes a research software pipeline we developed to transform neuronal electron microscopy data into high-resolution biophysical simulations for investigating neuronal electrical activity. We focus on the software engineering decisions that shaped its design.
-
-A critical component of the pipeline is MASCAF [1], an open-source Python package for constructing simulation-ready cable models from microscopy-derived morphology. MASCAF contains a series of geometric fitting and optimization algorithms to robustly reconstruct complex neuronal morphology data in simulation format. While motivated by particularly complex neurons in the barn owl auditory system, MASCAF was designed as a general-purpose tool and follows modern scientific Python development practices.
-
-Downstream from MASCAF, the morphology is incorporated into an application-specific simulation framework built on Arbor, a large-scale modern multicompartmental simulation software. This simulation stage integrates neuronal morphology construction, biophysical mechanisms, synaptic input models, parameter exploration, visualization, and quantitative analysis within a unified environment. Together, these components enable reproducible investigation of detailed neuronal computation while supporting rapid model development and refinement.
-
-This presentation discusses the software architecture and engineering questions involved in building and maintaining a research software ecosystem that spans computational geometry, high-performance simulation, data analysis, and visualization. Particular emphasis is placed on developing reusable software components while balancing the specialized requirements of an active scientific investigation.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="harness-engineering-for-agentic-ai-a-checklist-for-research-software-engineers">
         <span class="abstract__title">Harness Engineering for Agentic AI: A Checklist for Research Software Engineers</span>
         <span class="abstract__people">Yaping Yang</span>
