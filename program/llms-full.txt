@@ -291,7 +291,7 @@ Abstract:
 #### Designing for Trust in AI-Assisted Scientific Computing
 
 - Format: Talk
-- Presenters: Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang
+- Presenters: Rajshree Deshmukh, Sheng Pang, Tanushree Subramanian, Johanna Cohoon, Sarah Poon and Dan Gunter
 - Abstract page: https://us-rse.org/usrse26/program/talks/#designing-for-trust-in-ai-assisted-scientific-computing
 
 Abstract:
