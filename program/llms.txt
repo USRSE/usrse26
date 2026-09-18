@@ -257,7 +257,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Talks
-- Chair: TBD
+- Chair: Md Hasan Shahriar Simanto
 - Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6)
 - Talks (4):
   - "Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems" (Talk)
@@ -543,7 +543,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
-- Chair: TBD
+- Chair: Jeff Carver
 - Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Developing a Handbook of best practices for research software sustainability at Princeton" (Talk)

@@ -104,7 +104,7 @@ The result was a hierarchically scheduled, Ray-based distributed verifier that e
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="the-assumption-stack-what-ai-assisted-development-takes-for-granted-and-who-gets-left-out">
         <span class="abstract__title">The Assumption Stack: What AI-Assisted Development Takes for Granted, and Who Gets Left Out</span>
-        <span class="abstract__people">Zeinab Serhan</span>
+        <span class="abstract__people">Zeinab Serhan, Kirtankumar Thummar</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Software development is rapidly coming to assume AI assistance as a baseline: in productivity expectations, in hiring, and increasingly in how research software itself is built. But that assumption holds only under conditions much of the world does not share. This poster asks what AI-assisted development means for research software engineers in low-resource countries and communities, and whether building research software around an assumed dependence on AI is equitable, or even wise.
@@ -523,8 +523,8 @@ Finally, the poster demonstrates PRISM’s AI bias exploration in an Alzheimer�
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="improving-peer-code-review-in-research-software-from-rse-practices-to-evaluating-llm-generated-feedback">
-        <span class="abstract__title">Improving Peer Code Review in Research Software: From RSE Practices to Evaluating LLM-Generated Feedback</span>
+      <h2 class="abstract__heading" id="improving-peer-code-review-in-research-software-from-rse-practices-to-an-ongoing-real-world-study-of-ai-assisted-code-review">
+        <span class="abstract__title">Improving Peer Code Review in Research Software: From RSE Practices to an Ongoing Real-World Study of AI-Assisted Code Review</span>
         <span class="abstract__people">Md Ariful Islam Malik, Jeffrey C. Carver, Nasir U. Eisty</span>
       </h2>
     </summary>
@@ -621,29 +621,6 @@ pSCompose has progressed from early mockups to prototypes and full deployments o
 An example of such classical software is LANL’s Quantum Hamiltonian Analysis Toolkit (QHAT), a package to help physicists analyze electron states in chemical molecules. QHAT builds on other similar tools such as PyLIQTR from MIT Lincoln Laboratory, and Cirq and Qualtran from Google Quantum AI. It is intended to provide a physicistfriendly interface for numerical simulation, error evaluation, resource estimation, and other similar analyses.
 
 Importantly, even though QHAT is currently considered a research code, there are already software engineers on its development team to encourage basic software quality practices now, and to plan for more extensive practices in the future. This serves as an example of the role RSEs might play in developing classical software as quantum computing continues to grow in importance in the research computing world.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="harness-engineering-for-agentic-ai-a-checklist-for-research-software-engineers">
-        <span class="abstract__title">Harness Engineering for Agentic AI: A Checklist for Research Software Engineers</span>
-        <span class="abstract__people">Yaping Yang</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Large language models are now used for more than answering questions. They increasingly carry out multi step tasks on their own. They research a topic, synthesize what they find, and write results back to external systems of record. Across recent work on these systems, one lesson keeps coming up: an agent's reliability depends far more on the system built around the model than on the model itself. That surrounding system is made up of the tools, memory, execution environment, feedback loops, and evaluation methods that turn raw model output into something trustworthy. It is often called the agent's harness. It is the subject of growing research on agent architecture [1] and on frameworks that interleave reasoning with acting [2].
-
-This poster translates that research into a practical checklist. The checklist is for research software engineers who build, adopt, or evaluate agent based tools, including tools for summarizing literature, extracting dataset metadata, or verifying citations.
-
-The checklist addresses four questions.
-
-First, what does the harness consist of? Recent surveys converge on a small set of components that structure an agent's behavior: how it represents its role, what it remembers, how it plans, and how it acts on and retrieves information from the world [1]. Each component addresses a specific limitation of the underlying model.
-
-Second, where do unsupported claims enter the pipeline, and how are they caught? Hallucination is a model asserting claims its sources do not support. It is a well documented failure mode in LLM based agents. We describe an extraction, verification, and synthesis pattern that mitigates it by anchoring generation to retrieved evidence. This strategy has been shown to measurably reduce hallucination rates, both in interleaved reasoning and acting frameworks [2] and in retrieval grounded generation more broadly [3].
-
-Third, how is reliability actually measured, rather than assumed? Benchmark work testing dozens of models has found large, persistent gaps between how agents perform and what reliable task completion requires. These failures trace back to weaknesses in long horizon reasoning, decision making, and instruction following [4]. Occasional spot checking is not a substitute for rigorous, ground truth evaluation.
-
-Fourth, what remains unsolved? The same benchmark work points to evaluation itself as a bottleneck. Open questions remain around how to confirm that a grounded claim is actually correct, and around what standardized reliability metrics for agentic systems in research computing would even look like.
-
-Attendees will leave with three things: a literature grounded definition of harness engineering, a transferable pattern for reducing hallucination, and a practical checklist for judging whether an agent based research tool is trustworthy enough to deploy.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
