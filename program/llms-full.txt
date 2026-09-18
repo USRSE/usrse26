@@ -1305,7 +1305,7 @@ Abstract:
 - Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Talks
-- Chair: TBD
+- Chair: Scott Michael
 - Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Software Quality (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 
 #### From Chaos to Schema: LLM-Powered Document Information Extraction
