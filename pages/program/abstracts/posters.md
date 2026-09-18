@@ -34,12 +34,15 @@ Our community of BSSw Fellowship alums serve as leaders, mentors, and consultant
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Do you want to hang out with cool colleagues and make usable scientific software? Do you want to exchange ideas with user experience (UX) professionals? Do want a shiny UX working group sticker? The US-RSE UX working group is a venue for people with and without UX experience to gain new skills, get feedback on projects, expand their professional network, and accumulate fun stickers. The working group engages with the scientific software community to increase awareness and engagement in UX practices. Join our regular meetings and Slack channel to get resources to jump start your UX work and meet your user-centered peers.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="testing-working-group">
-      <span class="abstract__title">Testing Working Group</span>
-      <span class="abstract__people">David Luet, Nasir Eisty</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="testing-working-group">
+        <span class="abstract__title">Testing Working Group</span>
+        <span class="abstract__people">David Luet, Nasir Eisty</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The US-RSE Software Testing Working Group brings together research software engineers, developers, and researchers interested in improving software quality through practical testing practices. Our community has hosted discussions and presentations on topics such as test design, test automation, test oracles, continuous integration, and strategies for testing scientific and research software. As research software development evolves, we are also exploring how software testing should adapt in the age of AI-assisted coding, including opportunities and challenges introduced by generative AI tools. Visit our poster to learn about past activities, help shape future directions, discover ways to get involved, and connect with colleagues who care about building reliable, trustworthy research software.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
   <details class="abstract">
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="community-calls-working-group">
