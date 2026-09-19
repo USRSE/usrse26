@@ -1165,7 +1165,7 @@ About this session:
 - Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
+- Chair: Paula Lackie
 - Concurrent with: Software Quality (10:30am–12pm, San Jose Ballroom Salon 5 & 6); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
 
 #### Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE
