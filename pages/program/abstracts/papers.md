@@ -140,7 +140,7 @@ The artefacts support education, methods development, and extract-transform-load
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfacces-smart-search">
         <span class="abstract__title">A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFacCES Smart Search</span>
-        <span class="abstract__people">Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song</span>
+        <span class="abstract__people">Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol X. Song</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Large Language Models (LLMs) have shifted the focus of Research Software Engineering (RSE) from basic implementation to systematic selection of effective architectures within a vast landscape of stochastic solutions. This paper addresses the ”paradox of choice” by introducing a generalized evaluation and integration methodology. Our three-phase framework comprises ’fail-fast’ initial, ’broad-spectrum’ improved, and final optimal rounds, supported by a three-level case analysis and a four-step evaluation cycle. We validate this methodology by developing and integrating a smart search engine into CyberFaCES online learning platform, providing a repeatable blueprint for RSEs to navigate complex AI configuration spaces. By sharing our research paths and publicly available implementation, we offer a structured strategy to move beyond ad-hoc experimentation toward reliable, AI-integrated research tools.{% endcapture %}{{ abstract_md | markdownify }}</div>
