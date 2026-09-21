@@ -85,7 +85,7 @@
               "muted": false,
               "talks": [
                 {
-                  "title": "Careers in RSE",
+                  "title": "Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories",
                   "speakers": "",
                   "format": "Student",
                   "infoMd": "This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&A. Designed with students and early-career RSEs in mind, the session is open to all.\n\nPanelists:\n\n* Blake Joyce, BioTeam\n* Hasti Mehta, University of Illinois Chicago AI Lab\n* Julian Pistorus, Indiana University\n* Fernando Perez, UC Berkeley\n* Alec Scott, Lawrence Livermore National Laboratory\n* Suzanne Prentice, Oak Ridge National Laboratory"
@@ -740,7 +740,7 @@
                   "title": "Invited Talks",
                   "speakers": "",
                   "format": "Student",
-                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta\n\n11:00am-11:30am\nTopic: TBD\nSpeaker: TBD"
+                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta\n\n11:00am-11:30am\nTopic: TBD\nSpeaker: Yaroslav Halchenko"
                 }
               ]
             }

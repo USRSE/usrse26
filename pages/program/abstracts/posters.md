@@ -72,6 +72,21 @@ Our community of BSSw Fellowship alums serve as leaders, mentors, and consultant
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="audit-your-own-metadata-in-the-age-of-ai-where-surfaces-disagree-about-your-software">
+        <span class="abstract__title">Audit Your Own Metadata in the Age of AI: Where Surfaces Disagree About Your Software</span>
+        <span class="abstract__people">Pengyin Shan</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software citation metadata was written for human readers and patient indexers. Its audience has changed. AI agents now discover, install, and reference research software directly from the files a project publishes about itself: CITATION.cff, codemeta.json, zenodo.json, README citation sections, archival DOI records, and package-registry entries [1-7]. These consumers do not ask clarifying questions and do not reconcile conflicts. They parse one surface and propagate whatever it says, so when a project's surfaces disagree about its own authors, version, identifier, or license, credit and provenance quietly follow whichever file a machine happened to read first.
+
+This poster will give RSEs a practical answer: a self-audit workflow that takes minutes per project. Using an open-source pipeline, we harvest the metadata surfaces a project exposes, normalize each to a canonical record, and score every pairwise combination with a multi-level rubric (exact, minor, conflict, missing), with stratified hand-verification to measure the pipeline's precision. The audit produces a gap map organized around five recurring failure modes: missing metadata, stale metadata, author-list divergence, identifier divergence, and version-versus-concept DOI confusion. Every fix it suggests is an ordinary pull request.
+
+The workflow is grounded in evidence. We will report illustrative results from an audit of &gt;50 HPC and quantum-computing projects plus a multi-discipline community baseline of curated open-source research software, showing which surfaces disagree most, on which fields, and what the failure modes look like in real projects. The complete measurement study will be presented at RDA Plenary 27 (London, October 6 2026); this poster is its engineering companion for the RSE community.
+
+Attendees leave with three things: the workflow, a short checklist for making their own project's metadata agree with itself, and a concrete way to reason about a question this year's theme raises directly: what changes about our work when its primary readers include automated machines.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="education-and-training-working-group">
         <span class="abstract__title">Education and Training Working Group</span>
         <span class="abstract__people">Jeffrey Carver, Lauren Milechin</span>
@@ -237,21 +252,6 @@ These adoptions show that STAMPED provides a tool-agnostic, incrementally adopta
 Drawing inspiration from the scale and complexity of merge conflicts in one of the planet's largest codebases (the Windows OS repo at Microsoft), this talk will touch upon a variety of insights across crafting custom LLM Evals, Azure OpenAI Fine-Tuning, Qualitative Insights, and implementation best practices around crafting a scalable LLM-powered Merge Conflict Resolver adapted towards codebase-specific conflict resolution patterns, which has reduced avg conflict resolution times for Windows developers by 4x.
 
 Similar to how LLM Coding Agents transformed the SWE workflow from writing code to generating &amp; reviewing code, this project is a natural evolution of the manually-driven Merge Conflict Resolution process in terms of reviewing LLM-generated conflict resolutions. The Fine-Tuning and Evals aspect of adapting the LLM towards a particular codebase makes the approach unique and &gt;2x better performant than the AI-based conflict resolution capabilities with vanilla LLMs offered in most IDEs.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="audit-your-own-metadata-in-the-age-of-ai-where-surfaces-disagree-about-your-software">
-        <span class="abstract__title">Audit Your Own Metadata in the Age of AI: Where Surfaces Disagree About Your Software</span>
-        <span class="abstract__people">Pengyin Shan</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Research software citation metadata was written for human readers and patient indexers. Its audience has changed. AI agents now discover, install, and reference research software directly from the files a project publishes about itself: CITATION.cff, codemeta.json, zenodo.json, README citation sections, archival DOI records, and package-registry entries [1-7]. These consumers do not ask clarifying questions and do not reconcile conflicts. They parse one surface and propagate whatever it says, so when a project's surfaces disagree about its own authors, version, identifier, or license, credit and provenance quietly follow whichever file a machine happened to read first.
-
-This poster will give RSEs a practical answer: a self-audit workflow that takes minutes per project. Using an open-source pipeline, we harvest the metadata surfaces a project exposes, normalize each to a canonical record, and score every pairwise combination with a multi-level rubric (exact, minor, conflict, missing), with stratified hand-verification to measure the pipeline's precision. The audit produces a gap map organized around five recurring failure modes: missing metadata, stale metadata, author-list divergence, identifier divergence, and version-versus-concept DOI confusion. Every fix it suggests is an ordinary pull request.
-
-The workflow is grounded in evidence. We will report illustrative results from an audit of &gt;50 HPC and quantum-computing projects plus a multi-discipline community baseline of curated open-source research software, showing which surfaces disagree most, on which fields, and what the failure modes look like in real projects. The complete measurement study will be presented at RDA Plenary 27 (London, October 6 2026); this poster is its engineering companion for the RSE community.
-
-Attendees leave with three things: the workflow, a short checklist for making their own project's metadata agree with itself, and a concrete way to reason about a question this year's theme raises directly: what changes about our work when its primary readers include automated machines.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">

@@ -77,7 +77,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Student/Early Career
 - Concurrent with: RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 - Talks (1):
-  - "Careers in RSE" (Student)
+  - "Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories" (Student)
 
 ### 10:30am–12pm — RAG Assistants
 
