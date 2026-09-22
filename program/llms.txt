@@ -84,7 +84,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
+- Chair: Tinashe Michael Tapera
 - Concurrent with: Panel (10:30–11:30am, San Jose Ballroom Salon 3 & 4); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research" (Paper)
