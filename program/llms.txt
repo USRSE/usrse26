@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 46 sessions, 84 talks (84 with published
+> in the Age of AI". 3 days, 47 sessions, 84 talks (84 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -251,9 +251,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Chair: Md Hasan Shahriar Simanto
 - Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6)
 - Talks (4):
-  - "Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems" (Talk)
+  - "Software Sustainability Toolkit: Measuring and Improving Sustainable Research Software at Scale" (Talk)
     Presenters: Aditi Gopalan, Dave Bunten, Adam Taylor, Susheel Varma, Gregory P. Way, and Jineta Banerjee
-    https://us-rse.org/usrse26/program/talks/#software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems
+    https://us-rse.org/usrse26/program/talks/#software-sustainability-toolkit-measuring-and-improving-sustainable-research-software-at-scale
   - "Measuring What Matters in the Age of AI: The Research Software Metrics Landscape" (Paper)
     Presenters: Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus
     https://us-rse.org/usrse26/program/papers/#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape
@@ -280,7 +280,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–10am — Plenary II, Sponsor Talks
+### 8:30–10am — Plenary II
 
 - Time: 2026-10-20T08:30:00-07:00 to 2026-10-20T10:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
@@ -502,14 +502,22 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–10am — Plenary III, Sponsor Talks
+### 8:30–9:30am — Plenary III
 
-- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T10:00:00-07:00 (90 min)
+- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T09:30:00-07:00 (60 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Plenary
 - Plenary: yes
 - Concurrent with: nothing (the only session at this time)
 - About: Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
+
+### 9:30–10am — Sponsor Talks
+
+- Time: 2026-10-21T09:30:00-07:00 to 2026-10-21T10:00:00-07:00 (30 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Plenary
+- Plenary: yes
+- Concurrent with: nothing (the only session at this time)
 
 ### 10–10:30am — Morning Break (Sponsorship available)
 

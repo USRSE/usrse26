@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 46 sessions, 84 talks (84 with published
+> in the Age of AI". 3 days, 47 sessions, 84 talks (84 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -559,21 +559,23 @@ Abstract:
 - Chair: Md Hasan Shahriar Simanto
 - Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6)
 
-#### Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems
+#### Software Sustainability Toolkit: Measuring and Improving Sustainable Research Software at Scale
 
 - Format: Talk
 - Presenters: Aditi Gopalan, Dave Bunten, Adam Taylor, Susheel Varma, Gregory P. Way, and Jineta Banerjee
-- Abstract page: https://us-rse.org/usrse26/program/talks/#software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems
+- Abstract page: https://us-rse.org/usrse26/program/talks/#software-sustainability-toolkit-measuring-and-improving-sustainable-research-software-at-scale
 
 Abstract:
 
-> Modern computational biology depends on research software, yet many scientific tools remain difficult to reproduce, maintain, and reuse. In our previous Software Gardening Almanack (SGA) presentation, we introduced “Software Gardening” as a framework for improving research software sustainability through measurable engineering and governance practices. In this follow-up talk, we present major updates and new findings from ecosystem-scale analyses of more than 10,000 computational biology repositories spanning genomics, RNA-seq, structural biology, imaging, and single-cell analysis.
+> Modern computational biology depends on research software, yet the practices needed to keep scientific tools reusable, reproducible, and maintainable are applied inconsistently. Evaluating these practices at scale is difficult because software sustainability spans licensing, citation, documentation, testing, contribution pathways, and long-term maintenance.
 >
-> Our updated analyses show that measurable sustainability signals including licensing, citation metadata, dependency management, issue tracking, and contribution infrastructure are strongly associated with downstream community adoption and sustainability. We also demonstrate that sustainability practices vary substantially across scientific domains, with some repositories consistently exhibiting stronger sustainability patterns than rapidly evolving domains such as RNA-seq.
+> We present the Software Sustainability Toolkit (SST), a reproducible framework for measuring and improving research software sustainability. SST combines Software Gardening Almanack (SGA) repository metrics, JOSS-style criteria, software test checks, and AI-assisted sustainability reports that translate identified gaps into prioritized actions for maintainers. Together, these components provide complementary views of software readiness, reproducibility, governance, and maintainability.
 >
-> Beyond static scoring, we introduce the Almanack as a platform for software sustainability analysis, where repository-level assessments can be explored through recommendation-oriented workflows that help developers and maintainers identify actionable improvements in reproducibility, documentation, governance, and project health. We also revisit the concept of “software deadness,” arguing that inactive repositories are not uniformly failures: some remain stable, archival, and scientifically reusable, while others become effectively irreproducible due to missing metadata, unclear stewardship, or incomplete computational environments.
+> We applied SST to 10,942 computational biology repositories spanning nine scientific domains, including genomics, transcriptomics, imaging, single-cell analysis, and structural biology. Many basic sustainability practices remain uncommon. Among the signals most associated with GitHub adoption were explicit licensing, machine-readable citation metadata, and JOSS-style compliance. After accounting for repository age and activity, licensing and citability remained associated with greater adoption, while much of the association with overall JOSS compliance reflected project maturity.
 >
-> Together, these findings position software sustainability not as administrative overhead, but as measurable infrastructure that directly supports scientific reuse, reproducibility, and long-term impact.
+> We also examined sustainability as a dynamic process. Fork activity generally increased around the adoption of sustainability practices, but increases in adoption also preceded the addition of many practices, suggesting that community growth and sustainability often develop together. Shared infrastructure can further reduce maintainer burden by supplying common documentation, governance, and testing practices.
+>
+> Finally, SST connects measurement to intervention. AI-assisted tooling can convert assessment results into proposed repository changes for human review, allowing maintainers and contributors to act directly on sustainability findings. Together, these results position SST as infrastructure for measuring, studying, and improving research software sustainability, with SGA metrics, JOSS criteria, testing, and assisted remediation providing complementary paths toward more sustainable scientific software.
 
 #### Measuring What Matters in the Age of AI: The Research Software Metrics Landscape
 
@@ -629,7 +631,7 @@ Abstract:
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–10am — Plenary II, Sponsor Talks
+### 8:30–10am — Plenary II
 
 - Time: 2026-10-20T08:30:00-07:00 to 2026-10-20T10:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
@@ -1142,9 +1144,9 @@ Abstract:
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–10am — Plenary III, Sponsor Talks
+### 8:30–9:30am — Plenary III
 
-- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T10:00:00-07:00 (90 min)
+- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T09:30:00-07:00 (60 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Plenary
 - Plenary: yes
@@ -1153,6 +1155,14 @@ Abstract:
 About this session:
 
 > Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
+
+### 9:30–10am — Sponsor Talks
+
+- Time: 2026-10-21T09:30:00-07:00 to 2026-10-21T10:00:00-07:00 (30 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Plenary
+- Plenary: yes
+- Concurrent with: nothing (the only session at this time)
 
 ### 10–10:30am — Morning Break (Sponsorship available)
 
