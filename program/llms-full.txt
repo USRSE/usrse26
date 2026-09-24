@@ -696,6 +696,22 @@ Abstract:
 
 > This presentation offers a longitudinal, practice-driven exploration of AI-assisted software development, highlighting key lessons learned and their application across two Research Software Engineering organizations and ten projects at Georgia Tech. We examine the use of AI throughout the software development lifecycle (including coding, testing, planning, code review, and ideation) and show how a project’s Technology Readiness Level (TRL) should guide the selection of AI tools and techniques that accelerate delivery. We conclude by outlining the guiding principles and best practices we use to effectively leverage AI's rapidly evolving capabilities, as well as the metrics that measure AI's impact on our overall velocity.
 
+#### Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers
+
+- Format: Talk
+- Presenters: Julia Damerow and Susan Massey
+- Abstract page: https://us-rse.org/usrse26/program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers
+
+Abstract:
+
+> When talking about research software engineers (RSE), the role they play in research, and their skill set, their work is typically framed as writing code and related tasks for software that is created for research. Specifically, RSEs implement best practices to achieve maintainable and sustainable research software (see for example Core 2024). For RSEs who have reached certain seniority levels, their work tasks may also include mentoring and training more junior RSEs or managing one or several RSEs. Rarely, however, does the discussion around an RSE’s tasks and responsibilities focus on the role of RSEs in projects in which external companies are hired to develop software. This is unfortunate, as an experienced RSE can have a crucial impact on the outcome of a project that works with a third-party company to develop research software.
+>
+> There can be a variety of reasons why a researcher decides to work with an outside company rather than with an internal RSE on their project. The most common reason may be that a researcher’s institution simply does not have a central RSE group and the PI and their collaborators are unable or unwilling to employ their own RSEs. In such cases, contracting with a company may be the only option. However, anecdotal evidence suggests that research software projects developed with support from third-party vendors often fail or significantly underdeliver.
+>
+> In this talk, we will present the experiences and lessons learned from a project that we have implemented with the support of an external software development company. The Arizona Pathogen Genomics Analytics Platform (APGAP) is a web application to manage pathogen genomics data in Arizona. It is deployed on Google Cloud infrastructure and integrates with Google’s Vertex AI notebooks as well as the bioinformatics platform Seqera. The platform application was developed in four phases: (0) requirement gathering, (1) prototype development, (2) production development, and (3) refinement and maintenance phase. Throughout the phases ASU-internal RSEs were increasingly engaged in the development. Requirements gathering in phase zero focused on functionality and overall operational capacity sought by users. This was done without RSE support. RSEs also had very little involvement with the code base in phase one, but phase two included code audits by RSEs, after some concerns and uncertainties arose. In phase three, ASU RSEs joined the implementation team from the external company to build internal development capacity, with an ASU RSE also assuming management of the implementation process. The increasing involvement of RSEs throughout the development phases, highlighted the substantial impact that RSEs can have on the overall success of a research software development project.
+>
+> Our presentation explores the long-term effects of partnering with third-party vendors on software sustainability and technical debt. We will highlight the critical role of RSEs as strategic consultants in these collaborations and share firsthand insights into the workflows that flourished and that failed within our specific use case.
+
 ### 10:30am–12pm — The Human Factor
 
 - Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T12:00:00-07:00 (90 min)
@@ -1454,22 +1470,6 @@ Abstract:
 > Recently, after attending a training I offered, my department chair described my work as being like NASA Mission Control–the critical support that brings astronauts home safely. I appreciated this not just because I felt valued (I did) but because of the connection to service.
 >
 > In this talk, I’ll reflect on my journey into a particular subtype of RSE whose work is meant to support science. I’ve come to understand that this work is not merely the production of science but the stewardship of it. While I am further from the clinic than ever, a new path of service has arisen in front of me.
-
-#### Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers
-
-- Format: Talk
-- Presenters: Julia Damerow and Susan Massey
-- Abstract page: https://us-rse.org/usrse26/program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers
-
-Abstract:
-
-> When talking about research software engineers (RSE), the role they play in research, and their skill set, their work is typically framed as writing code and related tasks for software that is created for research. Specifically, RSEs implement best practices to achieve maintainable and sustainable research software (see for example Core 2024). For RSEs who have reached certain seniority levels, their work tasks may also include mentoring and training more junior RSEs or managing one or several RSEs. Rarely, however, does the discussion around an RSE’s tasks and responsibilities focus on the role of RSEs in projects in which external companies are hired to develop software. This is unfortunate, as an experienced RSE can have a crucial impact on the outcome of a project that works with a third-party company to develop research software.
->
-> There can be a variety of reasons why a researcher decides to work with an outside company rather than with an internal RSE on their project. The most common reason may be that a researcher’s institution simply does not have a central RSE group and the PI and their collaborators are unable or unwilling to employ their own RSEs. In such cases, contracting with a company may be the only option. However, anecdotal evidence suggests that research software projects developed with support from third-party vendors often fail or significantly underdeliver.
->
-> In this talk, we will present the experiences and lessons learned from a project that we have implemented with the support of an external software development company. The Arizona Pathogen Genomics Analytics Platform (APGAP) is a web application to manage pathogen genomics data in Arizona. It is deployed on Google Cloud infrastructure and integrates with Google’s Vertex AI notebooks as well as the bioinformatics platform Seqera. The platform application was developed in four phases: (0) requirement gathering, (1) prototype development, (2) production development, and (3) refinement and maintenance phase. Throughout the phases ASU-internal RSEs were increasingly engaged in the development. Requirements gathering in phase zero focused on functionality and overall operational capacity sought by users. This was done without RSE support. RSEs also had very little involvement with the code base in phase one, but phase two included code audits by RSEs, after some concerns and uncertainties arose. In phase three, ASU RSEs joined the implementation team from the external company to build internal development capacity, with an ASU RSE also assuming management of the implementation process. The increasing involvement of RSEs throughout the development phases, highlighted the substantial impact that RSEs can have on the overall success of a research software development project.
->
-> Our presentation explores the long-term effects of partnering with third-party vendors on software sustainability and technical debt. We will highlight the critical role of RSEs as strategic consultants in these collaborations and share firsthand insights into the workflows that flourished and that failed within our specific use case.
 
 ### 1:30–3pm — Building Infrastructure for Communities or Organizations
 

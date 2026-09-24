@@ -311,7 +311,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Talks
 - Chair: Luca Bonaldo
 - Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
-- Talks (3):
+- Talks (4):
   - "Research Software Engineering in the Age of Generative AI" (Talk)
     Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
     https://us-rse.org/usrse26/program/talks/#research-software-engineering-in-the-age-of-generative-ai
@@ -321,6 +321,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Ten Projects, Two Teams, One Question: How Does AI Impact Development?" (Talk)
     Presenters: Dave Brownell
     https://us-rse.org/usrse26/program/talks/#ten-projects-two-teams-one-question-how-does-ai-impact-development
+  - "Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers" (Talk)
+    Presenters: Julia Damerow and Susan Massey
+    https://us-rse.org/usrse26/program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers
 
 ### 10:30am–12pm — The Human Factor
 
@@ -618,7 +621,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Talks
 - Chair: Charles Ferenbaugh
 - Concurrent with: RSE Practices in the Age of AI Part II (1:30–3pm, San Jose Ballroom Salon 1 & 2); Building Infrastructure for Communities or Organizations (1:30–3pm, Willow Glen Room)
-- Talks (4):
+- Talks (3):
   - "What They Don’t Tell You About the Data Science to RSE Transition" (Talk)
     Presenters: Ritika Giri
     https://us-rse.org/usrse26/program/talks/#what-they-don-t-tell-you-about-the-data-science-to-rse-transition
@@ -628,9 +631,6 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Mission Control: Service and the Stewardship of Science" (Talk)
     Presenters: Malcolm Barrett
     https://us-rse.org/usrse26/program/talks/#mission-control-service-and-the-stewardship-of-science
-  - "Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers" (Talk)
-    Presenters: Julia Damerow and Susan Massey
-    https://us-rse.org/usrse26/program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers
 
 ### 1:30–3pm — Building Infrastructure for Communities or Organizations
 
