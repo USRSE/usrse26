@@ -34,12 +34,15 @@ Our community of BSSw Fellowship alums serve as leaders, mentors, and consultant
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Do you want to hang out with cool colleagues and make usable scientific software? Do you want to exchange ideas with user experience (UX) professionals? Do want a shiny UX working group sticker? The US-RSE UX working group is a venue for people with and without UX experience to gain new skills, get feedback on projects, expand their professional network, and accumulate fun stickers. The working group engages with the scientific software community to increase awareness and engagement in UX practices. Join our regular meetings and Slack channel to get resources to jump start your UX work and meet your user-centered peers.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="testing-working-group">
-      <span class="abstract__title">Testing Working Group</span>
-      <span class="abstract__people">David Luet, Nasir Eisty</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="testing-working-group">
+        <span class="abstract__title">Testing Working Group</span>
+        <span class="abstract__people">David Luet, Nasir Eisty</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The US-RSE Software Testing Working Group brings together research software engineers, developers, and researchers interested in improving software quality through practical testing practices. Our community has hosted discussions and presentations on topics such as test design, test automation, test oracles, continuous integration, and strategies for testing scientific and research software. As research software development evolves, we are also exploring how software testing should adapt in the age of AI-assisted coding, including opportunities and challenges introduced by generative AI tools. Visit our poster to learn about past activities, help shape future directions, discover ways to get involved, and connect with colleagues who care about building reliable, trustworthy research software.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
   <details class="abstract">
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="community-calls-working-group">
@@ -66,6 +69,21 @@ Our community of BSSw Fellowship alums serve as leaders, mentors, and consultant
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Was your path into research software a straight line? Ours weren't either. RSEs can arrive from universities, industry, national labs, and…everywhere, and then spend years working out the unwritten parts of the job alone:  how to get credit, when to specialize, whether to take the management role. The US-RSE Mentorship Working Group exists so you don't have to figure it out by yourself! Mentors get a low-overhead way to give back; mentees get a thinking partner outside their own institution. Come find us at USRSE'26 or join #wg-mentorship-program on Slack, and tell us whether you'd like to mentor, be mentored, or help run the next round.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="audit-your-own-metadata-in-the-age-of-ai-where-surfaces-disagree-about-your-software">
+        <span class="abstract__title">Audit Your Own Metadata in the Age of AI: Where Surfaces Disagree About Your Software</span>
+        <span class="abstract__people">Pengyin Shan</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Research software citation metadata was written for human readers and patient indexers. Its audience has changed. AI agents now discover, install, and reference research software directly from the files a project publishes about itself: CITATION.cff, codemeta.json, zenodo.json, README citation sections, archival DOI records, and package-registry entries [1-7]. These consumers do not ask clarifying questions and do not reconcile conflicts. They parse one surface and propagate whatever it says, so when a project's surfaces disagree about its own authors, version, identifier, or license, credit and provenance quietly follow whichever file a machine happened to read first.
+
+This poster will give RSEs a practical answer: a self-audit workflow that takes minutes per project. Using an open-source pipeline, we harvest the metadata surfaces a project exposes, normalize each to a canonical record, and score every pairwise combination with a multi-level rubric (exact, minor, conflict, missing), with stratified hand-verification to measure the pipeline's precision. The audit produces a gap map organized around five recurring failure modes: missing metadata, stale metadata, author-list divergence, identifier divergence, and version-versus-concept DOI confusion. Every fix it suggests is an ordinary pull request.
+
+The workflow is grounded in evidence. We will report illustrative results from an audit of &gt;50 HPC and quantum-computing projects plus a multi-discipline community baseline of curated open-source research software, showing which surfaces disagree most, on which fields, and what the failure modes look like in real projects. The complete measurement study will be presented at RDA Plenary 27 (London, October 6 2026); this poster is its engineering companion for the RSE community.
+
+Attendees leave with three things: the workflow, a short checklist for making their own project's metadata agree with itself, and a concrete way to reason about a question this year's theme raises directly: what changes about our work when its primary readers include automated machines.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
@@ -101,7 +119,7 @@ The result was a hierarchically scheduled, Ray-based distributed verifier that e
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="the-assumption-stack-what-ai-assisted-development-takes-for-granted-and-who-gets-left-out">
         <span class="abstract__title">The Assumption Stack: What AI-Assisted Development Takes for Granted, and Who Gets Left Out</span>
-        <span class="abstract__people">Zeinab Serhan</span>
+        <span class="abstract__people">Zeinab Serhan, Kirtankumar Thummar</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Software development is rapidly coming to assume AI assistance as a baseline: in productivity expectations, in hiring, and increasingly in how research software itself is built. But that assumption holds only under conditions much of the world does not share. This poster asks what AI-assisted development means for research software engineers in low-resource countries and communities, and whether building research software around an assumed dependence on AI is equitable, or even wise.
@@ -234,21 +252,6 @@ These adoptions show that STAMPED provides a tool-agnostic, incrementally adopta
 Drawing inspiration from the scale and complexity of merge conflicts in one of the planet's largest codebases (the Windows OS repo at Microsoft), this talk will touch upon a variety of insights across crafting custom LLM Evals, Azure OpenAI Fine-Tuning, Qualitative Insights, and implementation best practices around crafting a scalable LLM-powered Merge Conflict Resolver adapted towards codebase-specific conflict resolution patterns, which has reduced avg conflict resolution times for Windows developers by 4x.
 
 Similar to how LLM Coding Agents transformed the SWE workflow from writing code to generating &amp; reviewing code, this project is a natural evolution of the manually-driven Merge Conflict Resolution process in terms of reviewing LLM-generated conflict resolutions. The Fine-Tuning and Evals aspect of adapting the LLM towards a particular codebase makes the approach unique and &gt;2x better performant than the AI-based conflict resolution capabilities with vanilla LLMs offered in most IDEs.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="audit-your-own-metadata-in-the-age-of-ai-where-surfaces-disagree-about-your-software">
-        <span class="abstract__title">Audit Your Own Metadata in the Age of AI: Where Surfaces Disagree About Your Software</span>
-        <span class="abstract__people">Pengyin Shan</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Research software citation metadata was written for human readers and patient indexers. Its audience has changed. AI agents now discover, install, and reference research software directly from the files a project publishes about itself: CITATION.cff, codemeta.json, zenodo.json, README citation sections, archival DOI records, and package-registry entries [1-7]. These consumers do not ask clarifying questions and do not reconcile conflicts. They parse one surface and propagate whatever it says, so when a project's surfaces disagree about its own authors, version, identifier, or license, credit and provenance quietly follow whichever file a machine happened to read first.
-
-This poster will give RSEs a practical answer: a self-audit workflow that takes minutes per project. Using an open-source pipeline, we harvest the metadata surfaces a project exposes, normalize each to a canonical record, and score every pairwise combination with a multi-level rubric (exact, minor, conflict, missing), with stratified hand-verification to measure the pipeline's precision. The audit produces a gap map organized around five recurring failure modes: missing metadata, stale metadata, author-list divergence, identifier divergence, and version-versus-concept DOI confusion. Every fix it suggests is an ordinary pull request.
-
-The workflow is grounded in evidence. We will report illustrative results from an audit of &gt;50 HPC and quantum-computing projects plus a multi-discipline community baseline of curated open-source research software, showing which surfaces disagree most, on which fields, and what the failure modes look like in real projects. The complete measurement study will be presented at RDA Plenary 27 (London, October 6 2026); this poster is its engineering companion for the RSE community.
-
-Attendees leave with three things: the workflow, a short checklist for making their own project's metadata agree with itself, and a concrete way to reason about a question this year's theme raises directly: what changes about our work when its primary readers include automated machines.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
@@ -520,8 +523,8 @@ Finally, the poster demonstrates PRISM’s AI bias exploration in an Alzheimer�
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="improving-peer-code-review-in-research-software-from-rse-practices-to-evaluating-llm-generated-feedback">
-        <span class="abstract__title">Improving Peer Code Review in Research Software: From RSE Practices to Evaluating LLM-Generated Feedback</span>
+      <h2 class="abstract__heading" id="improving-peer-code-review-in-research-software-from-rse-practices-to-an-ongoing-real-world-study-of-ai-assisted-code-review">
+        <span class="abstract__title">Improving Peer Code Review in Research Software: From RSE Practices to an Ongoing Real-World Study of AI-Assisted Code Review</span>
         <span class="abstract__people">Md Ariful Islam Malik, Jeffrey C. Carver, Nasir U. Eisty</span>
       </h2>
     </summary>
@@ -618,44 +621,6 @@ pSCompose has progressed from early mockups to prototypes and full deployments o
 An example of such classical software is LANL’s Quantum Hamiltonian Analysis Toolkit (QHAT), a package to help physicists analyze electron states in chemical molecules. QHAT builds on other similar tools such as PyLIQTR from MIT Lincoln Laboratory, and Cirq and Qualtran from Google Quantum AI. It is intended to provide a physicistfriendly interface for numerical simulation, error evaluation, resource estimation, and other similar analyses.
 
 Importantly, even though QHAT is currently considered a research code, there are already software engineers on its development team to encourage basic software quality practices now, and to plan for more extensive practices in the future. This serves as an example of the role RSEs might play in developing classical software as quantum computing continues to grow in importance in the research computing world.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="from-microscopy-to-simulation-an-end-to-end-research-software-pipeline-for-computational-neuroscience">
-        <span class="abstract__title">From Microscopy to Simulation: An End-to-End Research Software Pipeline for Computational Neuroscience</span>
-        <span class="abstract__people">Jordan Fox, Brian Fischer, William Debello, Jose Peña</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Computational neuroscience research increasingly requires software pipelines that integrate multiphase computational tasks into reproducible research workflows. This presentation describes a research software pipeline we developed to transform neuronal electron microscopy data into high-resolution biophysical simulations for investigating neuronal electrical activity. We focus on the software engineering decisions that shaped its design.
-
-A critical component of the pipeline is MASCAF [1], an open-source Python package for constructing simulation-ready cable models from microscopy-derived morphology. MASCAF contains a series of geometric fitting and optimization algorithms to robustly reconstruct complex neuronal morphology data in simulation format. While motivated by particularly complex neurons in the barn owl auditory system, MASCAF was designed as a general-purpose tool and follows modern scientific Python development practices.
-
-Downstream from MASCAF, the morphology is incorporated into an application-specific simulation framework built on Arbor, a large-scale modern multicompartmental simulation software. This simulation stage integrates neuronal morphology construction, biophysical mechanisms, synaptic input models, parameter exploration, visualization, and quantitative analysis within a unified environment. Together, these components enable reproducible investigation of detailed neuronal computation while supporting rapid model development and refinement.
-
-This presentation discusses the software architecture and engineering questions involved in building and maintaining a research software ecosystem that spans computational geometry, high-performance simulation, data analysis, and visualization. Particular emphasis is placed on developing reusable software components while balancing the specialized requirements of an active scientific investigation.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="harness-engineering-for-agentic-ai-a-checklist-for-research-software-engineers">
-        <span class="abstract__title">Harness Engineering for Agentic AI: A Checklist for Research Software Engineers</span>
-        <span class="abstract__people">Yaping Yang</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Large language models are now used for more than answering questions. They increasingly carry out multi step tasks on their own. They research a topic, synthesize what they find, and write results back to external systems of record. Across recent work on these systems, one lesson keeps coming up: an agent's reliability depends far more on the system built around the model than on the model itself. That surrounding system is made up of the tools, memory, execution environment, feedback loops, and evaluation methods that turn raw model output into something trustworthy. It is often called the agent's harness. It is the subject of growing research on agent architecture [1] and on frameworks that interleave reasoning with acting [2].
-
-This poster translates that research into a practical checklist. The checklist is for research software engineers who build, adopt, or evaluate agent based tools, including tools for summarizing literature, extracting dataset metadata, or verifying citations.
-
-The checklist addresses four questions.
-
-First, what does the harness consist of? Recent surveys converge on a small set of components that structure an agent's behavior: how it represents its role, what it remembers, how it plans, and how it acts on and retrieves information from the world [1]. Each component addresses a specific limitation of the underlying model.
-
-Second, where do unsupported claims enter the pipeline, and how are they caught? Hallucination is a model asserting claims its sources do not support. It is a well documented failure mode in LLM based agents. We describe an extraction, verification, and synthesis pattern that mitigates it by anchoring generation to retrieved evidence. This strategy has been shown to measurably reduce hallucination rates, both in interleaved reasoning and acting frameworks [2] and in retrieval grounded generation more broadly [3].
-
-Third, how is reliability actually measured, rather than assumed? Benchmark work testing dozens of models has found large, persistent gaps between how agents perform and what reliable task completion requires. These failures trace back to weaknesses in long horizon reasoning, decision making, and instruction following [4]. Occasional spot checking is not a substitute for rigorous, ground truth evaluation.
-
-Fourth, what remains unsolved? The same benchmark work points to evaluation itself as a bottleneck. Open questions remain around how to confirm that a grounded claim is actually correct, and around what standardized reliability metrics for agentic systems in research computing would even look like.
-
-Attendees will leave with three things: a literature grounded definition of harness engineering, a transferable pattern for reducing hallucination, and a practical checklist for judging whether an agent based research tool is trustworthy enough to deploy.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">

@@ -79,17 +79,17 @@
             {
               "title": "Panel",
               "type": "Student/Early Career",
-              "room": "Market Street",
+              "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Careers in RSE",
+                  "title": "Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories",
                   "speakers": "",
                   "format": "Student",
-                  "infoMd": "This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&A. Designed with students and early-career RSEs in mind, the session is open to all.\n\nPanelists:\n\n* Blake Joyce\n* Hasti Mehta\n* Julian Pistorus\n* Fernando Perez\n* Alec Scott\n* Suzanne Prentice",
-                  "href": "program/student-early-career-program/#careers-in-rse"
+                  "infoMd": "This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&A. Designed with students and early-career RSEs in mind, the session is open to all.\n\nPanelists:\n\n* Blake Joyce, BioTeam\n* Hasti Mehta, University of Illinois Chicago AI Lab\n* Julian Pistorus, Indiana University\n* Fernando Perez, UC Berkeley\n* Alec Scott, Lawrence Livermore National Laboratory\n* Suzanne Prentice, Oak Ridge National Laboratory",
+                  "href": "program/student-early-career-program/#careers-in-rse-experiences-from-research-software-engineers-across-industry-academia-and-laboratories"
                 }
               ]
             }
@@ -105,7 +105,7 @@
             {
               "title": "RAG Assistants",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Tinashe Michael Tapera",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -279,16 +279,18 @@
                 },
                 {
                   "title": "Designing for Trust in AI-Assisted Scientific Computing",
-                  "speakers": "Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang",
+                  "speakers": "Rajshree Deshmukh, Sheng Pang, Tanushree Subramanian, Johanna Cohoon, Sarah Poon and Dan Gunter",
                   "people": [
                     "Rajshree Deshmukh",
-                    "Sarah Poon",
+                    "Sheng Pang",
+                    "Tanushree Subramanian",
                     "Johanna Cohoon",
-                    "Dan Gunter",
-                    "Sheng Pang"
+                    "Sarah Poon",
+                    "Dan Gunter"
                   ],
                   "format": "Talk",
                   "infoMd": "As AI assistance lowers the barrier to coding, domain experts with limited programming experience are increasingly able to make use of scientific computing software. Yet a critical gap remains: evaluating and understanding the AI-generated code is still a significant challenge, making it difficult to verify and trust results. This talk presents lessons from building a computational optimization platform for chemical process engineering, sharing UX strategies to build confidence among non-programmers by enabling them to visualize underlying conceptual models and validate AI-driven changes.\n\nAs AI tooling becomes increasingly common in research software, there is growing concern about new classes of subtle, hard-to-detect errors. Unlike obvious failures, AI-generated code changes can produce plausible but incorrect results that trigger no exceptions and leave no traces. This is especially problematic in model based scientific software where the internal reasoning can be opaque and complex code changes can be a \"black box\" for non-programmers. For these users, AI-facilitated changes may feel like trial and error guesswork rather than a deliberate and strategic process. Without better visibility and validation, researchers risk building on flawed results that are difficult and costly to correct later.\n\nDrawing on our experience building the Process Optimization and Modeling for Minerals Sustainability (PrOMMiS) Flowsheet Inspector, a domain-specific application designed for code-driven computational software, this talk shares practical strategies for building trust and confidence among domain experts with limited programming experience. We discuss UX patterns that surface the underlying conceptual models and help users to effectively execute, debug, and verify AI-generated modifications. Through specific examples, we demonstrate how to make diagnostic information more accessible, improve error discoverability, and empower users to evaluate changes through an intuitive interface.",
+                  "doi": "https://doi.org/10.5281/zenodo.22806003",
                   "href": "program/talks/#designing-for-trust-in-ai-assisted-scientific-computing"
                 }
               ]
@@ -316,32 +318,6 @@
                   "format": "Student",
                   "infoMd": "Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference.",
                   "href": "program/student-early-career-program/#usrse-26-mentor-mentee-lunch"
-                }
-              ]
-            }
-          ]
-        },
-        {
-          "start": "1:30pm",
-          "end": "2:30pm",
-          "startISO": "2026-10-19T13:30:00-07:00",
-          "endISO": "2026-10-19T14:30:00-07:00",
-          "break": false,
-          "sessions": [
-            {
-              "title": "New Frontiers, New Voices",
-              "type": "Student/Early Career",
-              "room": "Market Street",
-              "info": "",
-              "plenary": false,
-              "muted": false,
-              "talks": [
-                {
-                  "title": "Invited Talks",
-                  "speakers": "",
-                  "format": "Student",
-                  "infoMd": "1:30pm-2pm\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus\n\n2-2:30pm\nTopic: TBD\nSpeaker: TBD",
-                  "href": "program/student-early-career-program/#invited-talks"
                 }
               ]
             }
@@ -602,14 +578,14 @@
             {
               "title": "AI + Software Quality",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Md Hasan Shahriar Simanto",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems",
+                  "title": "Software Sustainability Toolkit: Measuring and Improving Sustainable Research Software at Scale",
                   "speakers": "Aditi Gopalan, Dave Bunten, Adam Taylor, Susheel Varma, Gregory P. Way, and Jineta Banerjee",
                   "people": [
                     "Aditi Gopalan",
@@ -620,8 +596,8 @@
                     "Jineta Banerjee"
                   ],
                   "format": "Talk",
-                  "infoMd": "Modern computational biology depends on research software, yet many scientific tools remain difficult to reproduce, maintain, and reuse. In our previous Software Gardening Almanack (SGA) presentation, we introduced “Software Gardening” as a framework for improving research software sustainability through measurable engineering and governance practices. In this follow-up talk, we present major updates and new findings from ecosystem-scale analyses of more than 10,000 computational biology repositories spanning genomics, RNA-seq, structural biology, imaging, and single-cell analysis.\n\nOur updated analyses show that measurable sustainability signals including licensing, citation metadata, dependency management, issue tracking, and contribution infrastructure are strongly associated with downstream community adoption and sustainability. We also demonstrate that sustainability practices vary substantially across scientific domains, with some repositories consistently exhibiting stronger sustainability patterns than rapidly evolving domains such as RNA-seq.\n\nBeyond static scoring, we introduce the Almanack as a platform for software sustainability analysis, where repository-level assessments can be explored through recommendation-oriented workflows that help developers and maintainers identify actionable improvements in reproducibility, documentation, governance, and project health. We also revisit the concept of “software deadness,” arguing that inactive repositories are not uniformly failures: some remain stable, archival, and scientifically reusable, while others become effectively irreproducible due to missing metadata, unclear stewardship, or incomplete computational environments.\n\nTogether, these findings position software sustainability not as administrative overhead, but as measurable infrastructure that directly supports scientific reuse, reproducibility, and long-term impact.",
-                  "href": "program/talks/#software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems"
+                  "infoMd": "Modern computational biology depends on research software, yet the practices needed to keep scientific tools reusable, reproducible, and maintainable are applied inconsistently. Evaluating these practices at scale is difficult because software sustainability spans licensing, citation, documentation, testing, contribution pathways, and long-term maintenance.\n\nWe present the Software Sustainability Toolkit (SST), a reproducible framework for measuring and improving research software sustainability. SST combines Software Gardening Almanack (SGA) repository metrics, JOSS-style criteria, software test checks, and AI-assisted sustainability reports that translate identified gaps into prioritized actions for maintainers. Together, these components provide complementary views of software readiness, reproducibility, governance, and maintainability.\n\nWe applied SST to 10,942 computational biology repositories spanning nine scientific domains, including genomics, transcriptomics, imaging, single-cell analysis, and structural biology. Many basic sustainability practices remain uncommon. Among the signals most associated with GitHub adoption were explicit licensing, machine-readable citation metadata, and JOSS-style compliance. After accounting for repository age and activity, licensing and citability remained associated with greater adoption, while much of the association with overall JOSS compliance reflected project maturity.\n\nWe also examined sustainability as a dynamic process. Fork activity generally increased around the adoption of sustainability practices, but increases in adoption also preceded the addition of many practices, suggesting that community growth and sustainability often develop together. Shared infrastructure can further reduce maintainer burden by supplying common documentation, governance, and testing practices.\n\nFinally, SST connects measurement to intervention. AI-assisted tooling can convert assessment results into proposed repository changes for human review, allowing maintainers and contributors to act directly on sustainability findings. Together, these results position SST as infrastructure for measuring, studying, and improving research software sustainability, with SGA metrics, JOSS criteria, testing, and assisted remediation providing complementary paths toward more sustainable scientific software.",
+                  "href": "program/talks/#software-sustainability-toolkit-measuring-and-improving-sustainable-research-software-at-scale"
                 },
                 {
                   "title": "Measuring What Matters in the Age of AI: The Research Software Metrics Landscape",
@@ -719,7 +695,7 @@
           "break": false,
           "sessions": [
             {
-              "title": "Plenary II, Sponsor Talks",
+              "title": "Plenary II",
               "type": "Plenary",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
@@ -744,6 +720,32 @@
               "plenary": false,
               "muted": true,
               "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10:30am",
+          "end": "11:30am",
+          "startISO": "2026-10-20T10:30:00-07:00",
+          "endISO": "2026-10-20T11:30:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "New Frontiers, New Voices",
+              "type": "Student/Early Career",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "",
+              "plenary": false,
+              "muted": false,
+              "talks": [
+                {
+                  "title": "Invited Talks",
+                  "speakers": "",
+                  "format": "Student",
+                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta\n\n11:00am-11:30am\nTopic: TBD\nSpeaker: Yaroslav Halchenko",
+                  "href": "program/student-early-career-program/#invited-talks"
+                }
+              ]
             }
           ]
         },
@@ -1099,7 +1101,7 @@
             {
               "title": "Case Studies Demonstrating RSE Impacts Part II",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Tori Robinson",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -1143,18 +1145,19 @@
                     "Michael Bouzinier"
                   ],
                   "format": "Paper",
-                  "infoMd": "Developing and testing software for regulated patient data such as Medicare claims is structurally expensive. Tooling work must occur inside credentialed, audited computing enclaves, where libraries and tools require approval before they can even be tried. This makes pipeline development and debugging far slower and more expensive than on an ordinary open stack. Because derived code and data cannot leave the enclave, pipelines cannot easily be shared, compared, or reproduced by others. We hypothesize that escaping this bind does not require statistically realistic synthetic data. For the purpose of building and testing data tooling, what a pipeline exercises is file format, record structure, schema conformance, edge cases, and dataquality artefacts, not the true magnitude of any clinical or demographic distribution. Format and structural fidelity are therefore sufficient for this use, and statistical fidelity is not necessary.\n\nWe make this case concrete with synthmed, an open (Apache2.0) Python package that generates a fully synthetic Medicare-like database conforming to ResDAC File Transfer Summary (FTS) layouts, together with a downloadable companion dataset (CCBY-4.0; calendar years 2011–2016). The generator emits fixedwidth files in the same layouts as real CMS extracts, so an unmodified open ingestion pipeline can process them with no glue code and then run unchanged against the restricted extract inside the enclave. Records are generated from AI-authored FTS specifications combined with public reference data and CMS DESynPUF synthetic Medicare files. An internal beneficiary table maintains identifier and demographic consistency across files and years and injects realistic data-quality artefacts to exercise error-handling and quality-control logic. No individual-level CMS ResDAC data or other real patient-level datasets are used, so the released files contain no PHI or PII.\n\nThe generator is bit-reproducible under a fixed seed and has been exercised end to end at 5 million synthetic beneficiaries through the ingestion pipeline. The artefacts are intended for education, methods development, and ETL or analysis pipeline testing in population-health research. As more pipeline code is itself authored by AI, an open, format-faithful substrate of this kind also lowers the cost of independently inspecting, profiling, and regression-testing AI-generated ingestion logic outside the enclave. Consistent with the argument above, they are explicitly not suitable, and not intended, for drawing substantive conclusions about real patients, providers, or health-care utilisation.",
+                  "infoMd": "Developing and testing software for regulated patient data such as Medicare claims is structurally expensive. Tooling work must occur inside credentialed, audited computing enclaves, where libraries and tools require approval before they can even be tried. This makes pipeline development and debugging far slower and more expensive than on an ordinary open stack. Because derived code and data cannot leave the enclave, pipelines cannot easily be shared, compared, or reproduced by others. We hypothesize that escaping this bind does not require statistically realistic synthetic data. For the purpose of building and testing data tooling, a pipeline exercises file formats, record structures, schema conformance, edge cases, and data-quality artefacts, rather than the true magnitudes of clinical or demographic distributions. Format and structural fidelity are therefore sufficient to support these engineering tasks; statistical fidelity is not a prerequisite. This claim does not eliminate final validation on real data, both for substantive analyses and for behaviour on unanticipated production edge cases.\n\nWe make this case concrete with synthmed, an open (Apache-2.0) Python package that generates a fully synthetic Medicare-like database conforming to Research Data Assistance Center (ResDAC) File Transfer\nSummary (FTS) layouts, together with a downloadable companion dataset (Creative Commons Attribution 4.0, CC-BY-4.0; calendar years 2011-2016). The generator emits fixed-width files in the same layouts as real Centers for Medicare & Medicaid Services (CMS) extracts, so the unmodified open dorieh ingestion pipeline can process them with no glue code and then run unchanged against the restricted extract inside the enclave. This demonstrates the approach for one workflow; transfer to other ResDAC consumers remains to be confirmed. Records are generated from AI-authored FTS specifications combined with public reference data and the CMS Data Entrepreneurs' Synthetic Public Use File (DE-SynPUF). An internal beneficiary table keeps synthetic identifiers and demographics consistent across files and years and injects data-quality artefacts to exercise error-handling and quality-control logic. No individual-level CMS ResDAC data or other real patient-level datasets are used, so the released files contain no protected health information or personally identifiable information.\n\nThe generator is bit-reproducible under a fixed seed and has been run end to end with 5 million synthetic beneficiaries through the ingestion pipeline. An open quality-control run over that output\nidentified a shape mismatch in the synthetic date-of-birth error distribution. Without the open synthetic run, detecting this deficiency would have required an authorised real-data run; the finding led to a corrected generation model.\n\nThe artefacts support education, methods development, and extract-transform-load (ETL) or analysis-pipeline testing in population-health research. As more pipeline code is authored by AI, an open, format-faithful substrate of this kind also lowers the cost of independently inspecting, profiling, and regression-testing AI-generated ingestion logic outside the enclave. The released data are neither suitable nor intended for drawing substantive conclusions about real patients, providers, or health-care utilisation.",
                   "href": "program/papers/#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines"
                 },
                 {
                   "title": "Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions",
-                  "speakers": "Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur",
+                  "speakers": "Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick, Randall Petras and Addi Malviya-Thakur",
                   "people": [
                     "Marie Backman",
                     "Darsh Dinger",
                     "Mathieu Doucet",
                     "Peter Peterson",
                     "John Hetrick",
+                    "Randall Petras",
                     "Addi Malviya-Thakur"
                   ],
                   "format": "Talk",
@@ -1273,7 +1276,7 @@
                     "Deanna Kaplan"
                   ],
                   "format": "Paper",
-                  "infoMd": "Speech is a powerful, well-replicated marker of mental and neurological health, with linguistic and acoustic features linked to depression, schizophrenia, and neurocognitive status across clinical populations and languages. Translating that evidence into technology that can accelerate the field depends on collecting naturalistic speech at scale, and the main obstacle has been the absence of tools that put recording in the hands of participants in their everyday environments. A recent review of 149 mental health apps found that only 8% were partially adaptable and none allowed researchers to add new content. This paper describes Fabla, an open-source voice-first ecological momentary assessment (EMA) platform built by an embedded research software engineering team at Emory University's Clinical and Translational Science Alliance. Fabla combines a JSON-protocol-driven Flutter frontend on iOS and Android, a researcher-facing dashboard built on Retool that lets investigators author study protocols, manage participants, and schedule notifications without writing code, and a HIPAA-eligible AWS backend operating in Emory's IRB-approved infrastructure. Over the past year, Fabla has supported 15 active studies spanning depression, substance use, meditation-based intervention, and social determinants of health collecting more than 30,000 minutes of voice diary audio. A preregistered validation study (n=87) found voice diaries produced more than twice the daily language volume of identical text diaries [1], with linguistic markers of depression detectable in voice but not text. We describe the engineering decisions that made adoption practical, reflect on what embedded RSE teams in clinical research can look like, and outline two architecturally supported directions for future work: an integrated speech analytics module and a conversational-agent layer for semi-structured elicitation.",
+                  "infoMd": "Speech is a powerful, well-replicated marker of mental and neurological health, with linguistic and acoustic features linked to depression, schizophrenia, and neurocognitive status across clinical populations and languages. Translating that evidence into technology that can accelerate the field depends on collecting naturalistic speech at scale, and the main obstacle has been the absence of tools that put recording in the hands of participants in their everyday environments. A recent review of 149 mental health apps found that only 8% were partially adaptable and none allowed researchers to add new content. This paper describes Fabla, an open-source voice-first ecological momentary assessment (EMA) platform built by an embedded research software engineering team at Emory University's Georgia Clinical and Translational Science Alliance. Fabla combines a JSON-protocol-driven Flutter frontend on iOS and Android, a researcher-facing dashboard built on Retool that lets investigators manage participants and schedule notifications without writing code, and a HIPAA-eligible AWS backend operating in Emory's IRB-approved infrastructure. Over the past year, Fabla has supported 15 active studies spanning depression, substance use, meditation-based intervention, and social determinants of health, collecting more than 30,000 minutes of voice diary audio. A preregistered validation study (n=87) found voice diaries produced more than twice the daily language volume of identical text diaries [1], with linguistic markers of depression detectable in voice but not text. We describe the engineering decisions that made adoption practical, reflect on what embedded RSE teams in clinical research can look like, and outline the direction for future work: a management dashboard with integrated study health and speech analytics.",
                   "href": "program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research"
                 }
               ]
@@ -1307,16 +1310,34 @@
         },
         {
           "start": "8:30am",
-          "end": "10am",
+          "end": "9:30am",
           "startISO": "2026-10-21T08:30:00-07:00",
+          "endISO": "2026-10-21T09:30:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Plenary III",
+              "type": "Plenary",
+              "room": "San Jose Ballroom Salon 3 & 4",
+              "info": "Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards",
+              "plenary": true,
+              "muted": false,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "9:30am",
+          "end": "10am",
+          "startISO": "2026-10-21T09:30:00-07:00",
           "endISO": "2026-10-21T10:00:00-07:00",
           "break": false,
           "sessions": [
             {
-              "title": "Plenary III, Sponsor Talks",
+              "title": "Sponsor Talks",
               "type": "Plenary",
               "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards",
+              "info": "",
               "plenary": true,
               "muted": false,
               "talks": []
@@ -1351,7 +1372,7 @@
             {
               "title": "Collaboration & Community Building",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Paula Lackie",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -1405,7 +1426,7 @@
             {
               "title": "Software Quality",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Jeff Carver",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -1413,7 +1434,7 @@
               "talks": [
                 {
                   "title": "Developing a Handbook of best practices for research software sustainability at Princeton",
-                  "speakers": "Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet",
+                  "speakers": "Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Jonathan Hanke, Joshua Carmichael, Lance Parsons, and David Luet",
                   "people": [
                     "Tai Sakuma",
                     "Joel Bretheim",
@@ -1431,11 +1452,14 @@
                     "Luca Bonaldo",
                     "Amy Defnet",
                     "Rob Bierman",
+                    "Jonathan Hanke",
+                    "Joshua Carmichael",
                     "Lance Parsons",
                     "David Luet"
                   ],
                   "format": "Talk",
-                  "infoMd": "In the early 2010s, the Software Sustainability Institute defined sustainability as \"software you use today will be available — and continue to be improved and supported — in the future\" [1, 2]. Sustainable research software has enabled research that would otherwise be infeasible. The pursuit of sustainability continues, spanning efficiency, longevity over generations of research projects, and spread across research fields. In this context, the Princeton Research Software Engineering (RSE) group, as one of the first and largest centralized RSE groups in US institutions [3], has both the breadth of RSE experience and the team bandwidth to further advance sustainability.\n\nIn the Princeton RSE group, we are developing a handbook of best practices for research software sustainability. As sustainability is inherently contingent [4], it is not possible to prescribe criteria for it. Instead, the Handbook enumerates characteristics of sustainable research software. Software with these characteristics substantially increases its chances of being sustainable. Sustainable research software has reliable tests as its technical foundation; they enable iterative cycles of refactoring and feature addition and also underpin confidence in AI-assisted and agentic development, yielding frequent releases that progressively improve maintainability, reproducibility, and other technical qualities. These technical characteristics are necessary but not sufficient. Long-term sustainable research software also has social and organizational characteristics, including citability, continuous funding, professional maintenance, and active communities.\n\nThe Handbook collects best practices, based on our experience, that realize these characteristics, from basics to advanced topics such as how to turn unsustainable research code into a testable package. The Handbook facilitates communication with PIs and research project managers; the best practices describe what we do and how we identify and resolve software engineering issues within research projects.\n\nIn this talk, we'll present our approach to building the Handbook; discuss what distinguishes it from other best practices guides, for instance, its grounding in the operational practice of a centralized, multidisciplinary RSE group; review the practices at a high level; and suggest ways for others in the community to leverage the Handbook in their organizations. The Handbook will be publicly available under a Creative Commons license. The Handbook is not a static document that we publish and finish; we develop it as we develop sustainable software, with continuous updates as demanded, most frequently by the rapid evolution of AI tools and practices.",
+                  "infoMd": "In the early 2010s, the Software Sustainability Institute defined sustainability as \"software you use today will be available — and continue to be improved and supported — in the future\" [1, 2]. Sustainable research software has enabled research that would otherwise be infeasible. The pursuit of sustainability continues, spanning efficiency, longevity over generations of research projects, and spread across research fields. In this context, the Princeton Research Software Engineering (RSE) group, as one of the first and largest centralized RSE groups in US institutions [3], has both the breadth of RSE experience and the team bandwidth to further advance sustainability.\n\nIn the Princeton RSE group, we are developing a handbook of best practices for research software sustainability. As sustainability is inherently contingent [4], it is not possible to prescribe criteria for it. Instead, the Handbook enumerates characteristics of sustainable research software. Software with these characteristics substantially increases its chances of being sustained. Sustainable research software has reliable tests as its technical foundation; they enable iterative cycles of refactoring and feature addition and also underpin confidence in AI-assisted and agentic development, yielding frequent releases that progressively improve maintainability, reproducibility, and other technical qualities. These technical characteristics are necessary but not sufficient. Long-term sustainable research software also has social and organizational characteristics, including citability, continuous funding, professional maintenance, and active communities.\n\nThe Handbook collects best practices, based on our experience, that realize these characteristics, from basics to advanced topics such as how to turn unsustainable research code into a testable package. The Handbook facilitates communication with principal investigators and research project managers; the best practices describe what we do and how we identify and resolve software engineering issues within research projects.\n\nIn this talk, we will present our approach to building the Handbook; discuss what distinguishes it from other best practices guides, for instance, its grounding in the operational practice of a centralized, multidisciplinary RSE group; review the practices at a high level; and suggest ways for others in the community to leverage the Handbook in their organizations. The Handbook will be publicly available under a Creative Commons license. The Handbook is not a static document that we publish and finish; we develop it as we develop sustainable software, with continuous updates as demanded, most frequently by the rapid evolution of AI tools and practices.",
+                  "doi": "https://doi.org/10.5281/zenodo.22777729",
                   "href": "program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton"
                 },
                 {
@@ -1476,7 +1500,7 @@
             {
               "title": "Generative AI + Applications",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Scott Michael",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,
@@ -1559,7 +1583,7 @@
             {
               "title": "RSE Practices in the Age of AI Part II",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Pengyin Shan",
               "room": "San Jose Ballroom Salon 1 & 2",
               "info": "",
               "plenary": false,
@@ -1583,19 +1607,19 @@
                   "href": "program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices"
                 },
                 {
-                  "title": "A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training",
-                  "speakers": "Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song",
+                  "title": "A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFacCES Smart Search",
+                  "speakers": "Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol X. Song",
                   "people": [
                     "Xiao Liu",
                     "Jungha Woo",
                     "Lan Zhao",
                     "Jaewoo Shin",
                     "Chimdia Kabuo",
-                    "Carol Song"
+                    "Carol X. Song"
                   ],
                   "format": "Paper",
                   "infoMd": "Large Language Models (LLMs) have shifted the focus of Research Software Engineering (RSE) from basic implementation to systematic selection of effective architectures within a vast landscape of stochastic solutions. This paper addresses the ”paradox of choice” by introducing a generalized evaluation and integration methodology. Our three-phase framework comprises ’fail-fast’ initial, ’broad-spectrum’ improved, and final optimal rounds, supported by a three-level case analysis and a four-step evaluation cycle. We validate this methodology by developing and integrating a smart search engine into CyberFaCES online learning platform, providing a repeatable blueprint for RSEs to navigate complex AI configuration spaces. By sharing our research paths and publicly available implementation, we offer a structured strategy to move beyond ad-hoc experimentation toward reliable, AI-integrated research tools.",
-                  "href": "program/papers/#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training"
+                  "href": "program/papers/#a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfacces-smart-search"
                 },
                 {
                   "title": "A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions",
@@ -1622,7 +1646,7 @@
             {
               "title": "Reflections on RSE Roles & Pathways",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Charles Ferenbaugh",
               "room": "San Jose Ballroom Salon 5 & 6",
               "info": "",
               "plenary": false,
@@ -1674,7 +1698,7 @@
             {
               "title": "Building Infrastructure for Communities or Organizations",
               "type": "Talks",
-              "chair": "TBD",
+              "chair": "Tinashe Michael Tapera",
               "room": "Willow Glen Room",
               "info": "",
               "plenary": false,

@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 46 sessions, 84 talks (84 with published
+> in the Age of AI". 3 days, 47 sessions, 84 talks (84 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -82,14 +82,14 @@ Abstract:
 ### 10:30–11:30am — Panel
 
 - Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T11:30:00-07:00 (60 min)
-- Room: Market Street
+- Room: San Jose Ballroom Salon 3 & 4
 - Type: Student/Early Career
 - Concurrent with: RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 
-#### Careers in RSE
+#### Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories
 
 - Format: Student
-- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#careers-in-rse
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#careers-in-rse-experiences-from-research-software-engineers-across-industry-academia-and-laboratories
 
 Abstract:
 
@@ -97,20 +97,20 @@ Abstract:
 >
 > Panelists:
 >
-> * Blake Joyce
-> * Hasti Mehta
-> * Julian Pistorus
-> * Fernando Perez
-> * Alec Scott
-> * Suzanne Prentice
+> * Blake Joyce, BioTeam
+> * Hasti Mehta, University of Illinois Chicago AI Lab
+> * Julian Pistorus, Indiana University
+> * Fernando Perez, UC Berkeley
+> * Alec Scott, Lawrence Livermore National Laboratory
+> * Suzanne Prentice, Oak Ridge National Laboratory
 
 ### 10:30am–12pm — RAG Assistants
 
 - Time: 2026-10-19T10:30:00-07:00 to 2026-10-19T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
-- Concurrent with: Panel (10:30–11:30am, Market Street); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
+- Chair: Tinashe Michael Tapera
+- Concurrent with: Panel (10:30–11:30am, San Jose Ballroom Salon 3 & 4); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 
 #### AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research
 
@@ -178,7 +178,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Primus Chimdia Kabuo
-- Concurrent with: Panel (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Panel (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); AI Assisted Code Development (10:30am–12pm, Willow Glen Room)
 
 #### Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports
 
@@ -232,7 +232,7 @@ Abstract:
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Adam Rubens
-- Concurrent with: Panel (10:30–11:30am, Market Street); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Panel (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RAG Assistants (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Case Studies Demonstrating RSE Impacts Part I (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 
 #### Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON
 
@@ -293,7 +293,7 @@ Abstract:
 #### Designing for Trust in AI-Assisted Scientific Computing
 
 - Format: Talk
-- Presenters: Rajshree Deshmukh, Sarah Poon, Johanna Cohoon, Dan Gunter and Sheng Pang
+- Presenters: Rajshree Deshmukh, Sheng Pang, Tanushree Subramanian, Johanna Cohoon, Sarah Poon and Dan Gunter
 - Abstract page: https://us-rse.org/usrse26/program/talks/#designing-for-trust-in-ai-assisted-scientific-computing
 
 Abstract:
@@ -320,34 +320,12 @@ Abstract:
 
 > Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference.
 
-### 1:30–2:30pm — New Frontiers, New Voices
-
-- Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T14:30:00-07:00 (60 min)
-- Room: Market Street
-- Type: Student/Early Career
-- Concurrent with: RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
-
-#### Invited Talks
-
-- Format: Student
-- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#invited-talks
-
-Abstract:
-
-> 1:30pm-2pm
-> Topic: Token Management/On-Prem Agentic AI
-> Speaker: Julian Pistorus
->
-> 2-2:30pm
-> Topic: TBD
-> Speaker: TBD
-
 ### 1:30–3pm — RSE Team Operations
 
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: BoF
-- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+- Concurrent with: Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
 
 #### Navigating RSE Team Operations: Leadership, Sustainability, and Emerging Challenges
 
@@ -368,7 +346,7 @@ Abstract:
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: BoF
-- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+- Concurrent with: RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
 
 #### Building an Institutional RSE Community
 
@@ -385,7 +363,7 @@ Abstract:
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: BoF
-- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
+- Concurrent with: RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Threat Modeling for Research Software Systems (1:30–3pm, Willow Glen Room)
 
 #### Better Scientific Software Fellowship Community
 
@@ -402,7 +380,7 @@ Abstract:
 - Time: 2026-10-19T13:30:00-07:00 to 2026-10-19T15:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Workshop
-- Concurrent with: New Frontiers, New Voices (1:30–2:30pm, Market Street); RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: RSE Team Operations (1:30–3pm, San Jose Ballroom Salon 3 & 4); Institutional RSE Community (1:30–3pm, San Jose Ballroom Salon 1 & 2); Better Scientific Software Fellowship (1:30–3pm, San Jose Ballroom Salon 5 & 6)
 
 #### A Group Attempt at Threat Modeling for Research Software Systems
 
@@ -581,24 +559,26 @@ Abstract:
 - Time: 2026-10-19T15:30:00-07:00 to 2026-10-19T17:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Talks
-- Chair: TBD
+- Chair: Md Hasan Shahriar Simanto
 - Concurrent with: Interactive Computing and Reproducible Workflows (3:30–5pm, San Jose Ballroom Salon 1 & 2); Lessons from Training Users & RSEs (3:30–5pm, San Jose Ballroom Salon 5 & 6)
 
-#### Software Gardening Almanack: Measuring and Growing Sustainable Research Software Ecosystems
+#### Software Sustainability Toolkit: Measuring and Improving Sustainable Research Software at Scale
 
 - Format: Talk
 - Presenters: Aditi Gopalan, Dave Bunten, Adam Taylor, Susheel Varma, Gregory P. Way, and Jineta Banerjee
-- Abstract page: https://us-rse.org/usrse26/program/talks/#software-gardening-almanack-measuring-and-growing-sustainable-research-software-ecosystems
+- Abstract page: https://us-rse.org/usrse26/program/talks/#software-sustainability-toolkit-measuring-and-improving-sustainable-research-software-at-scale
 
 Abstract:
 
-> Modern computational biology depends on research software, yet many scientific tools remain difficult to reproduce, maintain, and reuse. In our previous Software Gardening Almanack (SGA) presentation, we introduced “Software Gardening” as a framework for improving research software sustainability through measurable engineering and governance practices. In this follow-up talk, we present major updates and new findings from ecosystem-scale analyses of more than 10,000 computational biology repositories spanning genomics, RNA-seq, structural biology, imaging, and single-cell analysis.
+> Modern computational biology depends on research software, yet the practices needed to keep scientific tools reusable, reproducible, and maintainable are applied inconsistently. Evaluating these practices at scale is difficult because software sustainability spans licensing, citation, documentation, testing, contribution pathways, and long-term maintenance.
 >
-> Our updated analyses show that measurable sustainability signals including licensing, citation metadata, dependency management, issue tracking, and contribution infrastructure are strongly associated with downstream community adoption and sustainability. We also demonstrate that sustainability practices vary substantially across scientific domains, with some repositories consistently exhibiting stronger sustainability patterns than rapidly evolving domains such as RNA-seq.
+> We present the Software Sustainability Toolkit (SST), a reproducible framework for measuring and improving research software sustainability. SST combines Software Gardening Almanack (SGA) repository metrics, JOSS-style criteria, software test checks, and AI-assisted sustainability reports that translate identified gaps into prioritized actions for maintainers. Together, these components provide complementary views of software readiness, reproducibility, governance, and maintainability.
 >
-> Beyond static scoring, we introduce the Almanack as a platform for software sustainability analysis, where repository-level assessments can be explored through recommendation-oriented workflows that help developers and maintainers identify actionable improvements in reproducibility, documentation, governance, and project health. We also revisit the concept of “software deadness,” arguing that inactive repositories are not uniformly failures: some remain stable, archival, and scientifically reusable, while others become effectively irreproducible due to missing metadata, unclear stewardship, or incomplete computational environments.
+> We applied SST to 10,942 computational biology repositories spanning nine scientific domains, including genomics, transcriptomics, imaging, single-cell analysis, and structural biology. Many basic sustainability practices remain uncommon. Among the signals most associated with GitHub adoption were explicit licensing, machine-readable citation metadata, and JOSS-style compliance. After accounting for repository age and activity, licensing and citability remained associated with greater adoption, while much of the association with overall JOSS compliance reflected project maturity.
 >
-> Together, these findings position software sustainability not as administrative overhead, but as measurable infrastructure that directly supports scientific reuse, reproducibility, and long-term impact.
+> We also examined sustainability as a dynamic process. Fork activity generally increased around the adoption of sustainability practices, but increases in adoption also preceded the addition of many practices, suggesting that community growth and sustainability often develop together. Shared infrastructure can further reduce maintainer burden by supplying common documentation, governance, and testing practices.
+>
+> Finally, SST connects measurement to intervention. AI-assisted tooling can convert assessment results into proposed repository changes for human review, allowing maintainers and contributors to act directly on sustainability findings. Together, these results position SST as infrastructure for measuring, studying, and improving research software sustainability, with SGA metrics, JOSS criteria, testing, and assisted remediation providing complementary paths toward more sustainable scientific software.
 
 #### Measuring What Matters in the Age of AI: The Research Software Metrics Landscape
 
@@ -654,7 +634,7 @@ Abstract:
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–10am — Plenary II, Sponsor Talks
+### 8:30–10am — Plenary II
 
 - Time: 2026-10-20T08:30:00-07:00 to 2026-10-20T10:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
@@ -668,13 +648,35 @@ Abstract:
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
+### 10:30–11:30am — New Frontiers, New Voices
+
+- Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T11:30:00-07:00 (60 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Student/Early Career
+- Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+
+#### Invited Talks
+
+- Format: Student
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#invited-talks
+
+Abstract:
+
+> 10:30am-11:00am
+> Topic: Token Management/On-Prem Agentic AI
+> Speaker: Julian Pistorus and Hasti Mehta
+>
+> 11:00am-11:30am
+> Topic: TBD
+> Speaker: Yaroslav Halchenko
+
 ### 10:30am–12pm — RSE Practices in the Age of AI Part I
 
 - Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
 - Chair: Luca Bonaldo
-- Concurrent with: The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 
 #### Research Software Engineering in the Age of Generative AI
 
@@ -732,7 +734,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Kate Arneson
-- Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
 
 #### Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows
 
@@ -800,7 +802,7 @@ Abstract:
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Vani Walvekar
-- Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 
 #### DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments
 
@@ -944,7 +946,7 @@ Abstract:
 - Time: 2026-10-20T15:30:00-07:00 to 2026-10-20T17:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
+- Chair: Tori Robinson
 - Concurrent with: Code Modernization Using AI (3:30–5pm, San Jose Ballroom Salon 5 & 6); Workflows (3:30–5pm, Willow Glen Room)
 
 #### Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language
@@ -977,16 +979,20 @@ Abstract:
 
 Abstract:
 
-> Developing and testing software for regulated patient data such as Medicare claims is structurally expensive. Tooling work must occur inside credentialed, audited computing enclaves, where libraries and tools require approval before they can even be tried. This makes pipeline development and debugging far slower and more expensive than on an ordinary open stack. Because derived code and data cannot leave the enclave, pipelines cannot easily be shared, compared, or reproduced by others. We hypothesize that escaping this bind does not require statistically realistic synthetic data. For the purpose of building and testing data tooling, what a pipeline exercises is file format, record structure, schema conformance, edge cases, and dataquality artefacts, not the true magnitude of any clinical or demographic distribution. Format and structural fidelity are therefore sufficient for this use, and statistical fidelity is not necessary.
+> Developing and testing software for regulated patient data such as Medicare claims is structurally expensive. Tooling work must occur inside credentialed, audited computing enclaves, where libraries and tools require approval before they can even be tried. This makes pipeline development and debugging far slower and more expensive than on an ordinary open stack. Because derived code and data cannot leave the enclave, pipelines cannot easily be shared, compared, or reproduced by others. We hypothesize that escaping this bind does not require statistically realistic synthetic data. For the purpose of building and testing data tooling, a pipeline exercises file formats, record structures, schema conformance, edge cases, and data-quality artefacts, rather than the true magnitudes of clinical or demographic distributions. Format and structural fidelity are therefore sufficient to support these engineering tasks; statistical fidelity is not a prerequisite. This claim does not eliminate final validation on real data, both for substantive analyses and for behaviour on unanticipated production edge cases.
 >
-> We make this case concrete with synthmed, an open (Apache2.0) Python package that generates a fully synthetic Medicare-like database conforming to ResDAC File Transfer Summary (FTS) layouts, together with a downloadable companion dataset (CCBY-4.0; calendar years 2011–2016). The generator emits fixedwidth files in the same layouts as real CMS extracts, so an unmodified open ingestion pipeline can process them with no glue code and then run unchanged against the restricted extract inside the enclave. Records are generated from AI-authored FTS specifications combined with public reference data and CMS DESynPUF synthetic Medicare files. An internal beneficiary table maintains identifier and demographic consistency across files and years and injects realistic data-quality artefacts to exercise error-handling and quality-control logic. No individual-level CMS ResDAC data or other real patient-level datasets are used, so the released files contain no PHI or PII.
+> We make this case concrete with synthmed, an open (Apache-2.0) Python package that generates a fully synthetic Medicare-like database conforming to Research Data Assistance Center (ResDAC) File Transfer
+> Summary (FTS) layouts, together with a downloadable companion dataset (Creative Commons Attribution 4.0, CC-BY-4.0; calendar years 2011-2016). The generator emits fixed-width files in the same layouts as real Centers for Medicare & Medicaid Services (CMS) extracts, so the unmodified open dorieh ingestion pipeline can process them with no glue code and then run unchanged against the restricted extract inside the enclave. This demonstrates the approach for one workflow; transfer to other ResDAC consumers remains to be confirmed. Records are generated from AI-authored FTS specifications combined with public reference data and the CMS Data Entrepreneurs' Synthetic Public Use File (DE-SynPUF). An internal beneficiary table keeps synthetic identifiers and demographics consistent across files and years and injects data-quality artefacts to exercise error-handling and quality-control logic. No individual-level CMS ResDAC data or other real patient-level datasets are used, so the released files contain no protected health information or personally identifiable information.
 >
-> The generator is bit-reproducible under a fixed seed and has been exercised end to end at 5 million synthetic beneficiaries through the ingestion pipeline. The artefacts are intended for education, methods development, and ETL or analysis pipeline testing in population-health research. As more pipeline code is itself authored by AI, an open, format-faithful substrate of this kind also lowers the cost of independently inspecting, profiling, and regression-testing AI-generated ingestion logic outside the enclave. Consistent with the argument above, they are explicitly not suitable, and not intended, for drawing substantive conclusions about real patients, providers, or health-care utilisation.
+> The generator is bit-reproducible under a fixed seed and has been run end to end with 5 million synthetic beneficiaries through the ingestion pipeline. An open quality-control run over that output
+> identified a shape mismatch in the synthetic date-of-birth error distribution. Without the open synthetic run, detecting this deficiency would have required an authorised real-data run; the finding led to a corrected generation model.
+>
+> The artefacts support education, methods development, and extract-transform-load (ETL) or analysis-pipeline testing in population-health research. As more pipeline code is authored by AI, an open, format-faithful substrate of this kind also lowers the cost of independently inspecting, profiling, and regression-testing AI-generated ingestion logic outside the enclave. The released data are neither suitable nor intended for drawing substantive conclusions about real patients, providers, or health-care utilisation.
 
 #### Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions
 
 - Format: Talk
-- Presenters: Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick and Addi Malviya-Thakur
+- Presenters: Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick, Randall Petras and Addi Malviya-Thakur
 - Abstract page: https://us-rse.org/usrse26/program/talks/#automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions
 
 Abstract:
@@ -1131,7 +1137,7 @@ Abstract:
 
 Abstract:
 
-> Speech is a powerful, well-replicated marker of mental and neurological health, with linguistic and acoustic features linked to depression, schizophrenia, and neurocognitive status across clinical populations and languages. Translating that evidence into technology that can accelerate the field depends on collecting naturalistic speech at scale, and the main obstacle has been the absence of tools that put recording in the hands of participants in their everyday environments. A recent review of 149 mental health apps found that only 8% were partially adaptable and none allowed researchers to add new content. This paper describes Fabla, an open-source voice-first ecological momentary assessment (EMA) platform built by an embedded research software engineering team at Emory University's Clinical and Translational Science Alliance. Fabla combines a JSON-protocol-driven Flutter frontend on iOS and Android, a researcher-facing dashboard built on Retool that lets investigators author study protocols, manage participants, and schedule notifications without writing code, and a HIPAA-eligible AWS backend operating in Emory's IRB-approved infrastructure. Over the past year, Fabla has supported 15 active studies spanning depression, substance use, meditation-based intervention, and social determinants of health collecting more than 30,000 minutes of voice diary audio. A preregistered validation study (n=87) found voice diaries produced more than twice the daily language volume of identical text diaries [1], with linguistic markers of depression detectable in voice but not text. We describe the engineering decisions that made adoption practical, reflect on what embedded RSE teams in clinical research can look like, and outline two architecturally supported directions for future work: an integrated speech analytics module and a conversational-agent layer for semi-structured elicitation.
+> Speech is a powerful, well-replicated marker of mental and neurological health, with linguistic and acoustic features linked to depression, schizophrenia, and neurocognitive status across clinical populations and languages. Translating that evidence into technology that can accelerate the field depends on collecting naturalistic speech at scale, and the main obstacle has been the absence of tools that put recording in the hands of participants in their everyday environments. A recent review of 149 mental health apps found that only 8% were partially adaptable and none allowed researchers to add new content. This paper describes Fabla, an open-source voice-first ecological momentary assessment (EMA) platform built by an embedded research software engineering team at Emory University's Georgia Clinical and Translational Science Alliance. Fabla combines a JSON-protocol-driven Flutter frontend on iOS and Android, a researcher-facing dashboard built on Retool that lets investigators manage participants and schedule notifications without writing code, and a HIPAA-eligible AWS backend operating in Emory's IRB-approved infrastructure. Over the past year, Fabla has supported 15 active studies spanning depression, substance use, meditation-based intervention, and social determinants of health, collecting more than 30,000 minutes of voice diary audio. A preregistered validation study (n=87) found voice diaries produced more than twice the daily language volume of identical text diaries [1], with linguistic markers of depression detectable in voice but not text. We describe the engineering decisions that made adoption practical, reflect on what embedded RSE teams in clinical research can look like, and outline the direction for future work: a management dashboard with integrated study health and speech analytics.
 
 ## Wednesday, October 21, 2026
 
@@ -1142,9 +1148,9 @@ Abstract:
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–10am — Plenary III, Sponsor Talks
+### 8:30–9:30am — Plenary III
 
-- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T10:00:00-07:00 (90 min)
+- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T09:30:00-07:00 (60 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Plenary
 - Plenary: yes
@@ -1153,6 +1159,14 @@ Abstract:
 About this session:
 
 > Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
+
+### 9:30–10am — Sponsor Talks
+
+- Time: 2026-10-21T09:30:00-07:00 to 2026-10-21T10:00:00-07:00 (30 min)
+- Room: San Jose Ballroom Salon 3 & 4
+- Type: Plenary
+- Plenary: yes
+- Concurrent with: nothing (the only session at this time)
 
 ### 10–10:30am — Morning Break (Sponsorship available)
 
@@ -1165,7 +1179,7 @@ About this session:
 - Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
+- Chair: Paula Lackie
 - Concurrent with: Software Quality (10:30am–12pm, San Jose Ballroom Salon 5 & 6); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
 
 #### Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE
@@ -1233,24 +1247,24 @@ Abstract:
 - Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
-- Chair: TBD
+- Chair: Jeff Carver
 - Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
 
 #### Developing a Handbook of best practices for research software sustainability at Princeton
 
 - Format: Talk
-- Presenters: Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Lance Parsons and David Luet
+- Presenters: Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Jonathan Hanke, Joshua Carmichael, Lance Parsons, and David Luet
 - Abstract page: https://us-rse.org/usrse26/program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton
 
 Abstract:
 
 > In the early 2010s, the Software Sustainability Institute defined sustainability as "software you use today will be available — and continue to be improved and supported — in the future" [1, 2]. Sustainable research software has enabled research that would otherwise be infeasible. The pursuit of sustainability continues, spanning efficiency, longevity over generations of research projects, and spread across research fields. In this context, the Princeton Research Software Engineering (RSE) group, as one of the first and largest centralized RSE groups in US institutions [3], has both the breadth of RSE experience and the team bandwidth to further advance sustainability.
 >
-> In the Princeton RSE group, we are developing a handbook of best practices for research software sustainability. As sustainability is inherently contingent [4], it is not possible to prescribe criteria for it. Instead, the Handbook enumerates characteristics of sustainable research software. Software with these characteristics substantially increases its chances of being sustainable. Sustainable research software has reliable tests as its technical foundation; they enable iterative cycles of refactoring and feature addition and also underpin confidence in AI-assisted and agentic development, yielding frequent releases that progressively improve maintainability, reproducibility, and other technical qualities. These technical characteristics are necessary but not sufficient. Long-term sustainable research software also has social and organizational characteristics, including citability, continuous funding, professional maintenance, and active communities.
+> In the Princeton RSE group, we are developing a handbook of best practices for research software sustainability. As sustainability is inherently contingent [4], it is not possible to prescribe criteria for it. Instead, the Handbook enumerates characteristics of sustainable research software. Software with these characteristics substantially increases its chances of being sustained. Sustainable research software has reliable tests as its technical foundation; they enable iterative cycles of refactoring and feature addition and also underpin confidence in AI-assisted and agentic development, yielding frequent releases that progressively improve maintainability, reproducibility, and other technical qualities. These technical characteristics are necessary but not sufficient. Long-term sustainable research software also has social and organizational characteristics, including citability, continuous funding, professional maintenance, and active communities.
 >
-> The Handbook collects best practices, based on our experience, that realize these characteristics, from basics to advanced topics such as how to turn unsustainable research code into a testable package. The Handbook facilitates communication with PIs and research project managers; the best practices describe what we do and how we identify and resolve software engineering issues within research projects.
+> The Handbook collects best practices, based on our experience, that realize these characteristics, from basics to advanced topics such as how to turn unsustainable research code into a testable package. The Handbook facilitates communication with principal investigators and research project managers; the best practices describe what we do and how we identify and resolve software engineering issues within research projects.
 >
-> In this talk, we'll present our approach to building the Handbook; discuss what distinguishes it from other best practices guides, for instance, its grounding in the operational practice of a centralized, multidisciplinary RSE group; review the practices at a high level; and suggest ways for others in the community to leverage the Handbook in their organizations. The Handbook will be publicly available under a Creative Commons license. The Handbook is not a static document that we publish and finish; we develop it as we develop sustainable software, with continuous updates as demanded, most frequently by the rapid evolution of AI tools and practices.
+> In this talk, we will present our approach to building the Handbook; discuss what distinguishes it from other best practices guides, for instance, its grounding in the operational practice of a centralized, multidisciplinary RSE group; review the practices at a high level; and suggest ways for others in the community to leverage the Handbook in their organizations. The Handbook will be publicly available under a Creative Commons license. The Handbook is not a static document that we publish and finish; we develop it as we develop sustainable software, with continuous updates as demanded, most frequently by the rapid evolution of AI tools and practices.
 
 #### We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI
 
@@ -1305,7 +1319,7 @@ Abstract:
 - Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Talks
-- Chair: TBD
+- Chair: Scott Michael
 - Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Software Quality (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 
 #### From Chaos to Schema: LLM-Powered Document Information Extraction
@@ -1394,7 +1408,7 @@ Abstract:
 - Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: TBD
+- Chair: Pengyin Shan
 - Concurrent with: Reflections on RSE Roles & Pathways (1:30–3pm, San Jose Ballroom Salon 5 & 6); Building Infrastructure for Communities or Organizations (1:30–3pm, Willow Glen Room)
 
 #### AI-Augmented Research Software Engineering: Risks, Challenges, and Practices
@@ -1407,11 +1421,11 @@ Abstract:
 
 > AI is reshaping research software engineering on two fronts: AI components are increasingly embedded inside research software and science gateways that Research Software Engineers (RSEs) deliver, while AI-assisted and agentic coding tools are changing how RSEs build that software in the first place. This is especially visible in gateway and cyberinfrastructure projects that connect user interfaces, scientific data, HPC systems, and external services. While these tools can accelerate development and architectural exploration, they also introduce new risks: non-deterministic outputs, overconfident reasoning, unsafe tool execution, hidden operational costs, and sustainability pressure from rapid tooling churn. This paper argues that AI-augmented research software engineering requires a shift from unconstrained AI use—whether AI assists development or runs inside the delivered software—to AI-constrained engineering. Through three project cases—SmartSearch, SciOn, and HydroAI—we examine practical strategies for managing AIaugmented complexity: measuring output variance, constraining generation through domain-specific specifications, and governing agentic tool use through human-in-the-loop checkpoints and operational guardrails. Based on these cases, we also propose a progressive training path for AI-augmented RSEs, moving from low-risk familiarization and reviewable implementation toward constrained generation, risk-gated agentic operation, and upstream architectural co-design. We further argue that sustaining engineering judgment under AI augmentation is ultimately a team-level concern, not only an individual one. We conclude that AI does not reduce the need for RSE expertise; instead, it shifts RSE work toward designing the boundaries, validation mechanisms, and sustainable environments in which AI systems can safely contribute to research software.
 
-#### A Generalized Methodology for Evaluating AI-Integrated Research Software: Lessons from a Smart Search Implementation for Cyber-Training
+#### A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFacCES Smart Search
 
 - Format: Paper
-- Presenters: Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol Song
-- Abstract page: https://us-rse.org/usrse26/program/papers/#a-generalized-methodology-for-evaluating-ai-integrated-research-software-lessons-from-a-smart-search-implementation-for-cyber-training
+- Presenters: Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol X. Song
+- Abstract page: https://us-rse.org/usrse26/program/papers/#a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfacces-smart-search
 
 Abstract:
 
@@ -1444,7 +1458,7 @@ Abstract:
 - Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
-- Chair: TBD
+- Chair: Charles Ferenbaugh
 - Concurrent with: RSE Practices in the Age of AI Part II (1:30–3pm, San Jose Ballroom Salon 1 & 2); Building Infrastructure for Communities or Organizations (1:30–3pm, Willow Glen Room)
 
 #### What They Don’t Tell You About the Data Science to RSE Transition
@@ -1518,7 +1532,7 @@ Abstract:
 - Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Talks
-- Chair: TBD
+- Chair: Tinashe Michael Tapera
 - Concurrent with: RSE Practices in the Age of AI Part II (1:30–3pm, San Jose Ballroom Salon 1 & 2); Reflections on RSE Roles & Pathways (1:30–3pm, San Jose Ballroom Salon 5 & 6)
 
 #### From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery

@@ -16,20 +16,20 @@ set_last_modified: true
   </div>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="careers-in-rse">
-        <span class="abstract__title">Careers in RSE</span>
+      <h2 class="abstract__heading" id="careers-in-rse-experiences-from-research-software-engineers-across-industry-academia-and-laboratories">
+        <span class="abstract__title">Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&amp;A. Designed with students and early-career RSEs in mind, the session is open to all.
 
 Panelists:
 
-* Blake Joyce  
-* Hasti Mehta  
-* Julian Pistorus  
-* Fernando Perez  
-* Alec Scott  
-* Suzanne Prentice{% endcapture %}{{ abstract_md | markdownify }}</div>
+* Blake Joyce, BioTeam  
+* Hasti Mehta, University of Illinois Chicago AI Lab  
+* Julian Pistorus, Indiana University  
+* Fernando Perez, UC Berkeley  
+* Alec Scott, Lawrence Livermore National Laboratory  
+* Suzanne Prentice, Oak Ridge National Laboratory{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
@@ -45,13 +45,13 @@ Panelists:
         <span class="abstract__title">Invited Talks</span>
       </h2>
     </summary>
-    <div class="abstract__body">{% capture abstract_md %}1:30pm-2pm  
+    <div class="abstract__body">{% capture abstract_md %}10:30am-11:00am  
 Topic: Token Management/On-Prem Agentic AI  
-Speaker: Julian Pistorus
+Speaker: Julian Pistorus and Hasti Mehta
 
-2-2:30pm  
+11:00am-11:30am  
 Topic: TBD  
-Speaker: TBD{% endcapture %}{{ abstract_md | markdownify }}</div>
+Speaker: Yaroslav Halchenko{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
 </div>
 
