@@ -124,23 +124,6 @@ This talk walks through ongoing CON projects through those five lenses — along
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="drinking-from-the-firehose-practical-strategies-for-research-software-engineers-to-stay-current-on-ai-tools-and-agents">
-        <span class="abstract__title">Drinking from the Firehose: Practical Strategies for Research Software Engineers to Stay Current on AI Tools and Agents</span>
-        <span class="abstract__people">Nick Ross and Tim Hannifan</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}The pace of change in artificial intelligence tooling has created a unique challenge for research software engineers (RSEs). New large language models, coding agents, retrieval-augmented generation frameworks, protocol standards such as the Model Context Protocol (MCP), and AI-assisted development environments appear on a near-weekly basis. Each promises to reshape how research software is written, tested, and maintained. RSEs serve as the connective tissue between domain researchers and production-quality software. Falling behind on these developments risks missing genuine productivity gains, while chasing every new release risks burnout and distraction from core work. The challenge is not a lack of information; it is an overwhelming surplus of it.
-
-In this talk, we share practical, low-overhead strategies that our team at the University of Chicago has adopted to stay informed about the rapidly evolving AI landscape without sacrificing focus on our primary research software responsibilities. We organize our approach around three pillars: providing incentives for experimentation, structured team knowledge-sharing, and hands-on evaluation.
-
-First, we discuss how we provide incentives for experimentation. Staying current with AI tools requires more than passive reading; it requires trying things out. We describe how we create dedicated time, space, and encouragement for team members to explore new tools without the pressure of immediate deliverables. This includes allocating time for exploratory work, recognizing experimentation as a valued activity rather than a distraction, and lowering the barrier for team members to spin up proofs of concept with emerging AI tools and agents.
-
-Second, we describe lightweight team rituals for knowledge-sharing: short, recurring sessions where team members present a tool, paper, or technique they have encountered. These sessions serve a dual purpose. They keep the whole team broadly aware of the landscape and they create a low-pressure venue for critical discussion about what is genuinely useful versus what is hype. Third, we outline a simple triage framework for hands-on evaluation. Not every promising tool warrants a deep dive, so we describe how we quickly categorize new AI tools into "watch," "try," and "adopt" tiers based on relevance to our current projects, maturity, community uptake, and integration effort. We share examples of tools that moved through this pipeline, including some that became part of our daily workflow and others that we set aside after brief experimentation.
-
-We conclude with reflections on what has worked, what has not, and what we plan to change. Our goal is to offer fellow RSEs a replicable, low-effort playbook for staying current in a domain that shows no signs of slowing down. We hope this talk sparks a broader conversation within the US-RSE community about how we collectively manage the challenge of continuous learning in an era of rapid technological change.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development">
         <span class="abstract__title">Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development</span>
         <span class="abstract__people">Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet</span>
