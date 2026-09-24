@@ -353,19 +353,6 @@ In this talk, we discuss opportunities for AI tooling in science and engineering
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="coding-with-llm-agents-the-research-software-engineer-as-the-quality-gate">
-        <span class="abstract__title">Coding with LLM Agents: The Research Software Engineer as the Quality Gate</span>
-        <span class="abstract__people">Nicole Tebaldi and Kyle Crocker</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Recent advances in large language models (LLMs) have accelerated their use in many aspects of the scientific research process. Lu et al. (2026) demonstrated the end-to-end automation of the scientific process, producing a paper that passed peer review for a conference workshop. The benefits of full automation center on speed and scale with quality improving alongside better models and more computation. However, the approach is limited in areas of scientific innovation and implementation, methodological rigor, and hallucinated citations. A parallel can be drawn to the use of LLM agents in research codebases and the role of the Research Software Engineer (RSE).
-
-As research software engineering turns toward AI, the RSE faces similar benefits and limitations. AI can understand large codebases quickly, implement planned architecture rapidly, and generate test scaffolding to support the evaluation of code modifications. But it is easy for AI to produce incorrect implementations, lack rigor in developed solutions, and introduce subtle bugs through hallucinations. O'Brien et al. (2025) found that scientists' most common strategy for verifying LLM-generated code is running it and visually inspecting the output, yet user logs revealed unintended behaviors with potential scientific impact that went undetected. This gap between perceived and actual code correctness underscores the need for a more rigorous review process. The RSE can serve as that quality gate bringing experience, creative thinking, and big-picture analysis to ensure scientific results are correct.
-
-This talk presents a practitioner's account of integrating LLM agents into the development cycle, creating an audit trail for results analysis with the RSE as the quality gate. We document the full arc: from initial exploration of an unfamiliar scientific codebase, to iterating over a plan that captures full architectural goals, to development cycles with human review and evaluation. Along the way, we encountered significant hurdles around agent memory loss and risks to scientific correctness. To address these, we developed an approach built on modular, reproducible code design using issue tracking for context management and subagents to carry out focused development work. We report concrete outcomes: where agents excelled (code exploration, test generation, large-scale refactoring) and where they fell short (staying on task, commit granularity, and workflow compliance). We conclude with recommendations for RSEs adopting AI agents, positioning the RSE as an essential layer of human judgment for maintaining scientific correctness.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows">
         <span class="abstract__title">Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows</span>
         <span class="abstract__people">Md Hasan Shahriar Simanto</span>

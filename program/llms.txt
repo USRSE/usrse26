@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 47 sessions, 83 talks (83 with published
+> in the Age of AI". 3 days, 47 sessions, 82 talks (82 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -314,7 +314,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Talks
 - Chair: Luca Bonaldo
 - Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
-- Talks (4):
+- Talks (3):
   - "Research Software Engineering in the Age of Generative AI" (Talk)
     Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
     https://us-rse.org/usrse26/program/talks/#research-software-engineering-in-the-age-of-generative-ai
@@ -324,9 +324,6 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Ten Projects, Two Teams, One Question: How Does AI Impact Development?" (Talk)
     Presenters: Dave Brownell
     https://us-rse.org/usrse26/program/talks/#ten-projects-two-teams-one-question-how-does-ai-impact-development
-  - "Coding with LLM Agents: The Research Software Engineer as the Quality Gate" (Talk)
-    Presenters: Nicole Tebaldi and Kyle Crocker
-    https://us-rse.org/usrse26/program/talks/#coding-with-llm-agents-the-research-software-engineer-as-the-quality-gate
 
 ### 10:30am–12pm — The Human Factor
 
