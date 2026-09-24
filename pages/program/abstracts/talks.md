@@ -660,29 +660,6 @@ We will conclude our talk by discussing potential applications of these strategi
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="generative-ai-for-research-data-processing-lessons-learnt-from-three-use-cases">
-        <span class="abstract__title">Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases</span>
-        <span class="abstract__people">Modhurita Mitra, Martine de Vos, Nicola Cortinovis and Dawa Ometto</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Generative AI has generated enormous interest since ChatGPT was launched in 2022. However, adoption of this new technology in research has been limited due to concerns about the accuracy and consistency of the outputs produced by generative AI.
-
-In an exploratory study on the application of this new technology in research data processing, we identified tasks for which rule-based or traditional machine learning approaches were difficult to apply, and then performed these tasks using generative AI. We demonstrate the feasibility of using the generative AI in three research engineering projects involving complex data processing tasks:
-
-1) Information extraction: Extraction of plant species names from historical seedlists (catalogues of seeds) published by botanical gardens.
-
-2) Natural language understanding: Extraction of certain data points (name of drug, name of health indication, relative effectiveness, cost-effectiveness, etc.) from documents published by different Health Technology Assessment organisations in the EU.
-
-3) Text classification: Assignment of industry codes to projects on the crowdfunding website Kickstarter.
-
-We present the lessons learnt from this study:
-
-1. How to assess if generative AI is a suitable tool for a particular use case, and
-
-2. Strategies for enhancing the accuracy and consistency of the outputs produced by generative AI.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models">
         <span class="abstract__title">Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models</span>
         <span class="abstract__people">Nicholas Reinicke and Robert Fitzgerald</span>

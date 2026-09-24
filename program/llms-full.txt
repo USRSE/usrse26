@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 47 sessions, 84 talks (84 with published
+> in the Age of AI". 3 days, 47 sessions, 83 talks (83 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -1337,30 +1337,6 @@ Abstract:
 > We will begin with pre-LLM approaches (Camelot, PDFPlumber, and PyMuPDF), examining their practical limitations when applied to irregularly structured documents. We will then explore how LLMs can be combined with deterministic methods, existing tools, and OCR to build more robust extraction pipelines. We will discuss evaluation strategies for assessing generalizability, accuracy against ground truth, failure modes, and the time and cost of both development and operation.
 >
 > We will conclude our talk by discussing potential applications of these strategies to academic research and beyond.
-
-#### Generative AI for Research Data Processing: Lessons Learnt From Three Use Cases
-
-- Format: Talk
-- Presenters: Modhurita Mitra, Martine de Vos, Nicola Cortinovis and Dawa Ometto
-- Abstract page: https://us-rse.org/usrse26/program/talks/#generative-ai-for-research-data-processing-lessons-learnt-from-three-use-cases
-
-Abstract:
-
-> Generative AI has generated enormous interest since ChatGPT was launched in 2022. However, adoption of this new technology in research has been limited due to concerns about the accuracy and consistency of the outputs produced by generative AI.
->
-> In an exploratory study on the application of this new technology in research data processing, we identified tasks for which rule-based or traditional machine learning approaches were difficult to apply, and then performed these tasks using generative AI. We demonstrate the feasibility of using the generative AI in three research engineering projects involving complex data processing tasks:
->
-> 1) Information extraction: Extraction of plant species names from historical seedlists (catalogues of seeds) published by botanical gardens.
->
-> 2) Natural language understanding: Extraction of certain data points (name of drug, name of health indication, relative effectiveness, cost-effectiveness, etc.) from documents published by different Health Technology Assessment organisations in the EU.
->
-> 3) Text classification: Assignment of industry codes to projects on the crowdfunding website Kickstarter.
->
-> We present the lessons learnt from this study:
->
-> 1. How to assess if generative AI is a suitable tool for a particular use case, and
->
-> 2. Strategies for enhancing the accuracy and consistency of the outputs produced by generative AI.
 
 #### Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models
 
