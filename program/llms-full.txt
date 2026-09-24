@@ -35,6 +35,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - https://us-rse.org/usrse26/program/notebooks/ — Notebooks — abstracts
 - https://us-rse.org/usrse26/program/papers/ — Papers — abstracts
 - https://us-rse.org/usrse26/program/posters/ — Posters — abstracts
+- https://us-rse.org/usrse26/program/student-early-career-program/ — Student & Early Career — abstracts
 - https://us-rse.org/usrse26/program/talks/ — Talks — abstracts
 - https://us-rse.org/usrse26/program/workshops/ — Workshops — abstracts
 - https://us-rse.org/usrse26/attend/ — Attending: overview
@@ -88,6 +89,7 @@ Abstract:
 #### Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories
 
 - Format: Student
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#careers-in-rse-experiences-from-research-software-engineers-across-industry-academia-and-laboratories
 
 Abstract:
 
@@ -312,6 +314,7 @@ Abstract:
 #### USRSE'26 Mentor/Mentee Lunch
 
 - Format: Student
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#usrse-26-mentor-mentee-lunch
 
 Abstract:
 
@@ -655,6 +658,7 @@ Abstract:
 #### Invited Talks
 
 - Format: Student
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#invited-talks
 
 Abstract:
 

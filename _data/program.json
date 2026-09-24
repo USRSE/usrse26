@@ -88,7 +88,8 @@
                   "title": "Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories",
                   "speakers": "",
                   "format": "Student",
-                  "infoMd": "This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&A. Designed with students and early-career RSEs in mind, the session is open to all.\n\nPanelists:\n\n* Blake Joyce, BioTeam\n* Hasti Mehta, University of Illinois Chicago AI Lab\n* Julian Pistorus, Indiana University\n* Fernando Perez, UC Berkeley\n* Alec Scott, Lawrence Livermore National Laboratory\n* Suzanne Prentice, Oak Ridge National Laboratory"
+                  "infoMd": "This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&A. Designed with students and early-career RSEs in mind, the session is open to all.\n\nPanelists:\n\n* Blake Joyce, BioTeam\n* Hasti Mehta, University of Illinois Chicago AI Lab\n* Julian Pistorus, Indiana University\n* Fernando Perez, UC Berkeley\n* Alec Scott, Lawrence Livermore National Laboratory\n* Suzanne Prentice, Oak Ridge National Laboratory",
+                  "href": "program/student-early-career-program/#careers-in-rse-experiences-from-research-software-engineers-across-industry-academia-and-laboratories"
                 }
               ]
             }
@@ -315,7 +316,8 @@
                   "title": "USRSE'26 Mentor/Mentee Lunch",
                   "speakers": "",
                   "format": "Student",
-                  "infoMd": "Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference."
+                  "infoMd": "Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference.",
+                  "href": "program/student-early-career-program/#usrse-26-mentor-mentee-lunch"
                 }
               ]
             }
@@ -740,7 +742,8 @@
                   "title": "Invited Talks",
                   "speakers": "",
                   "format": "Student",
-                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta\n\n11:00am-11:30am\nTopic: TBD\nSpeaker: Yaroslav Halchenko"
+                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta\n\n11:00am-11:30am\nTopic: TBD\nSpeaker: Yaroslav Halchenko",
+                  "href": "program/student-early-career-program/#invited-talks"
                 }
               ]
             }

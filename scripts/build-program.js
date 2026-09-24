@@ -179,6 +179,7 @@ const FORMATS = {
   'plenary': { label: 'Plenary', pageTitle: 'Plenaries', permalink: 'program/plenaries/', slug: 'plenaries' },
   'poster': { label: 'Poster', pageTitle: 'Posters', permalink: 'program/posters/', slug: 'posters', tab: 'Posters' },
   'random access microtalk': { label: 'RAM', pageTitle: 'Random Access Microtalks', permalink: 'program/rams/', slug: 'rams' },
+  'student': { label: '', pageTitle: 'Student & Early Career', permalink: 'program/student-early-career-program/', slug: 'student-program' },
   'talk': { label: 'Talk', pageTitle: 'Talks', permalink: 'program/talks/', slug: 'talks' },
   'workshop': { label: '', pageTitle: 'Workshops', permalink: 'program/workshops/', slug: 'workshops' },
   'other': { label: null, pageTitle: null, permalink: null, slug: null },
@@ -658,10 +659,19 @@ function esc(s) {
 /** Escape text bound for a Liquid {% capture %} block: HTML-escape plus
  * neutralize "{" so sheet content can never run Liquid tags or filters.
  * kramdown decodes the entities back to literal text when it renders.
+ *
+ * A lone newline also becomes a Markdown hard break (two trailing spaces).
+ * Markdown folds one into a space by default, so an agenda or a numbered
+ * list typed into a cell with Alt+Enter rendered as a run-on line. Blank-line
+ * paragraph breaks are left alone, so lists, tables and multi-paragraph
+ * abstracts keep working. The cost: prose pasted in already wrapped at a
+ * fixed width keeps those breaks and stops reflowing, so such a cell has to
+ * be unwrapped in the sheet.
  * @param {string} s */
 function escLiquid(s) {
   return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/>/g, '&gt;')
-    .replace(/\{/g, '&#123;');
+    .replace(/\{/g, '&#123;')
+    .replace(/(\S)[ \t]*\r?\n(?![ \t]*\r?\n)/g, '$1  \n');
 }
 
 function renderSession(s, pad) {
