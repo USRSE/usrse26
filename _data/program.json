@@ -1299,34 +1299,16 @@
         },
         {
           "start": "8:30am",
-          "end": "9:30am",
-          "startISO": "2026-10-21T08:30:00-07:00",
-          "endISO": "2026-10-21T09:30:00-07:00",
-          "break": false,
-          "sessions": [
-            {
-              "title": "Plenary III",
-              "type": "Plenary",
-              "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards",
-              "plenary": true,
-              "muted": false,
-              "talks": []
-            }
-          ]
-        },
-        {
-          "start": "9:30am",
           "end": "10am",
-          "startISO": "2026-10-21T09:30:00-07:00",
+          "startISO": "2026-10-21T08:30:00-07:00",
           "endISO": "2026-10-21T10:00:00-07:00",
           "break": false,
           "sessions": [
             {
-              "title": "Sponsor Talks",
+              "title": "Plenary III & Sponsor Talks",
               "type": "Plenary",
               "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "",
+              "info": "Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards",
               "plenary": true,
               "muted": false,
               "talks": []

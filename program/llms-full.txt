@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 47 sessions, 81 talks (81 with published
+> in the Age of AI". 3 days, 46 sessions, 81 talks (81 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -1132,9 +1132,9 @@ Abstract:
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–9:30am — Plenary III
+### 8:30–10am — Plenary III & Sponsor Talks
 
-- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T09:30:00-07:00 (60 min)
+- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T10:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Plenary
 - Plenary: yes
@@ -1143,14 +1143,6 @@ Abstract:
 About this session:
 
 > Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
-
-### 9:30–10am — Sponsor Talks
-
-- Time: 2026-10-21T09:30:00-07:00 to 2026-10-21T10:00:00-07:00 (30 min)
-- Room: San Jose Ballroom Salon 3 & 4
-- Type: Plenary
-- Plenary: yes
-- Concurrent with: nothing (the only session at this time)
 
 ### 10–10:30am — Morning Break (Sponsorship available)
 
