@@ -39,7 +39,7 @@ standard:
     founding_member: true
     tier: "Standard"
   - name: "Research Technologies - Indiana University"
-    url: https://uits.iu.edu/about/org-structure/research-technologies/
+    url: https://uits.iu.edu/about/org-structure/
     figure: logo-uits-indiana.png
     acronym: UITS
     date_joined: 2024-11-07
@@ -157,7 +157,7 @@ standard:
     founding_member: true
     tier: "Standard"
   - name: "Research Technologies - Indiana University"
-    url: https://uits.iu.edu/about/org-structure/research-technologies/
+    url: https://uits.iu.edu/about/org-structure/
     figure: logo-uits-indiana.png
     acronym: UITS
     date_joined: 2024-11-07
