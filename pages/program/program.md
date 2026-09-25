@@ -21,6 +21,8 @@ All times are US Pacific (PDT).
 
 {% include notification.html status='is-warning' message='**NOTE:** The program is not final and is subject to change.' %}
 
+{% include notification.html status='is-warning' message='**NOTE:** Sessions with 3 talks end earlier.' %}
+
 ## Planning your schedule with an AI assistant
 
 With four parallel tracks, picking between sessions takes a while. The whole
