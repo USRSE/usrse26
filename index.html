@@ -78,6 +78,50 @@ cards: home
   </div>
 </section>
 
+<!-- <div class="sectionheader">
+  <center>
+    <h2 class="sectionheader"> US-RSE Organizational Founding Members </h2>
+  </center>
+</div> -->
+<div class="sectionheader" style="
+    background-color: #C16531;
+    border-radius: 14px;
+    padding: 12px 20px;
+    text-align: center;
+    margin: 2rem 0 1rem 0;
+  ">
+  <h2 style="margin: 0; color: white;">US-RSE Organizational Founding Members</h2>
+</div>
+<div>
+  <center>
+
+    {% if site.data.org-members.premier %}
+    <br>
+    <div style="width: 60%">
+      <h3>Premier Level</h3>
+
+      {% assign org_tier = site.data.org-members.premier | sort: "date_joined" %}
+      {% include org-card-group.html %}
+      {% endif %}
+
+
+      {% if site.data.org-members.standard %}
+      <h3>Standard Level</h3>
+
+      {% assign org_tier = site.data.org-members.standard | sort: "date_joined" %}
+      {% include org-card-group.html %}
+      {% endif %}
+
+
+      {% if site.data.org-members.basic %}
+      <h3>Basic Level</h3>
+
+      {% assign org_tier = site.data.org-members.basic | sort: "date_joined" %}
+      {% include org-card-group.html %}
+      {% endif %}
+    </div>
+  </center>
+</div>
 
 <h1 style="text-align: center;">Conference News &amp; Updates</h1>
 <hr>
