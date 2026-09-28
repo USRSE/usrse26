@@ -384,23 +384,6 @@ As AI capabilities become increasingly democratized, RSEs have an opportunity to
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="advancing-the-data-assimilation-research-testbed-dart-as-an-early-career-software-engineer">
-        <span class="abstract__title">Advancing The Data Assimilation Research Testbed (DART) as an Early-Career Software Engineer</span>
-        <span class="abstract__people">Marlena Smith</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}The Data Assimilation Research Testbed, or DART, is an open-source, freely available software facility for ensemble data assimilation, supporting a vast and diverse community of users for over 25 years. Ensemble data assimilation is a statistical method that is used to combine information from numerical model predictions with measurements of the Earth system to enhance the value of both. Applications include ensemble forecasting, generating initial conditions for forecasts and predictability studies, diagnosing model error and bias, and assessing the value of existing and planned observations.
-
-DART includes interfaces to many models and observations across all Earth system domains. DART also allows for the use of a variety of assimilation algorithms, including novel methods developed by the DAReS team that are especially effective for pollutants, sea ice concentration, and soil moisture. Our modular software design and generalized model interface routines facilitates the addition of new models, observations, and assimilation algorithms and allows for users to easily switch between the available options.
-
-Focusing on accessibility, our software is carefully engineered to run efficiently on systems ranging from laptops to top performing supercomputers. DART utilizes the power of HPC through distributed memory and parallel computation with the Message Passing Interface (MPI) to be able to run with complex, high resolution models and large numbers of observations and ensemble members. This further extends the versatility of DART by allowing users to work on more computationally demanding projects.
-
-For these reasons, DART is able to support a diverse, long-standing, and continuously growing user community. This inherent diversity in DART has also enabled me to contribute to a broad spectrum of projects, each requiring unique skills and technologies.This poster will detail the versatility of DART and its functionalities, showing how this has shaped my early-career work and development as one of two software engineers on the team. Working with DART has allowed me to engage with a wide variety of systems, environments, programming languages, assimilation algorithms, models, observations, background science, and collaborators.
-
-The poster will also describe my varied technical contributions and specifically highlight a few of my larger projects that showcase the interdisciplinary and multifaceted nature of my role in DAReS. Examples include collaborative projects with the NASA Goddard Space Flight Center and the NSF NCAR High Altitude Observatory (HAO), facilitating the use of DART data assimilation with space weather models on NASA’s Pleiades Supercomputer and the co-development of pyDARTdiags, a Python package for manipulating observation sequences and calculating observation-space diagnostics for DART.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="is-the-datasquad-model-for-you">
         <span class="abstract__title">Is the DataSquad Model For You?</span>
         <span class="abstract__people">Paula Lackie</span>
