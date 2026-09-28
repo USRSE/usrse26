@@ -294,7 +294,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
-### 10:30–11:30am — New Frontiers, New Voices
+### 10:30–11:30am — Making AI Sustainable: Token Economics and Reproducible Science
 
 - Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T11:30:00-07:00 (60 min)
 - Room: San Jose Ballroom Salon 3 & 4
@@ -310,7 +310,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
 - Chair: Luca Bonaldo
-- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Making AI Sustainable: Token Economics and Reproducible Science (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Research Software Engineering in the Age of Generative AI" (Talk)
     Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
@@ -331,7 +331,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Kate Arneson
-- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Making AI Sustainable: Token Economics and Reproducible Science (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows" (Talk)
     Presenters: Md Hasan Shahriar Simanto
@@ -352,7 +352,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Vani Walvekar
-- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Making AI Sustainable: Token Economics and Reproducible Science (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 - Talks (4):
   - "DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments" (Paper)
     Presenters: Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel
