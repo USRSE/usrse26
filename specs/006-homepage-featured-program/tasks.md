@@ -25,7 +25,7 @@ of this work.
   (so later tasks can tell new ones apart); `grep -c 'class="featured' _site/index.html`
   → `0`. No files change; nothing to commit.
 
-- [ ] 2. **Include skeleton: selection, wrapper, empty case** (Story 2; §1, §2, §4)
+- [x] 2. **Include skeleton: selection, wrapper, empty case** (Story 2; §1, §2, §4)
   — Expected after this task: `grep -c 'class="featured__item"'` → `1`;
   `grep -o 'id="featured-[a-z-]*"'` → `featured-keynote`; the heading text
   `Keynote Speaker` appears between the cards `</section>` and the
