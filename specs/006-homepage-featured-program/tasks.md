@@ -83,7 +83,7 @@ of this work.
   In `index.html`, directly after the keynote call, add
   `{% include featured-program.html format="Student" title="Student & Early Career Program" %}`.
 
-- [ ] 5. **`limit` parameter** (Story 2; §1, §2) — Expected: with a temporary
+- [x] 5. **`limit` parameter** (Story 2; §1, §2) — Expected: with a temporary
   `limit=1` on the Student call, count → `2` and only `Careers in RSE` appears
   in the student section; with `limit=0`, count → `4`. Revert to no `limit`.
   No code change is expected if task 2 implemented `fp_limit` per §2; fix the
