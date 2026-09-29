@@ -94,10 +94,7 @@ nothing matches. Both are solved by rendering entries into a buffer first:
   {% if talk.image %}<img class="featured__portrait"
        src="{{ talk.image | relative_url }}" alt="{{ talk.title | escape }}" loading="lazy">{% endif %}
   <div class="featured__body">
-    <h3 class="featured__title">
-      {% if talk.href %}<a href="{{ talk.href | relative_url }}">{{ talk.title | escape }}</a>
-      {% else %}{{ talk.title | escape }}{% endif %}
-    </h3>
+    <h3 class="featured__title">{{ talk.title | escape }}</h3>
     {% if talk.speakers and talk.speakers != "" %}<p class="featured__speakers">{{ talk.speakers | escape }}</p>{% endif %}
     <p class="featured__when">
       <time datetime="{{ slot.startISO }}">{{ day.weekday }}, {{ day.label }} · {{ slot.start }}–{{ slot.end }}</time>
@@ -158,7 +155,7 @@ abstract pages.
   align-items: flex-start`, separated by a `#dbdbdb` hairline.
   `.featured__portrait` is `width: 12rem; max-width: 35%; height: auto;
   border-radius: 4px; flex: none`.
-- **Type.** Title in `--us-rse-main` purple with the fallback `#741755`;
+- **Type.** Title keeps the theme `h3` typography, as on the sponsor tier headings;
   `.featured__when` in `#757575` (the WCAG-AA muted grey `abstracts.css`
   settled on).
 - **Mobile.** `@media (max-width: 40rem)`: `.featured__item` becomes
@@ -195,8 +192,8 @@ temporarily calling the include with `format="Nonexistent"` and confirming no
 | 1 — no image → no `<img>` | §3 `{% if talk.image %}` |
 | 1 — title, speakers, day, time, room | §3 |
 | 1 — 40-word plain-text excerpt | §3 excerpt filter chain |
-| 1 — title + "Read more" link to `href` | §3 |
-| 1 — no `href` → plain title, no link | §3 |
+| 1 — "Read more" link to `href` | §3 |
+| 1 — plain-text title; "Read more" only with `href` | §3 |
 | 1 — chronological order | §2 traversal |
 | 2 — `format` match, case/whitespace-insensitive | §1, §2 `strip \| downcase` |
 | 2 — optional `title` heading | §4 |

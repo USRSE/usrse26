@@ -22,17 +22,10 @@
       <img class="featured__portrait" src="{{ talk.image | relative_url }}" alt="{{ talk.title | escape }}" loading="lazy">
       {%- endif %}
       <div class="featured__body">
-        <h3 class="featured__title">
-          {%- if talk.href and talk.href != "" -%}
-          <a href="{{ talk.href | relative_url }}">{{ talk.title | escape }}</a>
-          {%- else -%}
-          {{ talk.title | escape }}
-          {%- endif -%}
-        </h3>
+        <h3 class="featured__title">{{ talk.title | escape }}</h3>
         {%- if talk.speakers and talk.speakers != "" %}
         <p class="featured__speakers">{{ talk.speakers | escape }}</p>
         {%- endif %}
-        <p class="featured__when"><time datetime="{{ slot.startISO }}">{{ day.weekday }}, {{ day.label }} · {{ slot.start }}–{{ slot.end }}</time> · {{ session.room | escape }}</p>
         {%- if talk.infoMd and talk.infoMd != "" %}
         <p class="featured__excerpt">{{ talk.infoMd | markdownify | strip_html | normalize_whitespace | truncatewords: 40 }}</p>
         {%- endif %}

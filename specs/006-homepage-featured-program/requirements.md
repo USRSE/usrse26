@@ -54,10 +54,11 @@ without digging through the program menu.
 - WHEN a featured event has non-empty `infoMd`, THE system SHALL show a
   plain-text excerpt of it — Markdown rendered, HTML stripped, truncated to a
   word count of 40 — never the raw Markdown.
-- WHEN a featured event has an `href`, THE system SHALL link its title and a
-  "Read more" link to `href` through `relative_url`.
-- WHEN a featured event has no `href`, THE system SHALL render its title as
-  plain text and omit the "Read more" link.
+- WHEN a featured event is rendered, THE system SHALL render its title as an
+  unlinked `<h3>` styled like the sponsor tier headings.
+- WHEN a featured event has an `href`, THE system SHALL render a "Read more"
+  link to `href` through `relative_url`; WHEN it has none, THE system SHALL
+  omit the "Read more" link.
 - WHEN several events match, THE system SHALL list them in `program.json`
   traversal order (day → slot → session → event), i.e. chronological.
 

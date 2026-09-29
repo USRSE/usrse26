@@ -66,15 +66,10 @@
   min-width: 0;
 }
 
+/* Theme h3 typography, as on the sponsor tier headings; only spacing is set. */
 .content .featured .featured__title,
 .featured .featured__title {
   margin: 0 0 0.35rem;
-  font-size: 1.25rem;
-  color: var(--featured-accent);
-}
-
-.featured .featured__title a {
-  color: inherit;
 }
 
 .content .featured .featured__speakers,
