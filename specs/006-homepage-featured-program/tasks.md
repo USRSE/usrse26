@@ -89,7 +89,7 @@ of this work.
   No code change is expected if task 2 implemented `fp_limit` per §2; fix the
   include here if either probe fails.
 
-- [ ] 6. **Stylesheet** (Story 4; §3, §5) — Expected: `_site/assets/css/featured-program.css`
+- [x] 6. **Stylesheet** (Story 4; §3, §5) — Expected: `_site/assets/css/featured-program.css`
   exists; `_site/index.html` links it once with the `?v=` cache-buster, before
   the first `class="featured"`; `grep -c 'class="featured[^"]*"[^>]*style='`
   → `0` (no inline styles in the featured markup).
