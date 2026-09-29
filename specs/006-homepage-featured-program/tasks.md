@@ -20,7 +20,7 @@ of this work.
 
 ---
 
-- [ ] 1. **Baseline** (Story 3, Story 4) — Run `bundle exec jekyll build` on
+- [x] 1. **Baseline** (Story 3, Story 4) — Run `bundle exec jekyll build` on
   the untouched tree. Record: exit status 0; any warnings it already prints
   (so later tasks can tell new ones apart); `grep -c 'class="featured' _site/index.html`
   → `0`. No files change; nothing to commit.
