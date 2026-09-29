@@ -71,7 +71,7 @@ of this work.
   the escaped title with no `<a>` and that "Read more" shares the same
   `talk.href` guard. The no-`image` branch is exercised by task 4.
 
-- [ ] 4. **Student & Early Career section** (Story 2b; §1) — Expected after
+- [x] 4. **Student & Early Career section** (Story 2b; §1) — Expected after
   this task: `featured__item` count → `4`; ids `featured-keynote` then
   `featured-student`, in that order, both before `Conference Sponsors`; the
   student section contains `Careers in RSE`, `USRSE&#39;26 Mentor/Mentee Lunch`

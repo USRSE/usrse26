@@ -103,16 +103,18 @@ nothing matches. Both are solved by rendering entries into a buffer first:
       <time datetime="{{ slot.startISO }}">{{ day.weekday }}, {{ day.label }} · {{ slot.start }}–{{ slot.end }}</time>
       · {{ session.room | escape }}
     </p>
-    {% if talk.infoMd and talk.infoMd != "" %}<p class="featured__excerpt">{{ talk.infoMd | markdownify | strip_html | truncatewords: 40 }}</p>{% endif %}
+    {% if talk.infoMd and talk.infoMd != "" %}<p class="featured__excerpt">{{ talk.infoMd | markdownify | strip_html | normalize_whitespace | truncatewords: 40 }}</p>{% endif %}
     {% if talk.href %}<a class="featured__more" href="{{ talk.href | relative_url }}">Read more<span class="visually-hidden"> about {{ talk.title | escape }}</span></a>{% endif %}
   </div>
 </li>
 ```
 
 - **Excerpt.** `markdownify` turns `[Fernando Pérez](https://…)` into a link;
-  `strip_html` drops the tags and keeps the text; `truncatewords: 40` splits on
-  whitespace, so embedded newlines (the "Invited Talks" `infoMd` has several)
-  collapse to single spaces, and appends `...`. The existing precedent is
+  `strip_html` drops the tags and keeps the text; `normalize_whitespace`
+  collapses embedded newlines (the "Invited Talks" `infoMd` has several) to
+  single spaces; `truncatewords: 40` caps the length and appends `...`.
+  (`truncatewords` alone only rejoins words when it actually truncates, so a
+  short multi-line abstract would otherwise keep its newlines.) The existing precedent is
   `faq-card.html:7` (`markdownify | strip_html | truncate`).
 - **Portrait `alt`.** The event title. For keynotes that is the speaker's name
   ("Fernando Pérez"), which is the accurate description.
