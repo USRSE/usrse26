@@ -1,6 +1,6 @@
 # Requirements — homepage featured program
 
-Status: approved
+Status: done
 
 ## Summary
 
