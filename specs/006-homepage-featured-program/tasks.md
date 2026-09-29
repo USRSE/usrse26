@@ -107,7 +107,7 @@ of this work.
   portrait stacks above the text and the page has no horizontal scroll; the
   two orange heading bands match the sponsor band.
 
-- [ ] 7. **Scope check** (Story 3) — Expected: `git diff --stat main` lists
+- [x] 7. **Scope check** (Story 3) — Expected: `git diff --stat main` lists
   exactly `_includes/featured-program.html` (new),
   `assets/css/featured-program.css` (new), and `index.html`; nothing under
   `scripts/`, `_data/`, or `pages/program/abstracts/`. Final
