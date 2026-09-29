@@ -17,7 +17,30 @@
           {%- if fp_fmt == fp_want -%}
             {%- if fp_limit <= 0 or fp_count < fp_limit -%}
               {%- assign fp_count = fp_count | plus: 1 %}
-    <li class="featured__item"><h3 class="featured__title">{{ talk.title | escape }}</h3></li>
+    <li class="featured__item">
+      {%- if talk.image and talk.image != "" %}
+      <img class="featured__portrait" src="{{ talk.image | relative_url }}" alt="{{ talk.title | escape }}" loading="lazy">
+      {%- endif %}
+      <div class="featured__body">
+        <h3 class="featured__title">
+          {%- if talk.href and talk.href != "" -%}
+          <a href="{{ talk.href | relative_url }}">{{ talk.title | escape }}</a>
+          {%- else -%}
+          {{ talk.title | escape }}
+          {%- endif -%}
+        </h3>
+        {%- if talk.speakers and talk.speakers != "" %}
+        <p class="featured__speakers">{{ talk.speakers | escape }}</p>
+        {%- endif %}
+        <p class="featured__when"><time datetime="{{ slot.startISO }}">{{ day.weekday }}, {{ day.label }} · {{ slot.start }}–{{ slot.end }}</time> · {{ session.room | escape }}</p>
+        {%- if talk.infoMd and talk.infoMd != "" %}
+        <p class="featured__excerpt">{{ talk.infoMd | markdownify | strip_html | truncatewords: 40 }}</p>
+        {%- endif %}
+        {%- if talk.href and talk.href != "" %}
+        <a class="featured__more" href="{{ talk.href | relative_url }}">Read more<span class="visually-hidden"> about {{ talk.title | escape }}</span></a>
+        {%- endif %}
+      </div>
+    </li>
             {%- endif -%}
           {%- endif -%}
         {%- endfor -%}

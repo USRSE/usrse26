@@ -48,7 +48,7 @@ of this work.
   changing the keynote call to `format=" keynote "` and confirming count `1`.
   Revert both probes.
 
-- [ ] 3. **Full entry markup** (Story 1; §3) — Expected after this task, within
+- [x] 3. **Full entry markup** (Story 1; §3) — Expected after this task, within
   the `featured-keynote` section of `_site/index.html`:
   - `<img class="featured__portrait"` with `src` ending
     `/assets/img/perez.jpeg` and `alt="Fernando Pérez"`;
