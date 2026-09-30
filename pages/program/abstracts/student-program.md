@@ -47,11 +47,7 @@ Panelists:
     </summary>
     <div class="abstract__body">{% capture abstract_md %}10:30am-11:00am  
 Topic: Token Management/On-Prem Agentic AI  
-Speaker: Julian Pistorus and Hasti Mehta
-
-11:00am-11:30am  
-Topic: TBD  
-Speaker: Yaroslav Halchenko{% endcapture %}{{ abstract_md | markdownify }}</div>
+Speaker: Julian Pistorus and Hasti Mehta{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
 </div>
 

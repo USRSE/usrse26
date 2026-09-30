@@ -720,7 +720,7 @@
           "break": false,
           "sessions": [
             {
-              "title": "Making AI Sustainable: Token Economics and Reproducible Science",
+              "title": "Making AI Sustainable: Token Economics",
               "type": "Student/Early Career",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
@@ -731,7 +731,7 @@
                   "title": "Invited Talks",
                   "speakers": "",
                   "format": "Student",
-                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta\n\n11:00am-11:30am\nTopic: TBD\nSpeaker: Yaroslav Halchenko",
+                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta",
                   "href": "program/student-early-career-program/#invited-talks"
                 }
               ]

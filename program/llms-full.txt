@@ -630,7 +630,7 @@ Abstract:
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
-### 10:30–11:30am — Making AI Sustainable: Token Economics and Reproducible Science
+### 10:30–11:30am — Making AI Sustainable: Token Economics
 
 - Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T11:30:00-07:00 (60 min)
 - Room: San Jose Ballroom Salon 3 & 4
@@ -647,10 +647,6 @@ Abstract:
 > 10:30am-11:00am
 > Topic: Token Management/On-Prem Agentic AI
 > Speaker: Julian Pistorus and Hasti Mehta
->
-> 11:00am-11:30am
-> Topic: TBD
-> Speaker: Yaroslav Halchenko
 
 ### 10:30am–12pm — RSE Practices in the Age of AI Part I
 
@@ -658,7 +654,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
 - Chair: Luca Bonaldo
-- Concurrent with: Making AI Sustainable: Token Economics and Reproducible Science (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 
 #### Research Software Engineering in the Age of Generative AI
 
@@ -718,7 +714,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Kate Arneson
-- Concurrent with: Making AI Sustainable: Token Economics and Reproducible Science (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
 
 #### Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows
 
@@ -786,7 +782,7 @@ Abstract:
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Vani Walvekar
-- Concurrent with: Making AI Sustainable: Token Economics and Reproducible Science (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 
 #### DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments
 

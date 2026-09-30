@@ -94,12 +94,15 @@ Attendees leave with three things: the workflow, a short checklist for making th
     </summary>
     <div class="abstract__body">{% capture abstract_md %}The Education &amp; Training working group is for those that are interested in regular discussions about education and training for RSEs. The goal of the group is to develop resources and strategies that support RSE education and training and contribute to the establishment of a more formal career path for RSEs. Thus far, we have begun describing the types of people who work as RSEs and their training needs. We are also working on defining the list of skills often needed by RSEs. Furthermore, we’ve begun to assemble a list of resources for the US-RSE community, including a growing list of useful training links, and host a seminar series. The group currently meets monthly via Zoom and welcomes all newcomers.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="dei-working-group">
-      <span class="abstract__title">DEI Working Group</span>
-      <span class="abstract__people">Alex Koufos, Lance Parsons</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="dei-working-group">
+        <span class="abstract__title">DEI Working Group</span>
+        <span class="abstract__people">Alex Koufos, Lance Parsons</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}The US-RSE Diversity, Equity, and Inclusion (DEI) Working Group brings together people who want to help make research software engineering more welcoming, accessible, and inclusive. We focus on understanding the experiences of research software engineers (RSEs), identifying barriers to participation, and fostering positive change through community dialogue, education, and engagement. Stop by to learn about our recent initiatives, share your ideas, and discover how you can help shape a more inclusive US-RSE community.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
   <details class="abstract">
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="from-one-gpu-to-many-software-engineering-patterns-for-scaling-scientific-python-to-multi-node-hpc">
