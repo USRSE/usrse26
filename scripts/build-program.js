@@ -186,8 +186,8 @@ const FORMATS = {
 };
 
 // Event Image cells: a rooted path to a committed image, no parent-dir hop.
-// Remote URLs are deliberately not accepted — the path is passed through
-// Liquid's relative_url, which would prepend the baseurl to one and break it.
+// Remote URLs are deliberately not accepted — the path is concatenated onto
+// site.baseurl, which would prepend the baseurl to one and break it.
 const IMAGE_PATH = /^\/(?!.*\.\.)[\w.\-/]+\.(?:jpe?g|png|webp|avif|gif)$/i;
 
 /**
@@ -702,13 +702,14 @@ function renderSession(s, pad) {
         ? `<span class="talk__format">${esc(t._format.label)}</span> ` : '';
       // assignAnchors set href when the event has a page entry worth
       // jumping to (or a tab-owned page to land on). The include is
-      // Liquid-processed when Jekyll renders it, so relative_url keeps the
-      // baseurl correct; the fragment, if any, stays outside the filter.
+      // Liquid-processed when Jekyll renders it; site.baseurl rather than
+      // relative_url, because CircleCI previews set baseurl to an absolute
+      // URL that relative_url mangles. The fragment stays outside.
       let title = `<span class="talk__title">${esc(t.title)}</span>`;
       if (t.href) {
         const [page, anchor] = t.href.split('#');
         const frag = anchor ? `#${anchor}` : '';
-        title = `<a class="talk__link" href="{{ '${page}' | relative_url }}${frag}">${title}</a>`;
+        title = `<a class="talk__link" href="{{ site.baseurl }}/${page}${frag}">${title}</a>`;
       }
       // People deliberately don't render here — the schedule stays compact;
       // bylines live on the abstract pages (and in program.json).
@@ -1090,11 +1091,13 @@ function renderAbstractEntry(e, pad) {
   const body = [];
   // The portrait is markup the script owns: the sheet supplies only a
   // validated path, so escLiquid's guard over description text stays whole.
-  // relative_url keeps the baseurl correct, People is the alt text (an empty
-  // People means a decorative image, which takes alt=""), and the float and
-  // small-screen stack live in abstracts.css rather than a spreadsheet cell.
+  // site.baseurl rather than relative_url, because CircleCI previews set
+  // baseurl to an absolute URL that relative_url mangles. People is the alt
+  // text (an empty People means a decorative image, which takes alt=""), and
+  // the float and small-screen stack live in abstracts.css rather than a
+  // spreadsheet cell.
   if (e.image) {
-    body.push(`<img class="abstract__portrait" src="{{ '${e.image}' | relative_url }}"`
+    body.push(`<img class="abstract__portrait" src="{{ site.baseurl }}${e.image}"`
       + ` alt="${esc(e.people)}">`);
   }
   if (e.infoMd.trim()) {
