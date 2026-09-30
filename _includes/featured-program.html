@@ -19,7 +19,8 @@
               {%- assign fp_count = fp_count | plus: 1 %}
     <li class="featured__item">
       {%- if talk.image and talk.image != "" %}
-      <img class="featured__portrait" src="{{ talk.image | relative_url }}" alt="{{ talk.title | escape }}" loading="lazy">
+      {%- comment -%} site.baseurl, not relative_url: CircleCI previews set baseurl to an absolute URL, which relative_url mangles. {%- endcomment -%}
+      <img class="featured__portrait" src="{{ site.baseurl }}{{ talk.image }}" alt="{{ talk.title | escape }}" loading="lazy">
       {%- endif %}
       <div class="featured__body">
         <h3 class="featured__title">{{ talk.title | escape }}</h3>
@@ -30,7 +31,7 @@
         <p class="featured__excerpt">{{ talk.infoMd | markdownify | strip_html | normalize_whitespace | truncatewords: 40 }}</p>
         {%- endif %}
         {%- if talk.href and talk.href != "" %}
-        <a class="featured__more" href="{{ talk.href | relative_url }}">Read more<span class="visually-hidden"> about {{ talk.title | escape }}</span></a>
+        <a class="featured__more" href="{{ site.baseurl }}/{{ talk.href }}">Read more<span class="visually-hidden"> about {{ talk.title | escape }}</span></a>
         {%- endif %}
       </div>
     </li>
