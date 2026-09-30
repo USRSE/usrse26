@@ -242,19 +242,6 @@ These adoptions show that STAMPED provides a tool-agnostic, incrementally adopta
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="llm-customization-for-merge-conflict-resolution-in-the-planet-s-largest-git-codebase">
-        <span class="abstract__title">LLM Customization for Merge Conflict Resolution in the planet's largest git codebase</span>
-        <span class="abstract__people">Advitya Gemawat</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Merge Conflicts in software programming occur in 20% of all merges in open-source projects, incurring a median resolution time of ~6 minutes for a single conflict at best, or multiple days (from conflict detection to incorrect resolution to fixing downstream feature regressions) at worst, especially in large-scale software projects. The combination of domain-heavy context and non-existence in project/git history (leading to lack of sufficient training data / input for LLMs) renders Merge Conflict Resolution as one of the most manual and painstaking processes in the software development lifecycle today.
-
-Drawing inspiration from the scale and complexity of merge conflicts in one of the planet's largest codebases (the Windows OS repo at Microsoft), this talk will touch upon a variety of insights across crafting custom LLM Evals, Azure OpenAI Fine-Tuning, Qualitative Insights, and implementation best practices around crafting a scalable LLM-powered Merge Conflict Resolver adapted towards codebase-specific conflict resolution patterns, which has reduced avg conflict resolution times for Windows developers by 4x.
-
-Similar to how LLM Coding Agents transformed the SWE workflow from writing code to generating &amp; reviewing code, this project is a natural evolution of the manually-driven Merge Conflict Resolution process in terms of reviewing LLM-generated conflict resolutions. The Fine-Tuning and Evals aspect of adapting the LLM towards a particular codebase makes the approach unique and &gt;2x better performant than the AI-based conflict resolution capabilities with vanilla LLMs offered in most IDEs.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="bssw-io-community-resources-for-improving-scientific-software-productivity-and-sustainability">
         <span class="abstract__title">BSSw.io: Community resources for improving scientific software productivity and sustainability</span>
         <span class="abstract__people">Rinku Gupta, David Bernholdt, Roscoe Bartlett, Keith Beattie, Patricia A Grubel, Lois Curfman McInnes</span>
@@ -439,19 +426,6 @@ The poster format suits this argument. The two domains are best seen side by sid
     <div class="abstract__body">{% capture abstract_md %}Data management teams are frequently tasked with deciding what data structure is best suited for a project. The options generally fall into one of two buckets: table or array. Tabular data is formatted such that each record is a row in a table (e.g. CSV, Parquet, Pandas DataFrames), while arrays exploit the existence of a coordinate system to assign a variable’s value to each grid point (e.g. netCDF, Zarr, Xarray Datasets). When one focuses on performance, arrays are usually preferred for highly gridded measurements (e.g., satellite observations) and tables for sparse data (e.g., in situ observations), but where is the trade-off?
 
 Here, I introduce tabray, an open-source Python package that generates equivalent table and array representations of synthetic datasets with customizable topologies. Users can prescribe parameters including the number and size of both dimensions and measured variables, data sparsity and grid regularity, and concurrence of measurements at the same points for different variables. I will present different examples to show the spectrum of performances from highly sparse to densely gridded data and in-between, focusing on simple computations and in-memory and on-disk size. While many factors influence performance (e.g., hardware and environment), the goal of tabray is to support informed decision making on data formats by exploring situations where the advantages of one format over the other are not obvious.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="building-ese-dashboard-with-ai-assisted-packets-design-system">
-        <span class="abstract__title">Building ESE Dashboard with AI Assisted Packets Design System</span>
-        <span class="abstract__people">Charles DeVilholm</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}When it comes to network automation software, there are often many folks hard at work coming up with brilliant solutions to tough problems, but not a single unified source of truth to access each other’s data. Data can be stored anywhere from spreadsheets to one off user applications. A common problem is people knowing what they want to do, but not where and how the appropriate data is stored.
-
-ES Enterprise (or ESE) seeks to improve this experience by unifying several different data sources under one umbrella, all with a unified look and feel defined by ESNet’s Packets Design System. This poster will illustrate how ESNet centralizes and clarifies data across many systems, by having a predictable interface using building blocks that seamlessly display complex data intuitively. ESE utilizes modern front end trends including NextJS and React, and connects to several different databases across ESNet, being a central place for our internal inventory, bandwidth reservation, and much more in the future.
-
-ESE has fully replaced the UI of several systems already, and there are future plans of migrating more applications to use the same client, as well as create user researched interfaces that display data uniquely according to someone’s particular role. This poster will demonstrate how ESE was able to effectively use Packets Design System to create a seamless experience and framework for reasoning across several different systems, as well as the ease of creating such a system with the Packets Design System Skills.md for AI tools like Claude Code. This is a great demonstration of how to provide AI with a predictable framework that can output reliable interfaces with minimal correction needed.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
@@ -856,21 +830,6 @@ A re-annotated benchmark taxonomy. 287 hand-collated emendations from the writin
 A philologically parameterized error generator. The generator implements one independent, side-effect-free function per taxonomy category, with all randomness flowing through a single seeded RNG for reproducibility. Corruption sites are chosen by Beta-distribution positional weighting calibrated to observed positional bias; an attested confusion table mined from the annotated benchmark supplies phonological substitutions in preference to rule-generated ones; an empirical dual-error rate pairs two corruptions in one passage; diacritic handling round-trips through NFD decomposition and NFC recomposition so accent errors are isolated from base-letter changes; a suffix blocklist prevents preposition and particle paradigm bleed; and a retry budget with no-op detection drops passages that fail to corrupt rather than silently emitting them unchanged. Shared linguistic resources live in a sibling module so the same machinery can be reconfigured for Latin and other languages. The generator emits JSONL carrying per-event category labels, which is what makes stratified evaluation possible downstream.
 
 Model training. A domain-pretrained ByT5 checkpoint was trained on a roughly 200,000-passage five-author corpus in XML form, then fine-tuned on synthetic corrupt–correct pairs, alongside a matched-hyperparameter architecture comparison of ByT5-base against a subword-level BART-base on a locked deterministic split. Omission remains roughly six times harder than any substitution category, as restoring a dropped word is generation without local signal. Future training is necessary for better emendation results.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="schema-drift-in-public-financial-regulatory-data-a-validation-harness-for-reproducible-and-ai-assisted-analysis">
-        <span class="abstract__title">Schema Drift in Public Financial-Regulatory Data: A Validation Harness for Reproducible and AI-Assisted Analysis</span>
-        <span class="abstract__people">Elmurad Abbasov</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}Every federally insured U.S. credit union files a quarterly Call Report (NCUA Form 5300), and the NCUA publishes the resulting data back to March 1994 as quarterly comma-delimited files [1]. The series is free, covers the full federally insured population, and is widely used in economics and public-policy research. It is also less stable than it looks. Account codes are added, retired, and relocated between filing cycles; the March 2022 form revision alone retired or replaced close to 600 codes, added more than 500 new or replacement codes, and moved roughly 400 to new locations on the form [2]. Institutions merge or are liquidated, so charter numbers enter and leave the panel. Corrections to previously filed quarters move through NCUA’s systems on their own schedule: the quarterly ZIP snapshots are published as final, while the same data served through NCUA’s web service continues to change as corrections arrive [1].
-
-None of this is hidden. Each cycle’s changes are documented in the published instructions and account catalogs. But very little of it is checked at the point of analysis. Concatenating the quarterly files raises no exception; it simply yields a plausible number that may be wrong in a direction nobody examined. The problem gets worse as ingestion is delegated to AI-assisted tooling. A generated pipeline that joins files on column names, or an agent that selects fields by description similarity, is blind in exactly the wrong place: a code whose meaning changed while its identifier survived. Automated ingestion raises the burden on data validation rather than lowering it, and the validation has to become machine-checkable instead of living in a practitioner’s head.
-
-I am developing an open validation harness to run against an assembled 5300 panel before analysis. It diffs account-code sets and descriptions across cycles using NCUA’s own published catalogs, reports panelcomposition churn, compares a working dataset against a pinned snapshot to surface restatements, and writes a machine-readable provenance record that travels with the analysis. The design borrows from regulated-industry practice — documented inventories, change control, independent validation — translated into small tooling that fits a research workflow.
-
-The poster will present a taxonomy of drift classes assembled from NCUA’s published form-change documentation, the harness design and its current limitations, and the measurement plan for characterizing drift across the 1994–present series. Bank call report data collected through the FFIEC exhibits the same failure patterns, and I would welcome conversations with RSEs who maintain pipelines over other publicagency datasets where this work should generalize.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
