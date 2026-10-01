@@ -21,7 +21,7 @@ expected values.
 
 ---
 
-- [ ] 1. **Baseline and config keys** (Story 2; §2)
+- [x] 1. **Baseline and config keys** (Story 2; §2)
   - **Baseline first.** Run `bundle exec jekyll build` on the untouched tree.
     Record the exit status and any warnings it already prints.
   - **Then the config change.** Add `conf_location: "San Jose, CA"` to
