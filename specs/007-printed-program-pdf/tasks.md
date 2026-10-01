@@ -30,7 +30,7 @@ expected values.
   - **Expected after the change.** `grep -n '^conf_location:' _config.yml`
     → 1 line. The Jekyll build is unchanged.
 
-- [ ] 2. **Script skeleton and CLI** (Story 1, Story 7; §1, §2, §3 `readProgram`, §8)
+- [x] 2. **Script skeleton and CLI** (Story 1, Story 7; §1, §2, §3 `readProgram`, §8)
   - **Expected results:**
     - `node scripts/build-program-pdf.js --html-only` → exit 0, logs
       `wrote _print/program.html`.
