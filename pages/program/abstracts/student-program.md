@@ -46,14 +46,19 @@ Panelists:
         <span class="abstract__people">Julian Pistorus</span>
       </h2>
     </summary>
-    <div class="abstract__body">{% capture abstract_md %}Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.{% endcapture %}{{ abstract_md | markdownify }}</div>
+    <div class="abstract__body">{% capture abstract_md %}10:30 - 11:00
+
+Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <div class="abstract abstract--static">
-    <h2 class="abstract__heading" id="tbd">
-      <span class="abstract__title">TBD</span>
-      <span class="abstract__people">Hasti Mehta</span>
-    </h2>
-  </div>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="tbd">
+        <span class="abstract__title">TBD</span>
+        <span class="abstract__people">Hasti Mehta</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}11:00 - 11:30{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>
