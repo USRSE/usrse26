@@ -176,6 +176,47 @@ function readWelcome() {
   return { placeholder, bodyMd: fm ? text.slice(fm[0].length) : text };
 }
 
+/**
+ * The committee tree from organization.md: { title, depth, members, children }
+ * per ##–#### heading, list items as members. Front matter, Liquid lines,
+ * the "## Contact" section and prose are skipped; empty groups are pruned.
+ */
+function readCommittee() {
+  const lines = fs.readFileSync(ORG_MD, 'utf8').split(/\r?\n/);
+  const root = { title: '', depth: 1, members: [], children: [] };
+  const stack = [root];
+  let skipping = false;
+  let i = 0;
+  if (/^---\s*$/.test(lines[0])) {
+    i = lines.findIndex((l, k) => k > 0 && /^---\s*$/.test(l)) + 1;
+  }
+  for (; i < lines.length; i++) {
+    const line = lines[i];
+    if (line.includes('{{') || line.includes('{%')) continue;
+    const h = /^(#{2,4})\s+(.*?)\s*$/.exec(line);
+    if (h) {
+      const depth = h[1].length;
+      if (depth === 2) skipping = h[2] === 'Contact';
+      if (skipping) continue;
+      while (stack[stack.length - 1].depth >= depth) stack.pop();
+      const node = { title: mdToText(h[2]), depth, members: [], children: [] };
+      stack[stack.length - 1].children.push(node);
+      stack.push(node);
+      continue;
+    }
+    if (skipping) continue;
+    const item = /^\s*[*-]\s+(.*)$/.exec(line);
+    if (item && stack.length > 1) stack[stack.length - 1].members.push(mdToText(item[1]));
+  }
+  const prune = (node) => {
+    node.children = node.children.filter(prune);
+    return node.members.length > 0 || node.children.length > 0;
+  };
+  prune(root);
+  if (!root.children.length) throw new Error(`${rel(ORG_MD)} has no committee members`);
+  return root.children;
+}
+
 // ---------------------------------------------------------------------------
 // Markdown
 // ---------------------------------------------------------------------------
@@ -355,6 +396,30 @@ function renderSchedule(days) {
   return lines.join('\n');
 }
 
+function renderCommitteeNode(node, pad) {
+  const lines = [`${pad}<div class="group group--d${node.depth}">`,
+    `${pad}  <h${node.depth}>${esc(node.title)}</h${node.depth}>`];
+  if (node.members.length) {
+    lines.push(`${pad}  <ul>`, ...node.members.map((m) => `${pad}    <li>${esc(m)}</li>`), `${pad}  </ul>`);
+  }
+  for (const child of node.children) lines.push(...renderCommitteeNode(child, `${pad}  `));
+  lines.push(`${pad}</div>`);
+  return lines;
+}
+
+/** Back-matter flow: one row per top-level group, so groups stay whole. */
+function renderCommittee(tree) {
+  const lines = [
+    '<div class="flow" data-flow="back">',
+    '  <div class="row row--intro"><h1>Organizing Committee</h1></div>',
+  ];
+  for (const node of tree) {
+    lines.push('  <div class="row row--committee">', ...renderCommitteeNode(node, '    '), '  </div>');
+  }
+  lines.push('</div>');
+  return lines.join('\n');
+}
+
 /**
  * In-page paginator, emitted verbatim. Chrome runs it before printing (the
  * --virtual-time-budget lets it finish), and it runs in an ordinary browser
@@ -479,10 +544,17 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
 .row--muted { color: #555; padding: 2pt 0; }
 .page--flow .content { height: 100%; overflow: hidden; }
 .flow { width: 8.5in; padding: 0 0.65in; }
+.row--committee { columns: 2; column-gap: 0.35in; padding-top: 6pt; }
+.row--committee h2 { column-span: all; font-size: 13pt; color: #C16531; margin: 6pt 0 4pt; padding-bottom: 2pt; border-bottom: 1.5px solid #C16531; }
+.row--committee h3 { font-size: 11pt; margin: 6pt 0 2pt; }
+.row--committee h4 { font-size: 10pt; margin: 4pt 0 2pt; color: #444; }
+.row--committee .group--d3, .row--committee .group--d4 { break-inside: avoid; }
+.row--committee ul { list-style: none; margin: 0 0 6pt; padding: 0; }
+.row--committee li { margin: 0 0 1pt; }
 @media screen { body { background: #888; } .page { background: #fff; margin: 0.25in auto; box-shadow: 0 1px 6px rgba(0,0,0,.3); } }
 `;
 
-function renderDocument({ program, welcome }) {
+function renderDocument({ program, welcome, committee }) {
   return [
     BANNER,
     '<!doctype html>',
@@ -496,6 +568,7 @@ function renderDocument({ program, welcome }) {
     renderCover(),
     ...(welcome ? [renderWelcome(welcome)] : []),
     renderSchedule(program.days),
+    renderCommittee(committee),
     `<script>${PAGINATOR_JS}</script>`,
     '</body>',
     '</html>',
@@ -526,7 +599,8 @@ async function main() {
     }
   }
   const welcome = readWelcome();
-  writeIfChanged(OUT_HTML, renderDocument({ program, welcome }));
+  const committee = readCommittee();
+  writeIfChanged(OUT_HTML, renderDocument({ program, welcome, committee }));
   if (process.argv.includes('--html-only')) return;
 }
 

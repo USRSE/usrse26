@@ -120,7 +120,7 @@ expected values.
   - **Code:** add `PAGINATOR_JS` and wait for `document.fonts.ready` and image
     loads before it runs.
 
-- [ ] 7. **Organizing committee** (Story 5; §3 `readCommittee`, §5 Committee)
+- [x] 7. **Organizing committee** (Story 5; §3 `readCommittee`, §5 Committee)
   - **Expected results:**
     - `Organizing Committee` is present.
     - These group titles are present: `General Chairs`, `Technical Program
