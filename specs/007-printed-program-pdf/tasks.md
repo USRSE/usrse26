@@ -55,7 +55,7 @@ expected values.
     - With `conf_location` temporarily removed from `_config.yml`: exit 1 with
       `build-program-pdf: _config.yml has no "conf_location" …`. Restore it.
 
-- [ ] 3. **QR image and cover page** (Story 2; §2 `dateRange`, §5 Cover)
+- [x] 3. **QR image and cover page** (Story 2; §2 `dateRange`, §5 Cover)
   - **Expected results:**
     - `grep -c 'class="page cover"'` → 1.
     - The HTML contains `San Jose, CA · October 19–21, 2026`.
