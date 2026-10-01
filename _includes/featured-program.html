@@ -1,0 +1,55 @@
+{%- comment -%}
+  Featured program events, selected from site.data.program by Event Format.
+  Params: format (required, matched strip|downcase), title (optional heading),
+  limit (optional max entries; omitted or <= 0 means no cap).
+  Renders nothing when no event matches. Variables are fp_-prefixed because
+  include variables leak into the calling page's scope.
+{%- endcomment -%}
+{%- assign fp_want = include.format | strip | downcase -%}
+{%- assign fp_limit = include.limit | plus: 0 -%}
+{%- assign fp_count = 0 -%}
+{%- capture fp_items -%}
+  {%- for day in site.data.program.days -%}
+    {%- for slot in day.slots -%}
+      {%- for session in slot.sessions -%}
+        {%- for talk in session.talks -%}
+          {%- assign fp_fmt = talk.format | strip | downcase -%}
+          {%- if fp_fmt == fp_want -%}
+            {%- if fp_limit <= 0 or fp_count < fp_limit -%}
+              {%- assign fp_count = fp_count | plus: 1 %}
+    <li class="featured__item">
+      {%- if talk.image and talk.image != "" %}
+      {%- comment -%} site.baseurl, not relative_url: CircleCI previews set baseurl to an absolute URL, which relative_url mangles. {%- endcomment -%}
+      <img class="featured__portrait" src="{{ site.baseurl }}{{ talk.image }}" alt="{{ talk.title | escape }}" loading="lazy">
+      {%- endif %}
+      <div class="featured__body">
+        <h3 class="featured__title">{{ talk.title | escape }}</h3>
+        {%- if talk.speakers and talk.speakers != "" %}
+        <p class="featured__speakers">{{ talk.speakers | escape }}</p>
+        {%- endif %}
+        {%- if talk.infoMd and talk.infoMd != "" %}
+        <p class="featured__excerpt">{{ talk.infoMd | markdownify | strip_html | normalize_whitespace | truncatewords: 40 }}</p>
+        {%- endif %}
+        {%- if talk.href and talk.href != "" %}
+        <a class="featured__more" href="{{ site.baseurl }}/{{ talk.href }}">Read more<span class="visually-hidden"> about {{ talk.title | escape }}</span></a>
+        {%- endif %}
+      </div>
+    </li>
+            {%- endif -%}
+          {%- endif -%}
+        {%- endfor -%}
+      {%- endfor -%}
+    {%- endfor -%}
+  {%- endfor -%}
+{%- endcapture -%}
+{%- if fp_count > 0 -%}
+{%- assign fp_id = fp_want | slugify | prepend: "featured-" %}
+<section class="featured"{% if include.title %} aria-labelledby="{{ fp_id }}"{% endif %}>
+  {%- if include.title %}
+  <h2 class="featured__heading" id="{{ fp_id }}">{{ include.title | escape }}</h2>
+  {%- endif %}
+  <ul class="featured__list">
+    {{- fp_items }}
+  </ul>
+</section>
+{%- endif -%}

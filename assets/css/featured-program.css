@@ -1,0 +1,110 @@
+/* ==========================================================================
+   USRSE'26 homepage featured program
+   Styles _includes/featured-program.html, which index.html calls once per
+   featured Event Format (Keynote, Student).
+
+   The heading band reproduces the inline style of the "Conference Sponsors"
+   band in index.html so the orange bands on the homepage read alike. The
+   palette follows abstracts.css: brand purple (#741755, --us-rse-main) for
+   titles, #4a4a4a body, #dbdbdb hairlines, #757575 muted text (WCAG AA).
+
+   The homepage renders inside the theme's Bulma `.content` wrapper, which
+   indents lists and spaces headings; the resets below are prefixed with
+   `.content` so they out-rank it.
+   ========================================================================== */
+
+.featured {
+  --featured-accent: var(--us-rse-main, #741755);
+  --featured-ink: #4a4a4a;
+  --featured-muted: #757575;
+  --featured-hairline: #dbdbdb;
+  --featured-band: #C16531;
+}
+
+.content .featured .featured__heading,
+.featured .featured__heading {
+  background-color: var(--featured-band);
+  border-radius: 14px;
+  padding: 12px 20px;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+  color: white;
+}
+
+.content .featured__list,
+.featured__list {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.content .featured__list .featured__item,
+.featured__item {
+  display: flex;
+  gap: 1.25rem;
+  align-items: flex-start;
+  margin: 0;
+  padding: 1.25rem 0;
+  border-bottom: 1px solid var(--featured-hairline);
+  color: var(--featured-ink);
+}
+
+.featured__item:last-child {
+  border-bottom: none;
+}
+
+.featured__portrait {
+  flex: none;
+  width: 12rem;
+  max-width: 35%;
+  height: auto;
+  border-radius: 4px;
+}
+
+.featured__body {
+  flex: 1;
+  min-width: 0;
+}
+
+/* Theme h3 typography, as on the sponsor tier headings; only spacing is set. */
+.content .featured .featured__title,
+.featured .featured__title {
+  margin: 0 0 0.35rem;
+}
+
+.content .featured .featured__speakers,
+.content .featured .featured__when,
+.content .featured .featured__excerpt {
+  margin: 0 0 0.5rem;
+}
+
+.featured__speakers {
+  font-weight: 600;
+}
+
+.featured__when {
+  color: var(--featured-muted);
+  font-size: 0.9rem;
+}
+
+.featured__more {
+  font-weight: 600;
+  color: var(--featured-accent);
+}
+
+/* --------------------------------------------------------------------------
+   Mobile — same breakpoint as abstracts.css; the portrait stacks above the
+   text and caps at the abstract pages' width.
+   -------------------------------------------------------------------------- */
+
+@media (max-width: 40rem) {
+  .content .featured__list .featured__item,
+  .featured__item {
+    flex-direction: column;
+  }
+
+  .featured__portrait {
+    width: 100%;
+    max-width: 18rem;
+  }
+}
