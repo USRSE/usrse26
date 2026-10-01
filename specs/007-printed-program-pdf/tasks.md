@@ -91,7 +91,7 @@ expected values.
   - **Code:** add the `_print/welcome.md` placeholder (§9), `readWelcome`,
     `mdInline`, `mdToText`, and the welcome renderer.
 
-- [ ] 5. **Schedule overview rows** (Story 4; §5 Schedule rows)
+- [x] 5. **Schedule overview rows** (Story 4; §5 Schedule rows)
   - **Expected results** (before pagination, rows sit flat inside
     `data-flow="schedule"`):
     - `grep -c 'class="row row--day"'` → 3.
