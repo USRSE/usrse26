@@ -115,6 +115,7 @@ const ORG_MEMBERS_YML = path.join(REPO_ROOT, '_data', 'org-members.yml');
 const QR_SVG = path.join(REPO_ROOT, 'assets', 'img', 'program-qr.svg');
 const LOGO_SVG = path.join(REPO_ROOT, 'assets', 'img', 'usrse26-long-logo.svg');
 const SPONSOR_LOGOS = path.join(REPO_ROOT, 'assets', 'img', 'sponsor-logos');
+const ORG_LOGOS = path.join(REPO_ROOT, 'assets', 'img', 'org-logos');
 const OUT_HTML = path.join(REPO_ROOT, '_print', 'program.html');
 const OUT_PDF = path.join(REPO_ROOT, 'pages', 'program', 'program.pdf');
 
@@ -249,6 +250,73 @@ function readSponsors() {
     logo.path = file;
   }
   return kept;
+}
+
+const ORG_LEVELS = [['premier', 'Premier'], ['standard', 'Standard'], ['basic', 'Basic']];
+const ORG_FIELDS = new Set(['name', 'figure', 'acronym', 'date_joined', 'background']);
+
+/** A YAML scalar the readJekyllConfig way: quotes kept verbatim, else no " # comment". */
+function yamlScalar(raw) {
+  const quoted = /^(["'])([\s\S]*)\1[ \t]*(?:#.*)?$/.exec(raw);
+  return quoted ? quoted[2] : raw.replace(/(^|[ \t]+)#.*$/, '').trim();
+}
+
+/**
+ * Organizational founding members (PR #63), or null when the file is absent.
+ * A line parser for exactly that file's shape — top-level level keys, each a
+ * list of flat "key: value" maps — not YAML in general; anything else throws.
+ * A repeated level key keeps the last one, as Jekyll's loader does. Only
+ * ORG_FIELDS survive, so contacts never reach the renderer.
+ */
+function readOrgMembers() {
+  if (!fs.existsSync(ORG_MEMBERS_YML)) return null;
+  const levels = new Map();
+  let list = null;
+  let item = null;
+  let itemIndent = -1;
+  fs.readFileSync(ORG_MEMBERS_YML, 'utf8').split(/\r?\n/).forEach((line, n) => {
+    const fail = () => { throw new Error(`org-members.yml line ${n + 1}: unsupported YAML`); };
+    if (/^\s*(#.*)?$/.test(line)) return;
+    let m;
+    if ((m = /^([A-Za-z_][\w-]*):[ \t]*(?:#.*)?$/.exec(line))) {
+      if (levels.has(m[1])) console.warn(`warning: org-members.yml repeats key "${m[1]}" — using the last one`);
+      list = [];
+      levels.set(m[1], list);
+      item = null;
+      return;
+    }
+    let indent;
+    let rest;
+    if (list && (m = /^(\s+)-[ \t]+(\S.*)$/.exec(line))) {
+      item = {};
+      list.push(item);
+      itemIndent = m[1].length + 2;
+      [indent, rest] = [itemIndent, m[2]];
+    } else if (item && (m = /^(\s+)(\S.*)$/.exec(line))) {
+      [indent, rest] = [m[1].length, m[2]];
+    } else {
+      fail();
+    }
+    const kv = /^([A-Za-z_][\w-]*):(?:[ \t]+(.*))?$/.exec(rest);
+    if (indent !== itemIndent || !kv) fail();
+    const value = yamlScalar(kv[2] || '');
+    if (/^[|>[{&*!]/.test(value) && !/^["']/.test(kv[2] || '')) fail();
+    if (ORG_FIELDS.has(kv[1])) item[kv[1]] = value;
+  });
+  return ORG_LEVELS.map(([key, title]) => {
+    const members = (levels.get(key) || []).slice()
+      .sort((a, b) => String(a.date_joined || '').localeCompare(String(b.date_joined || '')));
+    for (const mem of members) {
+      const file = path.join(ORG_LOGOS, mem.figure || '');
+      if (!mem.figure || !fs.existsSync(file)) throw new Error(`org member logo not found: ${rel(file)}`);
+      mem.path = file;
+      if (mem.background && !/^(#[0-9a-f]{3,8}|rgba?\([\d.,\s]+\))$/i.test(mem.background)) {
+        console.warn(`warning: org-members.yml background "${mem.background}" for ${mem.name} is not a color — dropped`);
+        mem.background = '';
+      }
+    }
+    return { title, members };
+  }).filter((level) => level.members.length);
 }
 
 // ---------------------------------------------------------------------------
@@ -455,9 +523,11 @@ function renderCommittee(tree) {
 }
 
 // Logo height per sponsor tier, first tier largest; later tiers use the last.
-const TIER_HEIGHTS = ['0.9in', '0.7in', '0.55in', '0.45in', '0.35in'];
+const TIER_HEIGHTS = ['0.65in', '0.55in', '0.45in', '0.4in', '0.35in'];
 
-function renderSponsors(sponsors) {
+const ORG_HEIGHTS = { Premier: '0.4in', Standard: '0.32in', Basic: '0.3in' };
+
+function renderSponsors(sponsors, orgMembers) {
   const lines = ['<section class="page sponsors">', '  <h1>Thank You Sponsors!</h1>'];
   sponsors.forEach((tier, i) => {
     const h = TIER_HEIGHTS[Math.min(i, TIER_HEIGHTS.length - 1)];
@@ -470,6 +540,19 @@ function renderSponsors(sponsors) {
       '  </section>',
     );
   });
+  if (orgMembers) {
+    lines.push('  <h2>US-RSE Organizational Founding Members</h2>');
+    for (const level of orgMembers) {
+      lines.push('  <section class="tier tier--org">', `    <h3>${esc(level.title)}</h3>`, '    <div class="logos">');
+      for (const mem of level.members) {
+        const alt = mem.acronym ? `${mem.name} (${mem.acronym})` : mem.name;
+        const bg = mem.background ? ` style="background:${esc(mem.background)}"` : '';
+        lines.push(`      <span class="tile"${bg}><img src="${src(mem.path)}" alt="${esc(alt || '')}"`
+          + ` style="height:${ORG_HEIGHTS[level.title]}"></span>`);
+      }
+      lines.push('    </div>', '  </section>');
+    }
+  }
   lines.push(`  <p class="sponsors__footer">${esc(SITE_BASE)}</p>`, '</section>');
   return lines.join('\n');
 }
@@ -607,15 +690,20 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
 .row--committee li { margin: 0 0 1pt; }
 .sponsors { display: flex; flex-direction: column; text-align: center; }
 .sponsors h1 { margin-bottom: 0.15in; }
-.sponsors .tier { margin: 0 0 0.2in; }
+.sponsors .tier { margin: 0 0 0.14in; }
 .sponsors .tier h3 { font-variant: small-caps; letter-spacing: 0.05em; font-size: 12pt; color: #555; margin: 0 0 6pt; }
-.sponsors .logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2in 0.35in; }
-.sponsors .logos img { max-width: 2.6in; object-fit: contain; }
+.sponsors .logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.15in 0.25in; }
+.sponsors .logos img { max-width: 1.55in; object-fit: contain; }
 .sponsors__footer { margin-top: auto; font-weight: 700; }
+.sponsors h2 { font-size: 13pt; color: #C16531; margin: 0.1in 0 0.12in; padding-top: 0.12in; border-top: 1px solid #C16531; }
+.sponsors .tier--org { margin-bottom: 0.12in; }
+.sponsors .tier--org .logos { gap: 0.1in 0.2in; }
+.sponsors .tile { display: inline-flex; align-items: center; padding: 3pt 6pt; border-radius: 3px; }
+.sponsors .tile img { max-width: 1.3in; object-fit: contain; }
 @media screen { body { background: #888; } .page { background: #fff; margin: 0.25in auto; box-shadow: 0 1px 6px rgba(0,0,0,.3); } }
 `;
 
-function renderDocument({ program, welcome, committee, sponsors }) {
+function renderDocument({ program, welcome, committee, sponsors, orgMembers }) {
   return [
     BANNER,
     '<!doctype html>',
@@ -630,7 +718,7 @@ function renderDocument({ program, welcome, committee, sponsors }) {
     ...(welcome ? [renderWelcome(welcome)] : []),
     renderSchedule(program.days),
     renderCommittee(committee),
-    renderSponsors(sponsors),
+    renderSponsors(sponsors, orgMembers),
     `<script>${PAGINATOR_JS}</script>`,
     '</body>',
     '</html>',
@@ -663,7 +751,8 @@ async function main() {
   const welcome = readWelcome();
   const committee = readCommittee();
   const sponsors = readSponsors();
-  writeIfChanged(OUT_HTML, renderDocument({ program, welcome, committee, sponsors }));
+  const orgMembers = readOrgMembers();
+  writeIfChanged(OUT_HTML, renderDocument({ program, welcome, committee, sponsors, orgMembers }));
   if (process.argv.includes('--html-only')) return;
 }
 

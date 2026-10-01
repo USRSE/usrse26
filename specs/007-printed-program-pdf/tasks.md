@@ -147,7 +147,7 @@ expected values.
   - **Code:** add `readSponsors` (region cut, tier and include scan) and
     `renderSponsors` without org members.
 
-- [ ] 9. **Organizational founding members** (Story 6; §3 `readOrgMembers`, §5 Sponsors)
+- [x] 9. **Organizational founding members** (Story 6; §3 `readOrgMembers`, §5 Sponsors)
   - **Expected on `main` (file absent):** no `Organizational Founding Members`
     text, no warning.
   - **Expected with PR #63's file and logos temporarily copied in**

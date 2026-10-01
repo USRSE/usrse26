@@ -302,12 +302,14 @@ keeps groups whole.
 - `<h1>Thank You Sponsors!</h1>`
 - one `<section>` per tier, with its tier name in small caps and the logos in
   a centered flex-wrap row
-- logo heights stepped by tier index: `[0.9in, 0.7in, 0.55in, 0.45in, 0.35in]`,
-  clamped to the last value
+- logo heights stepped by tier index: `[0.65in, 0.55in, 0.45in, 0.4in, 0.35in]`,
+  clamped to the last value, each logo at most 1.55in wide so four Platinum
+  logos fit on one row (reduced during implementation from 0.9in-first: with
+  PR #63's 15 org members, the larger sizes overflowed the sheet)
 - when `orgMembers` is present:
   - `<h2>US-RSE Organizational Founding Members</h2>`
-  - Premier / Standard / Basic sub-sections, logos at 0.45in / 0.35in /
-    0.3in
+  - Premier / Standard / Basic sub-sections, logos at 0.4in / 0.32in /
+    0.3in, at most 1.3in wide
   - an item with `background` gets `style="background:<value>"` on its tile.
     The value is checked against
     `^(#[0-9a-f]{3,8}|rgba?\([\d.,\s]+\))$/i` and dropped with a warning if it
