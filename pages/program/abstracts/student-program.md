@@ -41,17 +41,23 @@ Panelists:
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="invited-talks">
-        <span class="abstract__title">Invited Talks</span>
+      <h2 class="abstract__heading" id="agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models">
+        <span class="abstract__title">Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models</span>
+        <span class="abstract__people">Julian Pistorus</span>
       </h2>
     </summary>
-    <div class="abstract__body">{% capture abstract_md %}10:30am-11:00am  
-Topic: Token Management/On-Prem Agentic AI  
-Speaker: Julian Pistorus and Hasti Mehta
+    <div class="abstract__body">{% capture abstract_md %}10:30 - 11:00
 
-11:00am-11:30am  
-Topic: TBD  
-Speaker: Yaroslav Halchenko{% endcapture %}{{ abstract_md | markdownify }}</div>
+Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="tbd">
+        <span class="abstract__title">TBD</span>
+        <span class="abstract__people">Hasti Mehta</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}11:00 - 11:30{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
 </div>
 

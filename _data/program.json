@@ -720,19 +720,33 @@
           "break": false,
           "sessions": [
             {
-              "title": "Making AI Sustainable: Token Economics and Reproducible Science",
+              "title": "Making AI Sustainable: Token Economics",
               "type": "Student/Early Career",
+              "chair": "Scott Michael",
               "room": "San Jose Ballroom Salon 3 & 4",
               "info": "",
               "plenary": false,
               "muted": false,
               "talks": [
                 {
-                  "title": "Invited Talks",
-                  "speakers": "",
+                  "title": "Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models",
+                  "speakers": "Julian Pistorus",
+                  "people": [
+                    "Julian Pistorus"
+                  ],
                   "format": "Student",
-                  "infoMd": "10:30am-11:00am\nTopic: Token Management/On-Prem Agentic AI\nSpeaker: Julian Pistorus and Hasti Mehta\n\n11:00am-11:30am\nTopic: TBD\nSpeaker: Yaroslav Halchenko",
-                  "href": "program/student-early-career-program/#invited-talks"
+                  "infoMd": "10:30 - 11:00\n\nRunning an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.",
+                  "href": "program/student-early-career-program/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models"
+                },
+                {
+                  "title": "TBD",
+                  "speakers": "Hasti Mehta",
+                  "people": [
+                    "Hasti Mehta"
+                  ],
+                  "format": "Student",
+                  "infoMd": "11:00 - 11:30",
+                  "href": "program/student-early-career-program/#tbd"
                 }
               ]
             }
