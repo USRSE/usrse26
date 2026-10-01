@@ -734,8 +734,9 @@
                   "people": [
                     "Julian Pistorus"
                   ],
-                  "format": "Talk",
-                  "href": "program/talks/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models"
+                  "format": "Student",
+                  "infoMd": "Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.",
+                  "href": "program/student-early-career-program/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models"
                 }
               ]
             }
@@ -944,8 +945,8 @@
                   "people": [
                     "Hasti Mehta"
                   ],
-                  "format": "Talk",
-                  "href": "program/talks/#tbd"
+                  "format": "Student",
+                  "href": "program/student-early-career-program/#tbd"
                 }
               ]
             }

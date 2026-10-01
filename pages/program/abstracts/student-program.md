@@ -39,6 +39,21 @@ Panelists:
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models">
+        <span class="abstract__title">Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models</span>
+        <span class="abstract__people">Julian Pistorus</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="tbd">
+      <span class="abstract__title">TBD</span>
+      <span class="abstract__people">Hasti Mehta</span>
+    </h2>
+  </div>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>
