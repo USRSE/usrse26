@@ -301,6 +301,12 @@ The talk will include concrete examples of design artifacts, before-and-after co
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Scientific open-source software (OSS) is essential to scientific innovation, yet often perceived as abandoned, buggy, or hard to use. In contrast to other software, its longevity remains poorly understood, and existing curation efforts are fragmented or small in scale. Motivated by these gaps, our work focuses on building a large, cross-domain catalog of maintained scientific OSS and using it to investigate what shapes its longevity. In this talk, we present an LLM-assisted methodology that classifies project READMEs from the World of Code infrastructure by Hinsen's scientific software stack layers and 13 STEM fields, yielding SciCat, a curated catalog of 18,247 scientific software projects validated against datasets including JOSS and Papers with Code. We then estimate Kaplan-Meier and Cox proportional-hazards survival models. Our findings illustrate that infrastructure projects survive substantially longer than domain- or publication-specific code, presumably because of their foundational role, and that more downstream dependents, mentions of publications or funding, and government participation are associated with longer lifespans, while academic participation appears linked to shorter ones, possibly reflecting the cyclical nature of academic commitments. Surprisingly, scientific OSS in our matched comparison tends to live longer than non-scientific OSS, which runs against common assumptions about its fragility. We will delve into the methodology, validation choices, practical implications for funders and RSEs, and open questions the publicly available SciCat catalog enables for future research.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models">
+      <span class="abstract__title">Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models</span>
+      <span class="abstract__people">Julian Pistorus</span>
+    </h2>
+  </div>
   <details class="abstract">
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="research-software-engineering-in-the-age-of-generative-ai">
@@ -405,6 +411,12 @@ This talk will ground the discussion in design decisions made during enhancement
 
 By simultaneously looking at data usability as a UX problem and treating AI models as first-class data consumers, we provide an approach that practitioners can take to advance the AI-readiness of their data. In doing so, not only do data become more usable for humans, but AI models that leverage these data become easier to explain, more trustworthy, and more deterministic.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
+  <div class="abstract abstract--static">
+    <h2 class="abstract__heading" id="tbd">
+      <span class="abstract__title">TBD</span>
+      <span class="abstract__people">Hasti Mehta</span>
+    </h2>
+  </div>
   <details class="abstract">
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions">

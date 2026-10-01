@@ -39,16 +39,6 @@ Panelists:
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="invited-talks">
-        <span class="abstract__title">Invited Talks</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}10:30am-11:00am  
-Topic: Token Management/On-Prem Agentic AI  
-Speaker: Julian Pistorus and Hasti Mehta{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>
