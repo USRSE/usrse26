@@ -134,7 +134,7 @@ expected values.
       exit 1, `organization.md has no committee members`. Restore the file.
   - **Code:** add `readCommittee` and `renderCommittee` in the `back` flow.
 
-- [ ] 8. **Sponsors page** (Story 6; §3 `readSponsors`, §5 Sponsors)
+- [x] 8. **Sponsors page** (Story 6; §3 `readSponsors`, §5 Sponsors)
   - **Expected results:**
     - `grep -c 'class="page sponsors"'` → 1.
     - `Thank You Sponsors!` is present.

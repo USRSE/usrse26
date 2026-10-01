@@ -114,6 +114,7 @@ const INDEX_HTML = path.join(REPO_ROOT, 'index.html');
 const ORG_MEMBERS_YML = path.join(REPO_ROOT, '_data', 'org-members.yml');
 const QR_SVG = path.join(REPO_ROOT, 'assets', 'img', 'program-qr.svg');
 const LOGO_SVG = path.join(REPO_ROOT, 'assets', 'img', 'usrse26-long-logo.svg');
+const SPONSOR_LOGOS = path.join(REPO_ROOT, 'assets', 'img', 'sponsor-logos');
 const OUT_HTML = path.join(REPO_ROOT, '_print', 'program.html');
 const OUT_PDF = path.join(REPO_ROOT, 'pages', 'program', 'program.pdf');
 
@@ -215,6 +216,39 @@ function readCommittee() {
   prune(root);
   if (!root.children.length) throw new Error(`${rel(ORG_MD)} has no committee members`);
   return root.children;
+}
+
+/**
+ * Sponsor tiers from index.html: [{ title, logos: [{ file, alt }] }], in page
+ * order. Only the region from the "Conference Sponsors" heading to the next
+ * section header (or <h1>) is scanned, so later <h3>s are never tiers.
+ */
+function readSponsors() {
+  const html = fs.readFileSync(INDEX_HTML, 'utf8');
+  const at = html.indexOf('Conference Sponsors');
+  if (at < 0) throw new Error(`${rel(INDEX_HTML)} has no sponsor tiers`);
+  const rest = html.slice(at);
+  const ends = [rest.indexOf('class="sectionheader"'), rest.indexOf('<h1')].filter((n) => n >= 0);
+  const region = ends.length ? rest.slice(0, Math.min(...ends)) : rest;
+  const tiers = [];
+  const re = /<h[34][^>]*>([^<]+)<\/h[34]>|\{%\s*include\s+add-sponsor-logo\.html\b([^%]*)%\}/g;
+  for (let m; (m = re.exec(region));) {
+    if (m[1] !== undefined) {
+      tiers.push({ title: oneLine(m[1]), logos: [] });
+      continue;
+    }
+    const attrs = {};
+    for (const a of m[2].matchAll(/(\w+)="([^"]*)"/g)) attrs[a[1]] = a[2];
+    if (tiers.length) tiers[tiers.length - 1].logos.push({ file: attrs.logo_file || '', alt: attrs.logo_alt || '' });
+  }
+  const kept = tiers.filter((t) => t.logos.length);
+  if (!kept.length) throw new Error(`${rel(INDEX_HTML)} has no sponsor tiers`);
+  for (const logo of kept.flatMap((t) => t.logos)) {
+    const file = path.join(SPONSOR_LOGOS, logo.file);
+    if (!logo.file || !fs.existsSync(file)) throw new Error(`sponsor logo not found: ${rel(file)}`);
+    logo.path = file;
+  }
+  return kept;
 }
 
 // ---------------------------------------------------------------------------
@@ -420,6 +454,26 @@ function renderCommittee(tree) {
   return lines.join('\n');
 }
 
+// Logo height per sponsor tier, first tier largest; later tiers use the last.
+const TIER_HEIGHTS = ['0.9in', '0.7in', '0.55in', '0.45in', '0.35in'];
+
+function renderSponsors(sponsors) {
+  const lines = ['<section class="page sponsors">', '  <h1>Thank You Sponsors!</h1>'];
+  sponsors.forEach((tier, i) => {
+    const h = TIER_HEIGHTS[Math.min(i, TIER_HEIGHTS.length - 1)];
+    lines.push(
+      '  <section class="tier">',
+      `    <h3>${esc(tier.title)}</h3>`,
+      '    <div class="logos">',
+      ...tier.logos.map((l) => `      <img src="${src(l.path)}" alt="${esc(l.alt)}" style="height:${h}">`),
+      '    </div>',
+      '  </section>',
+    );
+  });
+  lines.push(`  <p class="sponsors__footer">${esc(SITE_BASE)}</p>`, '</section>');
+  return lines.join('\n');
+}
+
 /**
  * In-page paginator, emitted verbatim. Chrome runs it before printing (the
  * --virtual-time-budget lets it finish), and it runs in an ordinary browser
@@ -551,10 +605,17 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
 .row--committee .group--d3, .row--committee .group--d4 { break-inside: avoid; }
 .row--committee ul { list-style: none; margin: 0 0 6pt; padding: 0; }
 .row--committee li { margin: 0 0 1pt; }
+.sponsors { display: flex; flex-direction: column; text-align: center; }
+.sponsors h1 { margin-bottom: 0.15in; }
+.sponsors .tier { margin: 0 0 0.2in; }
+.sponsors .tier h3 { font-variant: small-caps; letter-spacing: 0.05em; font-size: 12pt; color: #555; margin: 0 0 6pt; }
+.sponsors .logos { display: flex; flex-wrap: wrap; justify-content: center; align-items: center; gap: 0.2in 0.35in; }
+.sponsors .logos img { max-width: 2.6in; object-fit: contain; }
+.sponsors__footer { margin-top: auto; font-weight: 700; }
 @media screen { body { background: #888; } .page { background: #fff; margin: 0.25in auto; box-shadow: 0 1px 6px rgba(0,0,0,.3); } }
 `;
 
-function renderDocument({ program, welcome, committee }) {
+function renderDocument({ program, welcome, committee, sponsors }) {
   return [
     BANNER,
     '<!doctype html>',
@@ -569,6 +630,7 @@ function renderDocument({ program, welcome, committee }) {
     ...(welcome ? [renderWelcome(welcome)] : []),
     renderSchedule(program.days),
     renderCommittee(committee),
+    renderSponsors(sponsors),
     `<script>${PAGINATOR_JS}</script>`,
     '</body>',
     '</html>',
@@ -600,7 +662,8 @@ async function main() {
   }
   const welcome = readWelcome();
   const committee = readCommittee();
-  writeIfChanged(OUT_HTML, renderDocument({ program, welcome, committee }));
+  const sponsors = readSponsors();
+  writeIfChanged(OUT_HTML, renderDocument({ program, welcome, committee, sponsors }));
   if (process.argv.includes('--html-only')) return;
 }
 
