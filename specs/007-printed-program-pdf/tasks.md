@@ -106,7 +106,7 @@ expected values.
   - **Code:** add `FORMAT_LABELS`, the local `normalizeFormat`,
     `renderSchedule`, and `renderOverviewSession`.
 
-- [ ] 6. **Paginator** (Story 4; §6)
+- [x] 6. **Paginator** (Story 4; §6)
   - **Expected results**, checked with Chrome `--headless=new --dump-dom
     --virtual-time-budget=10000 file://…/_print/program.html`:
     - `data-paginated="true"` on `<html>`.
