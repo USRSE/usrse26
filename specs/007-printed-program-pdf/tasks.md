@@ -76,7 +76,7 @@ expected values.
     - Check `dateRange` by hand in `node -e` for both forms: same month and
       across a month boundary.
 
-- [ ] 4. **Markdown helpers and welcome page** (Story 3, Story 4 escaping; §3 `readWelcome`, §4, §5 Welcome, §9)
+- [x] 4. **Markdown helpers and welcome page** (Story 3, Story 4 escaping; §3 `readWelcome`, §4, §5 Welcome, §9)
   - **Expected results:**
     - `grep -c 'class="page welcome"'` → 1.
     - `Welcome!` and `coc@us-rse.org` are present.
