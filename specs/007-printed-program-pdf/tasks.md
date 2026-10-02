@@ -166,7 +166,7 @@ expected values.
     allowlist, `background` validation) and the org section in
     `renderSponsors`. Remove the temporary PR #63 files before committing.
 
-- [ ] 10. **Chrome rendering and staleness** (Story 1, Story 7; §7, §8)
+- [x] 10. **Chrome rendering and staleness** (Story 1, Story 7; §7, §8)
   - **Expected results:**
     - `node scripts/build-program-pdf.js` → exit 0. It writes
       `pages/program/program.pdf` and logs `program.pdf: N pages`, where N

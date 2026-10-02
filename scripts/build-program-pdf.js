@@ -42,6 +42,8 @@
 
 const fs = require('fs');
 const path = require('path');
+const { execFileSync } = require('child_process');
+const { pathToFileURL } = require('url');
 
 // ---------------------------------------------------------------------------
 // Configuration
@@ -741,6 +743,74 @@ function writeIfChanged(file, content) {
   return true;
 }
 
+const CHROME_CANDIDATES = [
+  '/Applications/Google Chrome.app/Contents/MacOS/Google Chrome',
+  '/Applications/Chromium.app/Contents/MacOS/Chromium',
+];
+const CHROME_NAMES = ['google-chrome', 'google-chrome-stable', 'chromium', 'chromium-browser'];
+
+/** CHROME_PATH, else a standard macOS install, else a PATH lookup; null if none. */
+function findChrome() {
+  if (process.env.CHROME_PATH) {
+    if (!fs.existsSync(process.env.CHROME_PATH)) {
+      throw new Error(`CHROME_PATH does not exist: ${process.env.CHROME_PATH}`);
+    }
+    return process.env.CHROME_PATH;
+  }
+  const found = CHROME_CANDIDATES.find((c) => fs.existsSync(c));
+  if (found) return found;
+  for (const name of CHROME_NAMES) {
+    try {
+      const p = execFileSync('which', [name], { stdio: ['ignore', 'pipe', 'ignore'] }).toString().trim();
+      if (p) return p;
+    } catch {
+      // not on PATH
+    }
+  }
+  return null;
+}
+
+// --virtual-time-budget lets the paginator finish before Chrome prints or dumps.
+const CHROME_FLAGS = ['--headless=new', '--disable-gpu', '--no-sandbox',
+  '--virtual-time-budget=10000', '--allow-file-access-from-files'];
+
+function runChrome(chrome, args) {
+  try {
+    return execFileSync(chrome, [...CHROME_FLAGS, ...args],
+      { stdio: ['ignore', 'pipe', 'pipe'], timeout: 60000, maxBuffer: 64 * 1024 * 1024 });
+  } catch (err) {
+    const first = String(err.stderr || err.message).split('\n').find((l) => l.trim()) || 'unknown error';
+    throw new Error(`Chrome failed to print: ${first.trim()}`);
+  }
+}
+
+/** Print to a temp file beside the target, then rename: no truncated PDFs. */
+function renderPdf(chrome, htmlFile, pdfFile) {
+  const tmp = `${pdfFile}.tmp`;
+  fs.rmSync(tmp, { force: true });
+  try {
+    runChrome(chrome, ['--no-pdf-header-footer', '--print-to-pdf-no-header',
+      `--print-to-pdf=${tmp}`, pathToFileURL(htmlFile).href]);
+    if (!fs.existsSync(tmp)) throw new Error('Chrome failed to print: no PDF written');
+    fs.renameSync(tmp, pdfFile);
+  } finally {
+    fs.rmSync(tmp, { force: true });
+  }
+  console.log(`  wrote      ${rel(pdfFile)}`);
+}
+
+/** Chrome's CLI reports no page count, so count page objects in its PDF. */
+function pdfPageCount(pdfFile) {
+  return (fs.readFileSync(pdfFile).toString('latin1').match(/\/Type\s*\/Page(?!s)/g) || []).length;
+}
+
+/** The paginator's data-overflow, from a --dump-dom of the same HTML. */
+function overflowCount(chrome, htmlFile) {
+  const dom = runChrome(chrome, ['--dump-dom', pathToFileURL(htmlFile).href]).toString();
+  const m = /<html[^>]*\bdata-overflow="(\d+)"/.exec(dom);
+  return m ? Number(m[1]) : null;
+}
+
 async function main() {
   const program = readProgram();
   for (const file of [QR_SVG, LOGO_SVG]) {
@@ -754,6 +824,28 @@ async function main() {
   const orgMembers = readOrgMembers();
   writeIfChanged(OUT_HTML, renderDocument({ program, welcome, committee, sponsors, orgMembers }));
   if (process.argv.includes('--html-only')) return;
+
+  const chrome = findChrome();
+  if (!chrome) {
+    throw new Error(`no Chrome/Chromium found — wrote ${rel(OUT_HTML)}; set CHROME_PATH to render the PDF`);
+  }
+  // mtime, not writeIfChanged's flag: a run that wrote the HTML and then
+  // failed before the PDF must still render next time.
+  const stale = process.argv.includes('--force') || !fs.existsSync(OUT_PDF)
+    || fs.statSync(OUT_PDF).mtimeMs < fs.statSync(OUT_HTML).mtimeMs;
+  if (!stale) {
+    console.log(`  unchanged  ${rel(OUT_PDF)}`);
+    return;
+  }
+  fs.mkdirSync(path.dirname(OUT_PDF), { recursive: true });
+  renderPdf(chrome, OUT_HTML, OUT_PDF);
+  console.log(`${path.basename(OUT_PDF)}: ${pdfPageCount(OUT_PDF)} pages`);
+  const overflow = overflowCount(chrome, OUT_HTML);
+  if (overflow === null) {
+    console.warn('warning: could not read the paginator result — check the PDF layout by eye');
+  } else if (overflow > 0) {
+    console.warn(`warning: ${overflow} page(s) or row(s) overflow and are clipped — trim content and rebuild`);
+  }
 }
 
 main().catch((err) => {
