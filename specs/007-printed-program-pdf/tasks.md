@@ -100,7 +100,7 @@ expected values.
     - `Schedule Overview` is present.
     - The number of `data-first="1"` rows equals the total slot count (28).
     - `grep -ci 'chair'` → 0.
-    - `<b>Keynote:</b> Fernando Pérez` is present.
+    - `Keynote — Fernando Pérez` is present (label in regular weight).
     - Muted sessions such as `Registration` render with no `<ul>`.
     - Talk sessions such as `RAG Assistants` render a `<ul>` with 4 `<li>`.
   - **Code:** add `FORMAT_LABELS`, the local `normalizeFormat`,

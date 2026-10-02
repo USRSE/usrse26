@@ -140,8 +140,10 @@ that I can pick sessions without a phone.
   `Talks` or it has more than one talk), THE system SHALL list each talk's
   `title` as a bullet, without speakers or abstracts.
 - WHEN a session has exactly one talk whose `format` is Keynote, Workshop,
-  Bird of a Feather, or Student, THE system SHALL show `<format>: <talk title>`
-  and, when the talk has `speakers`, the speakers.
+  Bird of a Feather, or Student, THE system SHALL show `<format> — <talk title>`
+  without speakers.
+- WHEN a session title contains "(Sponsorship available)", THE system SHALL
+  drop that note from the printed title (e.g. "Morning Break").
 - WHEN a session has non-empty `info`, THE system SHALL render it as a short
   plain-text line (Markdown stripped).
 - WHEN a day's schedule crosses a page break, THE system SHALL repeat the day

@@ -192,7 +192,7 @@ does that work there. The PDF needs only two small functions:
   Used by the welcome letter. Paragraphs split on blank lines, each wrapped in
   `<p>`, and single newlines inside a paragraph become spaces.
 - **`mdToText(md)`** applies the same patterns but emits plain text, then
-  `oneLine()`. Used for `session.info`, committee members, and speakers.
+  `oneLine()`. Used for `session.info`, talk titles, and committee members.
 
 Every sheet-sourced string goes through `esc` (directly or inside `mdInline`)
 before it reaches the HTML (Story 4, injection).
@@ -223,9 +223,32 @@ of `.page` elements.
 
 **Typography and color.** The font stack is `system-ui, -apple-system,
 "Segoe UI", Roboto, "Helvetica Neue", Arial, sans-serif`, with no web fonts
-because the render is offline. The accent is `#C16531`, the `sectionheader`
-color on `index.html`. Body text is 9.5pt, matching the 2025 density. Colors
+because the render is offline. The accent is the site's brand color,
+`--us-rse-main` (`#741755`), read from `assets/css/bootstrap.css` at build
+time by `readAccent()` and set as the `--accent` custom property; a missing
+or non-hex value fails the build. Body text is 9.5pt, matching the 2025 density. Colors
 are print-safe and there is no dark mode.
+
+**Backdrop squares.** The cover and the sponsors page carry the USRSE'25
+program's backdrop: light-gray (`#E6E6E4`) squares, dense at the top and
+thinning downward. `renderSquares(rows, seed, bleed)` emits it as an
+absolutely positioned inline SVG behind the content, from a fixed-seed PRNG
+(mulberry32), so the pattern, and with it the HTML, is identical on every
+run. Squares are separated by 0.05in gaps and sized so a whole number spans
+the width exactly; the non-bleed form (15 squares across the 7.2in content
+width, inside the page margins) remains available.
+
+Both pages are full bleed (`bleed`), as in 2025: 17 squares span the whole
+8.5in page from its top edge.
+
+- **Cover**: 8 rows, down to just above the USRSE logo. The QR band also
+  runs edge to edge (negative side margins, square corners), and the cover
+  content sits at the bottom of the page.
+- **Sponsors page**: 10 rows, reaching to about 5in, just above the middle
+  of the page.
+
+Full bleed needs a printer (or print shop) that prints to the paper edge;
+on a desktop printer the outer edge is clipped by its unprintable margin.
 
 **Cover (Story 2).** From top to bottom:
 
@@ -271,13 +294,16 @@ found: assets/img/program-qr.svg` when missing.
 - Time is `${slot.start}–${slot.end}` with an en dash, as `fmtRange` writes
   it. Only the first session in a slot (`data-first="1"`) shows the time.
 - The session body (`renderOverviewSession(session)`) is built as follows:
+  - The title has any "(Sponsorship available)" note removed
+    (`SPONSORSHIP_NOTE`, case-insensitive): it is sponsor outreach, not
+    attendee information.
   - **Muted** (`session.muted`): one line, **title**, *room*.
   - **Otherwise**: **title**, *room* on the first line, then:
     - non-empty `session.info` → `<p class="info">` with `mdToText(info)`
     - `talks.length === 1` and `normalizeFormat(talk.format)` is one of
-      Keynote, Workshop, Bird of a Feather, Student → `<p><b>Keynote:</b>
-      Fernando Pérez</p>`, using `FORMAT_LABELS`, plus the speakers line when
-      `talk.speakers` is non-empty
+      Keynote, Workshop, Bird of a Feather, Student → `<p>Keynote —
+      Fernando Pérez</p>` (regular weight, like the time column), using
+      `FORMAT_LABELS`, with no speakers line
     - `session.type === 'Talks'` or `talks.length > 1` → `<ul>` with one
       `<li>` per talk title
     - otherwise (one talk with any other format) → one `<li>`, so the talk is
@@ -497,7 +523,8 @@ comment points to this.
 | 4 — bold title + italic room; muted one-liner | §5 `renderOverviewSession` |
 | 4 — no chair | §5 (never read) |
 | 4 — talk bullets | §5 |
-| 4 — single Keynote/Workshop/BoF/Student → "Format: title" + speakers | §5, `FORMAT_LABELS` |
+| 4 — single Keynote/Workshop/BoF/Student → "Format: title", no speakers | §5, `FORMAT_LABELS` |
+| 4 — "(Sponsorship available)" dropped from titles | §5 `SPONSORSHIP_NOTE` |
 | 4 — `info` as plain text | §4 `mdToText` |
 | 4 — ", continued" day heading; no session split | §6 paginator |
 | 4 — escaping | §4, §5 (`esc` everywhere) |
