@@ -185,7 +185,7 @@ expected values.
   - **Code:** add `findChrome`, `renderPdf` (temp + rename), page counting,
     the `--dump-dom` overflow check, the mtime staleness rule, and `--force`.
 
-- [ ] 11. **Generate, review, and commit outputs** (all stories)
+- [x] 11. **Generate, review, and commit outputs** (all stories)
   - **Expected results:**
     - `node scripts/build-program-pdf.js` → exit 0, `data-overflow` 0.
     - `bundle exec jekyll build` → exit 0.
