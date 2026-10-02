@@ -59,10 +59,10 @@
           "break": true,
           "sessions": [
             {
-              "title": "Morning Break (Sponsorship available)",
+              "title": "Morning Break",
               "type": "Break",
-              "room": "Anywhere",
-              "info": "",
+              "room": "San Jose Marriott",
+              "info": "US-RSE Office Hours",
               "plenary": false,
               "muted": true,
               "talks": []
@@ -294,9 +294,9 @@
           "break": true,
           "sessions": [
             {
-              "title": "Lunch Break (Sponsorship available)",
+              "title": "Lunch Break",
               "type": "Meal",
-              "room": "San Jose Ballroom Salon 3 & 4",
+              "room": "San Jose Marriott",
               "info": "",
               "plenary": false,
               "muted": true,
@@ -431,9 +431,9 @@
           "break": true,
           "sessions": [
             {
-              "title": "Afternoon Break (Sponsorship available)",
+              "title": "Afternoon Break",
               "type": "Break",
-              "room": "Anywhere",
+              "room": "San Jose Marriott",
               "info": "",
               "plenary": false,
               "muted": true,
@@ -687,7 +687,7 @@
               "title": "Plenary II",
               "type": "Plenary",
               "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "",
+              "info": "A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.",
               "plenary": true,
               "muted": false,
               "talks": []
@@ -702,12 +702,30 @@
           "break": true,
           "sessions": [
             {
-              "title": "Morning Break (Sponsorship available)",
+              "title": "Morning Break",
               "type": "Break",
-              "room": "Anywhere",
-              "info": "",
+              "room": "San Jose Marriott",
+              "info": "US-RSE Office Hours",
               "plenary": false,
               "muted": true,
+              "talks": []
+            }
+          ]
+        },
+        {
+          "start": "10am",
+          "end": "3:30pm",
+          "startISO": "2026-10-20T10:00:00-07:00",
+          "endISO": "2026-10-20T15:30:00-07:00",
+          "break": false,
+          "sessions": [
+            {
+              "title": "Job Fair",
+              "type": "Workshop",
+              "room": "Market Street",
+              "info": "",
+              "plenary": false,
+              "muted": false,
               "talks": []
             }
           ]
@@ -739,14 +757,14 @@
                   "href": "program/student-early-career-program/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models"
                 },
                 {
-                  "title": "TBD",
+                  "title": "AI Token Cost Management",
                   "speakers": "Hasti Mehta",
                   "people": [
                     "Hasti Mehta"
                   ],
                   "format": "Student",
                   "infoMd": "11:00 - 11:30",
-                  "href": "program/student-early-career-program/#tbd"
+                  "href": "program/student-early-career-program/#ai-token-cost-management"
                 }
               ]
             }
@@ -941,9 +959,9 @@
           "break": true,
           "sessions": [
             {
-              "title": "Lunch Break (Sponsorship available)",
+              "title": "Lunch Break",
               "type": "Meal",
-              "room": "San Jose Ballroom Salon 3 & 4",
+              "room": "San Jose Marriott",
               "info": "Working Group Fair",
               "plenary": false,
               "muted": true,
@@ -1084,9 +1102,9 @@
           "break": true,
           "sessions": [
             {
-              "title": "Afternoon Break (Sponsorship available)",
+              "title": "Afternoon Break",
               "type": "Break",
-              "room": "Anywhere",
+              "room": "San Jose Marriott",
               "info": "",
               "plenary": false,
               "muted": true,
@@ -1285,6 +1303,24 @@
               ]
             }
           ]
+        },
+        {
+          "start": "6pm",
+          "end": "8pm",
+          "startISO": "2026-10-20T18:00:00-07:00",
+          "endISO": "2026-10-20T20:00:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Dinner",
+              "type": "Meal",
+              "room": "San Jose Marriott",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
         }
       ]
     },
@@ -1337,10 +1373,10 @@
           "break": true,
           "sessions": [
             {
-              "title": "Morning Break (Sponsorship available)",
+              "title": "Morning Break",
               "type": "Break",
-              "room": "Anywhere",
-              "info": "",
+              "room": "San Jose Marriott",
+              "info": "US-RSE Office Hours",
               "plenary": false,
               "muted": true,
               "talks": []
@@ -1535,9 +1571,9 @@
           "break": true,
           "sessions": [
             {
-              "title": "Lunch Break (Sponsorship available)",
+              "title": "Lunch Break",
               "type": "Meal",
-              "room": "San Jose Ballroom Salon 3 & 4",
+              "room": "San Jose Marriott",
               "info": "",
               "plenary": false,
               "muted": true,
@@ -1733,7 +1769,7 @@
             {
               "title": "Transition Break",
               "type": "Break",
-              "room": "Anywhere",
+              "room": "San Jose Marriott",
               "info": "",
               "plenary": false,
               "muted": true,

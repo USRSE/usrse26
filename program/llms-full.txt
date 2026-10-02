@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 46 sessions, 82 talks (82 with published
+> in the Age of AI". 3 days, 48 sessions, 82 talks (82 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -73,11 +73,16 @@ Abstract:
 >
 > Fernando regularly lectures about scientific computing, data science and open science. He co-founded the International Interactive Computing Collaboration ([2i2c](https://2i2c.org)) to provide open infrastructure for modern science and education, and is also a founding member of [NumFOCUS](https://numfocus.org). He is the recipient of the 2024 Exceptional Public Service Medal from NASA, the 2024 "Champions of Open Science" recognition from the White House Office of Science and Technology Policy, the 2017 ACM Software Systems Award and the 2012 Award for the Advancement of Free Software from the Free Software Foundation. He is a Kavli Frontiers Fellow of the US National Academy of Sciences (2016). Fernando holds a PhD in particle physics from the University of Colorado at Boulder, which he followed with postdoctoral research in applied mathematics.
 
-### 10–10:30am — Morning Break (Sponsorship available)
+### 10–10:30am — Morning Break
 
 - Time: 2026-10-19T10:00:00-07:00 to 2026-10-19T10:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
+
+About this session:
+
+> US-RSE Office Hours
 
 ### 10:30–11:30am — Panel
 
@@ -286,10 +291,10 @@ Abstract:
 >
 > Drawing on our experience building the Process Optimization and Modeling for Minerals Sustainability (PrOMMiS) Flowsheet Inspector, a domain-specific application designed for code-driven computational software, this talk shares practical strategies for building trust and confidence among domain experts with limited programming experience. We discuss UX patterns that surface the underlying conceptual models and help users to effectively execute, debug, and verify AI-generated modifications. Through specific examples, we demonstrate how to make diagnostic information more accessible, improve error discoverability, and empower users to evaluate changes through an intuitive interface.
 
-### 12–1:30pm — Lunch Break (Sponsorship available)
+### 12–1:30pm — Lunch Break
 
 - Time: 2026-10-19T12:00:00-07:00 to 2026-10-19T13:30:00-07:00 (90 min)
-- Room: San Jose Ballroom Salon 3 & 4
+- Room: San Jose Marriott
 - Type: Meal
 - Concurrent with: nothing (the only session at this time)
 
@@ -378,9 +383,10 @@ Abstract:
 >
 > Participants are expected to bring a laptop.
 
-### 3–3:30pm — Afternoon Break (Sponsorship available)
+### 3–3:30pm — Afternoon Break
 
 - Time: 2026-10-19T15:00:00-07:00 to 2026-10-19T15:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
@@ -624,11 +630,27 @@ Abstract:
 - Plenary: yes
 - Concurrent with: nothing (the only session at this time)
 
-### 10–10:30am — Morning Break (Sponsorship available)
+About this session:
+
+> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
+
+### 10–10:30am — Morning Break
 
 - Time: 2026-10-20T10:00:00-07:00 to 2026-10-20T10:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
-- Concurrent with: nothing (the only session at this time)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street)
+
+About this session:
+
+> US-RSE Office Hours
+
+### 10am–3:30pm — Job Fair
+
+- Time: 2026-10-20T10:00:00-07:00 to 2026-10-20T15:30:00-07:00 (330 min)
+- Room: Market Street
+- Type: Workshop
+- Concurrent with: Morning Break (10–10:30am, San Jose Marriott); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room); Lunch Break (12–1:30pm, San Jose Marriott); Working Group Fair (Presentations during lunch) (12:45–1:15pm, San Jose Ballroom Salon 3 & 4); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room); Afternoon Break (3–3:30pm, San Jose Marriott)
 
 ### 10:30–11:30am — Making AI Sustainable: Token Economics
 
@@ -636,7 +658,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Student/Early Career
 - Chair: Scott Michael
-- Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 
 #### Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models
 
@@ -650,11 +672,11 @@ Abstract:
 >
 > Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.
 
-#### TBD
+#### AI Token Cost Management
 
 - Format: Student
 - Presenters: Hasti Mehta
-- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#tbd
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#ai-token-cost-management
 
 Abstract:
 
@@ -666,7 +688,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
 - Chair: Luca Bonaldo
-- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 
 #### Research Software Engineering in the Age of Generative AI
 
@@ -726,7 +748,7 @@ Abstract:
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Kate Arneson
-- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
 
 #### Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows
 
@@ -794,7 +816,7 @@ Abstract:
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Vani Walvekar
-- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 
 #### DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments
 
@@ -836,12 +858,12 @@ Abstract:
 
 > Modernization of legacy scientific codes is often necessary to keep up with the ever-evolving changes in the compute resource ecosystem. Parallelization and migration from poorly supported software ecosystems are two of the most time-consuming activities in the research software engineering field. This paper presents our experience in the successful, two-phase AI-assisted modernization of NMAP-RKPM, a roughly 60,000line, 3D explicit solid mechanics physics engine based on the Reproducing Kernel Particle Method (RKPM). We converted this single threaded, Fortran based MPI application into a OpenMPparallel C++ based MPI tool in the span of a few months. While Large Language Model (LLM) based tools on their own proved inadequate, we developed a highly structured “hand-holding” agentic AI methodology, like providing manually created examples, ensuring continuous buildability and limiting session scope, that was instead highly effective. The paper provides both the AI-assisted steps that were successful and the problems that we had to overcome, alongside the reasoning behind the chosen path.
 
-### 12–1:30pm — Lunch Break (Sponsorship available)
+### 12–1:30pm — Lunch Break
 
 - Time: 2026-10-20T12:00:00-07:00 to 2026-10-20T13:30:00-07:00 (90 min)
-- Room: San Jose Ballroom Salon 3 & 4
+- Room: San Jose Marriott
 - Type: Meal
-- Concurrent with: Working Group Fair (Presentations during lunch) (12:45–1:15pm, San Jose Ballroom Salon 3 & 4)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Working Group Fair (Presentations during lunch) (12:45–1:15pm, San Jose Ballroom Salon 3 & 4)
 
 About this session:
 
@@ -851,14 +873,14 @@ About this session:
 
 - Time: 2026-10-20T12:45:00-07:00 to 2026-10-20T13:15:00-07:00 (30 min)
 - Room: San Jose Ballroom Salon 3 & 4
-- Concurrent with: Lunch Break (Sponsorship available) (12–1:30pm, San Jose Ballroom Salon 3 & 4)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Lunch Break (12–1:30pm, San Jose Marriott)
 
 ### 1:30–3pm — RSE Skill Training
 
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: BoF
-- Concurrent with: User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
 
 #### How to train an RSE: A discussion of RSE skill training - past, future, and present
 
@@ -877,7 +899,7 @@ Abstract:
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Workshop
-- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
 
 #### Journey Mapping: A technique to see opportunities and recognize gaps in user experience
 
@@ -894,7 +916,7 @@ Abstract:
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: BoF
-- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
 
 #### How can institutional RSE hubs and OSPOs work together for the betterment of research outputs?
 
@@ -911,7 +933,7 @@ Abstract:
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Workshop
-- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6)
 
 #### Fixer-Upper Software: Refactoring Code for Reuse and Impact
 
@@ -927,11 +949,12 @@ Abstract:
 >
 > A computer will be needed for full participation, though the discussion will be informative for attendees without one. Exercises will be provided in Python (typed and untyped).
 
-### 3–3:30pm — Afternoon Break (Sponsorship available)
+### 3–3:30pm — Afternoon Break
 
 - Time: 2026-10-20T15:00:00-07:00 to 2026-10-20T15:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
-- Concurrent with: nothing (the only session at this time)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street)
 
 ### 3:30–5pm — Case Studies Demonstrating RSE Impacts Part II
 
@@ -1131,6 +1154,13 @@ Abstract:
 
 > Speech is a powerful, well-replicated marker of mental and neurological health, with linguistic and acoustic features linked to depression, schizophrenia, and neurocognitive status across clinical populations and languages. Translating that evidence into technology that can accelerate the field depends on collecting naturalistic speech at scale, and the main obstacle has been the absence of tools that put recording in the hands of participants in their everyday environments. A recent review of 149 mental health apps found that only 8% were partially adaptable and none allowed researchers to add new content. This paper describes Fabla, an open-source voice-first ecological momentary assessment (EMA) platform built by an embedded research software engineering team at Emory University's Georgia Clinical and Translational Science Alliance. Fabla combines a JSON-protocol-driven Flutter frontend on iOS and Android, a researcher-facing dashboard built on Retool that lets investigators manage participants and schedule notifications without writing code, and a HIPAA-eligible AWS backend operating in Emory's IRB-approved infrastructure. Over the past year, Fabla has supported 15 active studies spanning depression, substance use, meditation-based intervention, and social determinants of health, collecting more than 30,000 minutes of voice diary audio. A preregistered validation study (n=87) found voice diaries produced more than twice the daily language volume of identical text diaries [1], with linguistic markers of depression detectable in voice but not text. We describe the engineering decisions that made adoption practical, reflect on what embedded RSE teams in clinical research can look like, and outline the direction for future work: a management dashboard with integrated study health and speech analytics.
 
+### 6–8pm — Dinner
+
+- Time: 2026-10-20T18:00:00-07:00 to 2026-10-20T20:00:00-07:00 (120 min)
+- Room: San Jose Marriott
+- Type: Meal
+- Concurrent with: nothing (the only session at this time)
+
 ## Wednesday, October 21, 2026
 
 ### 7:30–8:30am — Registration
@@ -1152,11 +1182,16 @@ About this session:
 
 > Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
 
-### 10–10:30am — Morning Break (Sponsorship available)
+### 10–10:30am — Morning Break
 
 - Time: 2026-10-21T10:00:00-07:00 to 2026-10-21T10:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
+
+About this session:
+
+> US-RSE Office Hours
 
 ### 10:30am–12pm — Collaboration & Community Building
 
@@ -1356,10 +1391,10 @@ Abstract:
 >
 > Through a comparative analysis of NeSy implementations and purely neural baselines, this talk will offer a comprehensive overview of the integration costs and practical trade-offs involved in developing trustworthy AI systems. The presentation will conclude with a critical evaluation of the limits of this paradigm, providing clear criteria to help researchers determine when a neuro-symbolic approach is appropriate for their specific objectives. Attendees will leave with a functional roadmap for building reliable AI, equipped with the insights needed to navigate the essential balance between neural flexibility and symbolic rigor.
 
-### 12–1:30pm — Lunch Break (Sponsorship available)
+### 12–1:30pm — Lunch Break
 
 - Time: 2026-10-21T12:00:00-07:00 to 2026-10-21T13:30:00-07:00 (90 min)
-- Room: San Jose Ballroom Salon 3 & 4
+- Room: San Jose Marriott
 - Type: Meal
 - Concurrent with: nothing (the only session at this time)
 
@@ -1544,6 +1579,7 @@ Abstract:
 ### 3–3:15pm — Transition Break
 
 - Time: 2026-10-21T15:00:00-07:00 to 2026-10-21T15:15:00-07:00 (15 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 

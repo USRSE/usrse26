@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 46 sessions, 82 talks (82 with published
+> in the Age of AI". 3 days, 48 sessions, 82 talks (82 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -65,11 +65,13 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Fernando Pérez" (Keynote)
     https://us-rse.org/usrse26/program/keynotes/#fernando-p-rez
 
-### 10–10:30am — Morning Break (Sponsorship available)
+### 10–10:30am — Morning Break
 
 - Time: 2026-10-19T10:00:00-07:00 to 2026-10-19T10:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
+- About: US-RSE Office Hours
 
 ### 10:30–11:30am — Panel
 
@@ -141,10 +143,10 @@ Human-readable program page: https://us-rse.org/usrse26/program/
     Presenters: Rajshree Deshmukh, Sheng Pang, Tanushree Subramanian, Johanna Cohoon, Sarah Poon and Dan Gunter
     https://us-rse.org/usrse26/program/talks/#designing-for-trust-in-ai-assisted-scientific-computing
 
-### 12–1:30pm — Lunch Break (Sponsorship available)
+### 12–1:30pm — Lunch Break
 
 - Time: 2026-10-19T12:00:00-07:00 to 2026-10-19T13:30:00-07:00 (90 min)
-- Room: San Jose Ballroom Salon 3 & 4
+- Room: San Jose Marriott
 - Type: Meal
 - Concurrent with: nothing (the only session at this time)
 - Talks (1):
@@ -195,9 +197,10 @@ Human-readable program page: https://us-rse.org/usrse26/program/
     Presenters: James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson
     https://us-rse.org/usrse26/program/workshops/#a-group-attempt-at-threat-modeling-for-research-software-systems
 
-### 3–3:30pm — Afternoon Break (Sponsorship available)
+### 3–3:30pm — Afternoon Break
 
 - Time: 2026-10-19T15:00:00-07:00 to 2026-10-19T15:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
@@ -287,12 +290,22 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Plenary
 - Plenary: yes
 - Concurrent with: nothing (the only session at this time)
+- About: A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
 
-### 10–10:30am — Morning Break (Sponsorship available)
+### 10–10:30am — Morning Break
 
 - Time: 2026-10-20T10:00:00-07:00 to 2026-10-20T10:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
-- Concurrent with: nothing (the only session at this time)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street)
+- About: US-RSE Office Hours
+
+### 10am–3:30pm — Job Fair
+
+- Time: 2026-10-20T10:00:00-07:00 to 2026-10-20T15:30:00-07:00 (330 min)
+- Room: Market Street
+- Type: Workshop
+- Concurrent with: Morning Break (10–10:30am, San Jose Marriott); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room); Lunch Break (12–1:30pm, San Jose Marriott); Working Group Fair (Presentations during lunch) (12:45–1:15pm, San Jose Ballroom Salon 3 & 4); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room); Afternoon Break (3–3:30pm, San Jose Marriott)
 
 ### 10:30–11:30am — Making AI Sustainable: Token Economics
 
@@ -300,14 +313,14 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Student/Early Career
 - Chair: Scott Michael
-- Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (2):
   - "Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models" (Student)
     Presenters: Julian Pistorus
     https://us-rse.org/usrse26/program/student-early-career-program/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models
-  - "TBD" (Student)
+  - "AI Token Cost Management" (Student)
     Presenters: Hasti Mehta
-    https://us-rse.org/usrse26/program/student-early-career-program/#tbd
+    https://us-rse.org/usrse26/program/student-early-career-program/#ai-token-cost-management
 
 ### 10:30am–12pm — RSE Practices in the Age of AI Part I
 
@@ -315,7 +328,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
 - Chair: Luca Bonaldo
-- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Research Software Engineering in the Age of Generative AI" (Talk)
     Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
@@ -336,7 +349,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Kate Arneson
-- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows" (Talk)
     Presenters: Md Hasan Shahriar Simanto
@@ -357,7 +370,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Vani Walvekar
-- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 - Talks (4):
   - "DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments" (Paper)
     Presenters: Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel
@@ -372,26 +385,26 @@ Human-readable program page: https://us-rse.org/usrse26/program/
     Presenters: Anthony Marinov and Igor Sfiligoi
     https://us-rse.org/usrse26/program/papers/#structuring-agentic-ai-for-hpc-code-modernization
 
-### 12–1:30pm — Lunch Break (Sponsorship available)
+### 12–1:30pm — Lunch Break
 
 - Time: 2026-10-20T12:00:00-07:00 to 2026-10-20T13:30:00-07:00 (90 min)
-- Room: San Jose Ballroom Salon 3 & 4
+- Room: San Jose Marriott
 - Type: Meal
-- Concurrent with: Working Group Fair (Presentations during lunch) (12:45–1:15pm, San Jose Ballroom Salon 3 & 4)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Working Group Fair (Presentations during lunch) (12:45–1:15pm, San Jose Ballroom Salon 3 & 4)
 - About: Working Group Fair
 
 ### 12:45–1:15pm — Working Group Fair (Presentations during lunch)
 
 - Time: 2026-10-20T12:45:00-07:00 to 2026-10-20T13:15:00-07:00 (30 min)
 - Room: San Jose Ballroom Salon 3 & 4
-- Concurrent with: Lunch Break (Sponsorship available) (12–1:30pm, San Jose Ballroom Salon 3 & 4)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); Lunch Break (12–1:30pm, San Jose Marriott)
 
 ### 1:30–3pm — RSE Skill Training
 
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: BoF
-- Concurrent with: User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
 - Talks (1):
   - "How to train an RSE: A discussion of RSE skill training - past, future, and present" (Bird of a Feather)
     Presenters: Ellianna Abrahams, Lauren Milechin, Jeffrey Carver, Daniel Woulfin, Patrick Diehl and Gabrielle O'Brien
@@ -402,7 +415,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Workshop
-- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
 - Talks (1):
   - "Journey Mapping: A technique to see opportunities and recognize gaps in user experience" (Workshop)
     Presenters: Johanna Cohoon, Rajshree Deshmukh, Md Hasan Shahriar Simanto, Mary Goldman, Katrina Turner, Sarah Poon
@@ -413,7 +426,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: BoF
-- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Refactoring Code for Reuse and Impact (1:30–3pm, Willow Glen Room)
 - Talks (1):
   - "How can institutional RSE hubs and OSPOs work together for the betterment of research outputs?" (Bird of a Feather)
     Presenters: William Gearty, Jeffrey Young, Collin Capano, Ian Cosden, Daniel S. Katz, Richard Littauer, Fang Liu and Daniel Shown
@@ -424,17 +437,18 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-20T13:30:00-07:00 to 2026-10-20T15:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Workshop
-- Concurrent with: RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street); RSE Skill Training (1:30–3pm, San Jose Ballroom Salon 3 & 4); User Experience: Journey Mapping (1:30–3pm, San Jose Ballroom Salon 1 & 2); Improve Research Outputs by Improving Institutional Collaboration (1:30–3pm, San Jose Ballroom Salon 5 & 6)
 - Talks (1):
   - "Fixer-Upper Software: Refactoring Code for Reuse and Impact" (Workshop)
     Presenters: Brian Ward and Jeff Soules
     https://us-rse.org/usrse26/program/workshops/#fixer-upper-software-refactoring-code-for-reuse-and-impact
 
-### 3–3:30pm — Afternoon Break (Sponsorship available)
+### 3–3:30pm — Afternoon Break
 
 - Time: 2026-10-20T15:00:00-07:00 to 2026-10-20T15:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
-- Concurrent with: nothing (the only session at this time)
+- Concurrent with: Job Fair (10am–3:30pm, Market Street)
 
 ### 3:30–5pm — Case Studies Demonstrating RSE Impacts Part II
 
@@ -499,6 +513,13 @@ Human-readable program page: https://us-rse.org/usrse26/program/
     Presenters: Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan
     https://us-rse.org/usrse26/program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research
 
+### 6–8pm — Dinner
+
+- Time: 2026-10-20T18:00:00-07:00 to 2026-10-20T20:00:00-07:00 (120 min)
+- Room: San Jose Marriott
+- Type: Meal
+- Concurrent with: nothing (the only session at this time)
+
 ## Wednesday, October 21, 2026
 
 ### 7:30–8:30am — Registration
@@ -517,11 +538,13 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Concurrent with: nothing (the only session at this time)
 - About: Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
 
-### 10–10:30am — Morning Break (Sponsorship available)
+### 10–10:30am — Morning Break
 
 - Time: 2026-10-21T10:00:00-07:00 to 2026-10-21T10:30:00-07:00 (30 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
+- About: US-RSE Office Hours
 
 ### 10:30am–12pm — Collaboration & Community Building
 
@@ -583,10 +606,10 @@ Human-readable program page: https://us-rse.org/usrse26/program/
     Presenters: Shailaja Keyur Sampat
     https://us-rse.org/usrse26/program/talks/#logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms
 
-### 12–1:30pm — Lunch Break (Sponsorship available)
+### 12–1:30pm — Lunch Break
 
 - Time: 2026-10-21T12:00:00-07:00 to 2026-10-21T13:30:00-07:00 (90 min)
-- Room: San Jose Ballroom Salon 3 & 4
+- Room: San Jose Marriott
 - Type: Meal
 - Concurrent with: nothing (the only session at this time)
 
@@ -653,6 +676,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 ### 3–3:15pm — Transition Break
 
 - Time: 2026-10-21T15:00:00-07:00 to 2026-10-21T15:15:00-07:00 (15 min)
+- Room: San Jose Marriott
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 

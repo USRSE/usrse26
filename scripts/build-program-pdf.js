@@ -355,11 +355,14 @@ function mdToText(md) {
   return oneLine(mdApply(String(md == null ? '' : md), (_, t) => t));
 }
 
-/** Blank-line-separated paragraphs -> <p> lines. */
+/**
+ * Blank-line-separated paragraphs -> <p> lines. A single newline inside a
+ * paragraph is kept as <br>, so a letter's sign-off stays on its own lines.
+ */
 function mdParagraphs(md) {
   return String(md).trim().split(/\r?\n[ \t]*\r?\n/)
     .filter((p) => p.trim())
-    .map((p) => `<p>${mdInline(oneLine(p))}</p>`);
+    .map((p) => `<p>${p.split(/\r?\n/).map(oneLine).filter(Boolean).map(mdInline).join('<br>')}</p>`);
 }
 
 // ---------------------------------------------------------------------------
@@ -487,15 +490,22 @@ function textRange(slot) {
 // The sheet tags break titles for sponsor outreach; that note is not for attendees.
 const SPONSORSHIP_NOTE = /\s*\(sponsorship available\)/gi;
 
+// Muted session types whose Session Description still prints, e.g. "US-RSE
+// Office Hours" during a break. Registration stays a bare row.
+const MUTED_WITH_INFO = new Set(['break', 'meal']);
+
 /** Session chairs, abstracts and speaker names stay online only. */
 function renderOverviewSession(session) {
   const title = oneLine(session.title.replace(SPONSORSHIP_NOTE, ''));
   const head = `<p class="s__head"><b>${esc(title)}</b>`
     + (session.room ? `, <i>${esc(session.room)}</i>` : '') + '</p>';
-  if (session.muted) return [head];
   const lines = [head];
-  const talks = session.talks || [];
   const info = mdToText(session.info);
+  if (session.muted) {
+    if (info && MUTED_WITH_INFO.has(normalizeFormat(session.type))) lines.push(`<p class="info">${esc(info)}</p>`);
+    return lines;
+  }
+  const talks = session.talks || [];
   if (info) lines.push(`<p class="info">${esc(info)}</p>`);
   const label = talks.length === 1 ? FORMAT_LABELS[normalizeFormat(talks[0].format)] : undefined;
   if (label) {
@@ -738,6 +748,7 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
 .row--session ul { margin: 1pt 0 0; padding-left: 12pt; }
 .row--session li { margin: 0; }
 .row--muted { color: #555; padding: 2pt 0; }
+.row--muted .info { color: inherit; }
 .page--flow .content { height: 100%; overflow: hidden; }
 .flow { width: 8.5in; padding: 0 0.65in; }
 .row--committee { columns: 2; column-gap: 0.35in; padding-top: 6pt; }

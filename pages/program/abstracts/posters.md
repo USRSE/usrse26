@@ -406,21 +406,6 @@ The poster will also cover practical recommendations for deployment of locked so
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="gray-swans-in-two-sciences-a-portable-diagnosis-for-where-ai-for-science-models-break">
-        <span class="abstract__title">Gray Swans in Two Sciences: A Portable Diagnosis for Where AI-for-Science Models Break</span>
-        <span class="abstract__people">Mohsen Zand</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}AI surrogate models are being adopted across the sciences faster than the practices for checking them. The same failure is recurring in domain after domain: the model reaches excellent accuracy on the bulk of the distribution and fails on the rare, physically possible event that motivated the work in the first place. Climate science calls these events gray swans [1]. Most fields have no name or standard test for them, so each field is rediscovering the failure independently and paying full price to do it. This poster presents the same failure diagnosed in two domains that share no literature and extracts the part that transfers between them. Domain one: tropical cyclones. Working with atmospheric and statistical scientists, our team asked whether AI weather models can forecast storms more intense than anything in their training data [1]. Answering it was an engineering problem before it was a scientific one: training sets built with specific classes of events surgically removed, counterfactual experiments run across ocean basins at scale, and a comparison clean enough that a negative result would be believed. Trained on decades of data with every storm above Category 2 excluded, then given atmospheric conditions that produce a Category 5, the model returned a Category 2. It could not extrapolate past the intensities it had seen, though it could transfer what it learned from storms in other regions, a result with direct consequences for disaster preparedness and one that reached well beyond the field [2, 3].
-
-Domain two: autonomous vehicles. I carried that framing into trajectory prediction, where models, likewise, perform well on ordinary driving and fail systematically on the tail: near-collisions, emergency maneuvers, and unusual pedestrian behavior. The structure is identical. Rare events are underrepresented in training data, so a purely data-driven predictor has no mechanism for respecting physics it has never observed and no way to signal that it is guessing. The remedy transferred along with the diagnosis, encoding physical constraints structurally rather than waiting for data coverage to solve what more data cannot, and requiring the model to report when it is operating outside its own distribution. Experiments on standard driving benchmarks [4, 5, 6] are underway now, and quantitative results will be presented on the poster.
-
-What the poster offers. Alongside the two case studies, I present the short diagnostic I now apply on first contact with any AI-for-science project: how to construct a genuine held-out regime rather than a random split, where leakage hides in scientific data, and the heuristic for judging whether a cross-domain analogy is worth an engineer’s time. Most analogies are not worth it. This one transferred because the two problems shared a deep structure, physical constraints governing a rare tail, rather than a surface resemblance, and distinguishing the two cases before committing effort is the reusable skill.
-
-The poster format suits this argument. The two domains are best seen side by side, where the shared shape of the failure is visible at a glance and where the natural question is which third domain in the room has the same problem and has not yet noticed.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="tabray-a-python-package-for-generating-and-comparing-tabular-and-array-data-structures-with-different-topologies">
         <span class="abstract__title">tabray: a Python Package for Generating and Comparing Tabular and Array Data Structures with Different Topologies</span>
         <span class="abstract__people">Enrico Milanese</span>
