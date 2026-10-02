@@ -650,11 +650,11 @@ Abstract:
 >
 > Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.
 
-#### TBD
+#### AI Token Cost Management
 
 - Format: Student
 - Presenters: Hasti Mehta
-- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#tbd
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#ai-token-cost-management
 
 Abstract:
 

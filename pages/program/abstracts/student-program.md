@@ -52,8 +52,8 @@ Running an agent locally means no API bill, but you pay in context windows, VRAM
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="tbd">
-        <span class="abstract__title">TBD</span>
+      <h2 class="abstract__heading" id="ai-token-cost-management">
+        <span class="abstract__title">AI Token Cost Management</span>
         <span class="abstract__people">Hasti Mehta</span>
       </h2>
     </summary>
