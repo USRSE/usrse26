@@ -33,8 +33,9 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-19T10:00:00-07:00">10</time>–<time datetime="2026-10-19T10:30:00-07:00">10:30am</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="monday-morning-break-sponsorship-available">
-            <h3 class="session__title">Morning Break (Sponsorship available)</h3>
+          <article class="session session--muted" id="monday-morning-break">
+            <h3 class="session__title">Morning Break <span class="session__room">— San Jose Marriott</span></h3>
+            <div class="session__info">{% capture session_info_md %}US-RSE Office Hours{% endcapture %}{{ session_info_md | markdownify }}</div>
           </article>
         </div>
       </li>
@@ -87,8 +88,8 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-19T12:00:00-07:00">12</time>–<time datetime="2026-10-19T13:30:00-07:00">1:30pm</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="monday-lunch-break-sponsorship-available">
-            <h3 class="session__title">Lunch Break (Sponsorship available) <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
+          <article class="session session--muted" id="monday-lunch-break">
+            <h3 class="session__title">Lunch Break <span class="session__room">— San Jose Marriott</span></h3>
             <ol class="session__talks">
               <li class="talk"><span class="talk__format"></span> <a class="talk__link" href="{{ site.baseurl }}/program/student-early-career-program/#usrse-26-mentor-mentee-lunch"><span class="talk__title">USRSE'26 Mentor/Mentee Lunch</span></a></li>
             </ol>
@@ -131,8 +132,8 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-19T15:00:00-07:00">3</time>–<time datetime="2026-10-19T15:30:00-07:00">3:30pm</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="monday-afternoon-break-sponsorship-available">
-            <h3 class="session__title">Afternoon Break (Sponsorship available)</h3>
+          <article class="session session--muted" id="monday-afternoon-break">
+            <h3 class="session__title">Afternoon Break <span class="session__room">— San Jose Marriott</span></h3>
           </article>
         </div>
       </li>
@@ -198,14 +199,25 @@
           <article class="session session--plenary" id="tuesday-plenary-ii">
             <h3 class="session__title">Plenary II <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
             <p class="session__eyebrow">Plenary</p>
+            <div class="session__info">{% capture session_info_md %}A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.{% endcapture %}{{ session_info_md | markdownify }}</div>
           </article>
         </div>
       </li>
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-20T10:00:00-07:00">10</time>–<time datetime="2026-10-20T10:30:00-07:00">10:30am</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="tuesday-morning-break-sponsorship-available">
-            <h3 class="session__title">Morning Break (Sponsorship available)</h3>
+          <article class="session session--muted" id="tuesday-morning-break">
+            <h3 class="session__title">Morning Break <span class="session__room">— San Jose Marriott</span></h3>
+            <div class="session__info">{% capture session_info_md %}US-RSE Office Hours{% endcapture %}{{ session_info_md | markdownify }}</div>
+          </article>
+        </div>
+      </li>
+      <li class="slot">
+        <p class="slot__time"><time datetime="2026-10-20T10:00:00-07:00">10am</time>–<time datetime="2026-10-20T15:30:00-07:00">3:30pm</time></p>
+        <div class="slot__body">
+          <article class="session" id="tuesday-job-fair">
+            <h3 class="session__title">Job Fair <span class="session__room">— Market Street</span></h3>
+            <p class="session__eyebrow">Workshop</p>
           </article>
         </div>
       </li>
@@ -217,7 +229,7 @@
             <p class="session__eyebrow">Student/Early Career<span class="session__chair"> · Chair: Scott Michael</span></p>
             <ol class="session__talks">
               <li class="talk"><span class="talk__format"></span> <a class="talk__link" href="{{ site.baseurl }}/program/student-early-career-program/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models"><span class="talk__title">Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models</span></a></li>
-              <li class="talk"><span class="talk__format"></span> <a class="talk__link" href="{{ site.baseurl }}/program/student-early-career-program/#ai-token-cost-management"><span class="talk__title">AI Token Cost Management</span></a></li>
+              <li class="talk"><span class="talk__format"></span> <a class="talk__link" href="{{ site.baseurl }}/program/student-early-career-program/#tokens-are-the-new-compute-hours-managing-commercial-ai-costs-on-a-student-budget"><span class="talk__title">Tokens Are the New Compute Hours: Managing Commercial AI Costs on a Student Budget</span></a></li>
             </ol>
           </article>
         </div>
@@ -260,8 +272,8 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-20T12:00:00-07:00">12</time>–<time datetime="2026-10-20T13:30:00-07:00">1:30pm</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="tuesday-lunch-break-sponsorship-available">
-            <h3 class="session__title">Lunch Break (Sponsorship available) <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
+          <article class="session session--muted" id="tuesday-lunch-break">
+            <h3 class="session__title">Lunch Break <span class="session__room">— San Jose Marriott</span></h3>
             <div class="session__info">{% capture session_info_md %}Working Group Fair{% endcapture %}{{ session_info_md | markdownify }}</div>
           </article>
         </div>
@@ -310,8 +322,8 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-20T15:00:00-07:00">3</time>–<time datetime="2026-10-20T15:30:00-07:00">3:30pm</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="tuesday-afternoon-break-sponsorship-available">
-            <h3 class="session__title">Afternoon Break (Sponsorship available)</h3>
+          <article class="session session--muted" id="tuesday-afternoon-break">
+            <h3 class="session__title">Afternoon Break <span class="session__room">— San Jose Marriott</span></h3>
           </article>
         </div>
       </li>
@@ -350,6 +362,14 @@
           </article>
         </div>
       </li>
+      <li class="slot slot--break">
+        <p class="slot__time"><time datetime="2026-10-20T18:00:00-07:00">6</time>–<time datetime="2026-10-20T20:00:00-07:00">8pm</time></p>
+        <div class="slot__body">
+          <article class="session session--muted" id="tuesday-dinner">
+            <h3 class="session__title">Dinner <span class="session__room">— San Jose Marriott</span></h3>
+          </article>
+        </div>
+      </li>
     </ol>
   </section>
   <section class="program-day" id="day-wednesday" aria-labelledby="day-wednesday-title">
@@ -376,8 +396,9 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-21T10:00:00-07:00">10</time>–<time datetime="2026-10-21T10:30:00-07:00">10:30am</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="wednesday-morning-break-sponsorship-available">
-            <h3 class="session__title">Morning Break (Sponsorship available)</h3>
+          <article class="session session--muted" id="wednesday-morning-break">
+            <h3 class="session__title">Morning Break <span class="session__room">— San Jose Marriott</span></h3>
+            <div class="session__info">{% capture session_info_md %}US-RSE Office Hours{% endcapture %}{{ session_info_md | markdownify }}</div>
           </article>
         </div>
       </li>
@@ -418,8 +439,8 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-21T12:00:00-07:00">12</time>–<time datetime="2026-10-21T13:30:00-07:00">1:30pm</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="wednesday-lunch-break-sponsorship-available">
-            <h3 class="session__title">Lunch Break (Sponsorship available) <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
+          <article class="session session--muted" id="wednesday-lunch-break">
+            <h3 class="session__title">Lunch Break <span class="session__room">— San Jose Marriott</span></h3>
           </article>
         </div>
       </li>
@@ -461,7 +482,7 @@
         <p class="slot__time"><time datetime="2026-10-21T15:00:00-07:00">3</time>–<time datetime="2026-10-21T15:15:00-07:00">3:15pm</time></p>
         <div class="slot__body">
           <article class="session session--muted" id="wednesday-transition-break">
-            <h3 class="session__title">Transition Break</h3>
+            <h3 class="session__title">Transition Break <span class="session__room">— San Jose Marriott</span></h3>
           </article>
         </div>
       </li>

@@ -282,7 +282,7 @@ We've created a diverse array of Datapages for datasets from psychology, linguis
 
 Under the hood, OEPS pairs a Python/Flask backend and Next.js frontend with an R client library (oepsData), backed by cloud storage. Automated GitHub Actions pipelines handle dataset validation, release builds, and versioning. This automation minimizes maintenance overhead while keeping builds reliable and reproducible. To adhere to FAIR data principles, datasets are accessible via Frictionless Data packages, BigQuery, and archived Zenodo releases with assigned DOIs.
 
-Beyond serving as a data repository, OEPS illustrates how applying sound research software engineering principles improves the longevity and reliability of public health data infrastructure. Continuous integration, automated checks, and open tooling directly benefit both spatial researchers and policymakers evaluating community interventions.{% endcapture %}{{ abstract_md | markdownify }}</div>
+Beyond serving as a data repository, OEPS illustrates how applying sound research software engineering principles improves the longevity and reliability of public health data infrastructure. Continuous integration, automated checks, and open tooling directly benefit both spatial researchers and policymakers evaluating community interventions.{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.22819146">10.5281/zenodo.22819146</a></p></div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">

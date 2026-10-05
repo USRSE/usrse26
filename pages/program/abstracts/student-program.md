@@ -26,10 +26,10 @@ Panelists:
 
 * Blake Joyce, BioTeam  
 * Hasti Mehta, University of Illinois Chicago AI Lab  
-* Julian Pistorus, Indiana University  
 * Fernando Perez, UC Berkeley  
-* Alec Scott, Lawrence Livermore National Laboratory  
-* Suzanne Prentice, Oak Ridge National Laboratory{% endcapture %}{{ abstract_md | markdownify }}</div>
+* Julian Pistorus, Indiana University  
+* Suzanne Prentice, Oak Ridge National Laboratory  
+* Alec Scott, Lawrence Livermore National Laboratory{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
@@ -52,12 +52,14 @@ Running an agent locally means no API bill, but you pay in context windows, VRAM
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="ai-token-cost-management">
-        <span class="abstract__title">AI Token Cost Management</span>
+      <h2 class="abstract__heading" id="tokens-are-the-new-compute-hours-managing-commercial-ai-costs-on-a-student-budget">
+        <span class="abstract__title">Tokens Are the New Compute Hours: Managing Commercial AI Costs on a Student Budget</span>
         <span class="abstract__people">Hasti Mehta</span>
       </h2>
     </summary>
-    <div class="abstract__body">{% capture abstract_md %}11:00 - 11:30{% endcapture %}{{ abstract_md | markdownify }}</div>
+    <div class="abstract__body">{% capture abstract_md %}11:00 - 11:30
+
+Agentic frameworks built on commercial models can turn a single task into dozens of billable calls, which is why falling per token prices have not stopped bills from climbing. This talk adapts a practical cost management framework (visibility, then attribution, then optimization) to show students how to track their token spend, match each task to the right model through routing and caching, and get real work done with commercial AI on a student budget.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
 </div>
 
