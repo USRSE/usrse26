@@ -46,7 +46,7 @@ git clean -f assets/img/org-logos
     and exits 0 (no build on require);
   - `git status` shows only the two new files.
 
-- [ ] 2. **Validation** (Story 4; §4) — Add `parseDate`, `parseBool`, and
+- [x] 2. **Validation** (Story 4; §4) — Add `parseDate`, `parseBool`, and
   `validate(records)` returning `{ members, warnings, errors }`; `main()`
   prints warnings, throws on errors and on zero members. Still no write.
   Verify:

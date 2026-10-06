@@ -139,6 +139,93 @@ function toMemberRecords(rows) {
 }
 
 // ---------------------------------------------------------------------------
+// Validation and normalization
+// ---------------------------------------------------------------------------
+
+/**
+ * "M/D/YYYY" (gviz's export of a date cell) or "YYYY-MM-DD" -> "YYYY-MM-DD",
+ * or null when unparseable or not a real calendar day. UTC only, so the
+ * runner's timezone cannot shift the day.
+ * @param {string} raw
+ */
+function parseDate(raw) {
+  let m = raw.match(/^(\d{4})-(\d{2})-(\d{2})$/);
+  let y; let mo; let d;
+  if (m) [, y, mo, d] = m.map(Number);
+  else if ((m = raw.match(/^(\d{1,2})\/(\d{1,2})\/(\d{4})$/))) [, mo, d, y] = m.map(Number);
+  else return null;
+  const t = new Date(Date.UTC(y, mo - 1, d));
+  if (t.getUTCFullYear() !== y || t.getUTCMonth() !== mo - 1 || t.getUTCDate() !== d) return null;
+  return `${y}-${String(mo).padStart(2, '0')}-${String(d).padStart(2, '0')}`;
+}
+
+/** TRUE/yes (any case) -> true; everything else, including empty, false. */
+function parseBool(raw) {
+  return ['true', 'yes'].includes(raw.toLowerCase());
+}
+
+/**
+ * Records -> normalized members plus collected warnings and errors, each a
+ * "row N: …" string. Skip checks run first so a skipped row warns once and
+ * its figure is never checked; the duplicate check follows tier/date so a
+ * malformed first copy cannot shadow a good second one.
+ * @param {ReturnType<typeof toMemberRecords>} records
+ */
+function validate(records) {
+  const members = [];
+  const warnings = [];
+  const errors = [];
+  const seen = new Map(); // lowercased name -> first row
+  for (const r of records) {
+    const at = `row ${r._row}:`;
+    const tier = TIERS.find((t) => t.key === r.tier.toLowerCase());
+    if (!tier) {
+      warnings.push(`${at} unknown tier "${r.tier}" — expected Basic, Standard, or Premier`);
+      continue;
+    }
+    const date = parseDate(r.date_joined);
+    if (!date) {
+      warnings.push(`${at} unparseable date_joined "${r.date_joined}" — expected M/D/YYYY or YYYY-MM-DD`);
+      continue;
+    }
+    const key = r.name.toLowerCase();
+    if (seen.has(key)) {
+      warnings.push(`${at} duplicate name "${r.name}" (first on row ${seen.get(key)})`);
+      continue;
+    }
+    seen.set(key, r._row);
+
+    if (!r.url) warnings.push(`${at} "${r.name}" has no url`);
+    if (!r.figure) warnings.push(`${at} "${r.name}" has no figure`);
+    else if (!FIGURE_NAME.test(r.figure)) errors.push(`${at} figure "${r.figure}" is not a plain image filename`);
+    if (r.founding_member && !['true', 'false', 'yes', 'no'].includes(r.founding_member.toLowerCase())) {
+      warnings.push(`${at} founding_member "${r.founding_member}" read as false`);
+    }
+
+    const m = {
+      _row: r._row,
+      name: r.name,
+      url: r.url,
+      figure: r.figure,
+      acronym: r.acronym || null,
+      date_joined: date,
+      founding_member: parseBool(r.founding_member),
+      tier: tier.label,
+    };
+    if (r.contact) m.contact = r.contact;
+    if (r.background) m.background = r.background;
+    members.push(m);
+  }
+  return { members, warnings, errors };
+}
+
+/** "N <label>s:" then one indented line per item. */
+function list(label, items) {
+  return `${items.length} ${label}${items.length === 1 ? '' : 's'}:\n`
+    + items.map((s) => `  ${s}`).join('\n');
+}
+
+// ---------------------------------------------------------------------------
 // Adapters
 // ---------------------------------------------------------------------------
 
@@ -194,7 +281,15 @@ function writeIfChanged(file, content) {
 
 async function main() {
   const records = toMemberRecords(parseCSV(await loadCSV()));
-  console.log(`Parsed ${records.length} rows.`);
+  const { members, warnings, errors } = validate(records);
+  if (errors.length) throw new Error(list('invalid figure', errors));
+  if (!members.length) throw new Error('No members found — refusing to write an empty file.');
+
+  for (const w of warnings) console.error(`build-org-members: ${w}`);
+  const counts = TIERS
+    .map((t) => `${members.filter((m) => m.tier === t.label).length} ${t.key}`)
+    .join(', ');
+  console.log(`Parsed ${records.length} rows -> ${members.length} members (${counts}).`);
 }
 
 if (require.main === module) {
@@ -205,5 +300,5 @@ if (require.main === module) {
 }
 
 module.exports = {
-  parseCSV, toMemberRecords,
+  parseCSV, toMemberRecords, parseDate, parseBool, validate,
 };
