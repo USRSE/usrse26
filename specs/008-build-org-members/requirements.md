@@ -125,7 +125,7 @@ so that a bad row neither breaks the home page nor silently disappears.
   spacer rows).
 - WHEN a named row has an unrecognized or empty `tier`, THE system SHALL skip it
   and print a warning with the sheet row number and the value.
-- WHEN a named row has an unparseable `date_joined`, THE system SHALL skip it and
+- WHEN a named row has an unparsable `date_joined`, THE system SHALL skip it and
   warn with the row number and value.
 - WHEN a named row has an empty `date_joined`, THE system SHALL keep it without
   a warning, write `date_joined: null`, and the home page SHALL list it after

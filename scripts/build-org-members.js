@@ -26,7 +26,7 @@
  * members whose logo is not committed, with a warning.
  *
  * Validation: rows without a name are skipped silently; an unknown tier, an
- * unparseable date_joined, an empty figure, or a duplicate name skips the
+ * unparsable date_joined, an empty figure, or a duplicate name skips the
  * row with a warning, as does the tier "Inactive"; an empty url keeps the
  * row with a warning; an empty date_joined keeps it silently, as null. A figure
  * that is not a plain image filename, a needed logo Drive cannot supply,
@@ -149,7 +149,7 @@ function toMemberRecords(rows) {
 
 /**
  * "M/D/YYYY" (gviz's export of a date cell) or "YYYY-MM-DD" -> "YYYY-MM-DD",
- * or null when unparseable or not a real calendar day. UTC only, so the
+ * or null when unparsable or not a real calendar day. UTC only, so the
  * runner's timezone cannot shift the day.
  * @param {string} raw
  */
@@ -195,7 +195,7 @@ function validate(records) {
     // Empty is allowed (null; index.html sorts undated members last).
     const date = r.date_joined ? parseDate(r.date_joined) : null;
     if (r.date_joined && !date) {
-      warnings.push(`${at} unparseable date_joined "${r.date_joined}" — expected M/D/YYYY or YYYY-MM-DD`);
+      warnings.push(`${at} unparsable date_joined "${r.date_joined}" — expected M/D/YYYY or YYYY-MM-DD`);
       continue;
     }
     // A card without a logo renders as a broken image.

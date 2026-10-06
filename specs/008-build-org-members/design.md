@@ -156,7 +156,7 @@ string `row <n>: <message>`. Per record, in sheet order:
 | --- | --- |
 | `tier` lowercased is `inactive` | skip; warn `row N: "X" is inactive — not listed` |
 | `tier` lowercased not in `TIERS` keys (incl. empty) | skip; warn `row N: unknown tier "X" — expected Basic, Standard, Premier, or Inactive` |
-| `date_joined` non-empty and `parseDate` returns null | skip; warn `row N: unparseable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` |
+| `date_joined` non-empty and `parseDate` returns null | skip; warn `row N: unparsable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` |
 | `figure` empty | skip; warn `row N: "X" has no figure — not listed` |
 | `name` (case-insensitive) already kept | skip; warn `row N: duplicate name "X" (first on row M)` |
 | `url` empty | keep; warn `row N: "X" has no url` |

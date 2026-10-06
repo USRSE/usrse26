@@ -330,7 +330,7 @@ anything is written.
 | --- | --- |
 | `"X" is inactive — not listed` | Row skipped |
 | `unknown tier "X" — expected Basic, Standard, Premier, or Inactive` | Row skipped |
-| `unparseable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` | Row skipped |
+| `unparsable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` | Row skipped |
 | `duplicate name "X" (first on row M)` | Row skipped; the first row is kept |
 | `"X" has no url` | Member kept with an empty link |
 | `"X" has no figure — not listed` | Row skipped |
