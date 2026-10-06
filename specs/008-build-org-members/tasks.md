@@ -87,7 +87,7 @@ git clean -f assets/img/org-logos
     → warned as missing, on macOS too;
   - restore.
 
-- [ ] 5. **Matching** (Story 7; §5.2) — Add pure `matchLogos(needed, files)`.
+- [x] 5. **Matching** (Story 7; §5.2) — Add pure `matchLogos(needed, files)`.
   Verify with a `node -e` harness that `require()`s the script (§7 guard and
   exports — add them in task 1 if not already there):
   - absent name → problem listing every row that named it;

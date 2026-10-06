@@ -239,6 +239,34 @@ function neededLogos(members, present) {
   return [...byFigure].map(([figure, rows]) => ({ figure, rows }));
 }
 
+/**
+ * Needed figures against a logo source's listing, by exact name. Every
+ * figure without exactly one image file within the size limit becomes a
+ * problem; the rest become downloads.
+ * @param {ReturnType<typeof neededLogos>} needed
+ * @param {{ id: string, name: string, mimeType: string, size: number }[]} files
+ */
+function matchLogos(needed, files) {
+  const downloads = [];
+  const problems = [];
+  for (const { figure, rows } of needed) {
+    const at = `row${rows.length > 1 ? 's' : ''} ${rows.join(', ')}: figure "${figure}"`;
+    const hits = files.filter((f) => f.name === figure);
+    if (!hits.length) {
+      problems.push(`${at} is not in the logo folder`);
+    } else if (hits.length > 1) {
+      problems.push(`${at} matches ${hits.length} files in the logo folder`);
+    } else if (!/^image\//.test(hits[0].mimeType)) {
+      problems.push(`${at} is ${hits[0].mimeType}, not an image`);
+    } else if (hits[0].size > MAX_LOGO_BYTES) {
+      problems.push(`${at} is ${(hits[0].size / 1024 / 1024).toFixed(1)} MB; the limit is 5 MB`);
+    } else {
+      downloads.push({ figure, file: hits[0] });
+    }
+  }
+  return { downloads, problems };
+}
+
 /** Offline builds keep members whose logo is missing, with a warning per row. */
 function missingLogoWarnings(needed) {
   const rel = path.relative(REPO_ROOT, LOGO_DIR);
@@ -386,5 +414,5 @@ if (require.main === module) {
 
 module.exports = {
   parseCSV, toMemberRecords, parseDate, parseBool, validate,
-  neededLogos, renderYAML,
+  neededLogos, matchLogos, renderYAML,
 };
