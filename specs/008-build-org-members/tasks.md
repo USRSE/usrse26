@@ -61,7 +61,7 @@ git clean -f assets/img/org-logos
     all listed in one message, exit 1;
   - a scratch CSV whose only rows are skipped → `No members found`, exit 1.
 
-- [ ] 3. **YAML emitter and first write** (Story 3; §6, §7) — Add
+- [x] 3. **YAML emitter and first write** (Story 3; §6, §7) — Add
   `renderYAML(members)` and call `writeIfChanged(OUT_YML, …)` at the end of
   `main()`. Logo handling not yet wired (task 4).
   Verify:
