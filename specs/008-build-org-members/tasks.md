@@ -177,10 +177,13 @@ git clean -f assets/img/org-logos
   *Done against this branch's hand-written YAML instead of `main`, which has
   no org-members section yet: the rendered section HTML is byte-identical.*
 
-- [ ] 11. **Switch to the live sheet** (Stories 1, 3, 7) — With the real
+- [x] 11. **Switch to the live sheet** (Stories 1, 3, 7) — With the real
   sheet populated, run `ORG_MEMBERS_SHEET_ID=<id> ORG_LOGOS_FOLDER_ID=<id>
   GOOGLE_API_KEY=<key> node scripts/build-org-members.js` locally (or merge
   and dispatch the workflow). Verify: Ruby check vs `baseline.yml` →
   `equivalent`, or every difference is an intentional sheet correction the
   coordinator confirms; any new logos are images that render. Commit the
   regenerated `_data/org-members.yml` (and new logos).
+  *Done: built locally by the maintainer. Differences from the baseline
+  (12 new members with logos, three set Inactive, two without logos left out,
+  one URL update) were confirmed as intentional.*

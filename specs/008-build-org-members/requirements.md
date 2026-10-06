@@ -1,6 +1,6 @@
 # Requirements — build org members from sheet
 
-Status: approved
+Status: done
 
 ## Summary
 
