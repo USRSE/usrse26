@@ -367,6 +367,27 @@ function repoLogos() {
   return new Set(fs.readdirSync(LOGO_DIR));
 }
 
+/**
+ * Save a downloaded logo without ever replacing one: write a dot-prefixed
+ * temp file (Jekyll ignores it, repoLogos never matches it as a figure),
+ * then hard-link it into place, which fails with EEXIST rather than
+ * overwrite. The temp file is removed whatever happens, so the target is
+ * either complete or absent.
+ * @param {string} figure
+ * @param {Buffer} buffer
+ */
+function saveLogo(figure, buffer) {
+  const temp = path.join(LOGO_DIR, `.${figure}.download`);
+  const target = path.join(LOGO_DIR, figure);
+  try {
+    fs.writeFileSync(temp, buffer);
+    fs.linkSync(temp, target);
+  } finally {
+    fs.rmSync(temp, { force: true });
+  }
+  console.log(`  downloaded ${path.relative(REPO_ROOT, target)}`);
+}
+
 /** Write only when content changed so a scheduled runner commits no churn. */
 function writeIfChanged(file, content) {
   const rel = path.relative(REPO_ROOT, file);
@@ -378,6 +399,24 @@ function writeIfChanged(file, content) {
   fs.writeFileSync(file, content);
   console.log(`  wrote      ${rel}`);
   return true;
+}
+
+// ---------------------------------------------------------------------------
+// Application
+// ---------------------------------------------------------------------------
+
+/**
+ * Fetch every needed logo from `source` ({ list(), download(file) }). All
+ * matching problems are reported together before anything is saved.
+ * @param {ReturnType<typeof neededLogos>} needed
+ * @param {{ list(): Promise<object[]>, download(file: object): Promise<Buffer> }} source
+ */
+async function syncLogos(needed, source) {
+  const { downloads, problems } = matchLogos(needed, await source.list());
+  if (problems.length) throw new Error(list('logo problem', problems));
+  for (const { figure, file } of downloads) {
+    saveLogo(figure, await source.download(file));
+  }
 }
 
 // ---------------------------------------------------------------------------
@@ -414,5 +453,5 @@ if (require.main === module) {
 
 module.exports = {
   parseCSV, toMemberRecords, parseDate, parseBool, validate,
-  neededLogos, matchLogos, renderYAML,
+  neededLogos, matchLogos, renderYAML, syncLogos, saveLogo,
 };

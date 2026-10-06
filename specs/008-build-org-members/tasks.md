@@ -98,7 +98,7 @@ git clean -f assets/img/org-logos
   - one `image/svg+xml` within the limit → a download entry;
   - fixture build still green and equivalent.
 
-- [ ] 6. **Logo sync and saving** (Story 7; §5.4, §5.5, §7) — Add
+- [x] 6. **Logo sync and saving** (Story 7; §5.4, §5.5, §7) — Add
   `syncLogos(needed, source)`, `saveLogo()`, and the final `main()` ordering
   (all checks → downloads → YAML); export both. Verify with a `require()`
   harness that builds a fake source over a scratch folder `logos/` (§5.4) and
