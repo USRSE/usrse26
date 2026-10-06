@@ -148,7 +148,7 @@ git clean -f assets/img/org-logos
     the temporary rows, the Drive file, and the downloaded file.
   - restore.
 
-- [ ] 8. **Workflow** (Story 5; §10) — Add
+- [x] 8. **Workflow** (Story 5; §10) — Add
   `.github/workflows/build-org-members.yml` with the header comment.
   Verify:
   - `ruby -ryaml -e 'YAML.load_file(".github/workflows/build-org-members.yml")'`
@@ -156,7 +156,7 @@ git clean -f assets/img/org-logos
   - trigger is only `workflow_dispatch`; env carries the three secrets; the
     gate checks only `ORG_MEMBERS_SHEET_ID`; `git add -A` names exactly
     `_data/org-members.yml assets/img/org-logos`;
-  - after merge (manual): dispatch with the secret unset → `::error::`; with
+  - after merge (manual — *pending*): dispatch with the secret unset → `::error::`; with
     secrets set and no sheet change → "nothing to commit".
 
 - [ ] 9. **README** (Story 6; §11) — Add `## Updating Organizational Members`
