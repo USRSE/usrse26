@@ -240,7 +240,7 @@ Drive logo folder (ORG_LOGOS_FOLDER_ID) ───────────┤
 
 - `_data/org-members.yml` is generated. Hand edits are overwritten on the next build.
 - Members are grouped by tier (Premier, Standard, Basic) and sorted by `date_joined` on
-  the page. A tier with no members has no heading.
+  the page, members without a date last. A tier with no members has no heading.
 - Each `figure` names a logo file in `assets/img/org-logos/`. On a live build, a logo the
   repo does not have yet is downloaded by its exact name from the Drive folder. Logos
   already in the repo are never re-downloaded, overwritten, or deleted, so the Drive folder
@@ -257,7 +257,7 @@ The header row uses these names (any case, any order). Other columns are ignored
 | `url` | no (warns) | Where the logo links | A full URL |
 | `figure` | no (warns) | Logo filename | The exact name of an image in the Drive folder or in `assets/img/org-logos/`. Letters, digits, `.`, `_`, and `-` only; no leading dot; extension `png`, `jpg`, `jpeg`, `svg`, `webp`, `gif`, or `avif` |
 | `acronym` | no | Added to the alt text, e.g. "Name (ACR)" | Any text |
-| `date_joined` | yes (row skipped without it) | Sort order within a tier | `M/D/YYYY` (a sheet date cell) or `YYYY-MM-DD` |
+| `date_joined` | no | Sort order within a tier | `M/D/YYYY` (a sheet date cell), `YYYY-MM-DD`, or empty (listed last in its tier) |
 | `founding_member` | no | Kept in the YAML; not displayed | Checkbox, `TRUE`/`FALSE`, `yes`/`no`, or empty (= false) |
 | `contact` | no | Kept in the YAML; not displayed | Any text |
 | `background` | no | Color shown behind the logo | Any CSS color, e.g. `rgba(0, 0, 0, 0.7)` |

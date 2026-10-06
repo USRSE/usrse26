@@ -95,7 +95,7 @@ that the change is invisible to me.
   `{% if site.data.org-members.<tier> %}` guards in `index.html` hide the
   heading.
 - THE system SHALL write, per member: `name`, `url`, `figure`, `acronym`,
-  `date_joined` (ISO `YYYY-MM-DD`), `founding_member` (boolean), and `tier`
+  `date_joined` (ISO `YYYY-MM-DD`, or null when empty), `founding_member` (boolean), and `tier`
   (display form: `Basic` / `Standard` / `Premier`).
 - WHEN a member's `background` or `contact` cell is non-empty, THE system SHALL
   write that key; WHEN empty, THE system SHALL omit it.
@@ -127,6 +127,9 @@ so that a bad row neither breaks the home page nor silently disappears.
   and print a warning with the sheet row number and the value.
 - WHEN a named row has an unparseable `date_joined`, THE system SHALL skip it and
   warn with the row number and value.
+- WHEN a named row has an empty `date_joined`, THE system SHALL keep it without
+  a warning, write `date_joined: null`, and the home page SHALL list it after
+  the dated members of its tier.
 - WHEN a named row has an empty `url` or `figure`, THE system SHALL warn with
   the row number and column, and still include the member.
 - WHEN building with `--file` and a row's `figure` does not exist under
@@ -233,8 +236,9 @@ files by hand.
 
 ## Out of scope
 
-- Any change to `index.html`, `_includes/org-card-group.html`, or
-  `_includes/org-member-card.html`.
+- Any change to `_includes/org-card-group.html` or
+  `_includes/org-member-card.html`, or to `index.html` beyond sorting undated
+  members last (decision 11).
 - Updating a logo that already exists in the repository from a newer Drive
   copy (replace it by deleting the committed file and rerunning).
 - Deleting committed logos that no member references anymore.
@@ -264,6 +268,10 @@ files by hand.
    be in the folder.
 10. A needed logo missing from the folder stops the build, listing every
     missing file; nothing is written.
+11. An empty `date_joined` is allowed (added after implementation): the member
+    is kept as `null`, and `index.html`'s three `sort: "date_joined"` calls gain
+    `"last"` so undated members follow dated ones (Jekyll sorts nils first by
+    default).
 
 ## Open questions
 

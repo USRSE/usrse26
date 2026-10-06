@@ -100,7 +100,7 @@ cards: home
     <div style="width: 60%">
       <h3>Premier Level</h3>
 
-      {% assign org_tier = site.data.org-members.premier | sort: "date_joined" %}
+      {% assign org_tier = site.data.org-members.premier | sort: "date_joined", "last" %}
       {% include org-card-group.html %}
       {% endif %}
 
@@ -108,7 +108,7 @@ cards: home
       {% if site.data.org-members.standard %}
       <h3>Standard Level</h3>
 
-      {% assign org_tier = site.data.org-members.standard | sort: "date_joined" %}
+      {% assign org_tier = site.data.org-members.standard | sort: "date_joined", "last" %}
       {% include org-card-group.html %}
       {% endif %}
 
@@ -116,7 +116,7 @@ cards: home
       {% if site.data.org-members.basic %}
       <h3>Basic Level</h3>
 
-      {% assign org_tier = site.data.org-members.basic | sort: "date_joined" %}
+      {% assign org_tier = site.data.org-members.basic | sort: "date_joined", "last" %}
       {% include org-card-group.html %}
       {% endif %}
     </div>

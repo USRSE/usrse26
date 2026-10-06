@@ -24,7 +24,8 @@ required.
 
 The output is shaped to what the templates already read
 (`index.html:98-122`, `_includes/org-card-group.html`,
-`_includes/org-member-card.html`), so no template changes. Two Liquid details
+`_includes/org-member-card.html`), so no include changes; `index.html` only
+gains `"last"` on its sorts (§6). Two Liquid details
 drive the emitter (§6): an empty `acronym` must be YAML null, not `""` — Liquid
 treats `""` as truthy and the card's `alt` would render `Name&nbsp;()` — and
 `date_joined` stays an unquoted YAML date so `sort: "date_joined"` compares the
@@ -72,7 +73,8 @@ overridable from the command line.
 | `assets/img/org-logos/` | Receives downloaded logos. Existing files are never overwritten or deleted. |
 | `.github/workflows/build-org-members.yml` | **New.** `workflow_dispatch` only; gates on `ORG_MEMBERS_SHEET_ID`; passes the Drive secrets; commits the YAML and new logos when changed (§10). |
 | `README.md` | New `## Updating Organizational Members` section between `## Building the Program Schedule` (`:67`) and `## Adding logos to the website` (`:222`) (§11). |
-| `index.html`, `_includes/org-card-group.html`, `_includes/org-member-card.html` | Unchanged. |
+| `index.html` | The three `sort: "date_joined"` filters gain `"last"` so undated members sort after dated ones (requirements decision 11). |
+| `_includes/org-card-group.html`, `_includes/org-member-card.html` | Unchanged. |
 | `scripts/build-program.js`, `.github/workflows/build-program.yml` | Unchanged. |
 | `_config.yml` | Unchanged — `scripts` and `fixtures` are already in `exclude` (`:56-62`). |
 
@@ -153,7 +155,7 @@ string `row <n>: <message>`. Per record, in sheet order:
 | Check | Outcome |
 | --- | --- |
 | `tier` lowercased not in `TIERS` keys (incl. empty) | skip; warn `row N: unknown tier "X" — expected Basic, Standard, or Premier` |
-| `parseDate(date_joined)` returns null | skip; warn `row N: unparseable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` |
+| `date_joined` non-empty and `parseDate` returns null | skip; warn `row N: unparseable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` |
 | `name` (case-insensitive) already kept | skip; warn `row N: duplicate name "X" (first on row M)` |
 | `url` empty | keep; warn `row N: "X" has no url` |
 | `figure` empty | keep; warn `row N: "X" has no figure` |
@@ -182,8 +184,8 @@ including empty, is `false`.
 
 Normalized member: `{ _row, name, url, figure, acronym, date_joined,
 founding_member, tier: <label>, contact?, background? }` where
-`contact`/`background` are present only when non-empty, `acronym` is `null`
-when empty, and `_row` is internal (never emitted).
+`contact`/`background` are present only when non-empty, `acronym` and
+`date_joined` are `null` when empty, and `_row` is internal (never emitted).
 
 ### 5. Logo sync
 
@@ -316,7 +318,9 @@ Rules:
   `<`, leading/trailing spaces and non-ASCII all round-trip exactly — no
   "does this need quoting" heuristic to get wrong.
 - `acronym` empty → `acronym: null` (Liquid falsy; see Overview).
-- `date_joined` → bare `YYYY-MM-DD` (YAML/Ruby `Date`, as today).
+- `date_joined` → bare `YYYY-MM-DD` (YAML/Ruby `Date`, as today), or `null`
+  when empty. `index.html` sorts with `sort: "date_joined", "last"` so a nil
+  date follows dated members instead of Jekyll's default nils-first.
 - `founding_member` → bare `true` / `false`.
 - File ends with a single `\n`.
 

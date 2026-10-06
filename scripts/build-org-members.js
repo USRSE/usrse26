@@ -26,7 +26,8 @@
  *
  * Validation: rows without a name are skipped silently; an unknown tier, an
  * unparseable date_joined, or a duplicate name skips the row with a
- * warning; an empty url or figure keeps the row with a warning. A figure
+ * warning; an empty url or figure keeps the row with a warning; an empty
+ * date_joined keeps it silently, as null. A figure
  * that is not a plain image filename, a needed logo Drive cannot supply,
  * or zero members stops the build before anything is written.
  *
@@ -183,8 +184,9 @@ function validate(records) {
       warnings.push(`${at} unknown tier "${r.tier}" — expected Basic, Standard, or Premier`);
       continue;
     }
-    const date = parseDate(r.date_joined);
-    if (!date) {
+    // Empty is allowed (null; index.html sorts undated members last).
+    const date = r.date_joined ? parseDate(r.date_joined) : null;
+    if (r.date_joined && !date) {
       warnings.push(`${at} unparseable date_joined "${r.date_joined}" — expected M/D/YYYY or YYYY-MM-DD`);
       continue;
     }
@@ -293,7 +295,8 @@ const FIELD_ORDER = ['name', 'url', 'figure', 'acronym', 'date_joined',
  * double-quoted scalar, so every cell round-trips exactly. An empty acronym
  * is null, not "", because Liquid treats "" as truthy and the card's alt
  * would gain "&nbsp;()". Dates stay bare so Jekyll loads them as Dates and
- * `sort: "date_joined"` compares as before.
+ * `sort: "date_joined"` compares as before; an empty date is null, which
+ * index.html's `sort: "date_joined", "last"` puts at the end.
  * @param {ReturnType<typeof validate>['members']} members
  */
 function renderYAML(members) {
