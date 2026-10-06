@@ -220,6 +220,33 @@ function validate(records) {
 }
 
 // ---------------------------------------------------------------------------
+// Logo planning
+// ---------------------------------------------------------------------------
+
+/**
+ * Distinct figures not in `present`, in first-seen order, each with every
+ * sheet row naming it (members may share a logo).
+ * @param {{ figure: string, _row: number }[]} members
+ * @param {Set<string>} present committed logo filenames
+ */
+function neededLogos(members, present) {
+  const byFigure = new Map();
+  for (const m of members) {
+    if (!m.figure || present.has(m.figure)) continue;
+    if (!byFigure.has(m.figure)) byFigure.set(m.figure, []);
+    byFigure.get(m.figure).push(m._row);
+  }
+  return [...byFigure].map(([figure, rows]) => ({ figure, rows }));
+}
+
+/** Offline builds keep members whose logo is missing, with a warning per row. */
+function missingLogoWarnings(needed) {
+  const rel = path.relative(REPO_ROOT, LOGO_DIR);
+  return needed.flatMap(({ figure, rows }) =>
+    rows.map((r) => `row ${r}: figure "${figure}" not found in ${rel}/`));
+}
+
+// ---------------------------------------------------------------------------
 // YAML
 // ---------------------------------------------------------------------------
 
@@ -304,6 +331,14 @@ async function loadCSV() {
   return fetchSheet();
 }
 
+/**
+ * Committed logo filenames. Compared against the listing rather than with
+ * existsSync so the match is exact and case-sensitive on macOS too.
+ */
+function repoLogos() {
+  return new Set(fs.readdirSync(LOGO_DIR));
+}
+
 /** Write only when content changed so a scheduled runner commits no churn. */
 function writeIfChanged(file, content) {
   const rel = path.relative(REPO_ROOT, file);
@@ -327,6 +362,13 @@ async function main() {
   if (errors.length) throw new Error(list('invalid figure', errors));
   if (!members.length) throw new Error('No members found — refusing to write an empty file.');
 
+  const needed = neededLogos(members, repoLogos());
+  if (needed.length && argValue('--file')) {
+    warnings.push(...missingLogoWarnings(needed));
+  } else if (needed.length) {
+    throw new Error('downloading logos is not implemented');
+  }
+
   for (const w of warnings) console.error(`build-org-members: ${w}`);
   const counts = TIERS
     .map((t) => `${members.filter((m) => m.tier === t.label).length} ${t.key}`)
@@ -343,5 +385,6 @@ if (require.main === module) {
 }
 
 module.exports = {
-  parseCSV, toMemberRecords, parseDate, parseBool, validate, renderYAML,
+  parseCSV, toMemberRecords, parseDate, parseBool, validate,
+  neededLogos, renderYAML,
 };

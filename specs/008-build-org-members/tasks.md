@@ -75,7 +75,7 @@ git clean -f assets/img/org-logos
     `basic`/`standard` keys are absent;
   - restore (hygiene).
 
-- [ ] 4. **Logo planning and offline warning** (Stories 4, 7; §5.1, §5.6) —
+- [x] 4. **Logo planning and offline warning** (Stories 4, 7; §5.1, §5.6) —
   Add `repoLogos()`, `neededLogos(members, present)`, and the `--file`
   branch of source selection that turns needed logos into keep-and-warn
   warnings. The live branch throws `not implemented` for now.
