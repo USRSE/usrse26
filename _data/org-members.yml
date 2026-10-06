@@ -18,13 +18,6 @@ basic:
     date_joined: null
     founding_member: true
     tier: "Basic"
-  - name: "University of Utah"
-    url: "https://www.utah.edu/"
-    figure: ""
-    acronym: null
-    date_joined: null
-    founding_member: true
-    tier: "Basic"
 
 standard:
   - name: "Center for Research Computing - University of Notre Dame"
@@ -93,13 +86,6 @@ standard:
   - name: "University of Miami"
     url: "https://med.miami.edu/"
     figure: "logo-miami.jpg"
-    acronym: null
-    date_joined: null
-    founding_member: true
-    tier: "Standard"
-  - name: "Georgia Tech"
-    url: "https://www.gatech.edu/"
-    figure: ""
     acronym: null
     date_joined: null
     founding_member: true
