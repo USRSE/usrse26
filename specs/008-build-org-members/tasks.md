@@ -159,7 +159,7 @@ git clean -f assets/img/org-logos
   - after merge (manual — *pending*): dispatch with the secret unset → `::error::`; with
     secrets set and no sheet change → "nothing to commit".
 
-- [ ] 9. **README** (Story 6; §11) — Add `## Updating Organizational Members`
+- [x] 9. **README** (Story 6; §11) — Add `## Updating Organizational Members`
   between `## Building the Program Schedule` and `## Adding logos to the
   website`, with the six subsections of §11.
   Verify:
