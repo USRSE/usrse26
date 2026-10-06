@@ -130,12 +130,16 @@ so that a bad row neither breaks the home page nor silently disappears.
 - WHEN a named row has an empty `date_joined`, THE system SHALL keep it without
   a warning, write `date_joined: null`, and the home page SHALL list it after
   the dated members of its tier.
-- WHEN a named row has an empty `url` or `figure`, THE system SHALL warn with
-  the row number and column, and still include the member.
+- WHEN a named row has an empty `url`, THE system SHALL warn with the row
+  number and column, and still include the member.
+- WHEN a named row has an empty `figure`, THE system SHALL skip it and warn
+  with the row number and name (decision 12).
+- WHEN a named row's `tier` is `Inactive` (any case), THE system SHALL skip it
+  and warn with the row number and name (decision 12).
 - WHEN building with `--file` and a row's `figure` does not exist under
   `assets/img/org-logos/`, THE system SHALL warn with the row number and
-  filename, and still include the member (offline builds never contact Drive;
-  see Story 7 for live builds).
+  filename, and SHALL leave the member out (offline builds never contact
+  Drive; see Story 7 for live builds).
 - WHEN the same `name` appears more than once, THE system SHALL keep the first
   occurrence and warn about each duplicate row.
 - WHEN parsing yields zero members, THE system SHALL exit 1 without writing,
@@ -259,7 +263,7 @@ files by hand.
    founding_member contact background`.
 3. `contact` stays in the output.
 4. Manual-only trigger, in a new workflow file.
-5. Missing `url`/`figure`: keep the member and warn.
+5. Missing `url`: keep the member and warn. (Missing `figure`: see 12.)
 6. Spec number 008 (006/007 are taken elsewhere).
 7. `README.md` gets a section on the design and how to update members (Story 6).
 8. Logos download from a link-shared Drive folder via Drive API v3 + API key
@@ -272,6 +276,12 @@ files by hand.
     is kept as `null`, and `index.html`'s three `sort: "date_joined"` calls gain
     `"last"` so undated members follow dated ones (Jekyll sorts nils first by
     default).
+
+12. Added after implementation: tier `Inactive` takes a former member off the
+    page without deleting the row; a member without a usable logo (empty
+    `figure`, or on an offline build a figure not committed) is left out with a
+    warning, since its card would render as a broken image. A logo missing
+    from the Drive folder on a live build still stops the build (decision 10).
 
 ## Open questions
 

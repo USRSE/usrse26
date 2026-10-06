@@ -252,10 +252,10 @@ The header row uses these names (any case, any order). Other columns are ignored
 
 | Column | Required | Meaning | Accepted values |
 | --- | --- | --- | --- |
-| `tier` | yes | Membership tier | `Basic`, `Standard`, or `Premier` (any case) |
+| `tier` | yes | Membership tier | `Basic`, `Standard`, `Premier`, or `Inactive` (any case). `Inactive` keeps the row in the sheet but off the page. |
 | `name` | yes | Organization name, shown as the logo's alt text | Any text. Rows without a name are skipped. |
 | `url` | no (warns) | Where the logo links | A full URL |
-| `figure` | no (warns) | Logo filename | The exact name of an image in the Drive folder or in `assets/img/org-logos/`. Letters, digits, `.`, `_`, and `-` only; no leading dot; extension `png`, `jpg`, `jpeg`, `svg`, `webp`, `gif`, or `avif` |
+| `figure` | yes (row skipped without it) | Logo filename | The exact name of an image in the Drive folder or in `assets/img/org-logos/`. Letters, digits, `.`, `_`, and `-` only; no leading dot; extension `png`, `jpg`, `jpeg`, `svg`, `webp`, `gif`, or `avif` |
 | `acronym` | no | Added to the alt text, e.g. "Name (ACR)" | Any text |
 | `date_joined` | no | Sort order within a tier | `M/D/YYYY` (a sheet date cell), `YYYY-MM-DD`, or empty (listed last in its tier) |
 | `founding_member` | no | Kept in the YAML; not displayed | Checkbox, `TRUE`/`FALSE`, `yes`/`no`, or empty (= false) |
@@ -274,6 +274,8 @@ blank out cells whose type differs from most of their column.
 3. Run **Actions → Rebuild org members → Run workflow** (or run the script locally, below).
 4. Read the run log for `build-org-members:` warnings and fix any rows they name.
 5. Check the home page once the site redeploys.
+
+To remove a member from the page, set their `tier` to `Inactive` rather than deleting the row.
 
 To replace a logo that is already in the repo, delete it from `assets/img/org-logos/` in a
 commit, put the new version in the Drive folder under the same name, and rerun.
@@ -326,13 +328,14 @@ anything is written.
 
 | Message | Result |
 | --- | --- |
-| `unknown tier "X" — expected Basic, Standard, or Premier` | Row skipped |
+| `"X" is inactive — not listed` | Row skipped |
+| `unknown tier "X" — expected Basic, Standard, Premier, or Inactive` | Row skipped |
 | `unparseable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` | Row skipped |
 | `duplicate name "X" (first on row M)` | Row skipped; the first row is kept |
 | `"X" has no url` | Member kept with an empty link |
-| `"X" has no figure` | Member kept, no logo |
+| `"X" has no figure — not listed` | Row skipped |
 | `founding_member "X" read as false` | Member kept |
-| `figure "F" not found in assets/img/org-logos/` (offline `--file` builds only) | Member kept, broken image |
+| `figure "F" not found in assets/img/org-logos/ — "X" not listed` (offline `--file` builds only) | Row skipped |
 | `figure "F" is not a plain image filename` | **Error** |
 | `figure "F" is not in the logo folder` / `matches N files in the logo folder` / `is <type>, not an image` / `is N MB; the limit is 5 MB` | **Error**: every problem is listed together |
 | `GOOGLE_API_KEY and/or ORG_LOGOS_FOLDER_ID must be set to download: …` | **Error**: a logo is needed but a Drive variable is unset |

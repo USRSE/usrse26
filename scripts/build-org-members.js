@@ -22,12 +22,13 @@
  * the link-shared Google Drive folder ORG_LOGOS_FOLDER_ID through the Drive
  * API v3, authenticated with GOOGLE_API_KEY. Both are read only when a logo
  * is missing; committed logos are never re-downloaded, overwritten, or
- * deleted. Offline (--file) builds never contact Drive and only warn.
+ * deleted. Offline (--file) builds never contact Drive; they leave out
+ * members whose logo is not committed, with a warning.
  *
  * Validation: rows without a name are skipped silently; an unknown tier, an
- * unparseable date_joined, or a duplicate name skips the row with a
- * warning; an empty url or figure keeps the row with a warning; an empty
- * date_joined keeps it silently, as null. A figure
+ * unparseable date_joined, an empty figure, or a duplicate name skips the
+ * row with a warning, as does the tier "Inactive"; an empty url keeps the
+ * row with a warning; an empty date_joined keeps it silently, as null. A figure
  * that is not a plain image filename, a needed logo Drive cannot supply,
  * or zero members stops the build before anything is written.
  *
@@ -68,6 +69,9 @@ const TIERS = [
   { key: 'standard', label: 'Standard' },
   { key: 'premier', label: 'Premier' },
 ];
+
+// A tier value that keeps a former member's row in the sheet but off the page.
+const INACTIVE_TIER = 'inactive';
 
 const COLUMNS = ['tier', 'name', 'url', 'figure', 'acronym',
   'date_joined', 'founding_member', 'contact', 'background'];
@@ -179,15 +183,24 @@ function validate(records) {
   const seen = new Map(); // lowercased name -> first row
   for (const r of records) {
     const at = `row ${r._row}:`;
+    if (r.tier.toLowerCase() === INACTIVE_TIER) {
+      warnings.push(`${at} "${r.name}" is inactive — not listed`);
+      continue;
+    }
     const tier = TIERS.find((t) => t.key === r.tier.toLowerCase());
     if (!tier) {
-      warnings.push(`${at} unknown tier "${r.tier}" — expected Basic, Standard, or Premier`);
+      warnings.push(`${at} unknown tier "${r.tier}" — expected Basic, Standard, Premier, or Inactive`);
       continue;
     }
     // Empty is allowed (null; index.html sorts undated members last).
     const date = r.date_joined ? parseDate(r.date_joined) : null;
     if (r.date_joined && !date) {
       warnings.push(`${at} unparseable date_joined "${r.date_joined}" — expected M/D/YYYY or YYYY-MM-DD`);
+      continue;
+    }
+    // A card without a logo renders as a broken image.
+    if (!r.figure) {
+      warnings.push(`${at} "${r.name}" has no figure — not listed`);
       continue;
     }
     const key = r.name.toLowerCase();
@@ -198,8 +211,7 @@ function validate(records) {
     seen.set(key, r._row);
 
     if (!r.url) warnings.push(`${at} "${r.name}" has no url`);
-    if (!r.figure) warnings.push(`${at} "${r.name}" has no figure`);
-    else if (!FIGURE_NAME.test(r.figure)) errors.push(`${at} figure "${r.figure}" is not a plain image filename`);
+    if (!FIGURE_NAME.test(r.figure)) errors.push(`${at} figure "${r.figure}" is not a plain image filename`);
     if (r.founding_member && !['true', 'false', 'yes', 'no'].includes(r.founding_member.toLowerCase())) {
       warnings.push(`${at} founding_member "${r.founding_member}" read as false`);
     }
@@ -269,11 +281,20 @@ function matchLogos(needed, files) {
   return { downloads, problems };
 }
 
-/** Offline builds keep members whose logo is missing, with a warning per row. */
-function missingLogoWarnings(needed) {
+/**
+ * Offline builds cannot download, so members whose logo is not committed
+ * are left out (a broken image is worse than no card), with a warning each.
+ * @param {ReturnType<typeof validate>['members']} members
+ * @param {ReturnType<typeof neededLogos>} needed
+ */
+function dropMissingLogos(members, needed) {
+  const missing = new Set(needed.map((n) => n.figure));
   const rel = path.relative(REPO_ROOT, LOGO_DIR);
-  return needed.flatMap(({ figure, rows }) =>
-    rows.map((r) => `row ${r}: figure "${figure}" not found in ${rel}/`));
+  return {
+    kept: members.filter((m) => !missing.has(m.figure)),
+    warnings: members.filter((m) => missing.has(m.figure)).map((m) =>
+      `row ${m._row}: figure "${m.figure}" not found in ${rel}/ — "${m.name}" not listed`),
+  };
 }
 
 // ---------------------------------------------------------------------------
@@ -498,14 +519,19 @@ async function syncLogos(needed, source) {
 
 async function main() {
   const records = toMemberRecords(parseCSV(await loadCSV()));
-  const { members, warnings, errors } = validate(records);
+  const validated = validate(records);
+  const { warnings, errors } = validated;
+  let { members } = validated;
   if (errors.length) throw new Error(list('invalid figure', errors));
-  if (!members.length) throw new Error('No members found — refusing to write an empty file.');
 
   const needed = neededLogos(members, repoLogos());
   if (needed.length && argValue('--file')) {
-    warnings.push(...missingLogoWarnings(needed));
-  } else if (needed.length) {
+    const dropped = dropMissingLogos(members, needed);
+    members = dropped.kept;
+    warnings.push(...dropped.warnings);
+  }
+  if (!members.length) throw new Error('No members found — refusing to write an empty file.');
+  if (needed.length && !argValue('--file')) {
     await syncLogos(needed, driveSource(DRIVE_API_KEY, LOGO_FOLDER_ID, needed));
   }
 
@@ -526,5 +552,5 @@ if (require.main === module) {
 
 module.exports = {
   parseCSV, toMemberRecords, parseDate, parseBool, validate,
-  neededLogos, matchLogos, renderYAML, driveSource, syncLogos, saveLogo,
+  neededLogos, dropMissingLogos, matchLogos, renderYAML, driveSource, syncLogos, saveLogo,
 };

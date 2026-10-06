@@ -154,17 +154,18 @@ string `row <n>: <message>`. Per record, in sheet order:
 
 | Check | Outcome |
 | --- | --- |
-| `tier` lowercased not in `TIERS` keys (incl. empty) | skip; warn `row N: unknown tier "X" — expected Basic, Standard, or Premier` |
+| `tier` lowercased is `inactive` | skip; warn `row N: "X" is inactive — not listed` |
+| `tier` lowercased not in `TIERS` keys (incl. empty) | skip; warn `row N: unknown tier "X" — expected Basic, Standard, Premier, or Inactive` |
 | `date_joined` non-empty and `parseDate` returns null | skip; warn `row N: unparseable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` |
+| `figure` empty | skip; warn `row N: "X" has no figure — not listed` |
 | `name` (case-insensitive) already kept | skip; warn `row N: duplicate name "X" (first on row M)` |
 | `url` empty | keep; warn `row N: "X" has no url` |
-| `figure` empty | keep; warn `row N: "X" has no figure` |
 | `figure` non-empty and not `FIGURE_NAME` | **error** `row N: figure "F" is not a plain image filename` |
 | `founding_member` non-empty and not true/false/yes/no | keep; warn `row N: founding_member "X" read as false` |
 
 Skip checks run first, so a skipped row produces exactly one warning and its
 figure is never checked or downloaded. The duplicate check runs after
-tier/date so a malformed first copy does not shadow a good second one. Errors
+tier/date/figure so a malformed first copy does not shadow a good second one. Errors
 are collected, not thrown, so `main()` can report all of them at once (§7).
 
 Whether a figure *exists* is not checked here — that is §5.
@@ -279,7 +280,7 @@ A failure anywhere throws; the target file is either complete or absent.
 | Invocation | Logo source | Missing logos |
 | --- | --- | --- |
 | live (no `--file`) | `driveSource` (only constructed if something is needed) | downloaded, or build stops (§5.2) |
-| `--file` | none | warn per row `row N: figure "F" not found in assets/img/org-logos/` and keep the member (Story 4, offline) |
+| `--file` | none | `dropMissingLogos()` leaves those members out, warning per row `row N: figure "F" not found in assets/img/org-logos/ — "X" not listed` (Story 4, offline); the zero-members check runs after this |
 
 ### 6. YAML emitter
 
@@ -329,14 +330,16 @@ Rules:
 ```js
 async function main() {
   const records = toMemberRecords(parseCSV(await loadCSV()));
-  const { members, warnings, errors } = validate(records);
+  let { members, warnings, errors } = validate(records);
   if (errors.length) throw new Error(list('invalid figure', errors));
-  if (!members.length) throw new Error('No members found — refusing to write an empty file.');
 
   const needed = neededLogos(members, repoLogos());
-  if (needed.length && offline) {
-    warnings.push(...missingLogoWarnings(needed));       // --file (§5.6)
-  } else if (needed.length) {
+  if (needed.length && offline) {                        // --file (§5.6)
+    ({ kept: members, warnings: dropped } = dropMissingLogos(members, needed));
+    warnings.push(...dropped);
+  }
+  if (!members.length) throw new Error('No members found — refusing to write an empty file.');
+  if (needed.length && !offline) {
     await syncLogos(needed, driveSource(DRIVE_API_KEY, LOGO_FOLDER_ID, needed));
   }                                     // driveSource may throw (§5.3 preconditions)
 
@@ -354,7 +357,7 @@ if (require.main === module) {
 
 module.exports = {
   parseCSV, toMemberRecords, parseDate, parseBool, validate,
-  neededLogos, matchLogos, renderYAML, driveSource, syncLogos, saveLogo,
+  neededLogos, dropMissingLogos, matchLogos, renderYAML, driveSource, syncLogos, saveLogo,
 };
 ```
 
