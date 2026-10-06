@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 47 sessions, 81 talks (81 with published
+> in the Age of AI". 3 days, 46 sessions, 82 talks (82 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -294,15 +294,20 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Break
 - Concurrent with: nothing (the only session at this time)
 
-### 10:30–11:30am — New Frontiers, New Voices
+### 10:30–11:30am — Making AI Sustainable: Token Economics
 
 - Time: 2026-10-20T10:30:00-07:00 to 2026-10-20T11:30:00-07:00 (60 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Student/Early Career
+- Chair: Scott Michael
 - Concurrent with: RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
-- Talks (1):
-  - "Invited Talks" (Student)
-    https://us-rse.org/usrse26/program/student-early-career-program/#invited-talks
+- Talks (2):
+  - "Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models" (Student)
+    Presenters: Julian Pistorus
+    https://us-rse.org/usrse26/program/student-early-career-program/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models
+  - "TBD" (Student)
+    Presenters: Hasti Mehta
+    https://us-rse.org/usrse26/program/student-early-career-program/#tbd
 
 ### 10:30am–12pm — RSE Practices in the Age of AI Part I
 
@@ -310,7 +315,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
 - Chair: Luca Bonaldo
-- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Research Software Engineering in the Age of Generative AI" (Talk)
     Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
@@ -331,7 +336,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
 - Chair: Kate Arneson
-- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
+- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); HPC + AI (10:30am–12pm, Willow Glen Room)
 - Talks (4):
   - "Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows" (Talk)
     Presenters: Md Hasan Shahriar Simanto
@@ -352,7 +357,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: Willow Glen Room
 - Type: Talks
 - Chair: Vani Walvekar
-- Concurrent with: New Frontiers, New Voices (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
+- Concurrent with: Making AI Sustainable: Token Economics (10:30–11:30am, San Jose Ballroom Salon 3 & 4); RSE Practices in the Age of AI Part I (10:30am–12pm, San Jose Ballroom Salon 1 & 2); The Human Factor (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
 - Talks (4):
   - "DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments" (Paper)
     Presenters: Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel
@@ -503,22 +508,14 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
-### 8:30–9:30am — Plenary III
+### 8:30–10am — Plenary III & Sponsor Talks
 
-- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T09:30:00-07:00 (60 min)
+- Time: 2026-10-21T08:30:00-07:00 to 2026-10-21T10:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 3 & 4
 - Type: Plenary
 - Plenary: yes
 - Concurrent with: nothing (the only session at this time)
 - About: Announcements, US-RSE Updates, US-RSE Awards, BSSw Fellowship Awards
-
-### 9:30–10am — Sponsor Talks
-
-- Time: 2026-10-21T09:30:00-07:00 to 2026-10-21T10:00:00-07:00 (30 min)
-- Room: San Jose Ballroom Salon 3 & 4
-- Type: Plenary
-- Plenary: yes
-- Concurrent with: nothing (the only session at this time)
 
 ### 10–10:30am — Morning Break (Sponsorship available)
 

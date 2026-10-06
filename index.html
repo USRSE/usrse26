@@ -20,6 +20,9 @@ cards: home
 
 {% include cards.html %}
 
+<link rel="stylesheet" href="{{ site.baseurl }}/assets/css/featured-program.css?v={{ site.time | date: '%s' }}">
+{% include featured-program.html format="Keynote" title="Keynote Speaker" %}
+
 <div
   class="sectionheader"
   style="
@@ -40,6 +43,7 @@ cards: home
     {% include add-sponsor-logo.html sponsor_url="https://illinois.edu/" logo_file="uiuc.png" logo_alt="The University of Illinois at Urbana-Champaign (UIUC) logo. UIUC is a Platinum sponsor of the USRSE26 Conference." %}
     {% include add-sponsor-logo.html sponsor_url="https://www.princeton.edu/" logo_file="princeton.svg" logo_alt="The Princetion University logo. Princeton is a Platinum sponsor of the USRSE26 Conference." %}
     {% include add-sponsor-logo.html sponsor_url="https://www.comnetco.com/" logo_file="comnetco.svg" logo_alt="The ComnetCo University logo. ComnetCo is a Platinum sponsor of the USRSE26 Conference." %}
+    {% include add-sponsor-logo.html sponsor_url="https://sciencegateways.org/" logo_file="sgx3.png" logo_alt="The Science Gateways (SGX3) logo. SGX3 is a Platinum sponsor of the USRSE26 Conference." %}
   </div>
 </section>
 
@@ -49,6 +53,7 @@ cards: home
   <div class="row sponsor-gold row-cols-2 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center align-items-center">
     {% include add-sponsor-logo.html sponsor_url="https://globus.org/" logo_file="globus.png" logo_alt="The Globus logo. Globus is a Gold sponsor of the USRSE26 Conference." %}
     {% include add-sponsor-logo.html sponsor_url="https://jetstream-cloud.org/index.html" logo_file="jetstream.svg" logo_alt="The Jetstream2 logo. Jetstream2 is a Gold sponsor of the USRSE26 Conference." %}
+    {% include add-sponsor-logo.html sponsor_url="https://marimo.io/" logo_file="marimo.svg" logo_alt="The marimo logo. marimo is a Gold sponsor of the USRSE26 Conference." %}
   </div>
 </section>
 

@@ -12272,7 +12272,7 @@ article > a:visited:hover {
 }
 
 /* === Sponsor Logos === */
- .sponsor-logo {
+ .sp-logo {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -12284,7 +12284,7 @@ article > a:visited:hover {
 }
 
 /* Default sponsor logo styles */
-.sponsor-logo img {
+.sp-logo img {
     display: block;
     margin: 0 auto;
     object-fit: contain;
@@ -12292,22 +12292,22 @@ article > a:visited:hover {
     height: clamp(100px, 15vw, 140px);
 }
 
-.sponsor-platinum .sponsor-logo img {
+.sponsor-platinum .sp-logo img {
     width:  clamp(340px, 30vw, 420px);
     height: clamp(160px, 20vw, 200px);
 }
 
-.sponsor-gold .sponsor-logo img {
+.sponsor-gold .sp-logo img {
     width:  clamp(220px, 20vw, 300px);
     height: clamp(100px, 15vw, 140px);
 }
 
-.sponsor-silver .sponsor-logo img {
+.sponsor-silver .sp-logo img {
     width:  clamp(140px, 15vw, 180px);
     height: clamp(65px,  7vw,  90px);
 }
 
-.sponsor-bronze .sponsor-logo img {
+.sponsor-bronze .sp-logo img {
     width:  clamp(100px, 10vw, 120px);
     height: clamp(50px, 10vw, 60px);
 }
