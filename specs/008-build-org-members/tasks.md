@@ -169,11 +169,13 @@ git clean -f assets/img/org-logos
   - `typos README.md` (if installed) is clean;
   - commands copied from the README run as written (fixture command).
 
-- [ ] 10. **Jekyll build and page check** (Story 3) — Fixture build, then
+- [x] 10. **Jekyll build and page check** (Story 3) — Fixture build, then
   `bundle exec jekyll build` exits 0. Serve and compare the home page's
   "Organizational Founding Members" section against `main`: same tiers,
   logos, order, links, `alt` text (no `&nbsp;()` on acronym-less members),
   and the RCAC dark background. Restore.
+  *Done against this branch's hand-written YAML instead of `main`, which has
+  no org-members section yet: the rendered section HTML is byte-identical.*
 
 - [ ] 11. **Switch to the live sheet** (Stories 1, 3, 7) — With the real
   sheet populated, run `ORG_MEMBERS_SHEET_ID=<id> ORG_LOGOS_FOLDER_ID=<id>
