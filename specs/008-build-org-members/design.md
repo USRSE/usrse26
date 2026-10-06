@@ -119,7 +119,10 @@ No `_config.yml` read — the script needs nothing from it.
   variable, or run with --file fixtures/org-members.csv.`
 - `loadCSV()` — `--file` path if given (logs `Reading <file>`), else
   `fetchSheet()`.
-- `parseCSV(text)` — verbatim copy of `build-program.js:268-295`.
+- `parseCSV(text)` — copy of `build-program.js:229-255`, minus its final
+  blank-row filter: dropping all-blank rows before `_row` is assigned would
+  shift every later row number after a spacer row, and Story 4 warnings must
+  name the sheet row. Blank rows have no name and are dropped in §3.
 
 ### 3. Records
 

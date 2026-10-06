@@ -26,7 +26,7 @@ git clean -f assets/img/org-logos
 
 ---
 
-- [ ] 1. **Fixture and skeleton** (Stories 2, 3; §1, §2, §3, §8, §9) —
+- [x] 1. **Fixture and skeleton** (Stories 2, 3; §1, §2, §3, §8, §9) —
   Create `fixtures/org-members.csv` (§9: all 15 current members, the trailing
   empty header column, and the four drop rows). Create
   `scripts/build-org-members.js` with the header comment (§8), configuration
