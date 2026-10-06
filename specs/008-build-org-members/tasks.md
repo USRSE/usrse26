@@ -124,7 +124,7 @@ git clean -f assets/img/org-logos
   - fixture build still green and equivalent;
   - restore (hygiene, including `git clean` of the logo dir).
 
-- [ ] 7. **Drive source** (Story 7; §5.3, §5.6) — Add `driveSource(apiKey,
+- [x] 7. **Drive source** (Story 7; §5.3, §5.6) — Add `driveSource(apiKey,
   folderId, needed)` with paging, `X-Goog-Api-Key` header, size guard on the body,
   status hints, and the preconditions; wire it into the live branch,
   constructed only when `needed` is non-empty.
@@ -139,7 +139,8 @@ git clean -f assets/img/org-logos
     `abc'or'1` → rejected before any request;
   - `grep -n "key=" scripts/build-org-members.js` finds nothing (key never in
     a URL); every thrown message built from status/name only;
-  - **manual, with real secrets** (whoever holds them): upload a test image
+  - **manual, with real secrets** (whoever holds them) — *pending; not run
+    during implementation (no secrets available)*: upload a test image
     to the Drive folder and add a temporary sheet row naming it; a live run
     logs `downloaded` and the file matches the Drive original. A second
     temporary row naming a file not in Drive stops the build listing it.

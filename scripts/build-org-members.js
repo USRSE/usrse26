@@ -359,6 +359,76 @@ async function loadCSV() {
   return fetchSheet();
 }
 
+const DRIVE_FILES = 'https://www.googleapis.com/drive/v3/files';
+
+/** Why a Drive request failed, from its status only — never the URL or key. */
+function driveError(what, status) {
+  const hint = {
+    403: ' — check the key is enabled for the Drive API and the folder is shared "Anyone with the link"',
+    404: ' — folder not found or not shared',
+  }[status] || '';
+  return new Error(`${what} failed: HTTP ${status}${hint}`);
+}
+
+/**
+ * A logo source over the link-shared Drive folder. Built only when a logo
+ * is needed, so sheet-only builds never require the Drive variables. The
+ * key travels in the X-Goog-Api-Key header, never in a URL, so it cannot
+ * leak through a logged URL or an error that quotes one.
+ * @param {string} apiKey
+ * @param {string} folderId
+ * @param {ReturnType<typeof neededLogos>} needed named in the precondition error
+ */
+function driveSource(apiKey, folderId, needed) {
+  const unset = [['GOOGLE_API_KEY', apiKey], ['ORG_LOGOS_FOLDER_ID', folderId]]
+    .filter(([, v]) => !v).map(([k]) => k);
+  if (unset.length) {
+    const logos = needed.map(({ figure, rows }) =>
+      `${figure} (row${rows.length > 1 ? 's' : ''} ${rows.join(', ')})`).join(', ');
+    throw new Error(`${unset.join(' and ')} must be set to download: ${logos}`);
+  }
+  // Interpolated into the Drive query string below.
+  if (!/^[\w-]+$/.test(folderId)) throw new Error('ORG_LOGOS_FOLDER_ID is not a Drive folder ID');
+  const headers = { 'X-Goog-Api-Key': apiKey };
+
+  return {
+    async list() {
+      const files = [];
+      let pageToken = '';
+      do {
+        const params = new URLSearchParams({
+          q: `'${folderId}' in parents and trashed = false`,
+          fields: 'nextPageToken,files(id,name,mimeType,size)',
+          pageSize: '1000',
+          supportsAllDrives: 'true',
+          includeItemsFromAllDrives: 'true',
+        });
+        if (pageToken) params.set('pageToken', pageToken);
+        const res = await fetch(`${DRIVE_FILES}?${params}`, { headers });
+        if (!res.ok) throw driveError('Drive logo folder listing', res.status);
+        const body = await res.json();
+        for (const f of body.files || []) {
+          files.push({ id: f.id, name: f.name, mimeType: f.mimeType, size: Number(f.size) || 0 });
+        }
+        pageToken = body.nextPageToken || '';
+      } while (pageToken);
+      return files;
+    },
+
+    async download(file) {
+      const res = await fetch(
+        `${DRIVE_FILES}/${encodeURIComponent(file.id)}?alt=media&supportsAllDrives=true`, { headers });
+      if (!res.ok) throw driveError(`Download of "${file.name}"`, res.status);
+      // Guards against a body larger than the listing claimed.
+      const tooBig = new Error(`"${file.name}" is larger than the 5 MB limit`);
+      if (Number(res.headers.get('content-length')) > MAX_LOGO_BYTES) throw tooBig;
+      const buffer = Buffer.from(await res.arrayBuffer());
+      if (buffer.length > MAX_LOGO_BYTES) throw tooBig;
+      return buffer;
+    },
+  };
+}
+
 /**
  * Committed logo filenames. Compared against the listing rather than with
  * existsSync so the match is exact and case-sensitive on macOS too.
@@ -433,7 +503,7 @@ async function main() {
   if (needed.length && argValue('--file')) {
     warnings.push(...missingLogoWarnings(needed));
   } else if (needed.length) {
-    throw new Error('downloading logos is not implemented');
+    await syncLogos(needed, driveSource(DRIVE_API_KEY, LOGO_FOLDER_ID, needed));
   }
 
   for (const w of warnings) console.error(`build-org-members: ${w}`);
@@ -453,5 +523,5 @@ if (require.main === module) {
 
 module.exports = {
   parseCSV, toMemberRecords, parseDate, parseBool, validate,
-  neededLogos, matchLogos, renderYAML, syncLogos, saveLogo,
+  neededLogos, matchLogos, renderYAML, driveSource, syncLogos, saveLogo,
 };
