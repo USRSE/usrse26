@@ -104,10 +104,10 @@ Abstract:
 >
 > * Blake Joyce, BioTeam
 > * Hasti Mehta, University of Illinois Chicago AI Lab
-> * Julian Pistorus, Indiana University
 > * Fernando Perez, UC Berkeley
-> * Alec Scott, Lawrence Livermore National Laboratory
+> * Julian Pistorus, Indiana University
 > * Suzanne Prentice, Oak Ridge National Laboratory
+> * Alec Scott, Lawrence Livermore National Laboratory
 
 ### 10:30am–12pm — RAG Assistants
 
@@ -672,15 +672,17 @@ Abstract:
 >
 > Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.
 
-#### AI Token Cost Management
+#### Tokens Are the New Compute Hours: Managing Commercial AI Costs on a Student Budget
 
 - Format: Student
 - Presenters: Hasti Mehta
-- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#ai-token-cost-management
+- Abstract page: https://us-rse.org/usrse26/program/student-early-career-program/#tokens-are-the-new-compute-hours-managing-commercial-ai-costs-on-a-student-budget
 
 Abstract:
 
 > 11:00 - 11:30
+>
+> Agentic frameworks built on commercial models can turn a single task into dozens of billable calls, which is why falling per token prices have not stopped bills from climbing. This talk adapts a practical cost management framework (visibility, then attribution, then optimization) to show students how to track their token spend, match each task to the right model through routing and caching, and get real work done with commercial AI on a student budget.
 
 ### 10:30am–12pm — RSE Practices in the Age of AI Part I
 
