@@ -18,6 +18,13 @@ basic:
     date_joined: null
     founding_member: true
     tier: "Basic"
+  - name: "University of Utah"
+    url: "https://www.utah.edu/"
+    figure: "logo-utah.png"
+    acronym: null
+    date_joined: null
+    founding_member: true
+    tier: "Basic"
 
 standard:
   - name: "Center for Research Computing - University of Notre Dame"
@@ -31,61 +38,68 @@ standard:
     url: "https://home.dartmouth.edu"
     figure: "logo-dartmouth.png"
     acronym: null
-    date_joined: null
+    date_joined: 2025-10-15
     founding_member: true
     tier: "Standard"
   - name: "OMSF"
     url: "https://omsf.io"
     figure: "logo-omsf.svg"
     acronym: null
-    date_joined: null
+    date_joined: 2025-10-29
     founding_member: true
     tier: "Standard"
   - name: "University of Florida"
     url: "https://it.ufl.edu/rc/"
     figure: "logo-rc-ufl.png"
     acronym: null
-    date_joined: null
+    date_joined: 2025-11-16
     founding_member: true
     tier: "Standard"
   - name: "CU Anschutz"
     url: "https://www.cuanschutz.edu"
     figure: "logo-cu-anschutz.png"
     acronym: null
-    date_joined: null
+    date_joined: 2025-11-26
     founding_member: true
     tier: "Standard"
   - name: "Flatiron Institute"
     url: "https://www.simonsfoundation.org/flatiron/"
     figure: "logo-flatiron.png"
     acronym: null
-    date_joined: null
+    date_joined: 2026-05-19
     founding_member: true
     tier: "Standard"
   - name: "The University of Chicago - Data Science Institute"
     url: "https://datascience.uchicago.edu"
     figure: "logo-uchicago-dsi.png"
     acronym: null
-    date_joined: null
+    date_joined: 2026-02-24
     founding_member: true
     tier: "Standard"
   - name: "University of Wisconsin- Madison - Data Science Institute"
     url: "https://dsi.wisc.edu"
     figure: "logo-uw-madison-dsi.png"
     acronym: null
-    date_joined: null
+    date_joined: 2026-07-02
     founding_member: true
     tier: "Standard"
   - name: "University of Michigan - LSA"
     url: "https://lsa.umich.edu/technology-services/services/research-tools/research-programming-apps.html"
     figure: "logo-uofm-lsa-ts.png"
     acronym: null
-    date_joined: null
+    date_joined: 2026-07-22
     founding_member: true
     tier: "Standard"
   - name: "University of Miami"
     url: "https://med.miami.edu/"
     figure: "logo-miami.jpg"
+    acronym: null
+    date_joined: null
+    founding_member: true
+    tier: "Standard"
+  - name: "Georgia Tech"
+    url: "https://www.gatech.edu/"
+    figure: "logo-georgia.png"
     acronym: null
     date_joined: null
     founding_member: true
@@ -172,7 +186,7 @@ premier:
     url: "https://carpentries.org"
     figure: "logo-carpentries.png"
     acronym: null
-    date_joined: null
+    date_joined: 2025-10-17
     founding_member: true
     tier: "Premier"
   - name: "Stanford"
@@ -186,6 +200,6 @@ premier:
     url: "https://casc.org"
     figure: "logo-casc.png"
     acronym: null
-    date_joined: null
+    date_joined: 2025-05-28
     founding_member: true
     tier: "Premier"
