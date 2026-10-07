@@ -60,10 +60,7 @@
           "sessions": [
             {
               "title": "Morning Break",
-              "title": "Morning Break",
               "type": "Break",
-              "room": "San Jose Marriott",
-              "info": "US-RSE Office Hours",
               "room": "San Jose Marriott",
               "info": "US-RSE Office Hours",
               "plenary": false,
