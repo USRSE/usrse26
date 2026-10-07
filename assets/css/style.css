@@ -12311,3 +12311,17 @@ article > a:visited:hover {
     width:  clamp(100px, 10vw, 120px);
     height: clamp(50px, 10vw, 60px);
 }
+/* Orange heading band used for homepage sections (sponsors, org members). */
+.section-band {
+  background-color: var(--us-rse-accent);
+  border-radius: 14px;
+  padding: 12px 20px;
+  text-align: center;
+  margin: 2rem 0 1rem 0;
+}
+
+.content .section-band h2,
+.section-band h2 {
+  margin: 0;
+  color: white;
+}
