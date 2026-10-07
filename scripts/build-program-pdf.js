@@ -30,6 +30,12 @@
  *   npx --yes qrcode -t svg -o assets/img/program-qr.svg \
  *     https://us-rse.org/usrse26/program/
  *
+ * assets/img/wifi-qr.svg is committed the same way, and must be regenerated
+ * whenever conf_wifi_ssid or conf_wifi_password changes:
+ *
+ *   npx --yes qrcode -t svg -o assets/img/wifi-qr.svg \
+ *     'WIFI:T:WPA;S:USRSE;P:unicornsanjose2026;;'
+ *
  * The PDF is re-rendered only when it is older than the print HTML. Changing
  * a logo or image file leaves the HTML identical, so pass --force then.
  *
@@ -115,6 +121,7 @@ const ORG_MD = path.join(REPO_ROOT, 'pages', 'about', 'organization.md');
 const INDEX_HTML = path.join(REPO_ROOT, 'index.html');
 const ORG_MEMBERS_YML = path.join(REPO_ROOT, '_data', 'org-members.yml');
 const QR_SVG = path.join(REPO_ROOT, 'assets', 'img', 'program-qr.svg');
+const WIFI_QR_SVG = path.join(REPO_ROOT, 'assets', 'img', 'wifi-qr.svg');
 const LOGO_SVG = path.join(REPO_ROOT, 'assets', 'img', 'usrse26-long-logo.svg');
 const BOOTSTRAP_CSS = path.join(REPO_ROOT, 'assets', 'css', 'bootstrap.css');
 const SPONSOR_LOGOS = path.join(REPO_ROOT, 'assets', 'img', 'sponsor-logos');
@@ -428,19 +435,21 @@ function renderCover() {
     '    <div class="cover__cell cover__qr">',
     `      <img src="${src(QR_SVG)}" alt="QR code for the online program">`,
     '      <div>',
-    '        <p class="cover__label">Full program details and abstracts</p>',
+    '        <p class="cover__label">Full Program</p>',
     `        <p class="cover__url">${esc(SITE_BASE + 'program/')}</p>`,
     '      </div>',
     '    </div>',
   ];
   if (CONF.wifiSsid) {
     lines.push(
-      '    <div class="cover__cell cover__wifi">',
-      '      <p class="cover__label">Wi-Fi</p>',
-      `      <p>Network: <b>${esc(CONF.wifiSsid)}</b></p>`,
+      '    <div class="cover__cell cover__qr cover__wifi">',
+      ...(fs.existsSync(WIFI_QR_SVG) ? [`      <img src="${src(WIFI_QR_SVG)}" alt="QR code to join the Wi-Fi">`] : []),
+      '      <div>',
+      '        <p class="cover__label">Wi-Fi</p>',
+      `        <p class="cover__url">${esc(CONF.wifiSsid)}</p>`,
     );
-    if (CONF.wifiPassword) lines.push(`      <p>Password: <b>${esc(CONF.wifiPassword)}</b></p>`);
-    lines.push('    </div>');
+    if (CONF.wifiPassword) lines.push(`        <p class="cover__url">${esc(CONF.wifiPassword)}</p>`);
+    lines.push('      </div>', '    </div>');
   }
   lines.push('  </div>', '</section>');
   return lines.join('\n');
@@ -578,8 +587,6 @@ function renderCommittee(tree) {
 // Logo height per sponsor tier, first tier largest; later tiers use the last.
 const TIER_HEIGHTS = ['0.65in', '0.55in', '0.45in', '0.4in', '0.35in'];
 
-const ORG_HEIGHTS = { Premier: '0.4in', Standard: '0.32in', Basic: '0.3in' };
-
 function renderSponsors(sponsors, orgMembers) {
   const lines = ['<section class="page sponsors">', renderSquares(10, 2026, true),
     '  <h1>Thank You Sponsors!</h1>'];
@@ -596,16 +603,16 @@ function renderSponsors(sponsors, orgMembers) {
   });
   if (orgMembers) {
     lines.push('  <h2>US-RSE Organizational Founding Members</h2>');
-    for (const level of orgMembers) {
-      lines.push('  <section class="tier tier--org">', `    <h3>${esc(level.title)}</h3>`, '    <div class="logos">');
-      for (const mem of level.members) {
-        const alt = mem.acronym ? `${mem.name} (${mem.acronym})` : mem.name;
-        const bg = mem.background ? ` style="background:${esc(mem.background)}"` : '';
-        lines.push(`      <span class="tile"${bg}><img src="${src(mem.path)}" alt="${esc(alt || '')}"`
-          + ` style="height:${ORG_HEIGHTS[level.title]}"></span>`);
-      }
-      lines.push('    </div>', '  </section>');
+    lines.push('  <section class="tier tier--org">', '    <div class="logos">');
+    const sortName = (mem) => String(mem.name || '').replace(/^the\s+/i, '');
+    const members = orgMembers.flatMap((level) => level.members)
+      .sort((a, b) => sortName(a).localeCompare(sortName(b), 'en', { sensitivity: 'base' }));
+    for (const mem of members) {
+      const alt = mem.acronym && mem.acronym !== 'null' ? `${mem.name} (${mem.acronym})` : mem.name;
+      const bg = mem.background ? ` style="background:${esc(mem.background)}"` : '';
+      lines.push(`      <span class="tile"${bg}><img src="${src(mem.path)}" alt="${esc(alt || '')}"></span>`);
     }
+    lines.push('    </div>', '  </section>');
   }
   lines.push(`  <p class="sponsors__footer">${esc(SITE_BASE)}</p>`, '</section>');
   return lines.join('\n');
@@ -767,9 +774,9 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
 .sponsors__footer { margin-top: auto; font-weight: 700; }
 .sponsors h2 { font-size: 13pt; color: var(--accent); margin: 0.1in 0 0.12in; padding-top: 0.12in; border-top: 1px solid var(--accent); }
 .sponsors .tier--org { margin-bottom: 0.12in; }
-.sponsors .tier--org .logos { gap: 0.1in 0.2in; }
-.sponsors .tile { display: inline-flex; align-items: center; padding: 3pt 6pt; border-radius: 3px; }
-.sponsors .tile img { max-width: 1.3in; object-fit: contain; }
+.sponsors .tier--org .logos { gap: 0.1in 0.12in; }
+.sponsors .tile { display: flex; align-items: center; justify-content: center; box-sizing: border-box; width: 1.05in; height: 0.45in; padding: 3pt 5pt; border-radius: 3px; }
+.sponsors .tile img { max-width: 100%; max-height: 100%; object-fit: contain; }
 @media screen { body { background: #888; } .page { background: #fff; margin: 0.25in auto; box-shadow: 0 1px 6px rgba(0,0,0,.3); } }
 `;
 

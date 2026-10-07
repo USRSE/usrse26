@@ -188,8 +188,8 @@ the printed program matches what we promised sponsors and members.
   one-line message rather than print an empty page.
 - WHEN `_data/org-members.yml` exists (added by PR #63), THE system SHALL
   render a "US-RSE Organizational Founding Members" section after the sponsor
-  tiers, with Premier, Standard, and Basic levels in that order, each sorted by
-  `date_joined` ascending, with logos from `assets/img/org-logos/<figure>` and
+  tiers as one untitled grid of same-size logo boxes, all levels together,
+  sorted alphabetically by `name` ignoring a leading "The " — with logos from `assets/img/org-logos/<figure>` and
   `name` (plus `acronym` when set) as the image `alt` — matching the order PR
   #63 renders on the homepage.
 - WHEN an org member has a `background`, THE system SHALL render that color

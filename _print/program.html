@@ -58,9 +58,9 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
 .sponsors__footer { margin-top: auto; font-weight: 700; }
 .sponsors h2 { font-size: 13pt; color: var(--accent); margin: 0.1in 0 0.12in; padding-top: 0.12in; border-top: 1px solid var(--accent); }
 .sponsors .tier--org { margin-bottom: 0.12in; }
-.sponsors .tier--org .logos { gap: 0.1in 0.2in; }
-.sponsors .tile { display: inline-flex; align-items: center; padding: 3pt 6pt; border-radius: 3px; }
-.sponsors .tile img { max-width: 1.3in; object-fit: contain; }
+.sponsors .tier--org .logos { gap: 0.1in 0.12in; }
+.sponsors .tile { display: flex; align-items: center; justify-content: center; box-sizing: border-box; width: 1.05in; height: 0.45in; padding: 3pt 5pt; border-radius: 3px; }
+.sponsors .tile img { max-width: 100%; max-height: 100%; object-fit: contain; }
 @media screen { body { background: #888; } .page { background: #fff; margin: 0.25in auto; box-shadow: 0 1px 6px rgba(0,0,0,.3); } }
 </style>
 </head>
@@ -74,8 +74,16 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
     <div class="cover__cell cover__qr">
       <img src="../assets/img/program-qr.svg" alt="QR code for the online program">
       <div>
-        <p class="cover__label">Full program details and abstracts</p>
+        <p class="cover__label">Full Program</p>
         <p class="cover__url">https://us-rse.org/usrse26/program/</p>
+      </div>
+    </div>
+    <div class="cover__cell cover__qr cover__wifi">
+      <img src="../assets/img/wifi-qr.svg" alt="QR code to join the Wi-Fi">
+      <div>
+        <p class="cover__label">Wi-Fi</p>
+        <p class="cover__url">USRSE</p>
+        <p class="cover__url">unicornsanjose2026</p>
       </div>
     </div>
   </div>
@@ -629,6 +637,38 @@ body { background: #fff; color: #1a1a1a; font: 9.5pt/1.35 system-ui, -apple-syst
     <h3>Break Sponsors</h3>
     <div class="logos">
       <img src="../assets/img/sponsor-logos/shi.png" alt="The SHI logo. SHI is a Break sponsor of the USRSE26 Conference." style="height:0.35in">
+    </div>
+  </section>
+  <h2>US-RSE Organizational Founding Members</h2>
+  <section class="tier tier--org">
+    <div class="logos">
+      <span class="tile"><img src="../assets/img/org-logos/logo-adsa.png" alt="Academic Data Science Alliance (ADSA)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-carpentries.png" alt="The Carpentries"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-casc.png" alt="CASC"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-crc-notre.png" alt="Center for Research Computing - University of Notre Dame (CRC)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-cu-anschutz.png" alt="CU Anschutz"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-dartmouth.png" alt="Dartmouth"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-flatiron.png" alt="Flatiron Institute"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-georgia.png" alt="Georgia Tech"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-lbl.png" alt="Lawrence Berkeley National Laboratory (LBL)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-ncar.png" alt="NSF National Center for Atmospheric Research (NCAR)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-numfocus.png" alt="NumFOCUS"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-omsf.svg" alt="OMSF"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-open-ondemand.png" alt="Open OnDemand (OOO)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-princeton.png" alt="Princeton University"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-renci.png" alt="RENCI"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-resa.png" alt="Research Software Alliance (ReSA)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-uits-indiana.png" alt="Research Technologies - Indiana University (UITS)"></span>
+      <span class="tile" style="background:rgba(0, 0, 0, 0.7)"><img src="../assets/img/org-logos/logo-rcac-purdue.png" alt="Rosen Center for Advanced Computing - Purdue (RCAC)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-sandia.svg" alt="Sandia National Laboratories"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-stanford.png" alt="Stanford"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-uchicago-dsi.png" alt="The University of Chicago - Data Science Institute"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-rc-ufl.png" alt="University of Florida"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-uiuc.png" alt="University of Illinois Urbana-Champaign (UIUC)"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-miami.jpg" alt="University of Miami"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-uofm-lsa-ts.png" alt="University of Michigan - LSA"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-utah.png" alt="University of Utah"></span>
+      <span class="tile"><img src="../assets/img/org-logos/logo-uw-madison-dsi.png" alt="University of Wisconsin- Madison - Data Science Institute"></span>
     </div>
   </section>
   <p class="sponsors__footer">https://us-rse.org/usrse26/</p>

@@ -334,8 +334,9 @@ keeps groups whole.
   PR #63's 15 org members, the larger sizes overflowed the sheet)
 - when `orgMembers` is present:
   - `<h2>US-RSE Organizational Founding Members</h2>`
-  - Premier / Standard / Basic sub-sections, logos at 0.4in / 0.32in /
-    0.3in, at most 1.3in wide
+  - one untitled grid of all members, alphabetical by `name` ignoring a
+    leading "The "; every logo
+    is scaled to fit a 1.05in × 0.45in tile
   - an item with `background` gets `style="background:<value>"` on its tile.
     The value is checked against
     `^(#[0-9a-f]{3,8}|rgba?\([\d.,\s]+\))$/i` and dropped with a warning if it
