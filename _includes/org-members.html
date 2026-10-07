@@ -1,0 +1,28 @@
+<div class="section-band">
+  <h2>US-RSE Organizational Founding Members</h2>
+</div>
+{%- assign all_members = "" | split: "" -%}
+{%- assign org_tier_keys = "premier,standard,basic" | split: "," -%}
+{%- for tier_key in org_tier_keys -%}
+  {%- if site.data.org-members[tier_key] -%}
+    {%- assign all_members = all_members | concat: site.data.org-members[tier_key] -%}
+  {%- endif -%}
+{%- endfor -%}
+{%- comment -%} Sort by name ignoring a leading "The ": build "key|~|index" strings, sort, map back. {%- endcomment -%}
+{%- assign sort_keys = "" -%}
+{%- for member in all_members -%}
+  {%- assign sort_name = member.name -%}
+  {%- assign name_prefix = sort_name | slice: 0, 4 | downcase -%}
+  {%- if name_prefix == "the " -%}
+    {%- assign sort_name = sort_name | slice: 4, sort_name.size -%}
+  {%- endif -%}
+  {%- assign sort_keys = sort_keys | append: sort_name | append: "|~|" | append: forloop.index0 | append: "^^" -%}
+{%- endfor -%}
+{%- assign sort_keys = sort_keys | split: "^^" | sort_natural -%}
+{%- assign org_members = "" | split: "" -%}
+{%- for sort_key in sort_keys -%}
+  {%- assign member_index = sort_key | split: "|~|" | last | plus: 0 -%}
+  {%- assign picked_member = all_members | slice: member_index, 1 -%}
+  {%- assign org_members = org_members | concat: picked_member -%}
+{%- endfor %}
+{% include org-card-group.html members=org_members %}

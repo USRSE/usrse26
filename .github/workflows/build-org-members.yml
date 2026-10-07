@@ -1,0 +1,63 @@
+# Rebuilds _data/org-members.yml (the home page's Organizational Founding
+# Members section) from the "members" tab of the org members Google Sheet,
+# downloading any logo the repo does not have yet from the shared Drive
+# folder, and commits only when something actually changed. Run it by hand:
+# Actions -> Rebuild org members -> Run workflow.
+#
+# Repository secrets (Settings -> Secrets and variables -> Actions ->
+# Secrets), never committed and masked in logs:
+#   ORG_MEMBERS_SHEET_ID  the sheet ID — required; the run fails without it
+#   ORG_LOGOS_FOLDER_ID   the Drive logo folder ID  } needed only when a
+#   GOOGLE_API_KEY        a Drive-API-only API key  } logo must be downloaded
+#
+# Sheet warnings (skipped rows, missing url/figure) appear in the run log
+# while the job still succeeds; see README.md "Updating Organizational
+# Members".
+
+name: Rebuild org members
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    env:
+      ORG_MEMBERS_SHEET_ID: ${{ secrets.ORG_MEMBERS_SHEET_ID }}
+      ORG_LOGOS_FOLDER_ID: ${{ secrets.ORG_LOGOS_FOLDER_ID }}
+      GOOGLE_API_KEY: ${{ secrets.GOOGLE_API_KEY }}
+    steps:
+      # Only the sheet ID is gated: the Drive secrets are needed only when a
+      # logo is missing, and the script names any that are unset.
+      - name: Check the sheet ID is configured
+        run: |
+          if [ -z "$ORG_MEMBERS_SHEET_ID" ]; then
+            echo "::error::The ORG_MEMBERS_SHEET_ID secret is not set."
+            exit 1
+          fi
+
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+
+      - name: Build org members from sheet
+        run: node scripts/build-org-members.js
+
+      - name: Commit if changed
+        run: |
+          # Stage before checking so newly downloaded (untracked) logos count.
+          # The script only ever adds files to the logo folder.
+          git add -A -- _data/org-members.yml assets/img/org-logos
+          if git diff --quiet --cached; then
+            echo "Org members unchanged — nothing to commit."
+          else
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git commit -m "Rebuild org members from sheet"
+            git push
+          fi

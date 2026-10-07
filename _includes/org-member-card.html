@@ -1,0 +1,8 @@
+{%- assign item = include.item -%}
+<a class="org-logos__tile" href="{{ item.url }}" target="_blank" rel="noopener"
+    {%- if item.background %} style="background-color: {{ item.background }}"{% endif %}>
+    <img class="org-logos__img"
+        src="{{ site.baseurl }}/assets/img/org-logos/{{ item.figure }}"
+        alt="{{ item.name }}{% if item.acronym %} ({{ item.acronym }}){% endif %}"
+        loading="lazy">
+</a>

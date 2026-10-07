@@ -219,6 +219,135 @@ CircleCI configuration is needed.
 `scripts/` and `fixtures/` are listed under `exclude` in `_config.yml` so the build tooling
 is not copied into the built site or the preview artifacts.
 
+## Updating Organizational Members
+
+The home page's "US-RSE Organizational Founding Members" section is generated from the
+org members Google Sheet by `scripts/build-org-members.js` (Node 18+, no dependencies).
+Edit the sheet, not `_data/org-members.yml`.
+
+### How it works
+
+```text
+"members" tab of the sheet (ORG_MEMBERS_SHEET_ID) ─┐
+Drive logo folder (ORG_LOGOS_FOLDER_ID) ───────────┤
+                                                   ▼
+                              scripts/build-org-members.js
+                                                   │
+               _data/org-members.yml  +  new files in assets/img/org-logos/
+                                                   │
+       index.html → _includes/org-members.html → _includes/org-card-group.html → _includes/org-member-card.html
+```
+
+- `_data/org-members.yml` is generated. Hand edits are overwritten on the next build.
+- Members are grouped by tier (Premier, Standard, Basic) and sorted by `date_joined` on
+  the page, members without a date last. A tier with no members has no heading.
+- Each `figure` names a logo file in `assets/img/org-logos/`. On a live build, a logo the
+  repo does not have yet is downloaded by its exact name from the Drive folder. Logos
+  already in the repo are never re-downloaded, overwritten, or deleted, so the Drive folder
+  only needs to hold new ones.
+
+### Sheet columns
+
+The header row uses these names (any case, any order). Other columns are ignored.
+
+| Column | Required | Meaning | Accepted values |
+| --- | --- | --- | --- |
+| `tier` | yes | Membership tier | `Basic`, `Standard`, `Premier`, or `Inactive` (any case). `Inactive` keeps the row in the sheet but off the page. |
+| `name` | yes | Organization name, shown as the logo's alt text | Any text. Rows without a name are skipped. |
+| `url` | no (warns) | Where the logo links | A full URL |
+| `figure` | yes (row skipped without it) | Logo filename | The exact name of an image in the Drive folder or in `assets/img/org-logos/`. Letters, digits, `.`, `_`, and `-` only; no leading dot; extension `png`, `jpg`, `jpeg`, `svg`, `webp`, `gif`, or `avif` |
+| `acronym` | no | Added to the alt text, e.g. "Name (ACR)" | Any text |
+| `date_joined` | no | Sort order within a tier | `M/D/YYYY` (a sheet date cell), `YYYY-MM-DD`, or empty (listed last in its tier) |
+| `founding_member` | no | Kept in the YAML; not displayed | Checkbox, `TRUE`/`FALSE`, `yes`/`no`, or empty (= false) |
+| `contact` | no | Kept in the YAML; not displayed | Any text |
+| `background` | no | Color shown behind the logo | Any CSS color, e.g. `rgba(0, 0, 0, 0.7)` |
+
+Keep each column a single type in the sheet (all dates, or all text). The CSV export can
+blank out cells whose type differs from most of their column.
+
+### Adding or editing a member
+
+1. **New logo:** upload it to the Drive logo folder under the exact name you will put in
+   `figure`. It must be an image file, no larger than 5 MB, and not a Google Drawing.
+   You can also commit the file to `assets/img/org-logos/` yourself instead.
+2. Add or edit the member's row in the `members` tab.
+3. Run **Actions → Rebuild org members → Run workflow** (or run the script locally, below).
+4. Read the run log for `build-org-members:` warnings and fix any rows they name.
+5. Check the home page once the site redeploys.
+
+To remove a member from the page, set their `tier` to `Inactive` rather than deleting the row.
+
+To replace a logo that is already in the repo, delete it from `assets/img/org-logos/` in a
+commit, put the new version in the Drive folder under the same name, and rerun.
+
+### Running locally
+
+Rebuild from the live sheet:
+
+```bash
+ORG_MEMBERS_SHEET_ID=<sheet-id> ORG_LOGOS_FOLDER_ID=<folder-id> GOOGLE_API_KEY=<key> \
+  node scripts/build-org-members.js
+```
+
+The two Drive variables are only needed when a logo has to be downloaded.
+
+Or build offline from the checked-in fixture, which needs no IDs and never contacts Drive:
+
+```bash
+node scripts/build-org-members.js --file fixtures/org-members.csv
+```
+
+A fixture build rewrites `_data/org-members.yml`. Restore it before committing:
+
+```bash
+git checkout -- _data/org-members.yml
+```
+
+### GitHub Action and secrets
+
+The `Rebuild org members` workflow (`.github/workflows/build-org-members.yml`) runs only
+when started by hand. It commits `_data/org-members.yml` and any new logos only when
+something changed. It reads three repository **secrets**:
+
+1. Go to the repo's **Settings → Secrets and variables → Actions → Secrets**.
+2. Add `ORG_MEMBERS_SHEET_ID`: the sheet ID from its URL,
+   `docs.google.com/spreadsheets/d/<sheet-id>/edit`. A run without it fails with an error.
+3. Add `ORG_LOGOS_FOLDER_ID`: the folder ID from its URL,
+   `drive.google.com/drive/folders/<folder-id>`.
+4. Add `GOOGLE_API_KEY`: in a Google Cloud project, enable the **Google Drive API**, then
+   create an API key under **APIs & Services → Credentials**. Restrict the key to the Drive
+   API only.
+
+In Drive, share the logo folder as **General access → Anyone with the link → Viewer**. The
+API key can only read files shared that way.
+
+### Warnings and errors
+
+Warnings appear in the log and the build still succeeds. Errors stop the build before
+anything is written.
+
+| Message | Result |
+| --- | --- |
+| `"X" is inactive — not listed` | Row skipped |
+| `unknown tier "X" — expected Basic, Standard, Premier, or Inactive` | Row skipped |
+| `unparsable date_joined "X" — expected M/D/YYYY or YYYY-MM-DD` | Row skipped |
+| `duplicate name "X" (first on row M)` | Row skipped; the first row is kept |
+| `"X" has no url` | Member kept with an empty link |
+| `"X" has no figure — not listed` | Row skipped |
+| `founding_member "X" read as false` | Member kept |
+| `figure "F" not found in assets/img/org-logos/ — "X" not listed` (offline `--file` builds only) | Row skipped |
+| `figure "F" is not a plain image filename` | **Error** |
+| `figure "F" is not in the logo folder` / `matches N files in the logo folder` / `is <type>, not an image` / `is N MB; the limit is 5 MB` | **Error**: every problem is listed together |
+| `GOOGLE_API_KEY and/or ORG_LOGOS_FOLDER_ID must be set to download: …` | **Error**: a logo is needed but a Drive variable is unset |
+| `ORG_LOGOS_FOLDER_ID is not a Drive folder ID` | **Error** |
+| `Drive logo folder listing failed` / `Download of "F" failed: HTTP …` | **Error**: a 403 means the key is not enabled for the Drive API or the folder is not shared; a 404 means the folder was not found |
+| `"F" is larger than the 5 MB limit` | **Error**: the downloaded file was bigger than Drive's listing said |
+| `"members" tab has no "name"/"tier" column — is the tab named members?` | **Error** |
+| `"members" tab fetch failed: HTTP N` | **Error** |
+| `ORG_MEMBERS_SHEET_ID is not set` | **Error** |
+| `--file requires a path` | **Error** |
+| `No members found — refusing to write an empty file.` | **Error** |
+
 ## Adding logos to the website
 
 There is an `_include` file, `add-sponsor-logo.html`, that can be used to add a

@@ -1,0 +1,7 @@
+<ul class="org-logos">
+    {%- for member in include.members %}
+    <li class="org-logos__item">
+        {% include org-member-card.html item=member %}
+    </li>
+    {%- endfor %}
+</ul>

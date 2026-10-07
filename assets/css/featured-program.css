@@ -18,7 +18,7 @@
   --featured-ink: #4a4a4a;
   --featured-muted: #757575;
   --featured-hairline: #dbdbdb;
-  --featured-band: #C16531;
+  --featured-band: var(--us-rse-accent, #C16531);
 }
 
 .content .featured .featured__heading,
