@@ -18,6 +18,9 @@ permalink: /:year-:month-:day-:title/
 # Conference specific variables (make sure to update for each conference)
 conf_start_date: "2026-10-19 08:00:00 -0900" # conference start date
 conf_end_date: "2026-10-21 15:00:00 -0900" # conference end date
+conf_location: "San Jose, CA" # printed program cover
+conf_wifi_ssid: "USRSE" # venue Wi-Fi network on the printed program cover; omitted when unset
+conf_wifi_password: "unicornsanjose2026" # venue Wi-Fi password on the printed program cover; regenerate assets/img/wifi-qr.svg when either changes
 volunteer_url: https://forms.gle/Rt1usiy55EcmfDJeA # link to volunteer form
 conf_mailing_list: https://groups.google.com/a/us-rse.org/g/usrse-conference # for general use
 conf_exec_email: usrse26-conference@us-rse.org # for exec committee use
