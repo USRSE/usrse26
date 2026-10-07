@@ -235,7 +235,7 @@ Drive logo folder (ORG_LOGOS_FOLDER_ID) ───────────┤
                                                    │
                _data/org-members.yml  +  new files in assets/img/org-logos/
                                                    │
-       index.html → _includes/org-card-group.html → _includes/org-member-card.html
+       index.html → _includes/org-members.html → _includes/org-card-group.html → _includes/org-member-card.html
 ```
 
 - `_data/org-members.yml` is generated. Hand edits are overwritten on the next build.

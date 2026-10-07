@@ -6,8 +6,8 @@
  * Pulls the "members" tab of the spreadsheet named by ORG_MEMBERS_SHEET_ID
  * via its CSV export endpoint, groups rows by tier, and writes the YAML the
  * home page's "Organizational Founding Members" section reads
- * (index.html -> _includes/org-card-group.html ->
- * _includes/org-member-card.html). The sheet stays the only thing anyone
+ * (index.html -> _includes/org-members.html -> _includes/org-card-group.html
+ * -> _includes/org-member-card.html). The sheet stays the only thing anyone
  * edits. Requires Node 18+ (global fetch); zero dependencies.
  *
  *   ORG_MEMBERS_SHEET_ID=<id> node scripts/build-org-members.js   # live
