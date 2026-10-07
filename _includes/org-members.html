@@ -6,7 +6,7 @@
   {%- for tier_key in org_tier_keys -%}
   {%- assign tier_members = site.data.org-members[tier_key] -%}
   {%- if tier_members %}
-  <h3>{{ tier_key | capitalize }} Level</h3>
+  <!-- <h3>{{ tier_key | capitalize }} Level</h3> -->
   {% assign org_tier = tier_members | sort: "date_joined", "last" %}
   {% include org-card-group.html %}
   {%- endif -%}
