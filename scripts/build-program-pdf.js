@@ -584,8 +584,9 @@ function renderCommittee(tree) {
   return lines.join('\n');
 }
 
-// Logo height per sponsor tier, first tier largest; later tiers use the last.
-const TIER_HEIGHTS = ['0.65in', '0.55in', '0.45in', '0.4in', '0.35in'];
+// Logo height per sponsor tier, first tier largest; Bronze and every tier after
+// it (Break, Travel Support) share the last height.
+const TIER_HEIGHTS = ['0.65in', '0.55in', '0.45in', '0.4in'];
 
 function renderSponsors(sponsors, orgMembers) {
   const lines = ['<section class="page sponsors">', renderSquares(10, 2026, true),
