@@ -138,8 +138,8 @@ The artefacts support education, methods development, and extract-transform-load
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfacces-smart-search">
-        <span class="abstract__title">A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFacCES Smart Search</span>
+      <h2 class="abstract__heading" id="a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfaces-smart-search">
+        <span class="abstract__title">A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFaCES Smart Search</span>
         <span class="abstract__people">Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol X. Song</span>
       </h2>
     </summary>
