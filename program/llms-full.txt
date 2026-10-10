@@ -1393,6 +1393,18 @@ Abstract:
 >
 > Through a comparative analysis of NeSy implementations and purely neural baselines, this talk will offer a comprehensive overview of the integration costs and practical trade-offs involved in developing trustworthy AI systems. The presentation will conclude with a critical evaluation of the limits of this paradigm, providing clear criteria to help researchers determine when a neuro-symbolic approach is appropriate for their specific objectives. Attendees will leave with a functional roadmap for building reliable AI, equipped with the insights needed to navigate the essential balance between neural flexibility and symbolic rigor.
 
+#### Preparing Students for AI-Assisted Research Workflows
+
+- Format: Talk
+- Presenters: Alejandra Castillo
+- Abstract page: https://us-rse.org/usrse26/program/talks/#preparing-students-for-ai-assisted-research-workflows
+
+Abstract:
+
+> When students can obtain a script that runs, it can be easy for them to believe they understand the programming behind it. AI tools make this tension more visible. Students can now generate code, examples, explanations, and error-message fixes quickly, even while they are still developing basic programming fluency. This can lower the barrier to entry for students who are new to computing, but it can also hide important gaps in understanding. Code may run without answering the right question, students may accept unfamiliar solutions they cannot explain, and statistical assumptions may be buried behind polished output.
+>
+> In this talk, I share lessons from teaching undergraduate statistical computing, with examples from courses using R and Python for data analysis and modeling. I focus on a shift from teaching syntax as the central challenge to teaching computational judgment: reading code, debugging, checking whether output makes sense for the data and scientific context, documenting choices, and explaining results. I also discuss course redesigns that respond to AI-assisted coding, including giving students incorrect AI-generated output to critique and debug, adding written explanations of code and results, and using assessments that ask students to reason about data, models, and reproducibility. This talk connects these classroom experiences to broader questions about how educators can prepare future research software contributors to work responsibly in AI-assisted research workflows.
+
 ### 12–1:30pm — Lunch Break
 
 - Time: 2026-10-21T12:00:00-07:00 to 2026-10-21T13:30:00-07:00 (90 min)
@@ -1437,18 +1449,6 @@ Abstract:
 Abstract:
 
 > Learning Unlimited (LU), a national nonprofit empowering college students to deliver educational programs, maintains several open-source codebases (https://github.com/learningunlimited), which I and three other volunteers maintain. Our limited nonprofit budget and unpaid volunteer workforce mean we have limited time and/or money to put towards further development of these codebases, despite issue reports and feature requests perpetually piling up. In an attempt to give our software a jumpstart, we participated in Google Summer of Code (GSoC), a global paid internship program that pairs beginner contributors with experienced mentors to work on real-world open-source projects. Our hope was to attract new contributors to our open-source program-management platform to squash bugs and work on larger new features that we didn’t have the capacity to work on ourselves. Over roughly three months, the project received nearly 1,200 pull requests and 560 issues from 388 GSoC applicants competing for three internship slots. The lack of broader real-world context and characteristic AI errors made it evident that the vast majority of these contributions were generated with substantial AI assistance. This application period simultaneously became LU's most productive and most stressful: GSoC participants closed 140 backlogged issues, some over fourteen years old, while we were forced to triage an unprecedented volume of low-quality, AI-assisted work. Average weekly maintainer activity rose roughly thirtyfold during the contribution period, peaking at over 700 discrete actions in a single week, and more than half of the pull requests that were reviewed were closed without merging. To keep pace, we deployed a set of GitHub Actions automation to assist with assignment enforcement, contributor rate-limiting, triage gates, and activity tracking, reducing required maintainer activity by more than 60%. Further, to combat increasing time-to-review we began implementing AI-assisted code review via integrated GitHub Copilot and external Claude conversations for first-pass review. This appeared to keep some contributors engaged, while others became unresponsive to the AI reviews. Overall, this natural experiment reveals that AI has dramatically lowered the cost of producing code while increasing the human cost of properly evaluating it, with consequences for how RSE teams should structure contributor onboarding, code review, and sustainability practices. Our experience also amplifies concerns about maintainer burnout, especially when the marginal cost of unwanted contributions has approached zero. Finally, in addition to our three interns, a small number of unsuccessful applicants have remained active contributors past the application period, suggesting that the underlying value of programs like GSoC survives even under these new conditions, if maintainers can withstand the volume.
-
-#### Preparing Students for AI-Assisted Research Workflows
-
-- Format: Talk
-- Presenters: Alejandra Castillo
-- Abstract page: https://us-rse.org/usrse26/program/talks/#preparing-students-for-ai-assisted-research-workflows
-
-Abstract:
-
-> When students can obtain a script that runs, it can be easy for them to believe they understand the programming behind it. AI tools make this tension more visible. Students can now generate code, examples, explanations, and error-message fixes quickly, even while they are still developing basic programming fluency. This can lower the barrier to entry for students who are new to computing, but it can also hide important gaps in understanding. Code may run without answering the right question, students may accept unfamiliar solutions they cannot explain, and statistical assumptions may be buried behind polished output.
->
-> In this talk, I share lessons from teaching undergraduate statistical computing, with examples from courses using R and Python for data analysis and modeling. I focus on a shift from teaching syntax as the central challenge to teaching computational judgment: reading code, debugging, checking whether output makes sense for the data and scientific context, documenting choices, and explaining results. I also discuss course redesigns that respond to AI-assisted coding, including giving students incorrect AI-generated output to critique and debug, adding written explanations of code and results, and using assessments that ask students to reason about data, models, and reproducibility. This talk connects these classroom experiences to broader questions about how educators can prepare future research software contributors to work responsibly in AI-assisted research workflows.
 
 ### 1:30–3pm — Reflections on RSE Roles & Pathways
 
