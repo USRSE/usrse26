@@ -596,11 +596,11 @@ Abstract:
 >
 > The talk will include concrete examples of design artifacts, before-and-after comparisons of AI-assisted development with and without upfront design, and practical takeaways for RSEs looking to improve their workflows. Attendees will leave with a practical template they can use right away, plus current tool recommendations.
 
-#### Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software
+#### Encore: Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think - Lessons from Curating a Catalog of Maintained Scientific Software
 
 - Format: Talk
 - Presenters: Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus
-- Abstract page: https://us-rse.org/usrse26/program/talks/#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
+- Abstract page: https://us-rse.org/usrse26/program/talks/#encore-scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
 
 Abstract:
 
@@ -969,7 +969,7 @@ Abstract:
 #### Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language
 
 - Format: Paper
-- Presenters: A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
+- Presenters: Samuel A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
 - Abstract page: https://us-rse.org/usrse26/program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language
 
 Abstract:

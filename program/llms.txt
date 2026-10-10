@@ -263,9 +263,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Back to Basics: Design-First Development in the Age of AI Coding Assistants" (Talk)
     Presenters: Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens
     https://us-rse.org/usrse26/program/talks/#back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants
-  - "Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software" (Talk)
+  - "Encore: Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think - Lessons from Curating a Catalog of Maintained Scientific Software" (Talk)
     Presenters: Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus
-    https://us-rse.org/usrse26/program/talks/#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
+    https://us-rse.org/usrse26/program/talks/#encore-scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
 
 ### 5:30–7:30pm — Poster Reception
 
@@ -459,7 +459,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Concurrent with: Code Modernization Using AI (3:30–5pm, San Jose Ballroom Salon 5 & 6); Workflows (3:30–5pm, Willow Glen Room)
 - Talks (4):
   - "Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language" (Paper)
-    Presenters: A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
+    Presenters: Samuel A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
     https://us-rse.org/usrse26/program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language
   - "Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline" (Paper)
     Presenters: Jing Qi, William Cowen and Christian Darabos
