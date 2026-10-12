@@ -137,17 +137,6 @@
   color: var(--program-strong);
 }
 
-/* Provisional-schedule note, pushed to the far end of the day rule. */
-.program-day__draft {
-  margin-left: auto;
-  padding-left: 1rem;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--program-muted);
-}
-
 /* --------------------------------------------------------------------------
    Slots — time / gutter / body. The tick has its own grid track: the spine
    and tick are positioned off .slot, not .slot__time, so a font swap can

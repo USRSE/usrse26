@@ -197,16 +197,6 @@
   color: var(--grid-strong);
 }
 
-.program-grid__draft {
-  margin-left: auto;
-  padding-left: 1rem;
-  font-size: 0.6875rem;
-  font-weight: 700;
-  letter-spacing: 0.09em;
-  text-transform: uppercase;
-  color: var(--grid-muted);
-}
-
 /* --------------------------------------------------------------------------
    Scroller — the one element that scrolls, on both axes. Sticky headers pin
    to the nearest scrollport, so the vertical scroll has to live here too,
@@ -484,8 +474,7 @@
   }
 
   .program-toolbar,
-  .program-grid__nav,
-  .program-grid__draft {
+  .program-grid__nav {
     display: none;
   }
 

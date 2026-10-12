@@ -7,8 +7,7 @@
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
-schedule does. The program is not final and is subject to change — check the
-program page for the authoritative current version.
+schedule does. Check the program page for the authoritative current version.
 
 ## How to use this file
 
@@ -19,7 +18,8 @@ program page for the authoritative current version.
   choice to resolve when picking between parallel tracks.
 - Breaks, meals and registration are listed too. They are not filler: they are
   the gaps an attendee schedule is built around.
-- Talk titles link to that talk's entry on its abstract page.
+- Talk titles link to that talk's entry on its abstract page. A talk with a
+  published, citable record also carries a "DOI:" link.
 - Abstract text is not in this file. For the same schedule with every
   published abstract inlined, fetch:
   https://us-rse.org/usrse26/program/llms-full.txt
@@ -94,12 +94,14 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "AquiLLM: Evaluating Faithfulness in Open-Weight RAG-LLM Systems for Scientific Research" (Paper)
     Presenters: Bernie Boscoe, Tuan Do, Jack Stark, Srinath Saikrishnan, Vikram Seenivasan, PJ Allen, Morgan Himes, Jonathan Soriano, Andrew Lizarraga
     https://us-rse.org/usrse26/program/papers/#aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research
+    DOI: https://doi.org/10.5281/zenodo.22969870
   - "LZ Oracle: an AI-assisted knowledge retrieval platform for the LUX-ZEPLIN dark matter experiment" (Talk)
     Presenters: Maris Arthurs, Jeonghwa Kim, Ibles Olcina
     https://us-rse.org/usrse26/program/talks/#lz-oracle-an-ai-assisted-knowledge-retrieval-platform-for-the-lux-zeplin-dark-matter-experiment
   - "Data Sherpa: An AI-Powered Assistant for Scientific Collaboration Knowledge Management" (Talk)
     Presenters: Fabián Araneda-Baltierra and Felipe Menanteau
     https://us-rse.org/usrse26/program/talks/#data-sherpa-an-ai-powered-assistant-for-scientific-collaboration-knowledge-management
+    DOI: https://doi.org/10.5281/zenodo.22804318
   - "AskALCF: A RAG Assistant for HPC User Support" (Talk)
     Presenters: Jingyan Jiang, Huihuo Zheng, Akhilesh Bondapalli, Krishna Rauniyar, Murat Keceli, Yasaman Ghadar, Venkatram Vishwanath, Rong Ge and Haritha Siddabathuni Som
     https://us-rse.org/usrse26/program/talks/#askalcf-a-rag-assistant-for-hpc-user-support
@@ -115,15 +117,19 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Automating Data-Driven Alternative Text in Quarto-based NOAA Fisheries Reports" (Talk)
     Presenters: Sophie Breitbart
     https://us-rse.org/usrse26/program/talks/#automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports
+    DOI: https://doi.org/10.5281/zenodo.22305826
   - "A Modular Threaded Software Application for Axion Detection with DMRadio" (Talk)
     Presenters: Pamela Stark
     https://us-rse.org/usrse26/program/talks/#a-modular-threaded-software-application-for-axion-detection-with-dmradio
+    DOI: https://doi.org/10.5281/zenodo.22801322
   - "Poisonous Books: Rule Based Physics Pipeline and Agentic LLMs for Detecting and Analyzing Toxic Pigments in Victorian Bookbindings" (Talk)
     Presenters: Kevin Bhimani, Asritha Polu, Melissa Tedone, Rosie Grayburn, Amelia Oakes and Sunita Chandrasekaran
     https://us-rse.org/usrse26/program/talks/#poisonous-books-rule-based-physics-pipeline-and-agentic-llms-for-detecting-and-analyzing-toxic-pigments-in-victorian-bookbindings
+    DOI: https://doi.org/10.5281/zenodo.22760340
   - "Building Modern Tools for Computational Science in Flutter to Track the American Chestnut" (Talk)
     Presenters: Jay Billings
     https://us-rse.org/usrse26/program/talks/#building-modern-tools-for-computational-science-in-flutter-to-track-the-american-chestnut
+    DOI: https://doi.org/10.5281/zenodo.22777994
 
 ### 10:30am–12pm — AI Assisted Code Development
 
@@ -136,12 +142,15 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Reuse, Compose, Extend, Standardize, Automate: Two Decades of RSEing Open (Neuro)Science at CON" (Talk)
     Presenters: Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To, John A. Lee and Vadim Melnik
     https://us-rse.org/usrse26/program/talks/#reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con
+    DOI: https://doi.org/10.5281/zenodo.22783261
   - "Research Software Engineering at SNS and HFIR: Advancing Neutron Science Software in the Age of AI-Assisted Development" (Talk)
     Presenters: Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet
     https://us-rse.org/usrse26/program/talks/#research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development
+    DOI: https://doi.org/10.5281/zenodo.22804521
   - "Designing for Trust in AI-Assisted Scientific Computing" (Talk)
     Presenters: Rajshree Deshmukh, Sheng Pang, Tanushree Subramanian, Johanna Cohoon, Sarah Poon and Dan Gunter
     https://us-rse.org/usrse26/program/talks/#designing-for-trust-in-ai-assisted-scientific-computing
+    DOI: https://doi.org/10.5281/zenodo.22806003
 
 ### 12–1:30pm — Lunch Break
 
@@ -215,15 +224,18 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Effective Tutorial Notebooks for Cloud Computing Workflows using Remote Sensing Datasets" (Notebook)
     Presenters: Zachary Katz and Tasha Snow
     https://us-rse.org/usrse26/program/notebooks/#effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets
+    DOI: https://doi.org/10.5281/zenodo.22804332
   - "Marimo: an open-source reactive notebook for Python" (Talk)
     Presenters: Akshay Agrawal
     https://us-rse.org/usrse26/program/talks/#marimo-an-open-source-reactive-notebook-for-python
   - "Beyond human readers: designing domain-specific language notebooks for AI-assisted code generation" (Notebook)
     Presenters: Pariksheet Nanda, Rocco Caprara and Jason Shoemaker
     https://us-rse.org/usrse26/program/notebooks/#beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation
+    DOI: https://doi.org/10.5281/zenodo.22801492
   - "From Notebook to Control Room: Reproducible MLOps for Accelerator Digital Twins" (Talk)
     Presenters: Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen
     https://us-rse.org/usrse26/program/talks/#from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins
+    DOI: https://doi.org/10.5281/zenodo.22759465
 
 ### 3:30–5pm — Lessons from Training Users & RSEs
 
@@ -236,9 +248,11 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "INTERSECT After Three Years: Lessons Learned from Delivering Advanced Research Software Engineering Bootcamps" (Talk)
     Presenters: Ian Cosden and Jeffrey Carver
     https://us-rse.org/usrse26/program/talks/#intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps
+    DOI: https://doi.org/10.5281/zenodo.22049760
   - "Beyond Workshops: RSE-Led Hackathons as Experiential Learning for Software Practice in the AI Era" (Talk)
     Presenters: Simon Stone, William Cowen and Christian Darabos
     https://us-rse.org/usrse26/program/talks/#beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era
+    DOI: https://doi.org/10.5281/zenodo.22771103
   - "Building Open Source Communities Through Effective Tutorials" (Talk)
     Presenters: Alec Scott and Gregory Becker
     https://us-rse.org/usrse26/program/talks/#building-open-source-communities-through-effective-tutorials
@@ -260,12 +274,14 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Measuring What Matters in the Age of AI: The Research Software Metrics Landscape" (Paper)
     Presenters: Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus
     https://us-rse.org/usrse26/program/papers/#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape
+    DOI: https://doi.org/10.5281/zenodo.22836423
   - "Back to Basics: Design-First Development in the Age of AI Coding Assistants" (Talk)
     Presenters: Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens
     https://us-rse.org/usrse26/program/talks/#back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants
   - "Encore: Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think - Lessons from Curating a Catalog of Maintained Scientific Software" (Talk)
     Presenters: Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus
     https://us-rse.org/usrse26/program/talks/#encore-scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
+    DOI: https://doi.org/10.5281/zenodo.22833966
 
 ### 5:30–7:30pm — Poster Reception
 
@@ -336,12 +352,15 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Beyond Editing Code: Uses for AI Tools in Scientific Work" (Talk)
     Presenters: Johanna Cohoon and Drew Paine
     https://us-rse.org/usrse26/program/talks/#beyond-editing-code-uses-for-ai-tools-in-scientific-work
+    DOI: https://doi.org/10.5281/zenodo.22256604
   - "Ten Projects, Two Teams, One Question: How Does AI Impact Development?" (Talk)
     Presenters: Dave Brownell
     https://us-rse.org/usrse26/program/talks/#ten-projects-two-teams-one-question-how-does-ai-impact-development
+    DOI: https://doi.org/10.5281/zenodo.22755706
   - "Coding is Easy, Everything else is Hard: Lessons learned from working with third-party software developers" (Talk)
     Presenters: Julia Damerow and Susan Massey
     https://us-rse.org/usrse26/program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers
+    DOI: https://doi.org/10.5281/zenodo.22799010
 
 ### 10:30am–12pm — The Human Factor
 
@@ -354,15 +373,19 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Usability Challenges across AI-Assisted Infrastructure, Security, and Scientific Workflows" (Talk)
     Presenters: Md Hasan Shahriar Simanto
     https://us-rse.org/usrse26/program/talks/#usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows
+    DOI: https://doi.org/10.5281/zenodo.22780278
   - "From Mood Boards to Web Components: Our Journey Building a Design System for Research" (Talk)
     Presenters: Katrina Turner and Freddy Mande
     https://us-rse.org/usrse26/program/talks/#from-mood-boards-to-web-components-our-journey-building-a-design-system-for-research
+    DOI: https://doi.org/10.5281/zenodo.22758541
   - "Human in the Loop: Requirements Gathering and Researcher Trust in the Age of AI" (Talk)
     Presenters: Michael Kennel
     https://us-rse.org/usrse26/program/talks/#human-in-the-loop-requirements-gathering-and-researcher-trust-in-the-age-of-ai
+    DOI: https://doi.org/10.5281/zenodo.22798240
   - "Designing for Two Audiences: AI-Readiness and Human Data Usability" (Talk)
     Presenters: Cody O'Donnell
     https://us-rse.org/usrse26/program/talks/#designing-for-two-audiences-ai-readiness-and-human-data-usability
+    DOI: https://doi.org/10.5281/zenodo.22715810
 
 ### 10:30am–12pm — HPC + AI
 
@@ -375,15 +398,19 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "DART: Distributed Assignment of Research Tasks for Heterogeneous Compute Environments" (Paper)
     Presenters: Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel
     https://us-rse.org/usrse26/program/papers/#dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments
+    DOI: https://doi.org/10.5281/zenodo.22831718
   - "Ten Practices for Refactoring Bioinformatics Pipelines to nf-core DSL2 on Shared Slurm HPC" (Paper)
     Presenters: Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle
     https://us-rse.org/usrse26/program/papers/#ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc
+    DOI: https://doi.org/10.5281/zenodo.22921769
   - "Tapis AI Assistant: Increasing Research Impact through Traceable and Evaluated Agentic Tools" (Paper)
     Presenters: Smruti Padhy, Anagha Jamthe and Joe Stubbs
     https://us-rse.org/usrse26/program/papers/#tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools
+    DOI: https://doi.org/10.5281/zenodo.22944804
   - "Structuring agentic AI for HPC code modernization" (Paper)
     Presenters: Anthony Marinov and Igor Sfiligoi
     https://us-rse.org/usrse26/program/papers/#structuring-agentic-ai-for-hpc-code-modernization
+    DOI: https://doi.org/10.5281/zenodo.22283501
 
 ### 12–1:30pm — Lunch Break
 
@@ -461,15 +488,19 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language" (Paper)
     Presenters: Samuel A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
     https://us-rse.org/usrse26/program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language
+    DOI: https://doi.org/10.5281/zenodo.22698075
   - "Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline" (Paper)
     Presenters: Jing Qi, William Cowen and Christian Darabos
     https://us-rse.org/usrse26/program/papers/#take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline
+    DOI: https://doi.org/10.5281/zenodo.22798190
   - "Escaping the Enclave: Format-Faithful Synthetic Data for Open, Reproducible Medicare Claims Pipelines" (Paper)
     Presenters: Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier
     https://us-rse.org/usrse26/program/papers/#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines
+    DOI: https://doi.org/10.5281/zenodo.22803318
   - "Automated Data Reduction for Neutron Scattering Experiments: Current Capabilities and Future Directions" (Talk)
     Presenters: Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick, Randall Petras and Addi Malviya-Thakur
     https://us-rse.org/usrse26/program/talks/#automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions
+    DOI: https://doi.org/10.5281/zenodo.22801186
 
 ### 3:30–5pm — Code Modernization Using AI
 
@@ -482,15 +513,19 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Agentic code modernization" (Talk)
     Presenters: Peter Peterson and Addi Malviya-Thakur
     https://us-rse.org/usrse26/program/talks/#agentic-code-modernization
+    DOI: https://doi.org/10.5281/zenodo.22801623
   - "Scientific Agentic Engineering: A Framework for Reliable AI Agents in Research Software" (Talk)
     Presenters: Victor Weeks
     https://us-rse.org/usrse26/program/talks/#scientific-agentic-engineering-a-framework-for-reliable-ai-agents-in-research-software
+    DOI: https://doi.org/10.5281/zenodo.22715840
   - "From Laptop to Cluster: HPC Translation Patterns for AI Stacks" (Talk)
     Presenters: Parmanand Sinha
     https://us-rse.org/usrse26/program/talks/#from-laptop-to-cluster-hpc-translation-patterns-for-ai-stacks
+    DOI: https://doi.org/10.5281/zenodo.22805472
   - "Beyond Code Pairs: Generating Test-Grounded Data for AI-Assisted Scientific Software Modernization" (Talk)
     Presenters: Le Chen and Rajeev Thakur
     https://us-rse.org/usrse26/program/talks/#beyond-code-pairs-generating-test-grounded-data-for-ai-assisted-scientific-software-modernization
+    DOI: https://doi.org/10.5281/zenodo.22758520
 
 ### 3:30–5pm — Workflows
 
@@ -503,15 +538,19 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Cloud-Native Graphical and Programmatic Cross-Database Access to Experiment Metadata with Trino, Superset and Ibis" (Talk)
     Presenters: Eli Mizrachi
     https://us-rse.org/usrse26/program/talks/#cloud-native-graphical-and-programmatic-cross-database-access-to-experiment-metadata-with-trino-superset-and-ibis
+    DOI: https://doi.org/10.5281/zenodo.22766336
   - "Custom Containers for Continuous Integration via Spack: Decoupling Environment Configuration from Test Execution" (Talk)
     Presenters: Hilario Torres
     https://us-rse.org/usrse26/program/talks/#custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution
+    DOI: https://doi.org/10.5281/zenodo.22803415
   - "OSC-IS: Research Software Infrastructure for Scientific Artifact Preservation, Provenance, and Reproducible Collaboration" (Talk)
     Presenters: Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam
     https://us-rse.org/usrse26/program/talks/#osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration
+    DOI: https://doi.org/10.5281/zenodo.22777997
   - "Fabla: An Open-Source Voice-First EMA Platform for Clinical Research" (Paper)
     Presenters: Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan
     https://us-rse.org/usrse26/program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research
+    DOI: https://doi.org/10.5281/zenodo.22923409
 
 ### 6–8pm — Dinner
 
@@ -557,15 +596,19 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Building Inclusive Talent Pathways: Scaling Outreach, Workforce Development, and Community Engagement for RSE" (Talk)
     Presenters: Laura Theademan and Suzanna Gardner
     https://us-rse.org/usrse26/program/talks/#building-inclusive-talent-pathways-scaling-outreach-workforce-development-and-community-engagement-for-rse
+    DOI: https://doi.org/10.5281/zenodo.22694878
   - "HPC Carpentry and Community Building at NIST" (Talk)
     Presenters: Andrew Reid
     https://us-rse.org/usrse26/program/talks/#hpc-carpentry-and-community-building-at-nist
+    DOI: https://doi.org/10.5281/zenodo.22758453
   - "Navigating the Code Review Process as a Team: A Case Study" (Talk)
     Presenters: Abbey Roelofs
     https://us-rse.org/usrse26/program/talks/#navigating-the-code-review-process-as-a-team-a-case-study
+    DOI: https://doi.org/10.5281/zenodo.22711701
   - "Collaboration within RSE group at Princeton: development of slurmise for resource usage estimation" (Talk)
     Presenters: Troy Comi, Ioannis Paraskevakos and Rob Bierman
     https://us-rse.org/usrse26/program/talks/#collaboration-within-rse-group-at-princeton-development-of-slurmise-for-resource-usage-estimation
+    DOI: https://doi.org/10.5281/zenodo.22708107
 
 ### 10:30am–12pm — Software Quality
 
@@ -578,15 +621,18 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Developing a Handbook of best practices for research software sustainability at Princeton" (Talk)
     Presenters: Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Jonathan Hanke, Joshua Carmichael, Lance Parsons, and David Luet
     https://us-rse.org/usrse26/program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton
+    DOI: https://doi.org/10.5281/zenodo.22777729
   - "We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI" (Paper)
     Presenters: Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos
     https://us-rse.org/usrse26/program/papers/#we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai
   - "Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows" (Talk)
     Presenters: Niharika Pramod Pujari
     https://us-rse.org/usrse26/program/talks/#beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows
+    DOI: https://doi.org/10.5281/zenodo.22730300
   - "Performance Portable Software Design Patterns – What they can do and why we should collect them." (Talk)
     Presenters: Jakob Bludau
     https://us-rse.org/usrse26/program/talks/#performance-portable-software-design-patterns-what-they-can-do-and-why-we-should-collect-them
+    DOI: https://doi.org/10.5281/zenodo.22779137
 
 ### 10:30am–12pm — Generative AI + Applications
 
@@ -599,15 +645,18 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "From Chaos to Schema: LLM-Powered Document Information Extraction" (Talk)
     Presenters: Alice Duan and Launa Greer
     https://us-rse.org/usrse26/program/talks/#from-chaos-to-schema-llm-powered-document-information-extraction
+    DOI: https://doi.org/10.5281/zenodo.22695669
   - "Steering an LLM AutoResearch Loop with Domain Context: A Case Study with Vehicle Energy Models" (Talk)
     Presenters: Nicholas Reinicke and Robert Fitzgerald
     https://us-rse.org/usrse26/program/talks/#steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models
+    DOI: https://doi.org/10.5281/zenodo.22758380
   - "Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs" (Talk)
     Presenters: Shailaja Keyur Sampat
     https://us-rse.org/usrse26/program/talks/#logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms
   - "Preparing Students for AI-Assisted Research Workflows" (Talk)
     Presenters: Alejandra Castillo
     https://us-rse.org/usrse26/program/talks/#preparing-students-for-ai-assisted-research-workflows
+    DOI: https://doi.org/10.5281/zenodo.22822748
 
 ### 12–1:30pm — Lunch Break
 
@@ -627,12 +676,15 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "AI-Augmented Research Software Engineering: Risks, Challenges, and Practices" (Paper)
     Presenters: I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song
     https://us-rse.org/usrse26/program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices
+    DOI: https://doi.org/10.5281/zenodo.22754489
   - "A Framework for Evaluating AI-Integrated Research Software: Demonstration and Validation through CyberFaCES Smart Search" (Paper)
     Presenters: Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol X. Song
     https://us-rse.org/usrse26/program/papers/#a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfaces-smart-search
+    DOI: https://doi.org/10.5281/zenodo.22925540
   - "A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions" (Talk)
     Presenters: William Gearty
     https://us-rse.org/usrse26/program/talks/#a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions
+    DOI: https://doi.org/10.5281/zenodo.22778762
 
 ### 1:30–3pm — Reflections on RSE Roles & Pathways
 
@@ -651,6 +703,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Mission Control: Service and the Stewardship of Science" (Talk)
     Presenters: Malcolm Barrett
     https://us-rse.org/usrse26/program/talks/#mission-control-service-and-the-stewardship-of-science
+    DOI: https://doi.org/10.5281/zenodo.22757292
 
 ### 1:30–3pm — Building Infrastructure for Communities or Organizations
 
@@ -663,9 +716,11 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery" (Talk)
     Presenters: Mikaela Cashman, David Lyon, Christopher J. Neely, Benjamin Allen, Christopher S. Henry, Robert Cottingham, Gazi Mahmud, Elisha M. Wood-Charlson, Chris Mungall, Paramvir Dehal and Adam P. Arkin
     https://us-rse.org/usrse26/program/talks/#from-lakehouse-to-labmate-kbase-s-vision-for-ai-enabled-scientific-discovery
+    DOI: https://doi.org/10.5281/zenodo.22816602
   - "HEROIC: A Research Software Infrastructure for Real-Time Multi-Messenger Observatory Coordination" (Talk)
     Presenters: Jon Nation, Fabián Araneda-Baltierra and Curtis McCully
     https://us-rse.org/usrse26/program/talks/#heroic-a-research-software-infrastructure-for-real-time-multi-messenger-observatory-coordination
+    DOI: https://doi.org/10.5281/zenodo.22803838
   - "A Managed Database-as-a-Service Platform for Scientific Computing" (Talk)
     Presenters: Jingyan Jiang, Huihuo Zheng and Venkatram Vishwanath
     https://us-rse.org/usrse26/program/talks/#a-managed-database-as-a-service-platform-for-scientific-computing

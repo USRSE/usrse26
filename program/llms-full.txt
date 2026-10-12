@@ -7,8 +7,7 @@
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
-schedule does. The program is not final and is subject to change — check the
-program page for the authoritative current version.
+schedule does. Check the program page for the authoritative current version.
 
 ## How to use this file
 
@@ -19,7 +18,8 @@ program page for the authoritative current version.
   choice to resolve when picking between parallel tracks.
 - Breaks, meals and registration are listed too. They are not filler: they are
   the gaps an attendee schedule is built around.
-- Talk titles link to that talk's entry on its abstract page.
+- Talk titles link to that talk's entry on its abstract page. A talk with a
+  published, citable record also carries a "DOI:" link.
 - Abstracts are included below, inline, for every talk that has published one.
   For a smaller file carrying the same schedule without abstract text, fetch:
   https://us-rse.org/usrse26/program/llms.txt
@@ -122,6 +122,7 @@ Abstract:
 - Format: Paper
 - Presenters: Bernie Boscoe, Tuan Do, Jack Stark, Srinath Saikrishnan, Vikram Seenivasan, PJ Allen, Morgan Himes, Jonathan Soriano, Andrew Lizarraga
 - Abstract page: https://us-rse.org/usrse26/program/papers/#aquillm-evaluating-faithfulness-in-open-weight-rag-llm-systems-for-scientific-research
+- DOI: https://doi.org/10.5281/zenodo.22969870
 
 Abstract:
 
@@ -152,6 +153,7 @@ Abstract:
 - Format: Talk
 - Presenters: Fabián Araneda-Baltierra and Felipe Menanteau
 - Abstract page: https://us-rse.org/usrse26/program/talks/#data-sherpa-an-ai-powered-assistant-for-scientific-collaboration-knowledge-management
+- DOI: https://doi.org/10.5281/zenodo.22804318
 
 Abstract:
 
@@ -190,6 +192,7 @@ Abstract:
 - Format: Talk
 - Presenters: Sophie Breitbart
 - Abstract page: https://us-rse.org/usrse26/program/talks/#automating-data-driven-alternative-text-in-quarto-based-noaa-fisheries-reports
+- DOI: https://doi.org/10.5281/zenodo.22305826
 
 Abstract:
 
@@ -200,6 +203,7 @@ Abstract:
 - Format: Talk
 - Presenters: Pamela Stark
 - Abstract page: https://us-rse.org/usrse26/program/talks/#a-modular-threaded-software-application-for-axion-detection-with-dmradio
+- DOI: https://doi.org/10.5281/zenodo.22801322
 
 Abstract:
 
@@ -212,6 +216,7 @@ Abstract:
 - Format: Talk
 - Presenters: Kevin Bhimani, Asritha Polu, Melissa Tedone, Rosie Grayburn, Amelia Oakes and Sunita Chandrasekaran
 - Abstract page: https://us-rse.org/usrse26/program/talks/#poisonous-books-rule-based-physics-pipeline-and-agentic-llms-for-detecting-and-analyzing-toxic-pigments-in-victorian-bookbindings
+- DOI: https://doi.org/10.5281/zenodo.22760340
 
 Abstract:
 
@@ -226,6 +231,7 @@ Abstract:
 - Format: Talk
 - Presenters: Jay Billings
 - Abstract page: https://us-rse.org/usrse26/program/talks/#building-modern-tools-for-computational-science-in-flutter-to-track-the-american-chestnut
+- DOI: https://doi.org/10.5281/zenodo.22777994
 
 Abstract:
 
@@ -244,6 +250,7 @@ Abstract:
 - Format: Talk
 - Presenters: Yaroslav Halchenko, Cody Baker, Austin Macdonald, Isaac To, John A. Lee and Vadim Melnik
 - Abstract page: https://us-rse.org/usrse26/program/talks/#reuse-compose-extend-standardize-automate-two-decades-of-rseing-open-neuro-science-at-con
+- DOI: https://doi.org/10.5281/zenodo.22783261
 
 Abstract:
 
@@ -268,6 +275,7 @@ Abstract:
 - Format: Talk
 - Presenters: Addi Malviya Thakur, John Hetrick, Peter Peterson and Mathieu Doucet
 - Abstract page: https://us-rse.org/usrse26/program/talks/#research-software-engineering-at-sns-and-hfir-advancing-neutron-science-software-in-the-age-of-ai-assisted-development
+- DOI: https://doi.org/10.5281/zenodo.22804521
 
 Abstract:
 
@@ -282,6 +290,7 @@ Abstract:
 - Format: Talk
 - Presenters: Rajshree Deshmukh, Sheng Pang, Tanushree Subramanian, Johanna Cohoon, Sarah Poon and Dan Gunter
 - Abstract page: https://us-rse.org/usrse26/program/talks/#designing-for-trust-in-ai-assisted-scientific-computing
+- DOI: https://doi.org/10.5281/zenodo.22806003
 
 Abstract:
 
@@ -403,6 +412,7 @@ Abstract:
 - Format: Notebook
 - Presenters: Zachary Katz and Tasha Snow
 - Abstract page: https://us-rse.org/usrse26/program/notebooks/#effective-tutorial-notebooks-for-cloud-computing-workflows-using-remote-sensing-datasets
+- DOI: https://doi.org/10.5281/zenodo.22804332
 
 Abstract:
 
@@ -443,6 +453,7 @@ Abstract:
 - Format: Notebook
 - Presenters: Pariksheet Nanda, Rocco Caprara and Jason Shoemaker
 - Abstract page: https://us-rse.org/usrse26/program/notebooks/#beyond-human-readers-designing-domain-specific-language-notebooks-for-ai-assisted-code-generation
+- DOI: https://doi.org/10.5281/zenodo.22801492
 
 Abstract:
 
@@ -453,6 +464,7 @@ Abstract:
 - Format: Talk
 - Presenters: Sara Miskovich, Gopika Bhardwaj, Ryan Roussel and Auralee Edelen
 - Abstract page: https://us-rse.org/usrse26/program/talks/#from-notebook-to-control-room-reproducible-mlops-for-accelerator-digital-twins
+- DOI: https://doi.org/10.5281/zenodo.22759465
 
 Abstract:
 
@@ -475,6 +487,7 @@ Abstract:
 - Format: Talk
 - Presenters: Ian Cosden and Jeffrey Carver
 - Abstract page: https://us-rse.org/usrse26/program/talks/#intersect-after-three-years-lessons-learned-from-delivering-advanced-research-software-engineering-bootcamps
+- DOI: https://doi.org/10.5281/zenodo.22049760
 
 Abstract:
 
@@ -495,6 +508,7 @@ Abstract:
 - Format: Talk
 - Presenters: Simon Stone, William Cowen and Christian Darabos
 - Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-workshops-rse-led-hackathons-as-experiential-learning-for-software-practice-in-the-ai-era
+- DOI: https://doi.org/10.5281/zenodo.22771103
 
 Abstract:
 
@@ -573,6 +587,7 @@ Abstract:
 - Format: Paper
 - Presenters: Addi Malviya Thakur, Reed Milewicz, Gregory Watson and Audris Mockus
 - Abstract page: https://us-rse.org/usrse26/program/papers/#measuring-what-matters-in-the-age-of-ai-the-research-software-metrics-landscape
+- DOI: https://doi.org/10.5281/zenodo.22836423
 
 Abstract:
 
@@ -601,6 +616,7 @@ Abstract:
 - Format: Talk
 - Presenters: Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus
 - Abstract page: https://us-rse.org/usrse26/program/talks/#encore-scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
+- DOI: https://doi.org/10.5281/zenodo.22833966
 
 Abstract:
 
@@ -709,6 +725,7 @@ Abstract:
 - Format: Talk
 - Presenters: Johanna Cohoon and Drew Paine
 - Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-editing-code-uses-for-ai-tools-in-scientific-work
+- DOI: https://doi.org/10.5281/zenodo.22256604
 
 Abstract:
 
@@ -723,6 +740,7 @@ Abstract:
 - Format: Talk
 - Presenters: Dave Brownell
 - Abstract page: https://us-rse.org/usrse26/program/talks/#ten-projects-two-teams-one-question-how-does-ai-impact-development
+- DOI: https://doi.org/10.5281/zenodo.22755706
 
 Abstract:
 
@@ -733,6 +751,7 @@ Abstract:
 - Format: Talk
 - Presenters: Julia Damerow and Susan Massey
 - Abstract page: https://us-rse.org/usrse26/program/talks/#coding-is-easy-everything-else-is-hard-lessons-learned-from-working-with-third-party-software-developers
+- DOI: https://doi.org/10.5281/zenodo.22799010
 
 Abstract:
 
@@ -757,6 +776,7 @@ Abstract:
 - Format: Talk
 - Presenters: Md Hasan Shahriar Simanto
 - Abstract page: https://us-rse.org/usrse26/program/talks/#usability-challenges-across-ai-assisted-infrastructure-security-and-scientific-workflows
+- DOI: https://doi.org/10.5281/zenodo.22780278
 
 Abstract:
 
@@ -773,6 +793,7 @@ Abstract:
 - Format: Talk
 - Presenters: Katrina Turner and Freddy Mande
 - Abstract page: https://us-rse.org/usrse26/program/talks/#from-mood-boards-to-web-components-our-journey-building-a-design-system-for-research
+- DOI: https://doi.org/10.5281/zenodo.22758541
 
 Abstract:
 
@@ -789,6 +810,7 @@ Abstract:
 - Format: Talk
 - Presenters: Michael Kennel
 - Abstract page: https://us-rse.org/usrse26/program/talks/#human-in-the-loop-requirements-gathering-and-researcher-trust-in-the-age-of-ai
+- DOI: https://doi.org/10.5281/zenodo.22798240
 
 Abstract:
 
@@ -801,6 +823,7 @@ Abstract:
 - Format: Talk
 - Presenters: Cody O'Donnell
 - Abstract page: https://us-rse.org/usrse26/program/talks/#designing-for-two-audiences-ai-readiness-and-human-data-usability
+- DOI: https://doi.org/10.5281/zenodo.22715810
 
 Abstract:
 
@@ -825,6 +848,7 @@ Abstract:
 - Format: Paper
 - Presenters: Abdur Rouf, Fahad Ahmad Khan, Benjamin Keene, Shafaq Chaudhry and Murat Yuksel
 - Abstract page: https://us-rse.org/usrse26/program/papers/#dart-distributed-assignment-of-research-tasks-for-heterogeneous-compute-environments
+- DOI: https://doi.org/10.5281/zenodo.22831718
 
 Abstract:
 
@@ -835,6 +859,7 @@ Abstract:
 - Format: Paper
 - Presenters: Nil Tianchen Mu, William Dizon, Glen Otero and Torey Battelle
 - Abstract page: https://us-rse.org/usrse26/program/papers/#ten-practices-for-refactoring-bioinformatics-pipelines-to-nf-core-dsl2-on-shared-slurm-hpc
+- DOI: https://doi.org/10.5281/zenodo.22921769
 
 Abstract:
 
@@ -845,6 +870,7 @@ Abstract:
 - Format: Paper
 - Presenters: Smruti Padhy, Anagha Jamthe and Joe Stubbs
 - Abstract page: https://us-rse.org/usrse26/program/papers/#tapis-ai-assistant-increasing-research-impact-through-traceable-and-evaluated-agentic-tools
+- DOI: https://doi.org/10.5281/zenodo.22944804
 
 Abstract:
 
@@ -855,6 +881,7 @@ Abstract:
 - Format: Paper
 - Presenters: Anthony Marinov and Igor Sfiligoi
 - Abstract page: https://us-rse.org/usrse26/program/papers/#structuring-agentic-ai-for-hpc-code-modernization
+- DOI: https://doi.org/10.5281/zenodo.22283501
 
 Abstract:
 
@@ -971,6 +998,7 @@ Abstract:
 - Format: Paper
 - Presenters: Samuel A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
 - Abstract page: https://us-rse.org/usrse26/program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language
+- DOI: https://doi.org/10.5281/zenodo.22698075
 
 Abstract:
 
@@ -981,6 +1009,7 @@ Abstract:
 - Format: Paper
 - Presenters: Jing Qi, William Cowen and Christian Darabos
 - Abstract page: https://us-rse.org/usrse26/program/papers/#take-it-on-the-road-how-rcd-helps-field-researchers-report-culvert-condition-even-when-offline
+- DOI: https://doi.org/10.5281/zenodo.22798190
 
 Abstract:
 
@@ -993,6 +1022,7 @@ Abstract:
 - Format: Paper
 - Presenters: Pavel Belakurski, Dmitry Etin, Mark Chumack and Michael Bouzinier
 - Abstract page: https://us-rse.org/usrse26/program/papers/#escaping-the-enclave-format-faithful-synthetic-data-for-open-reproducible-medicare-claims-pipelines
+- DOI: https://doi.org/10.5281/zenodo.22803318
 
 Abstract:
 
@@ -1011,6 +1041,7 @@ Abstract:
 - Format: Talk
 - Presenters: Marie Backman, Darsh Dinger, Mathieu Doucet, Peter Peterson, John Hetrick, Randall Petras and Addi Malviya-Thakur
 - Abstract page: https://us-rse.org/usrse26/program/talks/#automated-data-reduction-for-neutron-scattering-experiments-current-capabilities-and-future-directions
+- DOI: https://doi.org/10.5281/zenodo.22801186
 
 Abstract:
 
@@ -1031,6 +1062,7 @@ Abstract:
 - Format: Talk
 - Presenters: Peter Peterson and Addi Malviya-Thakur
 - Abstract page: https://us-rse.org/usrse26/program/talks/#agentic-code-modernization
+- DOI: https://doi.org/10.5281/zenodo.22801623
 
 Abstract:
 
@@ -1041,6 +1073,7 @@ Abstract:
 - Format: Talk
 - Presenters: Victor Weeks
 - Abstract page: https://us-rse.org/usrse26/program/talks/#scientific-agentic-engineering-a-framework-for-reliable-ai-agents-in-research-software
+- DOI: https://doi.org/10.5281/zenodo.22715840
 
 Abstract:
 
@@ -1065,6 +1098,7 @@ Abstract:
 - Format: Talk
 - Presenters: Parmanand Sinha
 - Abstract page: https://us-rse.org/usrse26/program/talks/#from-laptop-to-cluster-hpc-translation-patterns-for-ai-stacks
+- DOI: https://doi.org/10.5281/zenodo.22805472
 
 Abstract:
 
@@ -1081,6 +1115,7 @@ Abstract:
 - Format: Talk
 - Presenters: Le Chen and Rajeev Thakur
 - Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-code-pairs-generating-test-grounded-data-for-ai-assisted-scientific-software-modernization
+- DOI: https://doi.org/10.5281/zenodo.22758520
 
 Abstract:
 
@@ -1103,6 +1138,7 @@ Abstract:
 - Format: Talk
 - Presenters: Eli Mizrachi
 - Abstract page: https://us-rse.org/usrse26/program/talks/#cloud-native-graphical-and-programmatic-cross-database-access-to-experiment-metadata-with-trino-superset-and-ibis
+- DOI: https://doi.org/10.5281/zenodo.22766336
 
 Abstract:
 
@@ -1119,6 +1155,7 @@ Abstract:
 - Format: Talk
 - Presenters: Hilario Torres
 - Abstract page: https://us-rse.org/usrse26/program/talks/#custom-containers-for-continuous-integration-via-spack-decoupling-environment-configuration-from-test-execution
+- DOI: https://doi.org/10.5281/zenodo.22803415
 
 Abstract:
 
@@ -1133,6 +1170,7 @@ Abstract:
 - Format: Talk
 - Presenters: Fernando Garzon, Steven Yeu, Scott Sakai, and Subhashini Sivagnanam
 - Abstract page: https://us-rse.org/usrse26/program/talks/#osc-is-research-software-infrastructure-for-scientific-artifact-preservation-provenance-and-reproducible-collaboration
+- DOI: https://doi.org/10.5281/zenodo.22777997
 
 Abstract:
 
@@ -1151,6 +1189,7 @@ Abstract:
 - Format: Paper
 - Presenters: Santiago Arconada Alvarez, Tulika Banerjee, Wiza Munthali, Kennedy Linzie, Mabuchi Nyrienda, Hope Madziakapita, Morgan Greenleaf, Wilbur Lam and Deanna Kaplan
 - Abstract page: https://us-rse.org/usrse26/program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research
+- DOI: https://doi.org/10.5281/zenodo.22923409
 
 Abstract:
 
@@ -1208,6 +1247,7 @@ About this session:
 - Format: Talk
 - Presenters: Laura Theademan and Suzanna Gardner
 - Abstract page: https://us-rse.org/usrse26/program/talks/#building-inclusive-talent-pathways-scaling-outreach-workforce-development-and-community-engagement-for-rse
+- DOI: https://doi.org/10.5281/zenodo.22694878
 
 Abstract:
 
@@ -1226,6 +1266,7 @@ Abstract:
 - Format: Talk
 - Presenters: Andrew Reid
 - Abstract page: https://us-rse.org/usrse26/program/talks/#hpc-carpentry-and-community-building-at-nist
+- DOI: https://doi.org/10.5281/zenodo.22758453
 
 Abstract:
 
@@ -1242,6 +1283,7 @@ Abstract:
 - Format: Talk
 - Presenters: Abbey Roelofs
 - Abstract page: https://us-rse.org/usrse26/program/talks/#navigating-the-code-review-process-as-a-team-a-case-study
+- DOI: https://doi.org/10.5281/zenodo.22711701
 
 Abstract:
 
@@ -1254,6 +1296,7 @@ Abstract:
 - Format: Talk
 - Presenters: Troy Comi, Ioannis Paraskevakos and Rob Bierman
 - Abstract page: https://us-rse.org/usrse26/program/talks/#collaboration-within-rse-group-at-princeton-development-of-slurmise-for-resource-usage-estimation
+- DOI: https://doi.org/10.5281/zenodo.22708107
 
 Abstract:
 
@@ -1276,6 +1319,7 @@ Abstract:
 - Format: Talk
 - Presenters: Tai Sakuma, Joel Bretheim, Ian Cosden, Jacob Murel, Robert Caddy, Henry Schreiner, Lucas Sawade, Rohit Kakodkar, Mohamed Abdellatif, Georgios Artavanis, Andres Rios Tascon, Rebecca Sutton Koeser, Anushka Acharya, Luca Bonaldo, Amy Defnet, Rob Bierman, Jonathan Hanke, Joshua Carmichael, Lance Parsons, and David Luet
 - Abstract page: https://us-rse.org/usrse26/program/talks/#developing-a-handbook-of-best-practices-for-research-software-sustainability-at-princeton
+- DOI: https://doi.org/10.5281/zenodo.22777729
 
 Abstract:
 
@@ -1302,6 +1346,7 @@ Abstract:
 - Format: Talk
 - Presenters: Niharika Pramod Pujari
 - Abstract page: https://us-rse.org/usrse26/program/talks/#beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows
+- DOI: https://doi.org/10.5281/zenodo.22730300
 
 Abstract:
 
@@ -1318,6 +1363,7 @@ Abstract:
 - Format: Talk
 - Presenters: Jakob Bludau
 - Abstract page: https://us-rse.org/usrse26/program/talks/#performance-portable-software-design-patterns-what-they-can-do-and-why-we-should-collect-them
+- DOI: https://doi.org/10.5281/zenodo.22779137
 
 Abstract:
 
@@ -1348,6 +1394,7 @@ Abstract:
 - Format: Talk
 - Presenters: Alice Duan and Launa Greer
 - Abstract page: https://us-rse.org/usrse26/program/talks/#from-chaos-to-schema-llm-powered-document-information-extraction
+- DOI: https://doi.org/10.5281/zenodo.22695669
 
 Abstract:
 
@@ -1364,6 +1411,7 @@ Abstract:
 - Format: Talk
 - Presenters: Nicholas Reinicke and Robert Fitzgerald
 - Abstract page: https://us-rse.org/usrse26/program/talks/#steering-an-llm-autoresearch-loop-with-domain-context-a-case-study-with-vehicle-energy-models
+- DOI: https://doi.org/10.5281/zenodo.22758380
 
 Abstract:
 
@@ -1398,6 +1446,7 @@ Abstract:
 - Format: Talk
 - Presenters: Alejandra Castillo
 - Abstract page: https://us-rse.org/usrse26/program/talks/#preparing-students-for-ai-assisted-research-workflows
+- DOI: https://doi.org/10.5281/zenodo.22822748
 
 Abstract:
 
@@ -1425,6 +1474,7 @@ Abstract:
 - Format: Paper
 - Presenters: I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song
 - Abstract page: https://us-rse.org/usrse26/program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices
+- DOI: https://doi.org/10.5281/zenodo.22754489
 
 Abstract:
 
@@ -1435,6 +1485,7 @@ Abstract:
 - Format: Paper
 - Presenters: Xiao Liu, Jungha Woo, Lan Zhao, Jaewoo Shin, Chimdia Kabuo and Carol X. Song
 - Abstract page: https://us-rse.org/usrse26/program/papers/#a-framework-for-evaluating-ai-integrated-research-software-demonstration-and-validation-through-cyberfaces-smart-search
+- DOI: https://doi.org/10.5281/zenodo.22925540
 
 Abstract:
 
@@ -1445,6 +1496,7 @@ Abstract:
 - Format: Talk
 - Presenters: William Gearty
 - Abstract page: https://us-rse.org/usrse26/program/talks/#a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions
+- DOI: https://doi.org/10.5281/zenodo.22778762
 
 Abstract:
 
@@ -1499,6 +1551,7 @@ Abstract:
 - Format: Talk
 - Presenters: Malcolm Barrett
 - Abstract page: https://us-rse.org/usrse26/program/talks/#mission-control-service-and-the-stewardship-of-science
+- DOI: https://doi.org/10.5281/zenodo.22757292
 
 Abstract:
 
@@ -1521,6 +1574,7 @@ Abstract:
 - Format: Talk
 - Presenters: Mikaela Cashman, David Lyon, Christopher J. Neely, Benjamin Allen, Christopher S. Henry, Robert Cottingham, Gazi Mahmud, Elisha M. Wood-Charlson, Chris Mungall, Paramvir Dehal and Adam P. Arkin
 - Abstract page: https://us-rse.org/usrse26/program/talks/#from-lakehouse-to-labmate-kbase-s-vision-for-ai-enabled-scientific-discovery
+- DOI: https://doi.org/10.5281/zenodo.22816602
 
 Abstract:
 
@@ -1535,6 +1589,7 @@ Abstract:
 - Format: Talk
 - Presenters: Jon Nation, Fabián Araneda-Baltierra and Curtis McCully
 - Abstract page: https://us-rse.org/usrse26/program/talks/#heroic-a-research-software-infrastructure-for-real-time-multi-messenger-observatory-coordination
+- DOI: https://doi.org/10.5281/zenodo.22803838
 
 Abstract:
 
