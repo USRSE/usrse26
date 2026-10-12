@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 48 sessions, 82 talks (82 with published
+> in the Age of AI". 3 days, 48 sessions, 83 talks (83 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -73,7 +73,7 @@ Abstract:
 >
 > Fernando regularly lectures about scientific computing, data science and open science. He co-founded the International Interactive Computing Collaboration ([2i2c](https://2i2c.org)) to provide open infrastructure for modern science and education, and is also a founding member of [NumFOCUS](https://numfocus.org). He is the recipient of the 2024 Exceptional Public Service Medal from NASA, the 2024 "Champions of Open Science" recognition from the White House Office of Science and Technology Policy, the 2017 ACM Software Systems Award and the 2012 Award for the Advancement of Free Software from the Free Software Foundation. He is a Kavli Frontiers Fellow of the US National Academy of Sciences (2016). Fernando holds a PhD in particle physics from the University of Colorado at Boulder, which he followed with postdoctoral research in applied mathematics.
 
-### 10–10:30am — Morning Break
+### 10–10:30am — Morning Break - Sponsored by SHI
 
 - Time: 2026-10-19T10:00:00-07:00 to 2026-10-19T10:30:00-07:00 (30 min)
 - Room: San Jose Marriott
@@ -646,9 +646,20 @@ Abstract:
 - Plenary: yes
 - Concurrent with: nothing (the only session at this time)
 
-About this session:
+#### Shaping What Comes Next: The RSE Role Today and Tomorrow
 
-> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
+- Format: Keynote
+- Abstract page: https://us-rse.org/usrse26/program/keynotes/#shaping-what-comes-next-the-rse-role-today-and-tomorrow
+
+Abstract:
+
+> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future. Featuring:
+>
+>
+> - Lavanya Ramakrishnan: Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab
+> - Carol Song: Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue
+> - Curtis Hillegas: Senior Associate Dean, Research Computing, Princeton
+> - Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI
 
 ### 10–10:30am — Morning Break
 
@@ -684,6 +695,7 @@ About this session:
 
 Abstract:
 
+> Tuesday 10/20
 > 10:30 - 11:00
 >
 > Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.
@@ -696,6 +708,7 @@ Abstract:
 
 Abstract:
 
+> Tuesday 10/20
 > 11:00 - 11:30
 >
 > Agentic frameworks built on commercial models can turn a single task into dozens of billable calls, which is why falling per token prices have not stopped bills from climbing. This talk adapts a practical cost management framework (visibility, then attribution, then optimization) to show students how to track their token spend, match each task to the right model through routing and caching, and get real work done with commercial AI on a student budget.

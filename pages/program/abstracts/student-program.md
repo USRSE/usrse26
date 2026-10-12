@@ -46,7 +46,8 @@ Panelists:
         <span class="abstract__people">Julian Pistorus</span>
       </h2>
     </summary>
-    <div class="abstract__body">{% capture abstract_md %}10:30 - 11:00
+    <div class="abstract__body">{% capture abstract_md %}Tuesday 10/20  
+10:30 - 11:00
 
 Running an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
@@ -57,7 +58,8 @@ Running an agent locally means no API bill, but you pay in context windows, VRAM
         <span class="abstract__people">Hasti Mehta</span>
       </h2>
     </summary>
-    <div class="abstract__body">{% capture abstract_md %}11:00 - 11:30
+    <div class="abstract__body">{% capture abstract_md %}Tuesday 10/20  
+11:00 - 11:30
 
 Agentic frameworks built on commercial models can turn a single task into dozens of billable calls, which is why falling per token prices have not stopped bills from climbing. This talk adapts a practical cost management framework (visibility, then attribution, then optimization) to show students how to track their token spend, match each task to the right model through routing and caching, and get real work done with commercial AI on a student budget.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
