@@ -749,8 +749,7 @@ function renderHTML(days) {
   for (const day of days) {
     const id = `day-${day.weekday.toLowerCase()}`;
     lines.push(`  <section class="program-day" id="${id}" aria-labelledby="${id}-title">`);
-    // The draft note comes off once the program is final.
-    lines.push(`    <h2 class="program-day__title" id="${id}-title">${day.weekday}<span class="program-day__date">, ${day.label}</span><span class="program-day__draft">  (Draft — subject to change)</span></h2>`);
+    lines.push(`    <h2 class="program-day__title" id="${id}-title">${day.weekday}<span class="program-day__date">, ${day.label}</span></h2>`);
     lines.push('    <ol class="program-day__slots">');
     for (const slot of day.slots) {
       const cls = slot.break ? 'slot slot--break' : 'slot';
@@ -938,8 +937,7 @@ function renderGridHTML(days) {
     const id = `grid-day-${day.weekday.toLowerCase()}`;
     const g = computeDayGrid(day);
     lines.push(`  <section class="program-grid__day" id="${id}" aria-labelledby="${id}-title">`);
-    // The draft note comes off once the program is final (as in renderHTML).
-    lines.push(`    <h2 class="program-grid__title" id="${id}-title">${day.weekday}<span class="program-grid__date">, ${day.label}</span><span class="program-grid__draft">  (Draft — subject to change)</span></h2>`);
+    lines.push(`    <h2 class="program-grid__title" id="${id}-title">${day.weekday}<span class="program-grid__date">, ${day.label}</span></h2>`);
     // The scroller owns both scroll axes (sticky headers need a vertical
     // scrollport). Focusable and named so keyboards can scroll it too.
     lines.push(`    <div class="program-grid__scroller" tabindex="0" role="region" aria-label="${day.weekday} room grid">`);
@@ -1472,8 +1470,8 @@ function renderLlmsHeader(days, timezone, full) {
       + `US Pacific (UTC${timezone}).`, 78, '> '),
     '',
     ...wrap('This file is generated from the conference schedule and changes only'
-      + ' when the schedule does. The program is not final and is subject to'
-      + ' change — check the program page for the authoritative current version.',
+      + ' when the schedule does. Check the program page for the authoritative'
+      + ' current version.',
     78, ''),
     '',
     '## How to use this file',

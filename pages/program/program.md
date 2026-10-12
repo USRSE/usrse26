@@ -19,8 +19,6 @@ Pending sponsorship, we're also planning a conference dinner and decision-maker 
 
 All times are US Pacific (PDT).
 
-{% include notification.html status='is-warning' message='**NOTE:** The program is not final and is subject to change.' %}
-
 {% include notification.html status='is-warning' message='**NOTE:** Sessions with 3 talks end earlier.' %}
 
 ## Planning your schedule with an AI assistant
@@ -44,8 +42,7 @@ most about anything on testing and reproducibility. Flag any conflicts and tell
 me what I'd be giving up."*
 
 Both files are regenerated whenever the schedule changes, so they stay current
-with this page. The program is still subject to change, so re-fetch closer to
-the conference rather than relying on a plan made months ahead.
+with this page. Re-fetch closer to the conference in case anything shifts.
 
 <!-- List / Grid toolbar: hidden until program-view.js reveals it, so without
      JavaScript the page is the list alone. The grid include ships hidden

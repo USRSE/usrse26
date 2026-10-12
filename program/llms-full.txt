@@ -7,8 +7,7 @@
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
-schedule does. The program is not final and is subject to change — check the
-program page for the authoritative current version.
+schedule does. Check the program page for the authoritative current version.
 
 ## How to use this file
 
