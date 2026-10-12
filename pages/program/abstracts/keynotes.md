@@ -24,6 +24,20 @@ set_last_modified: true
 
 Fernando regularly lectures about scientific computing, data science and open science. He co-founded the International Interactive Computing Collaboration ([2i2c](https://2i2c.org)) to provide open infrastructure for modern science and education, and is also a founding member of [NumFOCUS](https://numfocus.org). He is the recipient of the 2024 Exceptional Public Service Medal from NASA, the 2024 "Champions of Open Science" recognition from the White House Office of Science and Technology Policy, the 2017 ACM Software Systems Award and the 2012 Award for the Advancement of Free Software from the Free Software Foundation. He is a Kavli Frontiers Fellow of the US National Academy of Sciences (2016). Fernando holds a PhD in particle physics from the University of Colorado at Boulder, which he followed with postdoctoral research in applied mathematics.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="shaping-what-comes-next-the-rse-role-today-and-tomorrow">
+        <span class="abstract__title">Shaping What Comes Next: The RSE Role Today and Tomorrow</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
+
+
+- Lavanya Ramakrishnan: Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab  
+- Carol Song: Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue  
+- Curtis Hillegas: Senior Associate Dean, Research Computing, Princeton  
+- Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>
