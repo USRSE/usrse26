@@ -262,9 +262,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Back to Basics: Design-First Development in the Age of AI Coding Assistants" (Talk)
     Presenters: Chris Pond, Rob Kooper, Marcos Frenkel and Chris Stephens
     https://us-rse.org/usrse26/program/talks/#back-to-basics-design-first-development-in-the-age-of-ai-coding-assistants
-  - "Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think: Lessons from Curating a Catalog of Maintained Scientific Software" (Talk)
+  - "Encore: Scientific Open-Source Software Is Less Likely to Become Abandoned Than One Might Think - Lessons from Curating a Catalog of Maintained Scientific Software" (Talk)
     Presenters: Addi Malviya Thakur, Reed Milewicz, Mahmoud Jahanshahi, Lavínia Paganini, Bogdan Vasilescu and Audris Mockus
-    https://us-rse.org/usrse26/program/talks/#scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
+    https://us-rse.org/usrse26/program/talks/#encore-scientific-open-source-software-is-less-likely-to-become-abandoned-than-one-might-think-lessons-from-curating-a-catalog-of-maintained-scientific-software
 
 ### 5:30–7:30pm — Poster Reception
 
@@ -458,7 +458,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Concurrent with: Code Modernization Using AI (3:30–5pm, San Jose Ballroom Salon 5 & 6); Workflows (3:30–5pm, Willow Glen Room)
 - Talks (4):
   - "Josh: Efficient, Portable, and Scalable Cross-Disciplinary Vegetation Modeling via Domain-Specific Language" (Paper)
-    Presenters: A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
+    Presenters: Samuel A Pottinger, Nick Gondek, Lucia Layritz, Maya Zomer, Nicolas Graver, Amanda Anderson-You and Maya Weltman-Fahs
     https://us-rse.org/usrse26/program/papers/#josh-efficient-portable-and-scalable-cross-disciplinary-vegetation-modeling-via-domain-specific-language
   - "Take it on the road: How RCD Helps Field Researchers Report Culvert Condition even when Offline" (Paper)
     Presenters: Jing Qi, William Cowen and Christian Darabos
@@ -594,7 +594,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Talks
 - Chair: Scott Michael
 - Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Software Quality (10:30am–12pm, San Jose Ballroom Salon 5 & 6)
-- Talks (3):
+- Talks (4):
   - "From Chaos to Schema: LLM-Powered Document Information Extraction" (Talk)
     Presenters: Alice Duan and Launa Greer
     https://us-rse.org/usrse26/program/talks/#from-chaos-to-schema-llm-powered-document-information-extraction
@@ -604,6 +604,9 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Logic Meets Intuition: The Neuro-Symbolic Upgrade for LLMs" (Talk)
     Presenters: Shailaja Keyur Sampat
     https://us-rse.org/usrse26/program/talks/#logic-meets-intuition-the-neuro-symbolic-upgrade-for-llms
+  - "Preparing Students for AI-Assisted Research Workflows" (Talk)
+    Presenters: Alejandra Castillo
+    https://us-rse.org/usrse26/program/talks/#preparing-students-for-ai-assisted-research-workflows
 
 ### 12–1:30pm — Lunch Break
 
@@ -619,7 +622,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Type: Talks
 - Chair: Pengyin Shan
 - Concurrent with: Reflections on RSE Roles & Pathways (1:30–3pm, San Jose Ballroom Salon 5 & 6); Building Infrastructure for Communities or Organizations (1:30–3pm, Willow Glen Room)
-- Talks (4):
+- Talks (3):
   - "AI-Augmented Research Software Engineering: Risks, Challenges, and Practices" (Paper)
     Presenters: I Luk Kim, Xiao Liu, Jungha Woo, Elham J Barezi, Jorge Ivan Fuentes Rosado, Jaewoo Shin, Lan Zhao and Carol X. Song
     https://us-rse.org/usrse26/program/papers/#ai-augmented-research-software-engineering-risks-challenges-and-practices
@@ -629,9 +632,6 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "A Nonprofit's Google Summer of Code Experience in the Age of AI-Assisted Contributions" (Talk)
     Presenters: William Gearty
     https://us-rse.org/usrse26/program/talks/#a-nonprofit-s-google-summer-of-code-experience-in-the-age-of-ai-assisted-contributions
-  - "Preparing Students for AI-Assisted Research Workflows" (Talk)
-    Presenters: Alejandra Castillo
-    https://us-rse.org/usrse26/program/talks/#preparing-students-for-ai-assisted-research-workflows
 
 ### 1:30–3pm — Reflections on RSE Roles & Pathways
 
