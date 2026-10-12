@@ -703,7 +703,14 @@
               "info": "A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.",
               "plenary": true,
               "muted": false,
-              "talks": []
+              "talks": [
+                {
+                  "title": "Plenary Panel",
+                  "speakers": "",
+                  "format": "Keynote",
+                  "infoMd": "A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.",
+                }
+              ]
             }
           ]
         },
