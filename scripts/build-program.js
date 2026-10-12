@@ -1483,7 +1483,8 @@ function renderLlmsHeader(days, timezone, full) {
       + ' that is the choice to resolve when picking between parallel tracks.'),
     ...bullet('Breaks, meals and registration are listed too. They are not'
       + ' filler: they are the gaps an attendee schedule is built around.'),
-    ...bullet('Talk titles link to that talk\'s entry on its abstract page.'),
+    ...bullet('Talk titles link to that talk\'s entry on its abstract page.'
+      + ' A talk with a published, citable record also carries a "DOI:" link.'),
     ...bullet(other[0]),
     `  ${other[1]}`,
     '',
@@ -1510,7 +1511,7 @@ function renderLlmsHeader(days, timezone, full) {
 }
 
 /**
- * One talk as a bullet in the index file: title, format, people, link.
+ * One talk as a bullet in the index file: title, format, people, links.
  * @param {string} pad
  */
 function renderLlmsTalkBrief(talk, pad) {
@@ -1519,6 +1520,7 @@ function renderLlmsTalkBrief(talk, pad) {
   const line = [`${pad}- ${bits.join(' ')}`];
   if (talk.speakers) line.push(`${pad}  Presenters: ${oneLine(talk.speakers)}`);
   if (talk.href) line.push(`${pad}  ${absUrl(talk.href)}`);
+  if (talk.doi) line.push(`${pad}  DOI: ${doiHref(oneLine(talk.doi))}`);
   return line;
 }
 
@@ -1534,6 +1536,7 @@ function renderLlmsTalkFull(talk) {
   if (talk.format) lines.push(`- Format: ${oneLine(talk.format)}`);
   if (talk.speakers) lines.push(`- Presenters: ${oneLine(talk.speakers)}`);
   if (talk.href) lines.push(`- Abstract page: ${absUrl(talk.href)}`);
+  if (talk.doi) lines.push(`- DOI: ${doiHref(oneLine(talk.doi))}`);
   if (talk.infoMd && talk.infoMd.trim()) {
     // Only separate from the bullets when there were any: a talk still
     // missing its Event Format and People cells emits none, and the heading
