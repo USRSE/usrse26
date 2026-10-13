@@ -653,7 +653,7 @@ Abstract:
 
 Abstract:
 
-> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
+> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future. Featuring:
 >
 >
 > - Lavanya Ramakrishnan: Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab
