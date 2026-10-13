@@ -19,7 +19,7 @@ Pending sponsorship, we're also planning a conference dinner and decision-maker 
 
 All times are US Pacific (PDT).
 
-{% include notification.html status='is-warning' message='**NOTE:** Sessions with 3 talks end earlier.' %}
+**NOTE:** Sessions with 3 talks end earlier
 
 ## Planning your schedule with an AI assistant
 
