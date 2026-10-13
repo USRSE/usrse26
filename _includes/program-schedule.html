@@ -33,8 +33,8 @@
       <li class="slot slot--break">
         <p class="slot__time"><time datetime="2026-10-19T10:00:00-07:00">10</time>–<time datetime="2026-10-19T10:30:00-07:00">10:30am</time></p>
         <div class="slot__body">
-          <article class="session session--muted" id="monday-morning-break">
-            <h3 class="session__title">Morning Break <span class="session__room">— San Jose Marriott</span></h3>
+          <article class="session session--muted" id="monday-morning-break-sponsored-by-shi">
+            <h3 class="session__title">Morning Break - Sponsored by SHI <span class="session__room">— San Jose Marriott</span></h3>
             <div class="session__info">{% capture session_info_md %}US-RSE Office Hours{% endcapture %}{{ session_info_md | markdownify }}</div>
           </article>
         </div>
@@ -199,7 +199,9 @@
           <article class="session session--plenary" id="tuesday-plenary-ii">
             <h3 class="session__title">Plenary II <span class="session__room">— San Jose Ballroom Salon 3 &amp; 4</span></h3>
             <p class="session__eyebrow">Plenary</p>
-            <div class="session__info">{% capture session_info_md %}A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.{% endcapture %}{{ session_info_md | markdownify }}</div>
+            <ol class="session__talks">
+              <li class="talk"><span class="talk__format">Keynote</span> <a class="talk__link" href="{{ site.baseurl }}/program/keynotes/#shaping-what-comes-next-the-rse-role-today-and-tomorrow"><span class="talk__title">Shaping What Comes Next: The RSE Role Today and Tomorrow</span></a></li>
+            </ol>
           </article>
         </div>
       </li>

@@ -59,7 +59,7 @@
           "break": true,
           "sessions": [
             {
-              "title": "Morning Break",
+              "title": "Morning Break - Sponsored by SHI",
               "type": "Break",
               "room": "San Jose Marriott",
               "info": "US-RSE Office Hours",
@@ -700,10 +700,18 @@
               "title": "Plenary II",
               "type": "Plenary",
               "room": "San Jose Ballroom Salon 3 & 4",
-              "info": "A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.",
+              "info": "",
               "plenary": true,
               "muted": false,
-              "talks": []
+              "talks": [
+                {
+                  "title": "Shaping What Comes Next: The RSE Role Today and Tomorrow",
+                  "speakers": "",
+                  "format": "Keynote",
+                  "infoMd": "A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.\n\n\n- Lavanya Ramakrishnan: Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab\n- Carol Song: Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue\n- Curtis Hillegas: Senior Associate Dean, Research Computing, Princeton\n- Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI",
+                  "href": "program/keynotes/#shaping-what-comes-next-the-rse-role-today-and-tomorrow"
+                }
+              ]
             }
           ]
         },
@@ -766,7 +774,7 @@
                     "Julian Pistorus"
                   ],
                   "format": "Student",
-                  "infoMd": "10:30 - 11:00\n\nRunning an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.",
+                  "infoMd": "Tuesday 10/20\n10:30 - 11:00\n\nRunning an agent locally means no API bill, but you pay in context windows, VRAM, and wall-clock time, so every token still counts. This talk covers practical ways to get useful agentic behavior from small local models on your own hardware: trimming context, choosing the right model size and quantization, and designing tool calls and prompts that don't waste tokens.",
                   "href": "program/student-early-career-program/#agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models"
                 },
                 {
@@ -776,7 +784,7 @@
                     "Hasti Mehta"
                   ],
                   "format": "Student",
-                  "infoMd": "11:00 - 11:30\n\nAgentic frameworks built on commercial models can turn a single task into dozens of billable calls, which is why falling per token prices have not stopped bills from climbing. This talk adapts a practical cost management framework (visibility, then attribution, then optimization) to show students how to track their token spend, match each task to the right model through routing and caching, and get real work done with commercial AI on a student budget.",
+                  "infoMd": "Tuesday 10/20\n11:00 - 11:30\n\nAgentic frameworks built on commercial models can turn a single task into dozens of billable calls, which is why falling per token prices have not stopped bills from climbing. This talk adapts a practical cost management framework (visibility, then attribution, then optimization) to show students how to track their token spend, match each task to the right model through routing and caching, and get real work done with commercial AI on a student budget.",
                   "href": "program/student-early-career-program/#tokens-are-the-new-compute-hours-managing-commercial-ai-costs-on-a-student-budget"
                 }
               ]
