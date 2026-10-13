@@ -834,6 +834,19 @@ Here, the path to a solution is less clear. In the abstract, the solution is to 
 
 The poster will cover our experience tackling this problem as maintainers of WaterTAP, a software project for equation-oriented modeling and optimization of desalination and water treatment technologies, allowing us to share our approaches, results, and lessons learned with the wider US-RSE community.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
+  <details class="abstract">
+    <summary class="abstract__summary">
+      <h2 class="abstract__heading" id="building-ese-dashboard-with-ai-assisted-packets-design-system">
+        <span class="abstract__title">Building ESE Dashboard with AI Assisted Packets Design System</span>
+        <span class="abstract__people">Charles DeVilholm</span>
+      </h2>
+    </summary>
+    <div class="abstract__body">{% capture abstract_md %}When it comes to network automation software, there are often many folks hard at work coming up with brilliant solutions to tough problems, but not a single unified source of truth to access each other’s data. Data can be stored anywhere from spreadsheets to one off user applications. A common problem is people knowing what they want to do, but not where and how the appropriate data is stored.
+
+ES Enterprise (or ESE) seeks to improve this experience by unifying several different data sources under one umbrella, all with a unified look and feel defined by ESNet’s Packets Design System. This poster will illustrate how ESNet centralizes and clarifies data across many systems, by having a predictable interface using building blocks that seamlessly display complex data intuitively. ESE utilizes modern front end trends including NextJS and React, and connects to several different databases across ESNet, being a central place for our internal inventory, bandwidth reservation, and much more in the future.
+
+ESE has fully replaced the UI of several systems already, and there are future plans of migrating more applications to use the same client, as well as create user researched interfaces that display data uniquely according to someone’s particular role. This poster will demonstrate how ESE was able to effectively use Packets Design System to create a seamless experience and framework for reasoning across several different systems, as well as the ease of creating such a system with the Packets Design System Skills.md for AI tools like Claude Code. This is a great demonstration of how to provide AI with a predictable framework that can output reliable interfaces with minimal correction needed.{% endcapture %}{{ abstract_md | markdownify }}</div>
+  </details>
 </div>
 
 <script src="{{ site.baseurl }}/assets/js/abstracts.js" defer></script>
