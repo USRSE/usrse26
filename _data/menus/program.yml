@@ -3,6 +3,8 @@
   items:
     - name: Full Program
       link: program/
+    - name: Plan Your Schedule with AI
+      link: program/plan-with-ai/
     - name: Birds of a Feather
       link: program/bofs/
     - name: Keynotes
