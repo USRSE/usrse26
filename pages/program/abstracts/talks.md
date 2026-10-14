@@ -27,7 +27,7 @@ Large experimental physics collaborations, such as LZ, produce and maintain a br
 
 We present LZ Oracle, an AI-assisted platform being developed for the LZ dark matter experiment to improve access to collaboration knowledge and support scientific and operational workflows. The system combines retrieval-augmented generation with an agentic exploration that can search indexed documentation, inspect relevant context, and synthesize responses grounded in collaboration materials. Current development focuses on improving reliability, expanding knowledge coverage, and designing evaluation workflows that allow domain experts to benchmark answer quality and provide structured feedback.
 
-This talk will describe the design goals, architecture, deployment considerations, and lessons learned from developing an AI-assisted knowledge retrieval platform for the LZ collaboration.{% endcapture %}{{ abstract_md | markdownify }}</div>
+This talk will describe the design goals, architecture, deployment considerations, and lessons learned from developing an AI-assisted knowledge retrieval platform for the LZ collaboration.{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.23327549">https://doi.org/10.5281/zenodo.23327549</a></p></div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">

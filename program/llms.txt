@@ -98,6 +98,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "LZ Oracle: an AI-assisted knowledge retrieval platform for the LUX-ZEPLIN dark matter experiment" (Talk)
     Presenters: Maris Arthurs, Jeonghwa Kim, Ibles Olcina
     https://us-rse.org/usrse26/program/talks/#lz-oracle-an-ai-assisted-knowledge-retrieval-platform-for-the-lux-zeplin-dark-matter-experiment
+    DOI: https://doi.org/10.5281/zenodo.23327549
   - "Data Sherpa: An AI-Powered Assistant for Scientific Collaboration Knowledge Management" (Talk)
     Presenters: Fabián Araneda-Baltierra and Felipe Menanteau
     https://us-rse.org/usrse26/program/talks/#data-sherpa-an-ai-powered-assistant-for-scientific-collaboration-knowledge-management
@@ -627,6 +628,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "We Create Quality: Towards a Human-Centric Theory of Research Software Quality in the Age of AI" (Paper)
     Presenters: Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos
     https://us-rse.org/usrse26/program/papers/#we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai
+    DOI: https://doi.org/10.5281/zenodo.22818567
   - "Beyond Productivity: Human-Centered Guardrails for AI-Assisted Research Software Workflows" (Talk)
     Presenters: Niharika Pramod Pujari
     https://us-rse.org/usrse26/program/talks/#beyond-productivity-human-centered-guardrails-for-ai-assisted-research-software-workflows

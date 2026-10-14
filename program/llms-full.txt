@@ -137,6 +137,7 @@ Abstract:
 - Format: Talk
 - Presenters: Maris Arthurs, Jeonghwa Kim, Ibles Olcina
 - Abstract page: https://us-rse.org/usrse26/program/talks/#lz-oracle-an-ai-assisted-knowledge-retrieval-platform-for-the-lux-zeplin-dark-matter-experiment
+- DOI: https://doi.org/10.5281/zenodo.23327549
 
 Abstract:
 
@@ -1349,6 +1350,7 @@ Abstract:
 - Format: Paper
 - Presenters: Reed Milewicz, Connor Brynteson, Ella Luedeke and Italo Santos
 - Abstract page: https://us-rse.org/usrse26/program/papers/#we-create-quality-towards-a-human-centric-theory-of-research-software-quality-in-the-age-of-ai
+- DOI: https://doi.org/10.5281/zenodo.22818567
 
 Abstract:
 
