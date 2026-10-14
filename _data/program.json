@@ -7,9 +7,9 @@
       "label": "October 19",
       "slots": [
         {
-          "start": "7:30am",
+          "start": "7am",
           "end": "8:30am",
-          "startISO": "2026-10-19T07:30:00-07:00",
+          "startISO": "2026-10-19T07:00:00-07:00",
           "endISO": "2026-10-19T08:30:00-07:00",
           "break": true,
           "sessions": [
@@ -709,7 +709,7 @@
                   "title": "Shaping What Comes Next: The RSE Role Today and Tomorrow",
                   "speakers": "",
                   "format": "Keynote",
-                  "infoMd": "A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.\n\n\n- Lavanya Ramakrishnan: Founder, Kinetic Strata; Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab\n- Carol Song: Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue\n- Curtis Hillegas: Senior Associate Dean, Research Computing, Princeton\n- Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI",
+                  "infoMd": "A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.\n\n\n- Lavanya Ramakrishnan: Founder, Kinetic Strata; Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab\n- Carol Song: Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue\n- Curtis Hillegas: Senior Associate Dean, Research Computing, Princeton\n- Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI\n- Akshay Agrawal: Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project",
                   "href": "program/keynotes/#shaping-what-comes-next-the-rse-role-today-and-tomorrow"
                 }
               ]
@@ -724,7 +724,7 @@
           "break": true,
           "sessions": [
             {
-              "title": "Morning Break",
+              "title": "Morning Break - Sponsored by Box",
               "type": "Break",
               "room": "San Jose Marriott",
               "info": "US-RSE Office Hours",
@@ -1344,6 +1344,24 @@
                   "href": "program/papers/#fabla-an-open-source-voice-first-ema-platform-for-clinical-research"
                 }
               ]
+            }
+          ]
+        },
+        {
+          "start": "5:30pm",
+          "end": "6pm",
+          "startISO": "2026-10-20T17:30:00-07:00",
+          "endISO": "2026-10-20T18:00:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Pre-dinner \"Happy Hour\"",
+              "type": "Meal",
+              "room": "Prefunction",
+              "info": "",
+              "plenary": false,
+              "muted": true,
+              "talks": []
             }
           ]
         },

@@ -36,7 +36,8 @@ Fernando regularly lectures about scientific computing, data science and open sc
 - Lavanya Ramakrishnan: Founder, Kinetic Strata; Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab  
 - Carol Song: Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue  
 - Curtis Hillegas: Senior Associate Dean, Research Computing, Princeton  
-- Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI{% endcapture %}{{ abstract_md | markdownify }}</div>
+- Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI  
+- Akshay Agrawal: Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
 </div>
 
