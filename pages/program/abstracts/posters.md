@@ -821,21 +821,6 @@ Model training. A domain-pretrained ByT5 checkpoint was trained on a roughly 200
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="test-suite-decluttering-why-doing-too-many-tests-became-a-problem-for-our-project-and-what-we-tried-to-address-it">
-        <span class="abstract__title">Test suite decluttering; why doing too many tests became a problem for our project, and what we tried to address it</span>
-        <span class="abstract__people">Sufi Kaur, Ludovico Bianchi</span>
-      </h2>
-    </summary>
-    <div class="abstract__body">{% capture abstract_md %}One of the most common challenges for research software projects is not having enough tests. The solution (at least to the extent that we can ignore the extra eﬀort required) is straightforward enough: just add more tests. However, as a project grows and its tests accumulate, the opposite problem can appear: too much testing, which typically drives up runtime and leaves large amounts of test code that developers and maintainers must keep updating, making the software development process harder for everyone involved.
-
-This challenge compounds in research software built around complex modeling. WaterTAP solves models as large systems of equations, often through simultaneous optimization rather than sequential calculation, so a small change in one part of the model can ripple through and aﬀect other parts in ways that are hard to predict, leaving us with the strange task of trying to anticipate unpredictability. To decide where testing eﬀort actually matters, we need to understand which parts of the system are numerically stable and well-isolated, and which are tightly coupled and more likely to propagate unexpected eﬀects.
-
-Here, the path to a solution is less clear. In the abstract, the solution is to reduce testing, either by cutting the total number of tests or by running some tests less frequently. But how do we decide which tests we need, and which we can cut or run less often? Are there strategies or heuristics that can guide these decisions?
-
-The poster will cover our experience tackling this problem as maintainers of WaterTAP, a software project for equation-oriented modeling and optimization of desalination and water treatment technologies, allowing us to share our approaches, results, and lessons learned with the wider US-RSE community.{% endcapture %}{{ abstract_md | markdownify }}</div>
-  </details>
-  <details class="abstract">
-    <summary class="abstract__summary">
       <h2 class="abstract__heading" id="building-ese-dashboard-with-ai-assisted-packets-design-system">
         <span class="abstract__title">Building ESE Dashboard with AI Assisted Packets Design System</span>
         <span class="abstract__people">Charles DeVilholm</span>
