@@ -674,6 +674,37 @@ function escLiquid(s) {
     .replace(/(\S)[ \t]*\r?\n(?![ \t]*\r?\n)/g, '$1  \n');
 }
 
+// A Markdown image in a description cell — ![alt](/assets/img/x.jpeg "title")
+// — or a bare image path alone on its line. Only paths IMAGE_PATH accepts
+// are touched; anything else (a remote URL, a typo) passes through as text.
+const MD_IMAGE = /!\[([^\]\n]*)\]\(\s*(\/[^\s)]+)((?:\s+"[^"\n]*")?)\s*\)/g;
+const BARE_IMAGE = /^([ \t]*)(\/[^\s]+?)([ \t]*)$/gm;
+
+/**
+ * Rewrite site-relative image paths in description Markdown via toUrl.
+ * A bare path becomes a Markdown image with empty alt (decorative); a
+ * portrait that needs alt text belongs in Markdown syntax or Event Image.
+ * @param {string} md
+ * @param {(p: string) => string} toUrl
+ */
+function rewriteImagePaths(md, toUrl) {
+  return md
+    .replace(MD_IMAGE, (m, alt, p, title) => (IMAGE_PATH.test(p)
+      ? `![${alt}](${toUrl(p)}${title})` : m))
+    .replace(BARE_IMAGE, (m, lead, p, trail) => (IMAGE_PATH.test(p)
+      ? `${lead}![](${toUrl(p)})${trail}` : m));
+}
+
+/** escLiquid, then prefix description image paths with site.baseurl — the
+ * same reason as renderAbstractEntry's portrait: kramdown would otherwise
+ * emit the bare path, which breaks under a non-root baseurl. Runs after
+ * escLiquid because that neutralizes the "{" the Liquid tag needs;
+ * IMAGE_PATH admits none of the characters escLiquid rewrites.
+ * @param {string} s */
+function escDescription(s) {
+  return rewriteImagePaths(escLiquid(s), (p) => `{{ site.baseurl }}${p}`);
+}
+
 function renderSession(s, pad) {
   const cls = ['session'];
   if (s.plenary) cls.push('session--plenary');
@@ -692,7 +723,7 @@ function renderSession(s, pad) {
     // Session Description may be Markdown; the include is Liquid-processed
     // when Jekyll renders it, so markdownify does the conversion with the
     // same kramdown as the rest of the site.
-    lines.push(`${pad}  <div class="session__info">{% capture session_info_md %}${escLiquid(s.info)}{% endcapture %}{{ session_info_md | markdownify }}</div>`);
+    lines.push(`${pad}  <div class="session__info">{% capture session_info_md %}${escDescription(s.info)}{% endcapture %}{{ session_info_md | markdownify }}</div>`);
   }
   if (s.talks.length) {
     lines.push(`${pad}  <ol class="session__talks">`);
@@ -1099,7 +1130,7 @@ function renderAbstractEntry(e, pad) {
       + ` alt="${esc(e.people)}">`);
   }
   if (e.infoMd.trim()) {
-    body.push(`{% capture abstract_md %}${escLiquid(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}`);
+    body.push(`{% capture abstract_md %}${escDescription(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}`);
   }
   if (e.meta && e.meta.length) {
     const links = e.meta.map((m) => `<a href="${esc(m.href)}">${esc(m.text)}</a>`).join(' · ');
@@ -1272,7 +1303,10 @@ function quoteBlock(md) {
   // Split on CRLF as well as LF: parseCSV preserves \r verbatim inside a
   // quoted field, so a cell pasted in from Windows would otherwise leave a
   // stray carriage return at the end of every quoted line.
-  return String(md).trim().split(/\r?\n/).map((l) => (l.trim() ? `> ${l}` : '>'));
+  // Description image paths are site-relative; an llms reader has no site
+  // to resolve them against, so they become absolute like every other link.
+  return rewriteImagePaths(String(md).trim(), absUrl)
+    .split(/\r?\n/).map((l) => (l.trim() ? `> ${l}` : '>'));
 }
 
 /** Collapse whitespace so a value can occupy a single labelled line. */

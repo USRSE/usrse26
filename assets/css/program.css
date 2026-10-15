@@ -267,6 +267,13 @@
   padding-top: 0.4rem;
 }
 
+/* Images placed in a Session Description cell (build-program.js resolves
+   their paths); keep a large source inside the card. */
+.session__info img {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Sessions that label events form a shared two-column grid whose label
    column hugs the session's widest label (capped at --talk-gutter), so a
    PAPER/TALK session indents titles ~3rem, not worst-case width, and a

@@ -191,6 +191,13 @@
   line-height: 1.55;
 }
 
+/* Images placed in an Event Description cell (build-program.js resolves
+   their paths); the portrait below sets its own size. */
+.abstract__body img:not(.abstract__portrait) {
+  max-width: 100%;
+  height: auto;
+}
+
 /* Speaker portrait — the sheet's Event Image column gives only a path, and
    build-program.js renders the tag, so the presentation belongs here rather
    than in inline styles typed into a spreadsheet cell. max-width keeps a
