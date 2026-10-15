@@ -374,20 +374,14 @@ As AI capabilities become increasingly democratized, RSEs have an opportunity to
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
-      <h2 class="abstract__heading" id="is-the-datasquad-model-for-you">
-        <span class="abstract__title">Is the DataSquad Model For You?</span>
-        <span class="abstract__people">Paula Lackie</span>
+      <h2 class="abstract__heading" id="the-datasquad-an-entry-point-for-rse">
+        <span class="abstract__title">The DataSquad: An entry point for RSE</span>
+        <span class="abstract__people">Paula Lackie, Tim Dennis, Leigh Phan</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}The DataSquad at Carleton College addresses a common problem in higher education: limited capacity for data and software support services and few opportunities for students to gain practical experience with RSE and data support. The challenge for students to acquire foundational experience is even more challenging due to the relative obscurity of the work; most especially for those from underrepresented backgrounds. In this gap between technical service/support needs and student experience we also find an opportunity; if we can harness the motivation of students to expand their experience, perhaps we can grow local support capacity, diversify people who thrive in RSE/data support areas, and enjoy our problem-solving work!
 
-In this poster I hope to attract supervisors of student workers to compare our obstacles &amp; solutions. I will share my strategies for managing a high-impact team of novices without a dedicated budget or full-time oversight, and offer practical resources—including job descriptions, confidentiality agreements, and project management frameworks—to help supervisors implement the DataSquad model in their own environments.
-
-Motivations for converting more standard student labor into a DataSquad model will be unique to each institution/organization type. However, there is one aspect that I have found to be crucial for a successful DataSquad. It is the mindset shift from using student labor as a means to deliver a technical service to recognizing that developing skilled students IS itself a primary service. Students are not just the tool, they are a beneficial product of your service point. While putting effort into training students who end up moving into research labs may feel counterproductive, it’s actually taking advantage of Rogers’ Diffusion of Innovations to your benefit by disseminating best practices (through your trained students) across your campus.
-
-Student members of the DataSquad gain the necessary experience in best-practices while they focus on their projects; integrating FAIR data principles, useful markup &amp; documentation practices into their work patterns. Working across different communication styles and technical experience levels also improves their communication skills.
-
-From the perspective of those of us managing students, it’s not a stretch to see how students may find their passion in RSE and data in their work-study job. What is more difficult is figuring out how to manage a team of novices while trying to get a support service delivered. In this poster I’ll share my strategies for how I manage it without a separate budget and as only a percentage of my FTE.{% endcapture %}{{ abstract_md | markdownify }}</div>
+Come and talk with us about working with novices! Compare obstacles &amp; solutions with us.  We are happy to share our strategies for managing a high-impact team of novices without a dedicated budget or full-time oversight, and offer practical resources—including job descriptions, confidentiality agreements, and project management frameworks—to help supervisors implement the DataSquad model in your own environments.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
