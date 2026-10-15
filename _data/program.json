@@ -664,6 +664,24 @@
               "talks": []
             }
           ]
+        },
+        {
+          "start": "7:30pm",
+          "end": "9pm",
+          "startISO": "2026-10-19T19:30:00-07:00",
+          "endISO": "2026-10-19T21:00:00-07:00",
+          "break": true,
+          "sessions": [
+            {
+              "title": "Women in RSE",
+              "type": "Registration",
+              "room": "San Jose Marriott",
+              "info": "Meet in Marriott Lobby",
+              "plenary": false,
+              "muted": true,
+              "talks": []
+            }
+          ]
         }
       ]
     },
