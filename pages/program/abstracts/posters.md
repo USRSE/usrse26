@@ -376,7 +376,7 @@ As AI capabilities become increasingly democratized, RSEs have an opportunity to
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="the-datasquad-an-entry-point-for-rse">
         <span class="abstract__title">The DataSquad: An entry point for RSE</span>
-        <span class="abstract__people">Paula Lackie, Tim Dennis, Leigh Phan</span>
+        <span class="abstract__people">Paula Lackie, Oliver Hall, Tim Dennis, Leigh Phan</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}The DataSquad at Carleton College addresses a common problem in higher education: limited capacity for data and software support services and few opportunities for students to gain practical experience with RSE and data support. The challenge for students to acquire foundational experience is even more challenging due to the relative obscurity of the work; most especially for those from underrepresented backgrounds. In this gap between technical service/support needs and student experience we also find an opportunity; if we can harness the motivation of students to expand their experience, perhaps we can grow local support capacity, diversify people who thrive in RSE/data support areas, and enjoy our problem-solving work!
