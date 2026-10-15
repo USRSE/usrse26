@@ -654,14 +654,32 @@ Abstract:
 
 Abstract:
 
-> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
+> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, its current state, what the future looks like, and how we may shape that future.
 >
 >
-> - Lavanya Ramakrishnan: Founder, Kinetic Strata; Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab
-> - Carol Song: Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue
-> - Curtis Hillegas: Senior Associate Dean, Research Computing, Princeton
-> - Zach Chandler:  Director of Open Source Strategy, Stanford Human-Centered AI
-> - Akshay Agrawal: Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project
+> **Lavanya Ramakrishnan**
+> Founder, Kinetic Strata; Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab
+>
+> Dr. Lavanya Ramakrishnan is a computer scientist and senior technology leader specializing in high-performance computing (HPC) and distributed/cloud workflows, complex data systems, AI, and user research. She currently operates through Kinetic Strata, focusing on strategic and technical consulting. Dr. Ramakrishnan recently concluded a 16.5-year career at Lawrence Berkeley National Laboratory, where she served as Senior Scientist and Division Deputy of the Scientific Data Division. Dr. Ramakrishnan’s work has focused on integrating social science with software design and user research, collaborating across various scientific domains. She also served as the Deputy Project Director for the High Performance Data Facility (HPDF). She holds a Ph.D. in Computer Science from Indiana University Bloomington.
+>
+> **Carol Song**
+> Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue
+>
+> Dr. Carol Song is the chief scientist of the Rosen Center for Advanced Computing at Purdue University, and serves as Director of Purdue RSE Center. She has more than 20 years of experience in high-performance and distributed computing, and in recent years, dedicated her efforts on research software engineering that bridges domain scientists to advanced cyberinfrastructure. Carol currently leads the NSF-funded Anvil HPC system and StreamCI data framework projects, which supports tens of thousands of researchers, students and science gateways nationwide. She earned her PhD degree in computer science from the University of Illinois Urbana-Champaign.
+>
+> **Curtis Hillegas** 
+> Senior Associate Dean, Research Computing, Princeton
+>
+>
+> **Zach Chandler**
+> Director of Open Source Strategy, Stanford Human-Centered AI
+>
+> **Akshay Agrawal**
+> Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project
+>
+> ![Akshay Agrawal](/assets/img/agrawal.jpeg "Akshay headshot")
+>
+> Akshay Agrawal is a researcher and software engineer who builds open-source tools for scientific computing. He earned his PhD at Stanford, where he researched convex optimization and machine learning, and previously served as a core maintainer of CVXPY and a TensorFlow developer at Google. He is the original creator of marimo, the open-source reactive Python notebook. Today, marimo is downloaded more than two million times per month and is used by dozens of major universities and companies across the world.
 
 ### 10–10:30am — Morning Break - Sponsored by Box
 
