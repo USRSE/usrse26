@@ -191,6 +191,39 @@
   line-height: 1.55;
 }
 
+/* Images placed in an Event Description cell (build-program.js resolves
+   their paths and adds intrinsic width/height); the portrait below sets its
+   own size. Both caps with auto dimensions fit any aspect ratio inside the
+   box without upscaling a small source, and the width/height attributes
+   only supply the ratio. */
+.abstract__body img:not(.abstract__portrait) {
+  display: block;
+  max-width: 100%;
+  max-height: var(--img-max-h, 24rem);
+  width: var(--img-w, auto); /* width="N" in the cell sets --img-w */
+  height: auto;
+  margin: 0.75rem 0;
+}
+
+/* =left / =right in the cell: float so the following text wraps, sized
+   like the portrait below unless the cell gives a width. */
+.abstract__body img.img--left,
+.abstract__body img.img--right {
+  width: var(--img-w, 350px);
+  max-width: 40%;
+  max-height: var(--img-max-h, none);
+}
+
+.abstract__body img.img--left {
+  float: left;
+  margin: 0.2rem 1.25rem 0.75rem 0;
+}
+
+.abstract__body img.img--right {
+  float: right;
+  margin: 0.2rem 0 0.75rem 1.25rem;
+}
+
 /* Speaker portrait — the sheet's Event Image column gives only a path, and
    build-program.js renders the tag, so the presentation belongs here rather
    than in inline styles typed into a spreadsheet cell. max-width keeps a
@@ -250,6 +283,14 @@
     float: none;
     width: 100%;
     max-width: 18rem;
+    margin: 0 0 1rem;
+  }
+
+  .abstract__body img.img--left,
+  .abstract__body img.img--right {
+    float: none;
+    width: var(--img-w, 18rem);
+    max-width: 100%;
     margin: 0 0 1rem;
   }
 }

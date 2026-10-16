@@ -257,6 +257,7 @@
 }
 
 .session__info {
+  display: flow-root; /* contains a =left / =right image float */
   padding-top: 0.3rem;
   font-size: 0.875rem;
   line-height: 1.4;
@@ -265,6 +266,37 @@
 
 .session__talks {
   padding-top: 0.4rem;
+}
+
+/* Images placed in a Session Description cell (build-program.js resolves
+   their paths and adds intrinsic width/height); fit any aspect ratio inside
+   the card without upscaling a small source. */
+.session__info img {
+  display: block;
+  max-width: 100%;
+  max-height: var(--img-max-h, 24rem);
+  width: var(--img-w, auto); /* width="N" in the cell sets --img-w */
+  height: auto;
+  margin: 0.75rem 0;
+}
+
+/* =left / =right in the cell: float so the following text wraps; the
+   card is narrower than an abstract, hence the smaller default. */
+.session__info img.img--left,
+.session__info img.img--right {
+  width: var(--img-w, 240px);
+  max-width: 40%;
+  max-height: var(--img-max-h, none);
+}
+
+.session__info img.img--left {
+  float: left;
+  margin: 0.2rem 1rem 0.5rem 0;
+}
+
+.session__info img.img--right {
+  float: right;
+  margin: 0.2rem 0 0.5rem 1rem;
 }
 
 /* Sessions that label events form a shared two-column grid whose label
@@ -412,6 +444,14 @@
 
   .session--plenary {
     margin-top: 0;
+  }
+
+  .session__info img.img--left,
+  .session__info img.img--right {
+    float: none;
+    width: var(--img-w, 18rem);
+    max-width: 100%;
+    margin: 0.75rem 0;
   }
 }
 

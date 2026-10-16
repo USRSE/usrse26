@@ -34,7 +34,13 @@
  * (Markdown), Event Image, and DOI — event columns are read only on rows
  * with an Event Title. Event Image is a site-relative path to an image
  * committed in the repo ("/assets/img/perez.jpeg"); the script renders the
- * <img> itself, so the cell holds a path and never markup. Start/End carry
+ * <img> itself, so the cell holds a path and never markup. Description
+ * cells take images too: ![alt](/assets/img/x.png) or a bare path alone on
+ * its line. After the path (and optional "title") a Markdown image accepts
+ * =left or =right (float with text wrapping, like the Event Image portrait)
+ * and width="N" / height="N" in pixels; one dimension keeps the aspect
+ * ratio, both set an exact box — e.g.
+ * ![Setup](/assets/img/setup.jpg =right width="240"). Start/End carry
  * the date and 24h wall-clock time ("10/19 13:30").
  * Session Format is used exactly as given, never inferred from the topic:
  * Break/Meal/Registration render muted, Plenary gets the plenary field.
@@ -189,6 +195,63 @@ const FORMATS = {
 // Remote URLs are deliberately not accepted — the path is concatenated onto
 // site.baseurl, which would prepend the baseurl to one and break it.
 const IMAGE_PATH = /^\/(?!.*\.\.)[\w.\-/]+\.(?:jpe?g|png|webp|avif|gif)$/i;
+
+/**
+ * Intrinsic pixel size of a committed image, read from its header so the
+ * build stays dependency-free. Returns null for a missing file or a format
+ * not parsed here (AVIF); the image then renders without width/height.
+ * @param {string} p site-relative path that passed IMAGE_PATH
+ * @returns {{w: number, h: number} | null}
+ */
+function imageSize(p) {
+  let b;
+  try {
+    b = fs.readFileSync(path.join(REPO_ROOT, p));
+  } catch {
+    console.error(`build-program: image ${p} not found in the repo`);
+    return null;
+  }
+  // PNG: IHDR is always the first chunk.
+  if (b.length >= 24 && b.readUInt32BE(0) === 0x89504e47) {
+    return { w: b.readUInt32BE(16), h: b.readUInt32BE(20) };
+  }
+  // GIF: logical screen size, little-endian.
+  if (b.length >= 10 && b.toString('latin1', 0, 3) === 'GIF') {
+    return { w: b.readUInt16LE(6), h: b.readUInt16LE(8) };
+  }
+  // WebP: lossy (VP8), lossless (VP8L) or extended (VP8X) bitstream.
+  if (b.length >= 30 && b.toString('latin1', 0, 4) === 'RIFF'
+    && b.toString('latin1', 8, 12) === 'WEBP') {
+    const chunk = b.toString('latin1', 12, 16);
+    if (chunk === 'VP8 ') {
+      return { w: b.readUInt16LE(26) & 0x3fff, h: b.readUInt16LE(28) & 0x3fff };
+    }
+    if (chunk === 'VP8L') {
+      const bits = b.readUInt32LE(21);
+      return { w: (bits & 0x3fff) + 1, h: ((bits >> 14) & 0x3fff) + 1 };
+    }
+    if (chunk === 'VP8X') {
+      return { w: b.readUIntLE(24, 3) + 1, h: b.readUIntLE(27, 3) + 1 };
+    }
+    return null;
+  }
+  // JPEG: walk segments to the first start-of-frame marker.
+  if (b.length >= 4 && b[0] === 0xff && b[1] === 0xd8) {
+    let i = 2;
+    while (i + 9 < b.length) {
+      if (b[i] !== 0xff) return null;
+      const marker = b[i + 1];
+      if (marker === 0xff) { i += 1; continue; } // fill byte
+      // SOF0–SOF15, excluding DHT (C4), JPG (C8) and DAC (CC).
+      if (marker >= 0xc0 && marker <= 0xcf
+        && marker !== 0xc4 && marker !== 0xc8 && marker !== 0xcc) {
+        return { w: b.readUInt16BE(i + 7), h: b.readUInt16BE(i + 5) };
+      }
+      i += 2 + b.readUInt16BE(i + 2);
+    }
+  }
+  return null;
+}
 
 /**
  * Event Image cell -> a path the renderer can trust, or "" for an empty or
@@ -674,6 +737,131 @@ function escLiquid(s) {
     .replace(/(\S)[ \t]*\r?\n(?![ \t]*\r?\n)/g, '$1  \n');
 }
 
+// A Markdown image in a description cell, with optional layout options
+// after the path/title — ![alt](/assets/img/x.jpeg "title" =left width="300")
+// — or a bare image path alone on its line. Only paths IMAGE_PATH accepts
+// are touched. A remote URL in Markdown syntax passes through for kramdown
+// to render as-is (no options, no size); a bare URL or a typo stays text.
+const MD_IMAGE = /!\[([^\]\n]*)\]\(\s*(\/[^\s)]+)((?:\s+"[^"\n]*")?)((?:\s+[^\s)]+)*)\s*\)/g;
+const BARE_IMAGE = /^([ \t]*)(\/[^\s]+?)([ \t]*)$/gm;
+
+// Image options. Quotes are optional and may be curly, since a sheet editor
+// can autocorrect them; the value is whole pixels.
+const IMAGE_FLOAT = /^=?(left|right)$/i;
+const IMAGE_DIM = /^(width|height)=["“”]?(\d{1,4})(?:px)?["“”]?$/i;
+
+/**
+ * @typedef {{float: string, width: number, height: number}} ImageOptions
+ */
+
+/**
+ * Parse the options that follow a description image's path and title. An
+ * unknown or malformed token is dropped (with a warning when warn is set),
+ * so a typo never reaches the page or the attribute list.
+ * @param {string} opts
+ * @param {string} p image path, for the warning
+ * @param {boolean} warn
+ * @returns {ImageOptions}
+ */
+function imageOptions(opts, p, warn) {
+  const o = { float: '', width: 0, height: 0 };
+  for (const tok of opts.split(/\s+/).filter(Boolean)) {
+    const f = IMAGE_FLOAT.exec(tok);
+    const d = IMAGE_DIM.exec(tok);
+    if (f) {
+      o.float = f[1].toLowerCase();
+    } else if (d && Number(d[2]) > 0) {
+      if (d[1].toLowerCase() === 'width') o.width = Number(d[2]);
+      else o.height = Number(d[2]);
+    } else if (warn) {
+      console.error(`build-program: image ${p}: ignoring option ${JSON.stringify(tok)}`
+        + ' — expected =left, =right, width="N" or height="N"');
+    }
+  }
+  return o;
+}
+
+/**
+ * kramdown attribute list for a description image. The width/height
+ * attributes give the browser the aspect ratio to reserve before the file
+ * loads. An author's size travels as CSS custom properties rather than an
+ * inline width, so the stylesheet — max-width and the mobile breakpoint —
+ * still has the last word. One dimension keeps the intrinsic ratio (the
+ * other is derived from the file); both set an exact box.
+ * @param {string} p site-relative path that passed IMAGE_PATH
+ * @param {ImageOptions} o
+ */
+function imageAttrs(p, o) {
+  const dim = imageSize(p);
+  let w = o.width;
+  let h = o.height;
+  if (!dim) {
+    // Without the file's ratio a lone height can't become a width, and a
+    // fixed height alone would distort once max-width shrinks the image.
+    if (h && !w) {
+      console.error(`build-program: image ${p}: ignoring height — its size`
+        + ' could not be read, so give a width instead');
+      h = 0;
+    }
+  } else if (!w && !h) {
+    w = dim.w;
+    h = dim.h;
+  } else if (!h) {
+    h = Math.round(w * dim.h / dim.w);
+  } else if (!w) {
+    w = Math.round(h * dim.w / dim.h);
+  }
+  const attrs = [];
+  if (w) attrs.push(`width="${w}"`);
+  if (h) attrs.push(`height="${h}"`);
+  if (o.float) attrs.push(`.img--${o.float}`);
+  const style = [];
+  if ((o.width || o.height) && w) style.push(`--img-w: ${w}px`, '--img-max-h: none');
+  // Both given: hold that box even after the file loads, when the browser
+  // would otherwise switch back to the intrinsic ratio.
+  if (o.width && o.height) style.push(`aspect-ratio: ${w} / ${h}`);
+  if (style.length) attrs.push(`style="${style.join('; ')}"`);
+  return attrs.length ? `{: ${attrs.join(' ')}}` : '';
+}
+
+const NO_IMAGE_OPTIONS = { float: '', width: 0, height: 0 };
+
+/**
+ * Rewrite site-relative image paths in description Markdown via toUrl.
+ * A bare path becomes a Markdown image with empty alt (decorative); a
+ * portrait that needs alt text belongs in Markdown syntax or Event Image.
+ * Layout options are always stripped, so plain-Markdown output (llms)
+ * gets a clean image.
+ *
+ * With withAttrs, each image also gets a kramdown attribute list from
+ * imageAttrs. Callers must pass already-escaped text: escLiquid would
+ * neutralize the "{" this adds.
+ * @param {string} md
+ * @param {(p: string) => string} toUrl
+ * @param {boolean} [withAttrs]
+ */
+function rewriteImagePaths(md, toUrl, withAttrs = false) {
+  return md
+    .replace(MD_IMAGE, (m, alt, p, title, opts) => {
+      if (!IMAGE_PATH.test(p)) return m;
+      const o = imageOptions(opts, p, withAttrs);
+      return `![${alt}](${toUrl(p)}${title})${withAttrs ? imageAttrs(p, o) : ''}`;
+    })
+    .replace(BARE_IMAGE, (m, lead, p, trail) => (IMAGE_PATH.test(p)
+      ? `${lead}![](${toUrl(p)})${withAttrs ? imageAttrs(p, NO_IMAGE_OPTIONS) : ''}${trail}`
+      : m));
+}
+
+/** escLiquid, then prefix description image paths with site.baseurl — the
+ * same reason as renderAbstractEntry's portrait: kramdown would otherwise
+ * emit the bare path, which breaks under a non-root baseurl. Runs after
+ * escLiquid because that neutralizes the "{" the Liquid tag needs;
+ * IMAGE_PATH admits none of the characters escLiquid rewrites.
+ * @param {string} s */
+function escDescription(s) {
+  return rewriteImagePaths(escLiquid(s), (p) => `{{ site.baseurl }}${p}`, true);
+}
+
 function renderSession(s, pad) {
   const cls = ['session'];
   if (s.plenary) cls.push('session--plenary');
@@ -692,7 +880,7 @@ function renderSession(s, pad) {
     // Session Description may be Markdown; the include is Liquid-processed
     // when Jekyll renders it, so markdownify does the conversion with the
     // same kramdown as the rest of the site.
-    lines.push(`${pad}  <div class="session__info">{% capture session_info_md %}${escLiquid(s.info)}{% endcapture %}{{ session_info_md | markdownify }}</div>`);
+    lines.push(`${pad}  <div class="session__info">{% capture session_info_md %}${escDescription(s.info)}{% endcapture %}{{ session_info_md | markdownify }}</div>`);
   }
   if (s.talks.length) {
     lines.push(`${pad}  <ol class="session__talks">`);
@@ -1099,7 +1287,7 @@ function renderAbstractEntry(e, pad) {
       + ` alt="${esc(e.people)}">`);
   }
   if (e.infoMd.trim()) {
-    body.push(`{% capture abstract_md %}${escLiquid(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}`);
+    body.push(`{% capture abstract_md %}${escDescription(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}`);
   }
   if (e.meta && e.meta.length) {
     const links = e.meta.map((m) => `<a href="${esc(m.href)}">${esc(m.text)}</a>`).join(' · ');
@@ -1272,7 +1460,10 @@ function quoteBlock(md) {
   // Split on CRLF as well as LF: parseCSV preserves \r verbatim inside a
   // quoted field, so a cell pasted in from Windows would otherwise leave a
   // stray carriage return at the end of every quoted line.
-  return String(md).trim().split(/\r?\n/).map((l) => (l.trim() ? `> ${l}` : '>'));
+  // Description image paths are site-relative; an llms reader has no site
+  // to resolve them against, so they become absolute like every other link.
+  return rewriteImagePaths(String(md).trim(), absUrl)
+    .split(/\r?\n/).map((l) => (l.trim() ? `> ${l}` : '>'));
 }
 
 /** Collapse whitespace so a value can occupy a single labelled line. */
