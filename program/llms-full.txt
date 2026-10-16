@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 48 sessions, 83 talks (83 with published
+> in the Age of AI". 3 days, 50 sessions, 83 talks (83 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -630,6 +630,17 @@ Abstract:
 - Type: Registration
 - Concurrent with: nothing (the only session at this time)
 
+### 7:30–9pm — Women in RSE
+
+- Time: 2026-10-19T19:30:00-07:00 to 2026-10-19T21:00:00-07:00 (90 min)
+- Room: San Jose Marriott
+- Type: Registration
+- Concurrent with: nothing (the only session at this time)
+
+About this session:
+
+> Meet in Marriott Lobby
+
 ## Tuesday, October 20, 2026
 
 ### 7:30–8:30am — Registration
@@ -654,7 +665,7 @@ Abstract:
 
 Abstract:
 
-> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
+> A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, its current state, what the future looks like, and how we may shape that future.
 >
 >
 > **Lavanya Ramakrishnan**
@@ -677,7 +688,7 @@ Abstract:
 > **Akshay Agrawal**
 > Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project
 >
-> ![Akshay Agrawal](https://us-rse.org/usrse26/assets/img/agrawal.jpeg "Akshay headshot")
+> ![Akshay Agrawal](/assets/img/agrawal.jpeg "Akshay headshot")
 >
 > Akshay Agrawal is a researcher and software engineer who builds open-source tools for scientific computing. He earned his PhD at Stanford, where he researched convex optimization and machine learning, and previously served as a core maintainer of CVXPY and a TensorFlow developer at Google. He is the original creator of marimo, the open-source reactive Python notebook. Today, marimo is downloaded more than two million times per month and is used by dozens of major universities and companies across the world.
 

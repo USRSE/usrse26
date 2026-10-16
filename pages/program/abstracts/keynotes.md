@@ -30,7 +30,7 @@ Fernando regularly lectures about scientific computing, data science and open sc
         <span class="abstract__title">Shaping What Comes Next: The RSE Role Today and Tomorrow</span>
       </h2>
     </summary>
-    <div class="abstract__body">{% capture abstract_md %}A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, it’s current state, what the future looks like, and how we may shape that future.
+    <div class="abstract__body">{% capture abstract_md %}A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, its current state, what the future looks like, and how we may shape that future.
 
 
 **Lavanya Ramakrishnan**  
@@ -53,7 +53,7 @@ Director of Open Source Strategy, Stanford Human-Centered AI
 **Akshay Agrawal**  
 Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project
 
-![Akshay Agrawal]({{ site.baseurl }}/assets/img/agrawal.jpeg "Akshay headshot")
+![Akshay Agrawal](/assets/img/agrawal.jpeg "Akshay headshot")
 
 Akshay Agrawal is a researcher and software engineer who builds open-source tools for scientific computing. He earned his PhD at Stanford, where he researched convex optimization and machine learning, and previously served as a core maintainer of CVXPY and a TensorFlow developer at Google. He is the original creator of marimo, the open-source reactive Python notebook. Today, marimo is downloaded more than two million times per month and is used by dozens of major universities and companies across the world.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
