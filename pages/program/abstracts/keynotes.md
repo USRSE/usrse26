@@ -52,7 +52,7 @@ Senior Associate Dean, Research Computing, Princeton
 Director of Open Source Strategy, Stanford Human-Centered AI
 
 ![Akshay Agrawal]({{ site.baseurl }}/assets/img/headshots/agrawal.jpeg){: width="200" height="200" .img--left} **Akshay Agrawal**  
-Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project
+Creator/maintainer of the marimo open-source project
 
 Akshay Agrawal is a researcher and software engineer who builds open-source tools for scientific computing. He earned his PhD at Stanford, where he researched convex optimization and machine learning, and previously served as a core maintainer of CVXPY and a TensorFlow developer at Google. He is the original creator of marimo, the open-source reactive Python notebook. Today, marimo is downloaded more than two million times per month and is used by dozens of major universities and companies across the world.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>

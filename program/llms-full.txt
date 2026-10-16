@@ -687,7 +687,7 @@ Abstract:
 > Director of Open Source Strategy, Stanford Human-Centered AI
 >
 > ![Akshay Agrawal](https://us-rse.org/usrse26/assets/img/headshots/agrawal.jpeg) **Akshay Agrawal**
-> Director of Engineering, CoreWeave / Creator and maintainer of the marimo open-source project
+> Creator/maintainer of the marimo open-source project
 >
 > Akshay Agrawal is a researcher and software engineer who builds open-source tools for scientific computing. He earned his PhD at Stanford, where he researched convex optimization and machine learning, and previously served as a core maintainer of CVXPY and a TensorFlow developer at Google. He is the original creator of marimo, the open-source reactive Python notebook. Today, marimo is downloaded more than two million times per month and is used by dozens of major universities and companies across the world.
 
@@ -1361,7 +1361,7 @@ Abstract:
 - Time: 2026-10-21T10:30:00-07:00 to 2026-10-21T12:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 5 & 6
 - Type: Talks
-- Chair: Jeff Carver
+- Chair: Drew Paine
 - Concurrent with: Collaboration & Community Building (10:30am–12pm, San Jose Ballroom Salon 1 & 2); Generative AI + Applications (10:30am–12pm, Willow Glen Room)
 
 #### Developing a Handbook of best practices for research software sustainability at Princeton
