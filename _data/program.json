@@ -1415,14 +1415,7 @@
               "info": "Enjoy some board games and puzzles from the committee's personal collections in the Market Street room after dinner. Marriott will be providing a cash bar for attendees to purchase drinks and snacks throughout the evening.",
               "plenary": false,
               "muted": true,
-              "talks": [
-                {
-                  "title": "Board Game Night",
-                  "speakers": "",
-                  "format": "Other",
-                  "infoMd": "Enjoy some board games and puzzles from the committee's personal collections in the Market Street room after dinner. Marriott will be providing a cash bar for attendees to purchase drinks and snacks throughout the evening."
-                }
-              ]
+              "talks": []
             }
           ]
         }
