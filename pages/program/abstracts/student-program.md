@@ -24,12 +24,35 @@ set_last_modified: true
 
 Panelists:
 
-* Blake Joyce, BioTeam  
-* Hasti Mehta, University of Illinois Chicago AI Lab  
-* Fernando Perez, UC Berkeley  
-* Julian Pistorus, Indiana University  
-* Suzanne Prentice, Oak Ridge National Laboratory  
-* Alec Scott, Lawrence Livermore National Laboratory{% endcapture %}{{ abstract_md | markdownify }}</div>
+![Blake Joyce]({{ site.baseurl }}/assets/img/headshots/bjoyce.JPG){: .img--left} ** Blake Joyce **  
+Principal Consultant
+
+Blake has a background spanning functional genomics, bioinformatics, and cyberinfrastructure, with a particular focus on organizational and technical challenges of scaling research computing to meet evolving scientific demand. At BioTeam, Blake has led teams to design hybrid HPC/cloud infrastructure roadmap and implementation plans for three of the U.S. News &amp; World Report Top 5 Cancer Hospitals, the NIH, and several multinational biopharmaceutical companies. Before BioTeam, Blake was the Data Science Manager at the University of Alabama at Birmingham, and the Assistant Director of Research Computing at the University of Arizona where his team built, operated, and supported HPC, cloud, and data storage platforms for 2,250+ active researchers in 725 labs across 105 departments.
+
+![Hasti Mehta]({{ site.baseurl }}/assets/img/headshots/hmehta.jpg){: .img--left} ** Hasti Mehta **  
+Senior Associate, Data and AI Technology Advisory, Aprio
+
+Hasti Mehta is a Senior Associate in Data and AI Technology Advisory at Aprio, where she helps organizations develop AI strategy, deploy AI solutions, and manage AI costs, and is helping lead the firm's new Data and AI hub in Chicago. She co-authored Aprio's research on AI token cost management. Her background spans applied AI/ML, multi-agent systems, NLP pipelines, and transportation engineering, with prior roles at the UIC AI Lab, Discovery Partners Institute, and the Illinois Department of Transportation. Hasti has presented at the NAIRR Conference and United Nations Headquarters and has published research across transportation, healthcare, and FinTech. She holds an MS in Computer Science with an AI/ML specialization from the University of Illinois Chicago.
+
+![Fernando Perez]({{ site.baseurl }}/assets/img/headshots/fperez.jpg){: .img--left} ** Fernando Perez **  
+Associate Professor, Statistics; Faculty Scientist, Lawrence Berkeley National Laboratory; Faculty Director, Berkeley Institute for Data Science (BIDS); Co-Director, Eric and Wendy Schmidt Center for Data Science &amp; Environment (DSE), UC Berkeley
+
+Fernando Pérez is faculty at UC Berkeley Statistics and a scientist at LBNL. Trained in physics, he builds open tools for science and education; he created IPython and co-founded Project Jupyter. His research focuses on open, reproducible science and scientific uses of AI for problems in earth and the environment, and biomedicine. He directs the Berkeley Institute for Data Science (BIDS) and co-directs the Eric and Wendy Schmidt Data Science &amp; Environment Center (DSE). He co-founded 2i2c.org and NumFOCUS.
+
+![Julian Pistorus]({{ site.baseurl }}/assets/img/headshots/jpistorus.jpeg){: .img--left} ** Julian Pistorus **  
+Indiana University, Research Bazaar Arizona, and Exosphere Project
+
+Helping researchers has been Julian's vocation and avocation for more than a decade. Before that he worked as a software engineer in startups and enterprises. Currently he works at IU supporting researchers using internal cloud platforms as well as those using Jetstream2 - an NSF research cloud. He serves as one of the maintainers of Exosphere, an open-source user interface for cloud computing. He is a regular at the weekly events of Research Bazaar Arizona, a grassroots community of practice for researchers, engineers, and data scientists in the Tucson area, which he co-founded in 2016 with Blake Joyce PhD (also on the panel.)
+
+![Suzanne Prentice]({{ site.baseurl }}/assets/img/headshots/sprentice.jpg){: .img--left} ** Suzanne Prentice **  
+Oak Ridge National Laboratory
+
+Suzanne Prentice is a Software Engineer at Oak Ridge National Laboratory’s Leadership Computing Facility, the OLCF, where researchers from around the world apply for time on some of the largest HPC systems. Suzanne works on the center's resource allocation tracking system, self-service portal, and recently in response to emerging agentic scientific workloads the OLCF’s new Secure Scientific Service Mesh (S3M), a facility managed gateway to a wide range of API services that can be used to interact with the HPC systems and resources programmatically. Lastly, she has also been helping to develop software for the American Science Cloud in support of the Department of Energy's Genesis AI Mission.
+
+![Alec Scott]({{ site.baseurl }}/assets/img/headshots/ascott.jpg){: .img--left} ** Alec Scott **  
+Lawrence Livermore National Laboratory
+
+Alec Scott is a computer scientist at Lawrence Livermore National Laboratory (LLNL), where he works on the Spack package manager, tooling for reproducible development environments, and continuous integration systems for HPC workflows. As part of his focus on continuous integration, Alec leads the Hubcast project at LLNL, building secure CI/CD systems to integrate open-source projects with flagship HPC computing capabilities. Before joining LLNL in 2022, Alec worked extensively with container technologies, distributed file systems, and massively parallel simulations.{% endcapture %}{{ abstract_md | markdownify }}</div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
