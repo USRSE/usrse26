@@ -325,7 +325,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Room: San Jose Marriott
 - Type: Break
 - Concurrent with: Job Fair (10am–3:30pm, Market Street)
-- About: US-RSE Office Hours
+- About: US-RSE Office Hours; Group photo directly following plenary
 
 ### 10am–3:30pm — Job Fair
 
