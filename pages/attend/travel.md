@@ -74,3 +74,8 @@ Additional evening reception events with some food and drinks will also be held 
 
 * **Public transit:**
   If you are looking to explore more of the bay (such as San Francisco or Oakland), there are several options, including [VTA](https://www.vta.org), [BART](https://www.bart.gov), [MUNI](https://www.sfmta.com), [Caltrain](https://www.caltrain.com), and [Amtrak](https://www.amtrak.com/capitol-corridor-train)
+
+## Parking
+
+* **Valet at the [San Jose Marriott](https://www.marriott.com/en-us/hotels/sjcsj-san-jose-marriott/overview/what-to-expect/):** $65/day.
+* **Self parking at the [Convention Center Garage](https://parksj.org/convention-center-garage/):** $1 per 15 minutes, up to $30/day. The garage is open 24 hours, connects directly to the Marriott, and has entrances on South Market Street and South Almaden Boulevard (150 W. San Carlos Street, [Google Maps](https://www.google.com/maps/search/?api=1&query=Convention+Center+Garage%2C+150+W+San+Carlos+St%2C+San+Jose%2C+CA+95113)).
