@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 50 sessions, 83 talks (83 with published
+> in the Age of AI". 3 days, 51 sessions, 83 talks (83 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -575,7 +575,15 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Time: 2026-10-20T18:00:00-07:00 to 2026-10-20T20:00:00-07:00 (120 min)
 - Room: San Jose Marriott
 - Type: Meal
-- Concurrent with: nothing (the only session at this time)
+- Concurrent with: Board Game Night (7:30–11pm, Market Street)
+
+### 7:30–11pm — Board Game Night
+
+- Time: 2026-10-20T19:30:00-07:00 to 2026-10-20T23:00:00-07:00 (210 min)
+- Room: Market Street
+- Type: Break
+- Concurrent with: Dinner (6–8pm, San Jose Marriott)
+- About: Enjoy some board games and puzzles from the committee's personal collections in the Market Street room after dinner. Marriott will be providing a cash bar for attendees to purchase drinks and snacks throughout the evening.
 
 ## Wednesday, October 21, 2026
 
