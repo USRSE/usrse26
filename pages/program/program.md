@@ -19,7 +19,7 @@ Pending sponsorship, we're also planning a conference dinner and decision-maker 
 
 All times are US Pacific (PDT).
 
-**NOTE:** *For technical sessions consisting of only three talks, to be fair to all conference authors, every talk will still receive the standard twenty minute slot. Attendees of such sessions are welcome to engage in extended discussion during the remaining time.*
+**NOTE:** *For technical sessions consisting of only three talks, to be fair to all conference authors, every talk will still receive the standard twenty minute slot (15min talk + 5min Q&A). Attendees of such sessions are welcome to engage in extended discussion during the remaining time.*
 
 
 <div class="program-links">
