@@ -15,49 +15,65 @@ set_last_modified: true
 Contact the organizers: [{{ site.conf_exec_email }}](mailto:{{ site.conf_exec_email }})
 
 ## Committees
-### Technical Program Committee  
-*Contact: [usrse26-tech-committee@us-rse.org](mailto:usrse26-tech-committee@us-rse.org)* 
+
+### Technical Program Committee
+
+*Contact: [usrse26-tech-committee@us-rse.org](mailto:usrse26-tech-committee@us-rse.org)*
 
 #### Technical Program Chairs
-  * Drew Paine, Lawrence Berkeley National Laboratory  
-  * Hilario Torres, NSF NCAR  
 
-#### Committee Members  
-  * Papers: Shailaja Sampat & William Godoy  
-  * Publications: Patrick Diehl (Los Alamos National Laboratory), Dan Gunter  
-  * Talks: Adam Rubens (NYU Langone Health), Anas AlSobeh  
-  * Notebooks: Yuxi (Ethan) Cui, Primus Kabuo  
-  * Birds of a Feather (BoFs):Brian Kyanjo, Vani Walvekar  
-  * Workshops: Johannah (Hannah) Cohoon, Kate Arneson  
-  * Posters: Jake Stevens-Haas, Ellianna Abrahams
+- Drew Paine, Lawrence Berkeley National Laboratory
+- Hilario Torres, NSF NCAR
+
+#### Committee Members
+
+- Papers: Shailaja Sampat & William Godoy
+- Publications: Patrick Diehl (Los Alamos National Laboratory), Dan Gunter
+- Talks: Adam Rubens (NYU Langone Health), Anas AlSobeh
+- Notebooks: Yuxi (Ethan) Cui, Primus Kabuo
+- Birds of a Feather (BoFs): Brian Kyanjo, Vani Walvekar
+- Workshops: Johannah (Hannah) Cohoon, Kate Arneson
+- Posters: Jake Stevens-Haas, Ellianna Abrahams
 
 Volunteers who reviewed for the technica program tracks can be found on our [Reviewers](../reviewers) page.
 
 ### Sponsorship Chairs
 
-* Miranda Mundt, Sandia National Laboratory
-* Sandra Gesing, US-RSE
+- Miranda Mundt, Sandia National Laboratory
+- Sandra Gesing, US-RSE
 
 ### Student Chairs
 
-* Scott Michael, Indiana University
-* Stephanie Brink, Lawrence Livermore National Laboratory
+- Scott Michael, Indiana University
+- Stephanie Brink, Lawrence Livermore National Laboratory
+
+#### Student Committee Members
+
+- Laura Huber, Indiana University
+- Hasti Mehta, Aprio
 
 ### Communications Chairs
 
-* J.C. Subida, Northwestern University
-* Suzanne Prentice, Oak Ridge National Laboratory
+- J.C. Subida, Northwestern University
+- Suzanne Prentice, Oak Ridge National Laboratory
 
 ### Logistics Chairs
 
-* Ryan Ly, Lawrence Berkeley National Laboratory
-* Julie Barnum, University of Colorado Boulder
-* Anibely Torres, Oak Ridge National Laboratory
+- Ryan Ly, Lawrence Berkeley National Laboratory
+- Julie Barnum, University of Colorado Boulder
+- Anibely Torres, Oak Ridge National Laboratory
+
+#### Logistics Committee Members
+
+- Oana Vesa, Stanford University
+- Lisa Yanello, University of Illinois, Urbana-Champaign
+- Christian Tabedzki, Princeton University
+- Blake Joyce, BioTeam
 
 ### Community Engagement Chairs
 
-* Cordero Core, University of Washington
-* Jennifer Gregory, University of Michigan 
+- Cordero Core, University of Washington
+- Jennifer Gregory, University of Michigan
 
 ## Contact
 
