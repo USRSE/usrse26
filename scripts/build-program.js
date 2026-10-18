@@ -1290,7 +1290,7 @@ function renderAbstractEntry(e, pad) {
     body.push(`{% capture abstract_md %}${escDescription(e.infoMd)}{% endcapture %}{{ abstract_md | markdownify }}`);
   }
   if (e.meta && e.meta.length) {
-    const links = e.meta.map((m) => `<a href="${esc(m.href)}">${esc(m.text)}</a>`).join(' · ');
+    const links = e.meta.map((m) => `<a href="${esc(m.href)}" target="_blank" rel="noopener">${esc(m.text)}</a>`).join(' · ');
     body.push(`<p class="abstract__meta">${links}</p>`);
   }
   return [
