@@ -1,32 +1,38 @@
 section_title: "Advancing Science in the Age of AI"
 section_subtitle: "Explore how RSEs and collaborators increase research impact during these rapidly changing times"
 items:
-  - title: Register
-    subtitle: "Register to attend USRSE'26"
-    description: "Join us for three days to share your work and learn from others."
+  - title: Program
+    subtitle: "Full conference schedule"
+    description: "Browse sessions, talks, posters, and keynotes. All times are US Pacific (PDT)."
+    link: program/
+    link_name: View the program
+
+  - title: Plan Your Schedule
+    subtitle: "Four parallel tracks"
+    description: "Hand the program to your AI assistant and build a personal schedule."
+    link: program/plan-with-ai/
+    link_name: Plan with AI
+
+  - title: Venue Map
+    subtitle: "San Jose Marriott"
+    description: "Find your way to session rooms, posters, and breaks."
+    link: pages/program/venue-map.pdf
+    link_name: View the map
+
+  - title: Getting There
+    subtitle: "Travel and parking"
+    description: "Directions, parking, and local information for San Jose."
+    link: attend/travel/
+    link_name: Travel info
+
+  - title: Late Registration
+    subtitle: "Still open through October 21"
+    description: "It's not too late to join us for USRSE'26."
     link: attend/registration/
     link_name: Register now
 
-  - title: Sponsor
-    subtitle: "Support the RSE community"
-    description: "Help make USRSE'26 possible. View our sponsorship packages."
-    link: /sponsor/
-    link_name: Become a Sponsor
-
-  - title: Hotel Block
-    subtitle: "Book your stay at the San Jose Marriott or the Hyatt Place San Jose"
-    description: "Secure your stay in the room block."
-    link: attend/travel/
-    link_name: Book your room
-
-  - title: Mailing List
-    subtitle: "Stay up to date"
-    description: "Join the USRSE'26 mailing list to receive updates about the conference, including important dates and announcements."
-    link: "https://groups.google.com/a/us-rse.org/g/usrse-conference"
-    link_name: Join the Mailing List
-
   - title: Questions?
     subtitle: "Get in touch"
-    description: "Have questions about USRSE'26? Reach out to the conference organizers and we'll be happy to help."
+    description: "Find an organizer on site or email us. All attendees are expected to follow our code of conduct."
     link: "mailto:usrse26-conference@us-rse.org"
     link_name: Contact Us
