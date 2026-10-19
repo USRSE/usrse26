@@ -18,6 +18,7 @@ set_last_modified: true
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="careers-in-rse-experiences-from-research-software-engineers-across-industry-academia-and-laboratories">
         <span class="abstract__title">Careers in RSE: Experiences from Research Software Engineers Across Industry, Academia, and Laboratories</span>
+        <span class="abstract__when">Monday, October 19 · <time datetime="2026-10-19T10:30:00-07:00">10:30</time>–<time datetime="2026-10-19T11:30:00-07:00">11:30am</time> · San Jose Ballroom Salon 3 &amp; 4</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}This panel session will delve into the nuances in Research Software Engineers’ experiences across industry, academia, and laboratories, focusing on how each environment shapes funding, benefits, daily work, and career trajectories. Panelists will give brief introductions and then respond to guided questions, followed by an open Q&amp;A. Designed with students and early-career RSEs in mind, the session is open to all.
@@ -62,6 +63,7 @@ Alec Scott is a computer scientist at Lawrence Livermore National Laboratory (LL
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="usrse-26-mentor-mentee-lunch">
         <span class="abstract__title">USRSE'26 Mentor/Mentee Lunch</span>
+        <span class="abstract__when">Monday, October 19 · <time datetime="2026-10-19T12:00:00-07:00">12</time>–<time datetime="2026-10-19T13:30:00-07:00">1:30pm</time> · San Jose Marriott</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Join us for a mentor-mentee lunch connecting experienced mentors with students and early career attendees looking to grow in their careers. Grab a plate, find your seat at one of our reserved tables, and dive into candid conversations about navigating RSE career paths and lessons learned along the way. Advanced sign-ups required during registration, we will connect the mentor-mentee pairs just before the conference. This lunch is also for Mentorship Program participants as an opportunity to meet at the conference.{% endcapture %}{{ abstract_md | markdownify }}</div>
@@ -71,6 +73,7 @@ Alec Scott is a computer scientist at Lawrence Livermore National Laboratory (LL
       <h2 class="abstract__heading" id="agents-on-a-ramen-budget-token-smart-agentic-workflows-with-local-models">
         <span class="abstract__title">Agents on a Ramen Budget: Token-Smart Agentic Workflows with Local Models</span>
         <span class="abstract__people">Julian Pistorus</span>
+        <span class="abstract__when">Tuesday, October 20 · <time datetime="2026-10-20T10:30:00-07:00">10:30</time>–<time datetime="2026-10-20T11:30:00-07:00">11:30am</time> · San Jose Ballroom Salon 3 &amp; 4</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Tuesday 10/20  
@@ -83,6 +86,7 @@ Running an agent locally means no API bill, but you pay in context windows, VRAM
       <h2 class="abstract__heading" id="tokens-are-the-new-compute-hours-managing-commercial-ai-costs-on-a-student-budget">
         <span class="abstract__title">Tokens Are the New Compute Hours: Managing Commercial AI Costs on a Student Budget</span>
         <span class="abstract__people">Hasti Mehta</span>
+        <span class="abstract__when">Tuesday, October 20 · <time datetime="2026-10-20T10:30:00-07:00">10:30</time>–<time datetime="2026-10-20T11:30:00-07:00">11:30am</time> · San Jose Ballroom Salon 3 &amp; 4</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Tuesday 10/20  

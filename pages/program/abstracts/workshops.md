@@ -19,6 +19,7 @@ set_last_modified: true
       <h2 class="abstract__heading" id="a-group-attempt-at-threat-modeling-for-research-software-systems">
         <span class="abstract__title">A Group Attempt at Threat Modeling for Research Software Systems</span>
         <span class="abstract__people">James Davis, George K. Thiruvathukal, Jeffrey Carver, Kelechi G Kalu and Alexandra Harris-Watson</span>
+        <span class="abstract__when">Monday, October 19 · <time datetime="2026-10-19T13:30:00-07:00">1:30</time>–<time datetime="2026-10-19T15:00:00-07:00">3pm</time> · Willow Glen Room</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Research software environments must reach an increasingly high standard for security. But we all know that “security” is hard to measure. The typical method is threat modeling, in which one constructs a system model, identifies attackers and their capabilities, and looks for ways in which the system can be hardened to prevent or mitigate attacks. However, threat modeling remains challenging to apply effectively in the context of RSEs, whose operating environments involve complex, distributed environments, intricate dependencies, and emerging concerns related to software agents. Many in the community feel there are latent "vulnerabilities" but lack a clear notion of the actual threat surface.
@@ -32,6 +33,7 @@ Participants are expected to bring a laptop.{% endcapture %}{{ abstract_md | mar
       <h2 class="abstract__heading" id="journey-mapping-a-technique-to-see-opportunities-and-recognize-gaps-in-user-experience">
         <span class="abstract__title">Journey Mapping: A technique to see opportunities and recognize gaps in user experience</span>
         <span class="abstract__people">Johanna Cohoon, Rajshree Deshmukh, Md Hasan Shahriar Simanto, Mary Goldman, Katrina Turner, Sarah Poon</span>
+        <span class="abstract__when">Tuesday, October 20 · <time datetime="2026-10-20T13:30:00-07:00">1:30</time>–<time datetime="2026-10-20T15:00:00-07:00">3pm</time> · San Jose Ballroom Salon 1 &amp; 2</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}Do you want to improve how users interact with your product or organization? By creating a journey map, you can recognize opportunities to improve the user's experience, increase their satisfaction, and create vital documentation for your development team. Journey maps are chronological narratives that visualize interactions between users and products or organizations. Additionally, journey maps can be valuable tools for building empathy with users and are appropriate for use at any point during your development lifecycle. Journey maps compel their authors to consider each step of a workflow in detail, making it easy to see when user experience drops off and when an interface can be simplified or made more predictable. This hands-on workshop will teach you how to create a journey map of your own and how it can be used to identify opportunities to improve user experience. Bring your computer.{% endcapture %}{{ abstract_md | markdownify }}</div>
@@ -41,6 +43,7 @@ Participants are expected to bring a laptop.{% endcapture %}{{ abstract_md | mar
       <h2 class="abstract__heading" id="fixer-upper-software-refactoring-code-for-reuse-and-impact">
         <span class="abstract__title">Fixer-Upper Software: Refactoring Code for Reuse and Impact</span>
         <span class="abstract__people">Brian Ward and Jeff Soules</span>
+        <span class="abstract__when">Tuesday, October 20 · <time datetime="2026-10-20T13:30:00-07:00">1:30</time>–<time datetime="2026-10-20T15:00:00-07:00">3pm</time> · Willow Glen Room</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}An all-too-common life cycle of research software begins with enthusiasm and momentum, generating (whether by agent or by postdoc) a lot of code for a specific problem, only to go dormant when interest moves to a slightly different research problem or a key contributor leaves the project. The resulting code base either becomes a brittle fossil whose eventual failure everyone dreads, or is thrown away entirely, leaving the team to reinvent the same solutions for the next project. How can that work be reused?
