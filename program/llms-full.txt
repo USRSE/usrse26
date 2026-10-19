@@ -784,6 +784,7 @@ Abstract:
 - Format: Talk
 - Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
 - Abstract page: https://us-rse.org/usrse26/program/talks/#research-software-engineering-in-the-age-of-generative-ai
+- DOI: https://doi.org/10.5281/zenodo.23485433
 
 Abstract:
 
