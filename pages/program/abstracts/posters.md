@@ -744,7 +744,7 @@ Running the AI agents on a shared HPC machine took environment and dependency wr
 
 We report per-run decision-gate metrics: correctness (model identified, program compiled and ran, convergence order), efficiency (execution duration, LLM / tool calls), and where human effort went (as a lightweight, reusable way to evaluate an agentic workflow rather than merely admire its output). The contribution is a candid, verification-driven account of how a research software engineer can wrap multi-agent AI code generation so that it produces trustworthy HPC simulation code for a flagship fusion-energy problem, and of the guardrails needed when it does not.
 
-In future work, we will raise the simulation difficulty to nonlinear profiles, time-dependent and resistive magnetohydrodynamics, and three-dimensional tokamak plasma, to map where the system succeeds and where it breaks, and to design guardrails and human-in-the-loop checkpoints that keep engineers in control as problems get harder.{% endcapture %}{{ abstract_md | markdownify }}</div>
+In future work, we will raise the simulation difficulty to nonlinear profiles, time-dependent and resistive magnetohydrodynamics, and three-dimensional tokamak plasma, to map where the system succeeds and where it breaks, and to design guardrails and human-in-the-loop checkpoints that keep engineers in control as problems get harder.{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.23472212" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23472212</a></p></div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
