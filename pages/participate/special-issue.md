@@ -49,9 +49,9 @@ Dates will be announced soon once final coordination with the journal is complet
 ## Requirements
 
 * Only accepted talks and papers to USRSE'26 are invited to submit to the special issue.
-* The accepted papers **need** to be extended with **40%** new content.
+* Accepted work **must** be extended with at least **40%** new content.
   * In the case of conference talks which submitted solely an abstract you must write a full paper if submitting to the special issue. *We highly suggest discussing your work with the Special Issue Editors before undertaking any work.*
-  * We are unable to publish computational notebooks in the special issue. bAuthors may choose to write a full paper about their work based on their notebook. *We highly suggest discussing your work with the Special Issue Editors before undertaking any work.*
+  * We are unable to publish computational notebooks in the special issue. Authors may choose to write a full paper about their work based on their notebook. *We highly suggest discussing your work with the Special Issue Editors before undertaking any work.*
 * We will try to have at least one reviewer of the conference paper as a reviewer for the journal paper to assist with the decision.
 * The journal submission will undergo a separate evaluation process from the conference paper and **acceptance is not guaranteed.**
 
