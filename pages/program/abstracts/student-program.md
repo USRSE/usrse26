@@ -42,7 +42,7 @@ Associate Professor, Statistics; Faculty Scientist, Lawrence Berkeley National L
 
 Fernando Pérez is faculty at UC Berkeley Statistics and a scientist at LBNL. Trained in physics, he builds open tools for science and education; he created IPython and co-founded Project Jupyter. His research focuses on open, reproducible science and scientific uses of AI for problems in earth and the environment, and biomedicine. He directs the Berkeley Institute for Data Science (BIDS) and co-directs the Eric and Wendy Schmidt Data Science &amp; Environment Center (DSE). He co-founded 2i2c.org and NumFOCUS.
 
-![Julian Pistorus]({{ site.baseurl }}/assets/img/headshots/jpistorus.jpeg){: width="3024" height="4032" .img--left} **Julian Pistorus**  
+![Julian Pistorius]({{ site.baseurl }}/assets/img/headshots/jpistorus.jpeg){: width="3024" height="4032" .img--left} **Julian Pistorius**  
 Indiana University, Research Bazaar Arizona, and Exosphere Project
 
 Helping researchers has been Julian's vocation and avocation for more than a decade. Before that he worked as a software engineer in startups and enterprises. Currently he works at IU supporting researchers using internal cloud platforms as well as those using Jetstream2 - an NSF research cloud. He serves as one of the maintainers of Exosphere, an open-source user interface for cloud computing. 

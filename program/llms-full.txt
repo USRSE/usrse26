@@ -119,7 +119,7 @@ Abstract:
 >
 > Fernando Pérez is faculty at UC Berkeley Statistics and a scientist at LBNL. Trained in physics, he builds open tools for science and education; he created IPython and co-founded Project Jupyter. His research focuses on open, reproducible science and scientific uses of AI for problems in earth and the environment, and biomedicine. He directs the Berkeley Institute for Data Science (BIDS) and co-directs the Eric and Wendy Schmidt Data Science & Environment Center (DSE). He co-founded 2i2c.org and NumFOCUS.
 >
-> ![Julian Pistorus](https://us-rse.org/usrse26/assets/img/headshots/jpistorus.jpeg) **Julian Pistorus**
+> ![Julian Pistorius](https://us-rse.org/usrse26/assets/img/headshots/jpistorus.jpeg) **Julian Pistorius**
 > Indiana University, Research Bazaar Arizona, and Exosphere Project
 >
 > Helping researchers has been Julian's vocation and avocation for more than a decade. Before that he worked as a software engineer in startups and enterprises. Currently he works at IU supporting researchers using internal cloud platforms as well as those using Jetstream2 - an NSF research cloud. He serves as one of the maintainers of Exosphere, an open-source user interface for cloud computing. 
@@ -702,7 +702,7 @@ Abstract:
 >
 > ![Carol Song](https://us-rse.org/usrse26/assets/img/headshots/song.jpg) **Carol Song**
 >
-> Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue
+> Chief Scientist in Rosen Center for Advanced Computing (RCAC) at Purdue
 >
 > Dr. Carol Song is the chief scientist of the Rosen Center for Advanced Computing at Purdue University, and serves as Director of Purdue RSE Center. She has more than 20 years of experience in high-performance and distributed computing, and in recent years, dedicated her efforts on research software engineering that bridges domain scientists to advanced cyberinfrastructure. Carol currently leads the NSF-funded Anvil HPC system and StreamCI data framework projects, which supports tens of thousands of researchers, students and science gateways nationwide. She earned her PhD degree in computer science from the University of Illinois Urbana-Champaign.
 >

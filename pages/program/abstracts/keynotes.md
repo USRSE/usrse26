@@ -42,7 +42,7 @@ Dr. Lavanya Ramakrishnan is a computer scientist and senior technology leader sp
 
 ![Carol Song]({{ site.baseurl }}/assets/img/headshots/song.jpg){: width="400" height="400" .img--left} **Carol Song**
 
-Chief Scientist and director of the Scientific Solutions Group in Rosen Center for Advanced Computing (RCAC) at Purdue
+Chief Scientist in Rosen Center for Advanced Computing (RCAC) at Purdue
 
 Dr. Carol Song is the chief scientist of the Rosen Center for Advanced Computing at Purdue University, and serves as Director of Purdue RSE Center. She has more than 20 years of experience in high-performance and distributed computing, and in recent years, dedicated her efforts on research software engineering that bridges domain scientists to advanced cyberinfrastructure. Carol currently leads the NSF-funded Anvil HPC system and StreamCI data framework projects, which supports tens of thousands of researchers, students and science gateways nationwide. She earned her PhD degree in computer science from the University of Illinois Urbana-Champaign.
 
