@@ -30,11 +30,13 @@ Topics of interest include (but are not limited to) the following, with preferen
 Some examples of specific new challenges and opportunities in the current age of AI are: how AI changes the skills and responsibilities of research software engineers; challenges in the integration of LLMs into scientific research workflows; privacy, security, licensing, and attribution in AI-assisted development; and organizational policies for responsible use of generative AI.
 
 ## Editorial board
-If you have questions please contact the Special Issue Editors:
+If you have questions or wish to confirm your work is eligible to be submitted please contact the Special Issue Editors:
 
 * Patrick Diehl, Los Alamos National Laboratory 
 * Dan Gunter, Lawrence Berkeley National Laboratory 
 * Chen Zhang, Oak Ridge National Laboratory
+
+You may contact them at <a href="mailto:usrse26-publications@us-rse.org">usrse26-publications - at - us-rse.org</a>.
 
 ## Important dates
 Dates will be announced soon once final coordination with the journal is completed.
@@ -48,9 +50,10 @@ Dates will be announced soon once final coordination with the journal is complet
 
 * Only accepted talks and papers to USRSE'26 are invited to submit to the special issue.
 * The accepted papers **need** to be extended with **40%** new content.
-  * In the case of talks, you must write a full paper and we suggest discussing your work with the Special Issue Editors before proceeding.
+  * In the case of conference talks which submitted solely an abstract you must write a full paper if submitting to the special issue. *We highly suggest discussing your work with the Special Issue Editors before undertaking any work.*
+  * We are unable to publish computational notebooks in the special issue. bAuthors may choose to write a full paper about their work based on their notebook. *We highly suggest discussing your work with the Special Issue Editors before undertaking any work.*
 * We will try to have at least one reviewer of the conference paper as a reviewer for the journal paper to assist with the decision.
-* The journal submission will undergo a separate evaluation process from the conference paper and acceptance is not guaranteed.
+* The journal submission will undergo a separate evaluation process from the conference paper and **acceptance is not guaranteed.**
 
 ## Submission details
 
@@ -60,4 +63,3 @@ Please follow the [submission guidelines](https://www.sciencedirect.com/journal/
 
 * Research software engineering – [code, practices, and people](https://www.sciencedirect.com/science/article/pii/S0167739X26004516), Future Generation Computer Systems, USRSE'25.
 * Research Software Engineering – [Software-Enabled Discovery and Beyond](https://www.sciencedirect.com/special-issue/10GXQ2MQKBW), Future Generation Computer Systems, USRSE'23.
-
