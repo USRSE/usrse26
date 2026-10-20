@@ -49,9 +49,12 @@ Dr. Carol Song is the chief scientist of the Rosen Center for Advanced Computing
 **Curtis Hillegas**  
 Senior Associate Dean, Research Computing, Princeton
 
+Curt Hillegas is Senior Associate Dean, Research Computing at Princeton University in the Office of the Dean for Research. He has helped to build a centrally managed research computing infrastructure that includes more than 50 PFLOPS of computational systems, over 100 PB of shared storage, and a world class visualization lab as well as staffing for system and storage administration, programming, training, visualization support, and Research Software Engineering. He has been an active member of the national RCD community having served in leadership positions in the Coalition for Academic Scientific Computation (CASC), a number of generations of what is now the EDUCAUSE Research Computing and Data Community Group (RCD CG), and as a general co-chair for USRSE25. Dr. Hillegas received his B.S. in Chemistry from Lehigh University and his M.A. and Ph.D. in Chemistry from Princeton University.
 
 **Zach Chandler**  
 Director of Open Source Strategy, Stanford Human-Centered AI
+
+Zach Chandler is the director of the Stanford University OSPO, and of open source strategy in the Stanford Institute for Human-Centered AI. His work includes advocacy for research software as a first-class research output, and he is currently leading a project for HELIOS Open related to how values-aligned external reviewer guidance can support incentivization of open science practices in promotion and tenure evaluation.
 
 ![Akshay Agrawal]({{ site.baseurl }}/assets/img/headshots/agrawal.jpeg){: width="200" height="200" .img--left} **Akshay Agrawal**  
 Creator/maintainer of the marimo open-source project
