@@ -1,5 +1,8 @@
 - name: Participate
   link: participate/
+  dropdown:
+    - name: Journal Special Issue
+      link: participate/special-issue/
 - name: Program
   link: program/
 - name: Attend
