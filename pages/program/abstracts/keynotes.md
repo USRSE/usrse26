@@ -33,7 +33,7 @@ Fernando regularly lectures about scientific computing, data science and open sc
     <div class="abstract__body">{% capture abstract_md %}A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, its current state, what the future looks like, and how we may shape that future.
 
 
-**Lavanya Ramakrishnan**  
+![Lavanya Ramakrishnan]({{ site.baseurl }}/assets/img/headshots/lramakrishnan.jpg){: width="400" height="400" .img--left} **Lavanya Ramakrishnan**  
 Founder, Kinetic Strata; Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab
 
 Dr. Lavanya Ramakrishnan is a computer scientist and senior technology leader specializing in high-performance computing (HPC) and distributed/cloud workflows, complex data systems, AI, and user research. She currently operates through Kinetic Strata, focusing on strategic and technical consulting. Dr. Ramakrishnan recently concluded a 16.5-year career at Lawrence Berkeley National Laboratory, where she served as Senior Scientist and Division Deputy of the Scientific Data Division. Dr. Ramakrishnan’s work has focused on integrating social science with software design and user research, collaborating across various scientific domains. She also served as the Deputy Project Director for the High Performance Data Facility (HPDF). She holds a Ph.D. in Computer Science from Indiana University Bloomington.
@@ -44,12 +44,15 @@ Chief Scientist and director of the Scientific Solutions Group in Rosen Center f
 
 Dr. Carol Song is the chief scientist of the Rosen Center for Advanced Computing at Purdue University, and serves as Director of Purdue RSE Center. She has more than 20 years of experience in high-performance and distributed computing, and in recent years, dedicated her efforts on research software engineering that bridges domain scientists to advanced cyberinfrastructure. Carol currently leads the NSF-funded Anvil HPC system and StreamCI data framework projects, which supports tens of thousands of researchers, students and science gateways nationwide. She earned her PhD degree in computer science from the University of Illinois Urbana-Champaign.
 
-**Curtis Hillegas**  
+![Curt Hillegas]({{ site.baseurl }}/assets/img/headshots/chillegas.jpg){: width="400" height="400" .img--left} **Curtis Hillegas**  
 Senior Associate Dean, Research Computing, Princeton
 
+Curt Hillegas is Senior Associate Dean, Research Computing at Princeton University in the Office of the Dean for Research. He has helped to build a centrally managed research computing infrastructure that includes more than 50 PFLOPS of computational systems, over 100 PB of shared storage, and a world class visualization lab as well as staffing for system and storage administration, programming, training, visualization support, and Research Software Engineering. He has been an active member of the national RCD community having served in leadership positions in the Coalition for Academic Scientific Computation (CASC), a number of generations of what is now the EDUCAUSE Research Computing and Data Community Group (RCD CG), and as a general co-chair for USRSE25. Dr. Hillegas received his B.S. in Chemistry from Lehigh University and his M.A. and Ph.D. in Chemistry from Princeton University.
 
-**Zach Chandler**  
+![Zach Chandler]({{ site.baseurl }}/assets/img/headshots/zchandler.jpg){: width="350" height="350" .img--left} **Zach Chandler**  
 Director of Open Source Strategy, Stanford Human-Centered AI
+
+Zach Chandler is the director of the Stanford University OSPO, and of open source strategy in the Stanford Institute for Human-Centered AI. His work includes advocacy for research software as a first-class research output, and he is currently leading a project for HELIOS Open related to how values-aligned external reviewer guidance can support incentivization of open science practices in promotion and tenure evaluation.
 
 ![Akshay Agrawal]({{ site.baseurl }}/assets/img/headshots/agrawal.jpeg){: width="200" height="200" .img--left} **Akshay Agrawal**  
 Creator/maintainer of the marimo open-source project

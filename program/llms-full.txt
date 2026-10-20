@@ -695,7 +695,7 @@ Abstract:
 > A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, its current state, what the future looks like, and how we may shape that future.
 >
 >
-> **Lavanya Ramakrishnan**
+> ![Lavanya Ramakrishnan](https://us-rse.org/usrse26/assets/img/headshots/lramakrishnan.jpg) **Lavanya Ramakrishnan**
 > Founder, Kinetic Strata; Former Division Deputy in the Scientific Data Division at Lawrence Berkeley National Lab
 >
 > Dr. Lavanya Ramakrishnan is a computer scientist and senior technology leader specializing in high-performance computing (HPC) and distributed/cloud workflows, complex data systems, AI, and user research. She currently operates through Kinetic Strata, focusing on strategic and technical consulting. Dr. Ramakrishnan recently concluded a 16.5-year career at Lawrence Berkeley National Laboratory, where she served as Senior Scientist and Division Deputy of the Scientific Data Division. Dr. Ramakrishnan’s work has focused on integrating social science with software design and user research, collaborating across various scientific domains. She also served as the Deputy Project Director for the High Performance Data Facility (HPDF). She holds a Ph.D. in Computer Science from Indiana University Bloomington.
@@ -706,12 +706,15 @@ Abstract:
 >
 > Dr. Carol Song is the chief scientist of the Rosen Center for Advanced Computing at Purdue University, and serves as Director of Purdue RSE Center. She has more than 20 years of experience in high-performance and distributed computing, and in recent years, dedicated her efforts on research software engineering that bridges domain scientists to advanced cyberinfrastructure. Carol currently leads the NSF-funded Anvil HPC system and StreamCI data framework projects, which supports tens of thousands of researchers, students and science gateways nationwide. She earned her PhD degree in computer science from the University of Illinois Urbana-Champaign.
 >
-> **Curtis Hillegas** 
+> ![Curt Hillegas](https://us-rse.org/usrse26/assets/img/headshots/chillegas.jpg) **Curtis Hillegas** 
 > Senior Associate Dean, Research Computing, Princeton
 >
+> Curt Hillegas is Senior Associate Dean, Research Computing at Princeton University in the Office of the Dean for Research. He has helped to build a centrally managed research computing infrastructure that includes more than 50 PFLOPS of computational systems, over 100 PB of shared storage, and a world class visualization lab as well as staffing for system and storage administration, programming, training, visualization support, and Research Software Engineering. He has been an active member of the national RCD community having served in leadership positions in the Coalition for Academic Scientific Computation (CASC), a number of generations of what is now the EDUCAUSE Research Computing and Data Community Group (RCD CG), and as a general co-chair for USRSE25. Dr. Hillegas received his B.S. in Chemistry from Lehigh University and his M.A. and Ph.D. in Chemistry from Princeton University.
 >
-> **Zach Chandler**
+> ![Zach Chandler](https://us-rse.org/usrse26/assets/img/headshots/zchandler.jpg) **Zach Chandler**
 > Director of Open Source Strategy, Stanford Human-Centered AI
+>
+> Zach Chandler is the director of the Stanford University OSPO, and of open source strategy in the Stanford Institute for Human-Centered AI. His work includes advocacy for research software as a first-class research output, and he is currently leading a project for HELIOS Open related to how values-aligned external reviewer guidance can support incentivization of open science practices in promotion and tenure evaluation.
 >
 > ![Akshay Agrawal](https://us-rse.org/usrse26/assets/img/headshots/agrawal.jpeg) **Akshay Agrawal**
 > Creator/maintainer of the marimo open-source project
@@ -784,6 +787,7 @@ Abstract:
 - Format: Talk
 - Presenters: Christina Maimone, Sandra Gesing, Ian Cosden, Daniel S. Katz and Stephan Druskat
 - Abstract page: https://us-rse.org/usrse26/program/talks/#research-software-engineering-in-the-age-of-generative-ai
+- DOI: https://doi.org/10.5281/zenodo.23485433
 
 Abstract:
 
@@ -1556,7 +1560,7 @@ Abstract:
 - Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
 - Room: San Jose Ballroom Salon 1 & 2
 - Type: Talks
-- Chair: Pengyin Shan
+- Chair: Tinashe Michael Tapera
 - Concurrent with: Reflections on RSE Roles & Pathways (1:30–3pm, San Jose Ballroom Salon 5 & 6); Building Infrastructure for Communities or Organizations (1:30–3pm, Willow Glen Room)
 
 #### AI-Augmented Research Software Engineering: Risks, Challenges, and Practices
@@ -1656,7 +1660,7 @@ Abstract:
 - Time: 2026-10-21T13:30:00-07:00 to 2026-10-21T15:00:00-07:00 (90 min)
 - Room: Willow Glen Room
 - Type: Talks
-- Chair: Tinashe Michael Tapera
+- Chair: Pengyin Shan
 - Concurrent with: RSE Practices in the Age of AI Part II (1:30–3pm, San Jose Ballroom Salon 1 & 2); Reflections on RSE Roles & Pathways (1:30–3pm, San Jose Ballroom Salon 5 & 6)
 
 #### From Lakehouse to Labmate: KBase’s Vision for AI-Enabled Scientific Discovery
