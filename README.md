@@ -104,7 +104,8 @@ the Posters page — to the entry whose slugified title matches its own, otherwi
 of the page — but never becomes an entry there. If the Posters tab is missing or renamed,
 the build fails rather than serving a stale page.
 
-Each abstract page lists its entries as collapsed rows carrying the title and byline, with
+Each abstract page lists its entries as collapsed rows carrying the title, the byline, and the
+day, time, and room of the event's session (Posters entries have no session, so no time), with
 the abstract behind a native `<details>` disclosure. Below the abstract, a metadata line
 carries the DOI link when the row has one. An entry with no Event Description and no DOI
 renders as a plain row with no control to open. Every abstract page also gets the theme's

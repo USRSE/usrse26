@@ -182,6 +182,13 @@
   color: var(--abstract-muted);
 }
 
+.abstract__when {
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.4;
+  color: var(--abstract-ink);
+}
+
 /* Indented to the title column so the abstract reads as the heading's
    continuation, not a new block. */
 .abstract__body {
@@ -239,12 +246,13 @@
 
 /* --------------------------------------------------------------------------
    Sidebar contents list — every abstract page carries `menubar_toc`, so
-   the theme builds one link per entry from each heading's inner HTML. The byline span comes
-   along for the ride; the list wants titles only, so it is dropped here
-   (display:none also keeps it out of the link's accessible name).
+   the theme builds one link per entry from each heading's inner HTML. The byline and when
+   spans come along for the ride; the list wants titles only, so they are dropped here
+   (display:none also keeps them out of the link's accessible name).
    -------------------------------------------------------------------------- */
 
-.nav__list .abstract__people {
+.nav__list .abstract__people,
+.nav__list .abstract__when {
   display: none;
 }
 

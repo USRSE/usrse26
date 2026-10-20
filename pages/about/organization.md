@@ -69,6 +69,7 @@ Volunteers who reviewed for the technica program tracks can be found on our [Rev
 - Lisa Yanello, University of Illinois, Urbana-Champaign
 - Christian Tabedzki, Princeton University
 - Blake Joyce, BioTeam
+- Ellianna Abrahams, Stanford University
 
 ### Community Engagement Chairs
 

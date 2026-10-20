@@ -18,6 +18,7 @@ set_last_modified: true
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="fernando-p-rez">
         <span class="abstract__title">Fernando Pérez</span>
+        <span class="abstract__when">Monday, October 19 · <time datetime="2026-10-19T08:30:00-07:00">8:30</time>–<time datetime="2026-10-19T10:00:00-07:00">10am</time> · San Jose Ballroom Salon 3 &amp; 4</span>
       </h2>
     </summary>
     <div class="abstract__body"><img class="abstract__portrait" src="{{ site.baseurl }}/assets/img/perez.jpeg" alt="">{% capture abstract_md %}[Fernando Pérez](https://fernandoperez.org) is an Associate Professor in Statistics at UC Berkeley, Faculty Scientist at Lawrence Berkeley National Laboratory, faculty director of the Berkeley Institute for Data Science ([BIDS](https://bids.berkeley.edu)), and co-director of the Eric and Wendy Schmidt Center for Data Science &amp; Environment ([DSE](https://dse.berkeley.edu)). His research focuses on the intersection of interactive computing, open science, and AI-based tools for science, with a particular focus on questions related to the earth's cryosphere, climate change and environmental sustainability. He also co-leads [the JupyterHealth initiative that bring open source and AI into healthcare](http://jupyterhealth.org), in partnership with clinical and biomedical researchers. He created IPython while a graduate student in 2001 and co-founded its successor, [Project Jupyter](https://jupyter.org). At Berkeley, he also leads computing platforms at the Bakar Institute for Digital Materials for the Planet ([BIDMaP](https://bidmap.berkeley.edu)). Also an entrepreneur, he is a co-founder and CTO of [AIMATX](https://aimatx.ai), which uses AI tools to accelerate the discovery of novel materials for the economy of the future.
@@ -28,6 +29,7 @@ Fernando regularly lectures about scientific computing, data science and open sc
     <summary class="abstract__summary">
       <h2 class="abstract__heading" id="shaping-what-comes-next-the-rse-role-today-and-tomorrow">
         <span class="abstract__title">Shaping What Comes Next: The RSE Role Today and Tomorrow</span>
+        <span class="abstract__when">Tuesday, October 20 · <time datetime="2026-10-20T08:30:00-07:00">8:30</time>–<time datetime="2026-10-20T10:00:00-07:00">10am</time> · San Jose Ballroom Salon 3 &amp; 4</span>
       </h2>
     </summary>
     <div class="abstract__body">{% capture abstract_md %}A panel of experts in position of insight, from national labs, universities and industry, to have a meaningful discussion on the RSE role, its current state, what the future looks like, and how we may shape that future.
