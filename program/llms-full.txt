@@ -1631,6 +1631,7 @@ Abstract:
 - Format: Talk
 - Presenters: Miranda Mundt
 - Abstract page: https://us-rse.org/usrse26/program/talks/#bears-bottlenecks-and-bus-factors-why-embedded-rses-pay-off
+- DOI: https://doi.org/10.5281/zenodo.23547181
 
 Abstract:
 
