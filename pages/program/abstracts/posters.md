@@ -768,7 +768,7 @@ We are architecting and developing PALYIM research software modules focusing on 
 
 We introduce Preprint Bot [2], an open-source, AI-based utility that uses semantic search to identify new preprints that are relevant to a researcher’s interests. Users create profiles in which they upload previous publications that are of interest to them. Embeddings of these papers are created and stored using the SBERT package [3]. When new submissions are announced nightly, Preprint Bot performs a similarity search between the user’s corpus and the new submissions using FAISS [4]. Short, two- to three-sentence summaries of each of the top matches are generated using Llama [5] and posted to the user’s dashboard. Users are also notified of top matches via email. The source code for Preprint Bot is licensed under GPLv3 and available on GitHub. A freely available version is also hosted by the Syracuse University Open Source Program Office at preprint-bot.syr.edu, which currently serves several dozen researchers. All user data is kept private and secure since all dependencies are run locally and without external API calls.
 
-Preprint Bot illustrates how open-source AI-based tools can streamline the scientific process by improving researchers’ ability to discover new works.{% endcapture %}{{ abstract_md | markdownify }}</div>
+Preprint Bot illustrates how open-source AI-based tools can streamline the scientific process by improving researchers’ ability to discover new works.{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.23525182" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23525182</a></p></div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">
