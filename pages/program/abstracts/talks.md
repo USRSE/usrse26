@@ -762,7 +762,7 @@ AI as mentor for transitioning RSEs – For someone new to RSE practice, LLMs fi
 
 Learning in phases and separation of concerns – Separating the data science work from RSE craft is a legitimate way forward. Notebook-driven-development pushes knowledge creation forward, while RSE skills for tool creation can be picked up slowly in phases. I describe a deliberate phased approach: first infrastructure (package skeleton, git hooks, pkgdown sites, CI/CD), then software design (modular relational tables, tidy feature engineering, structured function APIs), then data validation (encoding domain assumptions using tools like pointblank), and eventually testing - with metamorphic and relationship-based tests as work in progress.
 
-The talk closes with an open question, connecting to the USRSE’25 keynote on correctness in research software (Cohen, 2025)[2, 3] : can LLMs generate tests that encode true domain logic i.e. metamorphic tests capturing relational and longitudinal constraints – or are they only useful for shallow code checks?{% endcapture %}{{ abstract_md | markdownify }}</div>
+The talk closes with an open question, connecting to the USRSE’25 keynote on correctness in research software (Cohen, 2025)[2, 3] : can LLMs generate tests that encode true domain logic i.e. metamorphic tests capturing relational and longitudinal constraints – or are they only useful for shallow code checks?{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.23669922" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23669922</a></p></div>
   </details>
   <details class="abstract">
     <summary class="abstract__summary">

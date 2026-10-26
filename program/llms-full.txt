@@ -1609,6 +1609,7 @@ Abstract:
 - Format: Talk
 - Presenters: Ritika Giri
 - Abstract page: https://us-rse.org/usrse26/program/talks/#what-they-don-t-tell-you-about-the-data-science-to-rse-transition
+- DOI: https://doi.org/10.5281/zenodo.23669922
 
 Abstract:
 
