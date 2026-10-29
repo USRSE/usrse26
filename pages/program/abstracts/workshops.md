@@ -50,7 +50,7 @@ Participants are expected to bring a laptop.{% endcapture %}{{ abstract_md | mar
 
 In this workshop, we’ll discuss how to refactor heirloom code so it can be maintained, understood, and used for new problems. We will look at how to create an appropriate organizational principle for a project that lacks an explicit design or structure. We’ll also introduce common patterns of simplification that will help make the code more legible to you and others, and best practices for doing your renovations safely and efficiently. Working in small groups, participants will engage with a case study project to identify reusable functionality, break the code into discrete components, and rewrite for readability and maintenance.
 
-A computer will be needed for full participation, though the discussion will be informative for attendees without one. Exercises will be provided in Python (typed and untyped).{% endcapture %}{{ abstract_md | markdownify }}</div>
+A computer will be needed for full participation, though the discussion will be informative for attendees without one. Exercises will be provided in Python (typed and untyped).{% endcapture %}{{ abstract_md | markdownify }}<p class="abstract__meta"><a href="https://doi.org/10.5281/zenodo.23767068" target="_blank" rel="noopener">https://doi.org/10.5281/zenodo.23767068</a></p></div>
   </details>
 </div>
 

@@ -1045,6 +1045,7 @@ Abstract:
 - Format: Workshop
 - Presenters: Brian Ward and Jeff Soules
 - Abstract page: https://us-rse.org/usrse26/program/workshops/#fixer-upper-software-refactoring-code-for-reuse-and-impact
+- DOI: https://doi.org/10.5281/zenodo.23767068
 
 Abstract:
 
