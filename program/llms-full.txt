@@ -571,6 +571,7 @@ Abstract:
 - Format: Talk
 - Presenters: Lipi Gupta, Afton Geil, Lisa Claus and Adam Lavely
 - Abstract page: https://us-rse.org/usrse26/program/talks/#evolving-hpc-user-support-just-in-time-learning-with-instructional-videos
+- DOI: https://doi.org/10.5281/zenodo.23752243
 
 Abstract:
 

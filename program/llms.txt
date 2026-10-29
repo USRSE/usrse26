@@ -260,6 +260,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
   - "Evolving HPC User Support: Just-in-Time Learning with Instructional Videos" (Talk)
     Presenters: Lipi Gupta, Afton Geil, Lisa Claus and Adam Lavely
     https://us-rse.org/usrse26/program/talks/#evolving-hpc-user-support-just-in-time-learning-with-instructional-videos
+    DOI: https://doi.org/10.5281/zenodo.23752243
 
 ### 3:30–5pm — AI + Software Quality
 
