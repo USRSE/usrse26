@@ -3,7 +3,7 @@
 > The complete program for USRSE'26 (US-RSE Conference 2026), the annual
 > conference of the US Research Software Engineer Association (US-RSE), held
 > October 19–21, 2026 in San Jose, California, USA. Theme: "Advancing Science
-> in the Age of AI". 3 days, 51 sessions, 95 talks (94 with published
+> in the Age of AI". 3 days, 51 sessions, 95 talks (95 with published
 > abstracts). All times are US Pacific (UTC-07:00).
 
 This file is generated from the conference schedule and changes only when the
@@ -35,6 +35,7 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - https://us-rse.org/usrse26/program/notebooks/ — Notebooks — abstracts
 - https://us-rse.org/usrse26/program/papers/ — Papers — abstracts
 - https://us-rse.org/usrse26/program/posters/ — Posters — abstracts
+- https://us-rse.org/usrse26/program/rams/ — Rapid Access Microtalks — abstracts
 - https://us-rse.org/usrse26/program/student-early-career-program/ — Student & Early Career — abstracts
 - https://us-rse.org/usrse26/program/talks/ — Talks — abstracts
 - https://us-rse.org/usrse26/program/workshops/ — Workshops — abstracts
@@ -777,51 +778,51 @@ Human-readable program page: https://us-rse.org/usrse26/program/
 - Concurrent with: nothing (the only session at this time)
 - About: Rapid Access Microtalks (RAM) are an opportunity organized in-person at the conference to present a 5-minute rapid-fire talk on any topic of their choice. This session offers conference participants a platform that encourages spontaneity and creativity at the time of the event itself. **Propose** Stop by the registration area on Monday to propose a talk for the community to vote on (instructions will be provided). **Vote** All attendees receive stickers to vote on their favorite proposals. **Present** Accepted microtalks will be given 5 minutes to present during the closing session.
 - Talks (12):
-  - "Welcome to San Jose" (Talk)
+  - "Welcome to San Jose" (Rapid Access Microtalk)
     Presenters: Alex Storer
-    https://us-rse.org/usrse26/program/talks/#welcome-to-san-jose
+    https://us-rse.org/usrse26/program/rams/#welcome-to-san-jose
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "PLEASE UPLOAD YOUR SLIDES: What does it take to render Pixi-perfect PDFs in CI?!" (Talk)
+  - "PLEASE UPLOAD YOUR SLIDES: What does it take to render Pixi-perfect PDFs in CI?!" (Rapid Access Microtalk)
     Presenters: Eli Mizrachi
-    https://us-rse.org/usrse26/program/talks/#please-upload-your-slides-what-does-it-take-to-render-pixi-perfect-pdfs-in-ci
+    https://us-rse.org/usrse26/program/rams/#please-upload-your-slides-what-does-it-take-to-render-pixi-perfect-pdfs-in-ci
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "The Stealth RSE: How to Hack Together a (Sort-Of) RSE Career Path In an Institution That Doesn’t Get It" (Talk)
+  - "The Stealth RSE: How to Hack Together a (Sort-Of) RSE Career Path In an Institution That Doesn’t Get It" (Rapid Access Microtalk)
     Presenters: Charles Ferenbaugh
-    https://us-rse.org/usrse26/program/talks/#the-stealth-rse-how-to-hack-together-a-sort-of-rse-career-path-in-an-institution-that-doesn-t-get-it
+    https://us-rse.org/usrse26/program/rams/#the-stealth-rse-how-to-hack-together-a-sort-of-rse-career-path-in-an-institution-that-doesn-t-get-it
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "Dogs & design: why caring for a reactive dog is like creating user-centered software" (Talk)
+  - "Dogs & design: why caring for a reactive dog is like creating user-centered software" (Rapid Access Microtalk)
     Presenters: Kate Arneson
-    https://us-rse.org/usrse26/program/talks/#dogs-design-why-caring-for-a-reactive-dog-is-like-creating-user-centered-software
+    https://us-rse.org/usrse26/program/rams/#dogs-design-why-caring-for-a-reactive-dog-is-like-creating-user-centered-software
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "On Trust: Adopting Autonomous Software Factories in RSE Organizations" (Talk)
+  - "On Trust: Adopting Autonomous Software Factories in RSE Organizations" (Rapid Access Microtalk)
     Presenters: Geoffrey Lentner and Chimdia Kabuo
-    https://us-rse.org/usrse26/program/talks/#on-trust-adopting-autonomous-software-factories-in-rse-organizations
+    https://us-rse.org/usrse26/program/rams/#on-trust-adopting-autonomous-software-factories-in-rse-organizations
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "Weirdest, Craziest, Funniest: Some RSE Experiences" (Talk)
+  - "Weirdest, Craziest, Funniest: Some RSE Experiences" (Rapid Access Microtalk)
     Presenters: Miranda Mundt
-    https://us-rse.org/usrse26/program/talks/#weirdest-craziest-funniest-some-rse-experiences
+    https://us-rse.org/usrse26/program/rams/#weirdest-craziest-funniest-some-rse-experiences
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "From a nascent to a mature org - Yes that means YOU!" (Talk)
+  - "From a nascent to a mature org - Yes that means YOU!" (Rapid Access Microtalk)
     Presenters: Curt Hillegas
-    https://us-rse.org/usrse26/program/talks/#from-a-nascent-to-a-mature-org-yes-that-means-you
+    https://us-rse.org/usrse26/program/rams/#from-a-nascent-to-a-mature-org-yes-that-means-you
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "Streaming Performance on S3" (Talk)
+  - "Streaming Performance on S3" (Rapid Access Microtalk)
     Presenters: Cody Baker
-    https://us-rse.org/usrse26/program/talks/#streaming-performance-on-s3
+    https://us-rse.org/usrse26/program/rams/#streaming-performance-on-s3
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "We were warned about this! AI futurism in media" (Talk)
+  - "We were warned about this! AI futurism in media" (Rapid Access Microtalk)
     Presenters: Tinashe M. Tapera
-    https://us-rse.org/usrse26/program/talks/#we-were-warned-about-this-ai-futurism-in-media
+    https://us-rse.org/usrse26/program/rams/#we-were-warned-about-this-ai-futurism-in-media
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "Blast! Decent(ralized) storage networks for long-term scientific data sharing" (Talk)
+  - "Blast! Decent(ralized) storage networks for long-term scientific data sharing" (Rapid Access Microtalk)
     Presenters: Andrew Manning
-    https://us-rse.org/usrse26/program/talks/#blast-decent-ralized-storage-networks-for-long-term-scientific-data-sharing
+    https://us-rse.org/usrse26/program/rams/#blast-decent-ralized-storage-networks-for-long-term-scientific-data-sharing
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "We Should Go On More Walks: Reinventing the S.M.O.K.E Break" (Talk)
+  - "We Should Go On More Walks: Reinventing the S.M.O.K.E Break" (Rapid Access Microtalk)
     Presenters: Juliette Raubolt
-    https://us-rse.org/usrse26/program/talks/#we-should-go-on-more-walks-reinventing-the-s-m-o-k-e-break
+    https://us-rse.org/usrse26/program/rams/#we-should-go-on-more-walks-reinventing-the-s-m-o-k-e-break
     DOI: https://doi.org/10.5281/zenodo.23353583
-  - "MYSTERIES OF LAKE BAIKAL" (Talk)
+  - "MYSTERIES OF LAKE BAIKAL" (Rapid Access Microtalk)
     Presenters: Jennifer Gregory
-    https://us-rse.org/usrse26/program/talks/#mysteries-of-lake-baikal
+    https://us-rse.org/usrse26/program/rams/#mysteries-of-lake-baikal
     DOI: https://doi.org/10.5281/zenodo.23353583
