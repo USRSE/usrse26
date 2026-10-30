@@ -1910,7 +1910,140 @@
               "info": "Rapid Access Microtalks (RAM) are an opportunity organized in-person at the conference to present a 5-minute rapid-fire talk on any topic of their choice. This session offers conference participants a platform that encourages spontaneity and creativity at the time of the event itself. \n\n\n**Propose** Stop by the registration area on Monday to propose a talk for the community to vote on (instructions will be provided).\n\n**Vote** All attendees receive stickers to vote on their favorite proposals. \n\n**Present** Accepted microtalks will be given 5 minutes to present during the closing session.",
               "plenary": true,
               "muted": false,
-              "talks": []
+              "talks": [
+                {
+                  "title": "Welcome to San Jose",
+                  "speakers": "Alex Storer",
+                  "people": [
+                    "Alex Storer"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "Stories, tidbits and shark from a San Jose local",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#welcome-to-san-jose"
+                },
+                {
+                  "title": "PLEASE UPLOAD YOUR SLIDES: What does it take to render Pixi-perfect PDFs in CI?!",
+                  "speakers": "Eli Mizrachi",
+                  "people": [
+                    "Eli Mizrachi"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "Software which promises to let you write slides or docs as code often delivers excellent experiences when rendered to HTML, in exchange for some tedium in codifying layouts in plain-text. But what happens when the output is in the formidable PDF format? In this RAM talk I contend that the ecosystem for reproducibly generating Latex PDFs of docs or slides is still missing out on some of the \"it just works\" feeling that web-native content workflows seem to have.",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#please-upload-your-slides-what-does-it-take-to-render-pixi-perfect-pdfs-in-ci"
+                },
+                {
+                  "title": "The Stealth RSE: How to Hack Together a (Sort-Of) RSE Career Path In an Institution That Doesn’t Get It",
+                  "speakers": "Charles Ferenbaugh",
+                  "people": [
+                    "Charles Ferenbaugh"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "I'll share my experiences cobbling together a sort-of RSE career path in an institution that didn't really know what to do with me...",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#the-stealth-rse-how-to-hack-together-a-sort-of-rse-career-path-in-an-institution-that-doesn-t-get-it"
+                },
+                {
+                  "title": "Dogs & design: why caring for a reactive dog is like creating user-centered software",
+                  "speakers": "Kate Arneson",
+                  "people": [
+                    "Kate Arneson"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "Caring for a dog may not be human-centered, but it is user-centered. I'll share what my reactive and anxious dog has taught me about challenging assumptions, engaging community, and meeting users where they're at — dogs and humans alike.",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#dogs-design-why-caring-for-a-reactive-dog-is-like-creating-user-centered-software"
+                },
+                {
+                  "title": "On Trust: Adopting Autonomous Software Factories in RSE Organizations",
+                  "speakers": "Geoffrey Lentner and Chimdia Kabuo",
+                  "people": [
+                    "Geoffrey Lentner",
+                    "Chimdia Kabuo"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "Coding agents have divided the research software engineering community. RSEs who value the craft of writing code tend to resist them, and those who mostly want what the code produces tend to welcome them. Both camps frame trust as a question of authorship (who wrote the code, and whether anyone read it). That framing does not scale to an autonomous software factory, in which agents plan, write, test, and review code from a specification faster than people can read it.\n\nComputing and science already depend on tools their users did not build and do not inspect. Few programmers read the assembly their compilers emit, and astronomers do not grind their own telescope mirrors; in both cases trust rests on calibration, testing, and reproducibility. We argue that a software factory is an instrument of the same kind, sitting between the RSE and the code. Agent-written scientific code can then earn trust on its merits rather than on who wrote it, and the argument asks no one to take a model's output on faith. Those merits are measurable, through validation against problems with known answers, deterministic simulation testing (which replays any failure from the seed that produced it), and independent reruns that reproduce the result. Within an organization that adopts a factory, the RSE works as its instrument scientist (specifying it, calibrating it, and deciding when its output is fit for use).",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#on-trust-adopting-autonomous-software-factories-in-rse-organizations"
+                },
+                {
+                  "title": "Weirdest, Craziest, Funniest:  Some RSE Experiences",
+                  "speakers": "Miranda Mundt",
+                  "people": [
+                    "Miranda Mundt"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "Wanna hear some entertaining stories from an RSE perspective? I shall regale you with them! For a few minutes, at least.",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#weirdest-craziest-funniest-some-rse-experiences"
+                },
+                {
+                  "title": "From a nascent to a mature org - Yes that means YOU!",
+                  "speakers": "Curt Hillegas",
+                  "people": [
+                    "Curt Hillegas"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "How does the leadership profile change as organizations mature, and what does US-RSE have to do to continue on its maturity path?",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#from-a-nascent-to-a-mature-org-yes-that-means-you"
+                },
+                {
+                  "title": "Streaming Performance on S3",
+                  "speakers": "Cody Baker",
+                  "people": [
+                    "Cody Baker"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "We like streaming TB-sized HDF5 and Zarr assets hosted on S3 (AWS)\n\nBut how fast are the most common default access methods??\n\nGet a sneak peek of some of our benchmark results!",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#streaming-performance-on-s3"
+                },
+                {
+                  "title": "We were warned about this! AI futurism in media",
+                  "speakers": "Tinashe M. Tapera",
+                  "people": [
+                    "Tinashe M. Tapera"
+                  ],
+                  "format": "Talk",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#we-were-warned-about-this-ai-futurism-in-media"
+                },
+                {
+                  "title": "Blast! Decent(ralized) storage networks for long-term scientific data sharing",
+                  "speakers": "Andrew Manning",
+                  "people": [
+                    "Andrew Manning"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "Blast is a real-time astrophysical transient data processing system that is generating and serving a growing set of data. We are prototyping a storage and distribution system based on IPFS that could pave the way toward a sustainable cyberinfrastructure that supports open science in the age of big data and short-term funding.",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#blast-decent-ralized-storage-networks-for-long-term-scientific-data-sharing"
+                },
+                {
+                  "title": "We Should Go On More Walks: Reinventing the S.M.O.K.E Break",
+                  "speakers": "Juliette Raubolt",
+                  "people": [
+                    "Juliette Raubolt"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "Sitting and sugar is the new smoking. The solution, or at least an attempt, is to go on more S.M.O.K.E. breaks (with no smoking but walking instead).",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#we-should-go-on-more-walks-reinventing-the-s-m-o-k-e-break"
+                },
+                {
+                  "title": "MYSTERIES OF LAKE BAIKAL",
+                  "speakers": "Jennifer Gregory",
+                  "people": [
+                    "Jennifer Gregory"
+                  ],
+                  "format": "Talk",
+                  "infoMd": "let’s explore the worlds deepest, oldest, and largest (by volume) freshwater lake!",
+                  "doi": "https://doi.org/10.5281/zenodo.23353583",
+                  "href": "program/talks/#mysteries-of-lake-baikal"
+                }
+              ]
             }
           ]
         }
